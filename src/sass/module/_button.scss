@@ -12,7 +12,7 @@
   font-size: rem(14);
   font-weight: $normal;
   line-height: 1;
-  padding: rem(18) rem(86) rem(21) rem(40);
+  padding: rem(19) rem(87) rem(20) rem(39);
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@
   content: '';
   width: rem(12);
   height: rem(1);
-  top: calc(50% - rem(3.5));
+  top: calc(50% - rem(3));
   right: calc(-1 * rem(47.5));
   transform: rotate(30deg);
   background-color: $white;
@@ -79,7 +79,7 @@
   content: '';
   width: rem(40);
   height: rem(1);
-  top: calc(50%);
+  top: calc(50% + rem(1));
   right: calc(-1 * rem(48));
   background: $white;
 }
