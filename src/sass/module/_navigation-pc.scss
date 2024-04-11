@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.navigation-pc {
+  display: none;
+  @include mq("md") {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.navigation-pc__item:not(:first-child) {
+  margin-left: rem(40);
+}
+
+.navigation-pc__link {
+}
+
+.navigation-pc__label--english {
+  font-family: $english-font;
+  font-size: rem(18);
+  line-height: 1;
+  color: $white;
+  text-align: center;
+}
+
+.navigation-pc__label {
+  font-family: $sans;
+  font-size: rem(10);
+  font-weight: $regular;
+  color: $white;
+  text-align: center;
+}

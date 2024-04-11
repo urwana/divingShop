@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(13,41,54,.68);
+  height: rem(90);
+}
+
+.header__innner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  padding: 0 rem(40);
+}
+
+.header__logo {
+  width: rem(133);
+}
+
+.header__navigation {
+}
