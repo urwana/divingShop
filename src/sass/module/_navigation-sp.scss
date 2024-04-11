@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.header__navigation-sp {
+}
+
+.navigation-sp {
+}
+
+.navigation-sp__item-group:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.navigation-sp__item {
+  font-family: $sans;
+  color: $white;
+  font-size: rem(16);
+  font-weight: $normal;
+  margin-top: rem(24);
+  margin-left: rem(22);
+  line-height: 1.125;
+}
+
+.navigation-sp__item--top {
+  font-weight: $bold;
+  position: relative;
+}
+
+.navigation-sp__item--top::before{
+  content: "";
+  position: absolute;
+  top:rem(1);
+  left: - rem(24);
+  width: rem(18);
+  height: rem(18);
+  background-image: url("../images/common/starfish.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation-sp__label {
+}

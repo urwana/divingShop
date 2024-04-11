@@ -1,12 +1,9 @@
 @use 'global' as *;
 
 .navigation-pc {
-  display: none;
-  @include mq("md") {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .navigation-pc__item:not(:first-child) {
