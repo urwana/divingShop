@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.company-info {
+  font-family: $sans;
+  @include mq('md') {
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(24 / 16);
+    text-shadow: none;
+  }
+
+}
+
+// .company-info__address {
+
+// }
+
+// .company-info__tel {
+
+// }
+
+// .company-info__hours {
+
+// }
+
+// .company-info__holidays {
+
+// }
