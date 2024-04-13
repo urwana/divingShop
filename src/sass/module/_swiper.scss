@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.swiper {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 375 / 667;
+  @include mq('md') {
+    aspect-ratio: 1440 / 768;
+  }
+}
+
+.swiper__title{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-family: $price-font;
+  font-size: rem(40);
+  font-weight: $regular;
+  color:$white;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  @include mq('md') {
+    font-size: rem(80);
+    //letter-spacing: 0.54em;
+  }
+}
