@@ -12,23 +12,9 @@
 .top-campaign__inner {
 }
 
-.section-title-container {
-}
-
-.section-title {
-}
-
-.section-title__word {
-}
-
-.section-title__initials {
-}
-
-.section-subtitle {
-}
-
 .top-campaign__swiper {
   margin-top: rem(24);
+  overflow: hidden;
   @include mq("md") {
     margin-top: rem(40);
   }
