@@ -1,0 +1,88 @@
+@use 'global' as *;
+
+.top-about {
+
+  @include mq('md') {
+    margin-top: rem(140);
+  } 
+}
+
+.top-about__inner {
+  background-image: url(../images/top/bg-aboutus-sp.png);
+  background-repeat: no-repeat;
+  background-position-y: rem(86);
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  @include mq("md") {
+    background-position-x: center;
+    background-position-y: rem(106);
+    height: rem(767);
+  }
+}
+
+.top-about__inner::after{
+  @include mq('md') {
+    position: absolute;
+    content: "";
+    // right: - rem(97);
+    // bottom: - rem(91);
+    right: - rem(8);
+    bottom: - rem(88);
+    width: rem(194);
+    height: rem(181);
+    background-image: url(../images/top/coral.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    }
+}
+
+.top-about__catch-copy {
+  // margin-top: calc((100vw - 30px) * 0.6145 + 48px );
+  margin-top: calc(100vw * 0.6145 + 48px);
+  font-family: $english-font;
+  font-weight: $regular;
+  font-size: rem(40);
+  color: $green-accent;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(80);
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+.top-about__title {
+}
+
+.top-about__contents {
+  @include mq("md") {
+    width: rem(840);
+    height: inherit;
+    margin-inline:auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    place-content: center;
+    gap:rem(16);
+  }
+}
+
+.top-about__body {
+  margin-top: rem(16);
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(24 / 16);
+
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.top-about__text {
+}
+
+.top-about__button {
+  margin-top: rem(50);
+  text-align: center;
+}
