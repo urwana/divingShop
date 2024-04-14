@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.top-voice {
+  margin-top: rem(80);
+}
+
+.top-voice__inner {
+  position: relative;
+}
+
+
+.top-voice__inner::after{
+  @include mq('md') {
+    position: absolute;
+    content: "";
+    right: - rem(8);
+    bottom: - rem(88);
+    width: rem(194);
+    height: rem(181);
+    background-image: url(../images/top/seahorse.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    }
+}
+
+.top-voice__cards {
+  margin-top: rem(40);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.top-voice__item {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(40);
+  }
+}
+
+.top-voice__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
