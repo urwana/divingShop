@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.top-campaign {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(120);
+  }
+}
+
+.top-campaign__inner {
+
+}
+
+.section-title-container {
+
+}
+
+.section-title {
+
+}
+
+.section-title__word {
+
+}
+
+.section-title__initials {
+
+}
+
+.section-subtitle {
+
+}
+
+.top-campaign__cards {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.top-campaign__card {
+
+}
+
+.top-campaign__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
