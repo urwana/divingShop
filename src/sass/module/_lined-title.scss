@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.lined-title {
+  font-family: $sans;
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  font-weight: 500;
+  padding-bottom: rem(4);
+  border-bottom: solid 1px $green-accent;
+}
+
+.lined-title--large {
+  font-size: rem(24);
+  font-weight: $bold;
+}
