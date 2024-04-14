@@ -2,8 +2,9 @@
 
 .swiper-campaign {
   width: 100%;
+  height:rem(366);
+  //aspect-ratio: 375 / 667;
   position: relative;
-  aspect-ratio: 375 / 667;
   z-index: 1;
   //overflow: hidden;
   @include mq('md') {
@@ -21,9 +22,6 @@
     right:0;
     width: rem(80);
     height: rem(80);
-    // border-radius: 50%;
-    // background:$white;
-    // border: solid 1px $green-accent;
   }
 }
 
