@@ -19,3 +19,25 @@ const swiper = new Swiper(".swiper", {
     delay: 5000,
   },
 });
+
+const swiperCampaign = new Swiper(".swiper-campaign", {
+  loop: true,
+  slidesPerView: 1.25,
+  spaceBetween: 24,
+  breakpoints: {
+    // when window width is >= 320px
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    // when window width is >= 320px
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-campaign-button-next",
+    prevEl: ".swiper-campaign-button-prev",
+  },
+});

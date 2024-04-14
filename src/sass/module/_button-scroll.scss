@@ -1,0 +1,56 @@
+@use 'global' as *;
+
+%button-scroll-common {
+  width: rem(80);
+  height: rem(80);
+  border-radius: 50%;
+  background: $white;
+  border: solid 1px $green-accent;
+  position: relative;
+  cursor: pointer;
+}
+
+%button-scroll-common::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: rem(10);
+  height: rem(1);
+  top: 50%;
+  background-color: $green-accent;
+}
+
+%button-scroll-common::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: rem(40);
+  height: rem(1);
+  top: 50%;
+  left: calc((100% - 40px) / 2);
+  background-color: $green-accent;
+}
+
+.button-scroll {
+  @extend %button-scroll-common;
+}
+
+.button-scroll--left {
+  @extend %button-scroll-common;
+}
+
+.button-scroll--left::before {
+  top: calc(50% - 3px);
+  right: calc((100% - 40px) / 2);
+  transform: rotate(30deg);
+}
+
+.button-scroll--right {
+  @extend %button-scroll-common;
+}
+
+.button-scroll--right::before {
+  top: calc(50% - 3px);
+  left: calc((100% - 40px) / 2);
+  transform: rotate(-30deg);
+}

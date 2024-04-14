@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+.swiper-campaign {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 375 / 667;
+  z-index: 1;
+  //overflow: hidden;
+  @include mq('md') {
+    aspect-ratio: 1080 / 420;
+    //margin-left: calc((100% - 1080px) / 2);
+  }
+}
+
+.swiper-campaign-button-prev,
+.swiper-campaign-button-next{
+  z-index: 2;
+  @include mq('md') {
+    position: absolute;
+    top:0;
+    right:0;
+    width: rem(80);
+    height: rem(80);
+    // border-radius: 50%;
+    // background:$white;
+    // border: solid 1px $green-accent;
+  }
+}
+
+.swiper-campaign .swiper-campaign-button-prev{
+  top:-100px;
+  right:160px;
+}
+
+.swiper-campaign .swiper-campaign-button-next{
+  top:-100px;
+  right:0;
+}

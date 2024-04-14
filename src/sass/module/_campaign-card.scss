@@ -13,6 +13,13 @@
 }
 
 .campaign-card__image {
+  aspect-ratio: 334 / 223;
+}
+
+.campaign-card__image img{
+  width: 100%;
+  height: rem(223); // TODO: この方法で良いか確認
+  object-fit: cover;
 }
 
 .campaign-card__body {

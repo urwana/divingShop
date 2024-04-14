@@ -2,50 +2,45 @@
 
 .top-campaign {
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(120);
+    margin-left: calc((100% - 1080px) / 2);
+    overflow: hidden;
   }
 }
 
 .top-campaign__inner {
-
 }
 
 .section-title-container {
-
 }
 
 .section-title {
-
 }
 
 .section-title__word {
-
 }
 
 .section-title__initials {
-
 }
 
 .section-subtitle {
-
 }
 
-.top-campaign__cards {
+.top-campaign__swiper {
   margin-top: rem(24);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(40);
   }
 }
 
 .top-campaign__card {
-
 }
 
 .top-campaign__button {
   text-align: center;
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
   }
 }
