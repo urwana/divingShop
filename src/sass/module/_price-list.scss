@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.price-list__item {
+  margin-top: rem(16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-list__item dt,
+.price-list__item dd {
+  font-size: rem(14);
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(16);
+  }
+}

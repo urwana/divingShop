@@ -1,10 +1,10 @@
 @use 'global' as *;
 
 .top-about {
-
-  @include mq('md') {
+  margin-top: rem(80);
+  @include mq("md") {
     margin-top: rem(140);
-  } 
+  }
 }
 
 .top-about__inner {
@@ -21,21 +21,21 @@
   }
 }
 
-.top-about__inner::after{
-  @include mq('md') {
+.top-about__inner::after {
+  @include mq("md") {
     position: absolute;
     content: "";
     // right: - rem(97);
     // bottom: - rem(91);
-    right: - rem(8);
-    bottom: - rem(88);
+    right: -rem(8);
+    bottom: -rem(88);
     width: rem(194);
     height: rem(181);
     background-image: url(../images/top/coral.svg);
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-    }
+  }
 }
 
 .top-about__catch-copy {
@@ -60,11 +60,11 @@
   @include mq("md") {
     width: rem(840);
     height: inherit;
-    margin-inline:auto;
+    margin-inline: auto;
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-content: center;
-    gap:rem(16);
+    gap: rem(16);
   }
 }
 

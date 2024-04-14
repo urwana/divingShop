@@ -8,27 +8,28 @@
   position: relative;
 }
 
-
-.top-voice__inner::after{
-  @include mq('md') {
+.top-voice__inner::after {
+  @include mq("md") {
     position: absolute;
     content: "";
-    right: - rem(8);
-    bottom: - rem(88);
+    right: -8px;
+    bottom: -88px;
     width: rem(194);
     height: rem(181);
     background-image: url(../images/top/seahorse.svg);
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-    }
+  }
 }
 
 .top-voice__cards {
   margin-top: rem(40);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include mq("md") {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .top-voice__item {
@@ -42,7 +43,7 @@
 .top-voice__button {
   text-align: center;
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
   }
 }
