@@ -4,7 +4,7 @@
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(120);
-    margin-left: calc((100% - 1080px) / 2);
+    //margin-left: calc((100% - 1080px) / 2);
     overflow: hidden;
   }
 }
@@ -14,7 +14,7 @@
 
 .top-campaign__swiper {
   margin-top: rem(24);
-  overflow: hidden;
+  // overflow: hidden;
   @include mq("md") {
     margin-top: rem(40);
   }

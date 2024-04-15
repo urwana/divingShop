@@ -8,7 +8,8 @@
   z-index: 1;
   //overflow: hidden;
   @include mq('md') {
-    aspect-ratio: 1080 / 420;
+    height:rem(445);
+    // aspect-ratio: 1080 / 420;
     //margin-left: calc((100% - 1080px) / 2);
   }
 }

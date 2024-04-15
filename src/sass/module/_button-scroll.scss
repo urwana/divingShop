@@ -35,6 +35,12 @@
   @extend %button-scroll-common;
 }
 
+.button-scroll::before {
+  top: calc(50% - 3px);
+  left: calc((100% - 40px) / 2);
+  transform: rotate(-30deg);
+}
+
 .button-scroll--left {
   @extend %button-scroll-common;
 }
