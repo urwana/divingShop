@@ -11,6 +11,9 @@
 .top-information__inner {
   padding-top: rem(80);
   padding-bottom: rem(80);
+  @include mq('md') {
+    padding-top: rem(100);
+  }
 }
 
 .section-title-container {
@@ -19,6 +22,7 @@
 .top-information__contents {
   margin-top: rem(24);
   @include mq('md') {
+    margin-top: rem(40);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -26,7 +30,11 @@
 }
 
 .top-information__image {
+
   aspect-ratio: 540 / 356;
+  @include mq('md') {
+    width: rem(540);
+  }
 }
 
 .top-information__image img {
@@ -36,12 +44,16 @@
 
 .top-information__info {
   @include mq('md') {
+    width: rem(492);
     margin-left: rem(48);
   }
 }
 
 .top-information__info-title {
   margin-top: rem(24);
+  @include mq('md') {
+    margin-top: 0;
+  }
 }
 
 .top-information__text {
