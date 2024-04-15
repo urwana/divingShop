@@ -41,3 +41,29 @@ const swiperCampaign = new Swiper(".swiper-campaign", {
     prevEl: ".swiper-campaign-button-prev",
   },
 });
+
+// TODO: gsap で書き換える
+const AllColorAnimationElements = $(".js-colorAnimation");
+const switchingSpeed = 700;
+
+AllColorAnimationElements.each(function() {
+  $(this).append('<div class="color-mask"></div>');
+  const colorMask = $(this).find($(".color-mask")),
+    imageElement = $(this).find("img");
+  let counter = 0;
+
+  imageElement.css("opacity", "0");
+  colorMask.css("width", "0%");
+  colorMask.on("inview", function() {
+    if (counter == 0) {
+      $(this)
+        .delay(200)
+        .animate({ width: "100%" }, switchingSpeed, function() {
+          imageElement.css("opacity", "1");
+          $(this).css({ left: "0", right: "auto" });
+          $(this).animate({ width: "0%" }, switchingSpeed);
+        });
+      counter = 1;
+    }
+  });
+});
