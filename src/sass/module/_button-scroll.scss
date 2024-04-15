@@ -33,6 +33,7 @@
 
 .button-scroll {
   @extend %button-scroll-common;
+  transform: rotate(90deg);
 }
 
 .button-scroll::before {
