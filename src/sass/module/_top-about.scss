@@ -11,7 +11,8 @@
   background-image: url(../images/top/bg-aboutus-sp.png);
   background-repeat: no-repeat;
   background-position-y: rem(86);
-  background-size: contain;
+  background-size: calc(100% - 30px);
+  background-position: center center;
   position: relative;
   z-index: 1;
   @include mq("md") {
@@ -25,9 +26,7 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // right: - rem(97);
-    // bottom: - rem(91);
-    right: -8px;
+    right: -80px;
     bottom: -88px;
     width: rem(194);
     height: rem(181);
@@ -35,6 +34,19 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
+  }
+}
+
+.top-about__contents {
+  @include mq("md") {
+    height: inherit;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: rem(224);
+    padding-right: rem(38);
+
   }
 }
 
@@ -50,21 +62,8 @@
     font-size: rem(80);
     color: $white;
     margin-top: 0;
-  }
-}
-
-.top-about__title {
-}
-
-.top-about__contents {
-  @include mq("md") {
-    width: rem(840);
-    height: inherit;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-content: center;
-    gap: rem(16);
+    padding-top: rem(16);
+    line-height: 1.25;
   }
 }
 
@@ -76,6 +75,8 @@
 
   @include mq("md") {
     color: $white;
+    width: rem(400);
+    margin-left: rem(40);
   }
 }
 
@@ -85,4 +86,7 @@
 .top-about__button {
   margin-top: rem(50);
   text-align: center;
+  @include mq('md') {
+    margin-top: rem(40);
+  }
 }
