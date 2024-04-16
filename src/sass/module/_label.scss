@@ -6,7 +6,8 @@
   line-height: 1;
   padding: rem(5.5) rem(11);
   border: solid 1px $green-accent;
+  display: inline-block;
   @include mq('md') {
-    padding: rem(5.5) rem(14);
+    padding: rem(10) rem(14);
   }
 }

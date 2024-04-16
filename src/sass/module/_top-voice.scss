@@ -15,8 +15,8 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    top: -88px;
-    left: -8px;
+    top: -118px;
+    left: -58px;
     width: rem(301);
     height: rem(138);
     background-image: url(../images/top/bg-fish-r.svg);
@@ -30,8 +30,8 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    right: -8px;
-    bottom: -88px;
+    right: -43px;
+    bottom: -76px;
     width: rem(194);
     height: rem(181);
     background-image: url(../images/top/seahorse.svg);
@@ -42,15 +42,17 @@
 }
 
 .top-voice__cards {
-  margin-top: rem(40);
+  // margin-top: rem(40);
+  margin-top: rem(44);
   @include mq("md") {
+    margin-top: rem(30);
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 }
 
-.top-voice__item {
+.top-voice__item:not(:first-child) {
   margin-top: rem(40);
   @include mq("md") {
     margin-top: 0;
