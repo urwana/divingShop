@@ -10,10 +10,16 @@
   font-size: rem(20);
   color: $green;
   text-decoration: line-through 4px solid #ff0000;
+  // display: inline-block;
+  // margin-top: rem(6);
+
 }
 
 .price-container__price {
   font-size: rem(32);
   color: $green-accent;
-  margin-left: rem(24);
+  margin-left: rem(16);
+  @include mq('md') {
+    margin-left: rem(24);
+  }
 }
