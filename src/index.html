@@ -248,8 +248,13 @@
     <main>
       <div class="key-visual">
         <div class="swiper">
-          <div class="swiper__title">
-            ＤＩＶＩＮＧ
+          <div class="swiper__title-container">
+            <div class="swiper__title">
+              ＤＩＶＩＮＧ
+            </div>
+            <p class="swiper__subtitle">
+              into the ocean
+            </p>
           </div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -521,10 +526,12 @@
             </div>
             <div class="top-information__info">
               <div class="top-information__info-title">
-                <div class="lined-title lined-title--medium">ライセンス講習</div>
+                <div class="lined-title lined-title--medium">
+                  ライセンス講習
+                </div>
               </div>
               <p class="top-information__text">
-                当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+                当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />
                 正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
               </p>
               <div class="top-information__button">
@@ -664,9 +671,9 @@
                 </div>
               </div>
               <div class="voice-card__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。
               </div>
             </div>
@@ -706,9 +713,9 @@
                 </div>
               </div>
               <div class="voice-card__text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。
               </div>
             </div>
@@ -737,6 +744,8 @@
                 <source
                   srcset="./assets/images/top/top-price-sp.jpg"
                   media="(max-width: 767px)"
+                  width="174"
+                  height="65"
                 />
                 <source
                   srcset="./assets/images/top/top-price-pc.jpg"
@@ -859,16 +868,17 @@
                 <p class="company-info__hours">営業時間:8:30-19:00</p>
                 <p class="company-info__holidays">定休日:毎週火曜日</p>
               </div>
-              <iframe
-                class="top-contact__map"
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14318.404015986776!2d127.67581646584523!3d26.209654634744712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5rKW57iE55yM6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1712921091388!5m2!1sja!2sjp"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <div class="top-contact__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14318.404015986776!2d127.67581646584523!3d26.209654634744712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5rKW57iE55yM6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1712921091388!5m2!1sja!2sjp"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
           <div class="top-contact__contact">
@@ -880,7 +890,9 @@
                   <span class="section-title__initials">C</span>ontact</span
                 >
               </h2>
-              <div class="section-subtitle">お問い合わせ</div>
+              <div class="section-subtitle section-subtitle--contact">
+                お問い合わせ
+              </div>
               <p class="section-title__explain">
                 ご予約・お問い合わせはコチラ
               </p>

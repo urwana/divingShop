@@ -15,10 +15,12 @@
 .top-price__inner {
   padding-top: rem(80);
   padding-bottom: rem(80);
+  @include mq('md') {
+    padding-top: rem(97);
+  }
 }
 
 .top-price__contents{
-
   @include mq('md') {
     margin-top: rem(40);
     display: flex;
@@ -51,4 +53,7 @@
 .top-price__button {
   margin-top: rem(40);
   text-align: center;
+  @include mq('md') {
+    margin-top: rem(80);
+  }
 }

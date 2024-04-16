@@ -9,20 +9,34 @@
   }
 }
 
-.swiper__title{
+.swiper__title-container{
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  font-family: $price-font;
-  font-size: rem(40);
-  font-weight: $regular;
   color:$white;
   z-index: 2;
   width: 100%;
   text-align: center;
+}
+
+.swiper__title{
+  margin-top: rem(8);
+  font-family: $price-font;
+  font-size: rem(40);
+  font-weight: $regular;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.08em;
   @include mq('md') {
     font-size: rem(80);
     //letter-spacing: 0.54em;
   }
+}
+
+.swiper__subtitle{
+  margin-top: rem(6);
+  font-family: $english-font;
+  font-size: rem(20);
+
 }

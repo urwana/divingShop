@@ -5,8 +5,8 @@
   font-family: $english-font;
 }
 
-.section-title-container--contact {
-  margin-top: rem(40);
+.section-title-container--contact .section-title{
+  line-height: 1;
 }
 
 .section-title {
@@ -29,6 +29,15 @@
     text-shadow: none;
   }
 }
+
+.section-title-container--contact .section-subtitle--contact {
+  margin-top: - rem(4);
+  line-height: 1;
+  @include mq("md") {
+    margin-top:0;
+  }
+}
+
 
 .section-title__initials {
   color: $green-accent;
