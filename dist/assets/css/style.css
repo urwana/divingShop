@@ -553,13 +553,18 @@ a {
 	z-index: 2;
 }
 
-.header__innner {
+.header__inner {
 	align-items: center;
 	display: flex;
 	height: inherit;
 	justify-content: space-between;
 	padding: 0 0.9375rem;
 	position: relative;
+	z-index: 2;
+}
+
+.header__inner.is-open {
+	background-color: #408F95;
 }
 
 .header__logo {
@@ -577,9 +582,11 @@ a {
 	display: none;
 	height: 100%;
 	left: 0;
+	overflow: scroll;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1;
 }
 
 .header__navigation-sp__inner {
@@ -1338,7 +1345,7 @@ html {
 	height: 5.625rem;
 }
 
-.header__innner {
+.header__inner {
 	padding: 0 2.5rem;
 }
 

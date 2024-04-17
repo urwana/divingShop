@@ -19,6 +19,7 @@ function _typeof(obj) {
     _typeof(obj)
   );
 }
+
 function _defineProperty(obj, key, value) {
   key = _toPropertyKey(key);
   if (key in obj) {
@@ -33,10 +34,12 @@ function _defineProperty(obj, key, value) {
   }
   return obj;
 }
+
 function _toPropertyKey(arg) {
   var key = _toPrimitive(arg, "string");
   return _typeof(key) === "symbol" ? key : String(key);
 }
+
 function _toPrimitive(input, hint) {
   if (_typeof(input) !== "object" || input === null) return input;
   var prim = input[Symbol.toPrimitive];
@@ -47,21 +50,36 @@ function _toPrimitive(input, hint) {
   }
   return (hint === "string" ? String : Number)(input);
 }
+
 jQuery(function($) {
   $(".js-hamburger").on("click", function(e) {
     e.preventDefault();
     if ($(".js-hamburger").hasClass("is-open")) {
       $(this).removeClass("is-open");
       $(".js-drawer-menu").removeClass("is-open");
+      $(".js-header__inner").removeClass("is-open");
+      $("body").css("overscroll-behavior", "");
     } else {
       $(this).addClass("is-open");
       $(".js-drawer-menu").addClass("is-open");
+      $(".js-header__inner").addClass("is-open");
+      $("body").css("overscroll-behavior", "none");
     }
   });
 });
+
+const windowSize = 768;
+const mediaQueryList = window.matchMedia(`(min-width: ${windowSize}px)`);
+
+// mediaQueryList.addEventListener("change", (event) => {
+//   if (event.matches) {
+//     console.log(`${windowSize}pxより大きいです`);
+//   } else {
+//     console.log(`${windowSize}px以下です`);
+//   }
+// });
+
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  //direction: 'vertical',
   speed: 800,
   loop: true,
   autoplay: {
@@ -72,20 +90,13 @@ const swiperCampaign = new Swiper(".swiper-campaign", {
   loop: true,
   slidesPerView: 1.25,
   spaceBetween: 24,
-  breakpoints: _defineProperty(
-    {
-      // when window width is >= 320px
-      767: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-    }
-    // "767",
-    // {
-    //   slidesPerView: 3,
-    //   spaceBetween: 40,
-    // }
-  ),
+  breakpoints: _defineProperty({
+    // when window width is >= 320px
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  }),
   navigation: {
     nextEl: ".swiper-campaign-button-next",
     prevEl: ".swiper-campaign-button-prev",
@@ -93,13 +104,13 @@ const swiperCampaign = new Swiper(".swiper-campaign", {
 });
 
 // TODO: gsap で書き換える
-var AllColorAnimationElements = $(".js-colorAnimation");
-var switchingSpeed = 700;
+const AllColorAnimationElements = $(".js-colorAnimation");
+const switchingSpeed = 700;
 AllColorAnimationElements.each(function() {
   $(this).append('<div class="color-mask"></div>');
-  var colorMask = $(this).find($(".color-mask")),
+  const colorMask = $(this).find($(".color-mask")),
     imageElement = $(this).find("img");
-  var counter = 0;
+  let counter = 0;
   imageElement.css("opacity", "0");
   colorMask.css("width", "0%");
   colorMask.on("inview", function() {
