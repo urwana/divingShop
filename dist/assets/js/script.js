@@ -62,6 +62,7 @@ jQuery(function($) {
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   //direction: 'vertical',
+  speed: 800,
   loop: true,
   autoplay: {
     delay: 5000,
