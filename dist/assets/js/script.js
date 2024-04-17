@@ -74,8 +74,13 @@ const mediaQueryList = window.matchMedia(`(min-width: ${windowSize}px)`);
 mediaQueryList.addEventListener("change", (event) => {
   if (event.matches) {
     console.log(`${windowSize}pxより大きいです`);
-  } else {
-    console.log(`${windowSize}px以下です`);
+    if ($(".js-drawer-menu").hasClass("is-open")) {
+      $(".js-drawer-menu").removeClass("is-open");
+    }
+    if ($(".js-header__inner").hasClass("is-open")) {
+      $(".js-header__inner").removeClass("is-open");
+    }
+    $("body").css("overscroll-behavior", "");
   }
 });
 

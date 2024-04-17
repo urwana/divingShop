@@ -426,31 +426,6 @@ a {
 	margin-top: 0.25rem;
 }
 
-.sans {
-	font-family: "Noto Sans JP", sans-serif;
-	font-optical-sizing: auto;
-	font-style: normal;
-	font-weight: 400;
-}
-
-.serif {
-	font-family: "Noto Serif JP", serif;
-	font-style: normal;
-	font-weight: 400;
-}
-
-.gotu {
-	font-family: "Gotu", sans-serif;
-	font-style: normal;
-	font-weight: 400;
-}
-
-.lato {
-	font-family: "lato", sans-serif;
-	font-style: normal;
-	font-weight: 400;
-}
-
 .footer {
 	background-color: #408F95;
 	color: #fff;
@@ -1734,7 +1709,15 @@ html {
 
 }
 
-@media screen and (min-width: 1079px) {
+@media (min-width: 1080px) {
+
+html {
+	font-size: 16px;
+}
+
+}
+
+@media screen and (min-width: 1177px) {
 
 .hamburger {
 	display: none;
@@ -1778,14 +1761,6 @@ html {
 
 .top-voice__inner::after {
 	right: -43px;
-}
-
-}
-
-@media (min-width: 1080px) {
-
-html {
-	font-size: 16px;
 }
 
 }
