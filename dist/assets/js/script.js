@@ -79,12 +79,12 @@ const swiperCampaign = new Swiper(".swiper-campaign", {
         slidesPerView: 3,
         spaceBetween: 40,
       },
-    },
-    "767",
-    {
-      slidesPerView: 3,
-      spaceBetween: 40,
     }
+    // "767",
+    // {
+    //   slidesPerView: 3,
+    //   spaceBetween: 40,
+    // }
   ),
   navigation: {
     nextEl: ".swiper-campaign-button-next",
