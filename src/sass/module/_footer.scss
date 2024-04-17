@@ -52,7 +52,6 @@
   margin-top: rem(11);
   @include mq('md') {
     margin-top: 0;
-    //TODO: pp 確認
     margin-bottom: rem(16);
     margin-left: rem(40);
   }
@@ -72,10 +71,11 @@
 .footer__copy{
   margin-top: rem(34);
   width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+  text-align: center;
   @include mq('md') {
     width: 100%;
     margin-top: rem(72);
-    text-align: center;
   }
 }
 
