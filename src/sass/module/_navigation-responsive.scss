@@ -5,34 +5,59 @@
   flex-wrap: wrap;
   flex-direction: column;
   height: rem(452);
-  @include mq('md') {
+  @include mq("md") {
     height: rem(202);
-    align-items: flex-start;
-    justify-content:flex-start;
+    display: block;
   }
 }
 
-.navigation-responsive__item-group + .navigation-responsive__item-group {
+.navigation-responsive::after {
+  @include mq("md") {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.navigation-responsive__column {
+  @include mq("md") {
+    float: left;
+  }
+}
+
+.navigation-responsive__column:nth-of-type(2) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.navigation-responsive__column:nth-of-type(4) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.navigation-responsive__item-group {
   margin-top: rem(40);
 }
 
-.navigation-responsive__item-group:nth-of-type(3){
-  @include mq('md') {
-    margin-top: 0;
+.navigation-responsive__column:not(:first-child) {
+  @include mq("md") {
+    margin-left: rem(120);
   }
 }
 
-
-.navigation-responsive__item-group:nth-of-type(5){
+.navigation-responsive__item-group:nth-of-type(1) {
   margin-top: 0;
 }
 
-.navigation-responsive__item-group:nth-of-type(7){
-  @include mq('md') {
+.navigation-responsive__item-group:nth-of-type(7) {
+  @include mq("md") {
     margin-top: 0;
   }
 }
-
 
 .navigation-responsive__item {
   font-family: $sans;
@@ -53,17 +78,14 @@
 .navigation-responsive__item--top::before {
   content: "";
   position: absolute;
-  top:0;
-  left: - rem(24);
+  top: 0;
+  left: -rem(24);
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish.png");
   background-size: cover;
   background-position: center;
-  @include mq('md') {
+  @include mq("md") {
     top: rem(1);
   }
-}
-
-.navigation-responsive__label {
 }
