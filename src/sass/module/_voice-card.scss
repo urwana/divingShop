@@ -14,12 +14,12 @@
   gap: rem(12);
   @include mq('md') {
     align-items: end;
-    grid-template-columns:rem(276) rem(180);
-    gap: rem(16);
+    grid-template-columns:58.47% 38.26%;
+    gap: 3.3%;
   }
-}
-
-.voice-card__info {
+  // @include mq('inner') {
+  //   grid-template-columns:rem(276) rem(180);
+  // }
 }
 
 .voice-card__meta {
@@ -53,9 +53,6 @@
 }
 
 .voice-card__image {
-  //padding-left: rem(12);
-  // width: 43.768%;
-  // width: rem(151);
   margin-top: rem(9);
   aspect-ratio: 151 / 117;
 }

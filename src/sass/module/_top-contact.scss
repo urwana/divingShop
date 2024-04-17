@@ -30,10 +30,13 @@
   width: rem(109);
   height: rem(50);
   @include mq('md') {
-    right: - rem(125);
+    right: 0;
     top: - rem(40);
     width: rem(301);
     height: rem(138);
+  }
+  @include mq('inner') {
+    right: - rem(125);
   }
 }
 

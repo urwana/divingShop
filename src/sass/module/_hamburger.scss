@@ -6,7 +6,7 @@ $drawer-color: $white;
 
 .hamburger {
   z-index: 9999;
-  @include mq("md") {
+  @include mq("inner") {
     display: none;
   }
 }

@@ -71,13 +71,13 @@ jQuery(function($) {
 const windowSize = 768;
 const mediaQueryList = window.matchMedia(`(min-width: ${windowSize}px)`);
 
-// mediaQueryList.addEventListener("change", (event) => {
-//   if (event.matches) {
-//     console.log(`${windowSize}pxより大きいです`);
-//   } else {
-//     console.log(`${windowSize}px以下です`);
-//   }
-// });
+mediaQueryList.addEventListener("change", (event) => {
+  if (event.matches) {
+    console.log(`${windowSize}pxより大きいです`);
+  } else {
+    console.log(`${windowSize}px以下です`);
+  }
+});
 
 const swiper = new Swiper(".swiper", {
   speed: 800,

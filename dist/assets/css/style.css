@@ -1337,30 +1337,6 @@ html {
 	text-align: center;
 }
 
-.hamburger {
-	display: none;
-}
-
-.header {
-	height: 5.625rem;
-}
-
-.header__inner {
-	padding: 0 2.5rem;
-}
-
-.header__logo {
-	width: 8.625rem;
-}
-
-.header__navigation-sp__inner {
-	display: none;
-}
-
-.header__navigation-pc {
-	display: block;
-}
-
 .inner {
 	max-width: 1120px;
 	padding-left: 20px;
@@ -1496,7 +1472,7 @@ html {
 	content: "";
 	height: 11.3125rem;
 	position: absolute;
-	right: -80px;
+	right: 0px;
 	width: 12.125rem;
 	z-index: 2;
 }
@@ -1580,7 +1556,7 @@ html {
 
 .top-contact__inner::after {
 	height: 8.625rem;
-	right: -7.8125rem;
+	right: 0;
 	top: -2.5rem;
 	width: 18.8125rem;
 }
@@ -1697,7 +1673,7 @@ html {
 	background-repeat: no-repeat;
 	content: "";
 	height: 8.625rem;
-	left: -58px;
+	left: 0;
 	position: absolute;
 	top: -118px;
 	width: 18.8125rem;
@@ -1712,7 +1688,7 @@ html {
 	content: "";
 	height: 11.3125rem;
 	position: absolute;
-	right: -43px;
+	right: 0;
 	width: 12.125rem;
 	z-index: 2;
 }
@@ -1720,12 +1696,12 @@ html {
 .top-voice__cards {
 	align-items: center;
 	display: flex;
+	gap: 2.5rem;
 	justify-content: flex-start;
 	margin-top: 1.875rem;
 }
 
 .top-voice__item:not(:first-child) {
-	margin-left: 2.5rem;
 	margin-top: 0;
 }
 
@@ -1739,8 +1715,8 @@ html {
 
 .voice-card__head {
 	align-items: end;
-	gap: 1rem;
-	grid-template-columns: 17.25rem 11.25rem;
+	gap: 3.3%;
+	grid-template-columns: 58.47% 38.26%;
 }
 
 .voice-card__person {
@@ -1754,6 +1730,54 @@ html {
 
 .voice-card__title {
 	margin-top: 0.25rem;
+}
+
+}
+
+@media screen and (min-width: 1079px) {
+
+.hamburger {
+	display: none;
+}
+
+.header {
+	height: 5.625rem;
+}
+
+.header__inner {
+	padding: 0 2.5rem;
+}
+
+.header__logo {
+	width: 8.625rem;
+}
+
+.header__navigation-sp {
+	display: none;
+}
+
+.header__navigation-sp__inner {
+	display: none;
+}
+
+.header__navigation-pc {
+	display: block;
+}
+
+.top-about__inner::after {
+	right: -80px;
+}
+
+.top-contact__inner::after {
+	right: -7.8125rem;
+}
+
+.top-voice__inner::before {
+	left: -58px;
+}
+
+.top-voice__inner::after {
+	right: -43px;
 }
 
 }
