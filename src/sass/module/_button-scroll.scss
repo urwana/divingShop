@@ -1,13 +1,17 @@
 @use 'global' as *;
 
 %button-scroll-common {
-  width: rem(80);
-  height: rem(80);
+  width: rem(48);
+  height: rem(48);
   border-radius: 50%;
   background: $white;
   border: solid 1px $green-accent;
   position: relative;
   cursor: pointer;
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+  }
 }
 
 %button-scroll-common::before {
@@ -24,11 +28,15 @@
   position: absolute;
   content: "";
   display: block;
-  width: rem(40);
+  width: rem(28);
   height: rem(1);
   top: 50%;
-  left: calc((100% - 40px) / 2);
+  left: calc((100% - 28px) / 2);
   background-color: $green-accent;
+  @include mq('md') {
+    width: rem(40);
+    left: calc((100% - 40px) / 2);
+  }
 }
 
 .button-scroll {
@@ -38,8 +46,11 @@
 
 .button-scroll::before {
   top: calc(50% - 3px);
-  left: calc((100% - 40px) / 2);
+  left: calc((100% - 28px) / 2);
   transform: rotate(-30deg);
+  @include mq('md') {
+    left: calc((100% - 40px) / 2);
+  }
 }
 
 .button-scroll--left {

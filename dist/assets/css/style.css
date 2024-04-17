@@ -200,9 +200,9 @@ a {
 	border: solid 1px #408F95;
 	border-radius: 50%;
 	cursor: pointer;
-	height: 5rem;
+	height: 3rem;
 	position: relative;
-	width: 5rem;
+	width: 3rem;
 }
 
 .button-scroll--right::before,
@@ -224,10 +224,10 @@ a {
 	content: "";
 	display: block;
 	height: 0.0625rem;
-	left: calc((100% - 40px) / 2);
+	left: calc((100% - 28px) / 2);
 	position: absolute;
 	top: 50%;
-	width: 2.5rem;
+	width: 1.75rem;
 }
 
 .button-scroll {
@@ -235,7 +235,7 @@ a {
 }
 
 .button-scroll::before {
-	left: calc((100% - 40px) / 2);
+	left: calc((100% - 28px) / 2);
 	top: calc(50% - 3px);
 	transform: rotate(-30deg);
 }
@@ -429,7 +429,7 @@ a {
 .footer {
 	background-color: #408F95;
 	color: #fff;
-	margin-top: 6.25rem;
+	margin-top: 5rem;
 }
 
 .footer__inner {
@@ -783,6 +783,7 @@ a {
 	bottom: 20px;
 	position: fixed;
 	right: 20px;
+	z-index: 99;
 }
 
 .section-title-container {
@@ -1243,6 +1244,24 @@ html {
 	margin-top: 1rem;
 }
 
+.button-scroll--right,
+.button-scroll--left,
+.button-scroll {
+	height: 5rem;
+	width: 5rem;
+}
+
+.button-scroll--right::after,
+.button-scroll--left::after,
+.button-scroll::after {
+	left: calc((100% - 40px) / 2);
+	width: 2.5rem;
+}
+
+.button-scroll::before {
+	left: calc((100% - 40px) / 2);
+}
+
 .campaign-card {
 	width: 20.8125rem;
 }
@@ -1277,6 +1296,10 @@ html {
 	font-weight: 300;
 	line-height: 1.5;
 	text-shadow: none;
+}
+
+.footer {
+	margin-top: 8.75rem;
 }
 
 .footer__inner {
