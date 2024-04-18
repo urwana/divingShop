@@ -1869,10 +1869,6 @@ html {
 	top: -13.8125rem;
 }
 
-.top-contact__inner::after {
-	right: -7.8125rem;
-}
-
 .top-price__inner::after {
 	bottom: 2.5rem;
 	left: -3.75rem;
@@ -1910,6 +1906,14 @@ html {
 
 .navigation-responsive__column { /* float + margin 利用 */
 	float: left;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+.top-contact__inner::after {
+	right: -7.8125rem;
 }
 
 }

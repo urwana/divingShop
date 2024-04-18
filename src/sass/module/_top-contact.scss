@@ -35,7 +35,7 @@
     width: rem(301);
     height: rem(138);
   }
-  @include mq('inner') {
+  @media screen and (min-width: 1440px){
     right: - rem(125);
   }
 }

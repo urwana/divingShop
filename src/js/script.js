@@ -72,7 +72,6 @@ jQuery(function($) {
   // const windowSize = 768;
   // const mediaQueryList = window.matchMedia(`(min-width: ${windowSize}px)`);
   // mediaQueryList.addEventListener("change", (event) => {
-  //   console.log("true");
   //   if (event.matches) {
   //     if ($(".js-drawer-menu").hasClass("is-open")) {
   //       $(".js-drawer-menu").removeClass("is-open");
@@ -89,7 +88,6 @@ jQuery(function($) {
     const windowWidth = window.innerWidth;
     if (windowWidth >= 665 && windowWidth <= 1400) {
       // 768pxから1100pxの範囲内の処理
-      console.log("true");
       if ($(".js-drawer-menu").hasClass("is-open")) {
         $(".js-drawer-menu").removeClass("is-open");
       }
