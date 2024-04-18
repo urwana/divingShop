@@ -1,16 +1,16 @@
 @use 'global' as *;
 
 %button-scroll-common {
-  width: rem(48);
-  height: rem(48);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: $white;
   border: solid 1px $green-accent;
   position: relative;
   cursor: pointer;
-  @include mq("md") {
-    width: rem(80);
-    height: rem(80);
+  @include mq('inner') {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -18,8 +18,8 @@
   position: absolute;
   content: "";
   display: block;
-  width: rem(10);
-  height: rem(1);
+  width: 10px;
+  height: 1px;
   top: 50%;
   background-color: $green-accent;
 }
@@ -28,12 +28,12 @@
   position: absolute;
   content: "";
   display: block;
-  width: rem(28);
-  height: rem(1);
+  width: 28px;
+  height: 1px;
   top: 50%;
   left: calc((100% - 28px) / 2);
   background-color: $green-accent;
-  @include mq('md') {
+  @include mq('inner') {
     width: rem(40);
     left: calc((100% - 40px) / 2);
   }
@@ -48,7 +48,7 @@
   top: calc(50% - 3px);
   left: calc((100% - 28px) / 2);
   transform: rotate(-30deg);
-  @include mq('md') {
+  @include mq('inner') {
     left: calc((100% - 40px) / 2);
   }
 }
@@ -59,13 +59,16 @@
 
 .button-scroll--left::before {
   top: calc(50% - 3px);
-  right: calc((100% - 40px) / 2);
+  right: calc((100% - 28px) / 2);
   transform: rotate(30deg);
+  @include mq('inner') {
+    right: calc((100% - 40px) / 2);
+  }
 }
 
 // TODO: 見直す
 .swiper-campaign-button-next .button-scroll--left::after {
-  @include mq('md') {
+  @include mq('inner') {
     left: calc((100% - 40px) / 2);
   }
 }
@@ -76,6 +79,9 @@
 
 .button-scroll--right::before {
   top: calc(50% - 3px);
-  left: calc((100% - 40px) / 2);
+  left: calc((100% - 28px) / 2);
   transform: rotate(-30deg);
+  @include mq('inner') {
+    left: calc((100% - 40px) / 2);
+  }
 }

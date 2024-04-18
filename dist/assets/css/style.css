@@ -200,9 +200,9 @@ a {
 	border: solid 1px #408F95;
 	border-radius: 50%;
 	cursor: pointer;
-	height: 3rem;
+	height: 48px;
 	position: relative;
-	width: 3rem;
+	width: 48px;
 }
 
 .button-scroll--right::before,
@@ -211,10 +211,10 @@ a {
 	background-color: #408F95;
 	content: "";
 	display: block;
-	height: 0.0625rem;
+	height: 1px;
 	position: absolute;
 	top: 50%;
-	width: 0.625rem;
+	width: 10px;
 }
 
 .button-scroll--right::after,
@@ -223,11 +223,11 @@ a {
 	background-color: #408F95;
 	content: "";
 	display: block;
-	height: 0.0625rem;
+	height: 1px;
 	left: calc((100% - 28px) / 2);
 	position: absolute;
 	top: 50%;
-	width: 1.75rem;
+	width: 28px;
 }
 
 .button-scroll {
@@ -241,13 +241,13 @@ a {
 }
 
 .button-scroll--left::before {
-	right: calc((100% - 40px) / 2);
+	right: calc((100% - 28px) / 2);
 	top: calc(50% - 3px);
 	transform: rotate(30deg);
 }
 
 .button-scroll--right::before {
-	left: calc((100% - 40px) / 2);
+	left: calc((100% - 28px) / 2);
 	top: calc(50% - 3px);
 	transform: rotate(-30deg);
 }
@@ -1256,28 +1256,6 @@ html {
 	margin-top: 1rem;
 }
 
-.button-scroll--right,
-.button-scroll--left,
-.button-scroll {
-	height: 5rem;
-	width: 5rem;
-}
-
-.button-scroll--right::after,
-.button-scroll--left::after,
-.button-scroll::after {
-	left: calc((100% - 40px) / 2);
-	width: 2.5rem;
-}
-
-.button-scroll::before {
-	left: calc((100% - 40px) / 2);
-}
-
-.swiper-campaign-button-next .button-scroll--left::after {
-	left: calc((100% - 40px) / 2);
-}
-
 .campaign-card {
 	width: 20.8125rem;
 }
@@ -1821,6 +1799,36 @@ html {
 }
 
 @media screen and (min-width: 1177px) {
+
+.button-scroll--right,
+.button-scroll--left,
+.button-scroll {
+	height: 80px;
+	width: 80px;
+}
+
+.button-scroll--right::after,
+.button-scroll--left::after,
+.button-scroll::after {
+	left: calc((100% - 40px) / 2);
+	width: 2.5rem;
+}
+
+.button-scroll::before {
+	left: calc((100% - 40px) / 2);
+}
+
+.button-scroll--left::before {
+	right: calc((100% - 40px) / 2);
+}
+
+.swiper-campaign-button-next .button-scroll--left::after {
+	left: calc((100% - 40px) / 2);
+}
+
+.button-scroll--right::before {
+	left: calc((100% - 40px) / 2);
+}
 
 .hamburger {
 	display: none;
