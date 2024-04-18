@@ -7,12 +7,23 @@
   height: rem(452);
   @include mq("md") {
     height: rem(202);
+    display: flex;
+    // flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+  @media screen and (min-width: 1310px) {
+    /* float + margin 利用 */
     display: block;
   }
 }
 
 .navigation-responsive::after {
   @include mq("md") {
+  }
+  @media screen and (min-width: 1310px) {
+    /* float + margin 利用 */
     content: "";
     display: block;
     clear: both;
@@ -20,7 +31,8 @@
 }
 
 .navigation-responsive__column {
-  @include mq("md") {
+  @media screen and (min-width: 1310px) {
+    /* float + margin 利用 */
     float: left;
   }
 }
@@ -45,9 +57,13 @@
 
 .navigation-responsive__column:not(:first-child) {
   @include mq("md") {
+
+  }
+  @media screen and (min-width: 1300px) {
+    /* float + margin 利用 */
     //margin-left: rem(120);
     margin-left: 11.111%;
-
+    // margin-left: 8.33vw;
   }
 }
 
@@ -81,7 +97,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -rem(24);
+  left: - 24px;
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish.png");

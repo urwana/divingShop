@@ -719,7 +719,7 @@ a {
 	background-size: cover;
 	content: "";
 	height: 1.125rem;
-	left: -rem(24);
+	left: -24px;
 	position: absolute;
 	top: 0;
 	width: 1.125rem;
@@ -1376,18 +1376,10 @@ html {
 }
 
 .navigation-responsive {
-	display: block;
+	align-items: flex-start;
+	display: flex;
 	height: 12.625rem;
-}
-
-.navigation-responsive::after {
-	clear: both;
-	content: "";
-	display: block;
-}
-
-.navigation-responsive__column {
-	float: left;
+	justify-content: flex-start;
 }
 
 .navigation-responsive__column:nth-of-type(2) {
@@ -1396,10 +1388,6 @@ html {
 
 .navigation-responsive__column:nth-of-type(4) {
 	margin-top: 0;
-}
-
-.navigation-responsive__column:not(:first-child) {
-	margin-left: 11.111%;
 }
 
 .navigation-responsive__item-group:nth-of-type(7) {
@@ -1872,6 +1860,32 @@ html {
 
 .top-voice__inner::after {
 	right: -43px;
+}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+.navigation-responsive__column:not(:first-child) { /* float + margin 利用 */
+	margin-left: 11.111%;
+}
+
+}
+
+@media screen and (min-width: 1310px) {
+
+.navigation-responsive { /* float + margin 利用 */
+	display: block;
+}
+
+.navigation-responsive::after {
+	clear: both; /* float + margin 利用 */
+	content: "";
+	display: block;
+}
+
+.navigation-responsive__column { /* float + margin 利用 */
+	float: left;
 }
 
 }
