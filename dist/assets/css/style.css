@@ -1275,7 +1275,7 @@ html {
 }
 
 .swiper-campaign-button-next .button-scroll--left::after {
-	left: calc((100% - 20px) / 2);
+	left: calc((100% - 40px) / 2);
 }
 
 .campaign-card {
