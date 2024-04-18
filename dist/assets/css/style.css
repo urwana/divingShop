@@ -823,7 +823,7 @@ a {
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section-title-container--contact .section-subtitle--contact {
+.section-title-container--contact .section-title-jpn--contact {
 	line-height: 1;
 	margin-top: -0.25rem;
 }
@@ -842,7 +842,7 @@ a {
 	color: #0D2936;
 }
 
-.section-subtitle {
+.section-title-jpn {
 	color: #408F95;
 	font-family: "Noto Sans JP";
 	font-size: 0.75rem;
@@ -851,7 +851,7 @@ a {
 	margin-top: 0.25rem;
 }
 
-.section-subtitle--blog {
+.section-title-jpn--blog {
 	color: #408F95;
 }
 
@@ -1426,7 +1426,7 @@ html {
 	text-shadow: none;
 }
 
-.section-title-container--contact .section-subtitle--contact {
+.section-title-container--contact .section-title-jpn--contact {
 	margin-top: 0;
 }
 
@@ -1438,11 +1438,11 @@ html {
 	color: #fff;
 }
 
-.section-subtitle {
+.section-title-jpn {
 	margin-top: 0.5rem;
 }
 
-.section-subtitle--blog {
+.section-title-jpn--blog {
 	color: #fff;
 }
 

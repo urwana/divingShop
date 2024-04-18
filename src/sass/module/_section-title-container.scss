@@ -30,7 +30,7 @@
   }
 }
 
-.section-title-container--contact .section-subtitle--contact {
+.section-title-container--contact .section-title-jpn--contact {
   margin-top: - rem(4);
   line-height: 1;
   @include mq("md") {
@@ -59,7 +59,7 @@
   }
 }
 
-.section-subtitle {
+.section-title-jpn {
   margin-top: rem(4);
   font-size: rem(12);
   line-height: calc(18 / 12);
@@ -71,7 +71,7 @@
   }
 }
 
-.section-subtitle--blog {
+.section-title-jpn--blog {
   color:$green-accent;
   @include mq('md') {
     color: $white;
