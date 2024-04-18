@@ -55,19 +55,42 @@ jQuery(function ($) {
   });
 
   // ドロワーメニュー スマホ横向き対策
-  var windowSize = 768;
-  var mediaQueryList = window.matchMedia("(min-width: ".concat(windowSize, "px)"));
-  mediaQueryList.addEventListener("change", function (event) {
-    if (event.matches) {
+  // const windowSize = 768;
+  // const mediaQueryList = window.matchMedia(`(min-width: ${windowSize}px)`);
+  // mediaQueryList.addEventListener("change", (event) => {
+  //   console.log("true");
+  //   if (event.matches) {
+  //     if ($(".js-drawer-menu").hasClass("is-open")) {
+  //       $(".js-drawer-menu").removeClass("is-open");
+  //     }
+  //     if ($(".js-header__inner").hasClass("is-open")) {
+  //       $(".js-header__inner").removeClass("is-open");
+  //     }
+  //     $("body").css("overscroll-behavior", "");
+  //   }
+  // });
+
+  // ドロワーメニュー スマホ横向き対策
+  var checkWindowSize = function checkWindowSize() {
+    var windowWidth = window.innerWidth;
+    if (windowWidth >= 665 && windowWidth <= 1400) {
+      // 768pxから1100pxの範囲内の処理
+      console.log("true");
       if ($(".js-drawer-menu").hasClass("is-open")) {
         $(".js-drawer-menu").removeClass("is-open");
       }
       if ($(".js-header__inner").hasClass("is-open")) {
         $(".js-header__inner").removeClass("is-open");
       }
+      if ($(".js-hamburger").hasClass("is-open")) {
+        $(".js-hamburger").removeClass("is-open");
+      }
       $("body").css("overscroll-behavior", "");
     }
-  });
+  };
+
+  // ウィンドウサイズが変更されたときに実行
+  window.addEventListener("resize", checkWindowSize);
 
   // kv swiper
   var swiper = new Swiper(".swiper", {
