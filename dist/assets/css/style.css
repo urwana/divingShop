@@ -1337,6 +1337,7 @@ html {
 }
 
 .footer__copy {
+	margin-left: 0;
 	margin-top: 4.5rem;
 	width: 100%;
 }
