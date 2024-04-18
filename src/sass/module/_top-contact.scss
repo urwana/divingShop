@@ -71,7 +71,6 @@
   position: relative;
   @include mq("md") {
     padding-bottom: rem(6.5);
-
   }
 }
 
@@ -124,6 +123,7 @@
     height: rem(148);
   }
 }
+
 .top-contact__map::before {
   content: '';
   display: block;

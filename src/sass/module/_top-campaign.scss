@@ -8,17 +8,11 @@
   }
 }
 
-.top-campaign__inner {
-}
-
 .top-campaign__swiper {
   margin-top: rem(28);
   @include mq("md") {
     margin-top: rem(40);
   }
-}
-
-.top-campaign__card {
 }
 
 .top-campaign__button {

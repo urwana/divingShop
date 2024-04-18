@@ -1,11 +1,5 @@
 @use 'global' as *;
 
-.header__navigation-sp {
-}
-
-.navigation-sp {
-}
-
 .navigation-sp__item-group:not(:first-child) {
   margin-top: rem(40);
 }
@@ -35,7 +29,4 @@
   background-image: url("../images/common/starfish.png");
   background-size: cover;
   background-position: center;
-}
-
-.navigation-sp__label {
 }

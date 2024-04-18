@@ -27,7 +27,6 @@
 }
 
 .top-information__image {
-
   aspect-ratio: 540 / 356;
   @include mq('md') {
     width: rem(540);
