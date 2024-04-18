@@ -1,8 +1,6 @@
 @use 'global' as *;
 
 .campaign-card {
-  //width: rem(280);
-  //width: 74.67%;
   width: 100%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   @include mq('md') {
@@ -22,7 +20,7 @@
 
 .campaign-card__image img{
   width: 100%;
-  // height: rem(223); // TODO: この方法で良いか確認
+  // TODO: この方法で良いか確認
   height: 100%;
   object-fit: cover;
 }
@@ -32,10 +30,6 @@
   @include mq('md') {
     padding: rem(24) rem(16) rem(40) rem(16);
   }
-}
-
-.campaign-card__label {
-  //margin-top: rem(24);
 }
 
 .campaign-card__title {

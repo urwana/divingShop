@@ -65,7 +65,6 @@
 
 // TODO: 見直す
 .swiper-campaign-button-next .button-scroll--left::after {
-  //right: calc((100% - 28px) / 2);
   @include mq('md') {
     left: calc((100% - 20px) / 2);
   }

@@ -2,15 +2,10 @@
 
 .swiper-campaign {
   width: 100%;
-  //height:rem(366);
-  //aspect-ratio: 375 / 667;
   position: relative;
   z-index: 1;
-  //overflow: hidden;
   @include mq('md') {
     height:rem(445);
-    // aspect-ratio: 1080 / 420;
-    //margin-left: calc((100% - 1080px) / 2);
   }
 }
 
@@ -30,7 +25,7 @@
   @include mq('md') {
     top:-74px;
     right:160px;
-   }
+  }
   @include mq('inner') {
     top:-104px;
     right:160px;
