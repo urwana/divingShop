@@ -16,6 +16,7 @@
 
 .navigation-pc__item a::after {
   content: "";
+  display: block;
   position: absolute;
   bottom: -4px;
   left: 0;

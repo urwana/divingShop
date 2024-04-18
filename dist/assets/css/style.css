@@ -644,6 +644,7 @@ a {
 	background: #ffffff;
 	bottom: -4px;
 	content: "";
+	display: block;
 	height: 1px;
 	left: 0;
 	position: absolute;
