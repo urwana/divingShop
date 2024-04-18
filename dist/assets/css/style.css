@@ -1599,7 +1599,7 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	max-width: 67.5rem;
-	padding: 5rem 7rem 5rem 3.125rem;
+	padding: 5rem 0 5rem 3.125rem;
 }
 
 .top-contact__inner::after {
