@@ -2,33 +2,29 @@
 
 .top-blog {
   margin-top: rem(80);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: 0;
     padding-top: rem(100);
     background-image: url(../images/top/bg-blog.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+    background-position: center top;
+    background-size:contain;
   }
 }
 
-.top-blog__inner {
-
-}
-
-.top-blog__cards{
+.top-blog__cards {
   margin-top: rem(28);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
     display: flex;
     justify-content: flex-start;
-    gap:rem(40);
+    gap: rem(40);
   }
 }
 
-.top-blog__item:not(:first-child){
+.top-blog__item:not(:first-child) {
   margin-top: rem(38);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: 0;
   }
 }
@@ -36,7 +32,7 @@
 .top-blog__button {
   text-align: center;
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
   }
 }
