@@ -1502,6 +1502,7 @@ html {
 	background-image: url(../images/top/coral.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	bottom: -88px;
 	content: "";
 	height: 11.3125rem;
@@ -1739,6 +1740,7 @@ html {
 	background-image: url(../images/top/bg-fish-r.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	content: "";
 	height: 8.625rem;
 	left: 0;
@@ -1752,6 +1754,7 @@ html {
 	background-image: url(../images/top/seahorse.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: contain;
 	bottom: -76px;
 	content: "";
 	height: 11.3125rem;

@@ -33,6 +33,7 @@
     background-image: url(../images/top/coral.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     z-index: 2;
   }
   @include mq('inner') {
