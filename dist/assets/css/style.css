@@ -339,7 +339,7 @@ a {
 
 .campaign-card {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-	width: 17.5rem;
+	width: 100%;
 }
 
 .campaign-card__image {
@@ -885,7 +885,6 @@ a {
 }
 
 .swiper-campaign {
-	height: 22.875rem;
 	position: relative;
 	width: 100%;
 	z-index: 1;
@@ -1165,7 +1164,13 @@ a {
 }
 
 .top-price__image {
+	aspect-ratio: 345/227;
 	margin-top: 1.75rem;
+}
+
+.top-price__image img {
+	height: 100%;
+	width: 100%;
 }
 
 .top-price__button {
@@ -1712,6 +1717,7 @@ html {
 }
 
 .top-price__image {
+	aspect-ratio: 492/746;
 	margin-left: 5.8125rem;
 	margin-top: 0;
 	width: 30.75rem;

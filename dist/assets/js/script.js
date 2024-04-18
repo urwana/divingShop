@@ -81,10 +81,14 @@ jQuery(function ($) {
   // キャンペーンセクション swiper
   var swiperCampaign = new Swiper(".swiper-campaign", {
     loop: true,
-    slidesPerView: 1.25,
+    slidesPerView: 1.215,
     spaceBetween: 24,
     breakpoints: _defineProperty({
-      // when window width is >= 320px
+      // when window width is >= 500px
+      500: {
+        slidesPerView: 1.8,
+        spaceBetween: 40
+      },
       767: {
         slidesPerView: 3,
         spaceBetween: 40
