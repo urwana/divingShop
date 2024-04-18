@@ -895,16 +895,6 @@ a {
 	z-index: 2;
 }
 
-.swiper-campaign .swiper-campaign-button-prev {
-	right: 160px;
-	top: -104px;
-}
-
-.swiper-campaign .swiper-campaign-button-next {
-	right: 0;
-	top: -104px;
-}
-
 .swiper {
 	aspect-ratio: 375/667;
 	position: relative;
@@ -1283,6 +1273,10 @@ html {
 	left: calc((100% - 40px) / 2);
 }
 
+.swiper-campaign-button-next .button-scroll--left::after {
+	left: calc((100% - 20px) / 2);
+}
+
 .campaign-card {
 	width: 20.8125rem;
 }
@@ -1474,6 +1468,16 @@ html {
 	right: 0;
 	top: 0;
 	width: 5rem;
+}
+
+.swiper-campaign .swiper-campaign-button-prev {
+	right: 160px;
+	top: -74px;
+}
+
+.swiper-campaign .swiper-campaign-button-next {
+	right: 0;
+	top: -74px;
 }
 
 .swiper {
@@ -1840,6 +1844,16 @@ html {
 
 .header__navigation-pc {
 	display: block;
+}
+
+.swiper-campaign .swiper-campaign-button-prev {
+	right: 160px;
+	top: -104px;
+}
+
+.swiper-campaign .swiper-campaign-button-next {
+	right: 0;
+	top: -104px;
 }
 
 .top-about__inner::after {

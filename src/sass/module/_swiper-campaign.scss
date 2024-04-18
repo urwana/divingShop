@@ -27,11 +27,23 @@
 }
 
 .swiper-campaign .swiper-campaign-button-prev{
-  top:-104px;
-  right:160px;
+  @include mq('md') {
+    top:-74px;
+    right:160px;
+   }
+  @include mq('inner') {
+    top:-104px;
+    right:160px;
+  }
 }
 
 .swiper-campaign .swiper-campaign-button-next{
-  top:-104px;
-  right:0;
+  @include mq('md') {
+    top:-74px;
+    right:0;
+  }
+  @include mq('inner') {
+    top:-104px;
+    right:0;
+    }
 }
