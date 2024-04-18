@@ -976,10 +976,17 @@ a {
 
 .top-blog {
 	margin-top: 5rem;
+	position: relative;
+	z-index: 1;
+}
+
+.top-blog::before {
+	z-index: -1;
 }
 
 .top-blog__cards {
 	margin-top: 1.75rem;
+	position: relative;
 }
 
 .top-blog__item:not(:first-child) {
@@ -1146,6 +1153,7 @@ a {
 .top-price__inner {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
+	position: relative;
 }
 
 .price-list__group:not(:first-child) {
@@ -1536,12 +1544,21 @@ html {
 }
 
 .top-blog {
+	margin-top: 0;
+	padding-top: 6.25rem;
+}
+
+.top-blog::before {
 	background-image: url(../images/top/bg-blog.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: contain;
-	margin-top: 0;
-	padding-top: 6.25rem;
+	background-size: cover;
+	content: "";
+	height: 31.25rem;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .top-blog__cards {
@@ -1549,6 +1566,20 @@ html {
 	gap: 2.5rem;
 	justify-content: flex-start;
 	margin-top: 5rem;
+}
+
+.top-blog__cards::after {
+	background-image: url(../images/top/blog-bg-fish.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 12.5625rem;
+	left: 0;
+	position: absolute;
+	top: -13.8125rem;
+	width: 27.3125rem;
+	z-index: 2;
 }
 
 .top-blog__item:not(:first-child) {
@@ -1659,15 +1690,25 @@ html {
 }
 
 .top-price {
-	background-image: url(../images/top/bg-fish.svg);
-	background-position: left 6.94% bottom 60px;
-	background-repeat: no-repeat;
-	background-size: 27.3125rem;
 	margin-top: 8.75rem;
 }
 
 .top-price__inner {
 	padding-top: 6.0625rem;
+}
+
+.top-price__inner::after {
+	background-image: url(../images/top/bg-fish.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 2.5rem;
+	content: "";
+	height: 12.5625rem;
+	left: 0;
+	position: absolute;
+	width: 27.3125rem;
+	z-index: 2;
 }
 
 .top-price__contents {
@@ -1811,8 +1852,18 @@ html {
 	right: -80px;
 }
 
+.top-blog__cards::after {
+	left: -6.25rem;
+	top: -13.8125rem;
+}
+
 .top-contact__inner::after {
 	right: -7.8125rem;
+}
+
+.top-price__inner::after {
+	bottom: 2.5rem;
+	left: -3.75rem;
 }
 
 .top-voice__inner::before {
