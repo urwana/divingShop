@@ -34,7 +34,7 @@ $mediaquerys: (
     lg: 1023,
     md: 767,
     sm: 600,
-    inner: 1220, // top 画面 装飾画像を含む最大 inner 幅
+    inner: 1177, // top 画面 装飾画像を含む最大 inner 幅
   );
   $mediaquerys: (
     sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",

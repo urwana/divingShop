@@ -2,7 +2,7 @@
 
 .top-voice {
   margin-top: rem(80);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(140);
   }
 }
@@ -16,7 +16,8 @@
     position: absolute;
     content: "";
     top: -118px;
-    left: 0;
+    // inner パディング分
+    left: 20px;
     width: rem(301);
     height: rem(138);
     background-image: url(../images/top/bg-fish-r.svg);
@@ -25,7 +26,7 @@
     background-size: cover;
     z-index: 2;
   }
-  @include mq('inner') {
+  @include mq("inner") {
     left: -58px;
   }
 }
@@ -34,7 +35,8 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    right: 0;
+    // inner パディング分
+    right: 20px;
     bottom: -76px;
     width: rem(194);
     height: rem(181);
@@ -44,7 +46,7 @@
     background-size: contain;
     z-index: 2;
   }
-  @include mq('inner') {
+  @include mq("inner") {
     right: -43px;
   }
 }
@@ -56,7 +58,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap:rem(40);
+    gap: rem(40);
   }
 }
 
