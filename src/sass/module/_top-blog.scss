@@ -32,7 +32,7 @@
   @include mq("md") {
     margin-top: rem(80);
     display: flex;
-    justify-content: flex-start;
+    justify-content: stretch;
     gap: rem(40);
   }
 }
@@ -46,7 +46,7 @@
     left: 0;
     width: rem(437);
     height: rem(201);
-    background-image: url(../images/top/blog-bg-fish.svg);
+    background-image: url(../images/top/bg-blog-fish.svg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size:cover;
