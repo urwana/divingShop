@@ -638,6 +638,7 @@ a {
 }
 
 .navigation-pc__item a {
+	display: block;
 	position: relative;
 }
 
