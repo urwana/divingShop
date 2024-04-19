@@ -46,7 +46,7 @@
     background-size: contain;
     z-index: 2;
   }
-  @include mq("inner") {
+  @media screen and (min-width: 1440px){
     right: -43px;
   }
 }

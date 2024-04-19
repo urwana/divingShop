@@ -1868,10 +1868,6 @@ html {
 	top: -104px;
 }
 
-.top-about__inner::after {
-	right: -80px;
-}
-
 .top-blog__cards::after {
 	left: -6.25rem;
 	top: -13.8125rem;
@@ -1884,10 +1880,6 @@ html {
 
 .top-voice__inner::before {
 	left: -58px;
-}
-
-.top-voice__inner::after {
-	right: -43px;
 }
 
 }
@@ -1920,8 +1912,16 @@ html {
 
 @media screen and (min-width: 1440px) {
 
+.top-about__inner::after {
+	right: -80px;
+}
+
 .top-contact__inner::after {
 	right: -7.8125rem;
+}
+
+.top-voice__inner::after {
+	right: -43px;
 }
 
 }
