@@ -3,6 +3,7 @@
 // NOTE: 分かりやすくするため敢えて js- に style を付与する。
 .js-colorAnimation {
   position: relative;
+  z-index: 1;
 }
 
 .js-colorAnimation .color-mask{

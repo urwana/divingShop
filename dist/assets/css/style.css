@@ -381,6 +381,7 @@ a {
 
 .js-colorAnimation {
 	position: relative;
+	z-index: 1;
 }
 
 .js-colorAnimation .color-mask {
@@ -798,7 +799,7 @@ a {
 	bottom: 20px;
 	position: fixed;
 	right: 20px;
-	z-index: 99;
+	z-index: 1;
 }
 
 .section-title-container {
