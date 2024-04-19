@@ -3,38 +3,9 @@
 .swiper {
   width: 100%;
   position: relative;
+  z-index: 0;
   aspect-ratio: 375 / 667;
   @include mq('md') {
     aspect-ratio: 1440 / 768;
   }
-}
-
-.swiper__title-container{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  color:$white;
-  z-index: 2;
-  width: 100%;
-  text-align: center;
-}
-
-.swiper__title{
-  margin-top: rem(8);
-  font-family: $price-font;
-  font-size: rem(40);
-  font-weight: $regular;
-  text-align: center;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  @include mq('md') {
-    font-size: rem(80);
-  }
-}
-
-.swiper__subtitle{
-  margin-top: rem(6);
-  font-family: $english-font;
-  font-size: rem(20);
 }
