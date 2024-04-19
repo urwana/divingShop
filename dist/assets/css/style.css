@@ -1388,7 +1388,7 @@ html {
 }
 
 .price-list__item {
-	margin-top: 1rem;
+	margin-top: 0.875rem;
 }
 
 .price-list__item dt,
@@ -1582,7 +1582,8 @@ html {
 }
 
 .top-contact {
-	margin-top: 10rem;
+	margin-bottom: 10rem;
+	margin-top: 8.75rem;
 }
 
 .top-contact__inner {
@@ -1673,6 +1674,7 @@ html {
 }
 
 .top-price__inner {
+	padding-bottom: 6.25rem;
 	padding-top: 6.0625rem;
 }
 
@@ -1876,7 +1878,7 @@ html {
 }
 
 .top-price__inner::after {
-	bottom: 2.5rem;
+	bottom: 3.75rem;
 	left: -3.75rem;
 }
 
