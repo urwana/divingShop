@@ -830,6 +830,10 @@ a {
 	line-height: 1.1;
 }
 
+.price-list__item dd {
+	margin-left: 1rem;
+}
+
 .scroll-to-top {
 	bottom: 20px;
 	position: fixed;
