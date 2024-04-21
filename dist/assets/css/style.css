@@ -609,6 +609,11 @@ a {
 	width: 100%;
 }
 
+.key-visual {
+	height: 100vh;
+	width: auto;
+}
+
 .label {
 	border: solid 1px #408F95;
 	color: #408F95;
@@ -937,9 +942,23 @@ a {
 }
 
 .swiper {
-	aspect-ratio: 375/667;
+	height: inherit;
 	position: relative;
 	width: 100%;
+}
+
+.swiper-wrapper {
+	height: inherit;
+}
+
+.swiper-slide {
+	height: inherit;
+}
+
+.swiper-slide img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
 }
 
 .swiper__title-container {
@@ -1516,10 +1535,6 @@ html {
 .swiper-campaign .swiper-campaign-button-next {
 	right: 0;
 	top: -74px;
-}
-
-.swiper {
-	aspect-ratio: 1440/768;
 }
 
 .swiper__title {
