@@ -1370,7 +1370,7 @@ html {
 	content: "";
 	height: 11.3125rem;
 	position: absolute;
-	right: 20px;
+	right: calc(50% - min(48vw, 39.8125rem));
 	width: 12.125rem;
 	z-index: 2;
 }
@@ -1636,10 +1636,6 @@ html {
 
 .top-voice__button {
 	margin-top: 5rem;
-}
-
-.blog-card {
-	width: 20.8125rem;
 }
 
 .blog-card__content {
@@ -1998,10 +1994,6 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
-
-.top-about__inner::after {
-	right: -80px;
-}
 
 .top-contact__inner::after {
 	right: -7.8125rem;
