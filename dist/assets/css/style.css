@@ -935,6 +935,10 @@ a {
 	z-index: 1;
 }
 
+.swiper-slide {
+	height: auto;
+}
+
 .swiper-campaign-button-prev,
 .swiper-campaign-button-next {
 	z-index: 2;
@@ -1053,6 +1057,10 @@ a {
 
 .top-campaign__swiper {
 	margin-top: 1.75rem;
+}
+
+.top-campaign__card {
+	height: 100%;
 }
 
 .top-campaign__button {
@@ -1507,10 +1515,6 @@ html {
 
 .sns-icons .sns-icons__link--twitter {
 	width: 1.125rem;
-}
-
-.swiper-campaign {
-	height: 27.8125rem;
 }
 
 .swiper-campaign-button-prev,
