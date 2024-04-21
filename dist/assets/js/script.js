@@ -170,7 +170,7 @@ var openingTimeLine = gsap.timeline();
 openingTimeLine.to(openingImages, {
   y: 0,
   duration: 3,
-  stagger: 1,
+  stagger: 0.3,
   ease: "power2.inOut"
 }).to(openingImages, {
   autoAlpha: 0,
@@ -178,14 +178,14 @@ openingTimeLine.to(openingImages, {
   ease: "power2.inOut"
 }).to(".js-opening__title-container", {
   autoAlpha: 1,
-  duration: 2,
+  duration: 1,
   ease: "power2.inOut"
 }).to(".js-opening", {
   backgroundColor: "rgba(0, 0, 0, 0)",
-  duration: 3,
+  duration: 1,
   ease: "power2.inOut"
 }).to(".js-opening__title-container", {
   autoAlpha: 1,
   color: "#ffffff",
-  duration: 2
+  duration: 1
 });
