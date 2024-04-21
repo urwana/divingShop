@@ -8,6 +8,11 @@
   }
 }
 
+.voice-card:hover{
+  opacity: 0.6;
+  transition : 0.3s;
+}
+
 .voice-card__head {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

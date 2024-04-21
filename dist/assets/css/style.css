@@ -153,6 +153,11 @@ a {
 	width: 96.52%;
 }
 
+.blog-card a:hover {
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
 .blog-card__inner {
 	padding: 1rem 1rem 1.5rem;
 }
@@ -340,6 +345,11 @@ a {
 .campaign-card {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 	width: 100%;
+}
+
+.campaign-card:hover {
+	opacity: 0.6;
+	transition: 0.3s;
 }
 
 .campaign-card__image {
@@ -708,6 +718,11 @@ a {
 	line-height: 1.125;
 	margin-left: 1.375rem;
 	margin-top: 1.5rem;
+}
+
+.navigation-responsive__item:hover {
+	opacity: 0.6;
+	transition: 0.2s;
 }
 
 .navigation-responsive__item--top {
@@ -1195,6 +1210,11 @@ a {
 .voice-card {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 	padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.voice-card:hover {
+	opacity: 0.6;
+	transition: 0.3s;
 }
 
 .voice-card__head {

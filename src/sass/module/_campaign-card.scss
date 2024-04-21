@@ -8,7 +8,9 @@
   }
 }
 
-.campaign-card__inner {
+.campaign-card:hover{
+  opacity: 0.6;
+  transition : 0.3s;
 }
 
 .campaign-card__image {
