@@ -217,6 +217,9 @@ a {
 	background-position-y: 5.375rem;
 	background-repeat: no-repeat;
 	background-size: calc(100% - 30px);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 37.5rem;
 	position: relative;
 	z-index: 1;
 }
@@ -386,6 +389,9 @@ a {
 }
 
 .top-information__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 37.5rem;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -396,9 +402,6 @@ a {
 
 .top-information__image {
 	aspect-ratio: 540/356;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 37.5rem;
 }
 
 .top-information__image img {
