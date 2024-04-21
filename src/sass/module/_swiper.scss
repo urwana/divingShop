@@ -3,10 +3,20 @@
 .swiper {
   width: 100%;
   position: relative;
-  aspect-ratio: 375 / 667;
-  @include mq('md') {
-    aspect-ratio: 1440 / 768;
-  }
+  height: inherit;
+}
+
+.swiper-wrapper{
+  height: inherit;
+}
+
+.swiper-slide{
+  height: inherit;
+}
+
+.swiper-slide img{
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper__title-container{

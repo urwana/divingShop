@@ -26,8 +26,13 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // NOTE: inner のパディング分
-    right: 20px;
+    // NOTE:
+    // 50% = 769px / 2(半分) 〜 1080px / 2(半分) = 540px
+    // rem(637) = 1080(inner 幅) / 2(半分) + 97px(珊瑚画像はみ出し分)
+    // TODO: 48vw の意味を確認
+    // 48vw = 画面幅の約 1/2 ????
+
+    right:calc(50% - min(48vw, rem(637)));
     bottom: -88px;
     width: rem(194);
     height: rem(181);
@@ -36,9 +41,6 @@
     background-position: center center;
     background-size: cover;
     z-index: 2;
-  }
-  @media screen and (min-width: 1440px){
-    right: -80px;
   }
 }
 

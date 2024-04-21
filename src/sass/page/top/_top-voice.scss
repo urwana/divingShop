@@ -16,8 +16,13 @@
     position: absolute;
     content: "";
     top: -118px;
-    // inner パディング分
-    left: 20px;
+    // NOTE:
+    // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
+    // rem(620) = 1080(inner 幅) / 2(半分) + 80px(魚たちの画像はみ出し分)
+    // TODO: 48vw の意味を確認
+    // 48vw = 画面幅の約 1/2 ????
+
+    left:calc(50% - min(48vw, rem(620)));
     width: rem(301);
     height: rem(138);
     background-image: url(../images/top/bg-fish-r.svg);
@@ -25,9 +30,6 @@
     background-position: center center;
     background-size: cover;
     z-index: 2;
-  }
-  @include mq("inner") {
-    left: -58px;
   }
 }
 
@@ -55,10 +57,6 @@
   margin-top: rem(44);
   @include mq("md") {
     margin-top: rem(30);
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
-    gap: rem(40);
   }
 }
 
