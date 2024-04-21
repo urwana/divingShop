@@ -1304,7 +1304,9 @@ a {
 }
 
 .voice-card__image img {
-	height: auto;
+	-o-object-fit: contain;
+	height: 100%;
+	object-fit: contain;
 	width: 100%;
 }
 
@@ -1825,10 +1827,6 @@ html {
 }
 
 .top-voice__cards {
-	align-items: center;
-	display: flex;
-	gap: 2.5rem;
-	justify-content: stretch;
 	margin-top: 1.875rem;
 }
 
@@ -1867,6 +1865,13 @@ html {
 
 .voice-card__title {
 	margin-top: 0.25rem;
+}
+
+.voice-cards {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 }
