@@ -252,7 +252,7 @@ a {
 	content: "";
 	height: 3.125rem;
 	position: absolute;
-	right: 0.9375rem;
+	right: calc(50% - min(48vw, 41.875rem));
 	top: -1.625rem;
 	width: 6.8125rem;
 }
@@ -1475,7 +1475,6 @@ html {
 
 .top-contact__inner::after {
 	height: 8.625rem;
-	right: 0;
 	top: -2.5rem;
 	width: 18.8125rem;
 }
@@ -1605,7 +1604,7 @@ html {
 	background-size: cover;
 	content: "";
 	height: 8.625rem;
-	left: 20px;
+	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
 	top: -118px;
 	width: 18.8125rem;
@@ -1902,10 +1901,6 @@ html {
 	left: -3.75rem;
 }
 
-.top-voice__inner::before {
-	left: -58px;
-}
-
 .button-scroll--right,
 .button-scroll--left,
 .button-scroll {
@@ -1994,10 +1989,6 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
-
-.top-contact__inner::after {
-	right: -7.8125rem;
-}
 
 .top-voice__inner::after {
 	right: -43px;
