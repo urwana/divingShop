@@ -37,8 +37,12 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // inner パディング分
-    right: 20px;
+    // NOTE:
+    // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
+    // rem(580) = 1080(inner 幅) / 2(半分)
+    // TODO: 48vw の意味を確認
+    // 48vw = 画面幅の約 1/2 ????
+    right:calc(50% - min(48vw, rem(580)));
     bottom: -76px;
     width: rem(194);
     height: rem(181);
@@ -47,9 +51,6 @@
     background-position: center center;
     background-size: contain;
     z-index: 2;
-  }
-  @media screen and (min-width: 1440px){
-    right: -43px;
   }
 }
 

@@ -1620,7 +1620,7 @@ html {
 	content: "";
 	height: 11.3125rem;
 	position: absolute;
-	right: 20px;
+	right: calc(50% - min(48vw, 36.25rem));
 	width: 12.125rem;
 	z-index: 2;
 }
@@ -1984,14 +1984,6 @@ html {
 
 .navigation-responsive__column { /* float + margin 利用 */
 	float: left;
-}
-
-}
-
-@media screen and (min-width: 1440px) {
-
-.top-voice__inner::after {
-	right: -43px;
 }
 
 }
