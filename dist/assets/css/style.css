@@ -1338,6 +1338,13 @@ html {
 	margin-top: 1rem;
 }
 
+.blog-cards {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+
 .campaign-card__image {
 	aspect-ratio: 334/223;
 }
@@ -1614,9 +1621,6 @@ html {
 }
 
 .top-blog__cards {
-	display: flex;
-	gap: 2.5rem;
-	justify-content: stretch;
 	margin-top: 5rem;
 }
 
