@@ -46,6 +46,22 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./assets/js/jquery.inview.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+      defer
+    ></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -266,13 +282,29 @@
     <main>
       <div class="js-key-visual key-visual">
         <div class="swiper">
-          <div class="swiper__title-container">
-            <div class="swiper__title">
-              ＤＩＶＩＮＧ
+          <div class="js-opening opening">
+            <div class="opening__image-left">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/images/top/opening/kv-l.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/top/opening/kv-l-sp.jpg">
+                <img src="./assets/images/top/opening/kv-l.jpg" alt="オープニング左側の画像">
+              </picture>
             </div>
-            <p class="swiper__subtitle">
-              into the ocean
-            </p>
+            <div class="opening__image-right">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/images/top/opening/kv-r.jpg">
+                <source media="(max-width: 767px)" srcset="./assets/images/top/opening/kv-r-sp.jpg">
+                <img src="./assets/images/top/opening/kv-r.jpg" alt="オープニング右側の画像">
+              </picture>
+            </div>
+                        <div class="js-opening__title-container opening__title-container">
+              <div class="opening__title">
+                ＤＩＶＩＮＧ
+              </div>
+              <p class="opening__subtitle">
+                into the ocean
+              </p>
+            </div>
           </div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
