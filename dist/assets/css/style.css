@@ -1186,7 +1186,9 @@ a {
 }
 
 .top-information__image img {
-	height: auto;
+	-o-object-fit: contain;
+	height: 100%;
+	object-fit: contain;
 	width: 100%;
 }
 
