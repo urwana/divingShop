@@ -28,6 +28,8 @@
 
 .top-information__image {
   aspect-ratio: 540 / 356;
+  max-width: rem(600);
+  margin-inline: auto;
   @include mq('md') {
     width: rem(540);
   }
