@@ -571,14 +571,22 @@ a {
 
 .header__navigation-sp {
 	background-color: #408F95;
-	display: none;
 	height: 100%;
 	left: 0;
+	opacity: 0;
 	overflow: scroll;
 	position: fixed;
 	top: 0;
+	transition: 1s;
+	visibility: hidden;
 	width: 100%;
 	z-index: 1;
+}
+
+.header__navigation-sp.is-open {
+	opacity: 1;
+	transition: 1s;
+	visibility: visible;
 }
 
 .header__navigation-sp__inner {
@@ -586,10 +594,6 @@ a {
 	grid-template-columns: repeat(2, 1fr);
 	padding: 5rem 0.9375rem 0 0.9375rem;
 	padding-top: 5rem;
-}
-
-.header__navigation-sp.is-open {
-	display: block;
 }
 
 .header__navigation-pc {
