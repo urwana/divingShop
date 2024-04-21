@@ -75,6 +75,7 @@
 .header__navigation-pc {
   display: none;
   @include mq("inner") {
+    height: inherit;
     display: block;
   }
 }
