@@ -86,50 +86,66 @@
           <ul class="navigation-pc">
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/campaign">
-                <div class="navigation-pc__label--english">Campaign</div>
-                <div class="navigation-pc__label">キャンペーン</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Campaign</div>
+                  <div class="navigation-pc__label">キャンペーン</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/about-us">
-                <div class="navigation-pc__label--english">About us</div>
-                <div class="navigation-pc__label">私たちについて</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">About us</div>
+                  <div class="navigation-pc__label">私たちについて</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/information">
-                <div class="navigation-pc__label--english">Information</div>
-                <div class="navigation-pc__label">ダイビング情報</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Information</div>
+                  <div class="navigation-pc__label">ダイビング情報</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/blog">
-                <div class="navigation-pc__label--english">Blog</div>
-                <div class="navigation-pc__label">ブログ</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Blog</div>
+                  <div class="navigation-pc__label">ブログ</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/voice">
-                <div class="navigation-pc__label--english">Voice</div>
-                <div class="navigation-pc__label">お客様の声</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Voice</div>
+                  <div class="navigation-pc__label">お客様の声</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/price">
-                <div class="navigation-pc__label--english">Price</div>
-                <div class="navigation-pc__label">料金一覧</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Price</div>
+                  <div class="navigation-pc__label">料金一覧</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/faq">
-                <div class="navigation-pc__label--english">FAQ</div>
-                <div class="navigation-pc__label">よくある質問</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">FAQ</div>
+                  <div class="navigation-pc__label">よくある質問</div>
+                </div>
               </a>
             </li>
             <li class="navigation-pc__item">
               <a class="navigation-pc__link" href="/contact">
-                <div class="navigation-pc__label--english">Contact</div>
-                <div class="navigation-pc__label">お問い合わせ</div>
+                <div class="navigation-pc__link-inner">
+                  <div class="navigation-pc__label--english">Contact</div>
+                  <div class="navigation-pc__label">お問い合わせ</div>
+                </div>
               </a>
             </li>
           </ul>
@@ -604,7 +620,7 @@
             </div>
             <h2 class="section-title-jpn section-title-jpn--blog">ブログ</h2>
           </div>
-          <div class="top-blog__cards">
+          <div class="top-blog__cards blog-cards">
             <div class="blog-card top-blog__item">
               <a href="/blog#licence">
                 <div class="blog-card__inner">
@@ -696,7 +712,7 @@
             </div>
             <h2 class="section-title-jpn">お客様の声</h2>
           </div>
-          <div class="top-voice__cards">
+          <div class="top-voice__cards voice-cards">
             <div class="top-voice__item voice-card">
               <a href="/voice#woman20">
                 <div class="voice-card__head">
@@ -772,6 +788,51 @@
                       />
                       <img
                         src="./assets/images/top/top-voice-sp2.jpg"
+                        alt="30代(男性)の画像"
+                        width="180"
+                        height="140"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="voice-card__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                  ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </div>
+              </a>
+            </div>
+            <div class="top-voice__item voice-card">
+              <a href="/voice#man30">
+                <div class="voice-card__head">
+                  <div class="voice-card__info">
+                    <div class="voice-card__meta">
+                      <div class="voice-card__person">
+                        30代(男性)
+                      </div>
+                      <div class="voice-card__label">
+                        <span class="label">ファンダイビング</span>
+                      </div>
+                    </div>
+                    <div class="voice-card__title">
+                      <div class="lined-title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-colorAnimation voice-card__image">
+                    <picture>
+                      <source
+                        srcset="./assets/images/top/test.jpg"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        srcset="./assets/images/top/test.jpg"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="./assets/images/top/test.jpg"
                         alt="30代(男性)の画像"
                         width="180"
                         height="140"

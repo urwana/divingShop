@@ -84,6 +84,11 @@
   line-height: 1.125;
 }
 
+.navigation-responsive__item:hover {
+  opacity: 0.6;
+  transition : 0.2s;
+}
+
 .navigation-responsive__item--top {
   font-weight: $bold;
   position: relative;

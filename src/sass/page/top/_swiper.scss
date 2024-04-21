@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.swiper {
+  width: 100%;
+  position: relative;
+  height: inherit;
+}
+
+.swiper-wrapper{
+  height: inherit;
+}
+
+.swiper-slide{
+  height: inherit;
+}
+
+.swiper-slide img{
+  height: 100%;
+  object-fit: cover;
+}
