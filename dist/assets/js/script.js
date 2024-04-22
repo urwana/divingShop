@@ -165,6 +165,22 @@ jQuery(function ($) {
     }
   });
 });
+
+// const windowWidth = window.innerWidth;
+// const detectDevice = () => {
+//   var userAgent = navigator.userAgent.toLowerCase();
+//   var isMobile = /iphone|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(
+//     userAgent
+//   );
+
+//   if (isMobile) {
+//     return "sp";
+//   } else {
+//     return "pc";
+//   }
+// };
+// const device = detectDevice();
+
 var openingImages = document.querySelectorAll(".js-opening > div");
 var openingTimeLine = gsap.timeline();
 openingTimeLine.to(openingImages, {

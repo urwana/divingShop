@@ -194,11 +194,35 @@ jQuery(function($) {
   });
 });
 
+// const windowWidth = window.innerWidth;
+// const detectDevice = () => {
+//   var userAgent = navigator.userAgent.toLowerCase();
+//   var isMobile = /iphone|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(
+//     userAgent
+//   );
+
+//   if (isMobile) {
+//     return "sp";
+//   } else {
+//     return "pc";
+//   }
+// };
+// const device = detectDevice();
+
 const openingImages = document.querySelectorAll(".js-opening > div");
 const openingTimeLine = gsap.timeline();
 openingTimeLine
-  .to(openingImages, { y: 0, duration: 3, stagger: 0.3, ease: "power2.inOut" })
-  .to(openingImages, { autoAlpha: 0, duration: 2, ease: "power2.inOut" })
+  .to(openingImages, {
+    y: 0,
+    duration: 3,
+    stagger: 0.3,
+    ease: "power2.inOut",
+  })
+  .to(openingImages, {
+    autoAlpha: 0,
+    duration: 2,
+    ease: "power2.inOut",
+  })
   .to(".js-opening__title-container", {
     autoAlpha: 1,
     duration: 1,
