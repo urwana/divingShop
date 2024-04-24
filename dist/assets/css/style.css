@@ -1400,9 +1400,19 @@ html {
 	top: -74px;
 }
 
+.swiper-campaign .swiper-campaign-button-prev {
+	right: 160px;
+	top: -104px;
+}
+
 .swiper-campaign .swiper-campaign-button-next {
 	right: 0;
 	top: -74px;
+}
+
+.swiper-campaign .swiper-campaign-button-next {
+	right: 0;
+	top: -104px;
 }
 
 .top-about {
@@ -1707,6 +1717,36 @@ html {
 	grid-template-columns: repeat(3, 1fr);
 }
 
+.button-scroll--right,
+.button-scroll--left,
+.button-scroll {
+	height: 80px;
+	width: 80px;
+}
+
+.button-scroll--right::after,
+.button-scroll--left::after,
+.button-scroll::after {
+	left: calc((100% - 40px) / 2);
+	width: 2.5rem;
+}
+
+.button-scroll::before {
+	left: calc((100% - 40px) / 2);
+}
+
+.button-scroll--left::before {
+	right: calc((100% - 40px) / 2);
+}
+
+.swiper-campaign-button-next .button-scroll--left::after {
+	left: calc((100% - 40px) / 2);
+}
+
+.button-scroll--right::before {
+	left: calc((100% - 40px) / 2);
+}
+
 .campaign-card__image {
 	aspect-ratio: 334/223;
 }
@@ -1782,8 +1822,33 @@ html {
 	text-align: center;
 }
 
+.hamburger {
+	display: none;
+}
+
+.header {
+	height: 5.625rem;
+}
+
+.header__inner {
+	padding: 0 2.5rem;
+}
+
+.header__logo {
+	width: 8.625rem;
+}
+
 .header__navigation-sp {
 	display: none;
+}
+
+.header__navigation-sp__inner {
+	display: none;
+}
+
+.header__navigation-pc {
+	display: block;
+	height: inherit;
 }
 
 .inner {
@@ -1938,75 +2003,6 @@ html {
 
 html {
 	font-size: 16px;
-}
-
-}
-
-@media screen and (min-width: 1177px) {
-
-.swiper-campaign .swiper-campaign-button-prev {
-	right: 160px;
-	top: -104px;
-}
-
-.swiper-campaign .swiper-campaign-button-next {
-	right: 0;
-	top: -104px;
-}
-
-.button-scroll--right,
-.button-scroll--left,
-.button-scroll {
-	height: 80px;
-	width: 80px;
-}
-
-.button-scroll--right::after,
-.button-scroll--left::after,
-.button-scroll::after {
-	left: calc((100% - 40px) / 2);
-	width: 2.5rem;
-}
-
-.button-scroll::before {
-	left: calc((100% - 40px) / 2);
-}
-
-.button-scroll--left::before {
-	right: calc((100% - 40px) / 2);
-}
-
-.swiper-campaign-button-next .button-scroll--left::after {
-	left: calc((100% - 40px) / 2);
-}
-
-.button-scroll--right::before {
-	left: calc((100% - 40px) / 2);
-}
-
-.hamburger {
-	display: none;
-}
-
-.header {
-	height: 5.625rem;
-}
-
-.header__inner {
-	padding: 0 2.5rem;
-}
-
-.header__logo {
-	width: 8.625rem;
-}
-
-.header__navigation-sp__inner {
-	display: none;
-}
-
-.header__navigation-pc {
-	display: block;
-	height: inherit;
 }
 
 }

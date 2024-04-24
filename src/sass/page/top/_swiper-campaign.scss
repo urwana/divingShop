@@ -27,7 +27,7 @@
     top:-74px;
     right:160px;
   }
-  @include mq('inner') {
+  @include mq("md") {
     top:-104px;
     right:160px;
   }
@@ -38,7 +38,7 @@
     top:-74px;
     right:0;
   }
-  @include mq('inner') {
+  @include mq("md") {
     top:-104px;
     right:0;
     }

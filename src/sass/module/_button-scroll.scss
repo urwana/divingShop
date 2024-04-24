@@ -8,7 +8,7 @@
   border: solid 1px $green-accent;
   position: relative;
   cursor: pointer;
-  @include mq('inner') {
+  @include mq("md") {
     width: 80px;
     height: 80px;
   }
@@ -33,7 +33,7 @@
   top: 50%;
   left: calc((100% - 28px) / 2);
   background-color: $green-accent;
-  @include mq('inner') {
+  @include mq("md") {
     width: rem(40);
     left: calc((100% - 40px) / 2);
   }
@@ -48,7 +48,7 @@
   top: calc(50% - 3px);
   left: calc((100% - 28px) / 2);
   transform: rotate(-30deg);
-  @include mq('inner') {
+  @include mq("md") {
     left: calc((100% - 40px) / 2);
   }
 }
@@ -61,14 +61,14 @@
   top: calc(50% - 3px);
   right: calc((100% - 28px) / 2);
   transform: rotate(30deg);
-  @include mq('inner') {
+  @include mq("md") {
     right: calc((100% - 40px) / 2);
   }
 }
 
 // TODO: 見直す
 .swiper-campaign-button-next .button-scroll--left::after {
-  @include mq('inner') {
+  @include mq("md") {
     left: calc((100% - 40px) / 2);
   }
 }
@@ -81,7 +81,7 @@
   top: calc(50% - 3px);
   left: calc((100% - 28px) / 2);
   transform: rotate(-30deg);
-  @include mq('inner') {
+  @include mq("md") {
     left: calc((100% - 40px) / 2);
   }
 }

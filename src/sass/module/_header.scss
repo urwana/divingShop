@@ -8,7 +8,7 @@
   background-color: rgba(13, 41, 54, 0.68);
   height: rem(80);
   z-index: 2;
-  @include mq("inner") {
+  @include mq("md") {
     height: rem(90);
   }
 }
@@ -21,7 +21,7 @@
   position: relative;
   z-index: 2;
   padding: 0 rem(15);
-  @include mq("inner") {
+  @include mq("md") {
     padding: 0 rem(40);
   }
 }
@@ -33,7 +33,7 @@
 .header__logo {
   width: rem(106);
   z-index: 2;
-  @include mq("inner") {
+  @include mq("md") {
     width: rem(138);
   }
 }
@@ -71,14 +71,14 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: rem(80);
   padding: rem(80) rem(15) 0 rem(15);
-  @include mq("inner") {
+  @include mq("md") {
     display: none;
   }
 }
 
 .header__navigation-pc {
   display: none;
-  @include mq("inner") {
+  @include mq("md") {
     height: inherit;
     display: block;
   }
