@@ -20,6 +20,24 @@
   }
 }
 
+.section-title__word::first-letter{
+  color: $green-accent;
+}
+
+.section-title__word--blog {
+  color: $green;
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-title__word--blog::first-letter {
+  color: $green-accent;
+  @include mq("md") {
+    color: $green-light;
+  }
+}
+
 .section-title-container--contact .section-title__word {
   font-size: rem(80);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -35,26 +53,6 @@
   line-height: 1;
   @include mq("md") {
     margin-top:0;
-  }
-}
-
-.section-title__initials {
-  color: $green-accent;
-  display: inline-block;
-}
-
-.section-title__initials--blog {
-  color: $green-accent;
-  display: inline-block;
-  @include mq("md") {
-    color: $green-light;
-  }
-}
-
-.section-title__word--blog {
-  color: $green;
-  @include mq("md") {
-    color: $white;
   }
 }
 
