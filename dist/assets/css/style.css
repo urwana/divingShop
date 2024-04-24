@@ -244,6 +244,9 @@ a {
 
 .top-campaign {
 	margin-top: 2.5rem;
+}
+
+.top-campaign__inner {
 	overflow: hidden;
 }
 
@@ -1514,6 +1517,11 @@ html {
 
 .top-campaign {
 	margin-top: 7.5rem;
+	overflow: hidden;
+}
+
+.top-campaign__inner {
+	overflow: visible;
 }
 
 .top-campaign__swiper {
