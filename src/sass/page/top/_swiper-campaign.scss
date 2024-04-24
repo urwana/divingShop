@@ -2,12 +2,17 @@
 
 .swiper-campaign {
   width: 100%;
+  height:inherit;
   position: relative;
   z-index: 1;
 }
 
-.swiper-slide{
-  height: auto;
+.swiper-wrapper--campaign{
+  height: inherit;
+}
+
+.swiper-slide--campaign{
+  height: inherit;
 }
 
 .swiper-campaign-button-prev,

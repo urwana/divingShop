@@ -1,20 +1,20 @@
 @use 'global' as *;
 
-.swiper {
+.swiper--kv {
   width: 100%;
   position: relative;
   height: inherit;
 }
 
-.swiper-wrapper{
+.swiper-wrapper--kv{
   height: inherit;
 }
 
-.swiper-slide{
+.swiper-slide--kv{
   height: inherit;
 }
 
-.swiper-slide img{
+.swiper-slide--kv img{
   height: 100%;
   object-fit: cover;
 }

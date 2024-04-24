@@ -281,7 +281,7 @@
     <!-- header -->
     <main>
       <div class="js-key-visual key-visual">
-        <div class="swiper">
+        <div class="swiper swiper--kv">
           <div class="js-opening opening">
             <div class="opening__image-left">
               <picture>
@@ -324,8 +324,8 @@
               </p>
             </div>
           </div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+          <div class="swiper-wrapper swiper-wrapper--kv">
+            <div class="swiper-slide swiper-slide--kv">
               <picture>
                 <source
                   media="(max-width: 767px)"
@@ -341,7 +341,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--kv">
               <picture>
                 <source
                   media="(max-width: 767px)"
@@ -357,7 +357,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--kv">
               <picture>
                 <source
                   media="(max-width: 767px)"
@@ -373,7 +373,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--kv">
               <picture>
                 <source
                   media="(max-width: 767px)"
@@ -405,24 +405,30 @@
           </div>
           <div class="top-campaign__swiper">
             <div class="swiper-campaign">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="top-campaign__card campaign-card">
-                    <a href="/campaign#licence">
-                      <div class="campaign-card__inner">
-                        <div class="campaign-card__image">
-                          <img
-                            src="./assets/images/top/campaign-card1.jpg"
-                            alt="ライセンス取得の画像"
-                          />
-                        </div>
-                        <div class="campaign-card__body">
+              <div class="swiper-wrapper swiper-wrapper--campaign">
+                <div class="swiper-slide swiper-slide--campaign">
+                  <div class="top-campaign__card">
+                    <a class="campaign-card" href="/campaign#licence">
+                      <div class="campaign-card__image">
+                        <img
+                          src="./assets/images/top/campaign-card1.jpg"
+                          alt="ライセンス取得の画像"
+                        />
+                      </div>
+                      <div class="campaign-card__body">
+                        <div class="campaign-card__top">
                           <div class="campaign-card__label label-container">
                             <span class="label">ライセンス講習</span>
                           </div>
                           <div class="campaign-card__title">ライセンス取得</div>
+                        </div>
+                        <div class="campaign-card__bottom">
                           <p class="campaign-card__explain">
-                            全部コミコミ(お一人様)
+                            全部コミコミ(お一人様) 全部コミコミ(お一人様)
+                            全部コミコミ(お一人様) 全部コミコミ(お一人様)
+                            全部コミコミ(お一人様) 全部コミコミ(お一人様)
+                            全部コミコミ(お一人様) 全部コミコミ(お一人様)
+                            全部コミコミ(お一人様) 全部コミコミ(お一人様)
                           </p>
                           <div class="campaign-card__price-container">
                             <div class="price-container">
@@ -439,23 +445,25 @@
                     </a>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="top-campaign__card campaign-card">
-                    <a href="/campaign#diving-rental">
-                      <div class="campaign-card__inner">
-                        <div class="campaign-card__image">
-                          <img
-                            src="./assets/images/top/campaign-card2.jpg"
-                            alt="貸切体験ダイビングの画像"
-                          />
-                        </div>
-                        <div class="campaign-card__body">
+                <div class="swiper-slide swiper-slide--campaign">
+                  <div class="top-campaign__card">
+                    <a class="campaign-card" href="/campaign#diving-rental">
+                      <div class="campaign-card__image">
+                        <img
+                          src="./assets/images/top/campaign-card2.jpg"
+                          alt="貸切体験ダイビングの画像"
+                        />
+                      </div>
+                      <div class="campaign-card__body">
+                        <div class="campaign-card__top">
                           <div class="campaign-card__label label-container">
                             <span class="label">体験ダイビング</span>
                           </div>
                           <div class="campaign-card__title">
                             貸切体験ダイビング
                           </div>
+                        </div>
+                        <div class="campaign-card__bottom">
                           <p class="campaign-card__explain">
                             全部コミコミ(お一人様)
                           </p>
@@ -474,23 +482,25 @@
                     </a>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="top-campaign__card campaign-card">
-                    <a href="/campaign#diving-night">
-                      <div class="campaign-card__inner">
-                        <div class="campaign-card__image">
-                          <img
-                            src="./assets/images/top/campaign-card3.jpg"
-                            alt="ナイトダイビングの画像"
-                          />
-                        </div>
-                        <div class="campaign-card__body">
+                <div class="swiper-slide swiper-slide--campaign">
+                  <div class="top-campaign__card">
+                    <a class="campaign-card" href="/campaign#diving-night">
+                      <div class="campaign-card__image">
+                        <img
+                          src="./assets/images/top/campaign-card3.jpg"
+                          alt="ナイトダイビングの画像"
+                        />
+                      </div>
+                      <div class="campaign-card__body">
+                        <div class="campaign-card__top">
                           <div class="campaign-card__label label-container">
                             <span class="label">体験ダイビング</span>
                           </div>
                           <div class="campaign-card__title">
                             ナイトダイビング
                           </div>
+                        </div>
+                        <div class="campaign-card__bottom">
                           <p class="campaign-card__explain">
                             全部コミコミ(お一人様)
                           </p>
@@ -507,35 +517,34 @@
                     </a>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="top-campaign__card campaign-card">
-                    <a href="/campaign#diving-fun">
-                      <div class="campaign-card__inner">
-                        <div class="campaign-card__image">
-                          <img
-                            src="./assets/images/top/campaign-card4.jpg"
-                            alt="貸切ファンダイビングの画像"
-                          />
-                        </div>
-                        <div class="campaign-card__body">
+                <div class="swiper-slide swiper-slide--campaign">
+                  <div class="top-campaign__card">
+                    <a class="campaign-card" href="/campaign#diving-fun">
+                      <div class="campaign-card__image">
+                        <img
+                          src="./assets/images/top/campaign-card4.jpg"
+                          alt="貸切ファンダイビングの画像"
+                        />
+                      </div>
+                      <div class="campaign-card__body">
+                        <div class="campaign-card__top">
                           <div class="campaign-card__label label-container">
                             <span class="label">ファンダイビング</span>
                           </div>
                           <div class="campaign-card__title">
                             貸切ファンダイビング
                           </div>
-                          <p class="campaign-card__explain">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="campaign-card__price-container">
-                            <div class="price-container">
-                              <span class="price-container__cancelled-price"
-                                >¥20,000</span
-                              >
-                              <span class="price-container__price"
-                                >¥16,000</span
-                              >
-                            </div>
+                        </div>
+                        <div class="campaign-card__bottom"></div>
+                        <p class="campaign-card__explain">
+                          全部コミコミ(お一人様)
+                        </p>
+                        <div class="campaign-card__price-container">
+                          <div class="price-container">
+                            <span class="price-container__cancelled-price"
+                              >¥20,000</span
+                            >
+                            <span class="price-container__price">¥16,000</span>
                           </div>
                         </div>
                       </div>
