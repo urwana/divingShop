@@ -271,6 +271,10 @@ a {
 	position: relative;
 }
 
+.top-contact__conntents {
+	padding-top: 1.625rem;
+}
+
 .top-contact__inner::after {
 	background-image: url("../images/top/bg-fish.png");
 	background-size: cover;
@@ -1525,12 +1529,12 @@ html {
 	margin-top: 8.75rem;
 }
 
-.top-contact__inner {
+.top-contact__conntents {
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 	display: flex;
 	justify-content: flex-start;
 	max-width: 67.5rem;
-	padding: 5rem 0 5rem 3.125rem;
+	padding: 5rem 3.125rem;
 }
 
 .top-contact__inner::after {
