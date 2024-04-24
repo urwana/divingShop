@@ -5,28 +5,24 @@
   justify-content: flex-start;
   align-items: center;
   height: inherit;
+  gap: rem(40);
 }
 
-.navigation-pc__item:not(:first-child) {
-  margin-left: rem(40);
-}
-
-.navigation-pc__item{
+.navigation-pc__item {
   height: inherit;
 }
 
 .navigation-pc__item a {
   height: inherit;
   position: relative;
-  // display: block;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.navigation-pc__link-inner{
-position: relative;
+.navigation-pc__link-inner {
+  position: relative;
 }
 
 .navigation-pc__link-inner::after {
@@ -37,8 +33,8 @@ position: relative;
   left: 0;
   width: 100%;
   height: 1px;
-  background:#ffffff;
-  transition: all .3s;
+  background: #ffffff;
+  transition: all 0.3s;
   transform: scale(0, 1);
   transform-origin: center top;
 }
@@ -47,7 +43,6 @@ position: relative;
 .navigation-pc__item.current .navigation-pc__link-inner::after {
   transform: scale(1, 1);
 }
-
 
 .navigation-pc__label--english {
   font-family: $english-font;
@@ -64,7 +59,7 @@ position: relative;
   color: $white;
   text-align: center;
   position: relative;
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(4);
     width: 100%;
   }

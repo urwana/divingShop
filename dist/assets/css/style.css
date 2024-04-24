@@ -960,12 +960,9 @@ a {
 .navigation-pc {
 	align-items: center;
 	display: flex;
+	gap: 2.5rem;
 	height: inherit;
 	justify-content: flex-start;
-}
-
-.navigation-pc__item:not(:first-child) {
-	margin-left: 2.5rem;
 }
 
 .navigation-pc__item {
