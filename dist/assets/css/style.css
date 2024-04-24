@@ -185,16 +185,28 @@ a {
 }
 
 .top-about__inner {
-	background-image: url(../images/top/bg-aboutus-sp.png);
-	background-position: center center;
-	background-position-y: 5.375rem;
-	background-repeat: no-repeat;
-	background-size: calc(100% - 30px);
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 37.5rem;
 	position: relative;
 	z-index: 1;
+}
+
+.top-about__image {
+	aspect-ratio: 345/212;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 5.5rem;
+	width: 92%;
+	z-index: -1;
+}
+
+.top-about__image img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
 }
 
 .top-about__catch-copy {
@@ -1416,8 +1428,6 @@ html {
 }
 
 .top-about__inner {
-	background-position-x: center;
-	background-position-y: 6.625rem;
 	height: 47.9375rem;
 }
 
@@ -1438,12 +1448,18 @@ html {
 .top-about__contents {
 	display: flex;
 	flex-direction: row;
-	height: inherit;
 	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 2.375rem;
 	padding-top: 14rem;
+}
+
+.top-about__image {
+	aspect-ratio: 1080/661;
+	bottom: 0;
+	right: 1.25rem;
+	width: 67.5rem;
 }
 
 .top-about__catch-copy {
@@ -1509,8 +1525,9 @@ html {
 }
 
 .top-campaign {
-	margin-top: 7.5rem;
+	margin-top: 0;
 	overflow: hidden;
+	padding-top: 7.5rem;
 }
 
 .top-campaign__inner {

@@ -8,18 +8,18 @@
 }
 
 .top-about__inner {
-  background-image: url(../images/top/bg-aboutus-sp.png);
-  background-repeat: no-repeat;
-  background-position-y: rem(86);
-  background-size: calc(100% - 30px);
-  background-position: center center;
+  //background-image: url(../images/top/bg-aboutus-sp.png);
+  //background-repeat: no-repeat;
+  //background-position-y: rem(86);
+  //background-size: calc(100% - 30px);
+  //background-position: center center;
   position: relative;
   z-index: 1;
   max-width: rem(600);
   margin-inline: auto;
   @include mq("md") {
-    background-position-x: center;
-    background-position-y: rem(106);
+    //background-position-x: center;
+    //background-position-y: rem(106);
     height: rem(767);
   }
 }
@@ -48,15 +48,34 @@
 
 .top-about__contents {
   @include mq("md") {
-    height: inherit;
     margin-inline: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-top: rem(224);
     padding-right: rem(38);
-
   }
+}
+
+.top-about__image{
+  z-index: -1;
+  position: absolute;
+  top:rem(88);
+  aspect-ratio:345 /212;
+  width: 92%;
+  margin-inline: auto;
+  @include mq('md') {
+    bottom: 0;
+    right: rem(20);
+    aspect-ratio: 1080 / 661;
+    width: rem(1080);
+  }
+}
+
+.top-about__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .top-about__catch-copy {
