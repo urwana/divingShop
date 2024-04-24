@@ -10,18 +10,25 @@
   }
 }
 
-.company-info__address {
+%info-font {
   margin-top: rem(4);
+  @include mq('md') {
+    text-align: left;
+  }
+}
+
+.company-info__address {
+  @extend %info-font;
 }
 
 .company-info__tel {
-  margin-top: rem(4);
+  @extend %info-font;
 }
 
 .company-info__hours {
-  margin-top: rem(4);
+  @extend %info-font;
 }
 
 .company-info__holidays {
-  margin-top: rem(4);
+  @extend %info-font;
 }

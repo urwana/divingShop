@@ -732,19 +732,10 @@ a {
 	font-family: "Noto Sans JP, sans-serif";
 }
 
+.company-info__holidays,
+.company-info__hours,
+.company-info__tel,
 .company-info__address {
-	margin-top: 0.25rem;
-}
-
-.company-info__tel {
-	margin-top: 0.25rem;
-}
-
-.company-info__hours {
-	margin-top: 0.25rem;
-}
-
-.company-info__holidays {
 	margin-top: 0.25rem;
 }
 
@@ -1776,6 +1767,13 @@ html {
 	font-weight: 300;
 	line-height: 1.5;
 	text-shadow: none;
+}
+
+.company-info__holidays,
+.company-info__hours,
+.company-info__tel,
+.company-info__address {
+	text-align: left;
 }
 
 .footer {
