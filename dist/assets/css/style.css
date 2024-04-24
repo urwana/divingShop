@@ -1487,7 +1487,7 @@ html {
 	background-size: cover;
 	content: "";
 	height: 12.5625rem;
-	left: 0;
+	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
 	top: -13.8125rem;
 	width: 27.3125rem;
@@ -1622,6 +1622,11 @@ html {
 	position: absolute;
 	width: 27.3125rem;
 	z-index: 2;
+}
+
+.top-price__inner::after {
+	bottom: 3.75rem;
+	left: -3.75rem;
 }
 
 .top-price__contents {
@@ -1775,6 +1780,10 @@ html {
 	line-height: 1.2857142857;
 	margin-top: 5rem;
 	text-align: center;
+}
+
+.header__navigation-sp {
+	display: none;
 }
 
 .inner {
@@ -1945,16 +1954,6 @@ html {
 	top: -104px;
 }
 
-.top-blog__cards::after {
-	left: -6.25rem;
-	top: -13.8125rem;
-}
-
-.top-price__inner::after {
-	bottom: 3.75rem;
-	left: -3.75rem;
-}
-
 .button-scroll--right,
 .button-scroll--left,
 .button-scroll {
@@ -1999,10 +1998,6 @@ html {
 
 .header__logo {
 	width: 8.625rem;
-}
-
-.header__navigation-sp {
-	display: none;
 }
 
 .header__navigation-sp__inner {

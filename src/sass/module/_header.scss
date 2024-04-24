@@ -55,7 +55,7 @@
   background-color: $green-accent;
   z-index: 1;
   overflow: scroll;
-  @include mq('inner') {
+  @include mq('md') {
     display: none;
   }
 }
