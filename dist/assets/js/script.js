@@ -45,12 +45,12 @@ jQuery(function ($) {
       $(this).removeClass("is-open");
       $(".js-drawer-menu").removeClass("is-open");
       $(".js-header__inner").removeClass("is-open");
-      $("body").css("overscroll-behavior", "");
+      $("body").css("overflow", "scroll");
     } else {
       $(this).addClass("is-open");
       $(".js-drawer-menu").addClass("is-open");
       $(".js-header__inner").addClass("is-open");
-      $("body").css("overscroll-behavior", "none");
+      $("body").css("overflow", "hidden");
     }
   });
 
@@ -83,7 +83,7 @@ jQuery(function ($) {
       if ($(".js-hamburger").hasClass("is-open")) {
         $(".js-hamburger").removeClass("is-open");
       }
-      $("body").css("overscroll-behavior", "");
+      $("body").css("overflow", "scroll");
     }
   };
 
