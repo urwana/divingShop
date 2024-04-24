@@ -361,14 +361,14 @@ a {
 .top-information {
 	background-color: #DDF0F1;
 	margin-top: 4.375rem;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
 }
 
 .top-information__inner {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 37.5rem;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
 }
 
 .top-information__contents {
@@ -403,14 +403,14 @@ a {
 .top-price {
 	background-color: #DDF0F1;
 	margin-top: 5rem;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
 }
 
 .top-price__inner {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 37.5rem;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
 	position: relative;
 }
 
@@ -752,10 +752,12 @@ a {
 	background-color: #408F95;
 	color: #fff;
 	margin-top: 6.25rem;
+	padding-bottom: 3.625rem;
+	padding-top: 3rem;
 }
 
 .footer__inner {
-	padding: 3rem 0.9375rem 3.625rem;
+	padding: 0 0.9375rem;
 }
 
 .footer__images-container {
@@ -1588,9 +1590,6 @@ html {
 
 .top-information {
 	margin-top: 10.25rem;
-}
-
-.top-information__inner {
 	padding-top: 6.25rem;
 }
 
@@ -1616,9 +1615,6 @@ html {
 
 .top-price {
 	margin-top: 8.75rem;
-}
-
-.top-price__inner {
 	padding-bottom: 6.25rem;
 	padding-top: 6.0625rem;
 }
@@ -1784,10 +1780,12 @@ html {
 
 .footer {
 	margin-top: 10rem;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
 }
 
 .footer__inner {
-	padding: 5rem 12.5%;
+	padding: 0 12.5%;
 }
 
 .footer__images-container {

@@ -2,17 +2,21 @@
 
 .footer {
   margin-top: rem(100);
+  padding-top: rem(48);
+  padding-bottom: rem(58);
   background-color: $green-accent;
   color:$white;
   @include mq('md') {
     margin-top: rem(160);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
   }
 }
 
 .footer__inner {
-  padding: rem(48) rem(15) rem(58);
+  padding: 0 rem(15) ;
   @include mq('md') {
-    padding: rem(80) 12.5%;
+    padding: 0 12.5%;
   }
 }
 
