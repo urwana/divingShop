@@ -214,27 +214,35 @@ const openingTimeLine = gsap.timeline();
 openingTimeLine
   .to(openingImages, {
     y: 0,
-    duration: 3,
+    duration: 1.5,
     stagger: 0.3,
     ease: "power2.inOut",
   })
   .to(openingImages, {
     autoAlpha: 0,
-    duration: 2,
+    duration: 0.5,
     ease: "power2.inOut",
   })
-  .to(".js-opening__title-container", {
-    autoAlpha: 1,
-    duration: 1,
-    ease: "power2.inOut",
-  })
+  .to(
+    ".js-opening__title-container",
+    {
+      autoAlpha: 1,
+      duration: 0.5,
+      ease: "power2.inOut",
+    },
+    "<0.5"
+  )
   .to(".js-opening", {
     backgroundColor: "rgba(0, 0, 0, 0)",
-    duration: 1,
+    duration: 0.1,
+    autoAlpha: 1,
     ease: "power2.inOut",
   })
-  .to(".js-opening__title-container", {
-    autoAlpha: 1,
-    color: "#ffffff",
-    duration: 1,
-  });
+  .to(
+    ".js-opening__title-container",
+    {
+      color: "#ffffff",
+      duration: 0.15,
+    },
+    "<"
+  );
