@@ -264,7 +264,6 @@ a {
 }
 
 .top-contact {
-	margin-bottom: 8.75rem;
 	margin-top: 5rem;
 }
 
@@ -752,7 +751,7 @@ a {
 .footer {
 	background-color: #408F95;
 	color: #fff;
-	margin-top: 5rem;
+	margin-top: 6.25rem;
 }
 
 .footer__inner {
@@ -1530,7 +1529,6 @@ html {
 }
 
 .top-contact {
-	margin-bottom: 10rem;
 	margin-top: 8.75rem;
 }
 
@@ -1785,7 +1783,7 @@ html {
 }
 
 .footer {
-	margin-top: 8.75rem;
+	margin-top: 10rem;
 }
 
 .footer__inner {
