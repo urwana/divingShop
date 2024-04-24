@@ -106,6 +106,7 @@ jQuery(function($) {
 
   // kv swiper
   const swiper = new Swiper(".swiper", {
+    effect: "fade",
     speed: 800,
     loop: true,
     autoplay: {
