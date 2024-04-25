@@ -562,7 +562,7 @@ a {
 	content: "";
 	display: block;
 	height: 1px;
-	left: calc((100% - 28px) / 2);
+	left: 10px;
 	position: absolute;
 	top: 50%;
 	width: 28px;
@@ -573,20 +573,20 @@ a {
 }
 
 .button-scroll::before {
-	left: calc((100% - 28px) / 2);
-	top: calc(50% - 3px);
+	left: 10px;
+	top: 21px;
 	transform: rotate(-30deg);
 }
 
 .button-scroll--left::before {
-	right: calc((100% - 28px) / 2);
-	top: calc(50% - 3px);
+	right: 10px;
+	top: 21px;
 	transform: rotate(30deg);
 }
 
 .button-scroll--right::before {
-	left: calc((100% - 28px) / 2);
-	top: calc(50% - 3px);
+	left: 10px;
+	top: 21px;
 	transform: rotate(-30deg);
 }
 
@@ -1752,24 +1752,27 @@ html {
 .button-scroll--right::after,
 .button-scroll--left::after,
 .button-scroll::after {
-	left: calc((100% - 40px) / 2);
+	left: 20px;
 	width: 2.5rem;
 }
 
 .button-scroll::before {
-	left: calc((100% - 40px) / 2);
+	left: 20px;
+	top: 37px;
 }
 
 .button-scroll--left::before {
-	right: calc((100% - 40px) / 2);
+	right: 20px;
+	top: 37px;
 }
 
 .swiper-campaign-button-next .button-scroll--left::after {
-	left: calc((100% - 40px) / 2);
+	left: 20px;
 }
 
 .button-scroll--right::before {
-	left: calc((100% - 40px) / 2);
+	left: 20px;
+	top: 37px;
 }
 
 .campaign-card__image {

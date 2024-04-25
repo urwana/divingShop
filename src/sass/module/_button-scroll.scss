@@ -1,16 +1,19 @@
 @use 'global' as *;
 
+$large-button-size:80px;
+$small-button-size:48px;
+
 %button-scroll-common {
-  width: 48px;
-  height: 48px;
+  width: $small-button-size;
+  height: $small-button-size;
   border-radius: 50%;
   background: $white;
   border: solid 1px $green-accent;
   position: relative;
   cursor: pointer;
   @include mq("md") {
-    width: 80px;
-    height: 80px;
+    width: $large-button-size;
+    height: $large-button-size;
   }
 }
 
@@ -31,11 +34,11 @@
   width: 28px;
   height: 1px;
   top: 50%;
-  left: calc((100% - 28px) / 2);
+  left: calc(($small-button-size - 28px) / 2);
   background-color: $green-accent;
   @include mq("md") {
     width: rem(40);
-    left: calc((100% - 40px) / 2);
+    left: calc(($large-button-size - 40px) / 2);
   }
 }
 
@@ -45,11 +48,12 @@
 }
 
 .button-scroll::before {
-  top: calc(50% - 3px);
-  left: calc((100% - 28px) / 2);
+  top: calc(($small-button-size / 2) - 3px);
+  left: calc(($small-button-size - 28px) / 2);
   transform: rotate(-30deg);
   @include mq("md") {
-    left: calc((100% - 40px) / 2);
+    top: calc(($large-button-size / 2) - 3px);
+    left: calc(($large-button-size - 40px) / 2);
   }
 }
 
@@ -58,18 +62,19 @@
 }
 
 .button-scroll--left::before {
-  top: calc(50% - 3px);
-  right: calc((100% - 28px) / 2);
+  top: calc(($small-button-size / 2) - 3px);
+  right: calc(($small-button-size - 28px) / 2);
   transform: rotate(30deg);
   @include mq("md") {
-    right: calc((100% - 40px) / 2);
+    top: calc(($large-button-size / 2) - 3px);
+    right: calc(($large-button-size - 40px) / 2);
   }
 }
 
 // TODO: 見直す
 .swiper-campaign-button-next .button-scroll--left::after {
   @include mq("md") {
-    left: calc((100% - 40px) / 2);
+    left: calc(($large-button-size - 40px) / 2);
   }
 }
 
@@ -78,10 +83,11 @@
 }
 
 .button-scroll--right::before {
-  top: calc(50% - 3px);
-  left: calc((100% - 28px) / 2);
+  top: calc(($small-button-size / 2) - 3px);
+  left: calc(($small-button-size - 28px) / 2);
   transform: rotate(-30deg);
   @include mq("md") {
-    left: calc((100% - 40px) / 2);
+    top: calc(($large-button-size / 2) - 3px);
+    left: calc(($large-button-size - 40px) / 2);
   }
 }
