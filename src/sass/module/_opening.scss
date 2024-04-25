@@ -64,10 +64,11 @@
 .opening__title{
   font-family: $price-font;
   font-size: rem(40);
-  font-weight: $regular;
+  font-weight: normal;
   text-align: center;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.54em;
+  text-indent: 0.54em;
   @include mq('md') {
     font-size: rem(80);
   }
