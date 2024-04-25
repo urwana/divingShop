@@ -758,7 +758,7 @@ a {
 }
 
 .company-info {
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP";
 }
 
 .company-info__holidays,
@@ -1799,7 +1799,6 @@ html {
 
 .company-info {
 	font-size: 1rem;
-	font-weight: 300;
 	line-height: 1.5;
 	text-shadow: none;
 }
