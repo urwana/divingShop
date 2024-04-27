@@ -41,10 +41,10 @@
 .swiper-campaign .swiper-campaign-button-next{
   @include mq('md') {
     top:-74px;
-    right:0;
+    right:rem(15);
   }
   @include mq("md") {
     top:-104px;
-    right:0;
-    }
+    right:rem(20);
+  }
 }

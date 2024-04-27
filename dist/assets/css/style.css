@@ -1428,12 +1428,12 @@ html {
 }
 
 .swiper-campaign .swiper-campaign-button-next {
-	right: 0;
+	right: 0.9375rem;
 	top: -74px;
 }
 
 .swiper-campaign .swiper-campaign-button-next {
-	right: 0;
+	right: 1.25rem;
 	top: -104px;
 }
 
@@ -1540,9 +1540,9 @@ html {
 }
 
 .top-campaign {
-	margin-top: 0;
+	margin-top: 5rem;
 	overflow: hidden;
-	padding-top: 7.5rem;
+	padding-top: 2.5rem;
 }
 
 .top-campaign__inner {
