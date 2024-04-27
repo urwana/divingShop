@@ -950,7 +950,7 @@ a {
 .header__navigation-sp__inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	padding: 5rem 0.9375rem 0.9375rem 0.9375rem;
+	padding: 5rem 0.9375rem 1.875rem 0.9375rem;
 	padding-top: 5rem;
 }
 
@@ -1693,7 +1693,7 @@ html {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: -rem(30);
+	bottom: -1.875rem;
 	content: "";
 	height: 12.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
@@ -2077,32 +2077,6 @@ html {
 
 html {
 	font-size: 16px;
-}
-
-}
-
-@media screen and (min-width: 1300px) {
-
-.navigation-responsive__column:not(:first-child) { /* float + margin 利用 */
-	margin-left: 11.111%;
-}
-
-}
-
-@media screen and (min-width: 1310px) {
-
-.navigation-responsive { /* float + margin 利用 */
-	display: block;
-}
-
-.navigation-responsive::after {
-	clear: both; /* float + margin 利用 */
-	content: "";
-	display: block;
-}
-
-.navigation-responsive__column { /* float + margin 利用 */
-	float: left;
 }
 
 }

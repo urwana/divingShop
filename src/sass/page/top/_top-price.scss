@@ -24,13 +24,13 @@
     position: absolute;
     z-index: 2;
     left: calc(50% - min(48vw, rem(620)));
+    bottom: - rem(30);
     width: rem(437);
     height: rem(201);
     background-image: url(../images/top/bg-fish.svg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    bottom: -rem(30);
   }
 }
 

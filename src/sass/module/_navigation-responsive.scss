@@ -12,28 +12,6 @@
     align-items: flex-start;
 
   }
-  @media screen and (min-width: 1310px) {
-    /* float + margin 利用 */
-    display: block;
-  }
-}
-
-.navigation-responsive::after {
-  @include mq("md") {
-  }
-  @media screen and (min-width: 1310px) {
-    /* float + margin 利用 */
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
-.navigation-responsive__column {
-  @media screen and (min-width: 1310px) {
-    /* float + margin 利用 */
-    float: left;
-  }
 }
 
 .navigation-responsive__column:nth-of-type(2) {
@@ -52,16 +30,6 @@
 
 .navigation-responsive__item-group {
   margin-top: rem(40);
-}
-
-.navigation-responsive__column:not(:first-child) {
-  @include mq("md") {
-
-  }
-  @media screen and (min-width: 1300px) {
-    /* float + margin 利用 */
-    margin-left: 11.111%;
-  }
 }
 
 .navigation-responsive__item-group:nth-of-type(1) {
