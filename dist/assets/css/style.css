@@ -950,7 +950,7 @@ a {
 .header__navigation-sp__inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	padding: 5rem 0.9375rem 0 0.9375rem;
+	padding: 5rem 0.9375rem 0.9375rem 0.9375rem;
 	padding-top: 5rem;
 }
 
