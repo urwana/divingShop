@@ -1697,7 +1697,7 @@ html {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: -1.875rem;
+	bottom: -2.5rem;
 	content: "";
 	height: 12.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
