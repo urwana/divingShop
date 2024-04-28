@@ -197,8 +197,12 @@ a {
 	z-index: 1;
 }
 
+.top-about__contents {
+	margin-top: 2.5rem;
+}
+
 .top-about__image-container {
-	margin-top: 1.5rem;
+	margin-top: 1.75rem;
 	position: relative;
 }
 
@@ -215,7 +219,7 @@ a {
 	margin-right: auto;
 	position: absolute;
 	top: 0;
-	width: 34.1%;
+	width: 37.1%;
 	z-index: -1;
 }
 
@@ -230,8 +234,8 @@ a {
 	aspect-ratio: 281/186;
 	position: absolute;
 	right: 0;
-	top: 0;
-	width: 75%;
+	top: 1.625rem;
+	width: 81.1%;
 	z-index: -2;
 }
 
@@ -1514,7 +1518,7 @@ html {
 }
 
 .top-about__image-right {
-	bottom: 0;
+	right: 2.5rem;
 	top: 5rem;
 	width: 55rem;
 }
