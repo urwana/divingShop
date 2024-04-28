@@ -1951,6 +1951,8 @@ html {
 .navigation-responsive {
 	align-items: flex-start;
 	display: flex;
+	flex-direction: row;
+	gap: 7.5rem;
 	height: 12.625rem;
 	justify-content: flex-start;
 }
