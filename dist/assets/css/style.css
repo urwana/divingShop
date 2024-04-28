@@ -591,7 +591,6 @@ a {
 	content: "";
 	display: block;
 	height: 1px;
-	left: 10px;
 	position: absolute;
 	top: 50%;
 	width: 28px;
@@ -607,16 +606,28 @@ a {
 	transform: rotate(-30deg);
 }
 
+.button-scroll::after {
+	left: 10px;
+}
+
 .button-scroll--left::before {
+	left: 10px;
+	top: 21px;
+	transform: rotate(-30deg);
+}
+
+.button-scroll--left::after {
+	left: 10px;
+}
+
+.button-scroll--right::before {
 	right: 10px;
 	top: 21px;
 	transform: rotate(30deg);
 }
 
-.button-scroll--right::before {
-	left: 10px;
-	top: 21px;
-	transform: rotate(-30deg);
+.button-scroll--right::after {
+	right: 10px;
 }
 
 .button {
@@ -1073,7 +1084,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 28.25rem;
 }
 
 .navigation-responsive__column:nth-of-type(2) {
@@ -1794,7 +1804,6 @@ html {
 .button-scroll--right::after,
 .button-scroll--left::after,
 .button-scroll::after {
-	left: 20px;
 	width: 2.5rem;
 }
 
@@ -1803,18 +1812,26 @@ html {
 	top: 37px;
 }
 
+.button-scroll::after {
+	left: 20px;
+}
+
 .button-scroll--left::before {
-	right: 20px;
+	left: 20px;
 	top: 37px;
 }
 
-.swiper-campaign-button-next .button-scroll--left::after {
+.button-scroll--left::after {
 	left: 20px;
 }
 
 .button-scroll--right::before {
-	left: 20px;
+	right: 20px;
 	top: 37px;
+}
+
+.button-scroll--right::after {
+	right: 20px;
 }
 
 .campaign-card__image {
@@ -1957,7 +1974,6 @@ html {
 	display: flex;
 	flex-direction: row;
 	gap: 7.5rem;
-	height: 12.625rem;
 	justify-content: flex-start;
 }
 

@@ -1,7 +1,7 @@
 @use 'global' as *;
 
-$large-button-size:80px;
-$small-button-size:48px;
+$large-button-size: 80px;
+$small-button-size: 48px;
 
 %button-scroll-common {
   width: $small-button-size;
@@ -34,11 +34,9 @@ $small-button-size:48px;
   width: 28px;
   height: 1px;
   top: 50%;
-  left: calc(($small-button-size - 28px) / 2);
   background-color: $green-accent;
   @include mq("md") {
     width: rem(40);
-    left: calc(($large-button-size - 40px) / 2);
   }
 }
 
@@ -57,11 +55,40 @@ $small-button-size:48px;
   }
 }
 
+.button-scroll::after {
+  left: calc(($small-button-size - 28px) / 2);
+  @include mq("md") {
+    left: calc(($large-button-size - 40px) / 2);
+  }
+}
+
 .button-scroll--left {
   @extend %button-scroll-common;
 }
 
 .button-scroll--left::before {
+  top: calc(($small-button-size / 2) - 3px);
+  left: calc(($small-button-size - 28px) / 2);
+  transform: rotate(-30deg);
+  @include mq("md") {
+    top: calc(($large-button-size / 2) - 3px);
+    left: calc(($large-button-size - 40px) / 2);
+  }
+}
+
+.button-scroll--left::after {
+  left: calc(($small-button-size - 28px) / 2);
+  @include mq("md") {
+    left: calc(($large-button-size - 40px) / 2);
+  }
+}
+
+
+.button-scroll--right {
+  @extend %button-scroll-common;
+}
+
+.button-scroll--right::before {
   top: calc(($small-button-size / 2) - 3px);
   right: calc(($small-button-size - 28px) / 2);
   transform: rotate(30deg);
@@ -71,23 +98,9 @@ $small-button-size:48px;
   }
 }
 
-// TODO: 見直す
-.swiper-campaign-button-next .button-scroll--left::after {
+.button-scroll--right::after {
+  right: calc(($small-button-size - 28px) / 2);
   @include mq("md") {
-    left: calc(($large-button-size - 40px) / 2);
-  }
-}
-
-.button-scroll--right {
-  @extend %button-scroll-common;
-}
-
-.button-scroll--right::before {
-  top: calc(($small-button-size / 2) - 3px);
-  left: calc(($small-button-size - 28px) / 2);
-  transform: rotate(-30deg);
-  @include mq("md") {
-    top: calc(($large-button-size / 2) - 3px);
-    left: calc(($large-button-size - 40px) / 2);
+    right: calc(($large-button-size - 40px) / 2);
   }
 }
