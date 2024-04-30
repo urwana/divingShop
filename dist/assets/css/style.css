@@ -209,7 +209,6 @@ a {
 .top-about__image-container::after {
 	content: "";
 	display: block;
-	padding-top: 61.44%;
 	width: 100%;
 }
 
@@ -1480,10 +1479,6 @@ html {
 	margin-top: 8.75rem;
 }
 
-.top-about__inner {
-	height: 47.9375rem;
-}
-
 .top-about__inner::after {
 	background-image: url(../images/top/coral.svg);
 	background-position: center center;
@@ -1502,23 +1497,15 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-left: auto;
 	margin-left: 12.5rem;
-	margin-right: auto;
-	margin-top: 14rem;
+	position: absolute;
+	top: 14rem;
 }
 
 .top-about__image-container {
-	height: 100%;
-	left: 0;
-	margin-left: calc((100% - 67.5rem) / 2);
-	margin-top: 0;
-	margin-top: 6.75rem;
-	max-width: 70rem;
-	padding: 0 1.25rem;
-	position: absolute;
-	top: 0;
-	width: 100%;
+	aspect-ratio: 1080/660;
+	margin-top: 2.5rem;
+	position: relative;
 }
 
 .top-about__image-left {
@@ -1528,9 +1515,9 @@ html {
 }
 
 .top-about__image-right {
-	right: 2.5rem;
+	right: 0;
 	top: 5rem;
-	width: 55rem;
+	width: 81.5%;
 }
 
 .top-about__catch-copy {
