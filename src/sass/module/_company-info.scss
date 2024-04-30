@@ -1,8 +1,7 @@
 @use 'global' as *;
 
 .company-info {
-  // font-family: $sans;
-  font-family: "Noto Sans JP";
+  font-family: $sans;
   @include mq('md') {
     font-size: rem(16);
     line-height: calc(24 / 16);
