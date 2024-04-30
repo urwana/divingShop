@@ -962,8 +962,6 @@ a {
 }
 
 .header__navigation-sp-inner {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	padding: 5rem 0.9375rem 1.875rem 0.9375rem;
 	padding-top: 5rem;
 }
@@ -1132,6 +1130,11 @@ a {
 	position: absolute;
 	top: 0;
 	width: 1.125rem;
+}
+
+.navigation-sp {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .navigation-sp__item-group:not(:first-child) {
@@ -1925,10 +1928,6 @@ html {
 	display: none;
 }
 
-.header__navigation-sp-inner {
-	display: none;
-}
-
 .header__navigation-pc {
 	display: block;
 	height: inherit;
@@ -1979,6 +1978,10 @@ html {
 
 .navigation-responsive__item--top::before {
 	top: 0.0625rem;
+}
+
+.navigation-sp {
+	display: none;
 }
 
 .opening__title {

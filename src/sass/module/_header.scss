@@ -67,13 +67,8 @@
 }
 
 .header__navigation-sp-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding-top: rem(80);
   padding: rem(80) rem(15) rem(30) rem(15);
-  @include mq("md") {
-    display: none;
-  }
 }
 
 .header__navigation-pc {
