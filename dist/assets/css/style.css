@@ -194,7 +194,7 @@ a {
 	margin-right: auto;
 	max-width: 37.5rem;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 .top-about__contents {
@@ -219,7 +219,7 @@ a {
 	position: absolute;
 	top: 0;
 	width: 37.1%;
-	z-index: -1;
+	z-index: 1;
 }
 
 .top-about__image-left img {
@@ -235,7 +235,7 @@ a {
 	right: 0;
 	top: 1.625rem;
 	width: 81.1%;
-	z-index: -2;
+	z-index: 0;
 }
 
 .top-about__image-right img {
@@ -272,7 +272,7 @@ a {
 }
 
 .top-blog::before {
-	z-index: -1;
+	z-index: 0;
 }
 
 .top-blog__cards {
@@ -654,7 +654,7 @@ a {
 	position: absolute;
 	top: 0.25rem;
 	width: 100%;
-	z-index: -1;
+	z-index: 1;
 }
 
 .button::after {
@@ -669,7 +669,7 @@ a {
 	transform-origin: left top;
 	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
 	width: 100%;
-	z-index: -1;
+	z-index: 1;
 }
 
 .button:hover {
@@ -1490,7 +1490,7 @@ html {
 	position: absolute;
 	right: calc(50% - min(48vw, 39.8125rem));
 	width: 12.125rem;
-	z-index: 2;
+	z-index: 3;
 }
 
 .top-about__contents {
@@ -1500,6 +1500,7 @@ html {
 	margin-left: 12.5rem;
 	position: absolute;
 	top: 14rem;
+	z-index: 3;
 }
 
 .top-about__image-container {
