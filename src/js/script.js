@@ -116,8 +116,8 @@ jQuery(function($) {
       },
     }),
     navigation: {
-      nextEl: ".swiper-campaign-button-next",
-      prevEl: ".swiper-campaign-button-prev",
+      nextEl: ".swiper-campaign__button-next",
+      prevEl: ".swiper-campaign__button-prev",
     },
   });
 

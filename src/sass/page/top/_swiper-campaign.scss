@@ -7,16 +7,16 @@
   z-index: 1;
 }
 
-.swiper-wrapper--campaign{
+.swiper-campaign__wrapper{
   height: inherit;
 }
 
-.swiper-slide--campaign{
+.swiper-campaign__swiper-slide{
   height: inherit;
 }
 
-.swiper-campaign-button-prev,
-.swiper-campaign-button-next{
+.swiper-campaign__button-prev,
+.swiper-campaign__button-next{
   z-index: 2;
   @include mq('md') {
     position: absolute;
@@ -27,7 +27,7 @@
   }
 }
 
-.swiper-campaign .swiper-campaign-button-prev{
+.swiper-campaign .swiper-campaign__button-prev{
   @include mq('md') {
     top:-74px;
     right:160px;
@@ -38,7 +38,7 @@
   }
 }
 
-.swiper-campaign .swiper-campaign-button-next{
+.swiper-campaign .swiper-campaign__button-next{
   @include mq('md') {
     top:-74px;
     right:rem(15);

@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.key-visual{
+  height: 100vh;
+  width: auto;
+}
+
+.key-visual__swiper {
+  width: 100%;
+  position: relative;
+  height: inherit;
+}
+
+.key-visual__swiper-wrapper{
+  height: inherit;
+}
+
+.key-visual__swiper-slide{
+  height: inherit;
+}
+
+.key-visual__swiper-slide img{
+  height: 100%;
+  object-fit: cover;
+}

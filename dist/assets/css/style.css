@@ -152,16 +152,16 @@ a {
 	z-index: 1;
 }
 
-.swiper-wrapper--campaign {
+.swiper-campaign__wrapper {
 	height: inherit;
 }
 
-.swiper-slide--campaign {
+.swiper-campaign__swiper-slide {
 	height: inherit;
 }
 
-.swiper-campaign-button-prev,
-.swiper-campaign-button-next {
+.swiper-campaign__button-prev,
+.swiper-campaign__button-next {
 	z-index: 2;
 }
 
@@ -1448,8 +1448,8 @@ html {
 	font-size: 1.4814814815vw;
 }
 
-.swiper-campaign-button-prev,
-.swiper-campaign-button-next {
+.swiper-campaign__button-prev,
+.swiper-campaign__button-next {
 	height: 5rem;
 	position: absolute;
 	right: 0;
@@ -1457,22 +1457,22 @@ html {
 	width: 5rem;
 }
 
-.swiper-campaign .swiper-campaign-button-prev {
+.swiper-campaign .swiper-campaign__button-prev {
 	right: 160px;
 	top: -74px;
 }
 
-.swiper-campaign .swiper-campaign-button-prev {
+.swiper-campaign .swiper-campaign__button-prev {
 	right: 160px;
 	top: -104px;
 }
 
-.swiper-campaign .swiper-campaign-button-next {
+.swiper-campaign .swiper-campaign__button-next {
 	right: 0.9375rem;
 	top: -74px;
 }
 
-.swiper-campaign .swiper-campaign-button-next {
+.swiper-campaign .swiper-campaign__button-next {
 	right: 1.25rem;
 	top: -104px;
 }
