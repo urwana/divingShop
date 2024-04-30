@@ -1062,7 +1062,7 @@ a {
 	transform: scale(1, 1);
 }
 
-.navigation-pc__label--english {
+.navigation-pc__english {
 	color: #fff;
 	font-family: "Gotu", sans-serif;
 	font-size: 1.125rem;
@@ -1070,7 +1070,7 @@ a {
 	text-align: center;
 }
 
-.navigation-pc__label {
+.navigation-pc__japanese {
 	color: #fff;
 	font-family: "Noto Sans JP, sans-serif";
 	font-size: 0.625rem;
@@ -1952,7 +1952,7 @@ html {
 	font-size: 1.5rem;
 }
 
-.navigation-pc__label {
+.navigation-pc__japanese {
 	margin-top: 0.25rem;
 	width: 100%;
 }
