@@ -145,6 +145,31 @@ a {
 	transition: opacity 0.3s;
 }
 
+.key-visual {
+	height: 100vh;
+	width: auto;
+}
+
+.key-visual__swiper {
+	height: inherit;
+	position: relative;
+	width: 100%;
+}
+
+.key-visual__swiper-wrapper {
+	height: inherit;
+}
+
+.key-visual__swiper-slide {
+	height: inherit;
+}
+
+.key-visual__swiper-slide img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+}
+
 .swiper-campaign {
 	height: inherit;
 	position: relative;
@@ -525,7 +550,7 @@ a {
 
 .blog-card__title {
 	border-bottom: solid 1px #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -726,7 +751,7 @@ a {
 
 .campaign-card__title {
 	border-bottom: 1px solid #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 	margin-top: 0.5rem;
@@ -734,7 +759,7 @@ a {
 }
 
 .campaign-card__explain {
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.7142857143;
 	margin-top: 0.5rem;
@@ -766,16 +791,8 @@ a {
 	width: 100%;
 }
 
-.u-desktop {
-	display: none;
-}
-
-.u-mobile {
-	display: block;
-}
-
 .company-info {
-	font-family: "Noto Sans JP";
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .company-info__holidays,
@@ -956,31 +973,6 @@ a {
 	width: 100%;
 }
 
-.key-visual {
-	height: 100vh;
-	width: auto;
-}
-
-.key-visual__swiper {
-	height: inherit;
-	position: relative;
-	width: 100%;
-}
-
-.key-visual__swiper-wrapper {
-	height: inherit;
-}
-
-.key-visual__swiper-slide {
-	height: inherit;
-}
-
-.key-visual__swiper-slide img {
-	-o-object-fit: cover;
-	height: 100%;
-	object-fit: cover;
-}
-
 .label {
 	border: solid 1px #408F95;
 	color: #408F95;
@@ -992,7 +984,7 @@ a {
 
 .lined-title {
 	border-bottom: solid 1px #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -1007,7 +999,7 @@ a {
 
 .lined-title--no-change {
 	border-bottom: solid 1px #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -1068,7 +1060,7 @@ a {
 
 .navigation-pc__japanese {
 	color: #fff;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
 	position: relative;
@@ -1076,17 +1068,12 @@ a {
 }
 
 .navigation-responsive {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-.navigation-responsive__column:nth-of-type(2) {
-	margin-top: 2.5rem;
-}
-
-.navigation-responsive__column:nth-of-type(4) {
-	margin-top: 2.5rem;
+	grid-row-gap: 2.5rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 2.5rem;
 }
 
 .navigation-responsive__item-group {
@@ -1099,7 +1086,7 @@ a {
 
 .navigation-responsive__item {
 	color: #fff;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.125;
@@ -1141,7 +1128,7 @@ a {
 
 .navigation-sp__item {
 	color: #fff;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.125;
@@ -1316,7 +1303,7 @@ a {
 
 .section-title__japan {
 	color: #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.5;
@@ -1325,7 +1312,7 @@ a {
 
 .section-title__explain {
 	color: #408F95;
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.2857142857;
@@ -1427,7 +1414,7 @@ a {
 }
 
 .voice-card__text {
-	font-family: "Noto Sans JP, sans-serif";
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.5;
@@ -1841,14 +1828,6 @@ html {
 	margin-top: 1rem;
 }
 
-.u-desktop {
-	display: block;
-}
-
-.u-mobile {
-	display: none;
-}
-
 .company-info {
 	font-size: 1rem;
 	line-height: 1.5;
@@ -1961,14 +1940,6 @@ html {
 	flex-direction: row;
 	gap: 7.5rem;
 	justify-content: flex-start;
-}
-
-.navigation-responsive__column:nth-of-type(2) {
-	margin-top: 0;
-}
-
-.navigation-responsive__column:nth-of-type(4) {
-	margin-top: 0;
 }
 
 .navigation-responsive__item-group:nth-of-type(7) {
