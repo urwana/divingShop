@@ -164,9 +164,9 @@ jQuery(function($) {
     document.body.scrollHeight,
     document.documentElement.scrollHeight
   );
-  const keyVisualHeight = $(".js-key-visual").height();
-  const footerHeight = $(".js-footer").height();
-  const scrollTopButton = $(".js-scroll-to-top");
+  const keyVisualHeight = $(".key-visual").height();
+  const footerHeight = $(".footer").height();
+  const scrollTopButton = $(".scroll-to-top");
   const viewportHeight = $(window).height();
 
   const bottomHideHight = documentHeight - footerHeight - viewportHeight;
