@@ -12,9 +12,6 @@
   z-index: 2;
   max-width: rem(600);
   margin-inline: auto;
-  @include mq("md") {
-    // codeUps height: rem(767);
-  }
 }
 
 .top-about__inner::after {
@@ -41,8 +38,6 @@
 .top-about__contents {
   margin-top: rem(40);
   @include mq("md") {
-    // codeUps margin-top: rem(224);
-    // codeUps margin-inline: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -58,27 +53,11 @@
   margin-top: rem(28);
   aspect-ratio: 345 / 212;
   @include mq("md") {
-    // codeUps margin-top: 0;
-    // codeUps position: absolute;
-    // codeUps top: 0;
-    // codeUps left: 0;
-    // codeUps width: 100%;
-    // codeUps height: 100%;
       margin-top: rem(40);
-    // codeUps max-width: rem(1120);
-    // codeUps padding: 0 rem(20);
-    // codeUps margin-left: calc((100% - rem(1080)) / 2);
     aspect-ratio: 1080 / 660;
     position: relative;
   }
 }
-
-// .top-about__image-container::after {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   // codeUps padding-top: 61.44%;
-// }
 
 .top-about__image-left {
   z-index: 1;
@@ -109,9 +88,7 @@
   right: 0;
   @include mq("md") {
     top: rem(80);
-    //codeUps right: rem(40);
     right:0;
-    //codeUps width: rem(880);
     width: 81.5%;
   }
 }
