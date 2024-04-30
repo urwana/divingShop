@@ -3,7 +3,6 @@
 .top-blog {
   margin-top: rem(80);
   position: relative;
-  z-index: 1;
   @include mq("md") {
     margin-top: 0;
     padding-top: rem(100);
@@ -24,6 +23,11 @@
     background-position: center top;
     background-size:cover;
   }
+}
+
+.top-blog__inner{
+  // section-title の z-index 対応
+  position: relative;
 }
 
 .top-blog__cards {

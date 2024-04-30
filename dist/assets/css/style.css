@@ -248,11 +248,14 @@ a {
 .top-blog {
 	margin-top: 5rem;
 	position: relative;
-	z-index: 1;
 }
 
 .top-blog::before {
 	z-index: 0;
+}
+
+.top-blog__inner {
+	position: relative;
 }
 
 .top-blog__cards {
@@ -1300,16 +1303,12 @@ a {
 	z-index: 1;
 }
 
-.section-title-container {
+.section-title {
 	font-family: "Gotu", sans-serif;
 	text-align: center;
 }
 
-.section-title-container--contact .section-title {
-	line-height: 1;
-}
-
-.section-title {
+.section-title__word {
 	color: #0D2936;
 	font-size: 2rem;
 	font-weight: 300;
@@ -1320,36 +1319,13 @@ a {
 	color: #408F95;
 }
 
-.section-title__word--blog {
-	color: #0D2936;
-}
-
-.section-title__word--blog::first-letter {
-	color: #408F95;
-}
-
-.section-title-container--contact .section-title__word {
-	display: inline-block;
-	font-size: 5rem;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.section-title-container--contact .section-title-jpn--contact {
-	line-height: 1;
-	margin-top: -0.25rem;
-}
-
-.section-title-jpn {
+.section-title__japan {
 	color: #408F95;
 	font-family: "Noto Sans JP, sans-serif";
 	font-size: 0.75rem;
 	font-weight: 300;
 	line-height: 1.5;
 	margin-top: 0.25rem;
-}
-
-.section-title-jpn--blog {
-	color: #408F95;
 }
 
 .section-title__explain {
@@ -1359,7 +1335,35 @@ a {
 	font-weight: 300;
 	line-height: 1.2857142857;
 	margin-top: 0.5rem;
+	text-align: center;
 	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-title--blog .section-title__word {
+	color: #0D2936;
+}
+
+.section-title--blog .section-title__word::first-letter {
+	color: #408F95;
+}
+
+.section-title--blog .section-title__japan {
+	color: #408F95;
+}
+
+.section-title--contact {
+	line-height: 1;
+}
+
+.section-title--contact .section-title__word {
+	display: inline-block;
+	font-size: 5rem;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-title--contact .section-title__japan {
+	line-height: 1;
+	margin-top: -0.25rem;
 }
 
 .sns-icons__link {
@@ -2006,38 +2010,38 @@ html {
 	font-size: 1rem;
 }
 
-.section-title {
+.section-title__word {
 	font-size: 2.5rem;
 	line-height: 1;
 }
 
-.section-title__word--blog {
-	color: #fff;
-}
-
-.section-title__word--blog::first-letter {
-	color: #DDF0F1;
-}
-
-.section-title-container--contact .section-title__word {
-	font-size: 5rem;
-	text-shadow: none;
-}
-
-.section-title-container--contact .section-title-jpn--contact {
-	margin-top: 0;
-}
-
-.section-title-jpn {
+.section-title__japan {
 	margin-top: 0.5rem;
-}
-
-.section-title-jpn--blog {
-	color: #fff;
 }
 
 .section-title__explain {
 	text-shadow: none;
+}
+
+.section-title--blog .section-title__word {
+	color: #fff;
+}
+
+.section-title--blog .section-title__word::first-letter {
+	color: #DDF0F1;
+}
+
+.section-title--blog .section-title__japan {
+	color: #fff;
+}
+
+.section-title--contact .section-title__word {
+	font-size: 5rem;
+	text-shadow: none;
+}
+
+.section-title--contact .section-title__japan {
+	margin-top: 0;
 }
 
 .sns-icons__link {
