@@ -178,7 +178,7 @@ openingTimeLine.to(openingImages, {
   autoAlpha: 0,
   duration: 0.5,
   ease: "power2.inOut"
-}).to(".js-opening__title-container", {
+}).to(".opening__title-container", {
   autoAlpha: 1,
   duration: 0.5,
   ease: "power2.inOut"
@@ -187,7 +187,7 @@ openingTimeLine.to(openingImages, {
   duration: 0.1,
   autoAlpha: 1,
   ease: "power2.inOut"
-}).to(".js-opening__title-container", {
+}).to(".opening__title-container", {
   color: "#ffffff",
   duration: 0.15
 }, "<");

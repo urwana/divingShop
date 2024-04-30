@@ -210,7 +210,7 @@ openingTimeLine
     ease: "power2.inOut",
   })
   .to(
-    ".js-opening__title-container",
+    ".opening__title-container",
     {
       autoAlpha: 1,
       duration: 0.5,
@@ -225,7 +225,7 @@ openingTimeLine
     ease: "power2.inOut",
   })
   .to(
-    ".js-opening__title-container",
+    ".opening__title-container",
     {
       color: "#ffffff",
       duration: 0.15,
