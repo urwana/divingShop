@@ -44,12 +44,12 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       $(this).removeClass("is-open");
       $(".js-drawer-menu").removeClass("is-open");
-      $(".js-header-inner").removeClass("is-open");
+      $(".header-inner").removeClass("is-open");
       $("body").css("overflow", "scroll");
     } else {
       $(this).addClass("is-open");
       $(".js-drawer-menu").addClass("is-open");
-      $(".js-header-inner").addClass("is-open");
+      $(".header-inner").addClass("is-open");
       $("body").css("overflow", "hidden");
     }
   });
@@ -62,8 +62,8 @@ jQuery(function ($) {
       if ($(".js-drawer-menu").hasClass("is-open")) {
         $(".js-drawer-menu").removeClass("is-open");
       }
-      if ($(".js-header-inner").hasClass("is-open")) {
-        $(".js-header-inner").removeClass("is-open");
+      if ($(".header-inner").hasClass("is-open")) {
+        $(".header-inner").removeClass("is-open");
       }
       if ($(".js-hamburger").hasClass("is-open")) {
         $(".js-hamburger").removeClass("is-open");
