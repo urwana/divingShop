@@ -56,6 +56,7 @@
 .top-about__image-container {
   position: relative;
   margin-top: rem(28);
+  aspect-ratio: 345 / 212;
   @include mq("md") {
     // codeUps margin-top: 0;
     // codeUps position: absolute;
@@ -72,12 +73,12 @@
   }
 }
 
-.top-about__image-container::after {
-  content: "";
-  display: block;
-  width: 100%;
-  // codeUps padding-top: 61.44%;
-}
+// .top-about__image-container::after {
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   // codeUps padding-top: 61.44%;
+// }
 
 .top-about__image-left {
   z-index: 1;
