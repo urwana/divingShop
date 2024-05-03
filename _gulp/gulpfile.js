@@ -19,13 +19,15 @@ const changed = require("gulp-changed"); // 変更されたファイルのみを
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
 const webp = require('gulp-webp');//webp変換
 const rename = require('gulp-rename');//ファイル名変更
+const ejs = require("gulp-ejs");
 
 // 読み込み先
 const srcPath = {
   css: "../src/sass/**/*.scss",
   js: "../src/js/**/*",
   img: "../src/images/**/*",
-  html: ["../src/**/*.html", "!./node_modules/**"],
+  //html: ["../src/**/*.html", "!./node_modules/**"],
+  ejs: "../src/templates/**/*.ejs",
 };
 
 // html反映用
@@ -34,14 +36,32 @@ const destPath = {
   css: "../dist/assets/css/",
   js: "../dist/assets/js/",
   img: "../dist/assets/images/",
-  html: "../dist/",
+  //html: "../dist/",
+  ejs: "../dist/",
 };
 
-const browsers = ["last 2 versions", "> 5%", "ie = 11", "not ie <= 10", "ios >= 8", "and_chr >= 5", "Android >= 5"];
+const browsers = [
+  "last 2 versions",
+  "> 5%",
+  "ie = 11",
+  "not ie <= 10",
+  "ios >= 8",
+  "and_chr >= 5",
+  "Android >= 5",
+];
 
 // HTMLファイルのコピー
-const htmlCopy = () => {
-  return src(srcPath.html).pipe(dest(destPath.html));
+// const htmlCopy = () => {
+//   return src(srcPath.html).pipe(dest(destPath.html));
+// };
+
+// ejs のコンパイル
+const compileEjs = () => {
+  return src(srcPath.ejs)
+    .pipe(ejs())
+    .pipe(rename({ extname: ".html" }))
+    .pipe(dest(destPath.ejs));
+  //.pipe(connect.reload());
 };
 
 const cssSass = () => {
@@ -76,11 +96,12 @@ const cssSass = () => {
       )
       // CSSプロパティをアルファベット順にソートし、未来のCSS構文を使用可能に
       .pipe(
-        postcss([cssdeclsort({
-          order: "alphabetical"
-        })]
-        ),
-        postcssPresetEnv({ browsers: 'last 2 versions' })
+        postcss([
+          cssdeclsort({
+            order: "alphabetical",
+          }),
+        ]),
+        postcssPresetEnv({ browsers: "last 2 versions" })
       )
       // メディアクエリを統合
       .pipe(mmq())
@@ -130,7 +151,7 @@ const imgImagemin = () => {
         )
       )
       .pipe(dest(destPath.img))
-      .pipe(webp())//webpに変換
+      .pipe(webp()) //webpに変換
       // 圧縮済みの画像ファイルを出力先に保存
       .pipe(dest(destPath.img))
   );
@@ -180,11 +201,21 @@ const watchFiles = () => {
   watch(srcPath.css, series(cssSass, browserSyncReload));
   watch(srcPath.js, series(jsBabel, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
-  watch(srcPath.html, series(htmlCopy, browserSyncReload));
+  //watch(srcPath.html, series(htmlCopy, browserSyncReload));
+  watch(srcPath.ejs, series(compileEjs, browserSyncReload));
 };
 
 // ブラウザシンク付きの開発用タスク
-exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parallel(watchFiles, browserSyncFunc));
+exports.default = series(
+  series(cssSass, jsBabel, imgImagemin, compileEjs /*htmlCopy*/),
+  parallel(watchFiles, browserSyncFunc)
+);
 
 // 本番用タスク
-exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy);
+exports.build = series(
+  clean,
+  cssSass,
+  jsBabel,
+  imgImagemin,
+  compileEjs /*htmlCopy*/
+);
