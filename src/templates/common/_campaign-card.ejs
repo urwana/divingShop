@@ -1,6 +1,6 @@
 <% if (typeof campaignCardData === 'undefined') { campaignCardData = []; } %>
 
-<a class="campaign-card" href="/campaign#licence">
+<a class="campaign-card" href="<%- campaignCardData.link %>">
   <div class="campaign-card__image">
     <img
       src="<%- campaignCardData.imgPath %>"
