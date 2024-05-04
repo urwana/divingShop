@@ -53,7 +53,7 @@ function _toPrimitive(input, hint) {
 
 jQuery(function($) {
   // ハンバーガ・ドロワーメニュー
-  $(".js-hamburger").on("click", function(e) {
+  $(".js-hamburger").on("click", function (e) {
     e.preventDefault();
     if ($(".js-hamburger").hasClass("is-open")) {
       $(this).removeClass("is-open");
@@ -100,21 +100,20 @@ jQuery(function($) {
   });
 
   // キャンペーンセクション swiper
-  const swiperCampaign = new Swiper(".swiper-campaign", {
+  const swiperCampaign = new Swiper(".js-swiper-campaign", {
     loop: true,
-    slidesPerView: 1.215,
-    spaceBetween: 24,
-    breakpoints: _defineProperty({
-      // when window width is >= 500px
-      500: {
-        slidesPerView: 1.8,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    centeredSlides: false,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      769: {
         spaceBetween: 40,
       },
-      767: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-    }),
+    },
     navigation: {
       nextEl: ".swiper-campaign__button-next",
       prevEl: ".swiper-campaign__button-prev",
@@ -125,14 +124,14 @@ jQuery(function($) {
   // TODO: gsap で書き換える
   const AllColorAnimationElements = $(".js-colorAnimation");
   const switchingSpeed = 700;
-  AllColorAnimationElements.each(function() {
+  AllColorAnimationElements.each(function () {
     $(this).append('<div class="color-mask"></div>');
     const colorMask = $(this).find($(".color-mask")),
       imageElement = $(this).find("img");
     let counter = 0;
     imageElement.css("opacity", "0");
     colorMask.css("width", "0%");
-    colorMask.on("inview", function() {
+    colorMask.on("inview", function () {
       if (counter == 0) {
         $(this)
           .delay(200)
@@ -141,7 +140,7 @@ jQuery(function($) {
               width: "100%",
             },
             switchingSpeed,
-            function() {
+            function () {
               imageElement.css("opacity", "1");
               $(this).css({
                 left: "0",
@@ -170,7 +169,7 @@ jQuery(function($) {
   const viewportHeight = $(window).height();
 
   const bottomHideHight = documentHeight - footerHeight - viewportHeight;
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     const scrollPosition = $(window).scrollTop();
     if (scrollPosition > keyVisualHeight && scrollPosition < bottomHideHight) {
       scrollTopButton.show();

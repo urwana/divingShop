@@ -86,21 +86,20 @@ jQuery(function ($) {
   });
 
   // キャンペーンセクション swiper
-  var swiperCampaign = new Swiper(".swiper-campaign", {
+  var swiperCampaign = new Swiper(".js-swiper-campaign", {
     loop: true,
-    slidesPerView: 1.215,
-    spaceBetween: 24,
-    breakpoints: _defineProperty({
-      // when window width is >= 500px
-      500: {
-        slidesPerView: 1.8,
-        spaceBetween: 40
-      },
-      767: {
-        slidesPerView: 3,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    centeredSlides: false,
+    grabCursor: true,
+    keyboard: {
+      enabled: true
+    },
+    breakpoints: {
+      769: {
         spaceBetween: 40
       }
-    }),
+    },
     navigation: {
       nextEl: ".swiper-campaign__button-next",
       prevEl: ".swiper-campaign__button-prev"
