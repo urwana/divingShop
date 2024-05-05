@@ -138,7 +138,7 @@ jQuery(function ($) {
   var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
   var keyVisualHeight = $(".key-visual").height();
   var footerHeight = $(".footer").height();
-  var scrollTopButton = $(".scroll-to-top");
+  var scrollTopButton = $(".js-scroll-to-top");
   var viewportHeight = $(window).height();
   var bottomHideHight = documentHeight - footerHeight - viewportHeight;
   $(window).scroll(function () {
