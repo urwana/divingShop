@@ -1,4 +1,5 @@
-<% base = { path: "./", title: "トップ", css: "top", description: "架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "トップ", css: "top", description:
+"架空のコーポレートデモサイトのトップページです。"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -6,13 +7,27 @@
     <%- include(base.path + "./common/_header", { base: base}) %>
     <main>
       <%- include(base.path + "./top/_key-visual") %>
-      <%- include(base.path + "./top/_top-campaign") %>
-      <%- include(base.path + "./top/_top-about") %>
-      <%- include(base.path + "./top/_top-information") %>
-      <%- include(base.path + "./top/_top-blog") %>
-      <%- include(base.path + "./top/_top-voice") %>
-      <%- include(base.path + "./top/_top-price") %>
-      <%- include(base.path + "./common/_contact") %>
+      <section class="l-top-campaign">
+        <%- include(base.path + "./top/_top-campaign") %>
+      </section>
+      <section class="l-top-about">
+        <%- include(base.path + "./top/_top-about") %>
+      </section>
+      <section class="l-top-information">
+        <%- include(base.path + "./top/_top-information") %>
+      </section>
+      <section class="l-top-blog">
+        <%- include(base.path + "./top/_top-blog") %>
+      </section>
+      <section class="l-top-voice">
+        <%- include(base.path + "./top/_top-voice") %>
+      </section>
+      <section class="l-top-price">
+        <%- include(base.path + "./top/_top-price") %>
+      </section>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
     </main>
     <%- include(base.path + "./common/_scrollToTop") %>
     <%- include(base.path + "./common/_footer") %>

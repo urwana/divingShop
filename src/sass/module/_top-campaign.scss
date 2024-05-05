@@ -1,11 +1,9 @@
 @use 'global' as *;
 
 .top-campaign {
-  margin-top: rem(40);
   @include mq("md") {
     // NOTE: swipper スクロールボタン見切れ対応用
     padding-top: rem(40);
-    margin-top: rem(80);
     overflow: hidden;
   }
 }
