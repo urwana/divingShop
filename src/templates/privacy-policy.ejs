@@ -1,0 +1,21 @@
+<% base = { path: "./", title: "トップ", css: "top", description:
+"架空のコーポレートデモサイトのトップページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { base: base}) %>
+    <main>
+      <% const subKeyVisualData = {
+        pageTitle:"Privacy Policy",
+        imageClass:"privacy-policy-background"
+      } %>
+      <%- include(base.path + "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <%- include(base.path + "./common/_scrollToTop") %>
+    <%- include(base.path + "./common/_footer") %>
+  </body>
+</html>
