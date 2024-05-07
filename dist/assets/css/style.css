@@ -145,6 +145,33 @@ a {
 	transition: opacity 0.3s;
 }
 
+.privacy-policy {
+	color: #0D2936;
+	font-size: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5rem;
+}
+
+.privacy-policy__title {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.privacy-policy__group {
+	margin-top: 3rem;
+}
+
+.privacy-policy__list {
+	list-style-type: decimal;
+	padding-left: 1.25rem;
+}
+
+.privacy-policy__list-item {
+	line-height: 2rem;
+}
+
 .l-top-campaign {
 	margin-top: 2.5rem;
 }
@@ -1468,6 +1495,14 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.privacy-policy {
+	width: 55.56%;
+}
+
+.privacy-policy__title {
+	font-size: 2rem;
 }
 
 .l-top-campaign {
