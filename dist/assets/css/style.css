@@ -145,31 +145,12 @@ a {
 	transition: opacity 0.3s;
 }
 
-.privacy-policy {
-	color: #0D2936;
-	font-size: 1rem;
-	margin-left: auto;
-	margin-right: auto;
+.l-privacy-policy {
 	margin-top: 2.5rem;
 }
 
-.privacy-policy__title {
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 400;
-}
-
-.privacy-policy__group {
-	margin-top: 3rem;
-}
-
-.privacy-policy__list {
-	list-style-type: decimal;
-	padding-left: 1.25rem;
-}
-
-.privacy-policy__list-item {
-	line-height: 2rem;
+.l-terms-of-service {
+	margin-top: 2.5rem;
 }
 
 .l-top-campaign {
@@ -248,6 +229,33 @@ a {
 .blog-card__text {
 	line-height: 1.5;
 	margin-top: 1rem;
+}
+
+.breadcrumbs {
+	align-items: center;
+	display: inline-flex;
+	font-size: 0.875rem;
+	font-weight: 300;
+	gap: 1.25rem;
+	justify-content: flex-start;
+	margin-top: 0.5rem;
+}
+
+.breadcrumbs__item {
+	position: relative;
+}
+
+.breadcrumbs__item::after {
+	background-image: url("../images/common/arrow-right.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 0.5rem;
+	position: absolute;
+	right: -0.75rem;
+	top: 0.375rem;
+	width: 0.25rem;
 }
 
 .button-scroll--right,
@@ -1081,6 +1089,33 @@ a {
 	width: 100%;
 }
 
+.static-page {
+	color: #0D2936;
+	font-size: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5rem;
+}
+
+.static-page__title {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.static-page__group {
+	margin-top: 3rem;
+}
+
+.static-page__list {
+	list-style-type: decimal;
+	padding-left: 1.25rem;
+}
+
+.static-page__list-item {
+	line-height: 2rem;
+}
+
 .sub-key-visual {
 	aspect-ratio: 375/460;
 	background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
@@ -1497,14 +1532,6 @@ html {
 	font-size: 1.4814814815vw;
 }
 
-.privacy-policy {
-	width: 55.56%;
-}
-
-.privacy-policy__title {
-	font-size: 2rem;
-}
-
 .l-top-campaign {
 	margin-top: 5rem;
 }
@@ -1789,6 +1816,14 @@ html {
 
 .sns-icons .sns-icons__link--twitter {
 	width: 1.125rem;
+}
+
+.static-page {
+	width: 55.56%;
+}
+
+.static-page__title {
+	font-size: 2rem;
 }
 
 .sub-key-visual {

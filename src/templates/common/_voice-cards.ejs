@@ -1,5 +1,5 @@
 <div class="voice-cards">
-    <% const voiceCardDataAll = [
+    <% $voiceCardDataAll = [
     {
       link : "/voice#woman20",
       person:"20代(女性)",
@@ -33,8 +33,8 @@
   ];
   %>
 
-<% voiceCardDataAll.forEach(voiceCardData => { %>
-  <%- include("./_voice-card", {voiceCardData:voiceCardData}) %>
+<% $voiceCardDataAll.forEach($voiceCardData => { %>
+  <%- include("./_voice-card", {voiceCardData:$voiceCardData}) %>
 <% }); %>
 
 </div>

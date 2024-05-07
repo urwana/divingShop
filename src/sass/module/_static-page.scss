@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.static-page {
+  font-size: rem(16);
+  color: $green;
+  margin-top: rem(40);
+  margin-inline: auto;
+  @include mq('md') {
+    width: 55.56%;
+  }
+}
+
+.static-page__title {
+  font-family: $sans;
+  font-size: rem(24);
+  font-weight: $normal;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.static-page__group {
+  margin-top: rem(48);
+}
+.privacy-static-page__text {
+}
+
+.static-page__list {
+  list-style-type: decimal;
+  padding-left: rem(20);
+}
+
+.static-page__list-item {
+  line-height: rem(32);
+}
