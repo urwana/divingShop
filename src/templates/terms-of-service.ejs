@@ -8,17 +8,20 @@
     <main>
       <% const subKeyVisualData = { pageTitle:"Terms of Service ",
       imageClass:"static-page-background" } %> <%- include(base.path +
-      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
-      <% $breadcrumbsData =[{title:"TOP",url:"/"},{title:"利用規約",url:"/terms-of-service.html"}]; %>
-      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData: $breadcrumbsData}) %>
+      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <%
+      $breadcrumbsData
+      =[{title:"TOP",url:"/"},{title:"利用規約",url:"/terms-of-service.html"}];
+      %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      $breadcrumbsData}) %>
       <section class="terms-of-service l-terms-of-service">
         <div class="terms-of-service__contents static-page">
           <div class="static-page__inner inner">
             <h2 class="static-page__title">プライバシーポリシー</h2>
-
-            <p class="static-page__text">
-              以下は、Webサイトで使用するための一般的なプライバシーポリシーの例です。
-            </p>
+            <div class="static-page__group">
+              <p class="static-page__text">
+                以下は、Webサイトで使用するための一般的なプライバシーポリシーの例です。
+              </p>
+            </div>
 
             <div class="static-page__group">
               <ol class="static-page__list">

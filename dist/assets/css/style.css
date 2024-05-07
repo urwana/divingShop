@@ -146,11 +146,11 @@ a {
 }
 
 .l-privacy-policy {
-	margin-top: 2.5rem;
+	margin-top: 3.25rem;
 }
 
 .l-terms-of-service {
-	margin-top: 2.5rem;
+	margin-top: 3.25rem;
 }
 
 .l-top-campaign {
@@ -233,7 +233,7 @@ a {
 
 .breadcrumbs {
 	align-items: center;
-	display: inline-flex;
+	display: flex;
 	font-size: 0.875rem;
 	font-weight: 300;
 	gap: 1.25rem;
@@ -1097,6 +1097,24 @@ a {
 	margin-top: 2.5rem;
 }
 
+.static-page__inner {
+	position: relative;
+}
+
+.static-page__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
 .static-page__title {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
@@ -1532,6 +1550,14 @@ html {
 	font-size: 1.4814814815vw;
 }
 
+.l-privacy-policy {
+	margin-top: 9.375rem;
+}
+
+.l-terms-of-service {
+	margin-top: 9.375rem;
+}
+
 .l-top-campaign {
 	margin-top: 5rem;
 }
@@ -1820,6 +1846,12 @@ html {
 
 .static-page {
 	width: 55.56%;
+}
+
+.static-page__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
 }
 
 .static-page__title {
