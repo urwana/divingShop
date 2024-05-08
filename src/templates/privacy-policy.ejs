@@ -8,7 +8,7 @@
     <main>
       <% $subKeyVisualData = { pageTitle:"Privacy Policy",
       imageClass:"static-page-background" } %> <%- include(base.path +
-      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <%
+      "./top/_sub-key-visual",{subKeyVisualData:$subKeyVisualData}) %> <%
       $breadcrumbsData
       =[{title:"TOP",url:"/"},{title:"プライバシーポリシー",url:"/privacy-policy.html"}];
       %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
