@@ -8,14 +8,14 @@
     <main>
       <% const subKeyVisualData = { pageTitle:"Terms of Service ",
       imageClass:"static-page-background" } %> <%- include(base.path +
-      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <%
+      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
       <% const breadcrumbsData ={
           white:false,
           list:[ {title:"TOP",url:"/"},{title:"ご利用規約",url:"/terms-of-service.html"}]
         };
       %>
       <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
-      $breadcrumbsData}) %>
+      breadcrumbsData}) %>
       <section class="terms-of-service l-terms-of-service">
         <div class="terms-of-service__contents static-page">
           <div class="static-page__inner inner">

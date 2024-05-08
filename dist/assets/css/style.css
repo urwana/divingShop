@@ -148,9 +148,9 @@ a {
 .error-404 {
 	background-color: #408F95;
 	background-image: url("../images/bg-404.svg");
-	background-position: top left;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 43.625rem;
+	background-size: 20.5rem;
 	border-top: #408F95 solid 1px;
 	color: #fff;
 	font-family: "Lato", sans-serif;
@@ -177,6 +177,28 @@ a {
 
 .l-privacy-policy {
 	margin-top: 3.25rem;
+}
+
+.l-sitemap {
+	margin-top: 3.125rem;
+}
+
+.sitemap__inner {
+	position: relative;
+}
+
+.sitemap__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
 }
 
 .l-terms-of-service {
@@ -887,6 +909,10 @@ a {
 	margin-top: 1.5rem;
 }
 
+.navigation-responsive--sitemap .navigation-responsive__item {
+	color: #0D2936;
+}
+
 .navigation-responsive__item:hover {
 	opacity: 0.6;
 	transition: 0.2s;
@@ -898,8 +924,26 @@ a {
 	position: relative;
 }
 
+.navigation-responsive__item--top-sitemap {
+	font-weight: 700;
+	margin-top: 0;
+	position: relative;
+}
+
 .navigation-responsive__item--top::before {
 	background-image: url("../images/common/starfish.png");
+	background-position: center;
+	background-size: cover;
+	content: "";
+	height: 1.125rem;
+	left: -24px;
+	position: absolute;
+	top: 0;
+	width: 1.125rem;
+}
+
+.navigation-responsive__item--top-sitemap::before {
+	background-image: url("../images/common/starfish-green.png");
 	background-position: center;
 	background-size: cover;
 	content: "";
@@ -1624,6 +1668,7 @@ html {
 
 .error-404 {
 	background-position: top 8.75rem left;
+	background-size: 43.625rem;
 	padding-bottom: 9.375rem;
 	padding-top: 5.625rem;
 }
@@ -1638,6 +1683,16 @@ html {
 
 .l-privacy-policy {
 	margin-top: 9.375rem;
+}
+
+.l-sitemap {
+	margin-top: 9.375rem;
+}
+
+.sitemap__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
 }
 
 .l-terms-of-service {
@@ -1865,6 +1920,10 @@ html {
 	top: 0.0625rem;
 }
 
+.navigation-responsive__item--top-sitemap::before {
+	top: 0.0625rem;
+}
+
 .navigation-sp {
 	display: none;
 }
@@ -1950,6 +2009,7 @@ html {
 .sub-key-visual {
 	aspect-ratio: 1440/548;
 	background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page-title {

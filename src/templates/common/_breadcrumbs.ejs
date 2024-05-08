@@ -1,4 +1,5 @@
 <% if (typeof breadcrumbsData == 'undefined') { breadcrumbsData = {}; } %>
+<% if (typeof breadcrumbsData.list == 'undefined') { breadcrumbsData.list = []; } %>
 
 <div class="breadcrumbs inner">
 <% breadcrumbsData.list.forEach((breadcrumb, index) => { %>

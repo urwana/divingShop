@@ -39,6 +39,10 @@
   line-height: 1.125;
 }
 
+.navigation-responsive--sitemap .navigation-responsive__item{
+  color:$green;
+}
+
 .navigation-responsive__item:hover {
   opacity: 0.6;
   transition : 0.2s;
@@ -49,6 +53,13 @@
   position: relative;
   margin-top: 0;
 }
+
+.navigation-responsive__item--top-sitemap {
+  font-weight: $bold;
+  position: relative;
+  margin-top: 0;
+}
+
 
 .navigation-responsive__item--top::before {
   content: "";
@@ -64,3 +75,19 @@
     top: rem(1);
   }
 }
+
+.navigation-responsive__item--top-sitemap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: - 24px;
+  width: rem(18);
+  height: rem(18);
+  background-image: url("../images/common/starfish-green.png");
+  background-size: cover;
+  background-position: center;
+  @include mq("md") {
+    top: rem(1);
+  }
+}
+

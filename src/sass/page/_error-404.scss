@@ -9,14 +9,15 @@
   padding-top: rem(80);
   padding-bottom: rem(40);
   background-image: url("../images/bg-404.svg");
-  background-size: rem(698);
+  background-size: rem(328);
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center center;
 
   @include mq("md") {
     padding-top: rem(90);
     padding-bottom: rem(150);
     background-position: top rem(140) left;
+    background-size: rem(698);
   }
 }
 
