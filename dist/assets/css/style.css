@@ -145,6 +145,24 @@ a {
 	transition: opacity 0.3s;
 }
 
+.error-404 {
+	background-color: #408F95;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+.error-404__inner {
+	background-image: url("../images/bg-404.svg");
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 43.625rem;
+}
+
+.error-404__main-text {
+	letter-spacing: 0.5em;
+}
+
 .l-privacy-policy {
 	margin-top: 3.25rem;
 }
@@ -349,6 +367,12 @@ a {
 	z-index: 1;
 }
 
+.button--reverse {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #408F95;
+}
+
 .button::before {
 	border: 1px solid #408F95;
 	content: "";
@@ -358,6 +382,10 @@ a {
 	top: 0.25rem;
 	width: 100%;
 	z-index: 1;
+}
+
+.button--reverse::before {
+	border: 1px solid #fff;
 }
 
 .button::after {
@@ -375,9 +403,20 @@ a {
 	z-index: 1;
 }
 
+.button--reverse::after {
+	background: #408F95;
+	border: 1px solid #408F95;
+	z-index: 1;
+}
+
 .button:hover {
 	background-color: #fff;
 	color: #408F95;
+}
+
+.button--reverse:hover {
+	background-color: #408F95;
+	color: #fff;
 }
 
 .button:hover::after {
@@ -401,9 +440,19 @@ a {
 	z-index: 2;
 }
 
+.button--reverse .button__text::before {
+	background-color: #408F95;
+}
+
 .button:hover .button__text::before,
 .button:hover .button__text::after {
 	background-color: #408F95;
+	z-index: 2;
+}
+
+.button--reverse:hover .button__text::before,
+.button--reverse:hover .button__text::after {
+	background-color: #fff;
 	z-index: 2;
 }
 
@@ -415,6 +464,10 @@ a {
 	right: -3rem;
 	top: calc(50% + 0.0625rem);
 	width: 2.5rem;
+}
+
+.button--reverse .button__text::after {
+	background: #408F95;
 }
 
 .campaign-card {
@@ -1551,6 +1604,14 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.error-404 {
+	padding-top: 5.625rem;
+}
+
+.error-404__main-text {
+	font-size: 10rem;
 }
 
 .l-privacy-policy {

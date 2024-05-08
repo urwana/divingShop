@@ -6,22 +6,26 @@
   <body>
     <%- include(base.path + "./common/_header", { base: base}) %>
     <main>
-      <section class="404">
-        <div class="404__inner">
-          <div class="404__main-text">404</div>
-          <div class="404__sub-text">
-            申し訳ありません。<br />
-            お探しのページが見つかりません。
+      <% $breadcrumbsData
+      =[{title:"TOP",url:"/"},{title:"404",url:"/404.html"}];
+      %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      $breadcrumbsData}) %>
+      <section class="error-404">
+          <div class="error-404__inner inner">
+            <div class="error-404__main-text">404</div>
+            <div class="error-404__sub-text">
+              申し訳ありません。<br />
+              お探しのページが見つかりません。
+            </div>
+            <div class="error-404__button">
+              <a href="/about-us" class="button button--reverse"
+                ><span class="button__text">Page Top</span></a
+              >
+            </div>
           </div>
-          <div class="404__button">
-            <a href="/about-us" class="button"
-            ><span class="button__text">Page Top</span></a
-          >
-          </div>
-        </div>
       </section>
     </main>
-    <div class="l-footer--404">
+    <div class="l-footer--error-404">
       <%- include(base.path + "./common/_footer") %>
     </div>
   </body>
