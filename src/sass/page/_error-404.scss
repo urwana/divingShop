@@ -1,39 +1,46 @@
-@use 'global' as *;
+@use "global" as *;
 
 .error-404 {
-  font-family:$price-font;
+  border-top: $green-accent solid 1px;
+  font-family: $price-font;
   background-color: $green-accent;
   color: $white;
   text-align: center;
-  @include mq('md') {
-    padding-top: rem(90);
-  }
-}
-
-.error-404__inner {
+  padding-top: rem(80);
+  padding-bottom: rem(40);
   background-image: url("../images/bg-404.svg");
   background-size: rem(698);
   background-repeat: no-repeat;
   background-position: top left;
 
+  @include mq("md") {
+    padding-top: rem(90);
+    padding-bottom: rem(150);
+    background-position: top rem(140) left;
+  }
+}
+
+.error-404__inner {
+  margin-top: rem(120);
 }
 
 .error-404__main-text {
   letter-spacing: 0.5em;
-  @include mq('md') {
+  margin-top: rem(50);
+  font-size: rem(80);
+  @include mq("md") {
     font-size: rem(160);
   }
 }
 
 .error-404__sub-text {
-
 }
 
 .error-404__button {
-
+  margin-top: rem(40);
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
 }
-
-.button {
-
-}
-

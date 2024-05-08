@@ -10,10 +10,6 @@
   gap: rem(20);
 }
 
-.breadcrumbs__item-current {
-
-}
-
 .breadcrumbs__item {
   position: relative;
 }
@@ -29,6 +25,8 @@
   position: absolute;
   top:rem(6);
   right: - rem(12);
+}
 
-
+.breadcrumbs__item--white::after{
+  background-image: url("../images/common/arrow-right-white.svg");
 }

@@ -147,20 +147,32 @@ a {
 
 .error-404 {
 	background-color: #408F95;
-	color: #fff;
-	font-family: "Lato", sans-serif;
-	text-align: center;
-}
-
-.error-404__inner {
 	background-image: url("../images/bg-404.svg");
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: 43.625rem;
+	border-top: #408F95 solid 1px;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	padding-bottom: 2.5rem;
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.error-404__inner {
+	margin-top: 7.5rem;
 }
 
 .error-404__main-text {
+	font-size: 5rem;
 	letter-spacing: 0.5em;
+	margin-top: 3.125rem;
+}
+
+.error-404__button {
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 2.5rem;
 }
 
 .l-privacy-policy {
@@ -278,6 +290,10 @@ a {
 	right: -0.75rem;
 	top: 0.375rem;
 	width: 0.25rem;
+}
+
+.breadcrumbs__item--white::after {
+	background-image: url("../images/common/arrow-right-white.svg");
 }
 
 .button-scroll--right,
@@ -1607,11 +1623,17 @@ html {
 }
 
 .error-404 {
+	background-position: top 8.75rem left;
+	padding-bottom: 9.375rem;
 	padding-top: 5.625rem;
 }
 
 .error-404__main-text {
 	font-size: 10rem;
+}
+
+.error-404__button {
+	margin-top: 5rem;
 }
 
 .l-privacy-policy {

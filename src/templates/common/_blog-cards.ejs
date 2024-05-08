@@ -1,5 +1,5 @@
 <div class="blog-cards">
-  <% $blogCardDataAll = [
+  <% const blogCardDataAll = [
   {
     link : "/blog#licence",
     imgPath : "./assets/images/top/blog-card1.jpg",
@@ -29,7 +29,7 @@
   },
 ];
 %>
-<% $blogCardDataAll.forEach($blogCardData => { %>
-  <%- include("../common/_blog-card", {blogCardData:$blogCardData}) %>
+<% blogCardDataAll.forEach(blogCardData => { %>
+  <%- include("../common/_blog-card", {blogCardData:blogCardData}) %>
 <% }); %>
 </div>
