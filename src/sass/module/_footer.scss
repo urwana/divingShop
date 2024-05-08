@@ -1,13 +1,11 @@
 @use 'global' as *;
 
 .footer {
-  margin-top: rem(100);
   padding-top: rem(48);
   padding-bottom: rem(58);
   background-color: $green-accent;
   color:$white;
   @include mq('md') {
-    margin-top: rem(160);
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
