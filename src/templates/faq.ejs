@@ -1,0 +1,32 @@
+<% base = { path: "./", title: "トップ", css: "top", description:
+"架空のコーポレートデモサイトのトップページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { base: base}) %>
+    <main>
+      <% $subKeyVisualData = { pageTitle:"FAQ",
+      imageClass:"static-page-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:$subKeyVisualData}) %> <% const
+      breadcrumbsData ={ white:false, list:[
+      {title:"TOP",url:"/"},{title:"プライバシーポリシー",url:"/privacy-policy.html"}]
+      }; %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      breadcrumbsData}) %>
+      <div class="faq l-faq">
+        <div class="faq__inner inner">
+          <div class="faq__contents">
+            <%- include(base.path + "./common/_qa-boxes", {faqData:faqData}) %>
+          </div>
+        </div>
+      </div>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>
