@@ -12,12 +12,21 @@
 
 .static-page__inner {
   position: relative;
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .static-page__inner::before {
   position: absolute;
   content: "";
-  top: - 25px;
+  top: -25px;
   // NOTE:
   // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
   // rem(620) = 1080(inner 幅) / 2(半分) + 80px(魚たちの画像はみ出し分)
@@ -31,7 +40,7 @@
   background-size: cover;
   z-index: 2;
   @include mq("md") {
-    top: - 70px;
+    top: -70px;
     width: rem(300);
     height: rem(138);
   }

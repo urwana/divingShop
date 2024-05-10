@@ -177,6 +177,29 @@ jQuery(function($) {
       scrollTopButton.hide();
     }
   });
+
+  $(".js-question").on("click", function () {
+    console.log("clicked!!!!!!");
+    if ($(this).hasClass("is-open")) {
+      $(this).removeClass("is-open");
+      const answer = $(this).next(".qa-box__answer");
+      answer.fadeOut(500);
+    } else {
+      $(this).addClass("is-open");
+      const answer = $(this).next(".qa-box__answer");
+      answer.fadeIn(500);
+    }
+  });
+
+
+
+
+
+
+
+
+
+
 });
 
 // const windowWidth = window.innerWidth;

@@ -26,7 +26,6 @@
   width: 100%;
   text-align: center;
   @include mq("md") {
-    font-weight: $regular;
     transform: translate(-50%, -10%);
     font-size: rem(80);
   }

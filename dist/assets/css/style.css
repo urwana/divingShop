@@ -1272,7 +1272,12 @@ a {
 }
 
 .static-page__inner {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
+	width: 100%;
 }
 
 .static-page__inner::before {
@@ -2073,6 +2078,11 @@ html {
 	width: 55.56%;
 }
 
+.static-page__inner {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .static-page__inner::before {
 	height: 8.625rem;
 	top: -70px;
@@ -2091,7 +2101,6 @@ html {
 
 .page-title {
 	font-size: 5rem;
-	font-weight: 300;
 	transform: translate(-50%, -10%);
 }
 
