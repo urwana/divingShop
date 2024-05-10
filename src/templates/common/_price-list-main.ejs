@@ -1,0 +1,23 @@
+<% if (typeof priceListData === 'undefined') { priceListData = []; } %> <% if
+(typeof priceListData.items === 'undefined') { priceListData.items = []; } %>
+
+<div class="price-list-main">
+  <div class="price-list-main__title">
+    <div class="price-list-main__title-inner">
+      <p><%- priceListData.title %></p>
+      <figure class="price-list-main__title-icon">
+        <img src="./assets/images/price/whale.svg" alt="価格アイコン" />
+      </figure>
+    </div>
+  </div>
+  <div class="price-list-main__body">
+    <% priceListData.items.forEach(item => { %>
+    <dl class="price-list-main__item">
+      <dt class="price-list-main__name">
+        <%- item.name %><br class="u-mobile" /><%- item.name2 %>
+      </dt>
+      <dd class="price-list-main__price"><%- item.price %></dd>
+    </dl>
+    <% }); %>
+  </div>
+</div>

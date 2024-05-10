@@ -179,6 +179,10 @@ a {
 	margin-top: 3.25rem;
 }
 
+.price__contents {
+	width: 100%;
+}
+
 .l-privacy-policy {
 	margin-top: 3.25rem;
 }
@@ -1102,6 +1106,60 @@ a {
 	text-align: left;
 }
 
+.price-list-main {
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 2.5rem;
+}
+
+.price-list-main__title {
+	align-items: center;
+	background-color: #408F95;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.5rem 0;
+	text-align: center;
+}
+
+.price-list-main__title-inner {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	text-align: center;
+}
+
+.price-list-main__title-icon {
+	aspect-ratio: 1/1;
+	margin-right: 0.5rem;
+	width: 1.5rem;
+}
+
+.price-list-main__item {
+	align-items: stretch;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.price-list-main__name {
+	border-bottom: solid 1px #408F95;
+	border-left: solid 1px #408F95;
+	padding: 0.5rem 0;
+	text-align: center;
+	width: 70%;
+}
+
+.price-list-main__price {
+	border-bottom: solid 1px #408F95;
+	border-left: solid 1px #408F95;
+	border-right: solid 1px #408F95;
+	padding: 1.25rem;
+	text-align: right;
+	width: 30%;
+}
+
 .price-list__item {
 	align-items: center;
 	display: flex;
@@ -1748,6 +1806,12 @@ html {
 	margin-top: 9.375rem;
 }
 
+.price__contents {
+	margin-left: auto;
+	margin-right: auto;
+	width: 43.75rem;
+}
+
 .l-privacy-policy {
 	margin-top: 9.375rem;
 }
@@ -2006,6 +2070,44 @@ html {
 .price-container__price {
 	font-size: 2.5rem;
 	margin-left: 1.5rem;
+}
+
+.price-list-main {
+	align-items: stretch;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.price-list-main__title {
+	text-align: center;
+	width: 28.6%;
+}
+
+.price-list-main__title-icon {
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: 0;
+	width: 4rem;
+}
+
+.price-list-main__body {
+	width: 71.4%;
+}
+
+.price-list-main__name {
+	align-items: center;
+	display: flex;
+	padding: 1.125rem 0 1.125rem 0.9375rem;
+	text-align: left;
+}
+
+.price-list-main__item:first-child .price-list-main__name {
+	border-left: none;
+	border-top: solid 1px #408F95;
+}
+
+.price-list-main__item:first-child .price-list-main__price {
+	border-top: solid 1px #408F95;
 }
 
 .price-list__item {

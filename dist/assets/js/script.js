@@ -150,7 +150,6 @@ jQuery(function ($) {
     }
   });
   $(".js-question").on("click", function () {
-    console.log("clicked!!!!!!");
     if ($(this).hasClass("is-open")) {
       $(this).removeClass("is-open");
       var answer = $(this).next(".qa-box__answer");
