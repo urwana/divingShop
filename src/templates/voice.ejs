@@ -1,0 +1,38 @@
+<% base = { path: "./", title: "トップ", css: "top", description:
+"架空のコーポレートデモサイトのトップページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { base: base}) %>
+    <main>
+      <% const subKeyVisualData = { pageTitle:"Voice",
+      imageClass:"static-page-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
+      breadcrumbsData = { white:false, list:[
+      {title:"TOP",url:"/"},{title:"サイトマップ",url:"/sitemap.html"}] }; %>
+      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      breadcrumbsData}) %>
+      <section class="l-voice">
+        <div class="voice">
+          <div class="voice__inner inner">
+            <%- include(base.path + "./common/_tab-voice") %>
+            <div class="l-voice__cards-wrapper">
+              <%- include(base.path + "./common/_voice-cards") %>
+            </div>
+            <div class="voice__pager">
+              <%- include(base.path + "./common/_pager") %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>

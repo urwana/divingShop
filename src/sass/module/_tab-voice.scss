@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.tab-voice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: rem(20);
+  column-gap: rem(16);
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.tab-voice__item {
+  color: $green-accent;
+  border: solid 1px $green-accent;
+  text-align: center;
+  padding: rem(6) 0;
+  @include mq("md") {
+    width: rem(160);
+  }
+}
+
+.tab-voice__item.current {
+  color: $white;
+  background-color: $green-accent;
+}
