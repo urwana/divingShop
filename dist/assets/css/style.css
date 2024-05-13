@@ -1964,6 +1964,13 @@ html {
 	grid-gap: 2.5rem;
 	display: grid;
 	gap: 2.5rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-cards-top {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
 	grid-template-columns: repeat(3, 1fr);
 }
 

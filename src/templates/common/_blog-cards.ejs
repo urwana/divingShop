@@ -1,4 +1,6 @@
-<div class="blog-cards">
+<% if (typeof page === 'undefined') { page = ""; } %>
+
+<div class="<%- page === "top" ? "blog-cards-top" : "blog-cards" %>">
   <% const blogCardDataAll = [
   {
     link : "/blog#licence",
