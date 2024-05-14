@@ -182,7 +182,7 @@ a {
 }
 
 .blog__cards-wrapper {
-	width: 44.125rem;
+	width: 100%;
 }
 
 .blog__pager {
@@ -349,6 +349,10 @@ a {
 
 .sidebar-archive {
 	margin-top: 1.5rem;
+}
+
+.l-campaign-cards {
+	margin-top: 2.5rem;
 }
 
 .blog-card {
@@ -674,6 +678,10 @@ a {
 .campaign-card__price-container {
 	margin-top: 0.5rem;
 	text-align: center;
+}
+
+.campaign-cards .campaign-card:not(:first-child) {
+	margin-top: 2.5rem;
 }
 
 .js-colorAnimation {
@@ -2099,6 +2107,10 @@ html {
 	display: flex;
 	gap: 5rem;
 	justify-content: flex-start;
+}
+
+.blog__cards-wrapper {
+	width: 44.125rem;
 }
 
 .blog__sidebar {

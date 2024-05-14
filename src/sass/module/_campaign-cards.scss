@@ -1,0 +1,5 @@
+@use 'global' as *;
+
+.campaign-cards .campaign-card:not(:first-child){
+  margin-top: rem(40);
+}
