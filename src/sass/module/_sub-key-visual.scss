@@ -50,21 +50,21 @@
   }
 }
 
-.price-page-background {
+.price-background {
   background-image: url("../images/subKeyVisual/price-sp.jpg");
   @include mq("md") {
     background-image: url("../images/subKeyVisual/price-pc.jpg");
   }
 }
 
-.voice-page-background {
+.voice-background {
   background-image: url("../images/subKeyVisual/voice-sp.jpg");
   @include mq("md") {
     background-image: url("../images/subKeyVisual/voice-pc.jpg");
   }
 }
 
-.blog-page-background {
+.blog-background {
   background-image: url("../images/subKeyVisual/blog-sp.jpg");
   @include mq("md") {
     background-image: url("../images/subKeyVisual/blog-pc.jpg");
