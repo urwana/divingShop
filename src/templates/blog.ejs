@@ -16,8 +16,35 @@
       <section class="l-blog">
         <div class="blog">
           <div class="blog__inner inner">
-            <div class="l-blog__cards-wrapper">
-              <%- include(base.path + "./common/_blog-cards") %>
+            <div class="blog__body">
+              <div class="blog__cards-wrapper">
+                <%- include(base.path + "./common/_blog-cards") %>
+              </div>
+              <div class="blog__sidebar">
+                <div class="sidebar-popular-articles">
+                  <%- include(base.path + "./common/_sidebar-title", {title:"人気記事"}) %>
+                  <div class="article-cards">
+                    <div class="article-card">
+                      <figure class="article-card__image">
+                        <img src="" alt="" />
+                      </figure>
+                      <div class="article-card__body">
+                        <date class="article-card__date" date-time=""></date>
+                        <div class="article-card__title"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar-voice">
+                  <%- include(base.path + "./common/_sidebar-title", {title:"口コミ"}) %>
+                </div>
+                <div class="sidebar-campaign">
+                  <%- include(base.path + "./common/_sidebar-title", {title:"キャンペーン"}) %>
+                </div>
+                <div class="sidebar-archive">
+                  <%- include(base.path + "./common/_sidebar-title", {title:"アーカイブ"}) %>
+                </div>
+              </div>
             </div>
             <div class="blog__pager">
               <%- include(base.path + "./common/_pager") %>

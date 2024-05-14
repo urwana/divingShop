@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.sidebar-title {
+  font-family: $sans;
+  font-weight: $regular;
+  font-size: rem(24);
+  color: $green;
+  border-left: #408f95 solid 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar-title__icon {
+  width: rem(50);
+  height: rem(50);
+  margin-left: rem(16);
+}
+
+.sidebar-title__icon img{
+  object-fit: contain;
+}

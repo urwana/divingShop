@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.l-blog {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+
+.blog {
+}
+
+.blog__inner {
+}
+
+.blog__body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:rem(80);
+}
+
+.blog__cards-wrapper {
+  width: rem(706);
+}
+
+.blog__sidebar {
+  width: rem(294);
+}
+
+.blog__pager{
+  margin-top: rem(80);
+}

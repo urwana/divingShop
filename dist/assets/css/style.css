@@ -145,6 +145,29 @@ a {
 	transition: opacity 0.3s;
 }
 
+.l-blog {
+	margin-top: 5rem;
+}
+
+.blog__body {
+	align-items: flex-start;
+	display: flex;
+	gap: 5rem;
+	justify-content: flex-start;
+}
+
+.blog__cards-wrapper {
+	width: 44.125rem;
+}
+
+.blog__sidebar {
+	width: 18.375rem;
+}
+
+.blog__pager {
+	margin-top: 5rem;
+}
+
 .error-404 {
 	background-color: #408F95;
 	background-image: url("../images/bg-404.svg");
@@ -1363,6 +1386,28 @@ a {
 	margin-top: -0.25rem;
 }
 
+.sidebar-title {
+	align-items: center;
+	border-left: #408f95 solid 8px;
+	color: #0D2936;
+	display: flex;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	justify-content: flex-start;
+}
+
+.sidebar-title__icon {
+	height: 3.125rem;
+	margin-left: 1rem;
+	width: 3.125rem;
+}
+
+.sidebar-title__icon img {
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
 .sns-icons__link {
 	aspect-ratio: 1/1;
 	width: 1.5rem;
@@ -1869,6 +1914,10 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.l-blog {
+	margin-top: 9.375rem;
 }
 
 .error-404 {
