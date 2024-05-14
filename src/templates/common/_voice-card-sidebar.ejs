@@ -1,0 +1,39 @@
+<% if (typeof voiceCardData === 'undefined') { voiceCardData = []; } %>
+<div class="voice-card-sidebar">
+  <a href="<%- voiceCardData.link %>">
+    <div class="voice-card-sidebar__head">
+      <div class="voice-card-sidebar__info">
+        <div class="voice-card-sidebar__meta">
+          <div class="voice-card-sidebar__person"><%- voiceCardData.person %></div>
+          <div class="voice-card-sidebar__label">
+            <span class="label"><%- voiceCardData.label %></span>
+          </div>
+        </div>
+        <div class="voice-card-sidebar__title">
+          <div class="lined-title">
+            <%- voiceCardData.title %>
+          </div>
+        </div>
+      </div>
+      <div class="js-colorAnimation voice-card-sidebar__image">
+        <picture>
+          <source
+            srcset="<%- voiceCardData.imgPathSp %>"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="<%- voiceCardData.imgPathPc %>"
+            alt="<%- voiceCardData.alt %>"
+            width="180"
+            height="140"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="voice-card-sidebar__button">
+      <a href="/price" class="button"
+      ><span class="button__text">View more</span></a
+    >
+    </div>
+  </a>
+</div>

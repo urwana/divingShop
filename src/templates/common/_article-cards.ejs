@@ -1,0 +1,6 @@
+<% if (typeof articleCardDataAll === 'undefined') { articleCardDataAll = []; } %>
+<div class="article-cards">
+  <% articleCardDataAll.forEach(articleCard => { %>
+    <%- include("./_article-card", {articleCard: articleCard}) %>
+  <% }); %>
+</div>
