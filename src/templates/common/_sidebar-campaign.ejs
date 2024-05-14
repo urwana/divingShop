@@ -1,0 +1,33 @@
+
+<div class="sidebar-campaign">
+  <%- include(base.path + "./_sidebar-title",
+  {title:"キャンペーン"}) %> 
+  
+  
+<% const campaignCardDataAll = [
+{
+  link : "/campaign#licence",
+  imgPath : "./assets/images/top/campaign-card1.jpg",
+  alt : "ライセンス取得の画像",
+  label : "ライセンス講習",
+  title : "ライセンス取得",
+  text : "全部コミコミ(お一人様) 全部コミコミ(お一人様)全部コミコミ(お一人様) 全部コミコミ(お一人様)全部コミコミ(お一人様) 全部コミコミ(お一人様)全部コミコミ(お一人様) 全部コミコミ(お一人様)全部コミコミ(お一人様) 全部コミコミ(お一人様)",
+  cancelledPrice : "¥56,000",
+  price : "¥46,000"
+},
+{
+  link : "/campaign#diving-rental",
+  imgPath : "./assets/images/top/campaign-card2.jpg",
+  alt : "貸切体験ダイビングの画像",
+  label : "体験ダイビング",
+  title : "貸切体験ダイビング",
+  text : "全部コミコミ(お一人様)",
+  cancelledPrice : "¥24,000",
+  price : "¥18,000"
+},
+];
+%>
+  <%- include(base.path +
+  "./_campaign-cards", {campaignCardDataAll :
+    campaignCardDataAll}) %>
+</div>

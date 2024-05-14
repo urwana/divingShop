@@ -21,45 +21,9 @@
                 <%- include(base.path + "./common/_blog-cards") %>
               </div>
               <div class="blog__sidebar">
-                <div class="sidebar-popular-articles">
-                  <%- include(base.path + "./common/_sidebar-title",
-                  {title:"人気記事"}) %> <% const articleCardDataAll = [ { link
-                  : "/blog#licence", imgPath :
-                  "./assets/images/blog/popular-article1.jpg", alt :
-                  "ライセンス取得の画像", date : "2023/11/17", datetime :
-                  "2023-11-17", title : "ライセンス取得", text :
-                  "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
-                  }, { link : "/blog#diving-with-sea-turtle", imgPath :
-                  "./assets/images/blog/popular-article2.jpg", alt :
-                  "ウミガメと泳ぐ", date : "2023/11/17", datetime :
-                  "2023-11-17", title : "ウミガメと泳ぐ", text :
-                  "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
-                  }, { link : "/blog#diving-with-fish", imgPath :
-                  "./assets/images/blog/popular-article3.jpg", alt :
-                  "カクレクマノミ", date : "2023/11/17", datetime :
-                  "2023-11-17", title : "カクレクマノミ", text :
-                  "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
-                  }, ]; %> <%- include(base.path + "./common/_article-cards",
-                  {articleCardDataAll : articleCardDataAll}) %>
-                </div>
-                <div class="sidebar-voice">
-                  <%- include(base.path + "./common/_sidebar-title",
-                  {title:"口コミ"}) %> <% const voiceCardData = { link :
-                  "/voice#woman20", person:"20代(女性)", label:"ライセンス講習",
-                  title : "ここにタイトルが入ります。ここにタイトル", imgPathPc
-                  : "./assets/images/top/top-voice-sp1.jpg", imgPathSp :
-                  "./assets/images/top/top-voice-pc1.jpg",
-                  alt:"20代(女性)の画像",
-                  text:"ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
-                  }; %> <%- include(base.path + "./common/_voice-card-sidebar",
-                  {voiceCardData: voiceCardData}) %>
-                </div>
-                <div class="sidebar-campaign">
-                  <%- include(base.path + "./common/_sidebar-title",
-                  {title:"キャンペーン"}) %> <%- include(base.path +
-                  "./common/_campaign-cards", {articleCardDataAll :
-                  articleCardDataAll}) %>
-                </div>
+                <%- include(base.path + "./common/_sidebar-popular-articles"); %>
+                <%- include(base.path + "./common/_sidebar-voice"); %>
+                <%- include(base.path + "./common/_sidebar-campaign"); %>
                 <div class="sidebar-archive">
                   <%- include(base.path + "./common/_sidebar-title",
                   {title:"アーカイブ"}) %>

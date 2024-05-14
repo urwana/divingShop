@@ -14,10 +14,12 @@
 }
 
 .blog__body {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap:rem(80);
+  @include mq('md') {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:rem(80);
+  }
 }
 
 .blog__cards-wrapper {
@@ -25,7 +27,9 @@
 }
 
 .blog__sidebar {
-  width: rem(294);
+  @include mq('md') {
+    width: rem(294);
+  }
 }
 
 .blog__pager{

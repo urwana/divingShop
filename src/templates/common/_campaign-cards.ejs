@@ -1,0 +1,7 @@
+<% if (typeof campaignCardDataAll === 'undefined') { campaignCardDataAll = []; } %>
+
+<div class="campaign-cards">
+<% campaignCardDataAll.forEach(campaignCardData => { %>
+  <%- include("../common/_campaign-card", {campaignCardData:campaignCardData}) %>
+<% }); %>
+</div>

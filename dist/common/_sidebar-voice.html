@@ -1,6 +1,22 @@
-<% if (typeof voiceCardData === 'undefined') { voiceCardData = []; } %>
+<div class="sidebar-voice">
+  
+
+<h2 class="sidebar-title">
+  <figure class="sidebar-title__icon">
+    <img
+      src="./assets/images/common/title-whale.svg"
+      alt="クジラアイコン"
+      width="50"
+      height="50"
+    />
+  </figure>
+  <p>
+  口コミ
+</p>
+</h2>
+  
 <div class="voice-card-sidebar">
-  <a href="<%- voiceCardData.link %>">
+  <a href="/voice#woman20">
     <div class="voice-card-sidebar__head">
       <div class="voice-card-sidebar__info">
         <div class="voice-card-sidebar__meta">
@@ -8,22 +24,22 @@
         <div class="js-colorAnimation voice-card-sidebar__image">
           <picture>
             <source
-              srcset="<%- voiceCardData.imgPathSp %>"
+              srcset="./assets/images/top/top-voice-pc1.jpg"
               media="(max-width: 767px)"
             />
             <img
-              src="<%- voiceCardData.imgPathPc %>"
-              alt="<%- voiceCardData.alt %>"
+              src="./assets/images/top/top-voice-sp1.jpg"
+              alt="20代(女性)の画像"
               width="180"
               height="140"
             />
           </picture>
         </div>
         <div class="voice-card-sidebar__person">
-          <%- voiceCardData.person %>
+          20代(女性)
         </div>
         <div class="voice-card-sidebar__title">
-          <div class="lined-title"><%- voiceCardData.title %></div>
+          <div class="lined-title">ここにタイトルが入ります。ここにタイトル</div>
         </div>
       </div>
     </div>
@@ -33,4 +49,6 @@
       >
     </div>
   </a>
+</div>
+
 </div>
