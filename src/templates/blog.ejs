@@ -10,8 +10,8 @@
       imageClass:"blog-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData = { white:false, list:[
-      {title:"TOP",url:"/"},{title:"ブログ",url:"/blog.html"}] }; %>
-      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      {title:"TOP",url:"/"},{title:"ブログ",url:"/blog.html"}] }; %> <%-
+      include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <section class="l-blog">
         <div class="blog">
@@ -21,16 +21,20 @@
                 <%- include(base.path + "./common/_blog-cards") %>
               </div>
               <div class="blog__sidebar">
-                <%- include(base.path + "./common/_sidebar-popular-articles"); %>
-                <%- include(base.path + "./common/_sidebar-voice"); %>
-                <%- include(base.path + "./common/_sidebar-campaign"); %>
-                <div class="sidebar-archive">
-                  <%- include(base.path + "./common/_sidebar-title",
-                  {title:"アーカイブ"}) %>
-                  <div class="sidebar-archive__lists">
-                    <%- include(base.path + "./common/_toggle-hierarchy"); %>
-                  </div>
+                <div class="l-blog__sidebar-popular-articles">
+                  <%- include(base.path + "./common/_sidebar-popular-articles");
+                  %>
                 </div>
+                <div class="l-blog__sidebar-voice">
+                  <%- include(base.path + "./common/_sidebar-voice"); %>
+                </div>
+                <div class="l-blog__sidebar-campaign">
+                  <%- include(base.path + "./common/_sidebar-campaign"); %>
+                </div>
+                <div class="l-sidebar-archive">
+                  <%- include(base.path + "./common/_sidebar-archive"); %>
+              </div>
+
               </div>
             </div>
             <div class="blog__pager">

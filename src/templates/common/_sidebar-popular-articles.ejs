@@ -1,24 +1,21 @@
 <div class="sidebar-popular-articles">
-  <%- include(base.path + "./_sidebar-title",
-  {title:"人気記事"}) %> <% const articleCardDataAll = [ { link
-  : "/blog#licence", imgPath :
-  "./assets/images/blog/popular-article1.jpg", alt :
-  "ライセンス取得の画像", date : "2023/11/17", datetime :
-  "2023-11-17", title : "ライセンス取得", text :
+  <%- include(base.path + "./_sidebar-title", {title:"人気記事"}) %> <% const
+  articleCardDataAll = [ { link : "/blog#licence", imgPath :
+  "./assets/images/blog/popular-article1.jpg", alt : "ライセンス取得の画像",
+  date : "2023/11/17", datetime : "2023-11-17", title : "ライセンス取得", text :
   "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
   }, { link : "/blog#diving-with-sea-turtle", imgPath :
-  "./assets/images/blog/popular-article2.jpg", alt :
-  "ウミガメと泳ぐ", date : "2023/11/17", datetime :
-  "2023-11-17", title : "ウミガメと泳ぐ", text :
+  "./assets/images/blog/popular-article2.jpg", alt : "ウミガメと泳ぐ", date :
+  "2023/11/17", datetime : "2023-11-17", title : "ウミガメと泳ぐ", text :
   "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
   }, { link : "/blog#diving-with-fish", imgPath :
-  "./assets/images/blog/popular-article3.jpg", alt :
-  "カクレクマノミ", date : "2023/11/17", datetime :
-  "2023-11-17", title : "カクレクマノミ", text :
+  "./assets/images/blog/popular-article3.jpg", alt : "カクレクマノミ", date :
+  "2023/11/17", datetime : "2023-11-17", title : "カクレクマノミ", text :
   "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト",
-  }, ]; %> 
-  
-  
-<%- include("./_article-cards",
-  {articleCardDataAll : articleCardDataAll}) %>
+  }, ]; %>
+
+  <div class="l-articleCards">
+    <%- include("./_article-cards", {articleCardDataAll : articleCardDataAll})
+    %>
+  </div>
 </div>
