@@ -3,12 +3,10 @@
 .sub-key-visual {
   position: relative;
   aspect-ratio: 375 / 460;
-  background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   @include mq("md") {
     aspect-ratio: 1440 / 548;
-    background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
@@ -31,5 +29,44 @@
   }
 }
 
-.privacy-policy-background {
+.privacy-policy-background, .sitemap-background, .terms-of-service-background {
+  background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");
+  }
+}
+
+.contact-background {
+  background-image: url("../images/subKeyVisual/contact-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/contact-pc.jpg");
+  }
+}
+
+.faq-background {
+  background-image: url("../images/subKeyVisual/faq-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/faq-pc.jpg");
+  }
+}
+
+.price-page-background {
+  background-image: url("../images/subKeyVisual/price-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/price-pc.jpg");
+  }
+}
+
+.voice-page-background {
+  background-image: url("../images/subKeyVisual/voice-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/voice-pc.jpg");
+  }
+}
+
+.blog-page-background {
+  background-image: url("../images/subKeyVisual/blog-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/blog-pc.jpg");
+  }
 }

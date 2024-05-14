@@ -1510,7 +1510,6 @@ a {
 
 .sub-key-visual {
 	aspect-ratio: 375/460;
-	background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -1528,6 +1527,32 @@ a {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
+}
+
+.privacy-policy-background,
+.sitemap-background,
+.terms-of-service-background {
+	background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
+}
+
+.contact-background {
+	background-image: url("../images/subKeyVisual/contact-sp.jpg");
+}
+
+.faq-background {
+	background-image: url("../images/subKeyVisual/faq-sp.jpg");
+}
+
+.price-page-background {
+	background-image: url("../images/subKeyVisual/price-sp.jpg");
+}
+
+.voice-page-background {
+	background-image: url("../images/subKeyVisual/voice-sp.jpg");
+}
+
+.blog-page-background {
+	background-image: url("../images/subKeyVisual/blog-sp.jpg");
 }
 
 .swiper-campaign {
@@ -1570,6 +1595,62 @@ a {
 .tab-voice__item.current {
 	background-color: #408F95;
 	color: #fff;
+}
+
+.toggle-hierarchy {
+	color: #408F95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.sidebar-archive__year {
+	margin-left: 1.75rem;
+	padding-left: 1.75rem;
+}
+
+.sidebar-archive__year-label {
+	position: relative;
+}
+
+.sidebar-archive__month-label::before,
+.sidebar-archive__year-label::before {
+	border-bottom: 12px solid transparent;
+	border-left: 18px solid #408F95;
+	border-right: 12px solid transparent;
+	border-top: 12px solid transparent;
+	content: "";
+	height: 0;
+	left: -28px;
+	position: absolute;
+	top: 6px;
+	width: 0;
+}
+
+.sidebar-archive__month-label.clicked::before,
+.sidebar-archive__year-label.clicked::before {
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 18px solid #408F95;
+	content: "";
+	height: 0;
+	left: -28px;
+	position: absolute;
+	top: 6px;
+	width: 0;
+}
+
+.sidebar-archive__month {
+	margin-left: 1.75rem;
+	padding-left: 1.75rem;
+}
+
+.sidebar-archive__month-label {
+	position: relative;
+}
+
+.sidebar-archive__day {
+	padding-left: 1.75rem;
 }
 
 .top-about__inner {
@@ -2428,13 +2509,38 @@ html {
 
 .sub-key-visual {
 	aspect-ratio: 1440/548;
-	background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page-title {
 	font-size: 5rem;
 	transform: translate(-50%, -10%);
+}
+
+.privacy-policy-background,
+.sitemap-background,
+.terms-of-service-background {
+	background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");
+}
+
+.contact-background {
+	background-image: url("../images/subKeyVisual/contact-pc.jpg");
+}
+
+.faq-background {
+	background-image: url("../images/subKeyVisual/faq-pc.jpg");
+}
+
+.price-page-background {
+	background-image: url("../images/subKeyVisual/price-pc.jpg");
+}
+
+.voice-page-background {
+	background-image: url("../images/subKeyVisual/voice-pc.jpg");
+}
+
+.blog-page-background {
+	background-image: url("../images/subKeyVisual/blog-pc.jpg");
 }
 
 .swiper-campaign__button-prev,
