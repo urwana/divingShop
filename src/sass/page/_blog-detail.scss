@@ -1,31 +1,43 @@
-@use 'global' as *;
+@use "global" as *;
 
 .l-blog-detail {
-
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
 }
 
 .blog-detail {
+}
 
+.blog-detail__date {
+  font-family: $price-font;
+  font-size: rem(14);
+  font-weight: $regular;
+}
+
+.blog-detail__title {
+  font-family: $sans;
+  font-size: rem(24);
+  @include mq('md') {
+    font-size: rem(32);
+  }
 }
 
 .blog-detail__inner {
-
 }
 
 .blog-detail__body {
-  @include mq('md') {
+  @include mq("md") {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:rem(80);
+    gap: rem(80);
   }
 }
 
 .blog-detail__contents {
-
 }
 
 .blog-detail__pager {
-
 }
-

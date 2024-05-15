@@ -177,6 +177,21 @@ a {
 	font-size: 1rem;
 }
 
+.l-blog-detail {
+	margin-top: 5rem;
+}
+
+.blog-detail__date {
+	font-family: "Lato", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+}
+
+.blog-detail__title {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+}
+
 .l-blog {
 	margin-top: 5rem;
 }
@@ -407,7 +422,17 @@ a {
 
 .blog-detail__image {
 	aspect-ratio: 345/231;
+}
+
+.blog-detail__image:not(:first-child) {
 	margin-top: 1.5rem;
+}
+
+.blog-detail__image img {
+	-o-object-fit: cover;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
 }
 
 .blog-detail__text {
@@ -2131,6 +2156,14 @@ a {
 
 html {
 	font-size: 1.4814814815vw;
+}
+
+.l-blog-detail {
+	margin-top: 9.375rem;
+}
+
+.blog-detail__title {
+	font-size: 2rem;
 }
 
 .blog-detail__body {
