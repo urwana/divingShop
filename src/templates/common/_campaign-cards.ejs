@@ -3,6 +3,6 @@
 
 <div class="<%- sideBar ? "campaign-cards--sidebar" : "campaign-cards"  %>">
 <% campaignCardDataAll.forEach(campaignCardData => { %>
-  <%- include("./_campaign-card", {campaignCardData:campaignCardData}) %>
+  <%- include("./_campaign-card", {campaignCardData:campaignCardData, page:true}) %>
 <% }); %>
 </div>

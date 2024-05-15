@@ -1,32 +1,24 @@
-<% base = { path: "./", title: "ボイス", css: "top", description:
-"架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "ボイス", css: "top", description: "架空のコーポレートデモサイトのトップページです。"} %>
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include(base.path + "./common/_head", { base: base}) %>
+  <%- include("./common/_head", { base: base}) %>
   <body>
-    <%- include(base.path + "./common/_header", { base: base}) %>
+    <%- include("./common/_header", { base: base}) %>
     <main>
-      <% const subKeyVisualData = { pageTitle:"Campaign",
-      imageClass:"campaign-background" } %> <%- include(base.path +
-      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
-      breadcrumbsData = { white:false, list:[
+      <% const subKeyVisualData = { pageTitle:"Campaign",imageClass:"campaign-background" } %>
+      <%- include("./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
+      <% const breadcrumbsData = { white:false, list:[
       {title:"TOP",url:"/"},{title:"キャンペーン",url:"/campaign.html"}] }; %>
-      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
-      breadcrumbsData}) %>
+      <%- include("./common/_breadcrumbs", { breadcrumbsData: breadcrumbsData}) %>
       <section class="l-campaign">
         <div class="campaign">
           <div class="campaign__inner inner">
-            <%- include(base.path + "./common/_tab-card") %>
+            <%- include("./common/_tab-card") %>
             <div class="l-campaign__cards-wrapper">
               <% const campaignCardDataAll = [ { link : "/campaign#licence",
               imgPath : "./assets/images/top/campaign-card1.jpg", alt :
               "ライセンス取得の画像", label : "ライセンス講習", title :
-              "ライセンス取得", text : "全部コミコミ(お一人様)
-              全部コミコミ(お一人様)全部コミコミ(お一人様)
-              全部コミコミ(お一人様)全部コミコミ(お一人様)
-              全部コミコミ(お一人様)全部コミコミ(お一人様)
-              全部コミコミ(お一人様)全部コミコミ(お一人様)
-              全部コミコミ(お一人様)", cancelledPrice : "¥56,000", price :
+              "ライセンス取得", text : "全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)全部コミコミ(お一人様)", cancelledPrice : "¥56,000", price :
               "¥46,000" }, { link : "/campaign#diving-rental", imgPath :
               "./assets/images/top/campaign-card2.jpg", alt :
               "貸切体験ダイビングの画像", label : "体験ダイビング", title :
@@ -41,23 +33,22 @@
               "./assets/images/top/campaign-card4.jpg", alt :
               "貸切ファンダイビングの画像", label : "ファンダイビング", title :
               "貸切ファンダイビング", text : "全部コミコミ(お一人様)",
-              cancelledPrice : "¥20,000", price : "¥16,000" }, ]; %> <%-
-              include("./common/_campaign-cards",
-              {campaignCardDataAll:campaignCardDataAll}) %>
+              cancelledPrice : "¥20,000", price : "¥16,000" }, ]; %>
+              <%- include("./common/_campaign-cards",{campaignCardDataAll:campaignCardDataAll}) %>
             </div>
             <div class="campaign__pager">
-              <%- include(base.path + "./common/_pager") %>
+              <%- include("./common/_pager") %>
             </div>
           </div>
         </div>
       </section>
       <section class="l-top-contact">
-        <%- include(base.path + "./common/_contact") %>
+        <%- include("./common/_contact") %>
       </section>
     </main>
     <div class="l-footer">
-      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
-      + "./common/_footer") %>
+      <%- include("./common/_scrollToTop") %>
+      <%- include("./common/_footer") %>
     </div>
   </body>
 </html>
