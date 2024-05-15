@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.tab-voice {
+.tab-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: rem(20);
@@ -10,7 +10,7 @@
   }
 }
 
-.tab-voice__item {
+.tab-card__item {
   color: $green-accent;
   border: solid 1px $green-accent;
   text-align: center;
@@ -20,7 +20,7 @@
   }
 }
 
-.tab-voice__item.current {
+.tab-card__item.current {
   color: $white;
   background-color: $green-accent;
 }

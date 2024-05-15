@@ -1,7 +1,8 @@
+<% if (typeof sideBar === 'undefined') { sideBar = ""; } %>
 <% if (typeof campaignCardDataAll === 'undefined') { campaignCardDataAll = []; } %>
 
-<div class="campaign-cards">
+<div class="<%- sideBar ? "campaign-cards--sidebar" : "campaign-cards"  %>">
 <% campaignCardDataAll.forEach(campaignCardData => { %>
-  <%- include("../common/_campaign-card", {campaignCardData:campaignCardData}) %>
+  <%- include("./_campaign-card", {campaignCardData:campaignCardData}) %>
 <% }); %>
 </div>

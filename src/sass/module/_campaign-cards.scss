@@ -1,5 +1,14 @@
 @use 'global' as *;
 
-.campaign-cards .campaign-card:not(:first-child){
+.campaign-cards--sidebar .campaign-card:not(:first-child){
   margin-top: rem(40);
+}
+
+.campaign-cards{
+  @include mq('md') {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(40);
+  }
 }

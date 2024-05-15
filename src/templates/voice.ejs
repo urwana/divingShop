@@ -7,7 +7,7 @@
     <%- include(base.path + "./common/_header", { base: base}) %>
     <main>
       <% const subKeyVisualData = { pageTitle:"Voice",
-      imageClass:"voice-page-background" } %> <%- include(base.path +
+      imageClass:"voice-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData = { white:false, list:[
       {title:"TOP",url:"/"},{title:"ボイス",url:"/voice.html"}] }; %>
@@ -16,7 +16,7 @@
       <section class="l-voice">
         <div class="voice">
           <div class="voice__inner inner">
-            <%- include(base.path + "./common/_tab-voice") %>
+            <%- include(base.path + "./common/_tab-card") %>
             <div class="l-voice__cards-wrapper">
               <%- include(base.path + "./common/_voice-cards") %>
             </div>
