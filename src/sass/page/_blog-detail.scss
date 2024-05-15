@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.l-blog-detail {
+
+}
+
+.blog-detail {
+
+}
+
+.blog-detail__inner {
+
+}
+
+.blog-detail__body {
+  @include mq('md') {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:rem(80);
+  }
+}
+
+.blog-detail__contents {
+
+}
+
+.blog-detail__pager {
+
+}
+
