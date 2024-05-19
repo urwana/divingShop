@@ -77,3 +77,10 @@
     background-image: url("../images/subKeyVisual/blog-pc.jpg");
   }
 }
+
+.about-us-background {
+  background-image: url("../images/subKeyVisual/about-us-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/about-us-pc.jpg");
+  }
+}

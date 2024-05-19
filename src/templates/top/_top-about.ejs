@@ -1,11 +1,14 @@
+<% if (typeof top === 'undefined') { top = false; } %>
 <div class="top-about">
   <div class="top-about__inner inner">
+    <% if(top){ %>
     <div class="top-about__title">
       <div class="section-title">
         <p class="section-title__word">About us</p>
         <h2 class="section-title__japan">私たちについて</h2>
       </div>
     </div>
+    <% } %>
     <div class="top-about__image-container">
       <div class="top-about__image-left">
         <picture>

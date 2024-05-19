@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.gallery {
+
+}
+
+.gallery__inner {
+
+}
+
+.gallery__item-container {
+  display: grid;
+  grid-auto-flow: dense;
+  gap:rem(8);
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, rem(370)) ;
+}

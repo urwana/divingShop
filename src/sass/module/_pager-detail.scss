@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.pager-detail {
+  display: flex;
+  justify-content: center;
+  gap: rem(80);
+}
+
+%pager-detail-default-style{
+  padding: rem(9) rem(13);
+  border: solid 1px $green-accent;
+  color: $green-accent;
+  font-family: $price-font;
+  font-weight: $bold;
+  text-align: center;
+}
+
+.pager-detail__previous {
+  @extend %pager-detail-default-style;
+  display: flex;
+  align-items: center;
+}
+
+.pager-detail__previous.current {
+  background-color: $green-accent;
+  color: $white;
+}
+
+
+// .pager-detail__item {
+//   @extend %pager-detail-default-style;
+// }
+
+// .pager-detail__item.current{
+//   background-color: $green-accent;
+//   color: $white;
+// }
+
+.pager-detail__next {
+  @extend %pager-detail-default-style;
+  display: flex;
+  align-items: center;
+}
+
+.pager-detail__next.current {
+  background-color: $green-accent;
+  color: $white;
+}
+

@@ -1,0 +1,16 @@
+
+<% if (typeof gallery === 'undefined') { gallery = {}; } %>
+<div class="<%- gallery.height === "746" ? "gallery__item--long" : "gallery__item" %>" >
+  <picture>
+    <source
+      srcset="<%- gallery.imagePath %>-sp.jpg"
+      media="(max-width: 767px)"
+    />
+    <img
+      src="<%- gallery.imagePath %>-pc.jpg"
+      alt="<%- gallery.alt %>-"
+      width="<%- gallery.width %>"
+      height="<%- gallery.height %>"
+    />
+  </picture>
+</div>

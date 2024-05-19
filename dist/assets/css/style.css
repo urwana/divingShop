@@ -850,6 +850,19 @@ a {
 	width: 100%;
 }
 
+.gallery__item--long {
+	grid-row: 1/span 2;
+}
+
+.gallery__item-container {
+	grid-gap: 0.5rem;
+	display: grid;
+	gap: 0.5rem;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(13, 1fr);
+	grid-template-rows: repeat(2, 23.125rem);
+}
+
 .hamburger {
 	z-index: 9999;
 }
@@ -1272,6 +1285,42 @@ a {
 	color: #fff;
 }
 
+.pager-detail {
+	display: flex;
+	gap: 5rem;
+	justify-content: center;
+}
+
+.pager-detail__next,
+.pager-detail__previous {
+	border: solid 1px #408F95;
+	color: #408F95;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	padding: 0.5625rem 0.8125rem;
+	text-align: center;
+}
+
+.pager-detail__previous {
+	align-items: center;
+	display: flex;
+}
+
+.pager-detail__previous.current {
+	background-color: #408F95;
+	color: #fff;
+}
+
+.pager-detail__next {
+	align-items: center;
+	display: flex;
+}
+
+.pager-detail__next.current {
+	background-color: #408F95;
+	color: #fff;
+}
+
 .pager {
 	display: flex;
 	gap: 0.75rem;
@@ -1664,6 +1713,10 @@ a {
 
 .blog-background {
 	background-image: url("../images/subKeyVisual/blog-sp.jpg");
+}
+
+.about-us-background {
+	background-image: url("../images/subKeyVisual/about-us-sp.jpg");
 }
 
 .swiper-campaign {
@@ -2699,6 +2752,10 @@ html {
 
 .blog-background {
 	background-image: url("../images/subKeyVisual/blog-pc.jpg");
+}
+
+.about-us-background {
+	background-image: url("../images/subKeyVisual/about-us-pc.jpg");
 }
 
 .swiper-campaign__button-prev,

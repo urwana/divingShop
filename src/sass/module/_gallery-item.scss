@@ -1,0 +1,5 @@
+@use 'global' as *;
+
+.gallery__item--long{
+  grid-row: 1 / span 2;
+}
