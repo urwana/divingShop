@@ -9,9 +9,13 @@
 }
 
 .gallery__item-container {
-  display: grid;
-  grid-auto-flow: dense;
+  display: flex;
+  flex-direction: column;
   gap:rem(8);
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(2, rem(370)) ;
+  @include mq('md') {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(2, rem(370)) ;
+    }
 }

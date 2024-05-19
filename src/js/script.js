@@ -190,15 +190,22 @@ jQuery(function($) {
     }
   });
 
-
-
-
-
-
-
-
-
-
+  // modal
+  const targetPhoto = $(".js-modalPhoto");
+  const modal = $(".js-modal");
+  const overlay = $(".js-modalOverlay");
+  const modalContents = $(".js-modalContents");
+  targetPhoto.on("click", function () {
+    modal.fadeIn(400);
+    modalContents.html($(this).prop("outerHTML"));
+    // スクロール位置を戻す
+    //$(container).scrollTop(0);
+    $("html, body").css("overflow", "hidden");
+  });
+  overlay.on("click", function () {
+    modal.fadeOut(400);
+    $("html, body").css("overflow", "visible");
+  });
 });
 
 // const windowWidth = window.innerWidth;

@@ -160,6 +160,23 @@ jQuery(function ($) {
       _answer.fadeIn(500);
     }
   });
+
+  // modal
+  var targetPhoto = $(".js-modalPhoto");
+  var modal = $(".js-modal");
+  var overlay = $(".js-modalOverlay");
+  var modalContents = $(".js-modalContents");
+  targetPhoto.on("click", function () {
+    modal.fadeIn(400);
+    modalContents.html($(this).prop("outerHTML"));
+    // スクロール位置を戻す
+    //$(container).scrollTop(0);
+    $("html, body").css("overflow", "hidden");
+  });
+  overlay.on("click", function () {
+    modal.fadeOut(400);
+    $("html, body").css("overflow", "visible");
+  });
 });
 
 // const windowWidth = window.innerWidth;
