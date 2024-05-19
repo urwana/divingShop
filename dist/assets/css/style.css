@@ -153,6 +153,24 @@ a {
 	margin-top: 2.5rem;
 }
 
+.l-gallery__item-container {
+	margin-top: 2.5rem;
+}
+
+.about-us__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
 .article-card {
 	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -2288,6 +2306,16 @@ html {
 	margin-top: 7.5rem;
 }
 
+.l-gallery__item-container {
+	margin-top: 5rem;
+}
+
+.about-us__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
+}
+
 .l-blog-detail {
 	margin-top: 9.375rem;
 }
@@ -2901,6 +2929,13 @@ html {
 	right: calc(50% - min(48vw, 39.8125rem));
 	width: 12.125rem;
 	z-index: 3;
+}
+
+.top-about__inner--fish::after {
+	background-image: url(../images/top/bg-fish.svg);
+	bottom: -178px;
+	height: 8.625rem;
+	width: 18.75rem;
 }
 
 .top-about__contents {

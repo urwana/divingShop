@@ -1,6 +1,6 @@
 <% if (typeof top === 'undefined') { top = false; } %>
 <div class="top-about">
-  <div class="top-about__inner inner">
+  <div class="top-about__inner inner <%- top ? "" : "top-about__inner--fish" %>">
     <% if(top){ %>
     <div class="top-about__title">
       <div class="section-title">

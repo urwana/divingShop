@@ -28,6 +28,15 @@
   }
 }
 
+.top-about__inner--fish::after {
+  @include mq("md") {
+    bottom: -178px;
+    width: rem(300);
+    height: rem(138);
+    background-image: url(../images/top/bg-fish.svg);
+  }
+}
+
 .top-about__contents {
   margin-top: rem(40);
   @include mq("md") {
