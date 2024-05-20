@@ -300,6 +300,28 @@ a {
 	margin-top: 3.25rem;
 }
 
+.l-information {
+	margin-top: 7.5rem;
+}
+
+.information__inner {
+	position: relative;
+}
+
+.information__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
 .price__contents {
 	width: 100%;
 }
@@ -1806,6 +1828,41 @@ a {
 	z-index: 2;
 }
 
+.tab-contents-information__tab {
+	display: flex;
+	gap: 1.25rem;
+	justify-content: center;
+}
+
+.tab-contents-information__item {
+	background-color: #DDF0F1;
+	color: #408F95;
+	cursor: pointer;
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+	font-size: 0.875rem;
+	font-weight: 300;
+	padding: 0.625rem 0;
+	text-align: center;
+	width: 27%;
+}
+
+.tab-contents-information__contents-container {
+	margin-top: 1rem;
+}
+
+.tab-contents-information__content {
+	border: solid 1px #408F95;
+	padding: 1.5rem;
+}
+
+.tab-contents-information__text {
+	margin-top: 0.5rem;
+}
+
+.tab-contents-information__img {
+	margin-top: 0.5rem;
+}
+
 .tab-card {
 	grid-row-gap: 1.25rem;
 	grid-column-gap: 1rem;
@@ -2377,6 +2434,12 @@ html {
 	margin-top: 9.375rem;
 }
 
+.information__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
+}
+
 .price__contents {
 	margin-left: auto;
 	margin-right: auto;
@@ -2907,6 +2970,20 @@ html {
 .swiper-campaign .swiper-campaign__button-next {
 	right: 1.25rem;
 	top: -104px;
+}
+
+.tab-contents-information__content {
+	align-items: center;
+	display: flex;
+	gap: 3rem;
+}
+
+.tab-contents-information__body {
+	width: 48%;
+}
+
+.tab-contents-information__img {
+	width: 48%;
 }
 
 .tab-card {

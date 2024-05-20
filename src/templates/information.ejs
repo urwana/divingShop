@@ -1,0 +1,51 @@
+<% base = { path: "./", title: "トップ", css: "top", description:
+"架空のコーポレートデモサイトのトップページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { base: base}) %>
+    <main>
+      <% const subKeyVisualData = { pageTitle:"Information",
+      imageClass:"sitemap-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
+      breadcrumbsData = { white:false, list:[
+      {title:"TOP",url:"/"},{title:"サイトマップ",url:"/sitemap.html"}] }; %>
+      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      breadcrumbsData}) %>
+      <section class="l-information">
+        <div class="information">
+          <div class="information__inner inner">
+            <div class="information__tab-contents">
+              <% const informationTabData = [ { text:"ライセンス",text2:"講習",
+              imgPath:"./assets/images/common/whale-r" }, {
+              text:"ファン",text2:"ダイビング",
+              imgPath:"./assets/images/common/whale-l" }, { text:"体験",
+              text2:"ダイビング", imgPath:"./assets/images/common/fish" }, ];
+              const informationTabContentsData=[ { title:"ライセンス講習",
+              text:"泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！",
+              imagePath:"./assets/images/information/tab-contents1",
+              alt:"ライセンス講座の画像" }, { title:"ファンダイビング",
+              text:"ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！",
+              imagePath:"./assets/images/information/tab-contents2",
+              alt:"ファンダイビング" }, { title:"体験ダイビング",
+              text:"ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！",
+              imagePath:"./assets/images/information/tab-contents3",
+              alt:"体験ダイビング" }, ]; %> <%- include(base.path +
+              "./common/_tab-contents-information",
+              {informationTabData:informationTabData,
+              informationTabContentsData:informationTabContentsData}) %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>
