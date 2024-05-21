@@ -206,6 +206,22 @@ jQuery(function($) {
     modal.fadeOut(400);
     $("html, body").css("overflow", "visible");
   });
+
+  // information tab
+  const informationTab = $(".js-imformation");
+  const informationContent = $(".js-information-content");
+  informationTab.on("click", function () {
+    $(this).addClass("current").siblings().removeClass("current");
+    const tabIndex = $(this).index();
+    informationContent
+      .stop(true, true)
+      .slideUp(300)
+      .eq(tabIndex)
+      .stop(true, true)
+      .slideDown(300);
+  });
+  // informationTab.first().addClass("current");
+  // informationContent.hide().first().show();
 });
 
 // const windowWidth = window.innerWidth;

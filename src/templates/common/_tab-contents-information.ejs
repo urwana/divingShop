@@ -1,38 +1,40 @@
-<% if (typeof informationTabData === 'undefined') { informationTabData = []; } %>
-<% if (typeof informationTabContentsData === 'undefined') { informationTabContentsData = []; } %>
+<% if (typeof informationTabData === 'undefined') { informationTabData = []; }
+%> <% if (typeof informationTabContentsData === 'undefined') {
+informationTabContentsData = []; } %>
 
 <div class="tab-contents-information">
   <div class="tab-contents-information__tab">
-    <% informationTabData.forEach(tabData => { %>
-    <div class="tab-contents-information__item">
+    <% informationTabData.forEach((tabData, index) => { %>
+    <div class="tab-contents-information__item js-imformation<%- index === 0 ? " current" : "" %>">
       <img src="<%- tabData.imagePath %>" alt="<%- tabData.alt %>" />
-      <%- tabData.text %><br class="u-mobile"><%- tabData.text2 %>
+      <%- tabData.text %><br class="u-mobile" /><%- tabData.text2 %>
     </div>
     <% }); %>
   </div>
   <div class="tab-contents-information__contents-container">
     <% informationTabContentsData.forEach(tabContents => { %>
-    <div class="tab-contents-information__content">
-      <div class="tab-contents-information__body">
-        <div class="tab-contents-information__title lined-title">
-          <%- tabContents.title %>
+    <div class="js-information-content">
+      <div class="tab-contents-information__content">
+        <div class="tab-contents-information__body">
+          <div class="tab-contents-information__title lined-title">
+            <%- tabContents.title %>
+          </div>
+          <div class="tab-contents-information__text">
+            <%- tabContents.text %>
+          </div>
         </div>
-        <div class="tab-contents-information__text">
-          <%- tabContents.text %>
+        <div class="tab-contents-information__img">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="<%- tabContents.imagePath %>-sp.jpg"
+            />
+            <img
+              src="<%- tabContents.imagePath %>-pc.jpg"
+              alt="<%- tabContents.alt %>"
+            />
+          </picture>
         </div>
-      </div>
-      <div class="tab-contents-information__img">
-        <picture>
-          <source
-            media="(max-width: 767px)"
-            srcset="<%- tabContents.imagePath %>-sp.jpg"
-          />
-          <img
-            src="<%- tabContents.imagePath %>-pc.jpg"
-            alt="<%- tabContents.alt %>"
-          />
-        </picture>
-
       </div>
     </div>
     <% }); %>

@@ -1846,8 +1846,17 @@ a {
 	width: 27%;
 }
 
+.tab-contents-information__item.current {
+	background-color: #408F95;
+	color: #fff;
+}
+
 .tab-contents-information__contents-container {
 	margin-top: 1rem;
+}
+
+.js-information-content:not(:first-child) {
+	display: none;
 }
 
 .tab-contents-information__content {
