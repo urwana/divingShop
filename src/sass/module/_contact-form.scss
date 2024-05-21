@@ -1,0 +1,150 @@
+@use "global" as *;
+
+.contact-form {
+  @include mq("md") {
+    width: rem(700);
+    margin-inline: auto;
+  }
+}
+
+.contact-form__row {
+  border-bottom: 1px dashed $green-accent;
+  padding-bottom: rem(24);
+  @include mq("md") {
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: rem(220) rem(480);
+  }
+}
+
+.contact-form__title {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+    padding: rem(40) 0;
+  }
+}
+
+.contact-form__item {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 0;
+    padding: rem(40) 0;
+  }
+}
+
+.contact-form__label {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__privacy {
+  margin-top: rem(40);
+  display: flex;
+  align-items: center;
+  margin-left: rem(30);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.contact-form__label [type="radio"] {
+  display: block;
+  width: rem(14);
+  height: rem(14);
+  border: solid 1px $green-accent;
+}
+
+.contact-form__label-text {
+  margin-left: rem(8);
+}
+
+.contact-form__item [type="text"],
+.contact-form__item [type="search"],
+.contact-form__item [type="tel"],
+.contact-form__item [type="url"],
+.contact-form__item [type="email"] {
+  width: 100%;
+  border: solid 1px $green-accent;
+  height: rem(40);
+}
+
+.contact-form__item textarea {
+  width: 100%;
+  border: solid 1px $green-accent;
+  height: rem(200);
+}
+
+.contact-form__item input[type="radio"],
+.contact-form__item input[type="checkbox"] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $green-accent;
+  //vertical-align: -5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+}
+
+.contact-form__item input[type="radio"]:checked:before,
+.contact-form__item input[type="checkbox"]:checked:before {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  transform: rotate(50deg);
+  width: rem(5);
+  height: rem(9);
+  border-right: 2px solid #c94800;
+  border-bottom: 2px solid #c94800;
+  content: "";
+}
+
+.select-box-container {
+  position: relative;
+  // display: inline-block;
+}
+
+.select-box-container::after {
+  content: "";
+  position: absolute;
+  border: 6px solid $green-accent;
+  border-bottom: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  top: calc(50% - 3px);
+  right: 10px;
+  width: 0;
+  height: 0;
+}
+
+.select-box-container--disabled::after {
+  border-top-color: #aaa;
+}
+
+.select-box {
+  border: 1px solid $green-accent;
+  padding: rem(12);
+  font-size: rem(12);
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-box:disabled {
+  pointer-events: none;
+  background-color: #f1f1f1;
+  color: #aaa;
+}
+
+.contact-form__explain {
+  margin-left: rem(8);
+  font-size: rem(14);
+  font-weight: $regular;
+}
+
+.contact-form__button {
+  margin-top: rem(24);
+  text-align: center;
+}

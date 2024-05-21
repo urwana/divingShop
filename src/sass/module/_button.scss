@@ -24,6 +24,10 @@
 
 }
 
+.button--contact{
+  padding: rem(19) rem(112) rem(20) rem(56);
+}
+
 // 下の四角
 .button::before{
   position: absolute;
