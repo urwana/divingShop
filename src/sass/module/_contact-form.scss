@@ -69,6 +69,12 @@
   height: rem(40);
 }
 
+.contact-form__item input::placeholder{
+  color: $green-light;
+  padding-left: rem(16);
+
+}
+
 .contact-form__item textarea {
   width: 100%;
   border: solid 1px $green-accent;
@@ -103,7 +109,6 @@
 
 .select-box-container {
   position: relative;
-  // display: inline-block;
 }
 
 .select-box-container::after {

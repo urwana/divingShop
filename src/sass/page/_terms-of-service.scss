@@ -1,8 +1,6 @@
 @use 'global' as *;
+@import './module/mixins';
 
 .l-terms-of-service {
-  margin-top: rem(52);
-  @include mq('md') {
-    margin-top: rem(150);
-  }
+  @include l-subpage;
 }

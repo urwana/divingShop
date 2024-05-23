@@ -1,13 +1,8 @@
 @use "global" as *;
+@import './module/mixins';
 
 .l-blog-detail {
-  margin-top: rem(80);
-  @include mq("md") {
-    margin-top: rem(150);
-  }
-}
-
-.blog-detail {
+  @include l-subpage;
 }
 
 .blog-detail__date {

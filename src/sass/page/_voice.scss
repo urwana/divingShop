@@ -1,11 +1,10 @@
 @use "global" as *;
+@import './module/mixins';
 
 .l-voice {
-  margin-top: rem(50);
-  @include mq("md") {
-    margin-top: rem(150);
-  }
+  @include l-subpage;
 }
+
 
 .l-voice__cards-wrapper {
   margin-top: rem(40);
