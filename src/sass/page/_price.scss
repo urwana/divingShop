@@ -1,14 +1,22 @@
-@use 'global' as *;
+@use "global" as *;
+@import "./module/mixins";
+
+.l-price {
+  @include l-subpage;
+}
 
 .price__inner {
+  position: relative;
+}
 
+.price__inner::before {
+  @include subpage-decoration;
 }
 
 .price__contents {
   width: 100%;
-  @include mq('md') {
+  @include mq("md") {
     width: rem(700);
     margin-inline: auto;
   }
 }
-

@@ -9,6 +9,11 @@
 }
 
 .blog__inner {
+  position: relative;
+}
+
+.blog__inner::before {
+  @include subpage-decoration;
 }
 
 .blog__body {

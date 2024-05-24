@@ -145,6 +145,14 @@ a {
 	transition: opacity 0.3s;
 }
 
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
 .l-about-us {
 	margin-top: 3.125rem;
 }
@@ -155,6 +163,10 @@ a {
 
 .l-gallery__item-container {
 	margin-top: 2.5rem;
+}
+
+.about-us__inner {
+	position: relative;
 }
 
 .about-us__inner::before {
@@ -238,6 +250,24 @@ body {
 	margin-top: 3.125rem;
 }
 
+.blog__inner {
+	position: relative;
+}
+
+.blog__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
 .blog__cards-wrapper {
 	width: 100%;
 }
@@ -288,6 +318,24 @@ body {
 
 .campaign__pager {
 	margin-top: 5rem;
+}
+
+.campaign__inner {
+	position: relative;
+}
+
+.campaign__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
 }
 
 body {
@@ -362,6 +410,32 @@ body {
 	margin-top: 3.125rem;
 }
 
+.faq__inner {
+	position: relative;
+}
+
+.faq__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
 .l-information {
 	margin-top: 7.5rem;
 }
@@ -371,6 +445,36 @@ body {
 }
 
 .information__inner::before {
+	background-image: url(../images/top/bg-fish-r.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	position: absolute;
+	top: -25px;
+	width: 7.5rem;
+	z-index: 2;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
+.l-price {
+	margin-top: 3.125rem;
+}
+
+.price__inner {
+	position: relative;
+}
+
+.price__inner::before {
 	background-image: url(../images/top/bg-fish-r.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1786,6 +1890,7 @@ body {
 .qa-box__question {
 	background-color: #408F95;
 	color: #fff;
+	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
@@ -1951,6 +2056,14 @@ body {
 .sns-icons__link img {
 	height: auto;
 	width: 100%;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
 }
 
 .static-page {
@@ -2614,6 +2727,14 @@ html {
 	font-size: 1.4814814815vw;
 }
 
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
 .l-about-us {
 	margin-top: 9.375rem;
 }
@@ -2667,6 +2788,12 @@ html {
 	margin-top: 9.375rem;
 }
 
+.blog__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
+}
+
 .blog__body {
 	align-items: flex-start;
 	display: flex;
@@ -2696,6 +2823,12 @@ html {
 
 .l-campaign {
 	margin-top: 9.375rem;
+}
+
+.campaign__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
 }
 
 .u-desktop {
@@ -2743,11 +2876,43 @@ html {
 	margin-top: 9.375rem;
 }
 
+.faq__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
+}
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
 .l-information {
 	margin-top: 9.375rem;
 }
 
 .information__inner::before {
+	height: 8.625rem;
+	top: -70px;
+	width: 18.75rem;
+}
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
+.l-price {
+	margin-top: 9.375rem;
+}
+
+.price__inner::before {
 	height: 8.625rem;
 	top: -70px;
 	width: 18.75rem;
@@ -3249,6 +3414,14 @@ html {
 
 .sns-icons .sns-icons__link--twitter {
 	width: 1.125rem;
+}
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
 }
 
 .static-page {

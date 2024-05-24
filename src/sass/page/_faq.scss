@@ -11,8 +11,13 @@
 }
 
 .faq__inner{
-
+  position: relative;
 }
+
+.faq__inner::before {
+  @include subpage-decoration;
+}
+
 
 .faq__contents {
 

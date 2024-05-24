@@ -12,3 +12,11 @@
 .campaign__pager{
   margin-top: rem(80);
 }
+
+.campaign__inner{
+  position: relative;
+}
+
+.campaign__inner::before {
+  @include subpage-decoration;
+}

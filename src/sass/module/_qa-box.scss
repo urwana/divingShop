@@ -12,6 +12,7 @@
   font-size: rem(16);
   padding: rem(16);
   position: relative;
+  cursor: pointer;
   @include mq('md') {
     font-size: rem(20);
     padding: rem(25) rem(40);

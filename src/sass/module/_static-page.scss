@@ -1,4 +1,5 @@
 @use "global" as *;
+@import './module/mixins';
 
 .static-page {
   font-size: rem(16);
@@ -24,26 +25,7 @@
 }
 
 .static-page__inner::before {
-  position: absolute;
-  content: "";
-  top: -25px;
-  // NOTE:
-  // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
-  // rem(620) = 1080(inner 幅) / 2(半分) + 80px(魚たちの画像はみ出し分)
-  // 48vw = 画面幅の約 1/2
-  left: calc(50% - min(48vw, rem(600)));
-  width: rem(120);
-  height: rem(55);
-  background-image: url(../images/top/bg-fish-r.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  z-index: 2;
-  @include mq("md") {
-    top: -70px;
-    width: rem(300);
-    height: rem(138);
-  }
+  @include subpage-decoration;
 }
 
 .static-page__title {
