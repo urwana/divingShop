@@ -1016,6 +1016,32 @@ body {
 	text-align: center;
 }
 
+.campaign-card__text {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.campaign-card__date-container {
+	color: #408F95;
+	margin-top: 1.25rem;
+	text-align: center;
+}
+
+.campaign-card__date {
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	line-height: 1.125;
+}
+
+.campaign-card__link {
+	margin-top: 0.5rem;
+}
+
+.campaign-card__button {
+	margin-top: 1rem;
+	text-align: center;
+}
+
 .campaign-cards--sidebar .campaign-card:not(:first-child) {
 	margin-top: 2.5rem;
 }

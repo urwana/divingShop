@@ -1,0 +1,50 @@
+<% if (typeof campaignCardData === 'undefined') { campaignCardData = []; } %>
+<% if (typeof page === 'undefined') { page = false; } %>
+<% if (typeof cardType === 'undefined') { cardType = ""; } %>
+
+<a class="campaign-card<%- page ? " campaign-card--page" : "" %>" href="<%- campaignCardData.link %>">
+  <div class="campaign-card__image">
+    <img
+      src="<%- campaignCardData.imgPath %>"
+      alt="<%- campaignCardData.alt %>"
+    />
+  </div>
+  <div class="campaign-card__body">
+    <div class="campaign-card__top">
+      <div class="campaign-card__label label-container">
+        <span class="label"><%- campaignCardData.label %></span>
+      </div>
+      <div class="campaign-card__title"><%- campaignCardData.title %></div>
+    </div>
+    <div class="campaign-card__bottom">
+      <p class="campaign-card__explain">
+        <%- campaignCardData.text %>
+      </p>
+      <div class="campaign-card__price-container">
+        <div class="price-container">
+          <span class="price-container__cancelled-price"
+            ><%- campaignCardData.cancelledPrice %></span
+          >
+          <span class="price-container__price"
+            ><%- campaignCardData.price %></span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="campaign-card__bottom2">
+      <div class="campaign-card__text">
+        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+      </div>
+      <div class="campaign-card__date-container">
+        <time class="campaign-card__date" datetime="2023/6/1-9/30">
+          2023/6/1-9/30
+        </time>
+        <p class="campaign-card__link">ご予約・お問い合わせはコチラ</p>
+      </div>
+      <div class="campaign-card__button">
+        <button class="button"><span class="button__text">Contact us</span></button>
+      </div>
+    </div>
+  </div>
+</a>
