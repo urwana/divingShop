@@ -20,6 +20,7 @@
   @extend %pager-default-style;
   display: flex;
   align-items: center;
+  margin-right: rem(24);
 }
 
 .pager__item {
@@ -35,4 +36,5 @@
   @extend %pager-default-style;
   display: flex;
   align-items: center;
+  margin-left: rem(24);
 }

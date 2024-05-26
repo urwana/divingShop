@@ -15,7 +15,7 @@
   // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
   // rem(620) = 1080(inner 幅) / 2(半分) + 80px(魚たちの画像はみ出し分)
   // 48vw = 画面幅の約 1/2
-  left: calc(50% - min(48vw, rem(600)));
+  left: calc(50% - min(48vw, rem(616)));
   width: rem(120);
   height: rem(55);
   background-image: url(../images/top/bg-fish-r.svg);

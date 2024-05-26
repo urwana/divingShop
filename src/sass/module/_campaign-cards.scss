@@ -5,6 +5,8 @@
 }
 
 .campaign-cards{
+  width: 80%;
+  margin-inline:auto;
   @include mq('md') {
     margin-top: 0;
     display: grid;
