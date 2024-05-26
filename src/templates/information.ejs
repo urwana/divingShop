@@ -7,10 +7,10 @@
     <%- include(base.path + "./common/_header", { base: base}) %>
     <main>
       <% const subKeyVisualData = { pageTitle:"Information",
-      imageClass:"sitemap-background" } %> <%- include(base.path +
+      imageClass:"information-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData = { white:false, list:[
-      {title:"TOP",url:"/"},{title:"サイトマップ",url:"/sitemap.html"}] }; %>
+      {title:"TOP",url:"/"},{title:"ダイビング情報",url:"/information.html"}] }; %>
       <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <section class="l-information">
@@ -18,10 +18,10 @@
           <div class="information__inner inner">
             <div class="information__tab-contents">
               <% const informationTabData = [ { text:"ライセンス",text2:"講習",
-              imgPath:"./assets/images/common/whale-r" }, {
+              imagePath:"./assets/images/common/whale-icon-w" }, {
               text:"ファン",text2:"ダイビング",
-              imgPath:"./assets/images/common/whale-l" }, { text:"体験",
-              text2:"ダイビング", imgPath:"./assets/images/common/fish" }, ];
+              imagePath:"./assets/images/common/whale-icon" }, { text:"体験",
+              text2:"ダイビング", imagePath:"./assets/images/common/whale-icon" }, ];
               const informationTabContentsData=[ { title:"ライセンス講習",
               text:"泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！",
               imagePath:"./assets/images/information/tab-contents1",

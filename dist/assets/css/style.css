@@ -581,7 +581,7 @@ body {
 }
 
 .l-top-contact {
-	margin-top: 5rem;
+	margin-top: 4rem;
 }
 
 .l-footer {
@@ -2172,6 +2172,10 @@ body {
 	width: 100%;
 }
 
+.information-background {
+	background-image: url("../images/subKeyVisual/information-sp.jpg");
+}
+
 .campaign-background {
 	background-image: url("../images/subKeyVisual/campaign-sp.jpg");
 }
@@ -2228,8 +2232,7 @@ body {
 
 .tab-contents-information__tab {
 	display: flex;
-	gap: 1.25rem;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .tab-contents-information__item {
@@ -2241,7 +2244,11 @@ body {
 	font-weight: 300;
 	padding: 0.625rem 0;
 	text-align: center;
-	width: 27%;
+	width: 29.5%;
+}
+
+.tab-contents-information__item img {
+	display: none;
 }
 
 .tab-contents-information__item.current {
@@ -2259,7 +2266,12 @@ body {
 
 .tab-contents-information__content {
 	border: solid 1px #408F95;
-	padding: 1.5rem;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.tab-contents-information__title {
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .tab-contents-information__text {
@@ -2358,12 +2370,26 @@ body {
 
 .top-about__contents {
 	margin-top: 2.5rem;
+	position: relative;
+	z-index: 2;
 }
 
 .top-about__image-container {
 	aspect-ratio: 345/212;
 	margin-top: 1.75rem;
 	position: relative;
+}
+
+.top-about__image-container--page {
+	margin-top: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.top-about__image-container--page .top-about__image-right {
+	top: 0;
+	width: 100%;
 }
 
 .top-about__image-left {
@@ -2374,6 +2400,10 @@ body {
 	top: 0;
 	width: 37.1%;
 	z-index: 1;
+}
+
+.top-about__image-container--page .top-about__image-left {
+	display: none;
 }
 
 .top-about__image-left img {
@@ -2405,6 +2435,10 @@ body {
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 1;
+}
+
+.top-about__contents--page .top-about__catch-copy {
+	color: #fff;
 }
 
 .top-about__body {
@@ -3493,6 +3527,10 @@ html {
 	transform: translate(-50%, -10%);
 }
 
+.information-background {
+	background-image: url("../images/subKeyVisual/information-pc.jpg");
+}
+
 .campaign-background {
 	background-image: url("../images/subKeyVisual/campaign-pc.jpg");
 }
@@ -3554,6 +3592,26 @@ html {
 .swiper-campaign .swiper-campaign__button-next {
 	right: 1.25rem;
 	top: -104px;
+}
+
+.tab-contents-information__item {
+	align-items: center;
+	display: flex;
+	font-size: 1.5rem;
+	justify-content: center;
+	padding: 1.3125rem 0;
+	width: 18.75rem;
+}
+
+.tab-contents-information__item img {
+	display: block;
+	height: 3rem;
+	margin-right: 0.5rem;
+	width: 3rem;
+}
+
+.tab-contents-information__contents-container {
+	margin-top: 1.5rem;
 }
 
 .tab-contents-information__content {

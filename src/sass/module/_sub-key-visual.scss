@@ -29,6 +29,13 @@
   }
 }
 
+.information-background {
+  background-image: url("../images/subKeyVisual/information-sp.jpg");
+  @include mq("md") {
+    background-image: url("../images/subKeyVisual/information-pc.jpg");
+  }
+}
+
 .campaign-background {
   background-image: url("../images/subKeyVisual/campaign-sp.jpg");
   @include mq("md") {
