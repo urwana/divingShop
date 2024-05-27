@@ -15,7 +15,7 @@
   @include mq('md') {
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(2, rem(370)) ;
     }
 }
