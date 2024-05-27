@@ -3188,6 +3188,7 @@ html {
 	gap: 2.5rem;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 0;
+	width: 100%;
 }
 
 .company-info {

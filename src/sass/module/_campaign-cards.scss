@@ -8,6 +8,7 @@
   width: 80%;
   margin-inline:auto;
   @include mq('md') {
+    width: 100%;
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
