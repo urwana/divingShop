@@ -91,6 +91,7 @@
   color: $green-accent;
   text-align: center;
   margin-top: rem(24);
+  min-height: rem(56);
 }
 
 .campaign-card__date {
@@ -109,5 +110,12 @@
 }
 
 .button__text {
- 
+
+}
+
+.campaign-card__bottom2{
+  display: none;
+  @include mq('md') {
+    display: block;
+  }
 }

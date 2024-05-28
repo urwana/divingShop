@@ -1025,6 +1025,7 @@ body {
 .campaign-card__date-container {
 	color: #408F95;
 	margin-top: 1.5rem;
+	min-height: 3.5rem;
 	text-align: center;
 }
 
@@ -1041,6 +1042,10 @@ body {
 .campaign-card__button {
 	margin-top: 1rem;
 	text-align: center;
+}
+
+.campaign-card__bottom2 {
+	display: none;
 }
 
 .campaign-cards--sidebar .campaign-card:not(:first-child) {
@@ -2043,6 +2048,7 @@ body {
 .section-title--contact .section-title__word {
 	display: inline-block;
 	font-size: 5rem;
+	line-height: 5rem;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -3182,10 +3188,14 @@ html {
 	margin-top: 1rem;
 }
 
+.campaign-card__bottom2 {
+	display: block;
+}
+
 .campaign-cards {
-	grid-gap: 2.5rem;
+	grid-gap: 5rem 2.5rem;
 	display: grid;
-	gap: 2.5rem;
+	gap: 5rem 2.5rem;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 0;
 	width: 100%;
