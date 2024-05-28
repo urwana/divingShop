@@ -10,7 +10,7 @@
       <% const breadcrumbsData = { white:false, list:[
       {title:"TOP",url:"/"},{title:"キャンペーン",url:"/campaign.html"}] }; %>
       <%- include("./common/_breadcrumbs", { breadcrumbsData: breadcrumbsData}) %>
-      <section class="l-campaign">
+      <div class="l-campaign">
         <div class="campaign">
           <div class="campaign__inner inner">
             <%- include("./common/_tab-card") %>
@@ -38,9 +38,8 @@
               "貸切ファンダイビングの画像", label : "ファンダイビング", title :
               "貸切ファンダイビング", text : "全部コミコミ(お一人様)",
               cancelledPrice : "¥20,000", price : "¥16,000" },
-              ]; 
+              ];
               const cardType = "page"
-              
               %>
               <%- include("./common/_campaign-cards",{campaignCardDataAll:campaignCardDataAll, cardType:cardType}) %>
             </div>
@@ -49,7 +48,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <section class="l-top-contact">
         <%- include("./common/_contact") %>
       </section>
