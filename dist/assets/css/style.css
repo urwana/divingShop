@@ -2123,6 +2123,10 @@ body {
 	object-fit: contain;
 }
 
+.sidebar-title__text {
+	margin-left: 0.5rem;
+}
+
 .sns-icons__link {
 	aspect-ratio: 1/1;
 	width: 1.5rem;
