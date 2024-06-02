@@ -1,5 +1,4 @@
-<% base = { path: "./", title: "ブログ", css: "top", description:
-"架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "ブログ一覧", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -10,7 +9,7 @@
       imageClass:"blog-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData = { white:false, list:[
-      {title:"TOP",url:"/"},{title:"ブログ一覧",url:"/blog.html"},{title:"ブログ詳細",url:"/blog-detail.html"}]
+      {title:"TOP",url:"/"},{title:base.title, url:"/blog.html"},{title:"ブログ詳細",url:"/blog-detail.html"}]
       }; %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <section class="l-blog-detail">

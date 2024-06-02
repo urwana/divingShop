@@ -1,4 +1,4 @@
-<% base = { path: "./", title: "ボイス", css: "top", description: "架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "キャンペーン", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include("./common/_head", { base: base}) %>
@@ -8,7 +8,7 @@
       <% const subKeyVisualData = { pageTitle:"Campaign",imageClass:"campaign-background" } %>
       <%- include("./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
       <% const breadcrumbsData = { white:false, list:[
-      {title:"TOP",url:"/"},{title:"キャンペーン",url:"/campaign.html"}] }; %>
+      {title:"TOP",url:"/"},{title:base.title ,url:"/campaign.html"}] }; %>
       <%- include("./common/_breadcrumbs", { breadcrumbsData: breadcrumbsData}) %>
       <div class="l-campaign">
         <div class="campaign">

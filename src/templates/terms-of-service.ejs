@@ -1,5 +1,4 @@
-<% base = { path: "./", title: "トップ", css: "top", description:
-"架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "料金表", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -10,7 +9,7 @@
       imageClass:"terms-of-service-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData ={ white:false, list:[
-      {title:"TOP",url:"/"},{title:"ご利用規約",url:"/terms-of-service.html"}]
+      {title:"TOP",url:"/"},{title:base.title, url:"/terms-of-service.html"}]
       }; %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <section class="terms-of-service l-terms-of-service">
