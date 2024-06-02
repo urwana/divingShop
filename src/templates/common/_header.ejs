@@ -1,5 +1,7 @@
+<% if (typeof head === 'undefined') { head = false; } %>
 <header class="header">
   <div class="header__inner">
+    <% if(head){ %>
     <h1 class="header__logo">
       <a href="/">
         <img
@@ -10,6 +12,18 @@
         />
       </a>
     </h1>
+    <% } else { %>
+      <div class="header__logo">
+        <a href="/">
+          <img
+            src="./assets/images/common/logo.svg"
+            alt="codeUps コードアップスのロゴ"
+            width="133"
+            height="50"
+          />
+        </a>
+      </div>
+      <% } %>
     <button class="header__drawer-button hamburger js-hamburger">
       <span></span>
       <span></span>
