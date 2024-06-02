@@ -135,8 +135,10 @@ jQuery(function ($) {
       }
     });
   });
+
+  // スクロールトップボタン
   var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-  var keyVisualHeight = $(".key-visual").height();
+  var keyVisualHeight = $(".js-key-visual").height();
   var footerHeight = $(".footer").height();
   var scrollTopButton = $(".js-scroll-to-top");
   var viewportHeight = $(window).height();
@@ -204,28 +206,31 @@ jQuery(function ($) {
 //   }
 // };
 // const device = detectDevice();
-
-var openingImages = document.querySelectorAll(".js-opening > div");
-var openingTimeLine = gsap.timeline();
-openingTimeLine.to(openingImages, {
-  y: 0,
-  duration: 1.5,
-  stagger: 0.3,
-  ease: "power2.inOut"
-}).to(openingImages, {
-  autoAlpha: 0,
-  duration: 0.5,
-  ease: "power2.inOut"
-}).to(".opening__title-container", {
-  autoAlpha: 1,
-  duration: 0.5,
-  ease: "power2.inOut"
-}, "<0.5").to(".js-opening", {
-  backgroundColor: "rgba(0, 0, 0, 0)",
-  duration: 0.1,
-  autoAlpha: 1,
-  ease: "power2.inOut"
-}).to(".opening__title-container", {
-  color: "#ffffff",
-  duration: 0.15
-}, "<");
+var useGsap = $("body").hasClass("js-gsap");
+if (useGsap) {
+  var openingImages = document.querySelectorAll(".js-opening > div");
+  var openingTimeLine = gsap.timeline();
+  openingTimeLine.to(openingImages, {
+    y: 0,
+    duration: 1.5,
+    stagger: 0.3,
+    ease: "power2.inOut"
+  }).to(openingImages, {
+    autoAlpha: 0,
+    duration: 0.5,
+    ease: "power2.inOut"
+  }).to(".opening__title-container", {
+    autoAlpha: 1,
+    duration: 0.5,
+    ease: "power2.inOut"
+  }, "<0.5").to(".js-opening", {
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    duration: 0.1,
+    autoAlpha: 1,
+    ease: "power2.inOut"
+  }).to(".opening__title-container", {
+    color: "#ffffff",
+    duration: 0.15
+  }, "<");
+}
+;

@@ -51,7 +51,7 @@ function _toPrimitive(input, hint) {
   return (hint === "string" ? String : Number)(input);
 }
 
-jQuery(function($) {
+jQuery(function ($) {
   // ハンバーガ・ドロワーメニュー
   $(".js-hamburger").on("click", function (e) {
     e.preventDefault();
@@ -159,11 +159,12 @@ jQuery(function($) {
     });
   });
 
+  // スクロールトップボタン
   const documentHeight = Math.max(
     document.body.scrollHeight,
     document.documentElement.scrollHeight
   );
-  const keyVisualHeight = $(".key-visual").height();
+  const keyVisualHeight = $(".js-key-visual").height();
   const footerHeight = $(".footer").height();
   const scrollTopButton = $(".js-scroll-to-top");
   const viewportHeight = $(window).height();
@@ -238,41 +239,43 @@ jQuery(function($) {
 //   }
 // };
 // const device = detectDevice();
-
-const openingImages = document.querySelectorAll(".js-opening > div");
-const openingTimeLine = gsap.timeline();
-openingTimeLine
-  .to(openingImages, {
-    y: 0,
-    duration: 1.5,
-    stagger: 0.3,
-    ease: "power2.inOut",
-  })
-  .to(openingImages, {
-    autoAlpha: 0,
-    duration: 0.5,
-    ease: "power2.inOut",
-  })
-  .to(
-    ".opening__title-container",
-    {
-      autoAlpha: 1,
+const useGsap = $("body").hasClass("js-gsap");
+if (useGsap) {
+  const openingImages = document.querySelectorAll(".js-opening > div");
+  const openingTimeLine = gsap.timeline();
+  openingTimeLine
+    .to(openingImages, {
+      y: 0,
+      duration: 1.5,
+      stagger: 0.3,
+      ease: "power2.inOut",
+    })
+    .to(openingImages, {
+      autoAlpha: 0,
       duration: 0.5,
       ease: "power2.inOut",
-    },
-    "<0.5"
-  )
-  .to(".js-opening", {
-    backgroundColor: "rgba(0, 0, 0, 0)",
-    duration: 0.1,
-    autoAlpha: 1,
-    ease: "power2.inOut",
-  })
-  .to(
-    ".opening__title-container",
-    {
-      color: "#ffffff",
-      duration: 0.15,
-    },
-    "<"
-  );
+    })
+    .to(
+      ".opening__title-container",
+      {
+        autoAlpha: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+      },
+      "<0.5"
+    )
+    .to(".js-opening", {
+      backgroundColor: "rgba(0, 0, 0, 0)",
+      duration: 0.1,
+      autoAlpha: 1,
+      ease: "power2.inOut",
+    })
+    .to(
+      ".opening__title-container",
+      {
+        color: "#ffffff",
+        duration: 0.15,
+      },
+      "<"
+    );
+};
