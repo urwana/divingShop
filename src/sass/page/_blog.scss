@@ -25,12 +25,12 @@
   }
 }
 
-.blog__cards-wrapper {
-  width: 100%;
-  @include mq('md') {
-    width: rem(706);
-  }
-}
+// .blog__cards-wrapper {
+//   width: 100%;
+//   @include mq('md') {
+//     width: rem(706);
+//   }
+// }
 
 .blog__sidebar {
   @include mq('md') {

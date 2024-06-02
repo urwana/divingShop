@@ -1,6 +1,11 @@
 @use "global" as *;
 
 .blog__sidebar {
+  width: 84%;
+  margin-inline: auto;
+  @include mq('md') {
+    width: 100%;
+  }
 }
 
 .sidebar-popular-articles {

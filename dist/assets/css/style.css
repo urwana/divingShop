@@ -268,10 +268,6 @@ body {
 	z-index: 2;
 }
 
-.blog__cards-wrapper {
-	width: 100%;
-}
-
 .blog__pager {
 	margin-top: 5rem;
 }
@@ -626,6 +622,12 @@ body {
 	margin-top: 5rem;
 }
 
+.blog__sidebar {
+	margin-left: auto;
+	margin-right: auto;
+	width: 84%;
+}
+
 .sidebar-campaign {
 	margin-top: 1.5rem;
 }
@@ -686,6 +688,12 @@ body {
 .blog-card__text {
 	line-height: 1.5;
 	margin-top: 1rem;
+}
+
+.blog-cards {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.5%;
 }
 
 .blog-detail__image {
@@ -2935,10 +2943,6 @@ html {
 	justify-content: flex-start;
 }
 
-.blog__cards-wrapper {
-	width: 44.125rem;
-}
-
 .blog__sidebar {
 	width: 18.375rem;
 }
@@ -3148,6 +3152,10 @@ html {
 	height: 8.625rem;
 	top: -70px;
 	width: 18.75rem;
+}
+
+.blog__sidebar {
+	width: 100%;
 }
 
 .blog-card__content {
