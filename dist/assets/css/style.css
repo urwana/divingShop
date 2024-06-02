@@ -1289,6 +1289,37 @@ body {
 	cursor: pointer;
 }
 
+.gallery__item img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.gallery__item0 {
+	aspect-ratio: 524/345;
+}
+
+.gallery__item1 {
+	aspect-ratio: 345/219;
+}
+
+.gallery__item2 {
+	aspect-ratio: 345/219;
+}
+
+.gallery__item3 {
+	aspect-ratio: 345/219;
+}
+
+.gallery__item4 {
+	aspect-ratio: 345/219;
+}
+
+.gallery__item5 {
+	aspect-ratio: 524/345;
+}
+
 .gallery__item-container {
 	display: flex;
 	flex-direction: column;
@@ -3297,6 +3328,10 @@ html {
 	line-height: 1.2857142857;
 	margin-top: 5rem;
 	text-align: center;
+}
+
+.gallery__item {
+	aspect-ratio: auto;
 }
 
 .gallery__item0 {
