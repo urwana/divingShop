@@ -4,11 +4,12 @@
 
 <a class="campaign-card<%- page ? " campaign-card--page" : "" %>" href="<%- campaignCardData.link %>">
   <div class="campaign-card__image">
-    <img
-      src="<%- campaignCardData.imgPath %>"
+    <!-- retina sp 3倍対応のため PC 版画像を流用する -->
+      <img
+      src="<%- campaignCardData.imgPath %>-pc.jpg"
       alt="<%- campaignCardData.alt %>"
-    />
-  </div>
+      />
+</div>
   <div class="campaign-card__body campaign-card__body--page">
     <div class="campaign-card__top">
       <div class="campaign-card__label label-container">
