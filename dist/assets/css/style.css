@@ -1032,10 +1032,13 @@ body {
 .campaign-card__date {
 	font-family: "Lato", sans-serif;
 	font-size: 1rem;
+	font-weight: 700;
 	line-height: 1.125;
 }
 
 .campaign-card__link {
+	font-size: 0.875rem;
+	font-weight: 300;
 	margin-top: 0.5rem;
 }
 
@@ -1838,18 +1841,28 @@ body {
 	-webkit-text-decoration: line-through solid #ff0000;
 	-webkit-text-decoration: line-through 4px solid #ff0000;
 	color: #0D2936;
+	display: inline-block;
 	font-size: 1.25rem;
+	max-width: 100%;
+	overflow: hidden;
 	text-decoration: line-through;
 	text-decoration: line-through solid #ff0000;
 	text-decoration: line-through 4px solid #ff0000;
 	text-decoration-thickness: 4px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .price-container__price {
 	color: #408F95;
+	display: inline-block;
 	font-size: 2rem;
 	margin-left: 1rem;
+	max-width: 100%;
+	overflow: hidden;
 	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .price-list-main {
@@ -2236,6 +2249,30 @@ body {
 	z-index: 2;
 }
 
+.tab-card {
+	grid-row-gap: 1.25rem;
+	grid-column-gap: 1rem;
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 1.25rem;
+}
+
+.tab-card__item {
+	border: solid 1px #408F95;
+	color: #408F95;
+	font-size: 0.875rem;
+	line-height: 1.5714285714;
+	padding: 0.25rem 0;
+	text-align: center;
+}
+
+.tab-card__item.current {
+	background-color: #408F95;
+	color: #fff;
+}
+
 .tab-contents-information__tab {
 	display: flex;
 	justify-content: space-between;
@@ -2286,28 +2323,6 @@ body {
 
 .tab-contents-information__img {
 	margin-top: 0.5rem;
-}
-
-.tab-card {
-	grid-row-gap: 1.25rem;
-	grid-column-gap: 1rem;
-	-moz-column-gap: 1rem;
-	column-gap: 1rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	row-gap: 1.25rem;
-}
-
-.tab-card__item {
-	border: solid 1px #408F95;
-	color: #408F95;
-	padding: 0.25rem 0;
-	text-align: center;
-}
-
-.tab-card__item.current {
-	background-color: #408F95;
-	color: #fff;
 }
 
 .toggle-hierarchy {
@@ -3614,6 +3629,16 @@ html {
 	top: -104px;
 }
 
+.tab-card {
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+	display: flex;
+}
+
+.tab-card__item {
+	width: 10.125rem;
+}
+
 .tab-contents-information__item {
 	align-items: center;
 	display: flex;
@@ -3646,16 +3671,6 @@ html {
 
 .tab-contents-information__img {
 	width: 48%;
-}
-
-.tab-card {
-	-moz-column-gap: 2rem;
-	column-gap: 2rem;
-	display: flex;
-}
-
-.tab-card__item {
-	width: 10.125rem;
 }
 
 .top-about__inner::after {
