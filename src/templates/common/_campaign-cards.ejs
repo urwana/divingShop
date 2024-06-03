@@ -4,6 +4,6 @@
 
 <div class="<%- sideBar ? "campaign-cards--sidebar" : "campaign-cards"  %>">
 <% campaignCardDataAll.forEach(campaignCardData => { %>
-  <%- include("./_campaign-card2", {campaignCardData:campaignCardData, page:true, cardType:cardType}) %>
+  <%- include("./_campaign-card2", {campaignCardData:campaignCardData, page:true, sideBar:sideBar,cardType:cardType}) %>
 <% }); %>
 </div>

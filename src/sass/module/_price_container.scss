@@ -1,9 +1,14 @@
-@use 'global' as *;
+@use "global" as *;
 
 .price-container {
   font-family: $price-font;
   font-weight: $bold;
   line-height: 1;
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .price-container__cancelled-price {
@@ -15,8 +20,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(24);
+  }
+}
+
+.price-container__cancelled-price--sidebar {
+  @include mq("md") {
+    font-size: rem(20);
   }
 }
 
@@ -30,8 +41,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(40);
     margin-left: rem(24);
+  }
+}
+
+.price-container__price--sidebar {
+  @include mq("md") {
+    font-size: rem(32);
   }
 }

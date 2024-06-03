@@ -1,6 +1,7 @@
 <% if (typeof campaignCardData === 'undefined') { campaignCardData = []; } %>
 <% if (typeof page === 'undefined') { page = false; } %>
 <% if (typeof cardType === 'undefined') { cardType = ""; } %>
+<% if (typeof sideBar === 'undefined') { sideBar = ""; } %>
 
 <a class="campaign-card<%- page ? " campaign-card--page" : "" %>" href="<%- campaignCardData.link %>">
   <div class="campaign-card__image">
@@ -12,9 +13,11 @@
 </div>
   <div class="campaign-card__body campaign-card__body--page">
     <div class="campaign-card__top">
+      <% if(!sideBar){ %>
       <div class="campaign-card__label label-container">
         <span class="label"><%- campaignCardData.label %></span>
       </div>
+      <% } %>
       <div class="campaign-card__title"><%- campaignCardData.title %></div>
     </div>
     <div class="campaign-card__bottom">
@@ -23,16 +26,17 @@
       </p>
       <div class="campaign-card__price-container">
         <div class="price-container">
-          <span class="price-container__cancelled-price"
+          <span class="price-container__cancelled-price<%- sideBar ? " price-container__cancelled-price--sidebar" : "" %>"
             ><%- campaignCardData.cancelledPrice %></span
           >
-          <span class="price-container__price"
+          <span class="price-container__price<%- sideBar ? " price-container__price--sidebar" : "" %>"
             ><%- campaignCardData.price %></span
           >
         </div>
       </div>
     </div>
-    <div class="campaign-card__bottom2">
+    <% if(!sideBar){ %>
+      <div class="campaign-card__bottom2">
       <div class="campaign-card__text">
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
       ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
@@ -50,5 +54,6 @@
         <button class="button"><span class="button__text">Contact us</span></button>
       </div>
     </div>
+    <% } %>
   </div>
 </a>

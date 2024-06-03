@@ -4,9 +4,10 @@
   width: 84%;
   margin-inline: auto;
   @include mq('md') {
-    width: 100%;
+    width: rem(294);
   }
 }
+
 
 .sidebar-popular-articles {
 }
@@ -24,4 +25,7 @@
 
 .l-campaign-cards{
   margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }

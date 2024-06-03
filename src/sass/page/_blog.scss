@@ -32,11 +32,6 @@
 //   }
 // }
 
-.blog__sidebar {
-  @include mq('md') {
-    width: rem(294);
-  }
-}
 
 .blog__pager{
   margin-top: rem(80);

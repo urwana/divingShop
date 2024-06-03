@@ -2798,7 +2798,7 @@ body {
 }
 
 .voice-card-sidebar__button {
-	margin-top: 2.5rem;
+	margin-top: 2.75rem;
 	text-align: center;
 }
 
@@ -2941,10 +2941,6 @@ html {
 	display: flex;
 	gap: 5rem;
 	justify-content: flex-start;
-}
-
-.blog__sidebar {
-	width: 18.375rem;
 }
 
 .l-blog__sidebar-popular-articles {
@@ -3155,7 +3151,11 @@ html {
 }
 
 .blog__sidebar {
-	width: 100%;
+	width: 18.375rem;
+}
+
+.l-campaign-cards {
+	margin-top: 1.5rem;
 }
 
 .blog-card__content {
@@ -3163,10 +3163,14 @@ html {
 }
 
 .blog-cards {
-	grid-gap: 2.5rem;
+	grid-row-gap: 5rem;
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	column-gap: 2.5rem;
 	display: grid;
-	gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
+	row-gap: 5rem;
+	width: 100%;
 }
 
 .blog-cards-top {
@@ -3459,13 +3463,27 @@ html {
 	font-size: 5rem;
 }
 
+.price-container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 .price-container__cancelled-price {
 	font-size: 1.5rem;
+}
+
+.price-container__cancelled-price--sidebar {
+	font-size: 1.25rem;
 }
 
 .price-container__price {
 	font-size: 2.5rem;
 	margin-left: 1.5rem;
+}
+
+.price-container__price--sidebar {
+	font-size: 2rem;
 }
 
 .price-list-main {
@@ -4041,7 +4059,7 @@ html {
 }
 
 .voice-card-sidebar {
-	padding: 0.9375rem 1.5rem 1.5rem 1.5rem;
+	padding: 0;
 }
 
 .voice-card-sidebar__meta {
@@ -4052,11 +4070,10 @@ html {
 
 .voice-card-sidebar__person {
 	margin-bottom: 0.25rem;
-	margin-top: 0;
 }
 
 .voice-card-sidebar__title {
-	margin-top: 0.25rem;
+	margin-top: 0.5rem;
 }
 
 .voice-card {

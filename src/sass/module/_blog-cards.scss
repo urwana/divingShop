@@ -4,9 +4,11 @@
   width: 96.5%;
   margin-inline: auto;
   @include mq('md') {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: rem(40);
+    row-gap: rem(80);
+    column-gap: rem(40);
   }
 }
 
