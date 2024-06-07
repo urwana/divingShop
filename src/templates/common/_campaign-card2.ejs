@@ -4,7 +4,7 @@
 <% if (typeof sideBar === 'undefined') { sideBar = ""; } %>
 
 <a class="campaign-card<%- page ? " campaign-card--page" : "" %>" href="<%- campaignCardData.link %>">
-  <div class="campaign-card__image">
+  <div class="campaign-card__image<%- sideBar ? " campaign-card__image--sidebar" : "" %>">
     <!-- retina sp 3倍対応のため PC 版画像を流用する -->
       <img
       src="<%- campaignCardData.imgPath %>-pc.jpg"
@@ -18,10 +18,10 @@
         <span class="label"><%- campaignCardData.label %></span>
       </div>
       <% } %>
-      <div class="campaign-card__title"><%- campaignCardData.title %></div>
+      <div class="campaign-card__title<%- sideBar ? " campaign-card__title--sidebar" : "" %>"><%- campaignCardData.title %></div>
     </div>
     <div class="campaign-card__bottom">
-      <p class="campaign-card__explain">
+      <p class="campaign-card__explain<%- sideBar ? " campaign-card__explain--sidebar" : "" %>">
         <%- campaignCardData.text %>
       </p>
       <div class="campaign-card__price-container">

@@ -8,11 +8,14 @@
 }
 
 .toggle-hierarchy__inner {
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }
 
 .sidebar-archive__year {
   margin-left: rem(28);
-  padding-left: rem(28);
+  //padding-left: rem(28);
 }
 
 .sidebar-archive__year-label {
@@ -56,7 +59,7 @@
 
 .sidebar-archive__month {
   margin-left: rem(28);
-  padding-left: rem(28);
+  //padding-left: rem(28);
 }
 
 .sidebar-archive__month-label {
@@ -75,7 +78,7 @@
 
 
 .sidebar-archive__day {
-  padding-left: rem(28);
+  //padding-left: rem(28);
 }
 
 .sidebar-archive__day-label {

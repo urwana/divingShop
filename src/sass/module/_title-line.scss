@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.title-line {
+  padding-bottom: rem(4);
+  border-bottom: solid 1px $green-accent;
+}
+
