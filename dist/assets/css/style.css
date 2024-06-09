@@ -2228,17 +2228,22 @@ body {
 	font-weight: 400;
 }
 
+.static-page__text {
+	line-height: 1.8;
+}
+
 .static-page__group {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 }
 
 .static-page__list {
 	list-style-type: decimal;
+	margin-top: 0.25rem;
 	padding-left: 1.25rem;
 }
 
 .static-page__list-item {
-	line-height: 2rem;
+	line-height: 2;
 }
 
 .sub-key-visual {
@@ -3677,6 +3682,10 @@ html {
 
 .static-page__title {
 	font-size: 2rem;
+}
+
+.static-page__group {
+	margin-top: 2.25rem;
 }
 
 .sub-key-visual {

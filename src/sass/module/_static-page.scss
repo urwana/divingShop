@@ -37,17 +37,23 @@
   }
 }
 
-.static-page__group {
-  margin-top: rem(48);
+.static-page__text {
+  line-height: 1.8;
 }
-.privacy-static-page__text {
+
+.static-page__group {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(36);
+  }
 }
 
 .static-page__list {
   list-style-type: decimal;
   padding-left: rem(20);
+  margin-top: rem(4);
 }
 
 .static-page__list-item {
-  line-height: rem(32);
+  line-height: 2;
 }
