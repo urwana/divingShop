@@ -1,7 +1,10 @@
 @use 'global' as *;
 
 .qa-box {
-  margin-top: rem(40);
+  margin-top: rem(44);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
 }
 
 .qa-box__question {
@@ -23,16 +26,14 @@
   padding: rem(24) rem(16);
   border: solid 1px $green-accent;
   display: none;
+  line-height: 1.4;
   @include mq('md') {
     margin-top: rem(16);
     padding: rem(40);
+    line-height: 1.4;
   }
 }
 
-.qa-box__question.is-open .qa-icon__vertical{
-  transform: rotate(90deg);
-  transition: 0.5s;
-}
 
 // .qa-box__question.is-open + .qa-box__answer{
 //   display: block;

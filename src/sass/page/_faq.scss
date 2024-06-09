@@ -21,5 +21,9 @@
 
 .faq__contents {
 
+  @include mq('md') {
+    width: 64.8%;
+    margin-inline:auto;
+  }
 }
 

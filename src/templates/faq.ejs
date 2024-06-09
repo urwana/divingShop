@@ -1,4 +1,4 @@
-<% base = { path: "./", title: "FAQ", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<% base = { path: "./", title: "よくある質問", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -9,7 +9,7 @@
       imageClass:"faq-background" } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:$subKeyVisualData}) %> <% const
       breadcrumbsData ={ white:false, list:[
-      {title:"TOP",url:"/"},{title:base.title, url:"/privacy-policy.html"}]
+      {title:"TOP",url:"/"},{title:base.title, url:"/faq.html"}]
       }; %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <div class="faq l-faq">
