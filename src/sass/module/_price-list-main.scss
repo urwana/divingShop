@@ -8,6 +8,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
+    margin-top: rem(80);
   }
 }
 
@@ -32,6 +33,9 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  @include mq('md') {
+    flex-direction: column;
+  }
 }
 
 .price-list-main__title-icon{
@@ -40,7 +44,7 @@
   margin-right: rem(8);
   @include mq('md') {
     width: rem(64);
-    margin-inline: auto;
+    //margin-inline: auto;
     margin-right: 0;
   }
 }
@@ -58,16 +62,16 @@
 }
 
 .price-list-main__name {
-  padding: rem(8) 0;
   border-left: solid 1px $green-accent;
   border-bottom: solid 1px $green-accent;
-  width: 70%;
+  width: 68%;
   text-align: center;
-  @include mq("md") {
-    padding: rem(18) 0 rem(18) rem(15);
+  // padding: rem(8) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+@include mq("md") {
     text-align: left;
-    display: flex;
-    align-items: center;
   }
 }
 
@@ -79,12 +83,15 @@
 }
 
 .price-list-main__price {
-  padding: rem(20);
   border-left: solid 1px $green-accent;
   border-right: solid 1px $green-accent;
   border-bottom: solid 1px $green-accent;
-  width: 30%;
+  width: 32%;
   text-align: right;
+  padding: rem(18);
+  @include mq('md') {
+    padding: rem(17);
+  }
 }
 
 .price-list-main__item:first-child .price-list-main__price {
