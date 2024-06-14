@@ -13,7 +13,8 @@
       include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
       breadcrumbsData}) %>
       <section class="contact l-contact">
-        <div class="contact__inner">
+        <div class="contact__inner inner">
+          <div class="contact__error-message">必須項目が入力されていません。<br class="p-mobile">入力してください。</div>
           <%- include(base.path + "./common/_contact-form") %>
         </div>
       </section>

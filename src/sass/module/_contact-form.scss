@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .contact-form {
+  margin-top: rem(40);
   @include mq("md") {
     width: rem(700);
     margin-inline: auto;
+    margin-top: rem(40);
   }
 }
 
@@ -11,7 +13,6 @@
   border-bottom: 1px dashed $green-accent;
   padding-bottom: rem(24);
   @include mq("md") {
-    //padding-bottom: 0;
     display: grid;
     grid-template-columns: rem(220) rem(480);
     padding-bottom: rem(40);
@@ -28,7 +29,6 @@
   margin-top: rem(24);
   @include mq("md") {
     margin-top: 0;
-    //padding: rem(40) 0;
   }
 }
 
@@ -36,7 +36,13 @@
   margin-top: rem(16);
   @include mq("md") {
     margin-top: 0;
-    //padding: rem(40) 0;
+  }
+}
+
+.contact-form__item--privacy{
+  margin-top: 0;
+  @include mq('md') {
+    
   }
 }
 
@@ -49,15 +55,14 @@
 }
 
 .contact-form__privacy {
-  margin-top: rem(40);
+  margin-top: rem(32);
   display: flex;
-  align-items: center;
   margin-left: rem(30);
   @include mq("md") {
-    margin-top: rem(72);
+    margin-top: rem(64);
     margin-left: 0;
     justify-content: center;
-    //text-align: center;
+    text-align: center;
   }
 }
 
@@ -82,10 +87,23 @@
   height: rem(40);
 }
 
+.contact-form__item.error [type="text"],
+.contact-form__item.error [type="search"],
+.contact-form__item.error [type="tel"],
+.contact-form__item.error [type="url"],
+.contact-form__item.error [type="email"] {
+  border: solid 1px #C94800;
+  color: $white;
+  background-color: rgb(201 72 0 / 0.2);
+}
+
 .contact-form__item input::placeholder{
   color: $green-light;
   padding-left: rem(16);
+}
 
+.contact-form__item.error input::placeholder{
+  color: $white;
 }
 
 .contact-form__item textarea {
@@ -94,8 +112,7 @@
   height: rem(200);
 }
 
-.contact-form__item input[type="radio"],
-.contact-form__item input[type="checkbox"] {
+.contact-form__item input[type="radio"] {
   position: relative;
   width: 16px;
   height: 16px;
@@ -105,6 +122,18 @@
   appearance: none;
   display: block;
 }
+
+.contact-form__item input[type="checkbox"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $green-accent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+}
+
 
 .contact-form__item input[type="radio"]{
   margin: 0;
@@ -146,12 +175,14 @@
 
 .select-box {
   border: 1px solid $green-accent;
-  padding: rem(12);
+  padding: rem(10);
   font-size: rem(12);
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  padding: rem(5);
+  @include mq('md') {
+    padding: rem(5);
+  }
 }
 
 .select-box:disabled {
@@ -172,4 +203,27 @@
   @include mq('md') {
     margin-top: rem(40);
   }
+}
+
+.contact__error-message{
+  font-family: $sans;
+  font-size: rem(14);
+  color:$error;
+  text-align: left;
+  font-weight:$regular;
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin-inline:auto;
+  @include mq('md') {
+  }
+}
+
+.contact__error-message::before{
+  content: "※";
+  color: $error;
+  position: absolute;
+  top: 0;
+  left: -16px;
+
 }

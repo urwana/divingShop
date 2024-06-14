@@ -1128,6 +1128,10 @@ body {
 	margin-top: 0.25rem;
 }
 
+.contact-form {
+	margin-top: 2.5rem;
+}
+
 .contact-form__row {
 	border-bottom: 1px dashed #408F95;
 	padding-bottom: 1.5rem;
@@ -1141,16 +1145,19 @@ body {
 	margin-top: 1rem;
 }
 
+.contact-form__item--privacy {
+	margin-top: 0;
+}
+
 .contact-form__label {
 	align-items: center;
 	display: flex;
 }
 
 .contact-form__privacy {
-	align-items: center;
 	display: flex;
 	margin-left: 1.875rem;
-	margin-top: 2.5rem;
+	margin-top: 2rem;
 }
 
 .contact-form__label [type=radio] {
@@ -1174,6 +1181,16 @@ body {
 	width: 100%;
 }
 
+.contact-form__item.error [type=text],
+.contact-form__item.error [type=search],
+.contact-form__item.error [type=tel],
+.contact-form__item.error [type=url],
+.contact-form__item.error [type=email] {
+	background-color: rgba(201, 72, 0, 0.2);
+	border: solid 1px #C94800;
+	color: #fff;
+}
+
 .contact-form__item input::-moz-placeholder {
 	color: #DDF0F1;
 	padding-left: 1rem;
@@ -1184,14 +1201,21 @@ body {
 	padding-left: 1rem;
 }
 
+.contact-form__item.error input::-moz-placeholder {
+	color: #fff;
+}
+
+.contact-form__item.error input::placeholder {
+	color: #fff;
+}
+
 .contact-form__item textarea {
 	border: solid 1px #408F95;
 	height: 12.5rem;
 	width: 100%;
 }
 
-.contact-form__item input[type=radio],
-.contact-form__item input[type=checkbox] {
+.contact-form__item input[type=radio] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -1200,6 +1224,17 @@ body {
 	height: 16px;
 	position: relative;
 	width: 16px;
+}
+
+.contact-form__item input[type=checkbox] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #408F95;
+	display: block;
+	height: 20px;
+	position: relative;
+	width: 20px;
 }
 
 .contact-form__item input[type=radio] {
@@ -1245,8 +1280,7 @@ body {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.75rem;
-	padding: 0.75rem;
-	padding: 0.3125rem;
+	padding: 0.625rem;
 	width: 100%;
 }
 
@@ -1265,6 +1299,28 @@ body {
 .contact-form__button {
 	margin-top: 1.5rem;
 	text-align: center;
+}
+
+.contact__error-message {
+	color: #C94800;
+	display: block;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: left;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.contact__error-message::before {
+	color: #C94800;
+	content: "※";
+	left: -16px;
+	position: absolute;
+	top: 0;
 }
 
 .footer {
@@ -2071,7 +2127,7 @@ body {
 	color: #fff;
 	font-size: 0.75rem;
 	margin-left: 0.25rem;
-	padding: 0.125rem 1rem;
+	padding: 0.125rem 1.125rem;
 }
 
 .scroll-to-top {
@@ -3349,6 +3405,7 @@ html {
 .contact-form {
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2.5rem;
 	width: 43.75rem;
 }
 
@@ -3377,7 +3434,12 @@ html {
 .contact-form__privacy {
 	justify-content: center;
 	margin-left: 0;
-	margin-top: 4.5rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.select-box {
+	padding: 0.3125rem;
 }
 
 .contact-form__button {
