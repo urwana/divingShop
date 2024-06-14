@@ -1,6 +1,6 @@
 <% if (typeof voiceCardData === 'undefined') { voiceCardData = []; } %>
 <div class="voice-card-sidebar">
-  <a href="<%- voiceCardData.link %>">
+  <div>
     <div class="voice-card-sidebar__head">
       <div class="voice-card-sidebar__info">
         <div class="voice-card-sidebar__meta">
@@ -28,9 +28,7 @@
       </div>
     </div>
     <div class="voice-card-sidebar__button">
-      <a href="/price" class="button"
-        ><span class="button__text">View more</span></a
-      >
+      <a href="<%- voiceCardData.link %>" class="button"><span class="button__text">View more</span></a>
     </div>
-  </a>
+  </div>
 </div>
