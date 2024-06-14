@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .breadcrumbs {
   margin-top: rem(8);
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.breadcrumbs__item::after{
+.breadcrumbs__item::after {
   content: "";
   width: rem(4);
   height: rem(8);
@@ -23,10 +23,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top:rem(6);
-  right: - rem(12);
+  top: rem(6);
+  right: -rem(12);
 }
 
-.breadcrumbs__item--white::after{
+.breadcrumbs__item--white::after {
   background-image: url("../images/common/arrow-right-white.svg");
 }

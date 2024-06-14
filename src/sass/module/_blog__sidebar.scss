@@ -3,30 +3,24 @@
 .blog__sidebar {
   width: 84.7%;
   margin-inline: auto;
-  @include mq('md') {
+  @include mq("md") {
     width: rem(294);
   }
-}
-
-.sidebar-popular-articles {
-}
-
-.sidebar-voice {
 }
 
 .sidebar-campaign {
   margin-top: rem(24);
 }
 
-.sidebar-campaign__button{
-    margin-top: rem(40);
-    text-align: center;
+.sidebar-campaign__button {
+  margin-top: rem(40);
+  text-align: center;
 }
 
 .sidebar-archive {
   margin-top: rem(24);
 }
 
-.l-campaign-cards{
+.l-campaign-cards {
   margin-top: rem(24);
 }

@@ -6,7 +6,7 @@
   gap: rem(80);
 }
 
-%pager-detail-default-style{
+%pager-detail-default-style {
   padding: rem(9) rem(13);
   border: solid 1px $green-accent;
   color: $green-accent;
@@ -26,16 +26,6 @@
   color: $white;
 }
 
-
-// .pager-detail__item {
-//   @extend %pager-detail-default-style;
-// }
-
-// .pager-detail__item.current{
-//   background-color: $green-accent;
-//   color: $white;
-// }
-
 .pager-detail__next {
   @extend %pager-detail-default-style;
   display: flex;
@@ -46,4 +36,3 @@
   background-color: $green-accent;
   color: $white;
 }
-

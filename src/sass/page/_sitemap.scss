@@ -1,5 +1,5 @@
 @use "global" as *;
-@import './module/mixins';
+@import "./module/mixins";
 
 .l-sitemap {
   @include l-subpage;

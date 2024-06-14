@@ -1,5 +1,5 @@
 @use "global" as *;
-@import './module/mixins';
+@import "./module/mixins";
 
 .static-page {
   font-size: rem(16);
@@ -44,7 +44,7 @@
 
 .static-page__group {
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(36);
   }
 }

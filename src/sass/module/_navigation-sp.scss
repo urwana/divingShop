@@ -1,6 +1,6 @@
-@use 'global' as *;
+@use "global" as *;
 
-.navigation-sp{
+.navigation-sp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   @include mq("md") {
@@ -27,11 +27,11 @@
   position: relative;
 }
 
-.navigation-sp__item--top::before{
+.navigation-sp__item--top::before {
   content: "";
   position: absolute;
-  top:rem(1);
-  left: - rem(24);
+  top: rem(1);
+  left: -rem(24);
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish.png");

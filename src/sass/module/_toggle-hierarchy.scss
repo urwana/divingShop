@@ -8,23 +8,22 @@
 }
 
 .toggle-hierarchy__inner {
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(24);
   }
 }
 
 .sidebar-archive__year {
   margin-left: rem(28);
-  //padding-left: rem(28);
 }
 
 .sidebar-archive__year-label {
   position: relative;
 }
 
-%arrow-right{
+%arrow-right {
   position: absolute;
-  top:6px;
+  top: 6px;
   left: -28px;
   content: "";
   width: 0;
@@ -35,9 +34,9 @@
   border-bottom: 12px solid transparent;
 }
 
-%arrow-down{
+%arrow-down {
   position: absolute;
-  top:6px;
+  top: 6px;
   left: -28px;
   content: "";
   width: 0;
@@ -47,39 +46,26 @@
   border-right: 12px solid transparent;
 }
 
-
-.sidebar-archive__year-label::before{
+.sidebar-archive__year-label::before {
   @extend %arrow-right;
 }
 
-.sidebar-archive__year-label.clicked::before{
+.sidebar-archive__year-label.clicked::before {
   @extend %arrow-down;
 }
 
-
 .sidebar-archive__month {
   margin-left: rem(28);
-  //padding-left: rem(28);
 }
 
 .sidebar-archive__month-label {
   position: relative;
 }
 
-
-.sidebar-archive__month-label::before{
+.sidebar-archive__month-label::before {
   @extend %arrow-right;
 }
 
-.sidebar-archive__month-label.clicked::before{
+.sidebar-archive__month-label.clicked::before {
   @extend %arrow-down;
-}
-
-
-
-.sidebar-archive__day {
-  //padding-left: rem(28);
-}
-
-.sidebar-archive__day-label {
 }

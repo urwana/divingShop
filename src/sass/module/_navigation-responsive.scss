@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .navigation-responsive {
   display: grid;
@@ -39,13 +39,13 @@
   line-height: 1.125;
 }
 
-.navigation-responsive--sitemap .navigation-responsive__item{
-  color:$green;
+.navigation-responsive--sitemap .navigation-responsive__item {
+  color: $green;
 }
 
 .navigation-responsive__item:hover {
   opacity: 0.6;
-  transition : 0.2s;
+  transition: 0.2s;
 }
 
 .navigation-responsive__item--top {
@@ -60,12 +60,11 @@
   margin-top: 0;
 }
 
-
 .navigation-responsive__item--top::before {
   content: "";
   position: absolute;
   top: 0;
-  left: - 24px;
+  left: -24px;
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish.png");
@@ -80,7 +79,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: - 24px;
+  left: -24px;
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish-green.png");
@@ -90,4 +89,3 @@
     top: rem(1);
   }
 }
-

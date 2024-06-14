@@ -1,7 +1,7 @@
-@use 'global' as *;
+@use "global" as *;
 
-.require-label{
-  background-color: #C94800;
+.require-label {
+  background-color: #c94800;
   color: $white;
   font-size: rem(12);
   padding: rem(2) rem(18);

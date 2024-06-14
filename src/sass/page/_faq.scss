@@ -1,16 +1,11 @@
-@use 'global' as *;
-@import './module/mixins';
+@use "global" as *;
+@import "./module/mixins";
 
-.l-faq{
+.l-faq {
   @include l-subpage;
 }
 
-
-.faq {
-
-}
-
-.faq__inner{
+.faq__inner {
   position: relative;
 }
 
@@ -18,12 +13,9 @@
   @include subpage-decoration;
 }
 
-
 .faq__contents {
-
-  @include mq('md') {
+  @include mq("md") {
     width: 64.8%;
-    margin-inline:auto;
+    margin-inline: auto;
   }
 }
-

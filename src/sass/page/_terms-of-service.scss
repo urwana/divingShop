@@ -1,5 +1,5 @@
-@use 'global' as *;
-@import './module/mixins';
+@use "global" as *;
+@import "./module/mixins";
 
 .l-terms-of-service {
   @include l-subpage;

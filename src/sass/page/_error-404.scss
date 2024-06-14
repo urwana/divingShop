@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.body-404 {
+  background-color: $green-accent;
+}
+
 .error-404 {
   border-top: $green-accent solid 1px;
   font-family: $price-font;
@@ -21,15 +25,14 @@
 }
 
 .error-404__inner {
-  margin-top: rem(40);
-  @include mq('md') {
+  margin-top: rem(48);
+  @include mq("md") {
     margin-top: rem(120);
   }
 }
 
 .error-404__main-text {
   font-family: $price-font;
-  // font-weight: $regular;
   letter-spacing: 0.5em;
   text-indent: 0.5em;
   font-size: rem(80);
@@ -41,6 +44,9 @@
 }
 
 .error-404__sub-text {
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }
 
 .error-404__button {

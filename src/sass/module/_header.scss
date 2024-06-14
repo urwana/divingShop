@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .header {
   position: fixed;
@@ -55,7 +55,7 @@
   background-color: $green-accent;
   z-index: 3;
   overflow: scroll;
-  @include mq('md') {
+  @include mq("md") {
     display: none;
   }
 }

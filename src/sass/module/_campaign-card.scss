@@ -27,8 +27,8 @@
   }
 }
 
-.campaign-card__image--sidebar{
-  @include mq('md') {
+.campaign-card__image--sidebar {
+  @include mq("md") {
     aspect-ratio: 294 / 188;
   }
 }
@@ -50,8 +50,8 @@
   }
 }
 
-.campaign-card__body--page{
-  @include mq('md') {
+.campaign-card__body--page {
+  @include mq("md") {
     padding: rem(16) rem(23) rem(24) rem(23);
   }
 }
@@ -70,15 +70,15 @@
   }
 }
 
-.campaign-card__title--sidebar{
+.campaign-card__title--sidebar {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  text-align: center;
+  font-weight: $bold;
+  margin-top: 0;
+  @include mq("md") {
     font-size: rem(16);
-    line-height: calc(24 / 16);
-    text-align: center;
-    font-weight: $bold;
-    margin-top: 0;
-    @include mq('md') {
-      font-size: rem(16);
-    }
+  }
 }
 
 .campaign-card__explain {
@@ -93,8 +93,8 @@
   }
 }
 
-.campaign-card__explain--sidebar{
-  @include mq('md') {
+.campaign-card__explain--sidebar {
+  @include mq("md") {
     font-size: rem(14);
     margin-top: rem(8);
     line-height: calc(24 / 14);
@@ -138,13 +138,9 @@
   text-align: center;
 }
 
-.button__text {
-
-}
-
-.campaign-card__bottom2{
+.campaign-card__bottom2 {
   display: none;
-  @include mq('md') {
+  @include mq("md") {
     display: block;
   }
 }

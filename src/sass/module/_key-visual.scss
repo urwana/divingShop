@@ -1,6 +1,6 @@
-@use 'global' as *;
+@use "global" as *;
 
-.key-visual{
+.key-visual {
   height: 100vh;
   width: auto;
 }
@@ -11,15 +11,15 @@
   height: inherit;
 }
 
-.key-visual__swiper-wrapper{
+.key-visual__swiper-wrapper {
   height: inherit;
 }
 
-.key-visual__swiper-slide{
+.key-visual__swiper-slide {
   height: inherit;
 }
 
-.key-visual__swiper-slide img{
+.key-visual__swiper-slide img {
   height: 100%;
   object-fit: cover;
 }

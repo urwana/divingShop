@@ -1,21 +1,19 @@
-@use 'global' as *;
+@use "global" as *;
 
 .gallery {
-
 }
 
 .gallery__inner {
-
 }
 
 .gallery__item-container {
   display: flex;
   flex-direction: column;
-  gap:rem(8);
-  @include mq('md') {
+  gap: rem(8);
+  @include mq("md") {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(2, rem(370)) ;
-    }
+    grid-template-rows: repeat(2, rem(370));
+  }
 }

@@ -1,46 +1,46 @@
-@use 'global' as *;
+@use "global" as *;
 
 .footer {
   padding-top: rem(48);
   padding-bottom: rem(58);
   background-color: $green-accent;
-  color:$white;
-  @include mq('md') {
+  color: $white;
+  @include mq("md") {
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
 }
 
 .footer__inner {
-  padding: 0 rem(15) ;
-  @include mq('md') {
+  padding: 0 rem(15);
+  @include mq("md") {
     padding: 0 12.5%;
   }
 }
 
-.footer__images-container{
+.footer__images-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  @include mq('md') {
+  @include mq("md") {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items:flex-end;
+    align-items: flex-end;
   }
 }
 
 .footer__logo {
   width: rem(120);
   aspect-ratio: 120 / 45;
-  @include mq('md') {
+  @include mq("md") {
     width: rem(200);
     aspect-ratio: 200 / 75;
   }
 }
 
-.footer__logo img{
+.footer__logo img {
   width: 100%;
   height: auto;
 }
@@ -50,44 +50,44 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: rem(11);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: 0;
     margin-bottom: rem(16);
     margin-left: rem(40);
   }
 }
 
-.footer__sns-icons img{
+.footer__sns-icons img {
   width: 100%;
   height: auto;
 }
 
 .footer__navigation {
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(16);
   }
 }
 
-.footer__copy{
+.footer__copy {
   margin-top: rem(34);
   width: 100vw;
   margin-left: calc((100% - 100vw) / 2);
   text-align: center;
-  @include mq('md') {
+  @include mq("md") {
     width: 100%;
     margin-top: rem(72);
     margin-left: 0;
   }
 }
 
-.footer__copy > small{
+.footer__copy > small {
   font-family: $english-font;
   font-weight: $regular;
   font-size: rem(12);
   line-height: calc(18 / 12);
   width: 100%;
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
     text-align: center;
     font-size: rem(14);

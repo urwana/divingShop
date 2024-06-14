@@ -1,8 +1,8 @@
-@use 'global' as *;
+@use "global" as *;
 
 .company-info {
   font-family: $sans;
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);
     text-shadow: none;
@@ -11,7 +11,7 @@
 
 %info-font {
   margin-top: rem(4);
-  @include mq('md') {
+  @include mq("md") {
     text-align: left;
   }
 }

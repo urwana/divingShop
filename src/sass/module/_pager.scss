@@ -6,8 +6,7 @@
   gap: rem(12);
 }
 
-
-%pager-default-style{
+%pager-default-style {
   padding: rem(6) rem(13);
   border: solid 1px $green-accent;
   color: $green-accent;
@@ -27,7 +26,7 @@
   @extend %pager-default-style;
 }
 
-.pager__item.current{
+.pager__item.current {
   background-color: $green-accent;
   color: $white;
 }

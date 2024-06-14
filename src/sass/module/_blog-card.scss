@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .blog-card {
   background-color: $white;
@@ -7,7 +7,7 @@
 
 .blog-card a:hover {
   opacity: 0.6;
-  transition : 0.3s;
+  transition: 0.3s;
 }
 
 .blog-card__inner {

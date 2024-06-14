@@ -19,7 +19,7 @@
   }
 }
 
-.contact-form__row:not(:first-child){
+.contact-form__row:not(:first-child) {
   @include mq("md") {
     padding-top: rem(40);
   }
@@ -39,17 +39,14 @@
   }
 }
 
-.contact-form__item--privacy{
+.contact-form__item--privacy {
   margin-top: 0;
-  @include mq('md') {
-    
-  }
 }
 
 .contact-form__label {
   display: flex;
   align-items: center;
-  @include mq('md') {
+  @include mq("md") {
     margin-top: 2px;
   }
 }
@@ -92,17 +89,17 @@
 .contact-form__item.error [type="tel"],
 .contact-form__item.error [type="url"],
 .contact-form__item.error [type="email"] {
-  border: solid 1px #C94800;
+  border: solid 1px #c94800;
   color: $white;
   background-color: rgb(201 72 0 / 0.2);
 }
 
-.contact-form__item input::placeholder{
+.contact-form__item input::placeholder {
   color: $green-light;
   padding-left: rem(16);
 }
 
-.contact-form__item.error input::placeholder{
+.contact-form__item.error input::placeholder {
   color: $white;
 }
 
@@ -134,8 +131,7 @@
   display: block;
 }
 
-
-.contact-form__item input[type="radio"]{
+.contact-form__item input[type="radio"] {
   margin: 0;
 }
 
@@ -180,7 +176,7 @@
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  @include mq('md') {
+  @include mq("md") {
     padding: rem(5);
   }
 }
@@ -200,30 +196,27 @@
 .contact-form__button {
   margin-top: rem(24);
   text-align: center;
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.contact__error-message{
+.contact__error-message {
   font-family: $sans;
   font-size: rem(14);
-  color:$error;
+  color: $error;
   text-align: left;
-  font-weight:$regular;
+  font-weight: $regular;
   position: relative;
   display: block;
   width: fit-content;
-  margin-inline:auto;
-  @include mq('md') {
-  }
+  margin-inline: auto;
 }
 
-.contact__error-message::before{
+.contact__error-message::before {
   content: "※";
   color: $error;
   position: absolute;
   top: 0;
   left: -16px;
-
 }

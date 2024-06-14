@@ -1,5 +1,5 @@
 @use "global" as *;
-@import './module/mixins';
+@import "./module/mixins";
 
 .l-blog-detail {
   @include l-subpage;
@@ -14,12 +14,9 @@
 .blog-detail__title {
   font-family: $sans;
   font-size: rem(24);
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(32);
   }
-}
-
-.blog-detail__inner {
 }
 
 .blog-detail__body {
@@ -29,9 +26,6 @@
     align-items: flex-start;
     gap: rem(80);
   }
-}
-
-.blog-detail__contents {
 }
 
 .blog-detail__pager {

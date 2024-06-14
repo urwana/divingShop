@@ -10,9 +10,9 @@
   }
 }
 
-.blog-detail__image:not(:first-child){
+.blog-detail__image:not(:first-child) {
   margin-top: rem(24);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(40);
   }
 }
@@ -48,13 +48,10 @@
   content: "";
   position: absolute;
   top: rem(6);
-  left: - 24px;
+  left: -24px;
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish-green.png");
   background-size: cover;
   background-position: center;
-  @include mq("md") {
-    //top: rem(4);
-  }
 }

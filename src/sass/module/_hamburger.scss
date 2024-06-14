@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 $drawer-width: rem(36);
 $drawer-height: rem(1);
@@ -43,6 +43,6 @@ $drawer-color: $white;
 }
 
 .hamburger.is-open span:nth-child(3) {
-  top: - rem(13);
+  top: -rem(13);
   transform: rotate(-38deg);
 }

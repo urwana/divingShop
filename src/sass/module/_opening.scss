@@ -1,8 +1,8 @@
-@use 'global' as *;
+@use "global" as *;
 
 .opening {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -12,48 +12,48 @@
   overflow: hidden;
 }
 
-%separate-image{
+%separate-image {
   position: absolute;
   content: "";
   display: block;
-  top:0;
+  top: 0;
   width: 50%;
   height: 100%;
   z-index: 20;
 }
 
-.opening__image-left{
+.opening__image-left {
   @extend %separate-image;
   left: 0;
   transform: translateY(100vh);
 }
 
-.opening__image-left img{
+.opening__image-left img {
   object-fit: cover;
-  object-position:right center;
+  object-position: right center;
   width: 100%;
   height: 100%;
 }
 
-.opening__image-right{
+.opening__image-right {
   @extend %separate-image;
   right: 0;
   transform: translateY(100vh);
 }
 
-.opening__image-right img{
+.opening__image-right img {
   object-fit: cover;
-  object-position:left center;
+  object-position: left center;
   width: 100%;
   height: 100%;
 }
 
-.opening__title-container{
+.opening__title-container {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color:$green-accent;
+  color: $green-accent;
   z-index: 15;
   width: 100%;
   text-align: center;
@@ -61,7 +61,7 @@
   visibility: hidden;
 }
 
-.opening__title{
+.opening__title {
   font-family: $price-font;
   font-size: rem(40);
   font-weight: normal;
@@ -69,12 +69,12 @@
   line-height: 1;
   letter-spacing: 0.54em;
   text-indent: 0.54em;
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(80);
   }
 }
 
-.opening__subtitle{
+.opening__subtitle {
   margin-top: rem(6);
   font-family: $english-font;
   font-size: rem(20);

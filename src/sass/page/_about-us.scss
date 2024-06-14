@@ -1,25 +1,25 @@
-@use 'global' as *;
-@import './module/mixins';
+@use "global" as *;
+@import "./module/mixins";
 
-.l-about-us{
+.l-about-us {
   @include l-subpage;
 }
 
-.l-gallery{
+.l-gallery {
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(120);
   }
 }
 
-.l-gallery__item-container{
+.l-gallery__item-container {
   margin-top: rem(40);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(80);
   }
 }
 
-.about-us__inner{
+.about-us__inner {
   position: relative;
 }
 

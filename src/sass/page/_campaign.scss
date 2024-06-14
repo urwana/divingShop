@@ -1,19 +1,19 @@
-@use 'global' as *;
-@import './module/mixins';
+@use "global" as *;
+@import "./module/mixins";
 
 .l-campaign {
   @include l-subpage;
 }
 
-.l-campaign__cards-wrapper{
+.l-campaign__cards-wrapper {
   margin-top: rem(40);
 }
 
-.campaign__pager{
+.campaign__pager {
   margin-top: rem(80);
 }
 
-.campaign__inner{
+.campaign__inner {
   position: relative;
 }
 

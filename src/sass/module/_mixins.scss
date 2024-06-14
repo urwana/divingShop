@@ -1,13 +1,13 @@
-@use 'global' as *;
+@use "global" as *;
 
-@mixin l-subpage{
+@mixin l-subpage {
   margin-top: rem(50);
   @include mq("md") {
     margin-top: rem(150);
   }
 }
 
-@mixin subpage-decoration{
+@mixin subpage-decoration {
   position: absolute;
   content: "";
   top: -25px;
