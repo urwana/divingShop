@@ -12,7 +12,6 @@
   background-size: rem(328);
   background-repeat: no-repeat;
   background-position: center center;
-
   @include mq("md") {
     padding-top: rem(90);
     padding-bottom: rem(150);
@@ -22,13 +21,20 @@
 }
 
 .error-404__inner {
-  margin-top: rem(120);
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(120);
+  }
 }
 
 .error-404__main-text {
+  font-family: $price-font;
+  // font-weight: $regular;
   letter-spacing: 0.5em;
-  margin-top: rem(50);
+  text-indent: 0.5em;
   font-size: rem(80);
+  text-align: center;
+  line-height: 1.1;
   @include mq("md") {
     font-size: rem(160);
   }
