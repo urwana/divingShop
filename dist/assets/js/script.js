@@ -190,6 +190,14 @@ jQuery(function ($) {
   });
   // informationTab.first().addClass("current");
   // informationContent.hide().first().show();
+
+  // campaign button
+
+  var contactButton = $(".js-contact-button");
+  contactButton.on("click", function (e) {
+    e.preventDefault();
+    window.location.href = "/contact.html";
+  });
 });
 
 // const windowWidth = window.innerWidth;
