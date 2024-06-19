@@ -187,6 +187,14 @@ jQuery(function ($) {
     $(this).addClass("current").siblings().removeClass("current");
     var tabIndex = $(this).index();
     informationContent.stop(true, true).slideUp(300).eq(tabIndex).stop(true, true).slideDown(300);
+    var infoElements = document.querySelectorAll(".js-imformation");
+    infoElements.forEach(function (infoElement) {
+      var imgElement = infoElement.querySelector("img");
+      imgElement.src = "./assets/images/common/whale-icon.svg";
+      if ($(infoElement).hasClass("current")) {
+        imgElement.src = "./assets/images/common/whale-icon-w.svg";
+      }
+    });
   });
   // informationTab.first().addClass("current");
   // informationContent.hide().first().show();

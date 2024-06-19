@@ -473,6 +473,11 @@ body {
 	z-index: 2;
 }
 
+.information__tab-contents {
+	position: relative;
+	z-index: 2;
+}
+
 body {
 	font-family: "Noto Sans JP", sans-serif;
 }

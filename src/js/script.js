@@ -220,6 +220,14 @@ jQuery(function ($) {
       .eq(tabIndex)
       .stop(true, true)
       .slideDown(300);
+      const infoElements = document.querySelectorAll(".js-imformation");
+      infoElements.forEach((infoElement) => {
+        const imgElement = infoElement.querySelector("img");
+        imgElement.src = "./assets/images/common/whale-icon.svg";
+        if ($(infoElement).hasClass("current")) {
+          imgElement.src = "./assets/images/common/whale-icon-w.svg";
+        }
+      });
   });
   // informationTab.first().addClass("current");
   // informationContent.hide().first().show();
