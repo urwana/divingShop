@@ -3523,32 +3523,38 @@ html {
 }
 
 .gallery__item0 {
+	aspect-ratio: initial;
 	grid-column: 1/span 7;
 	grid-row: 1/span 2;
 }
 
 .gallery__item1 {
-	grid-column: 8/span 13;
+	aspect-ratio: initial;
+	grid-column: 8/span 16;
 	grid-row: 1;
 }
 
 .gallery__item2 {
-	grid-column: 8/span 13;
+	aspect-ratio: initial;
+	grid-column: 8/span 16;
 	grid-row: 2;
 }
 
 .gallery__item3 {
+	aspect-ratio: initial;
 	grid-column: 1/span 9;
 	grid-row: 3;
 }
 
 .gallery__item4 {
+	aspect-ratio: initial;
 	grid-column: 1/span 9;
 	grid-row: 4;
 }
 
 .gallery__item5 {
-	grid-column: 10/span 13;
+	aspect-ratio: initial;
+	grid-column: 10/span 16;
 	grid-row: 3/span 4;
 }
 
