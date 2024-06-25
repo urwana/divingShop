@@ -2538,37 +2538,37 @@ body {
 	position: relative;
 }
 
-.top-about__inner {
+.about__inner {
 	max-width: 37.5rem;
 	position: relative;
 	z-index: 2;
 }
 
-.top-about__contents {
+.about__contents {
 	margin-top: 2.5rem;
 	position: relative;
 	z-index: 2;
 }
 
-.top-about__contents--page {
+.about__contents--page {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.top-about__image-container {
+.about__image-container {
 	aspect-ratio: 345/212;
 	margin-top: 1.75rem;
 	position: relative;
 }
 
-.top-about__image-container--page {
+.about__image-container--page {
 	margin-top: 0;
 	position: absolute;
 	width: calc(100% - 1.875rem);
 	z-index: 1;
 }
 
-.top-about__image-left {
+.about__image-left {
 	aspect-ratio: 128/194;
 	margin-left: auto;
 	margin-right: auto;
@@ -2578,18 +2578,18 @@ body {
 	z-index: 1;
 }
 
-.top-about__image-container--page .top-about__image-left {
+.about__image-container--page .about__image-left {
 	display: none;
 }
 
-.top-about__image-left img {
+.about__image-left img {
 	-o-object-fit: cover;
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
 }
 
-.top-about__image-right {
+.about__image-right {
 	aspect-ratio: 281/186;
 	position: absolute;
 	right: 0;
@@ -2598,19 +2598,19 @@ body {
 	z-index: 0;
 }
 
-.top-about__image-container--page .top-about__image-right {
+.about__image-container--page .about__image-right {
 	top: 0;
 	width: 100%;
 }
 
-.top-about__image-right img {
+.about__image-right img {
 	-o-object-fit: cover;
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
 }
 
-.top-about__catch-copy {
+.about__catch-copy {
 	color: #408F95;
 	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
@@ -2618,24 +2618,24 @@ body {
 	line-height: 1;
 }
 
-.top-about__contents--page .top-about__catch-copy {
+.about__contents--page .about__catch-copy {
 	color: #fff;
 	margin-left: 1.5rem;
 	padding-top: 1.75rem;
 }
 
-.top-about__body {
+.about__body {
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.5;
 	margin-top: 1rem;
 }
 
-.top-about__contents--page .top-about__body {
+.about__contents--page .about__body {
 	margin-top: 10rem;
 }
 
-.top-about__button {
+.about__button {
 	margin-top: 3.125rem;
 	text-align: center;
 }
@@ -3927,7 +3927,7 @@ html {
 	margin-top: 1.5rem;
 }
 
-.top-about__inner::after {
+.about__inner::after {
 	background-image: url(../images/top/coral.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -3941,14 +3941,14 @@ html {
 	z-index: 3;
 }
 
-.top-about__inner--fish::after {
+.about__inner--fish::after {
 	background-image: url(../images/top/bg-fish.svg);
 	bottom: -178px;
 	height: 8.625rem;
 	width: 18.75rem;
 }
 
-.top-about__contents {
+.about__contents {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -3958,44 +3958,44 @@ html {
 	z-index: 3;
 }
 
-.top-about__contents--page {
+.about__contents--page {
 	margin-top: 0;
 	top: 12rem;
 }
 
-.top-about__image-container {
+.about__image-container {
 	aspect-ratio: 1080/660;
 	margin-top: 2.5rem;
 	position: relative;
 }
 
-.top-about__image-container--page {
+.about__image-container--page {
 	width: 100%;
 }
 
-.top-about__image-left {
+.about__image-left {
 	left: 0;
 	top: 0;
 	width: 25rem;
 }
 
-.top-about__image-container--page .top-about__image-left {
+.about__image-container--page .about__image-left {
 	display: block;
 }
 
-.top-about__image-right {
+.about__image-right {
 	right: 0;
 	top: 5rem;
 	width: 81.5%;
 }
 
-.top-about__image-container--page .top-about__image-right {
+.about__image-container--page .about__image-right {
 	right: 0;
 	top: 5rem;
 	width: 81.5%;
 }
 
-.top-about__catch-copy {
+.about__catch-copy {
 	color: #fff;
 	font-size: 5rem;
 	line-height: 1.25;
@@ -4003,23 +4003,23 @@ html {
 	padding-top: 1rem;
 }
 
-.top-about__contents--page .top-about__catch-copy {
+.about__contents--page .about__catch-copy {
 	margin-left: 0;
 	padding-top: 1rem;
 }
 
-.top-about__body {
+.about__body {
 	color: #fff;
 	margin-left: 2.5rem;
 	margin-top: 2rem;
 	width: 25rem;
 }
 
-.top-about__contents--page .top-about__body {
+.about__contents--page .about__body {
 	margin-top: 2rem;
 }
 
-.top-about__button {
+.about__button {
 	margin-top: 2.5rem;
 }
 

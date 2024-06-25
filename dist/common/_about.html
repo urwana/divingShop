@@ -1,16 +1,9 @@
-<% if (typeof top === 'undefined') { top = false; } %>
-<div class="top-about">
-  <div class="top-about__inner inner <%- top ? "" : "top-about__inner--fish" %>">
-    <% if(top){ %>
-    <div class="top-about__title">
-      <div class="section-title">
-        <p class="section-title__word">About us</p>
-        <h2 class="section-title__japan">私たちについて</h2>
-      </div>
-    </div>
-    <% } %>
-    <div class="top-about__image-container<%- top ? "" : " top-about__image-container--page"%>">
-      <div class="top-about__image-left">
+
+<div class="about">
+  <div class="about__inner inner about__inner--fish">
+    
+    <div class="about__image-container about__image-container--page">
+      <div class="about__image-left">
         <picture>
           <source
             media="(max-width: 767px)"
@@ -22,7 +15,7 @@
           />
         </picture>
       </div>
-      <div class="top-about__image-right">
+      <div class="about__image-right">
         <picture>
           <source
             media="(max-width: 767px)"
@@ -35,23 +28,17 @@
         </picture>
       </div>
     </div>
-    <div class="top-about__contents<%- top ? "" : " top-about__contents--page"%>">
-      <div class="top-about__catch-copy">
+    <div class="about__contents about__contents--page">
+      <div class="about__catch-copy">
         Dive into<br />
         the Ocean
       </div>
-      <div class="top-about__body">
-        <div class="top-about__text">
+      <div class="about__body">
+        <div class="about__text">
           ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
           ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
         </div>
-        <% if(top){ %>
-        <div class="top-about__button">
-          <a href="/about-us" class="button"
-            ><span class="button__text">View more</span></a
-          >
-        </div>
-        <% } %>
+        
       </div>
     </div>
   </div>
