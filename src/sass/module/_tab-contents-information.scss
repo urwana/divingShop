@@ -88,7 +88,10 @@
 .tab-contents-information__img {
   margin-top: rem(8);
   @include mq("md") {
-    //width: rem(492);
     width: 48%;
   }
+}
+
+.tab-contents-information__img img{
+  height: auto;
 }
