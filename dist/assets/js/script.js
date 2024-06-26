@@ -181,13 +181,25 @@ jQuery(function ($) {
   });
 
   // information tab
-  var informationTab = $(".js-imformation");
+  var informationTab = $(".js-information");
   var informationContent = $(".js-information-content");
-  informationTab.on("click", function () {
-    $(this).addClass("current").siblings().removeClass("current");
-    var tabIndex = $(this).index();
+  var pageLoadTabAction = function pageLoadTabAction() {
+    var hash = window.location.hash;
+    if (hash) {
+      if (hash == "#licence") {
+        tabAction($(".js-information").eq(0));
+      } else if (hash == "#fun") {
+        tabAction($(".js-information").eq(1));
+      } else if (hash == "#trial") {
+        tabAction($(".js-information").eq(2));
+      }
+    }
+  };
+  var tabAction = function tabAction(targetTab) {
+    targetTab.addClass("current").siblings().removeClass("current");
+    var tabIndex = $(targetTab).index();
     informationContent.stop(true, true).slideUp(300).eq(tabIndex).stop(true, true).slideDown(300);
-    var infoElements = document.querySelectorAll(".js-imformation");
+    var infoElements = document.querySelectorAll(".js-information");
     infoElements.forEach(function (infoElement) {
       var imgElement = infoElement.querySelector("img");
       imgElement.src = "./assets/images/common/whale-icon.svg";
@@ -195,12 +207,14 @@ jQuery(function ($) {
         imgElement.src = "./assets/images/common/whale-icon-w.svg";
       }
     });
+  };
+  informationTab.on("click", function () {
+    console.log("clicked!!!!!");
+    tabAction($(this));
   });
-  // informationTab.first().addClass("current");
-  // informationContent.hide().first().show();
+  document.addEventListener("DOMContentLoaded", pageLoadTabAction());
 
   // campaign button
-
   var contactButton = $(".js-contact-button");
   contactButton.on("click", function (e) {
     e.preventDefault();

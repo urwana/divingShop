@@ -5,7 +5,7 @@ informationTabContentsData = []; } %>
 <div class="tab-contents-information">
   <div class="tab-contents-information__tab">
     <% informationTabData.forEach((tabData, index) => { %>
-    <div class="tab-contents-information__item js-imformation<%- index === 0 ? " current" : "" %>">
+    <div class="tab-contents-information__item js-information<%- index === 0 ? " current" : "" %>">
       <img src="<%- tabData.imagePath %>.svg" alt="<%- tabData.alt %>" class="u-desktop" width="48" height="48" />
       <%- tabData.text %><br class="u-mobile" /><%- tabData.text2 %>
     </div>

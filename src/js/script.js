@@ -209,31 +209,49 @@ jQuery(function ($) {
   });
 
   // information tab
-  const informationTab = $(".js-imformation");
+  const informationTab = $(".js-information");
   const informationContent = $(".js-information-content");
-  informationTab.on("click", function () {
-    $(this).addClass("current").siblings().removeClass("current");
-    const tabIndex = $(this).index();
+
+  const pageLoadTabAction = function () {
+    const hash = window.location.hash;
+    if (hash) {
+      if (hash == "#licence") {
+        tabAction($(".js-information").eq(0));
+      } else if (hash == "#fun") {
+        tabAction($(".js-information").eq(1));
+      } else if (hash == "#trial") {
+        tabAction($(".js-information").eq(2));
+      }
+    }
+  };
+
+  const tabAction = function (targetTab) {
+    targetTab.addClass("current").siblings().removeClass("current");
+    const tabIndex = $(targetTab).index();
     informationContent
       .stop(true, true)
       .slideUp(300)
       .eq(tabIndex)
       .stop(true, true)
       .slideDown(300);
-      const infoElements = document.querySelectorAll(".js-imformation");
-      infoElements.forEach((infoElement) => {
-        const imgElement = infoElement.querySelector("img");
-        imgElement.src = "./assets/images/common/whale-icon.svg";
-        if ($(infoElement).hasClass("current")) {
-          imgElement.src = "./assets/images/common/whale-icon-w.svg";
-        }
-      });
+    const infoElements = document.querySelectorAll(".js-information");
+    infoElements.forEach((infoElement) => {
+      const imgElement = infoElement.querySelector("img");
+      imgElement.src = "./assets/images/common/whale-icon.svg";
+      if ($(infoElement).hasClass("current")) {
+        imgElement.src = "./assets/images/common/whale-icon-w.svg";
+      }
+    });
+  };
+
+  informationTab.on("click", function () {
+    console.log("clicked!!!!!");
+    tabAction($(this));
   });
-  // informationTab.first().addClass("current");
-  // informationContent.hide().first().show();
+
+  document.addEventListener("DOMContentLoaded", pageLoadTabAction());
 
   // campaign button
-
   const contactButton = $(".js-contact-button");
 
   contactButton.on("click", function (e) {
