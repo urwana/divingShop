@@ -15,6 +15,11 @@
   }
 }
 
+.navigation-responsive--sitemap{
+  position: relative;
+  z-index: 2;
+}
+
 .navigation-responsive__item-group {
   margin-top: rem(40);
 }
