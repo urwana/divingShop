@@ -19,6 +19,15 @@
 
 .sidebar-archive__year-label {
   position: relative;
+  cursor: pointer;
+}
+
+.sidebar-archive__year-body {
+  display: none;
+}
+
+.sidebar-archive__year-body.open {
+  display: block;
 }
 
 %arrow-right {
@@ -50,7 +59,7 @@
   @extend %arrow-right;
 }
 
-.sidebar-archive__year-label.clicked::before {
+.sidebar-archive__year-label.open::before {
   @extend %arrow-down;
 }
 
@@ -60,12 +69,22 @@
 
 .sidebar-archive__month-label {
   position: relative;
+  cursor: pointer;
 }
 
 .sidebar-archive__month-label::before {
   @extend %arrow-right;
 }
 
-.sidebar-archive__month-label.clicked::before {
+.sidebar-archive__month-label.open::before {
   @extend %arrow-down;
+}
+
+.sidebar-archive__month-body{
+  padding-left: rem(24);
+  display: none;
+}
+
+.sidebar-archive__month-body.open{
+  display: block;
 }
