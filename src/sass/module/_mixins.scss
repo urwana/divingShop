@@ -9,6 +9,7 @@
 
 @mixin subpage-decoration {
   position: absolute;
+  z-index: 0;
   content: "";
   top: -25px;
   // NOTE:
@@ -22,7 +23,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  z-index: 2;
   @include mq("md") {
     top: -70px;
     width: rem(300);

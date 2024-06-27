@@ -7,8 +7,10 @@
 
 .contact__inner{
   position: relative;
+  z-index: 2;
 }
 
 .contact__inner::before {
   @include subpage-decoration;
+  z-index: 2;
 }

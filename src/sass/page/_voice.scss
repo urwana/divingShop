@@ -11,6 +11,7 @@
 
 .voice__inner {
   position: relative;
+  z-index: 2;
 }
 
 .voice__inner::before {

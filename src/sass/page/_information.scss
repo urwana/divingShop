@@ -10,6 +10,7 @@
 
 .information__inner {
   position: relative;
+  z-index: 2;
 }
 
 .information__inner::before {

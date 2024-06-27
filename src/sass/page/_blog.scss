@@ -17,6 +17,8 @@
 }
 
 .blog__body {
+  position: relative;
+  z-index: 1;
   @include mq('md') {
     display: flex;
     justify-content: flex-start;
