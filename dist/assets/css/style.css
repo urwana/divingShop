@@ -2063,8 +2063,14 @@ body {
 	text-align: center;
 }
 
+.pager-detail__next:hover,
+.pager-detail__previous:hover {
+	background-color: rgba(64, 143, 149, 0.1);
+}
+
 .pager-detail__previous {
 	align-items: center;
+	cursor: pointer;
 	display: flex;
 }
 
@@ -2075,6 +2081,7 @@ body {
 
 .pager-detail__next {
 	align-items: center;
+	cursor: pointer;
 	display: flex;
 }
 

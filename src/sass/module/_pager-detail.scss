@@ -13,12 +13,18 @@
   font-family: $price-font;
   font-weight: $bold;
   text-align: center;
+
+  &:hover{
+    background-color: rgb(64, 143, 149,0.1);
+  }
 }
+
 
 .pager-detail__previous {
   @extend %pager-detail-default-style;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .pager-detail__previous.current {
@@ -30,6 +36,7 @@
   @extend %pager-detail-default-style;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .pager-detail__next.current {
