@@ -238,6 +238,10 @@ jQuery(function ($) {
   monthArrows.on("click", function () {
     dataToggle($(this));
   });
+
+  // campaign と voice のタブ
+  var jsTabs = $(".js-tab");
+  jsTabs.on("click", function () {});
 });
 
 // const windowWidth = window.innerWidth;
