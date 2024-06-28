@@ -1291,6 +1291,7 @@ body {
 }
 
 .contact-form__title {
+	font-weight: 600;
 	margin-top: 1.5rem;
 }
 
@@ -1462,6 +1463,7 @@ body {
 	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 18.75rem;
 	position: relative;
 	text-align: left;
 	width: -moz-fit-content;
@@ -2186,6 +2188,7 @@ body {
 	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
+	font-weight: 600;
 	justify-content: center;
 	text-align: center;
 }
@@ -2194,6 +2197,10 @@ body {
 	aspect-ratio: 1/1;
 	margin-right: 0.5rem;
 	width: 1.5rem;
+}
+
+.price-list-main__title-icon img {
+	height: auto;
 }
 
 .price-list-main__item {
@@ -2208,15 +2215,19 @@ body {
 	border-left: solid 1px #408F95;
 	display: flex;
 	justify-content: center;
+	padding: 0.5rem 1.125rem 0.5rem 0.5rem;
 	text-align: center;
 	width: 68%;
 }
 
 .price-list-main__price {
+	align-items: center;
 	border-bottom: solid 1px #408F95;
 	border-left: solid 1px #408F95;
 	border-right: solid 1px #408F95;
-	padding: 1.125rem;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem 1.125rem 0.5rem 0.5rem;
 	text-align: right;
 	width: 32%;
 }
@@ -2249,13 +2260,14 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	padding: 1rem;
+	padding: 1rem 3.5rem 1rem 1rem;
 	position: relative;
 }
 
 .qa-box__answer {
 	border: solid 1px #408F95;
 	display: none;
+	font-weight: 300;
 	line-height: 1.4;
 	padding: 1.5rem 1rem;
 }
@@ -2273,16 +2285,20 @@ body {
 	background-color: #fff;
 	display: inline-block;
 	height: 1px;
+	opacity: 1;
 	position: absolute;
 	top: 50%;
 	transform: rotate(90deg);
 	transition: 0.5s;
+	visibility: visible;
 	width: 100%;
 }
 
 .qa-box__question.is-open .qa-icon__vertical {
+	opacity: 0;
 	transform: rotate(0deg);
 	transition: 0.5s;
+	visibility: hidden;
 }
 
 .qa-icon__horizontal {
@@ -2298,8 +2314,9 @@ body {
 	background-color: #c94800;
 	color: #fff;
 	font-size: 0.75rem;
+	font-weight: 300;
 	margin-left: 0.25rem;
-	padding: 0.125rem 1.125rem;
+	padding: 0.1875rem 1rem;
 }
 
 .scroll-to-top {
@@ -3629,6 +3646,7 @@ html {
 }
 
 .contact-form__privacy {
+	align-items: center;
 	justify-content: center;
 	margin-left: 0;
 	margin-top: 4rem;
@@ -3641,6 +3659,10 @@ html {
 
 .contact-form__button {
 	margin-top: 2.5rem;
+}
+
+.contact__error-message {
+	max-width: 31.25rem;
 }
 
 .footer {
@@ -3851,6 +3873,7 @@ html {
 
 .price-list-main__title-icon {
 	margin-right: 0;
+	margin-top: 0.5rem;
 	width: 4rem;
 }
 
@@ -3859,12 +3882,17 @@ html {
 }
 
 .price-list-main__name {
+	justify-content: flex-start;
+	padding: 1.0625rem;
 	text-align: left;
 }
 
 .price-list-main__item:first-child .price-list-main__name {
-	border-left: none;
 	border-top: solid 1px #408F95;
+}
+
+.price-list-main__item .price-list-main__name {
+	border-left: none;
 }
 
 .price-list-main__price {
@@ -3890,7 +3918,7 @@ html {
 
 .qa-box__question {
 	font-size: 1.25rem;
-	padding: 1.5625rem 2.5rem;
+	padding: 1.5625rem 5rem 1.5625rem 1.5625rem;
 }
 
 .qa-box__answer {

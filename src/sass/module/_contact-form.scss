@@ -27,6 +27,7 @@
 
 .contact-form__title {
   margin-top: rem(24);
+  font-weight: 600;
   @include mq("md") {
     margin-top: 0;
   }
@@ -59,6 +60,7 @@
     margin-top: rem(64);
     margin-left: 0;
     justify-content: center;
+    align-items: center;
     text-align: center;
   }
 }
@@ -211,6 +213,10 @@
   display: block;
   width: fit-content;
   margin-inline: auto;
+  max-width: rem(300);
+  @include mq('md') {
+    max-width: rem(500);
+  }
 }
 
 .contact__error-message::before {

@@ -1,4 +1,4 @@
-<% base = { path: "./", title: "コンタクト", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのコンタクトページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<% base = { path: "./", title: "お問い合わせ", description: "沖縄那覇市のダイビングショップ CodeUps サイトのお問い合わせページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -14,7 +14,7 @@
       breadcrumbsData}) %>
       <section class="contact l-contact">
         <div class="contact__inner inner">
-          <div class="contact__error-message">必須項目が入力されていません。<br class="p-mobile">入力してください。</div>
+          <div class="contact__error-message">必須項目が入力されていません。<br class="u-mobile">入力してください。</div>
           <%- include(base.path + "./common/_contact-form") %>
         </div>
       </section>

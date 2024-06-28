@@ -13,12 +13,12 @@
   font-family: $sans;
   font-weight: $regular;
   font-size: rem(16);
-  padding: rem(16);
+  padding: rem(16) rem(56) rem(16) rem(16);
   position: relative;
   cursor: pointer;
   @include mq("md") {
     font-size: rem(20);
-    padding: rem(25) rem(40);
+    padding: rem(25) rem(80) rem(25) rem(25);
   }
 }
 
@@ -27,6 +27,7 @@
   border: solid 1px $green-accent;
   display: none;
   line-height: 1.4;
+  font-weight: $regular;
   @include mq("md") {
     margin-top: rem(16);
     padding: rem(40);

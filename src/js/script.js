@@ -179,6 +179,7 @@ jQuery(function ($) {
     }
   });
 
+  // FAQ qabox
   $(".js-question").on("click", function () {
     if ($(this).hasClass("is-open")) {
       $(this).removeClass("is-open");
@@ -200,7 +201,6 @@ jQuery(function ($) {
     modal.fadeIn(400);
     modalContents.html($(this).prop("outerHTML"));
     // スクロール位置を戻す
-    //$(container).scrollTop(0);
     $("html, body").css("overflow", "hidden");
   });
   overlay.on("click", function () {
@@ -259,7 +259,6 @@ jQuery(function ($) {
   });
 
   // year month day toggle
-
   const yearArrows = $(".js-yearLabel");
   const monthArrows = $(".js-monthLabel");
 

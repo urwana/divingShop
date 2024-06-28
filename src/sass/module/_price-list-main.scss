@@ -33,6 +33,7 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
   @include mq("md") {
     flex-direction: column;
   }
@@ -45,7 +46,12 @@
   @include mq("md") {
     width: rem(64);
     margin-right: 0;
+    margin-top: rem(8);
   }
+}
+
+.price-list-main__title-icon img{
+  height: auto;
 }
 
 .price-list-main__item {
@@ -68,14 +74,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: rem(8) rem(18) rem(8) rem(8);
   @include mq("md") {
+    justify-content: flex-start;
     text-align: left;
+    padding: rem(17);
   }
 }
-
 .price-list-main__item:first-child .price-list-main__name {
   @include mq("md") {
     border-top: solid 1px $green-accent;
+  }
+}
+
+.price-list-main__item .price-list-main__name {
+  @include mq("md") {
     border-left: none;
   }
 }
@@ -86,7 +99,10 @@
   border-bottom: solid 1px $green-accent;
   width: 32%;
   text-align: right;
-  padding: rem(18);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: rem(8) rem(18) rem(8) rem(8);
   @include mq("md") {
     padding: rem(17);
   }

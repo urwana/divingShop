@@ -23,11 +23,15 @@
   background-color: $white;
   transition: 0.5s;
   transform: rotate(90deg);
+  opacity: 1;
+  visibility: visible;
 }
 
 .qa-box__question.is-open .qa-icon__vertical{
   transform: rotate(0deg);
   transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .qa-icon__horizontal {
