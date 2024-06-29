@@ -290,7 +290,7 @@ jQuery(function ($) {
 // const device = detectDevice();
 var useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
-  var openingImages = document.querySelectorAll(".js-opening > div");
+  var openingImages = document.querySelectorAll(".js-opening > figure");
   var openingTimeLine = gsap.timeline();
   openingTimeLine.to(openingImages, {
     y: 0,

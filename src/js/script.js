@@ -331,7 +331,7 @@ jQuery(function ($) {
 // const device = detectDevice();
 const useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
-  const openingImages = document.querySelectorAll(".js-opening > div");
+  const openingImages = document.querySelectorAll(".js-opening > figure");
   const openingTimeLine = gsap.timeline();
   openingTimeLine
     .to(openingImages, {
