@@ -25,10 +25,10 @@
 }
 
 .blog-card__content {
-  margin-top: rem(18);
-  @include mq("md") {
-    margin-top: rem(16);
-  }
+  margin-top: rem(16);
+  // @include mq("md") {
+  //   margin-top: rem(16);
+  // }
 }
 
 .blog-card__date {

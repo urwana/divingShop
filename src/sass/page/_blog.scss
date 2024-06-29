@@ -5,9 +5,6 @@
   @include l-subpage;
 }
 
-.blog {
-}
-
 .blog__inner {
   position: relative;
 }
@@ -26,14 +23,6 @@
     gap:rem(80);
   }
 }
-
-// .blog__cards-wrapper {
-//   width: 100%;
-//   @include mq('md') {
-//     width: rem(706);
-//   }
-// }
-
 
 .blog__pager{
   margin-top: rem(80);

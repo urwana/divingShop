@@ -32,9 +32,12 @@
 .article-card__date {
   font-family: $english-font;
   font-size: rem(12);
+  vertical-align: top;
+  line-height: 1;
 }
 
 .article-card__title {
   font-family: $sans;
   font-size: rem(16);
+  line-height: 1;
 }

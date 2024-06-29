@@ -1,17 +1,12 @@
 @use "global" as *;
 
 .voice-card-sidebar {
-  padding: rem(16) rem(16) 0 rem(16);
+  //padding: rem(16) rem(16) 0 rem(16);
   margin-inline: auto;
   @include mq("md") {
     padding: 0;
   }
 }
-
-// .voice-card-sidebar:hover {
-//   opacity: 0.6;
-//   transition: 0.3s;
-// }
 
 .voice-card-sidebar__meta {
   @include mq("md") {

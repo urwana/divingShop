@@ -28,6 +28,7 @@
 }
 
 .campaign-card__image--sidebar {
+  aspect-ratio: 294 / 188;
   @include mq("md") {
     aspect-ratio: 294 / 188;
   }

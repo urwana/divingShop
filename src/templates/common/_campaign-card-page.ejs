@@ -1,7 +1,7 @@
 <% if (typeof campaignCardData === 'undefined') { campaignCardData = []; } %>
 <% if (typeof page === 'undefined') { page = false; } %>
 <% if (typeof cardType === 'undefined') { cardType = ""; } %>
-<% if (typeof sideBar === 'undefined') { sideBar = ""; } %>
+<% if (typeof sideBar === 'undefined') { sideBar = false; } %>
 
 <a class="campaign-card<%- page ? " campaign-card--page" : "" %> js-card<%- campaignCardData.dataType %>" href="<%- campaignCardData.link %>">
   <figure class="campaign-card__image<%- sideBar ? " campaign-card__image--sidebar" : "" %>">
@@ -13,7 +13,7 @@
       height="<%- campaignCardData.height %>"
       />
   </figure>
-  <div class="campaign-card__body campaign-card__body--page">
+  <div class="campaign-card__body <%- page ? "campaign-card__body--page":""; %>">
     <div class="campaign-card__top">
       <% if(!sideBar){ %>
       <div class="campaign-card__label label-container">

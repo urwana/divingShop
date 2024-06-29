@@ -1,16 +1,16 @@
 @use "global" as *;
 
 .blog__sidebar {
-  width: 84.7%;
+  width: 85.3%;
   margin-inline: auto;
   @include mq("md") {
     width: rem(294);
   }
 }
 
-.sidebar-campaign {
-  margin-top: rem(24);
-}
+// .sidebar-campaign {
+//   margin-top: rem(24);
+// }
 
 .sidebar-campaign__button {
   margin-top: rem(40);

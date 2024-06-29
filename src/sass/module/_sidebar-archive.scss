@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.sidebar-archive__lists {
+  margin-top: rem(24);
+}
+
+.sidebar-archive__year {
+  margin-left: rem(28);
+}
+
+.sidebar-archive__year-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar-archive__year-body {
+  display: none;
+}
+
+.sidebar-archive__year-body.open {
+  display: block;
+}
+
+%arrow-right {
+  position: absolute;
+  top: 6px;
+  left: -28px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 18px solid $green-accent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+%arrow-down {
+  position: absolute;
+  top: 6px;
+  left: -28px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 18px solid $green-accent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.sidebar-archive__year-label::before {
+  @extend %arrow-right;
+}
+
+.sidebar-archive__year-label.open::before {
+  @extend %arrow-down;
+}
+
+.sidebar-archive__month {
+  margin-left: rem(28);
+}
+
+.sidebar-archive__month-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar-archive__month-label::before {
+  @extend %arrow-right;
+}
+
+.sidebar-archive__month-label.open::before {
+  @extend %arrow-down;
+}
+
+.sidebar-archive__month-body {
+  padding-left: rem(24);
+  display: none;
+}
+
+.sidebar-archive__month-body.open {
+  display: block;
+}
