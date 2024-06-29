@@ -1178,6 +1178,10 @@ body {
 	padding: 1rem 1rem 1.5rem 1rem;
 }
 
+.campaign-card__body--side-bar {
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+
 .campaign-card__title {
 	border-bottom: 1px solid #408F95;
 	font-family: "Noto Sans JP", sans-serif;
@@ -3569,6 +3573,10 @@ html {
 
 .campaign-card__body--page {
 	padding: 1.5rem 1.4375rem 1.5rem 1.4375rem;
+}
+
+.campaign-card__body--side-bar {
+	padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .campaign-card__title {

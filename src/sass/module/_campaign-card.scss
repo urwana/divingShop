@@ -57,6 +57,12 @@
   }
 }
 
+.campaign-card__body--side-bar{
+  padding: rem(16) rem(16) rem(24) rem(16);
+  @include mq("md") {
+    padding: rem(16) rem(16) rem(24) rem(16);
+  }
+}
 .campaign-card__title {
   margin-top: rem(8);
   font-family: $sans;

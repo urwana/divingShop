@@ -13,7 +13,7 @@
       height="<%- campaignCardData.height %>"
       />
   </figure>
-  <div class="campaign-card__body <%- page ? "campaign-card__body--page":""; %>">
+  <div class="campaign-card__body <%- page ? "campaign-card__body--page":""; %> <%- sideBar ? "campaign-card__body--side-bar":""; %>">
     <div class="campaign-card__top">
       <% if(!sideBar){ %>
       <div class="campaign-card__label label-container">
