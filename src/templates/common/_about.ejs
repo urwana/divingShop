@@ -10,7 +10,7 @@
     </div>
     <% } %>
     <div class="about__image-container<%- top ? "" : " about__image-container--page"%>">
-      <div class="about__image-left">
+      <figure class="about__image-left">
         <picture>
           <source
             media="(max-width: 767px)"
@@ -21,8 +21,8 @@
             alt="about セクションの背景画像 左"
           />
         </picture>
-      </div>
-      <div class="about__image-right">
+      </figure>
+      <figure class="about__image-right">
         <picture>
           <source
             media="(max-width: 767px)"
@@ -33,7 +33,7 @@
             alt="about セクションの背景画像 右"
           />
         </picture>
-      </div>
+      </figure>
     </div>
     <div class="about__contents<%- top ? "" : " about__contents--page"%>">
       <div class="about__catch-copy">

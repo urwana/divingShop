@@ -1,7 +1,7 @@
 
 <% if (typeof gallery === 'undefined') { gallery = {}; } %>
 <% if (typeof index === 'undefined') { index = ""; } %>
-<div class="js-modalPhoto gallery__item gallery__item<%- index %>" >
+<figure class="js-modalPhoto gallery__item gallery__item<%- index %>" >
   <picture>
     <source
       srcset="<%- gallery.imagePath %>-sp.jpg"
@@ -14,4 +14,4 @@
       height="<%- gallery.height %>"
     />
   </picture>
-</div>
+</figure>
