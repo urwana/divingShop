@@ -1959,7 +1959,7 @@ body {
 	background-size: cover;
 	content: "";
 	height: 1.125rem;
-	left: -rem(24);
+	left: -1.5rem;
 	position: absolute;
 	top: 0.0625rem;
 	width: 1.125rem;
