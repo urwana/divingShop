@@ -387,6 +387,10 @@ body {
 	margin-top: 1.5rem;
 }
 
+.l-campaign-cards-sidebar {
+	margin-top: 1.5rem;
+}
+
 body {
 	font-family: "Noto Sans JP", sans-serif;
 }
@@ -839,19 +843,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 85.3%;
-}
-
-.sidebar-campaign__button {
-	margin-top: 2.5rem;
-	text-align: center;
-}
-
-.sidebar-archive {
-	margin-top: 1.5rem;
-}
-
-.l-campaign-cards {
-	margin-top: 1.5rem;
 }
 
 .blog-card {
@@ -2397,6 +2388,17 @@ body {
 	margin-top: -0.25rem;
 }
 
+.sidebar-archive {
+	margin-top: 1.5rem;
+}
+
+.sidebar-archive__toggle-hierarchy {
+	color: #408F95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
 .sidebar-archive__lists {
 	margin-top: 1.5rem;
 }
@@ -2461,6 +2463,11 @@ body {
 
 .sidebar-archive__month-body.open {
 	display: block;
+}
+
+.sidebar-campaign__button {
+	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .sidebar-title {
@@ -2738,13 +2745,6 @@ body {
 .title-line {
 	border-bottom: solid 1px #408F95;
 	padding-bottom: 0.25rem;
-}
-
-.toggle-hierarchy {
-	color: #408F95;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 300;
 }
 
 .top-blog {
@@ -3984,6 +3984,10 @@ html {
 	margin-top: 0;
 }
 
+.sidebar-archive__toggle-hierarchy-inner {
+	margin-top: 1.5rem;
+}
+
 .sns-icons__link {
 	width: 2rem;
 }
@@ -4141,10 +4145,6 @@ html {
 
 .tab-contents-information__img {
 	width: 48%;
-}
-
-.toggle-hierarchy__inner {
-	margin-top: 1.5rem;
 }
 
 .top-blog {

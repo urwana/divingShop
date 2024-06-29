@@ -1,5 +1,22 @@
 @use "global" as *;
 
+.sidebar-archive {
+  margin-top: rem(24);
+}
+
+.sidebar-archive__toggle-hierarchy {
+  color: $green-accent;
+  font-family: $sans;
+  font-size: rem(24);
+  font-weight: $regular;
+}
+
+.sidebar-archive__toggle-hierarchy-inner {
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
 .sidebar-archive__lists {
   margin-top: rem(24);
 }
