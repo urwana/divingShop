@@ -20,7 +20,7 @@
         <span class="label"><%- campaignCardData.label %></span>
       </div>
       <% } %>
-      <div class="campaign-card__title<%- sideBar ? " campaign-card__title--sidebar" : "" %>"><%- campaignCardData.title %></div>
+      <div class="campaign-card__title<%- page ? " campaign-card__title--page" : "" %><%- sideBar ? " campaign-card__title--sidebar" : "" %>"><%- campaignCardData.title %></div>
     </div>
     <div class="campaign-card__bottom">
       <p class="campaign-card__explain<%- sideBar ? " campaign-card__explain--sidebar" : "" %>">
