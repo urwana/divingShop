@@ -1,9 +1,9 @@
-@use 'global' as *;
+@use "global" as *;
 
-.sns-icons__link{
+.sns-icons__link {
   width: rem(24);
   aspect-ratio: 1 / 1;
-  @include mq('md') {
+  @include mq("md") {
     width: rem(32);
   }
 }
@@ -12,16 +12,16 @@
   margin-left: rem(16);
 }
 
-.sns-icons .sns-icons__link--twitter{
+.sns-icons .sns-icons__link--twitter {
   width: rem(16);
   aspect-ratio: 1 / 1;
   margin-left: rem(18);
-  @include mq('md') {
+  @include mq("md") {
     width: rem(18);
   }
 }
 
-.sns-icons__link img{
+.sns-icons__link img {
   width: 100%;
   height: auto;
 }

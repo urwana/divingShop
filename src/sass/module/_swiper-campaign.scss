@@ -1,50 +1,50 @@
-@use 'global' as *;
+@use "global" as *;
 
 .swiper-campaign {
   width: 100%;
-  height:inherit;
+  height: inherit;
   position: relative;
   z-index: 1;
 }
 
-.swiper-campaign__wrapper{
+.swiper-campaign__wrapper {
   height: inherit;
 }
 
-.swiper-campaign__swiper-slide{
+.swiper-campaign__swiper-slide {
   height: inherit;
 }
 
 .swiper-campaign__button-prev,
-.swiper-campaign__button-next{
+.swiper-campaign__button-next {
   z-index: 2;
-  @include mq('md') {
+  @include mq("md") {
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     width: rem(80);
     height: rem(80);
   }
 }
 
-.swiper-campaign .swiper-campaign__button-prev{
-  @include mq('md') {
-    top:-74px;
-    right:160px;
+.swiper-campaign .swiper-campaign__button-prev {
+  @include mq("md") {
+    top: -74px;
+    right: 160px;
   }
   @include mq("md") {
-    top:-104px;
-    right:160px;
+    top: -104px;
+    right: 160px;
   }
 }
 
-.swiper-campaign .swiper-campaign__button-next{
-  @include mq('md') {
-    top:-74px;
-    right:rem(15);
+.swiper-campaign .swiper-campaign__button-next {
+  @include mq("md") {
+    top: -74px;
+    right: rem(15);
   }
   @include mq("md") {
-    top:-104px;
-    right:rem(20);
+    top: -104px;
+    right: rem(20);
   }
 }

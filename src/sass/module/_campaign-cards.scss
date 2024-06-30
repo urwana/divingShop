@@ -1,13 +1,13 @@
-@use 'global' as *;
+@use "global" as *;
 
-.campaign-cards--sidebar .campaign-card:not(:first-child){
+.campaign-cards--sidebar .campaign-card:not(:first-child) {
   margin-top: rem(40);
 }
 
-.campaign-cards{
+.campaign-cards {
   width: 80%;
-  margin-inline:auto;
-  @include mq('md') {
+  margin-inline: auto;
+  @include mq("md") {
     width: 100%;
     margin-top: 0;
     display: grid;

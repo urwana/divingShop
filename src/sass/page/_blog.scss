@@ -1,5 +1,5 @@
 @use "global" as *;
-@import './module/mixins';
+@import "./module/mixins";
 
 .l-blog {
   @include l-subpage;
@@ -16,25 +16,25 @@
 .blog__body {
   position: relative;
   z-index: 1;
-  @include mq('md') {
+  @include mq("md") {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:rem(80);
+    gap: rem(80);
   }
 }
 
-.blog__pager{
+.blog__pager {
   margin-top: rem(80);
 }
 
-.l-articleCards{
+.l-articleCards {
   margin-top: rem(24);
 }
 
 .l-blog__sidebar-popular-articles {
   margin-top: rem(80);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: 0;
   }
 }
@@ -51,7 +51,7 @@
   margin-top: rem(80);
 }
 
-.l-voice-card-sidebar{
+.l-voice-card-sidebar {
   margin-top: rem(24);
 }
 

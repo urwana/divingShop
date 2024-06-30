@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .voice-card {
   padding: rem(16) rem(16) rem(24) rem(16);
@@ -9,9 +9,9 @@
   }
 }
 
-.voice-card:hover{
+.voice-card:hover {
   opacity: 0.6;
-  transition : 0.3s;
+  transition: 0.3s;
 }
 
 .voice-card__head {

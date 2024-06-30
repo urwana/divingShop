@@ -2,9 +2,9 @@
 
 .qa-icon {
   position: absolute;
-  top:50%;
+  top: 50%;
   right: rem(16);
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   width: rem(28);
   height: rem(28);
   @include mq("md") {
@@ -17,7 +17,7 @@
 .qa-icon__vertical {
   display: inline-block;
   position: absolute;
-  top:50%;
+  top: 50%;
   width: 100%;
   height: 1px;
   background-color: $white;
@@ -27,7 +27,7 @@
   visibility: visible;
 }
 
-.qa-box__question.is-open .qa-icon__vertical{
+.qa-box__question.is-open .qa-icon__vertical {
   transform: rotate(0deg);
   transition: 0.5s;
   opacity: 0;
@@ -36,7 +36,7 @@
 
 .qa-icon__horizontal {
   position: absolute;
-  top:50%;
+  top: 50%;
   display: inline-block;
   width: 100%;
   height: 1px;

@@ -42,7 +42,9 @@
   }
 }
 
-.privacy-policy-background, .sitemap-background, .terms-of-service-background {
+.privacy-policy-background,
+.sitemap-background,
+.terms-of-service-background {
   background-image: url("../images/subKeyVisual/privacy-policy-sp.jpg");
   @include mq("md") {
     background-image: url("../images/subKeyVisual/privacy-policy-pc.jpg");

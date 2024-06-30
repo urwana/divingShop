@@ -57,7 +57,7 @@
   }
 }
 
-.campaign-card__body--side-bar{
+.campaign-card__body--side-bar {
   padding: rem(16) rem(16) rem(24) rem(16);
   @include mq("md") {
     padding: rem(16) rem(16) rem(24) rem(16);
@@ -76,8 +76,7 @@
 }
 
 .campaign-card__title--page {
-
-  @include mq('md') {
+  @include mq("md") {
     font-size: rem(24);
   }
 }
@@ -130,7 +129,7 @@
   text-align: center;
   margin-top: rem(24);
   min-height: rem(56);
-  @include mq('md') {
+  @include mq("md") {
     margin-top: rem(32);
   }
 }

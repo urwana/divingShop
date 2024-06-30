@@ -1,21 +1,21 @@
-@use 'global' as *;
+@use "global" as *;
 
-.blog-cards{
+.blog-cards {
   width: 96.5%;
   margin-inline: auto;
-  @include mq('md') {
+  @include mq("md") {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: rem(80);
     column-gap: rem(40);
   }
 }
 
-.blog-cards-top{
-  @include mq('md') {
+.blog-cards-top {
+  @include mq("md") {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: rem(40);
   }
 }

@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.gallery {
-}
-
-.gallery__inner {
-}
-
 // TODO: 再ピクパの際調整
 .gallery__item-container {
   display: flex;
@@ -25,10 +19,6 @@
     aspect-ratio: auto;
   }
 }
-
-// .gallery__item:hover {
-//   opacity: 0.6;
-// }
 
 .gallery__item img {
   width: 100%;

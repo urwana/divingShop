@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .voice-card-sidebar {
-  //padding: rem(16) rem(16) 0 rem(16);
   margin-inline: auto;
   @include mq("md") {
     padding: 0;

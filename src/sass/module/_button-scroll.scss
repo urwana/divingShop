@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 $large-button-size: 80px;
 $small-button-size: 48px;
@@ -82,7 +82,6 @@ $small-button-size: 48px;
     left: calc(($large-button-size - 40px) / 2);
   }
 }
-
 
 .button-scroll--right {
   @extend %button-scroll-common;

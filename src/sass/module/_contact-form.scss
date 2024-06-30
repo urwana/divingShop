@@ -185,11 +185,11 @@
   cursor: pointer;
   display: inline-block;
   width: 100%;
-	// iPhone, iPad 用
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	color: #000000;
+  // iPhone, iPad 用
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #000000;
   @include mq("md") {
     padding: rem(5);
   }
@@ -226,7 +226,7 @@
   width: fit-content;
   margin-inline: auto;
   max-width: rem(300);
-  @include mq('md') {
+  @include mq("md") {
     max-width: rem(500);
   }
 }
