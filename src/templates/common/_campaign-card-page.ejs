@@ -2,7 +2,6 @@
 <% if (typeof page === 'undefined') { page = false; } %>
 <% if (typeof cardType === 'undefined') { cardType = ""; } %>
 <% if (typeof sideBar === 'undefined') { sideBar = false; } %>
-
 <a class="campaign-card<%- page ? " campaign-card--page" : "" %> js-card<%- campaignCardData.dataType %>" href="<%- campaignCardData.link %>">
   <figure class="campaign-card__image<%- sideBar ? " campaign-card__image--sidebar" : "" %>">
     <!-- retina sp 3倍対応のため PC 版画像を流用する -->
