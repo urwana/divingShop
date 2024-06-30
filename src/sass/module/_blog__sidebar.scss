@@ -3,7 +3,9 @@
 .blog__sidebar {
   width: 85.3%;
   margin-inline: auto;
+  max-width: rem(570);
   @include mq("md") {
+    max-width: auto;
     width: rem(294);
   }
 }
