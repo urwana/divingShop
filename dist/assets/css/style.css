@@ -468,7 +468,7 @@ body {
 
 .error-404 {
 	background-color: #408F95;
-	background-image: url("../images/bg-404.svg");
+	background-image: url("../images/common/bg-404.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 20.5rem;
