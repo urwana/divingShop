@@ -7,7 +7,10 @@
 .campaign-cards {
   width: 80%;
   margin-inline: auto;
+  max-width: rem(570);
+  margin-inline: auto;
   @include mq("md") {
+    max-width: none;
     width: 100%;
     margin-top: 0;
     display: grid;

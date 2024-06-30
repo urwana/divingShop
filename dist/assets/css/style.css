@@ -1243,8 +1243,10 @@ body {
 }
 
 .campaign-cards {
+	margin-inline: auto;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 35.625rem;
 	width: 80%;
 }
 
@@ -2755,7 +2757,10 @@ body {
 }
 
 .top-blog__cards {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 1.75rem;
+	max-width: 35.625rem;
 	position: relative;
 }
 
@@ -3080,6 +3085,12 @@ body {
 	font-weight: 300;
 	line-height: 1.5;
 	margin-top: 1rem;
+}
+
+.voice-cards {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 35.625rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -3629,6 +3640,7 @@ html {
 	gap: 5rem 2.5rem;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 0;
+	max-width: none;
 	width: 100%;
 }
 
@@ -4169,6 +4181,7 @@ html {
 
 .top-blog__cards {
 	margin-top: 5rem;
+	max-width: none;
 }
 
 .top-blog__cards::after {
@@ -4437,6 +4450,7 @@ html {
 	column-gap: 2.5rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	max-width: none;
 	row-gap: 5rem;
 }
 
