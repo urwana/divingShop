@@ -1435,7 +1435,11 @@ body {
 }
 
 .select-box {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	border: 1px solid #408F95;
+	color: #000000;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.75rem;
