@@ -493,6 +493,12 @@ body {
 	z-index: 0;
 }
 
+.faq__contents {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 35.625rem;
+}
+
 body {
 	font-family: "Noto Sans JP", sans-serif;
 }
@@ -561,6 +567,9 @@ body {
 }
 
 .price__contents {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 35.625rem;
 	width: 100%;
 }
 
@@ -1290,7 +1299,10 @@ body {
 }
 
 .contact-form {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 2.5rem;
+	max-width: 35.625rem;
 }
 
 .contact-form__row {
@@ -3298,6 +3310,7 @@ html {
 .faq__contents {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: none;
 	width: 64.8%;
 }
 
@@ -3338,8 +3351,7 @@ html {
 }
 
 .price__contents {
-	margin-left: auto;
-	margin-right: auto;
+	max-width: none;
 	width: 43.75rem;
 }
 
@@ -3678,6 +3690,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.5rem;
+	max-width: none;
 	width: 43.75rem;
 }
 
