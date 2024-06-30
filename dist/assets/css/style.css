@@ -831,7 +831,7 @@ body {
 }
 
 .about__contents--page .about__body {
-	margin-top: 10rem;
+	margin-top: min(60.5vw - 68px, 292.36px);
 }
 
 .about__button {
@@ -3434,7 +3434,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-left: 12.5rem;
+	margin-left: 13.8vw;
 	position: absolute;
 	top: 14rem;
 	z-index: 3;
