@@ -5,6 +5,14 @@
   @include l-subpage;
 }
 
+.blog-detail__contents{
+  max-width: rem(570);
+  margin-inline: auto;
+  @include mq('md') {
+    max-width: none;
+  }
+}
+
 .blog-detail__inner{
   position: relative;
 }

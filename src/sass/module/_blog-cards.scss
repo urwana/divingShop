@@ -3,7 +3,9 @@
 .blog-cards {
   width: 96.5%;
   margin-inline: auto;
+  max-width: rem(570);
   @include mq("md") {
+    max-width: none;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
