@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.top-price-list__item {
+  margin-top: rem(16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq('md') {
+    margin-top: rem(14);
+  }
+}
+
+.top-price-list__item dt,
+.top-price-list__item dd {
+  font-size: rem(14);
+  line-height: 1.1;
+  @include mq('md') {
+    font-size: rem(16);
+  }
+}
+
+.top-price-list__item dd{
+  margin-left: 1rem;
+}

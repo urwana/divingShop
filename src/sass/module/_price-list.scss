@@ -1,24 +1,116 @@
-@use 'global' as *;
+@use "global" as *;
+
+.price-list {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  margin-top: rem(38);
+  @include mq("md") {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: rem(80);
+  }
+}
+
+.price-list__title {
+  color: $white;
+  background-color: $green-accent;
+  padding: rem(8) 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq("md") {
+    text-align: center;
+    width: 28.6%;
+  }
+}
+
+.price-list__title-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  @include mq("md") {
+    flex-direction: column;
+  }
+}
+
+.price-list__title-icon {
+  aspect-ratio: 1/1;
+  width: rem(24);
+  margin-right: rem(8);
+  @include mq("md") {
+    width: rem(64);
+    margin-right: 0;
+    margin-top: rem(8);
+  }
+}
+
+.price-list__title-icon img{
+  height: auto;
+}
 
 .price-list__item {
-  margin-top: rem(16);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: rem(60);
+}
+
+.price-list__body {
+  @include mq("md") {
+    width: 71.4%;
+  }
+}
+
+.price-list__name {
+  border-left: solid 1px $green-accent;
+  border-bottom: solid 1px $green-accent;
+  width: 68%;
+  text-align: center;
+  display: flex;
   align-items: center;
-  @include mq('md') {
-    margin-top: rem(14);
+  justify-content: center;
+  padding: rem(6) 0 rem(6) rem(12);
+  @include mq("md") {
+    justify-content: flex-start;
+    text-align: left;
+    padding: rem(17);
+  }
+}
+.price-list__item:first-child .price-list__name {
+  @include mq("md") {
+    border-top: solid 1px $green-accent;
   }
 }
 
-.price-list__item dt,
-.price-list__item dd {
-  font-size: rem(14);
-  line-height: 1.1;
-  @include mq('md') {
-    font-size: rem(16);
+.price-list__item .price-list__name {
+  @include mq("md") {
+    border-left: none;
   }
 }
 
-.price-list__item dd{
-  margin-left: 1rem;
+.price-list__price {
+  border-left: solid 1px $green-accent;
+  border-right: solid 1px $green-accent;
+  border-bottom: solid 1px $green-accent;
+  width: 32%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: rem(8) rem(18) rem(8) rem(8);
+  @include mq("md") {
+    padding: rem(17);
+  }
+}
+
+.price-list__item:first-child .price-list__price {
+  @include mq("md") {
+    border-top: solid 1px $green-accent;
+  }
 }

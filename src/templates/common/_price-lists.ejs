@@ -1,4 +1,4 @@
-<div class="price-lists-main">
+<div class="price-lists">
   <% const priceListDataAll = [
     { title: "ライセンス講習", id:"licence", items: [
       { name: "オープンウォーター", name2: "ダイバーコース", price: "¥50,000" },
@@ -24,7 +24,7 @@
     ] },
   ]; %>
   <% priceListDataAll.forEach(priceListData => { %>
-    <%- include("./_price-list-main", {priceListData :priceListData }); %>
+    <%- include("./_price-list", {priceListData :priceListData }); %>
   <% }); %>
 
 </div>
