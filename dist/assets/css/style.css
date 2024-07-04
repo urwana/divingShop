@@ -1789,6 +1789,8 @@ body {
 
 .modal {
 	display: none;
+	position: relative;
+	z-index: 99;
 }
 
 .modal__overlay {
