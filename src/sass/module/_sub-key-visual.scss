@@ -2,12 +2,10 @@
 
 .sub-key-visual {
   position: relative;
-  //aspect-ratio: 375 / 460;
   background-repeat: no-repeat;
   background-size: cover;
   height: rem(460);
   @include mq("md") {
-    //aspect-ratio: 1440 / 548;
     height: rem(548);
   }
 }

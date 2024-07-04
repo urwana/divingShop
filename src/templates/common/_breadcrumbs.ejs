@@ -2,6 +2,7 @@
 <% if (typeof breadcrumbsData.list == 'undefined') { breadcrumbsData.list = []; } %>
 
 <div class="breadcrumbs inner">
+  <div class="breadcrumbs__inner inner">
 <% breadcrumbsData.list.forEach((breadcrumb, index) => { %>
   <% if (index === breadcrumbsData.list.length - 1) { %>
     <span class="breadcrumbs__item-current"><%- breadcrumb.title %></span>
@@ -9,4 +10,5 @@
     <a href="<%- breadcrumb.url %>" class="breadcrumbs__item <%- breadcrumbsData.white ? "breadcrumbs__item--white" : "" %>"><%- breadcrumb.title %></a>
   <% } %>
 <% }); %>
+</div>
 </div>
