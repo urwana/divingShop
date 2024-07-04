@@ -2694,8 +2694,10 @@ body {
 }
 
 .tab-card__item {
+	background-color: #fff;
 	border: solid 1px #408F95;
 	color: #408F95;
+	cursor: pointer;
 	font-size: 0.875rem;
 	line-height: 1.5714285714;
 	padding: 0.25rem 0;
