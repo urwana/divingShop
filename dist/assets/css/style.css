@@ -2602,9 +2602,9 @@ body {
 }
 
 .sub-key-visual {
-	aspect-ratio: 375/460;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 28.75rem;
 	position: relative;
 }
 
@@ -4074,7 +4074,7 @@ html {
 }
 
 .sub-key-visual {
-	aspect-ratio: 1440/548;
+	height: 34.25rem;
 }
 
 .page-title {
