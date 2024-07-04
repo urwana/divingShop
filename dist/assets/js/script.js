@@ -225,9 +225,11 @@ jQuery(function ($) {
   var yearArrows = $(".js-yearLabel");
   var dataToggle = function dataToggle(self) {
     if (self.hasClass("open")) {
-      self.removeClass("open").siblings().removeClass("open");
+      self.removeClass("open");
+      self.siblings().hide(500);
     } else {
-      self.addClass("open").siblings().addClass("open");
+      self.addClass("open");
+      self.siblings().show(500);
     }
   };
   yearArrows.on("click", function () {

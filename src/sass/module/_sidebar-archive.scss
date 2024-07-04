@@ -35,10 +35,10 @@
 }
 
 .sidebar-archive__year-body.open {
-  display: block;
+  //display: block;
 }
 
-%arrow-right {
+.sidebar-archive__year-label::before {
   position: absolute;
   top: 6px;
   left: -28px;
@@ -49,26 +49,14 @@
   border-left: 18px solid $green-accent;
   border-right: 12px solid transparent;
   border-bottom: 12px solid transparent;
-}
-
-%arrow-down {
-  position: absolute;
-  top: 6px;
-  left: -28px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 18px solid $green-accent;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-}
-
-.sidebar-archive__year-label::before {
-  @extend %arrow-right;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
 }
 
 .sidebar-archive__year-label.open::before {
-  @extend %arrow-down;
+  top: 12px;
+  left: -36px;
+  transform: rotate(90deg);
 }
 
 .sidebar-archive__month {
@@ -78,12 +66,4 @@
 .sidebar-archive__month-label {
   position: relative;
   cursor: pointer;
-}
-
-.sidebar-archive__month-label::before {
-  @extend %arrow-right;
-}
-
-.sidebar-archive__month-label.open::before {
-  @extend %arrow-down;
 }
