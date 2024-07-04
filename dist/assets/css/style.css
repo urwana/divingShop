@@ -929,7 +929,13 @@ body {
 }
 
 .breadcrumbs__item {
+	display: inline-block;
+	margin-right: 1rem;
 	position: relative;
+}
+
+.breadcrumbs__item-current {
+	display: inline-block;
 }
 
 .breadcrumbs__item::after {
