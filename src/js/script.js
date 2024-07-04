@@ -260,7 +260,6 @@ jQuery(function ($) {
 
   // year month day toggle
   const yearArrows = $(".js-yearLabel");
-  const monthArrows = $(".js-monthLabel");
 
   const dataToggle = function (self) {
     if (self.hasClass("open")) {
@@ -271,10 +270,6 @@ jQuery(function ($) {
   };
 
   yearArrows.on("click", function () {
-    dataToggle($(this));
-  });
-
-  monthArrows.on("click", function () {
     dataToggle($(this));
   });
 

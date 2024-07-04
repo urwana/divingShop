@@ -2502,15 +2502,6 @@ body {
 	position: relative;
 }
 
-.sidebar-archive__month-body {
-	display: none;
-	padding-left: 1.5rem;
-}
-
-.sidebar-archive__month-body.open {
-	display: block;
-}
-
 .sidebar-campaign__button {
 	margin-top: 2.5rem;
 	text-align: center;
@@ -2748,6 +2739,14 @@ body {
 	color: #fff;
 }
 
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
 .tab-contents-information__tab {
 	display: flex;
 	justify-content: space-between;
@@ -2762,7 +2761,12 @@ body {
 	font-weight: 300;
 	padding: 0.625rem 0;
 	text-align: center;
+	transition: background-color 0.3s ease;
 	width: 29.5%;
+}
+
+.tab-contents-information__item:hover {
+	background-color: #c5e3e5;
 }
 
 .tab-contents-information__item img {
@@ -2772,6 +2776,11 @@ body {
 .tab-contents-information__item.current {
 	background-color: #408F95;
 	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.tab-contents-information__item.current:hover {
+	background-color: #56afb5;
 }
 
 .tab-contents-information__contents-container {
@@ -4224,6 +4233,14 @@ html {
 
 .tab-card__item {
 	width: 10.125rem;
+}
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
 }
 
 .tab-contents-information__item {

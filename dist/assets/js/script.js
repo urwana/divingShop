@@ -223,7 +223,6 @@ jQuery(function ($) {
 
   // year month day toggle
   var yearArrows = $(".js-yearLabel");
-  var monthArrows = $(".js-monthLabel");
   var dataToggle = function dataToggle(self) {
     if (self.hasClass("open")) {
       self.removeClass("open").siblings().removeClass("open");
@@ -232,9 +231,6 @@ jQuery(function ($) {
     }
   };
   yearArrows.on("click", function () {
-    dataToggle($(this));
-  });
-  monthArrows.on("click", function () {
     dataToggle($(this));
   });
 

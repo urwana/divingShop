@@ -87,12 +87,3 @@
 .sidebar-archive__month-label.open::before {
   @extend %arrow-down;
 }
-
-.sidebar-archive__month-body {
-  padding-left: rem(24);
-  display: none;
-}
-
-.sidebar-archive__month-body.open {
-  display: block;
-}
