@@ -1,11 +1,7 @@
 @use "global" as *;
 @import "./module/mixins";
 
-.l-blog-detail {
-  @include l-subpage;
-}
-
-.blog-detail__contents{
+.blog__detail-contents{
   max-width: rem(570);
   margin-inline: auto;
   @include mq('md') {
@@ -13,21 +9,21 @@
   }
 }
 
-.blog-detail__inner{
+.blog__detail-inner{
   position: relative;
 }
 
-.blog-detail__inner::before {
+.blog__detail-inner::before {
   @include subpage-decoration;
 }
 
-.blog-detail__date {
+.blog__detail-date {
   font-family: $price-font;
   font-size: rem(14);
   font-weight: $regular;
 }
 
-.blog-detail__title {
+.blog__detail-title {
   font-family: $sans;
   font-size: rem(24);
   font-weight: $normal;
@@ -36,7 +32,7 @@
   }
 }
 
-.blog-detail__body {
+.blog__detail-body {
   position: relative;
   z-index: 2;
   @include mq("md") {
@@ -47,31 +43,31 @@
   }
 }
 
-.blog-detail__pager {
+.blog__detail-pager {
   margin-top: rem(80);
 }
 
-.blog-detail__image {
+.blog__detail-image {
   aspect-ratio: 345 / 231;
   @include mq("md") {
     aspect-ratio: 700 / 468;
   }
 }
 
-.blog-detail__image:not(:first-child) {
+.blog__detail-image:not(:first-child) {
   margin-top: rem(24);
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.blog-detail__image img {
+.blog__detail-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.blog-detail__text {
+.blog__detail-text {
   margin-top: rem(24);
   font-family: $sans;
   font-size: rem(16);
@@ -82,18 +78,18 @@
   }
 }
 
-.blog-detail__lists {
+.blog__detail-lists {
   margin-top: rem(24);
   margin-left: rem(24);
 }
 
-.blog-detail__list-item {
+.blog__detail-list-item {
   position: relative;
   margin-top: rem(4);
   font-weight: $regular;
 }
 
-.blog-detail__list-item::before {
+.blog__detail-list-item::before {
   content: "";
   position: absolute;
   top: rem(6);
