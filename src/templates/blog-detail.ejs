@@ -6,7 +6,7 @@
     <%- include(base.path + "./common/_header", { base: base}) %>
     <main>
       <% const subKeyVisualData = { pageTitle:"Blog",
-      imageClass:"blog-background" } %> <%- include(base.path +
+      imageClass:"blog-background", detail:true } %> <%- include(base.path +
       "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %> <% const
       breadcrumbsData = { white:false, list:[
       {title:"TOP",url:"/"},{title:"ブログ一覧", url:"/blog.html"},{title:base.title, url:"/blog-detail.html"}]

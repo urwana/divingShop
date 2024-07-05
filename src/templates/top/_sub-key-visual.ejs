@@ -1,6 +1,12 @@
 <% if (typeof subKeyVisualData === 'undefined') { subKeyVisualData = []; } %>
 <section class="js-key-visual sub-key-visual <%- subKeyVisualData.imageClass %>">
-  <h1 class="page-title">
+  <% if(subKeyVisualData.detail){ %>
+  <div class="page-title">
     <%- subKeyVisualData.pageTitle %>
-  </h1>
+  </div>
+  <% }else{ %>
+    <h1 class="page-title">
+      <%- subKeyVisualData.pageTitle %>
+    </h1>
+    <% } %>
 </section>
