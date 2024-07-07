@@ -9,14 +9,14 @@
       </figure>
     </div>
   </div>
-  <div class="price-list__body">
+  <dl class="price-list__body">
     <% priceListData.items.forEach(item => { %>
-    <dl class="price-list__item">
+    <div class="price-list__item">
       <dt class="price-list__name">
         <%- item.name %><br class="u-mobile" /><%- item.name2 %>
       </dt>
       <dd class="price-list__price"><%- item.price %></dd>
-    </dl>
+    </div>
     <% }); %>
-  </div>
+  </dl>
 </div>
