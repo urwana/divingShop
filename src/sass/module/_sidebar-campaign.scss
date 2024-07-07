@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.sidebar-campaign__cards {
+  margin-top: rem(24);
+}
+
 .sidebar-campaign__button {
   margin-top: rem(40);
   text-align: center;

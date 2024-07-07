@@ -28,11 +28,6 @@
   margin-top: rem(80);
 }
 
-// TODO: 移動
-.sidebar-popular-articles__cards {
-  margin-top: rem(24);
-}
-
 .blog__sidebar-popular-articles {
   margin-top: rem(80);
   @include mq("md") {
@@ -50,13 +45,4 @@
 
 .blog__sidebar-archive {
   margin-top: rem(80);
-}
-
-//TODO: 移動
-.sidebar-voice__card {
-  margin-top: rem(24);
-}
-
-.l-campaign-cards-sidebar {
-  margin-top: rem(24);
 }

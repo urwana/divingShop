@@ -327,10 +327,6 @@ body {
 	margin-top: 5rem;
 }
 
-.sidebar-popular-articles__cards {
-	margin-top: 1.5rem;
-}
-
 .blog__sidebar-popular-articles {
 	margin-top: 5rem;
 }
@@ -345,14 +341,6 @@ body {
 
 .blog__sidebar-archive {
 	margin-top: 5rem;
-}
-
-.sidebar-voice__card {
-	margin-top: 1.5rem;
-}
-
-.l-campaign-cards-sidebar {
-	margin-top: 1.5rem;
 }
 
 html {
@@ -2538,9 +2526,17 @@ body {
 	position: relative;
 }
 
+.sidebar-campaign__cards {
+	margin-top: 1.5rem;
+}
+
 .sidebar-campaign__button {
 	margin-top: 2.5rem;
 	text-align: center;
+}
+
+.sidebar-popular-articles__cards {
+	margin-top: 1.5rem;
 }
 
 .sidebar-title {
@@ -2567,6 +2563,10 @@ body {
 
 .sidebar-title__text {
 	margin-left: 0.5rem;
+}
+
+.sidebar-voice__card {
+	margin-top: 1.5rem;
 }
 
 .sns-icons__link {
