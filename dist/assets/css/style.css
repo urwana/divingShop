@@ -471,6 +471,9 @@ body {
 }
 
 .faq__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 35.625rem;
 	position: relative;
 	z-index: 2;
 }
@@ -487,12 +490,6 @@ body {
 	top: -25px;
 	width: 7.5rem;
 	z-index: 0;
-}
-
-.faq__contents {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 35.625rem;
 }
 
 body {
@@ -3331,17 +3328,17 @@ html {
 	margin-top: 9.375rem;
 }
 
+.faq__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
+	width: 43.75rem;
+}
+
 .faq__inner::before {
 	height: 8.625rem;
 	top: -70px;
 	width: 18.75rem;
-}
-
-.faq__contents {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: none;
-	width: 64.8%;
 }
 
 .u-desktop {

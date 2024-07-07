@@ -8,18 +8,15 @@
 .faq__inner {
   position: relative;
   z-index: 2;
-}
-
-.faq__inner::before {
-  @include subpage-decoration;
-}
-
-.faq__contents {
   max-width: rem(570);
   margin-inline: auto;
   @include mq("md") {
     max-width: none;
-    width: 64.8%;
+    width: rem(700);
     margin-inline: auto;
   }
+}
+
+.faq__inner::before {
+  @include subpage-decoration;
 }
