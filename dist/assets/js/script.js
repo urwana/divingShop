@@ -81,8 +81,8 @@ jQuery(function ($) {
     speed: 800,
     loop: true,
     autoplay: {
-      delay: 5000,
-    },
+      delay: 5000
+    }
   });
 
   // キャンペーンセクション swiper
@@ -93,17 +93,17 @@ jQuery(function ($) {
     centeredSlides: false,
     grabCursor: true,
     keyboard: {
-      enabled: true,
+      enabled: true
     },
     breakpoints: {
       769: {
-        spaceBetween: 40,
-      },
+        spaceBetween: 40
+      }
     },
     navigation: {
       nextEl: ".swiper-campaign__button-next",
-      prevEl: ".swiper-campaign__button-prev",
-    },
+      prevEl: ".swiper-campaign__button-prev"
+    }
   });
 
   // 画像スクリーンアニメーション
@@ -119,37 +119,25 @@ jQuery(function ($) {
     colorMask.css("width", "0%");
     colorMask.on("inview", function () {
       if (counter == 0) {
-        $(this)
-          .delay(200)
-          .animate(
-            {
-              width: "100%",
-            },
-            switchingSpeed,
-            function () {
-              imageElement.css("opacity", "1");
-              $(this).css({
-                left: "0",
-                right: "auto",
-              });
-              $(this).animate(
-                {
-                  width: "0%",
-                },
-                switchingSpeed
-              );
-            }
-          );
+        $(this).delay(200).animate({
+          width: "100%"
+        }, switchingSpeed, function () {
+          imageElement.css("opacity", "1");
+          $(this).css({
+            left: "0",
+            right: "auto"
+          });
+          $(this).animate({
+            width: "0%"
+          }, switchingSpeed);
+        });
         counter = 1;
       }
     });
   });
 
   // スクロールトップボタン
-  var documentHeight = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight
-  );
+  var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
   var keyVisualHeight = $(".js-key-visual").height();
   var footerHeight = $(".footer").height();
   var scrollTopButton = $(".js-scroll-to-top");
@@ -169,24 +157,23 @@ jQuery(function ($) {
     if ($(this).hasClass("is-open")) {
       $(this).removeClass("is-open");
       var answer = $(this).next(".qa-box__answer");
-      answer.css("opacity", 0).hide(500);
+      answer.fadeOut(500);
     } else {
       $(this).addClass("is-open");
       var _answer = $(this).next(".qa-box__answer");
-      _answer.show(200, function () {
-        _answer.css("opacity", 1);
-      });
+      _answer.fadeIn(500);
     }
   });
 
   // modal
-  const targetPhoto = $(".js-modalPhoto");
-  const modal = $(".js-modal");
-  const overlay = $(".js-modalOverlay");
-  const modalContents = $(".js-modalContents");
+  var targetPhoto = $(".js-modalPhoto");
+  var modal = $(".js-modal");
+  var overlay = $(".js-modalOverlay");
+  var modalContents = $(".js-modalContents");
   targetPhoto.on("click", function () {
     modal.fadeIn(400);
     modalContents.html($(this).prop("outerHTML"));
+    // スクロール位置を戻す
     $("html, body").css("overflow", "hidden");
   });
   overlay.on("click", function () {
@@ -195,10 +182,10 @@ jQuery(function ($) {
   });
 
   // information tab
-  const informationTab = $(".js-information");
-  const informationContent = $(".js-information-content");
-  const pageLoadTabAction = function pageLoadTabAction() {
-    const hash = window.location.hash;
+  var informationTab = $(".js-information");
+  var informationContent = $(".js-information-content");
+  var pageLoadTabAction = function pageLoadTabAction() {
+    var hash = window.location.hash;
     if (hash) {
       if (hash == "#licence") {
         tabAction($(".js-information").eq(0));
@@ -209,18 +196,13 @@ jQuery(function ($) {
       }
     }
   };
-  const tabAction = function tabAction(targetTab) {
+  var tabAction = function tabAction(targetTab) {
     targetTab.addClass("current").siblings().removeClass("current");
-    const tabIndex = $(targetTab).index();
-    informationContent
-      .stop(true, true)
-      .slideUp(300)
-      .eq(tabIndex)
-      .stop(true, true)
-      .slideDown(300);
-    const infoElements = document.querySelectorAll(".js-information");
+    var tabIndex = $(targetTab).index();
+    informationContent.stop(true, true).slideUp(300).eq(tabIndex).stop(true, true).slideDown(300);
+    var infoElements = document.querySelectorAll(".js-information");
     infoElements.forEach(function (infoElement) {
-      const imgElement = infoElement.querySelector("img");
+      var imgElement = infoElement.querySelector("img");
       imgElement.src = "./assets/images/common/whale-icon.svg";
       if ($(infoElement).hasClass("current")) {
         imgElement.src = "./assets/images/common/whale-icon-w.svg";
@@ -233,15 +215,15 @@ jQuery(function ($) {
   document.addEventListener("DOMContentLoaded", pageLoadTabAction());
 
   // campaign button
-  const contactButton = $(".js-contact-button");
+  var contactButton = $(".js-contact-button");
   contactButton.on("click", function (e) {
     e.preventDefault();
     window.location.href = "/contact.html";
   });
 
   // year month day toggle
-  const yearArrows = $(".js-yearLabel");
-  const dataToggle = function dataToggle(self) {
+  var yearArrows = $(".js-yearLabel");
+  var dataToggle = function dataToggle(self) {
     if (self.hasClass("open")) {
       self.removeClass("open");
       self.siblings().hide(500);
@@ -250,16 +232,17 @@ jQuery(function ($) {
       self.siblings().show(500);
     }
   };
-  yearArrows.on("click", function () {
+  yearArrows.on("click", function (e) {
+    e.preventDefault();
     dataToggle($(this));
   });
 
   // campaign と voice のタブ
-  const jsTabs = $(".js-tab");
+  var jsTabs = $(".js-tab");
   jsTabs.on("click", function (e) {
     e.preventDefault();
     $(this).addClass("current").siblings().removeClass("current");
-    const thisIndex = $(this).index();
+    var thisIndex = $(this).index();
     switch (thisIndex) {
       case 0:
         $(".js-card1").show(500);
@@ -292,8 +275,8 @@ jQuery(function ($) {
 
 // const windowWidth = window.innerWidth;
 // const detectDevice = () => {
-//   const userAgent = navigator.userAgent.toLowerCase();
-//   const isMobile = /iphone|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(
+//   var userAgent = navigator.userAgent.toLowerCase();
+//   var isMobile = /iphone|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(
 //     userAgent
 //   );
 
@@ -304,43 +287,30 @@ jQuery(function ($) {
 //   }
 // };
 // const device = detectDevice();
-const useGsap = $("body").hasClass("js-gsap");
+var useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
-  const openingImages = document.querySelectorAll(".js-opening > figure");
-  const openingTimeLine = gsap.timeline();
-  openingTimeLine
-    .to(openingImages, {
-      y: 0,
-      duration: 1.5,
-      stagger: 0.3,
-      ease: "power2.inOut",
-    })
-    .to(openingImages, {
-      autoAlpha: 0,
-      duration: 0.5,
-      ease: "power2.inOut",
-    })
-    .to(
-      ".opening__title-container",
-      {
-        autoAlpha: 1,
-        duration: 0.5,
-        ease: "power2.inOut",
-      },
-      "<0.5"
-    )
-    .to(".js-opening", {
-      backgroundColor: "rgba(0, 0, 0, 0)",
-      duration: 0.1,
-      autoAlpha: 1,
-      ease: "power2.inOut",
-    })
-    .to(
-      ".opening__title-container",
-      {
-        color: "#ffffff",
-        duration: 0.15,
-      },
-      "<"
-    );
+  var openingImages = document.querySelectorAll(".js-opening > figure");
+  var openingTimeLine = gsap.timeline();
+  openingTimeLine.to(openingImages, {
+    y: 0,
+    duration: 1.5,
+    stagger: 0.3,
+    ease: "power2.inOut"
+  }).to(openingImages, {
+    autoAlpha: 0,
+    duration: 0.5,
+    ease: "power2.inOut"
+  }).to(".opening__title-container", {
+    autoAlpha: 1,
+    duration: 0.5,
+    ease: "power2.inOut"
+  }, "<0.5").to(".js-opening", {
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    duration: 0.1,
+    autoAlpha: 1,
+    ease: "power2.inOut"
+  }).to(".opening__title-container", {
+    color: "#ffffff",
+    duration: 0.15
+  }, "<");
 }

@@ -271,7 +271,8 @@ jQuery(function ($) {
     }
   };
 
-  yearArrows.on("click", function () {
+  yearArrows.on("click", function (e) {
+    e.preventDefault();
     dataToggle($(this));
   });
 
