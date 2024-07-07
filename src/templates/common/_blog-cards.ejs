@@ -1,6 +1,6 @@
-<% if (typeof page === 'undefined') { page = ""; } %>
+<% if (typeof top === 'undefined') { top = ""; } %>
 
-<div class="<%- page === "top" ? "blog-cards-top" : "blog-cards" %>">
+<div class="<%- top  ? "blog-cards" : "blog-cards--2col" %>">
   <% const blogCardDataAll = [
   {
     link : "/blog-detail.html",
@@ -95,6 +95,6 @@
 ];
 %>
 <% blogCardDataAll.forEach(blogCardData => { %>
-  <%- include("../common/_blog-card", {blogCardData:blogCardData}) %>
+  <%- include("../common/_blog-card", {blogCardData: blogCardData, top: top}) %>
 <% }); %>
 </div>

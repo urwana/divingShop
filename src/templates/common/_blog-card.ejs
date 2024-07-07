@@ -1,5 +1,6 @@
 <% if (typeof blogCardData === 'undefined') { blogCardData = []; } %>
-<div class="blog-card top-blog__item">
+<% if (typeof top === 'undefined') { top = ""; } %>
+<div class="blog-card <%- top ? "top-blog__item" : "blog__item" %>">
   <a href="<%- blogCardData.link %>">
     <div class="blog-card__inner">
       <figure class="blog-card__image">
