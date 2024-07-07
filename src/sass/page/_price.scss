@@ -8,18 +8,15 @@
 .price__inner {
   position: relative;
   z-index: 2;
-}
-
-.price__inner::before {
-  @include subpage-decoration;
-}
-
-.price__contents {
   width: 100%;
   max-width: rem(570);
   margin-inline: auto;
   @include mq("md") {
     max-width: none;
-    width: rem(700);
+    width: rem(740);
   }
+}
+
+.price__inner::before {
+  @include subpage-decoration;
 }
