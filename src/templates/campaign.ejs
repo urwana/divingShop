@@ -3,7 +3,7 @@
 <html lang="ja">
   <%- include("./common/_head", { base: base}) %>
   <body>
-    <%- include("./common/_header", { base: base}) %>
+    <%- include(base.path + "./common/_header", { top: false}) %>
     <main>
       <% const subKeyVisualData = { pageTitle:"Campaign",imageClass:"campaign-background" } %>
       <%- include("./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
