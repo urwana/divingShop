@@ -157,11 +157,13 @@ jQuery(function ($) {
     if ($(this).hasClass("is-open")) {
       $(this).removeClass("is-open");
       var answer = $(this).next(".qa-box__answer");
-      answer.fadeOut(500);
+      answer.css("opacity", 0).hide(500);
     } else {
       $(this).addClass("is-open");
       var _answer = $(this).next(".qa-box__answer");
-      _answer.fadeIn(500);
+      _answer.show(200, function () {
+        _answer.css("opacity", 1);
+      });
     }
   });
 
@@ -173,7 +175,6 @@ jQuery(function ($) {
   targetPhoto.on("click", function () {
     modal.fadeIn(400);
     modalContents.html($(this).prop("outerHTML"));
-    // スクロール位置を戻す
     $("html, body").css("overflow", "hidden");
   });
   overlay.on("click", function () {
