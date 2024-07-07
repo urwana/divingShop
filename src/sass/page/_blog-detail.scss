@@ -1,20 +1,12 @@
 @use "global" as *;
 @import "./module/mixins";
 
-.blog__detail-contents{
+.blog__detail-contents {
   max-width: rem(570);
   margin-inline: auto;
-  @include mq('md') {
+  @include mq("md") {
     max-width: none;
   }
-}
-
-.blog__detail-inner{
-  position: relative;
-}
-
-.blog__detail-inner::before {
-  @include subpage-decoration;
 }
 
 .blog__detail-date {
@@ -29,17 +21,6 @@
   font-weight: $normal;
   @include mq("md") {
     font-size: rem(32);
-  }
-}
-
-.blog__detail-body {
-  position: relative;
-  z-index: 2;
-  @include mq("md") {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: rem(80);
   }
 }
 
@@ -67,7 +48,7 @@
   object-fit: cover;
 }
 
-.blog__detail-text {
+.blog__detail-the-contents p {
   margin-top: rem(24);
   font-family: $sans;
   font-size: rem(16);
@@ -78,18 +59,32 @@
   }
 }
 
-.blog__detail-lists {
+.blog__detail-the-contents figure {
+  aspect-ratio: 345 / 231;
+  @include mq("md") {
+    aspect-ratio: 700 / 468;
+  }
+}
+
+.blog__detail-the-contents img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog__detail-the-contents ul,
+.blog__detail-the-contents ol {
   margin-top: rem(24);
   margin-left: rem(24);
 }
 
-.blog__detail-list-item {
+.blog__detail-the-contents li {
   position: relative;
   margin-top: rem(4);
   font-weight: $regular;
 }
 
-.blog__detail-list-item::before {
+.blog__detail-the-contents li::before {
   content: "";
   position: absolute;
   top: rem(6);
