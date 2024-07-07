@@ -1,22 +1,29 @@
 <% if (typeof priceListData === 'undefined') { priceListData = []; } %> <% if
 (typeof priceListData.items === 'undefined') { priceListData.items = []; } %>
-<div class="price-list">
-  <div id="<%- priceListData.id %>" class="price-list__title">
-    <div class="price-list__title-inner">
-      <p><%- priceListData.title %></p>
-      <figure class="price-list__title-icon">
-        <img src="./assets/images/price/whale.svg" alt="鯨のアイコン" width="64" height="64" />
-      </figure>
+<div class="price-lists__item">
+  <div class="price-list">
+    <div id="<%- priceListData.id %>" class="price-list__title">
+      <div class="price-list__title-inner">
+        <p><%- priceListData.title %></p>
+        <figure class="price-list__title-icon">
+          <img
+            src="./assets/images/price/whale.svg"
+            alt="鯨のアイコン"
+            width="64"
+            height="64"
+          />
+        </figure>
+      </div>
     </div>
+    <dl class="price-list__body">
+      <% priceListData.items.forEach(item => { %>
+      <div class="price-list__item">
+        <dt class="price-list__name">
+          <%- item.name %><br class="u-mobile" /><%- item.name2 %>
+        </dt>
+        <dd class="price-list__price"><%- item.price %></dd>
+      </div>
+      <% }); %>
+    </dl>
   </div>
-  <dl class="price-list__body">
-    <% priceListData.items.forEach(item => { %>
-    <div class="price-list__item">
-      <dt class="price-list__name">
-        <%- item.name %><br class="u-mobile" /><%- item.name2 %>
-      </dt>
-      <dd class="price-list__price"><%- item.price %></dd>
-    </div>
-    <% }); %>
-  </dl>
 </div>
