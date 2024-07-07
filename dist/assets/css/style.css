@@ -2304,7 +2304,6 @@ body {
 
 .qa-box__answer {
 	border: solid 1px #408F95;
-	display: none;
 	font-weight: 300;
 	line-height: 1.4;
 	padding: 1.5rem 1rem;

@@ -25,7 +25,6 @@
 .qa-box__answer {
   padding: rem(24) rem(16);
   border: solid 1px $green-accent;
-  display: none;
   line-height: 1.4;
   font-weight: $regular;
   @include mq("md") {
