@@ -327,23 +327,23 @@ body {
 	margin-top: 5rem;
 }
 
-.l-articleCards {
+.sidebar-popular-articles__cards {
 	margin-top: 1.5rem;
 }
 
-.l-blog__sidebar-popular-articles {
+.blog__sidebar-popular-articles {
 	margin-top: 5rem;
 }
 
-.l-blog__sidebar-voice {
+.blog__sidebar-voice {
 	margin-top: 5rem;
 }
 
-.l-blog__sidebar-campaign {
+.blog__sidebar-campaign {
 	margin-top: 5rem;
 }
 
-.l-sidebar-archive {
+.blog__sidebar-archive {
 	margin-top: 5rem;
 }
 
@@ -3310,7 +3310,7 @@ html {
 	justify-content: flex-start;
 }
 
-.l-blog__sidebar-popular-articles {
+.blog__sidebar-popular-articles {
 	margin-top: 0;
 }
 
