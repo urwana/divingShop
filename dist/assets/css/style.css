@@ -2221,7 +2221,6 @@ body {
 .price-list {
 	font-size: 1rem;
 	line-height: 1.5;
-	margin-top: 2.375rem;
 }
 
 .price-list__title {
@@ -2282,6 +2281,12 @@ body {
 	padding: 0.5rem 1.125rem 0.5rem 0.5rem;
 	text-align: right;
 	width: 32%;
+}
+
+.price-lists {
+	grid-gap: 2.375rem;
+	display: grid;
+	gap: 2.375rem;
 }
 
 .qa-box__question {
@@ -3974,7 +3979,6 @@ html {
 	align-items: stretch;
 	display: flex;
 	justify-content: flex-start;
-	margin-top: 5rem;
 }
 
 .price-list__title {
@@ -4016,6 +4020,10 @@ html {
 
 .price-list__item:first-child .price-list__price {
 	border-top: solid 1px #408F95;
+}
+
+.price-lists {
+	gap: 5rem;
 }
 
 .qa-box__question {

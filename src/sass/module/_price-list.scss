@@ -3,12 +3,12 @@
 .price-list {
   font-size: rem(16);
   line-height: calc(24 / 16);
-  margin-top: rem(38);
+  // margin-top: rem(38);
   @include mq("md") {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    margin-top: rem(80);
+    // margin-top: rem(80);
   }
 }
 

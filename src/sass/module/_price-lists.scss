@@ -1,1 +1,9 @@
 @use "global" as *;
+
+.price-lists{
+  display: grid;
+  gap: rem(38);
+  @include mq('md') {
+    gap: rem(80);
+  }
+}
