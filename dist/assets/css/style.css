@@ -272,7 +272,7 @@ body {
 }
 
 .blog__detail-list-item::before {
-	background-image: url("../images/common/starfish-green.png");
+	background-image: url("../images/common/starfish.svg");
 	background-position: center;
 	background-size: cover;
 	content: "";
@@ -1944,7 +1944,7 @@ body {
 }
 
 .navigation-responsive__item--top::before {
-	background-image: url("../images/common/starfish.png");
+	background-image: url("../images/common/starfish-w.svg");
 	background-position: center;
 	background-size: cover;
 	content: "";
@@ -1956,7 +1956,7 @@ body {
 }
 
 .navigation-responsive__item--top-sitemap::before {
-	background-image: url("../images/common/starfish-green.png");
+	background-image: url("../images/common/starfish.svg");
 	background-position: center;
 	background-size: cover;
 	content: "";
@@ -1992,7 +1992,7 @@ body {
 }
 
 .navigation-sp__item--top::before {
-	background-image: url("../images/common/starfish.png");
+	background-image: url("../images/common/starfish.svg");
 	background-position: center;
 	background-size: cover;
 	content: "";
