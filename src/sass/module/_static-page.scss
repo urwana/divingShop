@@ -5,10 +5,6 @@
   font-size: rem(16);
   color: $green;
   margin-top: rem(40);
-  margin-inline: auto;
-  @include mq("md") {
-    width: 55.56%;
-  }
 }
 
 .static-page__inner {
@@ -22,6 +18,7 @@
   @include mq("md") {
     padding-right: 0;
     padding-left: 0;
+    width: rem(800);
   }
 }
 

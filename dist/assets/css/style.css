@@ -2547,8 +2547,6 @@ body {
 .static-page {
 	color: #0D2936;
 	font-size: 1rem;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 2.5rem;
 }
 
@@ -4096,13 +4094,10 @@ html {
 	display: none;
 }
 
-.static-page {
-	width: 55.56%;
-}
-
 .static-page__inner {
 	padding-left: 0;
 	padding-right: 0;
+	width: 50rem;
 }
 
 .static-page__inner::before {
