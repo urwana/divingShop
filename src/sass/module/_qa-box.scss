@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.qa-box {
-  margin-top: rem(44);
-  @include mq("md") {
-    margin-top: rem(40);
-  }
-}
-
 .qa-box__question {
   background-color: $green-accent;
   color: $white;

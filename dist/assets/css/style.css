@@ -2287,10 +2287,6 @@ body {
 	width: 32%;
 }
 
-.qa-box {
-	margin-top: 2.75rem;
-}
-
 .qa-box__question {
 	background-color: #408F95;
 	color: #fff;
@@ -2307,6 +2303,12 @@ body {
 	font-weight: 300;
 	line-height: 1.4;
 	padding: 1.5rem 1rem;
+}
+
+.qa-boxes {
+	grid-gap: 2.75rem;
+	display: grid;
+	gap: 2.75rem;
 }
 
 .qa-icon {
@@ -4019,10 +4021,6 @@ html {
 	border-top: solid 1px #408F95;
 }
 
-.qa-box {
-	margin-top: 2.5rem;
-}
-
 .qa-box__question {
 	font-size: 1.25rem;
 	padding: 1.5625rem 5rem 1.5625rem 1.5625rem;
@@ -4032,6 +4030,10 @@ html {
 	line-height: 1.4;
 	margin-top: 1rem;
 	padding: 2.5rem;
+}
+
+.qa-boxes {
+	gap: 2.5rem;
 }
 
 .qa-icon {

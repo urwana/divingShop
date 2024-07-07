@@ -1,1 +1,9 @@
 @use "global" as *;
+
+.qa-boxes {
+  display: grid;
+  gap: rem(44);
+  @include mq("md") {
+    gap: rem(40);
+  }
+}
