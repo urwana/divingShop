@@ -4,12 +4,12 @@
   width: 96.5%;
   margin-inline: auto;
   max-width: rem(570);
+  display: grid;
+  gap: rem(40);
   @include mq("md") {
     max-width: none;
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: rem(40);
   }
 }
 
