@@ -61,7 +61,9 @@
 
 .blog__detail-the-contents figure {
   aspect-ratio: 345 / 231;
+  margin-top: rem(24);
   @include mq("md") {
+    margin-top: rem(40);
     aspect-ratio: 700 / 468;
   }
 }
