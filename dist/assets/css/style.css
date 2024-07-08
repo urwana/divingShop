@@ -2131,6 +2131,7 @@ body {
 
 .pager-detail__next,
 .pager-detail__previous {
+	background-color: #fff;
 	border: solid 1px #408F95;
 	color: #408F95;
 	font-family: "Lato", sans-serif;
@@ -2154,6 +2155,11 @@ body {
 .pager-detail__previous.current {
 	background-color: #408F95;
 	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.pager-detail__previous.current:hover {
+	background-color: #56afb5;
 }
 
 .pager-detail__next {
@@ -2188,6 +2194,7 @@ body {
 .pager__next,
 .pager__item,
 .pager__previous {
+	background-color: #fff;
 	border: solid 1px #408F95;
 	color: #408F95;
 	cursor: pointer;
@@ -2213,6 +2220,11 @@ body {
 .pager__item.current {
 	background-color: #408F95;
 	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.pager__item.current:hover {
+	background-color: #56afb5;
 }
 
 .pager__next {

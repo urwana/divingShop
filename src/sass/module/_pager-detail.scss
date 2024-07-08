@@ -11,6 +11,7 @@
   padding: rem(9) rem(13);
   border: solid 1px $green-accent;
   color: $green-accent;
+  background-color: $white;
   font-family: $price-font;
   font-weight: $bold;
   text-align: center;
@@ -27,6 +28,7 @@
 .pager-detail__previous.current {
   background-color: $green-accent;
   color: $white;
+  @include button-hover-action(#56afb5);
 }
 
 .pager-detail__next {
