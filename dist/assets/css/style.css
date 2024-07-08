@@ -3580,7 +3580,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-left: 13.8vw;
+	margin-left: min(12.5rem, 13.8vw);
 	position: absolute;
 	top: 14rem;
 	z-index: 3;
