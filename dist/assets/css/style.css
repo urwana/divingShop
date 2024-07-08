@@ -2020,7 +2020,7 @@ body {
 }
 
 .navigation-sp__item--top::before {
-	background-image: url("../images/common/starfish.svg");
+	background-image: url("../images/common/starfish-w.svg");
 	background-position: center;
 	background-size: cover;
 	content: "";
