@@ -34,7 +34,7 @@
   display: none;
 }
 
-.sidebar-archive__year-label::before {
+%triangle{
   position: absolute;
   top: 6px;
   left: -28px;
@@ -49,6 +49,10 @@
   transform: rotate(0deg);
 }
 
+.sidebar-archive__year-label::before {
+  @extend %triangle;
+}
+
 .sidebar-archive__year-label.open::before {
   top: 12px;
   left: -36px;
@@ -61,5 +65,8 @@
 
 .sidebar-archive__month-label {
   position: relative;
-  cursor: pointer;
+}
+
+.sidebar-archive__month-label::before{
+  @extend %triangle;
 }

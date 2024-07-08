@@ -2508,6 +2508,7 @@ body {
 	display: none;
 }
 
+.sidebar-archive__month-label::before,
 .sidebar-archive__year-label::before {
 	border-bottom: 12px solid transparent;
 	border-left: 18px solid #408F95;
@@ -2534,7 +2535,6 @@ body {
 }
 
 .sidebar-archive__month-label {
-	cursor: pointer;
 	position: relative;
 }
 
