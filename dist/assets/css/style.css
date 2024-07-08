@@ -2795,7 +2795,9 @@ body {
 
 .tab-contents-information__tab {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	row-gap: 1.25rem;
 }
 
 .tab-contents-information__item {
