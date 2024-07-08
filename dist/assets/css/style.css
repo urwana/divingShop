@@ -2779,6 +2779,11 @@ body {
 .tab-card__item.current {
 	background-color: #408F95;
 	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.tab-card__item.current:hover {
+	background-color: #56afb5;
 }
 
 html {

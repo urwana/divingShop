@@ -34,4 +34,5 @@
 .tab-card__item.current {
   color: $white;
   background-color: $green-accent;
+  @include button-hover-action(#56afb5);
 }

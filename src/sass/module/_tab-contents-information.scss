@@ -1,9 +1,6 @@
 @use "global" as *;
 @import "./module/mixins";
 
-.tab-contents-information {
-}
-
 .tab-contents-information__tab {
   display: flex;
   justify-content: space-between;
@@ -67,9 +64,6 @@
     gap: rem(48);
     align-items: center;
   }
-}
-
-.tab-contents-information__content:not(:first-child) {
 }
 
 .tab-contents-information__body {
