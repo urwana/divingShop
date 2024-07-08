@@ -3661,11 +3661,8 @@ html {
 }
 
 .blog-cards--2col {
-	grid-row-gap: 5rem;
-	grid-column-gap: 2.5rem;
 	-moz-column-gap: 2.5rem;
 	column-gap: 2.5rem;
-	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 5rem;
 }
