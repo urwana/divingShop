@@ -27,21 +27,53 @@
             japaneseTitle:"フォト"}) %>
             </div>
             <div class="gallery__item-container l-gallery__item-container">
-              <% const galleryDataAll =[ {
-              imagePath:"./assets/images/about-us/gallery1", alt:"珊瑚の海",
-              width:"492", height:"746"}, {
-              imagePath:"./assets/images/about-us/gallery2", alt:"石垣の海",
-              width:"580", height:"369" }, {
-              imagePath:"./assets/images/about-us/gallery3",alt:"魚たち1",
-              width:"580", height:"369" }, {
-              imagePath:"./assets/images/about-us/gallery4", alt:"魚たち2",
-              width:"580",height:"369" }, {
-              imagePath:"./assets/images/about-us/gallery5", alt:"魚たち3",
-              width:"580", height:"369" }, {
-              imagePath:"./assets/images/about-us/gallery6", alt:"魚たち4",
-              width:"492", height:"746" }, ]; galleryDataAll.forEach((gallery,
-              index) => { %> <%- include("./common/_gallery-item",
-              {gallery:gallery, index:index}) %> <% }); %>
+              <% const galleryDataAll =[
+                {
+                  imagePath:"./assets/images/about-us/gallery1",
+                  alt:"珊瑚の海",
+                  width:"492",
+                  height:"746"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery2",
+                  alt:"石垣の海",
+                  width:"580",
+                  height:"369"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery3",
+                  alt:"魚たち1",
+                  width:"580",
+                  height:"369"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery4",
+                  alt:"魚たち2",
+                  width:"580",
+                  height:"369"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery5",
+                  alt:"魚たち3",
+                  width:"580",
+                  height:"369"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery6",
+                  alt:"魚たち4",
+                  width:"492",
+                  height:"746"
+                },
+                {
+                  imagePath:"./assets/images/about-us/gallery1",
+                  alt:"珊瑚の海",
+                  width:"492",
+                  height:"746"
+                },
+              ]; %>
+            <% galleryDataAll.forEach((gallery,index) => { %>
+              <%- include("./common/_gallery-item",{gallery:gallery, index:index}) %>
+            <% }); %>
             </div>
           </div>
         </div>
