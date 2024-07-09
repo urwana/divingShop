@@ -30,9 +30,10 @@
   }
 }
 
-@mixin button-hover-action($hover-color) {
+@mixin button-hover-action($hover-color, $font-color:#ffffff) {
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $hover-color;
+    color:$font-color;
   }
 }

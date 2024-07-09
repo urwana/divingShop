@@ -2148,6 +2148,7 @@ body {
 .pager-detail__next:hover,
 .pager-detail__previous:hover {
 	background-color: #DDF0F1;
+	color: #ffffff;
 }
 
 .pager-detail__previous {
@@ -2164,6 +2165,7 @@ body {
 
 .pager-detail__previous.current:hover {
 	background-color: #56afb5;
+	color: #ffffff;
 }
 
 .pager-detail__next {
@@ -2212,7 +2214,8 @@ body {
 .pager__next:hover,
 .pager__item:hover,
 .pager__previous:hover {
-	background-color: #DDF0F1;
+	background-color: #56afb5;
+	color: #ffffff;
 }
 
 .pager__previous {
@@ -2229,6 +2232,7 @@ body {
 
 .pager__item.current:hover {
 	background-color: #56afb5;
+	color: #ffffff;
 }
 
 .pager__next {
@@ -2790,6 +2794,7 @@ body {
 
 .tab-card__item:hover {
 	background-color: #DDF0F1;
+	color: #ffffff;
 }
 
 .tab-card__item.current {
@@ -2800,6 +2805,7 @@ body {
 
 .tab-card__item.current:hover {
 	background-color: #56afb5;
+	color: #ffffff;
 }
 
 html {
@@ -2836,6 +2842,7 @@ body {
 
 .tab-contents-information__item:hover {
 	background-color: #56afb5;
+	color: #ffffff;
 }
 
 .tab-contents-information__item img {
@@ -2850,6 +2857,7 @@ body {
 
 .tab-contents-information__item.current:hover {
 	background-color: #56afb5;
+	color: #ffffff;
 }
 
 .tab-contents-information__contents-container {
