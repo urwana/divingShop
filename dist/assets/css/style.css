@@ -2133,52 +2133,6 @@ body {
 	justify-content: center;
 }
 
-.pager-detail__next,
-.pager-detail__previous {
-	background-color: #fff;
-	border: solid 1px #408F95;
-	color: #408F95;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	padding: 0.5625rem 0.8125rem;
-	text-align: center;
-	transition: background-color 0.3s ease;
-}
-
-.pager-detail__next:hover,
-.pager-detail__previous:hover {
-	background-color: #DDF0F1;
-	color: #ffffff;
-}
-
-.pager-detail__previous {
-	align-items: center;
-	cursor: pointer;
-	display: flex;
-}
-
-.pager-detail__previous.current {
-	background-color: #408F95;
-	color: #fff;
-	transition: background-color 0.3s ease;
-}
-
-.pager-detail__previous.current:hover {
-	background-color: #56afb5;
-	color: #ffffff;
-}
-
-.pager-detail__next {
-	align-items: center;
-	cursor: pointer;
-	display: flex;
-}
-
-.pager-detail__next.current {
-	background-color: #408F95;
-	color: #fff;
-}
-
 html {
 	scroll-padding-top: 90px;
 }
@@ -2198,8 +2152,8 @@ body {
 }
 
 .pager__next,
-.pager__item,
-.pager__previous {
+.pager__previous,
+.pager__item {
 	background-color: #fff;
 	border: solid 1px #408F95;
 	color: #408F95;
@@ -2212,16 +2166,10 @@ body {
 }
 
 .pager__next:hover,
-.pager__item:hover,
-.pager__previous:hover {
+.pager__previous:hover,
+.pager__item:hover {
 	background-color: #56afb5;
 	color: #ffffff;
-}
-
-.pager__previous {
-	align-items: center;
-	display: flex;
-	margin-right: 1.5rem;
 }
 
 .pager__item.current {
@@ -2235,10 +2183,54 @@ body {
 	color: #ffffff;
 }
 
+.pager__previous {
+	background: url(../images/common/pager-arrow-left-green.svg) center center no-repeat;
+	cursor: pointer;
+	height: 2.375rem;
+	width: 2.375rem;
+}
+
+.pager__previous:hover {
+	background: url(../images/common/pager-arrow-left-white.svg) center center no-repeat;
+	transition: background-color 0.3s ease;
+}
+
+.pager__previous:hover:hover {
+	background-color: #56afb5;
+	color: #ffffff;
+}
+
+.pager__previous.current {
+	background-color: #408F95;
+	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.pager__previous.current:hover {
+	background-color: #56afb5;
+	color: #ffffff;
+}
+
 .pager__next {
-	align-items: center;
-	display: flex;
-	margin-left: 1.5rem;
+	background: url(../images/common/pager-arrow-right-green.svg) center center no-repeat;
+	cursor: pointer;
+	height: 2.375rem;
+	width: 2.375rem;
+}
+
+.pager__next:hover {
+	background: url(../images/common/pager-arrow-right-white.svg) center center no-repeat;
+	transition: background-color 0.3s ease;
+}
+
+.pager__next:hover:hover {
+	background-color: #56afb5;
+	color: #ffffff;
+}
+
+.pager__next.current {
+	background-color: #408F95;
+	color: #fff;
 }
 
 .price-container {
