@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-.gallery__item:nth-child(7n + 1){
+.gallery__item:nth-child(6n + 1){
   aspect-ratio: 524 / 345;
   @include mq("md") {
     aspect-ratio: initial;
@@ -38,7 +38,7 @@
   }
 }
 
-.gallery__item:nth-child(7n + 2) {
+.gallery__item:nth-child(6n + 2) {
   aspect-ratio: 345 / 219;
   @include mq("md") {
     aspect-ratio: initial;
@@ -47,7 +47,7 @@
   }
 }
 
-.gallery__item:nth-child(7n + 3) {
+.gallery__item:nth-child(6n + 3) {
   aspect-ratio: 345 / 219;
   @include mq("md") {
     aspect-ratio: initial;
@@ -56,7 +56,7 @@
   }
 }
 
-.gallery__item:nth-child(7n + 4) {
+.gallery__item:nth-child(6n + 4) {
   aspect-ratio: 345 / 219;
   @include mq("md") {
     aspect-ratio: initial;
@@ -65,7 +65,7 @@
   }
 }
 
-.gallery__item:nth-child(7n + 5) {
+.gallery__item:nth-child(6n + 5) {
   aspect-ratio: 345 / 219;
   @include mq("md") {
     aspect-ratio: initial;
@@ -74,7 +74,7 @@
   }
 }
 
-.gallery__item:nth-child(7n + 6) {
+.gallery__item:nth-child(6n + 6) {
   aspect-ratio: 524 / 345;
   @include mq("md") {
     aspect-ratio: initial;
