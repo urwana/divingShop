@@ -211,6 +211,8 @@ jQuery(function ($) {
   // information tab
   const informationTab = $(".js-information");
   const informationContent = $(".js-information-content");
+  const iconPath = "./assets/images/common/whale-icon.svg";
+  const iconWhitePath = "./assets/images/common/whale-icon-w.svg";
 
   const pageLoadTabAction = function () {
     const hash = window.location.hash;
@@ -237,15 +239,29 @@ jQuery(function ($) {
     const infoElements = document.querySelectorAll(".js-information");
     infoElements.forEach((infoElement) => {
       const imgElement = infoElement.querySelector("img");
-      imgElement.src = "./assets/images/common/whale-icon.svg";
+      imgElement.src = iconPath;
       if ($(infoElement).hasClass("current")) {
-        imgElement.src = "./assets/images/common/whale-icon-w.svg";
+        imgElement.src = iconWhitePath;
       }
     });
   };
 
+  const tabHoverAction = function (targetTab, eventType) {
+    if (targetTab.hasClass("current")) return;
+    const imgElement = targetTab.find("img");
+    if (eventType === "mouseover") {
+      imgElement.attr("src", iconWhitePath);
+    } else if (eventType === "mouseout") {
+      imgElement.attr("src", iconPath);
+    }
+  };
+
   informationTab.on("click", function () {
     tabAction($(this));
+  });
+
+  informationTab.on("mouseover mouseout", function () {
+    tabHoverAction($(this), event.type);
   });
 
   document.addEventListener("DOMContentLoaded", pageLoadTabAction());
