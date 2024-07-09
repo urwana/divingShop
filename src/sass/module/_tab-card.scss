@@ -25,7 +25,7 @@
   line-height: calc(22 / 14);
   cursor: pointer;
   background-color: $white;
-  @include button-hover-action(#DDF0F1);
+  @include button-hover-action(#56afb5);
   @include mq("md") {
     width: rem(162);
   }
