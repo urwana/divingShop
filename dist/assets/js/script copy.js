@@ -236,6 +236,41 @@ jQuery(function ($) {
     e.preventDefault();
     dataToggle($(this));
   });
+
+  // campaign と voice のタブ
+  var jsTabs = $(".js-tab");
+  jsTabs.on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass("current").siblings().removeClass("current");
+    var thisIndex = $(this).index();
+    switch (thisIndex) {
+      case 0:
+        $(".js-card1").show(500);
+        $(".js-card2").show(500);
+        $(".js-card3").show(500);
+        break;
+      case 1:
+        $(".js-card1").show(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").hide(500);
+        break;
+      case 2:
+        $(".js-card1").hide(500);
+        $(".js-card2").show(500);
+        $(".js-card3").hide(500);
+        break;
+      case 3:
+        $(".js-card1").hide(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").show(500);
+        break;
+      default:
+        $(".js-card1").hide(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").hide(500);
+        break;
+    }
+  });
 });
 
 // const windowWidth = window.innerWidth;
