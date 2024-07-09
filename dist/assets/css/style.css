@@ -3892,7 +3892,7 @@ html {
 
 .gallery__item-container {
 	display: grid;
-	grid-auto-flow: dense;
+	grid-auto-rows: 1fr;
 	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: repeat(2, 23.125rem);
 	max-width: none;

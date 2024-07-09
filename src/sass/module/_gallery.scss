@@ -10,7 +10,7 @@
   @include mq("md") {
     max-width: none;
     display: grid;
-    grid-auto-flow: dense;
+    grid-auto-rows: 1fr;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, rem(370));
   }
