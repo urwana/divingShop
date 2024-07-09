@@ -11,14 +11,10 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
   margin-right: auto;
   margin-left: auto;
   @include mq("md") {
-    padding-right: 0;
-    padding-left: 0;
-    width: rem(800);
+    width: rem(840);
   }
 }
 

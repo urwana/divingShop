@@ -2524,6 +2524,10 @@ body {
 	width: 0;
 }
 
+.sidebar-archive__year-label:hover {
+	opacity: 0.6;
+}
+
 .sidebar-archive__year-label.open::before {
 	left: -36px;
 	top: 12px;
@@ -2536,6 +2540,10 @@ body {
 
 .sidebar-archive__month-label {
 	position: relative;
+}
+
+.sidebar-archive__month-label:hover {
+	opacity: 0.6;
 }
 
 .sidebar-campaign__cards {
@@ -2622,8 +2630,6 @@ body {
 .static-page__inner {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 	width: 100%;
 	z-index: 2;
@@ -4172,9 +4178,7 @@ html {
 }
 
 .static-page__inner {
-	padding-left: 0;
-	padding-right: 0;
-	width: 50rem;
+	width: 52.5rem;
 }
 
 .static-page__inner::before {

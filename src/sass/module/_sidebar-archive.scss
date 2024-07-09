@@ -49,6 +49,10 @@
   transform: rotate(0deg);
 }
 
+.sidebar-archive__year-label:hover{
+  opacity: 0.6;
+}
+
 .sidebar-archive__year-label::before {
   @extend %triangle;
 }
@@ -65,6 +69,10 @@
 
 .sidebar-archive__month-label {
   position: relative;
+}
+
+.sidebar-archive__month-label:hover{
+  opacity: 0.6;
 }
 
 .sidebar-archive__month-label::before{
