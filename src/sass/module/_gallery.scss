@@ -9,7 +9,7 @@
   @include mq("md") {
     max-width: none;
     display: grid;
-    grid-auto-rows: 1fr;
+    grid-auto-flow: row dense;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, rem(370));
   }
@@ -33,7 +33,7 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
+    grid-row: span 2;
   }
 }
 
@@ -42,7 +42,6 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 5 / span 5;
-    grid-row: 1;
   }
 }
 
@@ -51,7 +50,6 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 5 / span 5;
-    grid-row: 2;
   }
 }
 
@@ -60,7 +58,6 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 1 / span 5;
-    grid-row: 3;
   }
 }
 
@@ -69,7 +66,6 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 1 / span 5;
-    grid-row: 4;
   }
 }
 
@@ -78,6 +74,6 @@
   @include mq("md") {
     aspect-ratio: initial;
     grid-column: 6 / span 4;
-    grid-row: 3 / span 2;
+    grid-row: span 2;
   }
 }
