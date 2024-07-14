@@ -95,6 +95,8 @@
 ];
 %>
 <% blogCardDataAll.forEach(blogCardData => { %>
-  <%- include("../common/_blog-card", {blogCardData: blogCardData, top: top}) %>
+  <div class="blog-cards__item">
+    <%- include("../common/_blog-card", {blogCardData: blogCardData, top: top}) %>
+  </div>
 <% }); %>
 </div>

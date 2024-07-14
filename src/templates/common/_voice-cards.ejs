@@ -70,7 +70,9 @@
   %>
 
 <% $voiceCardDataAll.forEach($voiceCardData => { %>
-  <%- include("./_voice-card", {voiceCardData:$voiceCardData}) %>
+  <div class="voice-cards__item">
+    <%- include("./_voice-card", {voiceCardData:$voiceCardData}) %>
+  </div>
 <% }); %>
 
 </div>

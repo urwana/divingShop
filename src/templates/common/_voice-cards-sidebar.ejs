@@ -33,6 +33,8 @@
   ];
   %>
   <% $voiceCardDataAll.forEach($voiceCardData => { %>
-    <%- include("./_voice-card-sidebar", {voiceCardData:$voiceCardData}) %>
+    <div class="voice-cards-sidebar__item">
+      <%- include("./_voice-card-sidebar", {voiceCardData:$voiceCardData}) %>
+    </div>
   <% }); %>
 </div>
