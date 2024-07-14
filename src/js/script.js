@@ -211,8 +211,6 @@ jQuery(function ($) {
   // information tab
   const informationTab = $(".js-information");
   const informationContent = $(".js-information-content");
-  const iconPath = "./assets/images/common/whale-icon.svg";
-  const iconWhitePath = "./assets/images/common/whale-icon-w.svg";
 
   const pageLoadTabAction = function () {
     const hash = window.location.hash;
@@ -239,29 +237,15 @@ jQuery(function ($) {
     const infoElements = document.querySelectorAll(".js-information");
     infoElements.forEach((infoElement) => {
       const imgElement = infoElement.querySelector("img");
-      imgElement.src = iconPath;
+      imgElement.src = "./assets/images/common/whale-icon.svg";
       if ($(infoElement).hasClass("current")) {
-        imgElement.src = iconWhitePath;
+        imgElement.src = "./assets/images/common/whale-icon-w.svg";
       }
     });
   };
 
-  const tabHoverAction = function (targetTab, eventType) {
-    if (targetTab.hasClass("current")) return;
-    const imgElement = targetTab.find("img");
-    if (eventType === "mouseover") {
-      imgElement.attr("src", iconWhitePath);
-    } else if (eventType === "mouseout") {
-      imgElement.attr("src", iconPath);
-    }
-  };
-
   informationTab.on("click", function () {
     tabAction($(this));
-  });
-
-  informationTab.on("mouseover mouseout", function () {
-    tabHoverAction($(this), event.type);
   });
 
   document.addEventListener("DOMContentLoaded", pageLoadTabAction());
@@ -290,6 +274,42 @@ jQuery(function ($) {
   yearArrows.on("click", function (e) {
     e.preventDefault();
     dataToggle($(this));
+  });
+
+  // campaign と voice のタブ
+  const jsTabs = $(".js-tab");
+
+  jsTabs.on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass("current").siblings().removeClass("current");
+    const thisIndex = $(this).index();
+    switch (thisIndex) {
+      case 0:
+        $(".js-card1").show(500);
+        $(".js-card2").show(500);
+        $(".js-card3").show(500);
+        break;
+      case 1:
+        $(".js-card1").show(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").hide(500);
+        break;
+      case 2:
+        $(".js-card1").hide(500);
+        $(".js-card2").show(500);
+        $(".js-card3").hide(500);
+        break;
+      case 3:
+        $(".js-card1").hide(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").show(500);
+        break;
+      default:
+        $(".js-card1").hide(500);
+        $(".js-card2").hide(500);
+        $(".js-card3").hide(500);
+        break;
+    }
   });
 });
 
