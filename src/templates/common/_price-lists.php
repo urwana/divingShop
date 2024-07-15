@@ -1,0 +1,29 @@
+<div class="price-lists">
+  <?php $priceListDataAll = [
+    ["title" => "ライセンス講習", "id" => "licence", "items" => [
+      ["name" => "オープンウォーター", "name2" => "ダイバーコース", "price" => "¥50,000"],
+      ["name" => "アドバンスド", "name2" => "オープンウォーターコース", "price" => "¥60,000"],
+      ["name" => "レスキュー＋EFRコース", "price" => "¥70,000"],
+    ]],
+    ["title" => "体験ダイビング", "id" => "trial",  "items" => [
+      ["name" => "ビーチ体験ダイビング", "name2" => "(半日)", "price" => "¥7,000"],
+      ["name" => "ビーチ体験ダイビング", "name2" => "(1日)", "price" => "¥14,000"],
+      ["name" => "ボート体験ダイビング", "name2" => "(半日)", "price" => "¥10,000"],
+      ["name" => "ボート体験ダイビング", "name2" => "(1日)", "price" => "¥18,000"],
+    ]],
+    ["title" => "ファンダイビング", "id" => "fun", "items" => [
+      ["name" => "ビーチダイビング", "name2" => "(2ダイブ)", "price" => "¥14,000"],
+      ["name" => "ボートダイビング", "name2" => "(2ダイブ)", "price" => "¥18,000"],
+      ["name" => "スペシャルダイビング", "name2" => "(2ダイブ)", "price" => "¥24,000"],
+      ["name" => "ナイトダイビング", "name2" => "(1ダイブ)", "price" => "¥10,000"],
+    ]],
+    ["title" => "スペシャルダイビング", "id" => "special", "items" => [
+      ["name" => "貸切ダイビング", "name2" => "(2ダイブ)", "price" => "¥24,000"],
+      ["name" => "1日ダイビング", "name2" => "(3ダイブ)", "price" => "¥32,000"],
+      ["name" => "ナイトダイビング", "name2" => "(2ダイブ)", "price" => "¥14,000"],
+    ]],
+  ]; ?>
+  <?php foreach ($priceListDataAll as $key => $priceListData) { ?>
+  <?php get_template_part("./_price-list", null,  ["priceListData" => $priceListData]); ?>
+  <?php }; ?>
+</div>

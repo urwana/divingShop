@@ -71,7 +71,7 @@ const cssSass = () => {
       // エラーハンドリングを設定
       .pipe(
         plumber({
-          errorHandler: notify.onError("Error:<%= error.message %>"),
+          errorHandler: notify.onError("Error:<?php= error.message ?>"),
         })
       )
       // Sassのパーシャル（_ファイル）を自動的にインポート
@@ -151,7 +151,7 @@ const jsBabel = () => {
       // エラーハンドリングを設定
       .pipe(
         plumber({
-          errorHandler: notify.onError("Error: <%= error.message %>"),
+          errorHandler: notify.onError("Error: <?php= error.message ?>"),
         })
       )
       // Babelでトランスパイル（ES6からES5へ変換）
