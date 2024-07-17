@@ -1,7 +1,5 @@
-<?php $base = ["path" => "./", "title" => "ブログ一覧", "description" => "沖縄那覇市のダイビングショップ CodeUpsのサイトのブログ一覧ページです。営業時間:8:30-19:00 定休日:毎週火曜日"] ?>
 <?php get_header(); ?>
 <main>
-
   <?php $subKeyVisualData = [
     "pageTitle" => "Blog",
     "imageClass" => "blog-background"
@@ -45,9 +43,4 @@
     <?php get_template_part("./common/_contact") ?>
   </section>
 </main>
-<div class="l-footer">
-  <?php get_template_part("./common/_scrollToTop") ?> <?php get_template_part("./common/_footer") ?>
-</div>
-</body>
-
-</html>
+<?php get_footer(); ?>
