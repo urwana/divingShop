@@ -23,7 +23,7 @@
   ],]; ?>
   <?php foreach ($faqDataAll as $key => $faqData) { ?>
   <div class="qa-boxes__item">
-    <?php get_template_part("./_qa-box", null, ["faqData" => $faqData]) ?>
+    <?php get_template_part("/common/_qa-box", null, ["faqData" => $faqData]) ?>
   </div>
   <?php }; ?>
 </div>

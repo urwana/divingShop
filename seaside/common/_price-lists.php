@@ -24,6 +24,6 @@
     ]],
   ]; ?>
   <?php foreach ($priceListDataAll as $key => $priceListData) { ?>
-  <?php get_template_part("./_price-list", null,  ["priceListData" => $priceListData]); ?>
+  <?php get_template_part("/common/_price-list", null,  ["priceListData" => $priceListData]); ?>
   <?php }; ?>
 </div>

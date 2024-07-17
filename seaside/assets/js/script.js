@@ -184,8 +184,8 @@ jQuery(function ($) {
   // information tab
   var informationTab = $(".js-information");
   var informationContent = $(".js-information-content");
-  var iconPath = "./assets/images/common/whale-icon.svg";
-  var iconWhitePath = "./assets/images/common/whale-icon-w.svg";
+  var iconPath = get_template_directory_uri.templateUrl + "/assets/images/common/whale-icon.svg";
+  var iconWhitePath = get_template_directory_uri.templateUrl + "/assets/images/common/whale-icon-w.svg";
   var pageLoadTabAction = function pageLoadTabAction() {
     var hash = window.location.hash;
     if (hash) {
@@ -232,7 +232,7 @@ jQuery(function ($) {
   var contactButton = $(".js-contact-button");
   contactButton.on("click", function (e) {
     e.preventDefault();
-    window.location.href = "/contact.html";
+    window.location.href = "/contact";
   });
 
   // year month day toggle

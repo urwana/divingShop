@@ -211,8 +211,12 @@ jQuery(function ($) {
   // information tab
   const informationTab = $(".js-information");
   const informationContent = $(".js-information-content");
-  const iconPath = "./assets/images/common/whale-icon.svg";
-  const iconWhitePath = "./assets/images/common/whale-icon-w.svg";
+  const iconPath =
+    get_template_directory_uri.templateUrl +
+    "/assets/images/common/whale-icon.svg";
+  const iconWhitePath =
+    get_template_directory_uri.templateUrl +
+    "/assets/images/common/whale-icon-w.svg";
 
   const pageLoadTabAction = function () {
     const hash = window.location.hash;
@@ -271,7 +275,7 @@ jQuery(function ($) {
 
   contactButton.on("click", function (e) {
     e.preventDefault();
-    window.location.href = "/contact.html";
+    window.location.href = "/contact";
   });
 
   // year month day toggle
