@@ -1,20 +1,18 @@
-<?php $top = $args["top"]; ?>
-
 <header class="header">
   <div class="header__inner">
-    <?php if ($top) { ?>
+    <?php if (is_front_page()) : ?>
     <h1 class="header__logo">
       <a href="/">
         <img src="./assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
       </a>
     </h1>
-    <?php } else { ?>
+    <?php else : ?>
     <div class="header__logo">
       <a href="/">
         <img src="./assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
       </a>
     </div>
-    <?php } ?>
+    <?php endif; ?>
     <button class="header__drawer-button hamburger js-hamburger">
       <span></span>
       <span></span>

@@ -20,7 +20,7 @@ const del = require("del"); // ファイルやディレクトリを削除する�
 const webp = require('gulp-webp');//webp変換
 const rename = require('gulp-rename');//ファイル名変更
 const ejs = require("gulp-ejs");
-const themeName = "WordPressTheme"; // WordPress theme name
+const themeName = "seaside"; // WordPress theme name
 
 // 読み込み先
 const srcPath = {
