@@ -1,17 +1,17 @@
 <header class="header">
   <div class="header__inner">
     <?php if (is_front_page()) : ?>
-    <h1 class="header__logo">
-      <a href="/">
-        <img src="./assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
-      </a>
-    </h1>
+      <h1 class="header__logo">
+        <a href="/">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
+        </a>
+      </h1>
     <?php else : ?>
-    <div class="header__logo">
-      <a href="/">
-        <img src="./assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
-      </a>
-    </div>
+      <div class="header__logo">
+        <a href="/">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ" width="133" height="50" />
+        </a>
+      </div>
     <?php endif; ?>
     <button class="header__drawer-button hamburger js-hamburger">
       <span></span>

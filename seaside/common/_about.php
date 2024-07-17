@@ -13,13 +13,13 @@
       <figure class="about__image-left">
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/images/top/bg-about-sp-left.jpg" />
-          <img src="./assets/images/top/bg-about-pc-left.jpg" alt="about セクションの背景画像 左" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-left.jpg" alt="about セクションの背景画像 左" />
         </picture>
       </figure>
       <figure class="about__image-right">
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/images/top/bg-about-sp-right.jpg" />
-          <img src="./assets/images/top/bg-about-pc-right.jpg" alt="about セクションの背景画像 右" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-right.jpg" alt="about セクションの背景画像 右" />
         </picture>
       </figure>
     </div>

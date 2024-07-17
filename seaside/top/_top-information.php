@@ -8,12 +8,7 @@
     </div>
     <div class="top-information__contents">
       <figure class="js-colorAnimation top-information__image">
-        <img
-          src="./assets/images/top/information.jpg"
-          alt="海の中 珊瑚と魚たち"
-          width="540"
-          height="356"
-        />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/information.jpg" alt="海の中 珊瑚と魚たち" width="540" height="356" />
       </figure>
       <div class="top-information__info">
         <div class="top-information__info-title">
@@ -24,9 +19,7 @@
           正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
         </p>
         <div class="top-information__button">
-          <a href="/information" class="button"
-            ><span class="button__text">View more</span></a
-          >
+          <a href="/information" class="button"><span class="button__text">View more</span></a>
         </div>
       </div>
     </div>

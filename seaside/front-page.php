@@ -1,8 +1,5 @@
-<?php $base = ["path" => "./", "title" => "トップ", "description" => "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"] ?>
 <?php get_header(); ?>
 <main>
-  <h1><?php echo 'front-page.php' ?></h1>
-
   <?php get_template_part("/top/_key-visual") ?>
   <section class="l-top-campaign">
     <?php get_template_part("/top/_top-campaign") ?>

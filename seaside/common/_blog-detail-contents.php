@@ -5,7 +5,7 @@
     </div>
     <h1 class="blog__detail-title title-line">ライセンス取得</h1>
     <figure class="blog__detail-image">
-      <img src="./assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
     </figure>
     <div class="blog__detail-the-contents">
       <p>
@@ -14,7 +14,7 @@
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
       </p>
       <figure>
-        <img src="./assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
       </figure>
       <p>
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。

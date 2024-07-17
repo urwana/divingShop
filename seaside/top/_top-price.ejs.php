@@ -9,16 +9,8 @@
     <div class="top-price__contents">
       <figure class="js-colorAnimation top-price__image">
         <picture>
-          <source
-            srcset="./assets/images/top/top-price-sp.jpg"
-            media="(max-width: 767px)"
-          />
-          <img
-            src="./assets/images/top/top-price-pc.jpg"
-            alt="沖縄の海 イメージ"
-            width="492"
-            height="746"
-          />
+          <source srcset="./assets/images/top/top-price-sp.jpg" media="(max-width: 767px)" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/top-price-pc.jpg" alt="沖縄の海 イメージ" width="492" height="746" />
         </picture>
       </figure>
       <div class="top-price__list">
@@ -107,9 +99,7 @@
       </div>
     </div>
     <div class="top-price__button">
-      <a href="/price" class="button"
-        ><span class="button__text">View more</span></a
-      >
+      <a href="/price" class="button"><span class="button__text">View more</span></a>
     </div>
   </div>
 </div>

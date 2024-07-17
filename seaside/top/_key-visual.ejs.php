@@ -4,13 +4,13 @@
       <figure class="opening__image-left">
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/images/top/opening/kv-l-sp.jpg" />
-          <img src="./assets/images/top/opening/kv-l.jpg" alt="オープニング左側の画像" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l.jpg" alt="オープニング左側の画像" />
         </picture>
       </figure>
       <figure class="opening__image-right">
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/images/top/opening/kv-r-sp.jpg" />
-          <img src="./assets/images/top/opening/kv-r.jpg" alt="オープニング右側の画像" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r.jpg" alt="オープニング右側の画像" />
         </picture>
       </figure>
       <div class="opening__title-container">
@@ -47,12 +47,12 @@
       ];
       ?>
       <?php foreach ($keyVisualDataAll as $index => $indexkeyVisualData) { ?>
-      <figure class="swiper-slide key-visual__swiper-slide">
-        <picture>
-          <source media="(max-width: 767px)" srcset="<?php echo $keyVisualData["imgPathSp"] ?>" />
-          <img src="<?php echo $keyVisualData["imgPathPc"] ?>" alt="<?php echo $keyVisualData["alt"] ?>" />
-        </picture>
-      </figure>
+        <figure class="swiper-slide key-visual__swiper-slide">
+          <picture>
+            <source media="(max-width: 767px)" srcset="<?php echo $keyVisualData["imgPathSp"] ?>" />
+            <img src="<?php echo $keyVisualData["imgPathPc"] ?>" alt="<?php echo $keyVisualData["alt"] ?>" />
+          </picture>
+        </figure>
       <?php }; ?>
     </div>
   </div>
