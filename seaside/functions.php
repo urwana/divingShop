@@ -18,5 +18,15 @@ function enqueue_scripts_and_styles()
   );
   wp_localize_script('custom-script', 'get_template_directory_uri', $template_directory_uri);
 }
-
 add_action('wp_enqueue_scripts', 'enqueue_scripts_and_styles');
+
+function my_custom_body_classes($classes)
+{
+  if (is_front_page()) {
+    $classes[] = 'js-gsap';
+  } elseif (is_404()) {
+    $classes[] = 'body-404';
+  }
+  return $classes;
+}
+add_filter('body_class', 'my_custom_body_classes');
