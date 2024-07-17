@@ -1,1 +1,2 @@
-aaaaaa
+<?php
+// Silence is golden.
