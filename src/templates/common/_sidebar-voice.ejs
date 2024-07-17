@@ -1,0 +1,13 @@
+<div class="sidebar-voice">
+  <%- include(base.path + "./_sidebar-title", {title:"口コミ", className:"sidebar-voice__title"}) %> <% const
+  voiceCardData = { link : "/voice.html#woman20", person:"30代(カップル)",
+  label:"ライセンス講習", title : "ここにタイトルが入ります。ここにタイトル",
+  imgPathPc : "./assets/images/blog/sidebar-voice.jpg", imgPathSp :
+  "./assets/images/blog/sidebar-voice.jpg", alt:"20代(女性)の画像",
+  text:"ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
+  }; %>
+  <div class="sidebar-voice__card">
+    <%- include(base.path + "./_voice-card-sidebar", {voiceCardData:
+    voiceCardData}) %>
+  </div>
+</div>

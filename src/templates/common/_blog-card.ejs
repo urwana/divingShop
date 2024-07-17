@@ -1,0 +1,25 @@
+<% if (typeof blogCardData === 'undefined') { blogCardData = []; } %>
+<% if (typeof top === 'undefined') { top = ""; } %>
+<div class="blog-card blog-cards__item" %>">
+  <a href="<%- blogCardData.link %>">
+    <div class="blog-card__inner">
+      <figure class="blog-card__image">
+        <img
+          src="<%- blogCardData.imgPath %>"
+          alt="<%- blogCardData.alt %>"
+          width="300"
+          height="200"
+        />
+      </figure>
+      <div class="blog-card__content">
+        <time class="blog-card__date" datetime="<%- blogCardData.datetime %>"
+          ><%- blogCardData.date %></time
+        >
+        <div class="blog-card__title"><%- blogCardData.title %></div>
+        <div class="blog-card__text">
+          <%- blogCardData.text %>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

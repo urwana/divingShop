@@ -1,0 +1,9 @@
+<% if (typeof cardType === 'undefined') { cardType = ""; } %>
+<% if (typeof sideBar === 'undefined') { sideBar = false; } %>
+<% if (typeof page === 'undefined') { page = false; } %>
+<% if (typeof campaignCardDataAll === 'undefined') { campaignCardDataAll = []; } %>
+<div class="<%- sideBar ? "campaign-cards--sidebar" : "campaign-cards"  %>">
+<% campaignCardDataAll.forEach(campaignCardData => { %>
+  <%- include("./_campaign-card-page", {campaignCardData:campaignCardData, page:page, sideBar:sideBar,cardType:cardType}) %>
+<% }); %>
+</div>

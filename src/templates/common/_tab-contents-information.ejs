@@ -1,0 +1,43 @@
+<% if (typeof informationTabData === 'undefined') { informationTabData = []; }
+%> <% if (typeof informationTabContentsData === 'undefined') {
+informationTabContentsData = []; } %>
+<div class="tab-contents-information">
+  <div class="tab-contents-information__tab">
+    <% informationTabData.forEach((tabData, index) => { %>
+    <div class="tab-contents-information__item js-information<%- index === 0 ? " current" : "" %>">
+      <img src="<%- tabData.imagePath %>.svg" alt="<%- tabData.alt %>" class="u-desktop" width="48" height="48" />
+      <%- tabData.text %><br class="u-mobile" /><%- tabData.text2 %>
+    </div>
+    <% }); %>
+  </div>
+  <div class="tab-contents-information__contents-container">
+    <% informationTabContentsData.forEach(tabContents => { %>
+    <div class="js-information-content">
+      <div class="tab-contents-information__content">
+        <div class="tab-contents-information__body">
+          <div class="tab-contents-information__title lined-title">
+            <%- tabContents.title %>
+          </div>
+          <div class="tab-contents-information__text">
+            <%- tabContents.text %>
+          </div>
+        </div>
+        <figure class="tab-contents-information__img">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="<%- tabContents.imagePath %>-sp.jpg"
+            />
+            <img
+              src="<%- tabContents.imagePath %>-pc.jpg"
+              alt="<%- tabContents.alt %>"
+              width="492"
+              height="313"
+            />
+          </picture>
+        </figure>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>

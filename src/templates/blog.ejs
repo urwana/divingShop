@@ -1,0 +1,51 @@
+<% base = { path: "./", title: "ブログ一覧", description:"沖縄那覇市のダイビングショップ CodeUpsのサイトのブログ一覧ページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { top: false}) %>
+    <main>
+      <% const subKeyVisualData = { pageTitle:"Blog",
+      imageClass:"blog-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:subKeyVisualData}) %>
+      <% const breadcrumbsData = { white:false, list:[{title:"TOP",url:"/"},{title:base.title, url:"/blog.html"}] }; %>
+      <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData: breadcrumbsData}) %>
+      <div class="l-blog">
+        <div class="blog">
+          <div class="blog__inner inner">
+            <div class="blog__body">
+              <div class="blog__cards">
+                <%- include(base.path + "./common/_blog-cards", {top: false}) %>
+                <div class="blog__pager">
+                  <%- include(base.path + "./common/_pager") %>
+                </div>
+              </div>
+              <div class="blog__sidebar">
+                <div class="blog__sidebar-popular-articles">
+                  <%- include(base.path + "./common/_sidebar-popular-articles");
+                  %>
+                </div>
+                <div class="blog__sidebar-voice">
+                  <%- include(base.path + "./common/_sidebar-voice"); %>
+                </div>
+                <div class="blog__sidebar-campaign">
+                  <%- include(base.path + "./common/_sidebar-campaign"); %>
+                </div>
+                <div class="blog__sidebar-archive">
+                  <%- include(base.path + "./common/_sidebar-archive"); %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>

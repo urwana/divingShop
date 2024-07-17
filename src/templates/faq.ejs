@@ -1,0 +1,31 @@
+<% base = { path: "./", title: "よくある質問", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのよくある質問ページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { top: false}) %>
+    <main>
+      <% $subKeyVisualData = { pageTitle:"FAQ",
+      imageClass:"faq-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:$subKeyVisualData}) %> <% const
+      breadcrumbsData ={ white:false, list:[
+      {title:"TOP",url:"/"},{title:base.title, url:"/faq.html"}]
+      }; %> <%- include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      breadcrumbsData}) %>
+      <div class="faq l-faq">
+        <div class="faq__inner inner">
+          <div class="faq__contents">
+            <%- include(base.path + "./common/_qa-boxes") %>
+          </div>
+        </div>
+      </div>
+      <section class="l-top-contact">
+        <%- include(base.path + "./common/_contact") %>
+      </section>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>

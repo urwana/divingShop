@@ -1,0 +1,7 @@
+<% if (typeof faqData == 'undefined') { faqData = []; } %>
+<div class="qa-box">
+  <div class="js-question qa-box__question is-open">
+    <%- faqData.question %> <%- include(base.path + "./_qa-icon") %>
+  </div>
+  <div class="qa-box__answer"><%- faqData.answer %></div>
+</div>

@@ -1,0 +1,42 @@
+<% base = { path: "./", title: "送付完了", description:"沖縄那覇市のダイビングショップ CodeUps のサイトの送付完了ページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include(base.path + "./common/_head", { base: base}) %>
+  <body>
+    <%- include(base.path + "./common/_header", { top: false}) %>
+    <main>
+      <% $subKeyVisualData = { pageTitle:"Contact",
+      imageClass:"contact-background" } %> <%- include(base.path +
+      "./top/_sub-key-visual",{subKeyVisualData:$subKeyVisualData}) %> <% const
+      breadcrumbsData ={ white:false, list:[
+      {title:"TOP",url:"/"},{title:"お問い合わせ",
+      url:"/contact.html"},{title:base.title, url:"/thanks.html"}] }; %> <%-
+      include(base.path + "./common/_breadcrumbs", { breadcrumbsData:
+      breadcrumbsData}) %>
+      <div class="l-contact">
+        <div class="contact">
+          <div class="contact__inner">
+            <div class="thanks">
+              <p class="thanks__title">お問い合わせ内容を送信完了しました。</p>
+              <p class="thanks__explain">
+                このたびは、お問い合わせ頂き<br
+                  class="u-mobile"
+                />誠にありがとうございます。<br />
+                お送り頂きました内容を確認の上、<br
+                  class="u-mobile"
+                />3営業日以内に折り返しご連絡させて頂きます。<br />
+                また、ご記入頂いたメールアドレスへ、<br
+                  class="u-mobile"
+                />自動返信の確認メールをお送りしております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="l-footer">
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
+    </div>
+  </body>
+</html>

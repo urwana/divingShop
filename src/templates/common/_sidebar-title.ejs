@@ -1,0 +1,15 @@
+<% if (typeof title === 'undefined') { title = ""; } %>
+<% if (typeof className === 'undefined') { className = ""; } %>
+<h2 class="<%- className %> sidebar-title">
+  <figure class="sidebar-title__icon">
+    <img
+      src="./assets/images/common/title-whale.svg"
+      alt="クジラアイコン"
+      width="50"
+      height="50"
+    />
+  </figure>
+  <p class="sidebar-title__text">
+  <%- title %>
+</p>
+</h2>

@@ -19,6 +19,7 @@ const changed = require("gulp-changed"); // 変更されたファイルのみを
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
 const webp = require('gulp-webp');//webp変換
 const rename = require('gulp-rename');//ファイル名変更
+const ejs = require("gulp-ejs");
 const themeName = "WordPressTheme"; // WordPress theme name
 
 // 読み込み先
@@ -26,7 +27,9 @@ const srcPath = {
   css: "../src/sass/**/*.scss",
   js: "../src/js/**/*",
   img: "../src/images/**/*",
-  html: ["../src/**/*.html", "!./node_modules/**"],
+  //html: ["../src/**/*.html", "!./node_modules/**"],
+  html: ["!./node_modules/**"],
+  ejs: "../src/templates/**/*.ejs",
   php: `../${themeName}/**/*.php`,
 };
 
@@ -36,7 +39,8 @@ const destPath = {
   css: "../dist/assets/css/",
   js: "../dist/assets/js/",
   img: "../dist/assets/images/",
-  html: "../dist/",
+  //html: "../dist/",
+  ejs: "../dist/",
 };
 
 // WordPress反映用
@@ -58,8 +62,17 @@ const browsers = [
 ];
 
 // HTMLファイルのコピー
-const htmlCopy = () => {
-  return src(srcPath.html).pipe(dest(destPath.html));
+// const htmlCopy = () => {
+//   return src(srcPath.html).pipe(dest(destPath.html));
+// };
+
+// ejs のコンパイル
+const compileEjs = () => {
+  return src(srcPath.ejs)
+    .pipe(ejs())
+    .pipe(rename({ extname: ".html" }))
+    .pipe(dest(destPath.ejs));
+  //.pipe(connect.reload());
 };
 
 const cssSass = () => {
@@ -170,7 +183,7 @@ const browserSyncOption = {
   notify: false,
   // server: "../dist/", // ローカルサーバーのルートディレクトリ
   //WordPressの場合は↓を有効にする。その場合、↑(server)はコメントアウトする。
-  proxy: "codeupsforwordpress.local", // ローカルサーバーのURL（WordPress）
+  proxy: "seaside.local", // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
@@ -189,15 +202,22 @@ const watchFiles = () => {
   watch(srcPath.css, series(cssSass, browserSyncReload));
   watch(srcPath.js, series(jsBabel, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
-  watch(srcPath.html, series(htmlCopy, browserSyncReload));
+  //watch(srcPath.html, series(htmlCopy, browserSyncReload));
+  watch(srcPath.ejs, series(compileEjs, browserSyncReload));
   watch(srcPath.php, browserSyncReload);
 };
 
 // ブラウザシンク付きの開発用タスク
 exports.default = series(
-  series(cssSass, jsBabel, imgImagemin, htmlCopy),
+  series(cssSass, jsBabel, imgImagemin, compileEjs /*htmlCopy*/),
   parallel(watchFiles, browserSyncFunc)
 );
 
 // 本番用タスク
-exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy);
+exports.build = series(
+  clean,
+  cssSass,
+  jsBabel,
+  imgImagemin,
+  compileEjs /*htmlCopy*/
+);
