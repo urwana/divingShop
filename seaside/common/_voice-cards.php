@@ -6,8 +6,8 @@
       "person" => "20代(女性)",
       "label" => "ライセンス講習",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc1.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc1.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc1.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc1.jpg",
       "alt" => "20代(女性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -17,8 +17,8 @@
       "person" => "30代(男性)",
       "label" => "ファンダイビング",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc2.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc2.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc2.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc2.jpg",
       "alt" => "30代(男性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -28,8 +28,8 @@
       "person" => "30代(男性)",
       "label" => "体験ダイビング",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc3.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc3.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc3.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc3.jpg",
       "alt" => "30代(男性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -39,8 +39,8 @@
       "person" => "30代(男性)",
       "label" => "体験ダイビング",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc4.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc4.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc4.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc4.jpg",
       "alt" => "30代(男性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -50,8 +50,8 @@
       "person" => "30代(男性)",
       "label" => "ファンダイビング",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc5.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc5.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc5.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc5.jpg",
       "alt" => "30代(男性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -61,8 +61,8 @@
       "person" => "30代(男性)",
       "label" => "ライセンス講習",
       "title" => "ここにタイトルが入ります。ここにタイトル",
-      "imgPathPc" => "./assets/images/voice/voice-pc6.jpg",
-      "imgPathSp" => "./assets/images/voice/voice-pc6.jpg",
+      "imgPathPc" => "/assets/images/voice/voice-pc6.jpg",
+      "imgPathSp" => "/assets/images/voice/voice-pc6.jpg",
       "alt" => "30代(男性)の画像",
       "text" => "ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。"
     ],
@@ -71,7 +71,7 @@
 
   <?php foreach ($voiceCardDataAll as $index => $voiceCardData) { ?>
   <div class="voice-cards__item">
-    <?php get_template_part("./_voice-card", null, ["voiceCardData" => $voiceCardData]) ?>
+    <?php get_template_part("/common/_voice-card", null, ["voiceCardData" => $voiceCardData]) ?>
   </div>
   <?php }; ?>
 </div>

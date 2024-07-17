@@ -4,7 +4,8 @@
   <a href="<?php echo $blogCardData["link"] ?>">
     <div class="blog-card__inner">
       <figure class="blog-card__image">
-        <img src="<?php echo $blogCardData["imgPath"] ?>" alt="<?php echo $blogCardData["alt"] ?>" width="300"
+        <img src="<?php echo get_template_directory_uri();
+                  echo $blogCardData["imgPath"] ?>" alt="<?php echo $blogCardData["alt"] ?>" width="300"
           height="200" />
       </figure>
       <div class="blog-card__content">
