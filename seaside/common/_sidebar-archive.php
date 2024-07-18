@@ -1,5 +1,5 @@
 <div class="sidebar-archive">
-  <?php get_template_part("./_sidebar-title", null, ["title" => "アーカイブ", "className" => "sidebar-archive__title"]) ?>
+  <?php get_template_part("/common/_sidebar-title", null, ["title" => "アーカイブ", "className" => "sidebar-archive__title"]) ?>
   <div class="sidebar-archive__lists">
     <div class="sidebar-archive__toggle-hierarchy">
       <div class="sidebar-archive__toggle-hierarchy-inner">

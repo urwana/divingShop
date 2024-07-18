@@ -18,7 +18,8 @@
       </div>
       <figure class="js-colorAnimation voice-card__image">
         <picture>
-          <source srcset="<?php echo $voiceCardData["imgPathSp"] ?>" media="(max-width: 767px)" />
+          <source srcset="<?php echo get_template_directory_uri();
+                          echo $voiceCardData["imgPathSp"] ?>" media="(max-width: 767px)" />
           <img src="<?php echo get_template_directory_uri();
                     echo $voiceCardData["imgPathPc"] ?>" alt="<?php echo $voiceCardData["alt"] ?>" width="180"
             height="140" />

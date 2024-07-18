@@ -4,7 +4,8 @@
 <a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?>"
   href="<?php echo $campaignCardData["link"] ?>">
   <figure class="campaign-card__image">
-    <img src="<?php echo $campaignCardData["imgPath"] ?>" alt="<?php echo $campaignCardData["alt"] ?>" />
+    <img src="<?php echo get_template_directory_uri();
+              echo $campaignCardData["imgPath"] ?>" alt="<?php echo $campaignCardData["alt"] ?>" />
   </figure>
   <div class="campaign-card__body">
     <div class="campaign-card__top">

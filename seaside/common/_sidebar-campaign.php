@@ -1,20 +1,19 @@
 <div class="sidebar-campaign">
-  <?php get_template_part("./_sidebar-title", null, ["title" => "キャンペーン", "className" => "sidebar-campaign__title"]); ?>
+  <?php get_template_part("/common/_sidebar-title", null, ["title" => "キャンペーン", "className" => "sidebar-campaign__title"]); ?>
   <?php $campaignCardDataAll = [
     [
-      "link" => "/campaign.html", "dataType" => "1", "imgPath" => "./assets/images/campaign/campaign-card-page1", "alt" => "ライセンス取得の画像", "label" => "ライセンス講習", "title" => "ライセンス取得", "text" => "全部コミコミ(お一人様)",
+      "link" => "/campaign.html", "dataType" => "1", "imgPath" => "/assets/images/campaign/campaign-card-page1", "alt" => "ライセンス取得の画像", "label" => "ライセンス講習", "title" => "ライセンス取得", "text" => "全部コミコミ(お一人様)",
       "cancelledPrice" => "¥56,000", "price" => "¥46,000", "width" => "294", "height" => "188"
     ],
     [
-      "link" =>
-      "/campaign.html", "dataType" => "2", "imgPath" => "./assets/images/campaign/campaign-card-page2",
+      "link" => "/campaign.html", "dataType" => "2", "imgPath" => "/assets/images/campaign/campaign-card-page2",
       "alt" => "貸切体験ダイビングの画像", "label" => "体験ダイビング", "title" =>
       "貸切体験ダイビング", "text" => "全部コミコミ(お一人様)", "cancelledPrice" =>
       "¥24,000", "price" => "¥18,000", "width" => "294", "height" => "188"
     ],
   ]; ?>
   <div class="sidebar-campaign__cards">
-    <?php get_template_part("./_campaign-cards", null, ["campaignCardDataAll" => $campaignCardDataAll, "page" => false, "sideBar" => true]) ?>
+    <?php get_template_part("/common/_campaign-cards", null, ["campaignCardDataAll" => $campaignCardDataAll, "page" => false, "sideBar" => true]) ?>
     <div class="sidebar-campaign__button">
       <a href="/blog" class="button"><span class="button__text">View more</span>
       </a>
