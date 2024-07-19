@@ -1,19 +1,14 @@
-<?php $blogCardData = $args["blogCardData"]; ?>
-<?php $top = $args["top"]; ?>
 <div class="blog-card ?>">
   <a href="<?php echo $blogCardData["link"] ?>">
     <div class="blog-card__inner">
-      <figure class="blog-card__image">
-        <img src="<?php echo get_template_directory_uri();
-                  echo $blogCardData["imgPath"] ?>" alt="<?php echo $blogCardData["alt"] ?>" width="300"
-          height="200" />
-      </figure>
+      <?php if (has_post_thumbnail()) : ?>
+      <div><?php the_post_thumbnail(); ?></div>
+      <?php endif; ?>
       <div class="blog-card__content">
-        <time class="blog-card__date"
-          datetime="<?php echo $blogCardData["datetime"] ?>"><?php echo $blogCardData["date"] ?></time>
-        <div class="blog-card__title"><?php echo $blogCardData["title"] ?></div>
+        <time class="blog-card__date" datetime="<?php the_time("Y-m-d"); ?>"><?php the_time("Y/m/d"); ?></time>
+        <div class="blog-card__title"><?php the_title(); ?></div>
         <div class="blog-card__text">
-          <?php echo $blogCardData["text"] ?>
+          <?php the_excerpt() ?>
         </div>
       </div>
     </div>

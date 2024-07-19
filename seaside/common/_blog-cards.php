@@ -94,9 +94,13 @@
     ],
   ];
   ?>
-  <?php foreach ($blogCardDataAll as $index => $blogCardData) { ?>
+  <?php if (have_posts()) :
+    while (have_posts()) :
+      the_post(); ?>
   <div class="blog-cards__item">
-    <?php get_template_part("/common/_blog-card", null, ["blogCardData" => $blogCardData, "top" => $top]) ?>
+    <?php get_template_part("/common/_blog-card") ?>
   </div>
-  <?php }; ?>
+
+  <?php endwhile;
+  endif; ?>
 </div>

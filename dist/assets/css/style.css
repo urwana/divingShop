@@ -895,11 +895,11 @@ body {
 	padding: 1rem 1rem 1.5rem;
 }
 
-.blog-card__image {
+.blog-card__inner > div {
 	aspect-ratio: 30/20;
 }
 
-.blog-card__image img {
+.blog-card__inner > div > img {
 	-o-object-fit: cover;
 	height: 100%;
 	object-fit: cover;
