@@ -1,15 +1,11 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Price", "imageClass" => "price-background"
+    "pageTitle" => "Price",
+    "imageClass" => "price-background",
+    "detail" => false
   ] ?> <?php get_template_part("/top/_sub-key-visual", null,  ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php
-  $breadcrumbsData = [
-    "white" => false, "list" => [
-      ["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/price"]
-    ]
-  ]; ?> <?php get_template_part("/common/_breadcrumbs", null, ["breadcrumbsData" =>
-        $breadcrumbsData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <div class="l-price">
     <div class="price">
       <div class="price__inner inner">

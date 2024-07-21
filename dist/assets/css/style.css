@@ -2154,7 +2154,7 @@ body {
 .pager__next,
 .pager__previous,
 span.current,
-.page {
+.pager .page {
 	background-color: #fff;
 	border: solid 1px #408F95;
 	color: #408F95;
@@ -2170,7 +2170,7 @@ span.current,
 .pager__next:hover,
 .pager__previous:hover,
 span.current:hover,
-.page:hover {
+.pager .page:hover {
 	background-color: #56afb5;
 	color: #ffffff;
 }

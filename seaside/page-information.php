@@ -2,17 +2,15 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Information",
-    "imageClass" => "information-background"
+    "imageClass" => "information-background",
+    "detail" => false
   ] ?>
   <?php get_template_part(
     "/top/_sub-key-visual",
     null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php $breadcrumbsData = ["white" => false, "list" => [
-    ["title" => "TOP", "url" => "/"], ["title" => "ダイビング情報", "url" => "/information"]
-  ]]; ?>
-  <?php get_template_part("/common/_breadcrumbs", null,  ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <div class="l-information">
     <div class="information">
       <div class="information__inner inner">

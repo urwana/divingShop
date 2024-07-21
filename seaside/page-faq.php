@@ -2,15 +2,10 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "FAQ",
-    "imageClass" => "faq-background"
+    "imageClass" => "faq-background",
+    "detail" => false
   ] ?> <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php
-  $breadcrumbsData = [
-    "white" => false, "list" => [
-      ["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/faq"]
-    ]
-  ]; ?>
-  <?php get_template_part("/common/_breadcrumbs", null, ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <div class="faq l-faq">
     <div class="faq__inner inner">
       <div class="faq__contents">

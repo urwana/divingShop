@@ -20,7 +20,7 @@
   @include button-hover-action(#56afb5);
 }
 
-.page {
+.pager .page {
   @extend %pager-default-style;
 }
 
