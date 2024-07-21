@@ -1,13 +1,14 @@
 @use "global" as *;
 @import "./module/mixins";
 
-.pager {
+.wp-pagenavi {
   display: flex;
   justify-content: center;
   gap: rem(12);
 }
 
 %pager-default-style {
+  display: block;
   padding: rem(6) rem(13);
   border: solid 1px $green-accent;
   color: $green-accent;
@@ -19,11 +20,12 @@
   @include button-hover-action(#56afb5);
 }
 
-.pager__item {
+.page {
   @extend %pager-default-style;
 }
 
-.pager__item.current {
+span.current {
+  @extend %pager-default-style;
   background-color: $green-accent;
   color: $white;
   @include button-hover-action(#56afb5);

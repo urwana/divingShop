@@ -38,9 +38,13 @@
     <div class="blog__detail-pager">
       <?php
       $prev = get_previous_post();
-      $prev_url = get_permalink($prev->ID);
+      if (!empty($prev)) {
+        $prev_url = get_permalink($prev->ID);
+      }
       $next = get_next_post();
-      $next_url = get_next_post_link($next->ID);
+      if (!empty($next)) {
+        $next_url = get_next_post_link($next->ID);
+      }
       ?>
       <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]) ?>
     </div>
