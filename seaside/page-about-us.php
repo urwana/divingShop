@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "About us", "imageClass" => "about-us-background"
-  ] ?> <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
+    "pageTitle" => "About us", "imageClass" => "about-us-background", "detail" => false
+  ]
+  ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
   <?php $breadcrumbsData = ["white" => false, "list" => [
     ["title" => "TOP", "url" => "/"],
-    ["title" => $base["title"], "url" => "/about-us.html"]
+    ["title" => "私たちについて", "url" => "/about-us.html"]
   ]]; ?>
   <?php get_template_part("/common/_breadcrumbs", null, ["breadcrumbsData" => $breadcrumbsData])
   ?>
@@ -68,7 +70,7 @@
             ],
           ]; ?>
           <?php foreach ($galleryDataAll as $index => $gallery) { ?>
-          <?php get_template_part("/common/_gallery-item", null, ["gallery" => $gallery, "index" => $index]) ?>
+            <?php get_template_part("/common/_gallery-item", null, ["gallery" => $gallery, "index" => $index]) ?>
           <?php }; ?>
         </div>
       </div>

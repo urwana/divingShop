@@ -10,25 +10,28 @@
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
   <?php $breadcrumbsData = ["white" => false, "list" => [
-    ["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/information"]
+    ["title" => "TOP", "url" => "/"], ["title" => "ダイビング情報", "url" => "/information"]
   ]]; ?>
-  <?php get_template_part("/common/_breadcrumbs", ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("/common/_breadcrumbs", null,  ["breadcrumbsData" => $breadcrumbsData]) ?>
   <div class="l-information">
     <div class="information">
       <div class="information__inner inner">
         <div class="information__tab-contents">
           <?php $informationTabData = [
             [
-              "text" => "ライセンス", "text2" => "講習",
+              "text" => "ライセンス",
+              "text2" => "講習",
               "imagePath" => "/assets/images/common/whale-icon-w"
             ],
             [
-              "text" => "ファン", "text2" => "ダイビング",
+              "text" => "ファン",
+              "text2" => "ダイビング",
               "imagePath" => "/assets/images/common/whale-icon"
             ],
             [
               "text" => "体験",
-              "text2" => "ダイビング", "imagePath" => "/assets/images/common/whale-icon"
+              "text2" => "ダイビング",
+              "imagePath" => "/assets/images/common/whale-icon"
             ],
           ];
           $informationTabContentsData = [[
