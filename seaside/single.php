@@ -11,7 +11,7 @@
   $breadcrumbsData =
     [
       "white" => false,
-      "list" => [["title" => "TOP", "url" => "/"], ["title" => "ブログ一覧", "url" => "/blog.html"], ["title" => $base["title"], "url" => "/blog-detail.html"]]
+      "list" => [["title" => "TOP", "url" => "/"], ["title" => "ブログ一覧", "url" => "/blog"], ["title" => "ブログ詳細", "url" => "/blog-detail"]]
     ]; ?>
 
   <?php get_template_part("./common/_breadcrumbs", null,  ["breadcrumbsData" => $breadcrumbsData]) ?>

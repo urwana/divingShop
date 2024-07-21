@@ -2,7 +2,8 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Blog",
-    "imageClass" => "blog-background"
+    "imageClass" => "blog-background",
+    "detail" => false
   ] ?>
   <?php get_template_part(
     "/top/_sub-key-visual",
