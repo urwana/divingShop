@@ -5,8 +5,7 @@
     </div>
     <h1 class="blog__detail-title title-line">ライセンス取得</h1>
     <figure class="blog__detail-image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚"
-        width="700" height="468" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
     </figure>
 
     <div class="blog__detail-the-contents">
@@ -16,9 +15,9 @@
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
       </p>
       <?php
-        if (has_post_thumbnail()) :
-          the_post_thumbnail();
-        endif;
+      if (has_post_thumbnail()) :
+        the_post_thumbnail();
+      endif;
       ?>
       <p>
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
@@ -37,7 +36,13 @@
       </p>
     </div>
     <div class="blog__detail-pager">
-      <?php get_template_part("./_pager-detail") ?>
+      <?php
+      $prev = get_previous_post();
+      $prev_url = get_permalink($prev->ID);
+      $next = get_next_post();
+      $next_url = get_next_post_link($next->ID);
+      ?>
+      <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]) ?>
     </div>
   </div>
 </div>
