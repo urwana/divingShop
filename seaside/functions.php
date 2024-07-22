@@ -46,3 +46,91 @@ function my_custom_body_classes($classes)
   return $classes;
 }
 add_filter('body_class', 'my_custom_body_classes');
+
+//////////
+
+function create_custom_post_types()
+{
+  // "voice" カスタム投稿タイプのラベル設定
+  $voice_labels = array(
+    'name'                  => 'Voices', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'Voice',  // 投稿タイプの名前（単数形）
+    'menu_name'             => 'Voices',  // 管理画面メニューの名前
+    'name_admin_bar'        => 'Voice',   // 管理バーに表示される名前 = 省略可能
+    'add_new'               => '新規 Voice 投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規 Voice 投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => 'New Voice', // 新規投稿ページのタイトル
+    'edit_item'             => 'Edit Voice', // 投稿編集ページのタイトル
+    'view_item'             => 'View Voice', // 投稿表示ページのタイトル
+    'all_items'             => 'Voices 全ての投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'Voice の記事を探す', // 投稿検索のラベル
+    'parent_item_colon'     => 'Parent Voices:', // 階層型の親投稿ラベル = 省略可能
+    'not_found'             => 'Voice の投稿はありません。', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱に Voice の投稿はありません。' // ゴミ箱に投稿が見つからなかったときのメッセージ
+  );
+
+  // "voice" カスタム投稿タイプの設定
+  $voice_args = array(
+    'labels'               => $voice_labels, // 上で定義したラベルを使用
+    'public'               => true,  // 投稿タイプを公開するかどうか
+    'publicly_queryable'   => true,  // クエリ可能かどうか
+    'show_ui'              => true,  // 管理画面の編集用UIを表示する
+    'show_in_rest'         => true,  // 投稿画面に表示(REST APIに含める場合はtrueを指定)
+    'show_in_menu'         => true,  // 管理メニューに表示するかどうか
+    'menu_position'        => 6,     // 管理画面上での配置場所
+    'menu_icon'            => 'dashicons-format-audio', // Dashicons アイコンを指定
+    'query_var'            => true,  // クエリ変数を使うかどうか
+    'rewrite'              => array('slug' => 'voice'), // リライトルールの設定（スラッグ）
+    'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
+    'has_archive'          => true,  // アーカイブページを持つかどうか
+    'hierarchical'         => false, // 階層型（カテゴリー）かどうか
+    'menu_position'        => null,  // 管理画面のメニュー位置
+    'supports'             => array('title', 'editor', 'thumbnail') // サポートする機能（タイトル、エディタ、サムネイル）
+  );
+
+  // "voice" カスタム投稿タイプを登録
+  register_post_type('voice', $voice_args);
+
+  // "campaign" カスタム投稿タイプのラベル設定
+  $campaign_labels = array(
+    'name'                  => 'Campaigns', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'Campaign', // 投稿タイプの名前（単数形）
+    'menu_name'             => 'Campaigns', // 管理画面メニューの名前
+    'name_admin_bar'        => 'Campaign', // 管理バーに表示される名前 = 省略可能
+    'add_new'               => '新規 Campaign の投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規 Campaign の投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => 'New Campaign', // 新規投稿ページのタイトル
+    'edit_item'             => 'Edit Campaign', // 投稿編集ページのタイトル
+    'view_item'             => 'View Campaign', // 投稿表示ページのタイトル
+    'all_items'             => 'Campaign 全ての投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'Campaigns の記事を探す', // 投稿検索のラベル
+    'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
+    'not_found'             => 'Campaign の投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱に Campaign の投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
+  );
+
+  // "campaign" カスタム投稿タイプの設定
+  $campaign_args = array(
+    'labels'               => $campaign_labels, // 上で定義したラベルを使用
+    'public'               => true,  // 投稿タイプを公開するかどうか
+    'publicly_queryable'   => true,  // クエリ可能かどうか
+    'show_ui'              => true,  // 管理画面の編集用UIを表示する
+    'show_in_rest'         => true,  // 投稿画面に表示(REST APIに含める場合はtrueを指定)
+    'show_in_menu'         => true,  // 管理メニューに表示するかどうか
+    'menu_icon'            => 'dashicons-portfolio', // Dashicons アイコンを指定
+    'menu_position'        => 5,     // 管理画面上での配置場所
+    'query_var'            => true,  // クエリ変数を使うかどうか
+    'rewrite'              => array('slug' => 'campaign'), // リライトルールの設定（スラッグ）
+    'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
+    'has_archive'          => true,  // アーカイブページを持つかどうか
+    'hierarchical'         => false, // 階層型（カテゴリー）かどうか
+    'menu_position'        => null,  // 管理画面のメニュー位置
+    'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
+  );
+
+  // "campaign" カスタム投稿タイプを登録
+  register_post_type('campaign', $campaign_args);
+}
+
+// WordPress の初期化時にカスタム投稿タイプを登録する
+add_action('init', 'create_custom_post_types');

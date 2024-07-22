@@ -1,8 +1,7 @@
 <?php $cardType = $args["cardType"]; ?>
-<?php $sideBar = $args["sideBar"]; ?>
+<?php $sideBar = isset($args["sideBar"]) ? $args["sideBar"] : false; ?>
 <?php $page = $args["page"]; ?>
 <?php $campaignCardDataAll = $args["campaignCardDataAll"]; ?>
-<?php $campaignCardData = $campaignCardDataAll["campaignCardData"]; ?>
 
 <div class="<?php echo $sideBar ? "campaign-cards--sidebar" : "campaign-cards"  ?>">
   <?php foreach ($campaignCardDataAll as $index => $campaignCard) { ?>
