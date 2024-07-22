@@ -5,7 +5,8 @@
     </div>
     <h1 class="blog__detail-title title-line">ライセンス取得</h1>
     <figure class="blog__detail-image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚" width="700" height="468" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-detail-pc.jpg" alt="海の中 珊瑚"
+        width="700" height="468" />
     </figure>
 
     <div class="blog__detail-the-contents">
@@ -37,13 +38,15 @@
     </div>
     <div class="blog__detail-pager">
       <?php
+      $prev_url = "";
+      $next_url = "";
       $prev = get_previous_post();
       if (!empty($prev)) {
         $prev_url = get_permalink($prev->ID);
       }
       $next = get_next_post();
       if (!empty($next)) {
-        $next_url = get_next_post_link($next->ID);
+        $next_url = get_permalink($next->ID);
       }
       ?>
       <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]) ?>
