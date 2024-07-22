@@ -1,5 +1,4 @@
 <?php $page = $args["page"]; ?>
-<?php $cardType = $args["cardType"]; ?>
 <?php $sideBar = $args["sideBar"]; ?>
 
 <a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?> js-card<?php echo $campaignCard["dataType"] ?>"

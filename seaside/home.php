@@ -10,8 +10,7 @@
     null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php $breadcrumbsData = ["white" => false, "list" => [["title" => "TOP", "url" => "/"], ["title" => "ブログ", "url" => "/blog.html"]]]; ?>
-  <?php get_template_part("/common/_breadcrumbs", null, ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <div class="l-blog">
     <div class="blog">
       <div class="blog__inner inner">

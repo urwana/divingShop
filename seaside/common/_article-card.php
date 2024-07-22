@@ -2,15 +2,20 @@
 <div class="article-card">
   <a class="article-card__inner" href="<?php echo isset($articleCard["link"]) ? $articleCard["link"] : '#'; ?>">
     <figure class="article-card__image">
-      <img src="<?php echo get_template_directory_uri();
-                echo isset($articleCard["imgPath"]) ? $articleCard["imgPath"] : ''; ?>"
-        alt="<?php echo isset($articleCard["alt"]) ? $articleCard["alt"] : ''; ?>" width="121" height="90" />
+      <?php
+      if (has_post_thumbnail()) {
+      ?>
+      <figure class="campaign-card__image">
+        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="121" height="90" />
+      </figure>
+      <?php
+      };
+      ?>
     </figure>
     <div class="article-card__body">
-      <time class="article-card__date"
-        datetime="<?php echo isset($articleCard["datetime"]) ? $articleCard["datetime"] : ''; ?>"><?php echo isset($articleCard["date"]) ? $articleCard["date"] : ''; ?>
+      <time class="article-card__date" datetime="<?php the_time("c") ?>"><?php the_time("Y/m/d") ?>
       </time>
-      <div class="article-card__title"><?php echo isset($articleCard["title"]) ? $articleCard["title"] : ''; ?></div>
+      <div class="article-card__title"><?php the_title(); ?></div>
     </div>
   </a>
 </div>

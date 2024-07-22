@@ -1,11 +1,10 @@
-<?php $cardType = $args["cardType"]; ?>
 <?php $sideBar = isset($args["sideBar"]) ? $args["sideBar"] : false; ?>
 <?php $page = $args["page"]; ?>
-<?php $campaignCardDataAll = $args["campaignCardDataAll"]; ?>
 
 <?php
 $args = array(
-  "post_type" => "campaign"
+  "post_type" => "campaign",
+  'posts_per_page' => is_front_page() ? -1 : 1
 );
 $the_query = new WP_Query($args);
 ?>
@@ -15,7 +14,7 @@ $the_query = new WP_Query($args);
     while ($the_query->have_posts()) {
       $the_query->the_post();
   ?>
-  <?php get_template_part("/common/_campaign-card-page", null, ["page" => $page, "sideBar" => $sideBar, "cardType" => $cardType]) ?>
+  <?php get_template_part("/common/_campaign-card-page", null, ["page" => $page, "sideBar" => $sideBar]) ?>
   <?php }
   }; ?>
 </div>
