@@ -1,4 +1,4 @@
-<?php $voiceCardData = $args["voiceCardData"]; ?>
+<?php if (get_post_type() == 'voice') { ?>
 <div class="voice-card-sidebar">
   <div>
     <div class="voice-card-sidebar__head">
@@ -6,19 +6,22 @@
         <div class="voice-card-sidebar__meta">
         </div>
         <figure class="js-colorAnimation voice-card-sidebar__image">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri();
-                            echo $voiceCardData["imgPathSp"] ?>" media="(max-width: 767px)" />
-            <img src="<?php echo get_template_directory_uri();
-                      echo $voiceCardData["imgPathPc"] ?>" alt="<?php echo $voiceCardData["alt"] ?>" width="294"
-              height="218" />
-          </picture>
+          <?php
+            if (has_post_thumbnail()) { ?>
+          <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294" height="218" />
+        </figure>
+        <?php
+            };
+        ?>
+
+
+        </picture>
         </figure>
         <div class="voice-card-sidebar__person">
-          <?php echo $voiceCardData["person"] ?>
+          人
         </div>
         <div class="voice-card-sidebar__title">
-          <div><?php echo $voiceCardData["title"] ?></div>
+          <div><?php the_title() ?></div>
         </div>
       </div>
     </div>
@@ -27,3 +30,4 @@
     </div>
   </div>
 </div>
+<?php } ?>

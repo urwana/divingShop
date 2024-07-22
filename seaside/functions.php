@@ -53,19 +53,19 @@ function create_custom_post_types()
 {
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
-    'name'                  => 'Voices', // 投稿タイプの名前（複数形）
-    'singular_name'         => 'Voice',  // 投稿タイプの名前（単数形）
-    'menu_name'             => 'Voices',  // 管理画面メニューの名前
-    'name_admin_bar'        => 'Voice',   // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規 Voice 投稿を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規 Voice 投稿', // 新規投稿追加ページのタイトル
-    'new_item'              => 'New Voice', // 新規投稿ページのタイトル
-    'edit_item'             => 'Edit Voice', // 投稿編集ページのタイトル
-    'view_item'             => 'View Voice', // 投稿表示ページのタイトル
-    'all_items'             => 'Voices 全ての投稿', // 全投稿一覧ページのタイトル
-    'search_items'          => 'Voice の記事を探す', // 投稿検索のラベル
-    'parent_item_colon'     => 'Parent Voices:', // 階層型の親投稿ラベル = 省略可能
-    'not_found'             => 'Voice の投稿はありません。', // 投稿が見つからなかったときのメッセージ
+    'name'                  => 'voices', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'voice',  // 投稿タイプの名前（単数形）
+    'menu_name'             => 'voices',  // 管理画面メニューの名前
+    'name_admin_bar'        => 'voice',   // 管理バーに表示される名前 = 省略可能
+    'add_new'               => '新規 voice 投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規 voice 投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => 'New voice', // 新規投稿ページのタイトル
+    'edit_item'             => 'Edit voice', // 投稿編集ページのタイトル
+    'view_item'             => 'View voice', // 投稿表示ページのタイトル
+    'all_items'             => 'voices 全ての投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'voice の記事を探す', // 投稿検索のラベル
+    'parent_item_colon'     => 'parent voices:', // 階層型の親投稿ラベル = 省略可能
+    'not_found'             => 'voice の投稿はありません。', // 投稿が見つからなかったときのメッセージ
     'not_found_in_trash'    => 'ゴミ箱に Voice の投稿はありません。' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
@@ -93,20 +93,20 @@ function create_custom_post_types()
 
   // "campaign" カスタム投稿タイプのラベル設定
   $campaign_labels = array(
-    'name'                  => 'Campaigns', // 投稿タイプの名前（複数形）
-    'singular_name'         => 'Campaign', // 投稿タイプの名前（単数形）
-    'menu_name'             => 'Campaigns', // 管理画面メニューの名前
-    'name_admin_bar'        => 'Campaign', // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規 Campaign の投稿を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規 Campaign の投稿', // 新規投稿追加ページのタイトル
-    'new_item'              => 'New Campaign', // 新規投稿ページのタイトル
-    'edit_item'             => 'Edit Campaign', // 投稿編集ページのタイトル
-    'view_item'             => 'View Campaign', // 投稿表示ページのタイトル
-    'all_items'             => 'Campaign 全ての投稿', // 全投稿一覧ページのタイトル
-    'search_items'          => 'Campaigns の記事を探す', // 投稿検索のラベル
+    'name'                  => 'campaigns', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'campaign', // 投稿タイプの名前（単数形）
+    'menu_name'             => 'campaigns', // 管理画面メニューの名前
+    'name_admin_bar'        => 'campaign', // 管理バーに表示される名前 = 省略可能
+    'add_new'               => '新規 campaign の投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規 campaign の投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => 'New campaign', // 新規投稿ページのタイトル
+    'edit_item'             => 'Edit campaign', // 投稿編集ページのタイトル
+    'view_item'             => 'View campaign', // 投稿表示ページのタイトル
+    'all_items'             => 'campaign 全ての投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'campaigns の記事を探す', // 投稿検索のラベル
     'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
-    'not_found'             => 'Campaign の投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
-    'not_found_in_trash'    => 'ゴミ箱に Campaign の投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
+    'not_found'             => 'campaign の投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱に campaign の投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
   // "campaign" カスタム投稿タイプの設定
