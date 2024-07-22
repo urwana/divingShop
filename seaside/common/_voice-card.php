@@ -1,33 +1,33 @@
-<?php $voiceCardData = $args["voiceCardData"]; ?>
-
 <div class="voice-card js-card<?php echo $voiceCardData["dataType"] ?>">
-  <a href="<?php echo $voiceCardData["link"] ?>">
+  <a href="">
     <div class="voice-card__head">
       <div class="voice-card__info">
         <div class="voice-card__meta">
-          <div class="voice-card__person"><?php echo $voiceCardData["person"] ?></div>
+          <div class="voice-card__person">人</div>
           <div class="voice-card__label">
-            <span class="label"><?php echo $voiceCardData["label"] ?></span>
+            <span class="label">ラベル</span>
           </div>
         </div>
         <div class="voice-card__title">
           <div class="lined-title">
-            <?php echo $voiceCardData["title"] ?>
+            <?php the_title(); ?>
           </div>
         </div>
       </div>
       <figure class="js-colorAnimation voice-card__image">
-        <picture>
-          <source srcset="<?php echo get_template_directory_uri();
-                          echo $voiceCardData["imgPathSp"] ?>" media="(max-width: 767px)" />
-          <img src="<?php echo get_template_directory_uri();
-                    echo $voiceCardData["imgPathPc"] ?>" alt="<?php echo $voiceCardData["alt"] ?>" width="180"
-            height="140" />
-        </picture>
+        <?php
+        if (has_post_thumbnail()) {
+        ?>
+        <figure class="campaign-card__image">
+          <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+        </figure>
+        <?php
+        };
+        ?>
       </figure>
     </div>
     <div class="voice-card__text">
-      <?php echo $voiceCardData["text"] ?>
+      <?php the_excerpt() ?>
     </div>
   </a>
 </div>

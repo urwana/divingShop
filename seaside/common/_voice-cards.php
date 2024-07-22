@@ -69,9 +69,18 @@
   ];
   ?>
 
-  <?php foreach ($voiceCardDataAll as $index => $voiceCardData) { ?>
+  <?php
+  $voice_args = array(
+    'post_type' => 'voice',
+    'posts_per_page' => 6
+  );
+  $voice_page_query = new WP_Query($voice_args);
+  if ($voice_page_query->have_posts()) :
+    while ($voice_page_query->have_posts()) :
+      $voice_page_query->the_post(); ?>
   <div class="voice-cards__item">
-    <?php get_template_part("/common/_voice-card", null, ["voiceCardData" => $voiceCardData]) ?>
+    <?php get_template_part("/common/_voice-card") ?>
   </div>
-  <?php }; ?>
+  <?php endwhile;
+  endif; ?>
 </div>
