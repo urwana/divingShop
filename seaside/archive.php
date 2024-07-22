@@ -5,26 +5,23 @@
     "imageClass" => "voice-background"
   ] ?>
   <?php get_template_part(
-    "./top/_sub-key-visual",
+    "/top/_sub-key-visual",
+    null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php
-  $breadcrumbsData = ["white" => false, "list" => [
-    ["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/voice.html"]
-  ]]; ?>
-  <?php get_template_part("./common/_breadcrumbs", null, ["breadcrumbsData" =>
-  $breadcrumbsData]) ?>
+
+  <?php get_template_part("./common/_breadcrumbs") ?>
   <section class="l-voice">
     <div class="voice">
       <div class="voice__inner inner">
         <div class="voice__tab-contents">
-          <?php get_template_part("./common/_tab-card") ?>
+          <?php get_template_part("/common/_tab-card") ?>
           <div class="voice__cards">
-            <?php get_template_part("./common/_voice-cards") ?>
+            <?php get_template_part("/common/_voice-cards") ?>
           </div>
         </div>
         <div class="voice__pager">
-          <?php get_template_part("./common/_pager") ?>
+          <?php get_template_part("/common/_pager") ?>
         </div>
       </div>
     </div>
