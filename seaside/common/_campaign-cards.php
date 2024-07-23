@@ -4,7 +4,7 @@
 <?php
 $args = array(
   "post_type" => "campaign",
-  'posts_per_page' =>  -1
+  'posts_per_page' =>  $sideBar ? 1 : -1
 );
 $the_query = new WP_Query($args);
 ?>

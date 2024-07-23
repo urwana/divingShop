@@ -1,72 +1,19 @@
 <?php get_header(); ?>
 <main>
-  <?php $subKeyVisualData = ["pageTitle" => "Campaign", "imageClass" => "campaign-background"] ?>
-  <?php get_template_part("./top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php get_template_part("./common/_breadcrumbs") ?>
+  <?php $subKeyVisualData = ["pageTitle" => "Campaign", "imageClass" => "campaign-background", "detail" => false] ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <div class="l-campaign">
     <div class="campaign">
       <div class="campaign__inner inner">
         <div class="campaign__tab">
-          <?php get_template_part("./common/_tab-card") ?>
+          <?php get_template_part("/common/_tab-card") ?>
         </div>
         <div class="campaign__cards">
-          <?php $campaignCardDataAll = [
-            [
-              "link" => "/information.html#licence",
-              "dataType" => "1",
-              "imgPath" => "/assets/images/campaign/campaign-card-page1",
-              "alt" => "ライセンス取得の画像",
-              "label" => "ライセンス講習",
-              "title" => "ライセンス取得",
-              "text" => "全部コミコミ(お一人様)全部コミコミ",
-              "cancelledPrice" => "¥56,000",
-              "price" => "¥46,000",
-              "width" => "520",
-              "height" => "347"
-            ],
-            [
-              "link" => "/information.html#trial",
-              "dataType" => "2",
-              "imgPath" => "/assets/images/campaign/campaign-card-page2",
-              "alt" => "貸切体験ダイビングの画像",
-              "label" => "体験ダイビング",
-              "title" => "貸切体験ダイビング",
-              "text" => "全部コミコミ(お一人様)",
-              "cancelledPrice" => "¥24,000",
-              "price" => "¥18,000",
-              "width" => "520",
-              "height" => "347"
-            ],
-            [
-              "link" => "/information.html#trial",
-              "dataType" => "2",
-              "imgPath" => "/assets/images/campaign/campaign-card-page3",
-              "alt" => "ナイトダイビングの画像",
-              "label" => "体験ダイビング",
-              "title" => "ナイトダイビング",
-              "text" => "全部コミコミ(お一人様)",
-              "cancelledPrice" => "¥10,000",
-              "price" => "¥8,000",
-              "width" => "520",
-              "height" => "347"
-            ],
-            [
-              "link" => "/information.html#fun",
-              "dataType" => "3",
-              "imgPath" => "/assets/images/campaign/campaign-card-page4",
-              "alt" => "貸切ファンダイビングの画像",
-              "label" => "ファンダイビング",
-              "title" => "貸切ファンダイビング",
-              "text" => "全部コミコミ(お一人様)",
-              "cancelledPrice" => "¥20,000",
-              "price" => "¥16,000",
-              "width" => "520",
-              "height" => "347"
-            ],
-          ];
+          <?php
           $cardType = "page";
           ?>
-          <?php get_template_part("/common/_campaign-cards", null, ["campaignCardDataAll" => $campaignCardDataAll, "cardType" => $cardType, "page" => true]) ?>
+          <?php get_template_part("/common/_campaign-cards", null, ["cardType" => $cardType, "page" => true]) ?>
         </div>
         <div class="campaign__pager">
           <?php get_template_part("/common/_pager") ?>
