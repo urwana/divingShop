@@ -25,52 +25,9 @@
           <?php get_template_part("/common/_section-title", null, ["englishTitle" => "Gallery", "japaneseTitle" => "フォト"]) ?>
         </div>
         <div class="gallery__item-container l-gallery__item-container">
-          <?php $galleryDataAll = [
-            [
-              "imagePath" => "/assets/images/about-us/gallery1",
-              "alt" => "珊瑚の海",
-              "width" => "492",
-              "height" => "746"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery2",
-              "alt" => "石垣の海",
-              "width" => "580",
-              "height" => "369"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery3",
-              "alt" => "魚たち1",
-              "width" => "580",
-              "height" => "369"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery4",
-              "alt" => "魚たち2",
-              "width" => "580",
-              "height" => "369"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery5",
-              "alt" => "魚たち3",
-              "width" => "580",
-              "height" => "369"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery6",
-              "alt" => "魚たち4",
-              "width" => "492",
-              "height" => "746"
-            ],
-            [
-              "imagePath" => "/assets/images/about-us/gallery1",
-              "alt" => "珊瑚の海",
-              "width" => "492",
-              "height" => "746"
-            ],
-          ]; ?>
-          <?php foreach ($galleryDataAll as $index => $gallery) { ?>
-            <?php get_template_part("/common/_gallery-item", null, ["gallery" => $gallery, "index" => $index]) ?>
+          <?php $fields = CFS()->get("gallery_images"); ?>
+          <?php foreach ($fields as $field) { ?>
+          <?php get_template_part("/common/_gallery-item", null, ["gallery" => $field]) ?>
           <?php }; ?>
         </div>
       </div>
