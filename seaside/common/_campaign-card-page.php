@@ -19,7 +19,10 @@
     <div class="campaign-card__top">
       <?php if (!$sideBar) { ?>
       <div class="campaign-card__label label-container">
-        <span class="label">カテゴリー</span>
+        <span class="label"><?php $categories = get_the_category();
+                              if (!empty($categories)) {
+                                echo esc_html($categories[0]->name);
+                              } ?></span>
       </div>
       <?php } ?>
       <div
@@ -28,30 +31,32 @@
     </div>
     <div class="campaign-card__bottom">
       <p class="campaign-card__explain<?php echo $sideBar ? " campaign-card__explain--sidebar" : "" ?>">
-        テキスト
+        <?php the_field("main_text"); ?>
       </p>
       <div class="campaign-card__price-container">
         <div class="price-container">
           <span
-            class="price-container__cancelled-price<?php echo $sideBar ? " price-container__cancelled-price--sidebar" : "" ?>">cancelledPrice</span>
+            class="price-container__cancelled-price<?php echo $sideBar ? " price-container__cancelled-price--sidebar" : "" ?>"><?php the_field("cancelled_price") ?></span>
           <span
-            class="price-container__price<?php echo $sideBar ? " price-container__price--sidebar" : "" ?>">price</span>
+            class="price-container__price<?php echo $sideBar ? " price-container__price--sidebar" : "" ?>"><?php the_field("price") ?></span>
         </div>
       </div>
     </div>
     <?php if (!$sideBar) { ?>
     <div class="campaign-card__bottom2">
       <div class="campaign-card__text">
-        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-      </div>
+        <?php $excerpt = get_the_excerpt();
+          echo $excerpt; ?></div>
       <div class="campaign-card__date-container">
         <p class="campaign-card__date">
-          <time datetime="2023-06-01">2023/6/1</time>
+          <time datetime="2023-06-01"><?php the_field("start_date") ?></time>
           -
-          <time datetime="2023-09-30">9/30</time>
+          <time datetime="2023-09-30"><?php the_field("end_date") ?></time>
         </p>
-        <p class="campaign-card__link">ご予約・お問い合わせはコチラ</p>
+        <?php if (get_field("has_link")) : ?>
+        <p class="campaign-card__link">
+          ご予約・お問い合わせはコチラ</p>
+        <?php endif; ?>
       </div>
       <div class="campaign-card__button">
         <div class="js-contact-button button"><span class="button__text">Contact us</span></div>

@@ -23,29 +23,6 @@
       </div>
     </div>
     <div class="swiper-wrapper key-visual__swiper-wrapper">
-      <?php $keyVisualDataAll = [
-        [
-          "imgPathPc" => "/assets/images/top/swiper/pc1.jpg",
-          "imgPathSp" => "/assets/images/top/swiper/sp1.jpg",
-          "alt" => "キービジュアル 泳ぐウミガメ",
-        ],
-        [
-          "imgPathPc" => "/assets/images/top/swiper/pc2.jpg",
-          "imgPathSp" => "/assets/images/top/swiper/sp2.jpg",
-          "alt" => "キービジュアル 海中 ウミガメとダイバー",
-        ],
-        [
-          "imgPathPc" => "/assets/images/top/swiper/pc3.jpg",
-          "imgPathSp" => "/assets/images/top/swiper/sp3.jpg",
-          "alt" => "キービジュアル 沖縄の海と空と船",
-        ],
-        [
-          "imgPathPc" => "/assets/images/top/swiper/pc4.jpg",
-          "imgPathSp" => "/assets/images/top/swiper/sp4.jpg",
-          "alt" => "キービジュアル 沖縄の海と空と船",
-        ],
-      ];
-      ?>
       <?php if (have_posts()) :
         while (have_posts()) :
           the_post(); ?>
