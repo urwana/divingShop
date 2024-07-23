@@ -46,15 +46,35 @@
         ],
       ];
       ?>
-      <?php foreach ($keyVisualDataAll as $index => $keyVisualData) { ?>
+      <?php if (have_posts()) :
+        while (have_posts()) :
+          the_post(); ?>
       <figure class="swiper-slide key-visual__swiper-slide">
         <picture>
-          <source media="(max-width: 767px)" srcset="<?php echo $keyVisualData["imgPathSp"] ?>" />
-          <img src="<?php echo get_template_directory_uri();
-                      echo $keyVisualData["imgPathPc"] ?>" alt="<?php echo $keyVisualData["alt"] ?>" />
+          <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp1") ?>" />
+          <img src="<?php the_field("top_swiper_1") ?>" alt="<?php the_field("top_swiper_alt1") ?>" />
         </picture>
       </figure>
-      <?php }; ?>
+      <figure class="swiper-slide key-visual__swiper-slide">
+        <picture>
+          <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp2") ?>" />
+          <img src="<?php the_field("top_swiper_2") ?>" alt="<?php the_field("top_swiper_alt2") ?>" />
+        </picture>
+      </figure>
+      <figure class="swiper-slide key-visual__swiper-slide">
+        <picture>
+          <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp3") ?>" />
+          <img src="<?php the_field("top_swiper_3") ?>" alt="<?php the_field("top_swiper_alt3") ?>" />
+        </picture>
+      </figure>
+      <figure class="swiper-slide key-visual__swiper-slide">
+        <picture>
+          <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp4") ?>" />
+          <img src="<?php the_field("top_swiper_4") ?>" alt="<?php the_field("top_swiper_alt4") ?>" />
+        </picture>
+      </figure>
+      <?php endwhile;
+      endif; ?>
     </div>
   </div>
 </div>
