@@ -1,29 +1,44 @@
+<?php
+$price_lists = CFS()->get('price_lists');
+?>
+<?php if (!empty($price_lists) && isset($price_lists[0]['price_lists_item'])) { ?>
 <div class="price-lists">
-  <?php $priceListDataAll = [
-    ["title" => "ライセンス講習", "id" => "licence", "items" => [
-      ["name" => "オープンウォーター", "name2" => "ダイバーコース", "price" => "¥50,000"],
-      ["name" => "アドバンスド", "name2" => "オープンウォーターコース", "price" => "¥60,000"],
-      ["name" => "レスキュー＋EFRコース", "price" => "¥70,000"],
-    ]],
-    ["title" => "体験ダイビング", "id" => "trial",  "items" => [
-      ["name" => "ビーチ体験ダイビング", "name2" => "(半日)", "price" => "¥7,000"],
-      ["name" => "ビーチ体験ダイビング", "name2" => "(1日)", "price" => "¥14,000"],
-      ["name" => "ボート体験ダイビング", "name2" => "(半日)", "price" => "¥10,000"],
-      ["name" => "ボート体験ダイビング", "name2" => "(1日)", "price" => "¥18,000"],
-    ]],
-    ["title" => "ファンダイビング", "id" => "fun", "items" => [
-      ["name" => "ビーチダイビング", "name2" => "(2ダイブ)", "price" => "¥14,000"],
-      ["name" => "ボートダイビング", "name2" => "(2ダイブ)", "price" => "¥18,000"],
-      ["name" => "スペシャルダイビング", "name2" => "(2ダイブ)", "price" => "¥24,000"],
-      ["name" => "ナイトダイビング", "name2" => "(1ダイブ)", "price" => "¥10,000"],
-    ]],
-    ["title" => "スペシャルダイビング", "id" => "special", "items" => [
-      ["name" => "貸切ダイビング", "name2" => "(2ダイブ)", "price" => "¥24,000"],
-      ["name" => "1日ダイビング", "name2" => "(3ダイブ)", "price" => "¥32,000"],
-      ["name" => "ナイトダイビング", "name2" => "(2ダイブ)", "price" => "¥14,000"],
-    ]],
-  ]; ?>
-  <?php foreach ($priceListDataAll as $key => $priceListData) { ?>
-  <?php get_template_part("/common/_price-list", null,  ["priceListData" => $priceListData]); ?>
-  <?php }; ?>
+  <?php foreach ($price_lists[0]['price_lists_item'] as $price_lists_item) { ?>
+
+  <?php
+//デバッグ用に配列の内容を表示
+// echo '<pre>';
+// var_dump($price_lists_item["price_list_body"]);
+//echo '</pre>';
+?>
+
+
+  <div class="price-lists__item">
+    <div class="price-list">
+      <div id="licence" class="price-list__title">
+        <div class="price-list__title-inner">
+          <p><?php $price_lists_item["plice_list_title"] ?></p>
+          <figure class="price-list__title-icon">
+            <img src="http://seaside.local/wp-content/themes/seaside/assets/images/price/whale.svg" alt="鯨のアイコン"
+              width="64" height="64" />
+          </figure>
+        </div>
+      </div>
+      <dl class="price-list__body">
+        <?php 
+        $price_list_body=$price_lists_item["price_list_body"];
+        foreach ($price_list_body as $price_list) { ?>
+        <div class="price-list__item">
+          <dt class="price-list__name">
+            <?php echo $price_list["price_title"] ?>
+          </dt>
+          <dd class="price-list__price"> <?php echo $price_list["price"] ?></dd>
+        </div>
+        <?php } ?>
+      </dl>
+    </div>
+  </div>
+  <?php get_template_part("/common/_price-list", null,  ["price_lists_item" => $price_lists_item]); ?>
 </div>
+<?php } ?>
+<?php }; ?>

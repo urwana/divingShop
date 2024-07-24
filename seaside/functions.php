@@ -84,7 +84,6 @@ function create_custom_post_types()
     'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
     'has_archive'          => true,  // アーカイブページを持つかどうか
     'hierarchical'         => false, // 階層型（カテゴリー）かどうか
-    'menu_position'        => null,  // 管理画面のメニュー位置
     'supports'             => array('title', 'editor', 'thumbnail') // サポートする機能（タイトル、エディタ、サムネイル）
   );
 
@@ -124,13 +123,95 @@ function create_custom_post_types()
     'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
     'has_archive'          => true,  // アーカイブページを持つかどうか
     'hierarchical'         => false, // 階層型（カテゴリー）かどうか
-    'menu_position'        => null,  // 管理画面のメニュー位置
     'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
   );
 
-  // "campaign" カスタム投稿タイプを登録
   register_post_type('campaign', $campaign_args);
 }
 
-// WordPress の初期化時にカスタム投稿タイプを登録する
 add_action('init', 'create_custom_post_types');
+
+function create_custom_taxonomies() {
+  // campaign タクソノミーのラベル設定
+  $campaignLabels = array(
+      'name'              => 'campaign types', // 一般的な名前
+      'singular_name'     => 'campaign type', // 単数形の名前
+      'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
+      'all_items'         => '全てのキャンペーンタイプ', // 全ての項目のラベル
+      'parent_item'       => '親キャンペーンタイプ', // 親項目のラベル
+      'parent_item_colon' => '親キャンペーンタイプ:', // 親項目（コロン付き）のラベル
+      'edit_item'         => 'キャンペーンタイプを編集', // 編集項目のラベル
+      'update_item'       => 'キャンペーンタイプを更新', // 更新項目のラベル
+      'add_new_item'      => '新規キャンペーンタイプを追加', // 新規追加項目のラベル
+      'new_item_name'     => '新規キャンペーンタイプ名', // 新規項目名のラベル
+      'menu_name'         => 'キャンペーンタイプ', // メニューのラベル
+  );
+
+  // campaign タクソノミーの設定
+  $campaignArgs = array(
+      'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
+      'labels'            => $campaignLabels, // 上で定義したラベルを使用
+      'show_ui'           => true, // 管理画面に表示するかどうか
+      'show_in_rest'      => true, // Gutenbergで表示有効化
+      'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
+      'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
+      'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
+      'rewrite'           => array('slug' => 'campaign'), // タクソノミーのスラッグ（URLに使用される）
+  );
+
+  // campaign タクソノミーを 'campaign' 投稿タイプに関連付け
+  register_taxonomy('campaign_taxonomy', array('campaign'), $campaignArgs);
+
+  // voice タクソノミーのラベル設定
+  $voiceLabels = array(
+      'name'              => 'voice types', // 一般的な名前
+      'singular_name'     => 'voice type', // 単数形の名前
+      'search_items'      => 'ボイスを検索', // 検索項目のラベル
+      'all_items'         => 'すべてのボイスタイプ', // 全ての項目のラベル
+      'parent_item'       => '親ボイスタイプ', // 親項目のラベル
+      'parent_item_colon' => '親ボイスタイプ:', // 親項目（コロン付き）のラベル
+      'edit_item'         => 'ボイスタイプを編集', // 編集項目のラベル
+      'update_item'       => 'ボイスタイプを更新', // 更新項目のラベル
+      'add_new_item'      => '新規ボイスタイプを追加', // 新規追加項目のラベル
+      'new_item_name'     => '新規ボイスタイプ名', // 新規項目名のラベル
+      'menu_name'         => 'ボイスタイプ', // メニューのラベル
+  );
+
+  // voice タクソノミーの設定
+  $voiceArgs = array(
+      'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
+      'labels'            => $voiceLabels, // 上で定義したラベルを使用
+      'show_ui'           => true, // 管理画面に表示するかどうか
+      'show_in_rest'      => true, // Gutenbergで表示有効化
+      'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
+      'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
+      'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
+      'rewrite'           => array('slug' => 'voice'), // タクソノミーのスラッグ（URLに使用される）
+  );
+
+  // voice タクソノミーを 'voice' 投稿タイプに関連付け
+  register_taxonomy('voice_taxonomy', array('voice'), $voiceArgs);
+}
+
+// 初期化時に create_custom_taxonomies 関数を実行
+add_action('init', 'create_custom_taxonomies', 0);
+
+function rename_default_post_type() {
+  global $wp_post_types;
+  $labels = &$wp_post_types['post']->labels;
+  $labels->name               = 'blog';
+  $labels->singular_name      = 'blog';
+  $labels->add_new            = '新規追加';
+  $labels->add_new_item       = '新しいブログを追加';
+  $labels->edit_item          = 'ブログを編集';
+  $labels->new_item           = '新しいブログ';
+  $labels->view_item          = 'ブログを表示';
+  $labels->search_items       = 'ブログを検索';
+  $labels->not_found          = 'ブログが見つかりませんでした';
+  $labels->not_found_in_trash = 'ゴミ箱にブログが見つかりませんでした';
+  $labels->all_items          = 'すべてのブログ';
+  $labels->menu_name          = 'blog';
+  $labels->name_admin_bar     = 'blog';
+}
+
+add_action('init', 'rename_default_post_type');

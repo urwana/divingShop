@@ -1,26 +1,27 @@
-<?php $priceListData = $args["priceListData"]; ?>
-<?php $priceListDataItems = $priceListData["items"]; ?>
+<?php $price_lists_item = $args["price_lists_item"]; ?>
 
 <div class="price-lists__item">
   <div class="price-list">
-    <div id="<?php echo $priceListData["id"] ?>" class="price-list__title">
+    <div id="licence" class="price-list__title">
       <div class="price-list__title-inner">
-        <p><?php echo $priceListData["title"] ?></p>
+        <p><?php $price_lists_item["plice_list_title"] ?></p>
         <figure class="price-list__title-icon">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/whale.svg" alt="鯨のアイコン" width="64"
-            height="64" />
+          <img src="http://seaside.local/wp-content/themes/seaside/assets/images/price/whale.svg" alt="鯨のアイコン"
+            width="64" height="64" />
         </figure>
       </div>
     </div>
     <dl class="price-list__body">
-      <?php foreach ($priceListDataItems as $index => $item) { ?>
+      <?php
+        $price_list_body=$price_lists_item["price_list_body"];
+        foreach ($pricelist_body as $price_list) { ?>
       <div class="price-list__item">
         <dt class="price-list__name">
-          <?php echo $item["name"] ?><br class="u-mobile" /><?php echo isset($item["name2"]) ? $item["name2"] : ""; ?>
+          <?php $price_list["price_title"] ?>
         </dt>
-        <dd class="price-list__price"><?php echo $item["price"] ?></dd>
+        <dd class="price-list__price"> <?php $price_list["price"] ?></dd>
       </div>
-      <?php }; ?>
+      <?php } ?>
     </dl>
   </div>
 </div>
