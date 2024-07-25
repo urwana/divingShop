@@ -2,7 +2,7 @@
 <?php $taxonomy = $args["taxonomy"]; ?>
 
 <div class="tab-card">
-  <a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>" class="tab-card__item current">ALL</a>
+  <a href="<?php echo esc_url(get_post_type_archive_link($post_type)); ?>" class="tab-card__item current">ALL</a>
   <?php
   //$taxonomy = "campaign_taxonomy";
   if (taxonomy_exists($taxonomy)) {

@@ -227,3 +227,14 @@ function custom_rewrite_rules()
   );
 }
 add_action('init', 'custom_rewrite_rules');
+
+// TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
+function voice_rewrite_rules()
+{
+  add_rewrite_rule(
+    '^voice/([^/]*)/?',
+    'index.php?post_type=campaign&term=$matches[1]',
+    'top'
+  );
+}
+add_action('init', 'voice_rewrite_rules');
