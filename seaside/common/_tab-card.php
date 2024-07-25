@@ -1,6 +1,27 @@
-<ul class="tab-card">
-  <a href="" class="tab-card__item current">ALL</a>
-  <a href="" class="tab-card__item">ライセンス講習</a>
-  <a href="" class="tab-card__item">ファンダイビング</a>
-  <a href="" class="tab-card__item">体験ダイビング</a>
-</ul>
+<div class="tab-card">
+  <a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>" class="tab-card__item current">ALL</a>
+  <?php
+  $taxonomy = "campaign_taxonomy";
+  if (taxonomy_exists($taxonomy)) {
+    $terms = get_terms(
+      [
+        'taxonomy' => $taxonomy,
+        'hide_empty' => false,
+      ]
+    );
+
+    if (is_wp_error($terms)) {
+      echo '<div>タブの取得に失敗しました: ' . $terms->get_error_message() . '</div>';
+    } elseif (empty($terms)) {
+      echo '<div>タブがありません。</div>';
+    } else {
+      foreach ($terms as $term) {
+        $term_link = add_query_arg('term', $term->slug, get_post_type_archive_link('campaign'));
+        echo '<a href="' . esc_url($term_link) . '" class="tab-card__item">' . esc_html($term->name) . '</a>'; // タームのリンク
+      }
+    }
+  } else {
+    echo '<li>指定されたタクソノミーが存在しません。</li>';
+  }
+  ?>
+</div>

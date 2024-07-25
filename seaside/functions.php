@@ -134,7 +134,7 @@ add_action('init', 'create_custom_post_types');
 function create_custom_taxonomies() {
   // campaign タクソノミーのラベル設定
   $campaignLabels = array(
-      'name'              => 'campaign types', // 一般的な名前
+    'name'              => 'campaign タクソノミー', // 一般的な名前
       'singular_name'     => 'campaign type', // 単数形の名前
       'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
       'all_items'         => '全てのキャンペーンタクソノミー', // 全ての項目のラベル
@@ -156,7 +156,7 @@ function create_custom_taxonomies() {
       'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
       'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
       'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
-      'rewrite'           => array('slug' => 'campaign'), // タクソノミーのスラッグ（URLに使用される）
+    'rewrite'           => array('slug' => 'campaign_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
 
   // campaign タクソノミーを 'campaign' 投稿タイプに関連付け
@@ -186,7 +186,7 @@ function create_custom_taxonomies() {
       'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
       'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
       'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
-      'rewrite'           => array('slug' => 'voice'), // タクソノミーのスラッグ（URLに使用される）
+    'rewrite'           => array('slug' => 'voice_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
 
   // voice タクソノミーを 'voice' 投稿タイプに関連付け
@@ -216,3 +216,14 @@ function rename_default_post_type() {
 }
 
 add_action('init', 'rename_default_post_type');
+
+// リライトルールを追加
+function custom_rewrite_rules()
+{
+  add_rewrite_rule(
+    '^campaign/([^/]*)/?',
+    'index.php?post_type=campaign&term=$matches[1]',
+    'top'
+  );
+}
+add_action('init', 'custom_rewrite_rules');
