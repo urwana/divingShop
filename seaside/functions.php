@@ -137,14 +137,14 @@ function create_custom_taxonomies() {
       'name'              => 'campaign types', // 一般的な名前
       'singular_name'     => 'campaign type', // 単数形の名前
       'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
-      'all_items'         => '全てのキャンペーンタイプ', // 全ての項目のラベル
-      'parent_item'       => '親キャンペーンタイプ', // 親項目のラベル
-      'parent_item_colon' => '親キャンペーンタイプ:', // 親項目（コロン付き）のラベル
-      'edit_item'         => 'キャンペーンタイプを編集', // 編集項目のラベル
-      'update_item'       => 'キャンペーンタイプを更新', // 更新項目のラベル
-      'add_new_item'      => '新規キャンペーンタイプを追加', // 新規追加項目のラベル
-      'new_item_name'     => '新規キャンペーンタイプ名', // 新規項目名のラベル
-      'menu_name'         => 'キャンペーンタイプ', // メニューのラベル
+      'all_items'         => '全てのキャンペーンタクソノミー', // 全ての項目のラベル
+      'parent_item'       => '親キャンペーンタクソノミー', // 親項目のラベル
+      'parent_item_colon' => '親キャンペーンタクソノミー:', // 親項目（コロン付き）のラベル
+      'edit_item'         => 'キャンペーンタクソノミーを編集', // 編集項目のラベル
+      'update_item'       => 'キャンペーンタクソノミーを更新', // 更新項目のラベル
+      'add_new_item'      => '新規キャンペーンタクソノミーを追加', // 新規追加項目のラベル
+      'new_item_name'     => '新規キャンペーンタクソノミー名', // 新規項目名のラベル
+      'menu_name'         => 'キャンペーンタクソノミー', // メニューのラベル
   );
 
   // campaign タクソノミーの設定
@@ -167,14 +167,14 @@ function create_custom_taxonomies() {
       'name'              => 'voice types', // 一般的な名前
       'singular_name'     => 'voice type', // 単数形の名前
       'search_items'      => 'ボイスを検索', // 検索項目のラベル
-      'all_items'         => 'すべてのボイスタイプ', // 全ての項目のラベル
-      'parent_item'       => '親ボイスタイプ', // 親項目のラベル
-      'parent_item_colon' => '親ボイスタイプ:', // 親項目（コロン付き）のラベル
-      'edit_item'         => 'ボイスタイプを編集', // 編集項目のラベル
-      'update_item'       => 'ボイスタイプを更新', // 更新項目のラベル
-      'add_new_item'      => '新規ボイスタイプを追加', // 新規追加項目のラベル
-      'new_item_name'     => '新規ボイスタイプ名', // 新規項目名のラベル
-      'menu_name'         => 'ボイスタイプ', // メニューのラベル
+      'all_items'         => 'すべてのボイスタクソノミー', // 全ての項目のラベル
+      'parent_item'       => '親ボイスタクソノミー', // 親項目のラベル
+      'parent_item_colon' => '親ボイスタクソノミー:', // 親項目（コロン付き）のラベル
+      'edit_item'         => 'ボイスタクソノミーを編集', // 編集項目のラベル
+      'update_item'       => 'ボイスタクソノミーを更新', // 更新項目のラベル
+      'add_new_item'      => '新規ボイスタクソノミーを追加', // 新規追加項目のラベル
+      'new_item_name'     => '新規ボイスタクソノミー名', // 新規項目名のラベル
+      'menu_name'         => 'ボイスタクソノミー', // メニューのラベル
   );
 
   // voice タクソノミーの設定
@@ -196,6 +196,7 @@ function create_custom_taxonomies() {
 // 初期化時に create_custom_taxonomies 関数を実行
 add_action('init', 'create_custom_taxonomies', 0);
 
+// 管理画面の投稿名を blog に変える
 function rename_default_post_type() {
   global $wp_post_types;
   $labels = &$wp_post_types['post']->labels;

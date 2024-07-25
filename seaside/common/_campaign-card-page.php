@@ -19,10 +19,15 @@
     <div class="campaign-card__top">
       <?php if (!$sideBar) { ?>
       <div class="campaign-card__label label-container">
-        <span class="label"><?php $categories = get_the_category();
-                              if (!empty($categories)) {
-                                echo esc_html($categories[0]->name);
-                              } ?></span>
+        <span class="label">
+          <?php 
+            $post_id = get_the_ID();
+            $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
+            if ($campaign_terms && !is_wp_error($campaign_terms)) {
+                foreach ($campaign_terms as $term) {
+                    echo esc_html($term->name) . ' ';
+                }
+            }?>
       </div>
       <?php } ?>
       <div
