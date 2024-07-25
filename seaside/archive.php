@@ -16,7 +16,7 @@
     <div class="voice">
       <div class="voice__inner inner">
         <div class="voice__tab-contents">
-          <?php get_template_part("/common/_tab-card") ?>
+          <?php get_template_part("/common/_tab-card", null, ["post_type" => "voice", "taxonomy" => "voice_taxonomy"]) ?>
           <div class="voice__cards">
             <?php get_template_part("/common/_voice-cards") ?>
           </div>

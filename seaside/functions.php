@@ -217,7 +217,7 @@ function rename_default_post_type() {
 
 add_action('init', 'rename_default_post_type');
 
-// リライトルールを追加
+// TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
 function custom_rewrite_rules()
 {
   add_rewrite_rule(

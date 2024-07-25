@@ -5,7 +5,16 @@
         <div class="voice-card__meta">
           <div class="voice-card__person">人</div>
           <div class="voice-card__label">
-            <span class="label">ラベル</span>
+            <span class="label">
+              <?php
+              $post_id = get_the_ID();
+              $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
+              if ($campaign_terms && !is_wp_error($campaign_terms)) {
+                foreach ($campaign_terms as $term) {
+                  echo esc_html($term->name) . ' ';
+                }
+              } ?>
+            </span>
           </div>
         </div>
         <div class="voice-card__title">

@@ -7,13 +7,10 @@
     <div class="campaign">
       <div class="campaign__inner inner">
         <div class="campaign__tab">
-          <?php get_template_part("/common/_tab-card") ?>
+          <?php get_template_part("/common/_tab-card", null, ["post_type" => "campaign", "taxonomy" => "campaign_taxonomy"]) ?>
         </div>
         <div class="campaign__cards">
-          <?php
-          $cardType = "page";
-          ?>
-          <?php get_template_part("/common/_campaign-cards", null, ["cardType" => $cardType, "page" => true]) ?>
+          <?php get_template_part("/common/_campaign-cards", null, ["page" => true]) ?>
         </div>
         <div class="campaign__pager">
           <?php get_template_part("/common/_pager") ?>
