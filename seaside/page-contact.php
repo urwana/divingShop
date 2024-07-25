@@ -10,7 +10,7 @@
   <section class="contact l-contact">
     <div class="contact__inner inner">
       <div class="contact__error-message">必須項目が入力されていません。<br class="u-mobile">入力してください。</div>
-      <?php get_template_part("./common/_contact-form") ?>
+      <?php get_template_part("/common/_contact-form") ?>
     </div>
   </section>
 </main>

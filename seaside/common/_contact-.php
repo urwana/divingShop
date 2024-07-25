@@ -1,0 +1,62 @@
+<form action="" method="post" id="">
+  <div class="contact-form">
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">お名前 <?php get_template_part("./_require-label") ?></dt>
+      <dd class="contact-form__item error">
+        <input type="text" name="company" value="" placeholder="沖縄　太郎" />
+      </dd>
+    </dl>
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">メールアドレス <?php get_template_part("./_require-label") ?></dt>
+      <dd class="contact-form__item">
+        <input type="email" name="mail_address" value="" class="validate[]" placeholder="aaa000@ggmail.com" />
+      </dd>
+    </dl>
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">電話番号 <?php get_template_part("./_require-label") ?></dt>
+      <dd class="contact-form__item">
+        <input type="tel" name="tel" value="" class="validate[]" placeholder="000-0000-0000" />
+      </dd>
+    </dl>
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">お問合せ項目 <?php get_template_part("./_require-label") ?></dt>
+      <dd class="contact-form__item">
+        <label class="contact-form__label"><input type="radio" name="target" value="ダイビング講習について" checked /><span
+            class="contact-form__label-text">ダイビング講習について</span></label>
+        <label class="contact-form__label"><input type="radio" name="target" value="ファンデイビングについて" /><span
+            class="contact-form__label-text">ファンデイビングについて</span></label>
+        <label class="contact-form__label"><input type="radio" name="target" value="体験ダイビングについて" /><span
+            class="contact-form__label-text">体験ダイビングについて</span></label>
+      </dd>
+    </dl>
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">キャンペーン</dt>
+      <dd class="contact-form__item">
+        <div class="select-box-container">
+          <select name="hoge" class="select-box">
+            <option value="">キャンペーン内容を選択</option>
+            <option value="セレクト1">セレクト1</option>
+            <option value="セレクト2">セレクト2</option>
+          </select>
+        </div>
+      </dd>
+    </dl>
+    <dl class="contact-form__row">
+      <dt class="contact-form__title">お問合せ内容 <?php get_template_part("/common/_require-label") ?></dt>
+      <dd class="contact-form__item">
+        <textarea name="contents"></textarea>
+      </dd>
+    </dl>
+    <div class="contact-form__privacy">
+      <div class="contact-form__item contact-form__item--privacy">
+        <input type="checkbox" id="privacy-check" 　name="privacy-check" class="privacy-check" />
+      </div>
+      <label for="privacy-check" class="contact-form__explain">個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</label>
+    </div>
+    <div class="contact-form__button">
+      <button type="button" class="button button--contact">
+        <span class="button__text">Send</span>
+      </button>
+    </div>
+  </div>
+</form>
