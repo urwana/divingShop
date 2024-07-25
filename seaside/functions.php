@@ -53,7 +53,7 @@ function create_custom_post_types()
 {
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
-    'name'                  => 'voices', // 投稿タイプの名前（複数形）
+    'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
     'singular_name'         => 'voice',  // 投稿タイプの名前（単数形）
     'menu_name'             => 'voices',  // 管理画面メニューの名前
     'name_admin_bar'        => 'voice',   // 管理バーに表示される名前 = 省略可能
@@ -92,7 +92,7 @@ function create_custom_post_types()
 
   // "campaign" カスタム投稿タイプのラベル設定
   $campaign_labels = array(
-    'name'                  => 'campaigns', // 投稿タイプの名前（複数形）
+    'name'                  => 'キャンペーン', // 投稿タイプの名前（複数形）
     'singular_name'         => 'campaign', // 投稿タイプの名前（単数形）
     'menu_name'             => 'campaigns', // 管理画面メニューの名前
     'name_admin_bar'        => 'campaign', // 管理バーに表示される名前 = 省略可能
