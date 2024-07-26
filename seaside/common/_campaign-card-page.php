@@ -20,14 +20,14 @@
       <?php if (!$sideBar) { ?>
       <div class="campaign-card__label label-container">
         <span class="label">
-          <?php 
+          <?php
             $post_id = get_the_ID();
             $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
             if ($campaign_terms && !is_wp_error($campaign_terms)) {
-                foreach ($campaign_terms as $term) {
-                    echo esc_html($term->name) . ' ';
-                }
-            }?>
+              foreach ($campaign_terms as $term) {
+                echo esc_html($term->name) . ' ';
+              }
+            } ?>
       </div>
       <?php } ?>
       <div
@@ -41,9 +41,9 @@
       <div class="campaign-card__price-container">
         <div class="price-container">
           <span
-            class="price-container__cancelled-price<?php echo $sideBar ? " price-container__cancelled-price--sidebar" : "" ?>"><?php the_field("cancelled_price") ?></span>
+            class="price-container__cancelled-price<?php echo $sideBar ? " price-container__cancelled-price--sidebar" : "" ?>">¥<?php the_field("cancelled_price") ?></span>
           <span
-            class="price-container__price<?php echo $sideBar ? " price-container__price--sidebar" : "" ?>"><?php the_field("price") ?></span>
+            class="price-container__price<?php echo $sideBar ? " price-container__price--sidebar" : "" ?>">¥<?php the_field("price") ?></span>
         </div>
       </div>
     </div>

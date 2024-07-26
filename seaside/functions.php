@@ -216,23 +216,23 @@ function rename_default_post_type() {
 add_action('init', 'rename_default_post_type');
 
 // TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
-function custom_rewrite_rules()
-{
-  add_rewrite_rule(
-    '^campaign/([^/]*)/?',
-    'index.php?post_type=campaign&term=$matches[1]',
-    'top'
-  );
-}
-add_action('init', 'custom_rewrite_rules');
+// function custom_rewrite_rules()
+// {
+//   add_rewrite_rule(
+//     '^campaign/([^/]*)/?',
+//     'index.php?post_type=campaign&term=$matches[1]',
+//     'top'
+//   );
+// }
+// add_action('init', 'custom_rewrite_rules');
 
 // TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
-function voice_rewrite_rules()
-{
-  add_rewrite_rule(
-    '^voice/([^/]*)/?',
-    'index.php?post_type=campaign&term=$matches[1]',
-    'top'
-  );
-}
-add_action('init', 'voice_rewrite_rules');
+// function voice_rewrite_rules()
+// {
+//   add_rewrite_rule(
+//     '^voice/([^/]*)/?',
+//     'index.php?post_type=campaign&term=$matches[1]',
+//     'top'
+//   );
+// }
+// add_action('init', 'voice_rewrite_rules');

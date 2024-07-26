@@ -1,28 +1,27 @@
 <div class="voice-cards">
 
   <?php
-  $term_name = get_query_var('term');
   $taxonomy = 'voice_taxonomy';
-  if ($term_name) {
-    $term = get_term_by('name', urldecode($term_name), $taxonomy);
-    $term_slug = $term ? $term->slug : '';
-  } else {
-    $term_slug = '';
+  $term_slug = get_query_var('term'); // 変更3: 現在のタームスラッグを取得
+
+  $tax_query = [];
+  if ($term_slug) {
+    $tax_query = [
+      [
+        'taxonomy' => $taxonomy,
+        'field'    => 'slug',
+        'terms'    => $term_slug,
+      ],
+    ];
   }
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $tax_query = [
-    [
-      'taxonomy' => $taxonomy,
-      'field'    => 'slug',
-      'terms'    => $term_slug ? $term_slug : [],
-    ],
-  ];
+
   $voice_args = [
-    "post_type" => "voice",
+    'post_type' => 'voice', // または 'voice'
     'posts_per_page' => 6,
-    'paged' => $paged,
-    'tax_query' => $term_slug ? $tax_query : ""
+    'tax_query' => $tax_query, // 変更5: タクソノミークエリを動的に設定
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1, // 変更6: ページネーション対応
   ];
+
   ?>
   <?php
   $the_voice_query = new WP_Query($voice_args);
@@ -32,6 +31,9 @@
   <div class="voice-cards__item">
     <?php get_template_part("/common/_voice-card") ?>
   </div>
-  <?php endwhile;
-  endif; ?>
+  <?php endwhile; ?>
+  <?php else : ?>
+  <p>投稿が見つかりませんでした。</p>
+  <?php endif; ?>
+  <?php wp_reset_postdata(); ?>
 </div>

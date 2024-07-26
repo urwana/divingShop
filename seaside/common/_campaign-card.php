@@ -34,8 +34,8 @@
       </p>
       <div class="campaign-card__price-container">
         <div class="price-container">
-          <span class="price-container__cancelled-price"><?php the_field("cancelled_price") ?></span>
-          <span class="price-container__price"><?php the_field("price") ?></span>
+          <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
+          <span class="price-container__price">¥<?php the_field("price") ?></span>
         </div>
       </div>
     </div>
