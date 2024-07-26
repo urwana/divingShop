@@ -19,4 +19,4 @@ jobs:
 
       - name: Copy files to remote server
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.REMOTE_PORT }}" dist/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.REMOTE_PORT }}" seaside/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
