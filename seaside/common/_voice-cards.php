@@ -9,6 +9,7 @@
   } else {
     $term_slug = '';
   }
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $tax_query = [
     [
       'taxonomy' => $taxonomy,
@@ -19,9 +20,9 @@
   $voice_args = [
     "post_type" => "voice",
     'posts_per_page' => 6,
+    'paged' => $paged,
     'tax_query' => $term_slug ? $tax_query : ""
   ];
-  $the_voice_query = new WP_Query($args);
   ?>
   <?php
   $the_voice_query = new WP_Query($voice_args);

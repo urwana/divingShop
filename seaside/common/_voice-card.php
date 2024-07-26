@@ -3,7 +3,7 @@
     <div class="voice-card__head">
       <div class="voice-card__info">
         <div class="voice-card__meta">
-          <div class="voice-card__person"><?php echo get_field("person") ?></div>
+          <div class="voice-card__person"><?php echo get_field("person"); ?></div>
           <div class="voice-card__label">
             <span class="label">
               <?php

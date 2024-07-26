@@ -47,16 +47,14 @@ function my_custom_body_classes($classes)
 }
 add_filter('body_class', 'my_custom_body_classes');
 
-//////////
-
 function create_custom_post_types()
 {
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
     'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
-    'singular_name'         => 'voice',  // 投稿タイプの名前（単数形）
-    'menu_name'             => 'voices',  // 管理画面メニューの名前
-    'name_admin_bar'        => 'voice',   // 管理バーに表示される名前 = 省略可能
+    'singular_name'         => 'お客様の声',  // 投稿タイプの名前（単数形）
+    'menu_name'             => 'お客様の声',  // 管理画面メニューの名前
+    'name_admin_bar'        => 'お客様の声',   // 管理バーに表示される名前 = 省略可能
     'add_new'               => '新規 voice 投稿を追加', // 新規追加リンクのテキスト
     'add_new_item'          => '新規 voice 投稿', // 新規投稿追加ページのタイトル
     'new_item'              => 'New voice', // 新規投稿ページのタイトル
@@ -93,9 +91,9 @@ function create_custom_post_types()
   // "campaign" カスタム投稿タイプのラベル設定
   $campaign_labels = array(
     'name'                  => 'キャンペーン', // 投稿タイプの名前（複数形）
-    'singular_name'         => 'campaign', // 投稿タイプの名前（単数形）
-    'menu_name'             => 'campaigns', // 管理画面メニューの名前
-    'name_admin_bar'        => 'campaign', // 管理バーに表示される名前 = 省略可能
+    'singular_name'         => 'キャンペーン', // 投稿タイプの名前（単数形）
+    'menu_name'             => 'キャンペーン', // 管理画面メニューの名前
+    'name_admin_bar'        => 'キャンペーン', // 管理バーに表示される名前 = 省略可能
     'add_new'               => '新規 campaign の投稿を追加', // 新規追加リンクのテキスト
     'add_new_item'          => '新規 campaign の投稿', // 新規投稿追加ページのタイトル
     'new_item'              => 'New campaign', // 新規投稿ページのタイトル
@@ -200,7 +198,7 @@ add_action('init', 'create_custom_taxonomies', 0);
 function rename_default_post_type() {
   global $wp_post_types;
   $labels = &$wp_post_types['post']->labels;
-  $labels->name               = 'blog';
+  $labels->name               = 'ブログ';
   $labels->singular_name      = 'blog';
   $labels->add_new            = '新規追加';
   $labels->add_new_item       = '新しいブログを追加';
@@ -211,8 +209,8 @@ function rename_default_post_type() {
   $labels->not_found          = 'ブログが見つかりませんでした';
   $labels->not_found_in_trash = 'ゴミ箱にブログが見つかりませんでした';
   $labels->all_items          = 'すべてのブログ';
-  $labels->menu_name          = 'blog';
-  $labels->name_admin_bar     = 'blog';
+  $labels->menu_name          = 'ブログ';
+  $labels->name_admin_bar     = 'ブログ';
 }
 
 add_action('init', 'rename_default_post_type');
