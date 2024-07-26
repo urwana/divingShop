@@ -16,22 +16,21 @@
     <div class="campaign-card__top">
       <div class="campaign-card__label label-container">
         <span class="label">
-          <?php 
-            $post_id = get_the_ID();
-            $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
-            if ($campaign_terms && !is_wp_error($campaign_terms)) {
-                foreach ($campaign_terms as $term) {
-                    echo esc_html($term->name) . ' ';
-                }
-            }?>
+          <?php
+          $post_id = get_the_ID();
+          $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
+          if ($campaign_terms && !is_wp_error($campaign_terms)) {
+            foreach ($campaign_terms as $term) {
+              echo esc_html($term->name) . ' ';
+            }
+          } ?>
         </span>
       </div>
       <div class="campaign-card__title"><?php the_title(); ?></div>
     </div>
     <div class="campaign-card__bottom">
       <p class="campaign-card__explain">
-        <?php $excerpt = get_the_excerpt();
-        echo $excerpt; ?>
+        <?php the_field("main_text"); ?>
       </p>
       <div class="campaign-card__price-container">
         <div class="price-container">
