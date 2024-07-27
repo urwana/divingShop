@@ -18,7 +18,7 @@
         </picture>
         </figure>
         <div class="voice-card-sidebar__person">
-          人
+          <?php echo get_field("person"); ?>
         </div>
         <div class="voice-card-sidebar__title">
           <div><?php the_title() ?></div>

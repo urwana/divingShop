@@ -3215,8 +3215,10 @@ body {
 }
 
 .voice-card-sidebar {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 	margin-left: auto;
 	margin-right: auto;
+	padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .voice-card-sidebar__person {
@@ -4629,6 +4631,7 @@ html {
 
 .voice-card-sidebar {
 	padding: 0;
+	padding: 0.9375rem 1.5rem 1.5rem 1.5rem;
 }
 
 .voice-card-sidebar__meta {
