@@ -257,6 +257,7 @@ body {
 .blog__detail-the-contents img {
 	-o-object-fit: cover;
 	height: auto;
+	margin-top: 2.5rem;
 	object-fit: cover;
 	width: 100%;
 }
