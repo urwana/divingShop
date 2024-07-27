@@ -1389,13 +1389,15 @@ body {
 	width: 100%;
 }
 
+.wpcf7-list-item {
+	margin-left: 0;
+}
+
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid,
 .contact-form__item .wpcf7-not-valid {
 	background-color: rgba(201, 72, 0, 0.2);
 	border: solid 1px #c94800;
 }
-
-/* デフォルトのplaceholderのスタイル */
 
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::-moz-placeholder,
 .contact-form__item .wpcf7-not-valid::-moz-placeholder {
@@ -1406,8 +1408,6 @@ body {
 .contact-form__item .wpcf7-not-valid::placeholder {
 	color: #fff;
 }
-
-/* ベンダープレフィックス付きのplaceholderのスタイル */
 
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::-webkit-input-placeholder,
 .contact-form__item .wpcf7-not-valid::-webkit-input-placeholder {
@@ -1429,23 +1429,13 @@ body {
 	color: #fff;
 }
 
-/* テキスト入力フィールドのエラースタイル */
-
-/* テキストエリアのエラースタイル */
-
-/* チェックボックスのエラースタイル */
-
 .contact-form__item .wpcf7-form-control.wpcf7-checkbox.wpcf7-not-valid {
 	outline: 2px solid #c94800;
 }
 
-/* ラジオボタンのエラースタイル */
-
 .contact-form__item .wpcf7-form-control.wpcf7-radio.wpcf7-not-valid {
 	outline: 2px solid #c94800;
 }
-
-/* セレクトボックスのエラースタイル */
 
 .wpcf7-form-control.wpcf7-select.wpcf7-not-valid {
 	background-color: #ffe6e6;
@@ -2875,7 +2865,7 @@ span.wpcf7-spinner {
 
 .submit__text {
 	color: #fff;
-	left: 50%;
+	left: 36%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
