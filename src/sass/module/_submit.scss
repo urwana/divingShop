@@ -1,0 +1,144 @@
+@use "global" as *;
+
+.submit{
+  position: relative;
+
+}
+
+.submit > input {
+  position: relative;
+  z-index: 1;
+  background-color: $green-accent;
+  border: 1px solid $green-accent;
+  color: $white;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  display: inline-block;
+  font-family: $english-font;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: 1;
+  padding: rem(19) rem(112) rem(20) rem(56);
+  cursor: pointer;
+  margin: 0 0 rem(6) 0;
+}
+
+// .button--reverse {
+//   background-color: $white;
+//   border: 1px solid $white;
+//   color: $green-accent;
+//   padding: rem(19) rem(96) rem(20) rem(39);
+// }
+
+// .button--contact {
+// }
+
+// 下の四角
+.submit::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: rem(4);
+  left: rem(4);
+  border: 1px solid $green-accent;
+  z-index: 1;
+}
+
+// 下の四角
+.submit--reverse::before {
+  border: 1px solid $white;
+}
+
+// アニメ用 background
+.submit::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: $white;
+  border: 1px solid $white;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: 1;
+}
+
+// アニメ用 background
+// .button--reverse::after {
+//   background: $green-accent;
+//   border: 1px solid $green-accent;
+//   z-index: 1;
+// }
+
+// hover 時
+.submit:hover {
+  color: $green-accent;
+  background-color: $white;
+}
+
+// hover 時
+// .submit--reverse:hover {
+//   color: $white;
+//   background-color: $green-accent;
+// }
+
+.submit:hover::after {
+  transform: scale(1, 1);
+}
+
+// .button__text {
+//   position: relative;
+//   z-index: 2;
+// }
+
+.button__text::before {
+  position: absolute;
+  content: "";
+  width: rem(12);
+  height: rem(1);
+  top: calc(50% - rem(3));
+  right: calc(-1 * rem(47.5));
+  transform: rotate(30deg);
+  background-color: $white;
+  z-index: 2;
+}
+
+// .button__text::before {
+//   background-color: $green-accent;
+//   right: calc(-1 * rem(55.5));
+// }
+
+
+// .button--reverse .button__text::before {
+//   background-color: $green-accent;
+//   right: calc(-1 * rem(55.5));
+// }
+
+// .button:hover .button__text::before,
+// .button:hover .button__text::after {
+//   background-color: $green-accent;
+//   z-index: 2;
+// }
+
+// .button--reverse:hover .button__text::before,
+// .button--reverse:hover .button__text::after {
+//   background-color: $white;
+//   z-index: 2;
+// }
+
+// .button__text::after {
+//   position: absolute;
+//   content: "";
+//   width: rem(40);
+//   height: rem(1);
+//   top: calc(50% + rem(1));
+//   right: calc(-1 * rem(48));
+//   background: $white;
+// }
+
+// .button--reverse .button__text::after {
+//   background: $green-accent;
+//   right: calc(-1 * rem(56));
+// }
