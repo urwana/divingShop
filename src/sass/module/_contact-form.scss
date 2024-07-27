@@ -97,6 +97,12 @@
   margin-left: 0;
 }
 
+.wpcf7-list-item >label {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
 %errorStyle {
   border: solid 1px #c94800;
   background-color: rgb(201 72 0 / 0.2);

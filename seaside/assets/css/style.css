@@ -1393,6 +1393,12 @@ body {
 	margin-left: 0;
 }
 
+.wpcf7-list-item > label {
+	align-items: center;
+	display: flex;
+	gap: 1.25rem;
+}
+
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid,
 .contact-form__item .wpcf7-not-valid {
 	background-color: rgba(201, 72, 0, 0.2);
