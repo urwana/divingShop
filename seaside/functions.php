@@ -201,7 +201,7 @@ function rename_default_post_type()
   global $wp_post_types;
   $labels = &$wp_post_types['post']->labels;
   $labels->name               = 'ブログ';
-  $labels->singular_name      = 'blog';
+  $labels->singular_name      = 'ブログ';
   $labels->add_new            = '新規追加';
   $labels->add_new_item       = '新しいブログを追加';
   $labels->edit_item          = 'ブログを編集';
