@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 <main>
   <div class="error-404">
-    <?php $breadcrumbsData = ["white" => true, "list" => [
-      ["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/404.html"]
-    ]]; ?> <?php get_template_part("./common/_breadcrumbs", ["breadcrumbsData" => $breadcrumbsData]) ?>
+    <?php get_template_part("/common/_breadcrumbs") ?>
     <div class="error-404__inner inner">
       <div class="error-404__main-text">404</div>
       <div class="error-404__sub-text">
