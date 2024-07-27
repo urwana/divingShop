@@ -9,7 +9,8 @@
   <?php get_template_part("/common/_breadcrumbs") ?>
   <section class="contact l-contact">
     <div class="contact__inner inner">
-      <div class="contact__error-message">必須項目が入力されていません。<br class="u-mobile">入力してください。</div>
+      <div class="js-error-message contact__error-message error-message-hidden">必須項目が入力されていません。<br
+          class="u-mobile">入力してください。</div>
       <?php get_template_part("/common/_contact-form") ?>
     </div>
   </section>

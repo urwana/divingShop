@@ -3,7 +3,7 @@
   <div class="sidebar-campaign__cards">
     <?php get_template_part("/common/_campaign-cards", null, ["page" => false, "sideBar" => true]) ?>
     <div class="sidebar-campaign__button">
-      <a href="/blog" class="button"><span class="button__text">View more</span>
+      <a href="/seaside/blog" class="button"><span class="button__text">View more</span>
       </a>
     </div>
   </div>

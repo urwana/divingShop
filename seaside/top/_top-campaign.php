@@ -11,7 +11,7 @@
         <?php get_template_part("/common/_swiper-campaign") ?>
       </div>
       <div class="top-campaign__button">
-        <a href="/campaign" class="button"><span class="button__text">View more</span></a>
+        <a href="/seaside/campaign" class="button"><span class="button__text">View more</span></a>
       </div>
     </div>
   </div>

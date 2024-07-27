@@ -2,12 +2,12 @@
 <div class="about">
   <div class="about__inner inner <?php echo $top ? "" : "about__inner--fish about__inner--page" ?>">
     <?php if ($top) { ?>
-    <div class="about__title">
-      <div class="section-title">
-        <p class="section-title__word">About us</p>
-        <h2 class="section-title__japan">私たちについて</h2>
+      <div class="about__title">
+        <div class="section-title">
+          <p class="section-title__word">About us</p>
+          <h2 class="section-title__japan">私たちについて</h2>
+        </div>
       </div>
-    </div>
     <?php } ?>
     <div class="about__image-container<?php echo $top ? "" : " about__image-container--page" ?>">
       <figure class="about__image-left">
@@ -34,9 +34,9 @@
           ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
         </div>
         <?php if ($top) { ?>
-        <div class="about__button">
-          <a href="/about-us" class="button"><span class="button__text">View more</span></a>
-        </div>
+          <div class="about__button">
+            <a href="/seaside/about-us" class="button"><span class="button__text">View more</span></a>
+          </div>
         <?php } ?>
       </div>
     </div>

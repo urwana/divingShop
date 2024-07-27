@@ -129,31 +129,32 @@ function create_custom_post_types()
 
 add_action('init', 'create_custom_post_types');
 
-function create_custom_taxonomies() {
+function create_custom_taxonomies()
+{
   // campaign タクソノミーのラベル設定
   $campaignLabels = array(
     'name'              => 'campaign タクソノミー', // 一般的な名前
-      'singular_name'     => 'campaign type', // 単数形の名前
-      'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
-      'all_items'         => '全てのキャンペーンタクソノミー', // 全ての項目のラベル
-      'parent_item'       => '親キャンペーンタクソノミー', // 親項目のラベル
-      'parent_item_colon' => '親キャンペーンタクソノミー:', // 親項目（コロン付き）のラベル
-      'edit_item'         => 'キャンペーンタクソノミーを編集', // 編集項目のラベル
-      'update_item'       => 'キャンペーンタクソノミーを更新', // 更新項目のラベル
-      'add_new_item'      => '新規キャンペーンタクソノミーを追加', // 新規追加項目のラベル
-      'new_item_name'     => '新規キャンペーンタクソノミー名', // 新規項目名のラベル
-      'menu_name'         => 'キャンペーンタクソノミー', // メニューのラベル
+    'singular_name'     => 'campaign type', // 単数形の名前
+    'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
+    'all_items'         => '全てのキャンペーンタクソノミー', // 全ての項目のラベル
+    'parent_item'       => '親キャンペーンタクソノミー', // 親項目のラベル
+    'parent_item_colon' => '親キャンペーンタクソノミー:', // 親項目（コロン付き）のラベル
+    'edit_item'         => 'キャンペーンタクソノミーを編集', // 編集項目のラベル
+    'update_item'       => 'キャンペーンタクソノミーを更新', // 更新項目のラベル
+    'add_new_item'      => '新規キャンペーンタクソノミーを追加', // 新規追加項目のラベル
+    'new_item_name'     => '新規キャンペーンタクソノミー名', // 新規項目名のラベル
+    'menu_name'         => 'キャンペーンタクソノミー', // メニューのラベル
   );
 
   // campaign タクソノミーの設定
   $campaignArgs = array(
-      'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
-      'labels'            => $campaignLabels, // 上で定義したラベルを使用
-      'show_ui'           => true, // 管理画面に表示するかどうか
-      'show_in_rest'      => true, // Gutenbergで表示有効化
-      'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
-      'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
-      'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
+    'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
+    'labels'            => $campaignLabels, // 上で定義したラベルを使用
+    'show_ui'           => true, // 管理画面に表示するかどうか
+    'show_in_rest'      => true, // Gutenbergで表示有効化
+    'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
+    'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
+    'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
     'rewrite'           => array('slug' => 'campaign_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
 
@@ -162,28 +163,28 @@ function create_custom_taxonomies() {
 
   // voice タクソノミーのラベル設定
   $voiceLabels = array(
-      'name'              => 'voice types', // 一般的な名前
-      'singular_name'     => 'voice type', // 単数形の名前
-      'search_items'      => 'ボイスを検索', // 検索項目のラベル
-      'all_items'         => 'すべてのボイスタクソノミー', // 全ての項目のラベル
-      'parent_item'       => '親ボイスタクソノミー', // 親項目のラベル
-      'parent_item_colon' => '親ボイスタクソノミー:', // 親項目（コロン付き）のラベル
-      'edit_item'         => 'ボイスタクソノミーを編集', // 編集項目のラベル
-      'update_item'       => 'ボイスタクソノミーを更新', // 更新項目のラベル
-      'add_new_item'      => '新規ボイスタクソノミーを追加', // 新規追加項目のラベル
-      'new_item_name'     => '新規ボイスタクソノミー名', // 新規項目名のラベル
-      'menu_name'         => 'ボイスタクソノミー', // メニューのラベル
+    'name'              => 'voice types', // 一般的な名前
+    'singular_name'     => 'voice type', // 単数形の名前
+    'search_items'      => 'ボイスを検索', // 検索項目のラベル
+    'all_items'         => 'すべてのボイスタクソノミー', // 全ての項目のラベル
+    'parent_item'       => '親ボイスタクソノミー', // 親項目のラベル
+    'parent_item_colon' => '親ボイスタクソノミー:', // 親項目（コロン付き）のラベル
+    'edit_item'         => 'ボイスタクソノミーを編集', // 編集項目のラベル
+    'update_item'       => 'ボイスタクソノミーを更新', // 更新項目のラベル
+    'add_new_item'      => '新規ボイスタクソノミーを追加', // 新規追加項目のラベル
+    'new_item_name'     => '新規ボイスタクソノミー名', // 新規項目名のラベル
+    'menu_name'         => 'ボイスタクソノミー', // メニューのラベル
   );
 
   // voice タクソノミーの設定
   $voiceArgs = array(
-      'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
-      'labels'            => $voiceLabels, // 上で定義したラベルを使用
-      'show_ui'           => true, // 管理画面に表示するかどうか
-      'show_in_rest'      => true, // Gutenbergで表示有効化
-      'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
-      'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
-      'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
+    'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
+    'labels'            => $voiceLabels, // 上で定義したラベルを使用
+    'show_ui'           => true, // 管理画面に表示するかどうか
+    'show_in_rest'      => true, // Gutenbergで表示有効化
+    'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
+    'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
+    'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
     'rewrite'           => array('slug' => 'voice_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
 
@@ -195,7 +196,8 @@ function create_custom_taxonomies() {
 add_action('init', 'create_custom_taxonomies', 0);
 
 // 管理画面の投稿名を blog に変える
-function rename_default_post_type() {
+function rename_default_post_type()
+{
   global $wp_post_types;
   $labels = &$wp_post_types['post']->labels;
   $labels->name               = 'ブログ';
@@ -215,24 +217,31 @@ function rename_default_post_type() {
 
 add_action('init', 'rename_default_post_type');
 
-// TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
-// function custom_rewrite_rules()
-// {
-//   add_rewrite_rule(
-//     '^campaign/([^/]*)/?',
-//     'index.php?post_type=campaign&term=$matches[1]',
-//     'top'
-//   );
-// }
-// add_action('init', 'custom_rewrite_rules');
+// thanks page に遷移させる
+add_action('wp_footer', 'redirect_cf7');
+function redirect_cf7()
+{
+?>
+<script type="text/javascript">
+document.addEventListener('wpcf7mailsent', function(event) {
+  location = '/contact-thanks';
+}, false);
+</script>
+<?php
+}
 
-// TODO: 正しいやり方を聞いて削除 tab campaign リライトルールを追加
-// function voice_rewrite_rules()
-// {
-//   add_rewrite_rule(
-//     '^voice/([^/]*)/?',
-//     'index.php?post_type=campaign&term=$matches[1]',
-//     'top'
-//   );
-// }
-// add_action('init', 'voice_rewrite_rules');
+// contact form での error message 要素の表示・非表示
+add_action('wp_footer', 'show_hidden_elements_on_error');
+function show_hidden_elements_on_error()
+{
+?>
+<script type="text/javascript">
+document.addEventListener('wpcf7invalid', function(event) {
+  var errorMessages = document.querySelectorAll('.js-error-message');
+  errorMessages.forEach(function(element) {
+    element.classList.remove('error-message-hidden');
+  });
+}, false);
+</script>
+<?php
+}

@@ -28,7 +28,7 @@
           <p class="section-title__explain">ご予約・お問い合わせはコチラ</p>
         </div>
         <div class="top-contact__button-container">
-          <a href="/contact" class="button"><span class="button__text">Contact us</span></a>
+          <a href="/seaside/contact" class="button"><span class="button__text">Contact us</span></a>
         </div>
       </div>
     </div>

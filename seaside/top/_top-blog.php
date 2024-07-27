@@ -9,7 +9,7 @@
     <?php $page = "top"; ?>
     <div class="top-blog__cards"><?php get_template_part("/common/_blog-cards", null, ["top" => true]) ?></div>
     <div class="top-blog__button">
-      <a href="/blog" class="button"><span class="button__text">View more</span>
+      <a href="/seaside/blog" class="button"><span class="button__text">View more</span>
       </a>
     </div>
   </div>

@@ -99,7 +99,7 @@
       </div>
     </div>
     <div class="top-price__button">
-      <a href="/price" class="button"><span class="button__text">View more</span></a>
+      <a href="/seaside/price" class="button"><span class="button__text">View more</span></a>
     </div>
   </div>
 </div>

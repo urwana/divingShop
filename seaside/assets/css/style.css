@@ -1327,6 +1327,10 @@ body {
 	margin-top: 0.25rem;
 }
 
+.error-message-hidden {
+	visibility: hidden;
+}
+
 .contact-form {
 	margin-left: auto;
 	margin-right: auto;
@@ -1384,14 +1388,72 @@ body {
 	width: 100%;
 }
 
-.contact-form__item.error [type=text],
-.contact-form__item.error [type=search],
-.contact-form__item.error [type=tel],
-.contact-form__item.error [type=url],
-.contact-form__item.error [type=email] {
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid,
+.contact-form__item .wpcf7-not-valid {
 	background-color: rgba(201, 72, 0, 0.2);
 	border: solid 1px #c94800;
+}
+
+/* デフォルトのplaceholderのスタイル */
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::-moz-placeholder,
+.contact-form__item .wpcf7-not-valid::-moz-placeholder {
 	color: #fff;
+}
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::placeholder,
+.contact-form__item .wpcf7-not-valid::placeholder {
+	color: #fff;
+}
+
+/* ベンダープレフィックス付きのplaceholderのスタイル */
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::-webkit-input-placeholder,
+.contact-form__item .wpcf7-not-valid::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid:-moz-placeholder,
+.contact-form__item .wpcf7-not-valid:-moz-placeholder {
+	color: #fff;
+}
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid::-moz-placeholder,
+.contact-form__item .wpcf7-not-valid::-moz-placeholder {
+	color: #fff;
+}
+
+.contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid:-ms-input-placeholder,
+.contact-form__item .wpcf7-not-valid:-ms-input-placeholder {
+	color: #fff;
+}
+
+/* テキスト入力フィールドのエラースタイル */
+
+/* テキストエリアのエラースタイル */
+
+/* チェックボックスのエラースタイル */
+
+.contact-form__item .wpcf7-form-control.wpcf7-checkbox.wpcf7-not-valid {
+	outline: 2px solid #c94800;
+}
+
+/* ラジオボタンのエラースタイル */
+
+.contact-form__item .wpcf7-form-control.wpcf7-radio.wpcf7-not-valid {
+	outline: 2px solid #c94800;
+}
+
+/* セレクトボックスのエラースタイル */
+
+.wpcf7-form-control.wpcf7-select.wpcf7-not-valid {
+	background-color: #ffe6e6;
+	border: 2px solid red;
+}
+
+.contact-form__item input {
+	display: inline-block;
+	padding: 0.5rem;
 }
 
 .contact-form__item input::-moz-placeholder {

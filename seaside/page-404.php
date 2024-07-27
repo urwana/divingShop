@@ -11,7 +11,7 @@
         お探しのページが見つかりません。
       </div>
       <div class="error-404__button">
-        <a href="/" class="button button--reverse"><span class="button__text">Page Top</span></a>
+        <a href="/seaside" class="button button--reverse"><span class="button__text">Page Top</span></a>
       </div>
     </div>
   </div>
