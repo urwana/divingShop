@@ -6,6 +6,11 @@
   border: 1px solid $green-accent;
 }
 
+// hover 時
+.submit:hover {
+  color: $green-accent;
+}
+
 span.wpcf7-spinner {
   display: none;
 }
@@ -81,11 +86,6 @@ span.wpcf7-spinner {
 //   z-index: 1;
 // }
 
-// hover 時
-.submit:hover {
-  border: 1px solid $white;
-  color: $green-accent;
-}
 
 // hover 時
 // .submit--reverse:hover {

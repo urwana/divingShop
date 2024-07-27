@@ -2806,6 +2806,10 @@ body {
 	position: relative;
 }
 
+.submit:hover {
+	color: #408F95;
+}
+
 span.wpcf7-spinner {
 	display: none;
 }
@@ -2859,11 +2863,6 @@ span.wpcf7-spinner {
 	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
 	width: 100%;
 	z-index: 1;
-}
-
-.submit:hover {
-	border: 1px solid #fff;
-	color: #408F95;
 }
 
 .submit:hover::after {
