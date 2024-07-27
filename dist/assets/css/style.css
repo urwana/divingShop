@@ -2803,6 +2803,7 @@ body {
 }
 
 .submit {
+	border: 1px solid #408F95;
 	display: inline-block;
 	position: relative;
 }
@@ -2868,7 +2869,6 @@ span.wpcf7-spinner {
 }
 
 .submit:hover::after {
-	border: 1px solid #408F95;
 	transform: scale(1, 1);
 }
 

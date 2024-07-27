@@ -3,6 +3,7 @@
 .submit{
   position: relative;
   display: inline-block;
+  border: 1px solid $green-accent;
 }
 
 span.wpcf7-spinner {
@@ -95,7 +96,6 @@ span.wpcf7-spinner {
 
 .submit:hover::after {
   transform: scale(1, 1);
-  border: 1px solid $green-accent;
 
 }
 
