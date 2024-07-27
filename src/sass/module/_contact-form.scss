@@ -100,7 +100,8 @@
 .wpcf7-list-item >label {
   display: flex;
   align-items: center;
-  gap: rem(20);
+  gap: rem(10);
+  margin-bottom: rem(8);
 }
 
 %errorStyle {

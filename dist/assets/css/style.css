@@ -1396,7 +1396,8 @@ body {
 .wpcf7-list-item > label {
 	align-items: center;
 	display: flex;
-	gap: 1.25rem;
+	gap: 0.625rem;
+	margin-bottom: 0.5rem;
 }
 
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid,
