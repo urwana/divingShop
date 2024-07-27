@@ -2,14 +2,13 @@
 <?php $page = $args["page"]; ?>
 
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
-
   <?php
   $taxonomy = 'campaign_taxonomy';
   $term_slug = get_queried_object() ? get_queried_object()->slug : '';
-
   $args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 1 : -1,
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
     'tax_query' => $term_slug ? [
       [
         'taxonomy' => $taxonomy,

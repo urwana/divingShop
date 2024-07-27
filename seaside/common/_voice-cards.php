@@ -2,7 +2,7 @@
 
   <?php
   $taxonomy = 'voice_taxonomy';
-  $term_slug = get_query_var('term'); // 変更3: 現在のタームスラッグを取得
+  $term_slug = get_query_var('term');
 
   $tax_query = [];
   if ($term_slug) {
@@ -14,12 +14,11 @@
       ],
     ];
   }
-
   $voice_args = [
-    'post_type' => 'voice', // または 'voice'
+    'post_type' => 'voice',
     'posts_per_page' => 6,
-    'tax_query' => $tax_query, // 変更5: タクソノミークエリを動的に設定
-    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1, // 変更6: ページネーション対応
+    'tax_query' => $tax_query,
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
 
   ?>
