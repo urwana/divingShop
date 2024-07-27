@@ -95,6 +95,8 @@ span.wpcf7-spinner {
 
 .submit:hover::after {
   transform: scale(1, 1);
+  border: 1px solid $green-accent;
+
 }
 
 .submit__text {
