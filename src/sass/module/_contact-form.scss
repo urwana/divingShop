@@ -101,7 +101,7 @@
   display: flex;
   align-items: center;
   gap: rem(10);
-  margin-bottom: rem(8);
+  margin-bottom: rem(4);
 }
 
 %errorStyle {
@@ -177,8 +177,8 @@
 
 .contact-form__item input[type=radio] {
   position: relative;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border: 1px solid $green-accent;
   -webkit-appearance: none;
   -moz-appearance: none;

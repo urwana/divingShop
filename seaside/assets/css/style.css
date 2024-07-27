@@ -1397,7 +1397,7 @@ body {
 	align-items: center;
 	display: flex;
 	gap: 0.625rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
 }
 
 .contact-form__item .wpcf7-form-control.wpcf7-textarea.wpcf7-not-valid,
@@ -1489,9 +1489,9 @@ body {
 	appearance: none;
 	border: 1px solid #408F95;
 	display: inline-block;
-	height: 16px;
+	height: 14px;
 	position: relative;
-	width: 16px;
+	width: 14px;
 }
 
 .contact-form__item .wpcf7-list-item .privacy-check {
