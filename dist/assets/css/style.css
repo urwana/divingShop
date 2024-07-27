@@ -2863,8 +2863,12 @@ span.wpcf7-spinner {
 }
 
 .submit:hover {
-	background-color: #fff;
+	border: 1px solid #fff;
 	color: #408F95;
+}
+
+.submit:hover::after {
+	transform: scale(1, 1);
 }
 
 .submit__text {

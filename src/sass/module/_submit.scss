@@ -83,8 +83,8 @@ span.wpcf7-spinner {
 
 // hover 時
 .submit:hover {
+  border: 1px solid $white;
   color: $green-accent;
-  background-color: $white;
 }
 
 // hover 時
@@ -93,9 +93,9 @@ span.wpcf7-spinner {
 //   background-color: $green-accent;
 // }
 
-// .submit:hover::after {
-//   transform: scale(1, 1);
-// }
+.submit:hover::after {
+  transform: scale(1, 1);
+}
 
 .submit__text {
   z-index: 2;
