@@ -1,4 +1,6 @@
 <?php
+
+// 初期設定
 function my_setup()
 {
   add_theme_support('post-thumbnails');
@@ -12,9 +14,9 @@ function my_setup()
     'caption',
   ));
 }
-
 add_action('after_setup_theme', 'my_setup');
 
+// style と JS の読み込み
 function enqueue_scripts_and_styles()
 {
   wp_deregister_script('jquery');
@@ -36,6 +38,7 @@ function enqueue_scripts_and_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts_and_styles');
 
+// ページ毎に body にクラスを付与
 function my_custom_body_classes($classes)
 {
   if (is_front_page()) {
@@ -126,7 +129,6 @@ function create_custom_post_types()
 
   register_post_type('campaign', $campaign_args);
 }
-
 add_action('init', 'create_custom_post_types');
 
 function create_custom_taxonomies()
@@ -157,8 +159,7 @@ function create_custom_taxonomies()
     'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
     'rewrite'           => array('slug' => 'campaign_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
-
-  // campaign タクソノミーを 'campaign' 投稿タイプに関連付け
+  // タクソノミーを カスタム投稿 campaign に関連付け
   register_taxonomy('campaign_taxonomy', array('campaign'), $campaignArgs);
 
   // voice タクソノミーのラベル設定
@@ -175,8 +176,7 @@ function create_custom_taxonomies()
     'new_item_name'     => '新規ボイスタクソノミー名', // 新規項目名のラベル
     'menu_name'         => 'ボイスタクソノミー', // メニューのラベル
   );
-
-  // voice タクソノミーの設定
+  // カスタム投稿 voice の タクソノミーの設定
   $voiceArgs = array(
     'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
     'labels'            => $voiceLabels, // 上で定義したラベルを使用
@@ -187,15 +187,14 @@ function create_custom_taxonomies()
     'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
     'rewrite'           => array('slug' => 'voice_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
-
-  // voice タクソノミーを 'voice' 投稿タイプに関連付け
+  // タクソノミーを カスタム投稿 voice に関連付け
   register_taxonomy('voice_taxonomy', array('voice'), $voiceArgs);
 }
 
 // 初期化時に create_custom_taxonomies 関数を実行
 add_action('init', 'create_custom_taxonomies', 0);
 
-// 管理画面の投稿名を blog に変える
+// 管理画面の通常「投稿」を「ブログ」 に変える
 function rename_default_post_type()
 {
   global $wp_post_types;
@@ -214,7 +213,6 @@ function rename_default_post_type()
   $labels->menu_name          = 'ブログ';
   $labels->name_admin_bar     = 'ブログ';
 }
-
 add_action('init', 'rename_default_post_type');
 
 // thanks page に遷移させる
