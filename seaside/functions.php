@@ -224,7 +224,7 @@ function redirect_cf7()
 ?>
 <script type="text/javascript">
 document.addEventListener('wpcf7mailsent', function(event) {
-  location = '/contact-thanks';
+  location = '/seaside/contact-thanks';
 }, false);
 </script>
 <?php
@@ -246,6 +246,7 @@ document.addEventListener('wpcf7invalid', function(event) {
 <?php
 }
 
+// [...] を ...に
 function custom_excerpt_more($more)
 {
   return '...';
