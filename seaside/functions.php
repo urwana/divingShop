@@ -256,7 +256,7 @@ function custom_breadcrumb_trail_home($trail)
 {
   if (is_home()) {
     foreach ($trail->breadcrumbs as &$breadcrumb) {
-      if ($breadcrumb->get_type() == 'home') {
+      if (in_array('home', $breadcrumb->get_types())) {
         $breadcrumb->set_title('ブログ一覧');
       }
     }
@@ -270,7 +270,7 @@ function custom_breadcrumb_trail_single($trail)
 {
   if (is_single() && get_post_type() == 'post') {
     foreach ($trail->breadcrumbs as &$breadcrumb) {
-      if ($breadcrumb->get_type() == 'single') {
+      if (in_array('single', $breadcrumb->get_types())) {
         $breadcrumb->set_title('ブログ詳細');
       }
     }
