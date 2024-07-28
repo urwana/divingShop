@@ -3,16 +3,14 @@
 
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
   <?php
-  global $paged;
   $taxonomy = 'campaign_taxonomy';
-  $term_slug = '';
-  $queried_object = get_queried_object();
-
-  if ($queried_object && is_a($queried_object, 'WP_Term')) {
-    $term_slug = $queried_object->slug; // taxonomy filter 用
-  } elseif ($queried_object && is_a($queried_object, 'WP_Post_Type')) {
-    $term_slug = ''; // 全件表示する ALL 用にスラッグを空に設定
-  }
+  $term_slug = get_query_var('term');
+  //$queried_object = get_queried_object();
+  // if ($queried_object && is_a($queried_object, 'WP_Term')) {
+  //   $term_slug = $queried_object->slug; // taxonomy filter 用
+  // } elseif ($queried_object && is_a($queried_object, 'WP_Post_Type')) {
+  //   $term_slug = ''; // 全件表示する ALL 用にスラッグを空に設定
+  // }
 
   $tax_query = [];
   if ($term_slug) {
@@ -24,33 +22,17 @@
       ],
     ];
   }
-
-  echo 'DEBUG get_query_var(paged)===============================';
-  echo get_query_var('paged');
-
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-  $args = [
+  $campaign_args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 2 : 4,
-    'paged' => $paged,
     'tax_query' => $tax_query,
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
-
-  echo 'DEBUG $args===============================';
-  echo '<pre>';
-  print_r($args);
-  echo '</pre>';
-
-  $the_query = new WP_Query($args);
-
-  echo 'DEBUG $the_query===============================';
-  echo '<pre>';
-  print_r($the_query);
-  echo '</pre>';
   ?>
 
-  <?php if ($the_query->have_posts()) :
+  <?php
+  $the_query = new WP_Query($campaign_args);
+  if ($the_query->have_posts()) :
     while ($the_query->have_posts()) :
       $the_query->the_post(); ?>
   <?php get_template_part('/common/_campaign-card-page', null, ['page' => $page, 'sideBar' => $sideBar]); ?>
