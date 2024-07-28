@@ -21,7 +21,6 @@
     'tax_query' => $tax_query,
     'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
-
   ?>
   <?php
   $the_voice_query = new WP_Query($voice_args);

@@ -5,12 +5,6 @@
   <?php
   $taxonomy = 'campaign_taxonomy';
   $term_slug = get_query_var('term');
-  //$queried_object = get_queried_object();
-  // if ($queried_object && is_a($queried_object, 'WP_Term')) {
-  //   $term_slug = $queried_object->slug; // taxonomy filter 用
-  // } elseif ($queried_object && is_a($queried_object, 'WP_Post_Type')) {
-  //   $term_slug = ''; // 全件表示する ALL 用にスラッグを空に設定
-  // }
 
   $tax_query = [];
   if ($term_slug) {
@@ -29,15 +23,14 @@
     'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
   ?>
-
   <?php
   $the_query = new WP_Query($campaign_args);
   if ($the_query->have_posts()) :
     while ($the_query->have_posts()) :
       $the_query->the_post(); ?>
   <?php get_template_part('/common/_campaign-card-page', null, ['page' => $page, 'sideBar' => $sideBar]); ?>
-  <?php endwhile;
-  else : ?>
+  <?php endwhile; ?>
+  <?php else : ?>
   <p>投稿が見つかりませんでした。</p>
   <?php endif; ?>
   <?php wp_reset_postdata(); ?>
