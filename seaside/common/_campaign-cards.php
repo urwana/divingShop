@@ -18,9 +18,9 @@
   }
   $campaign_args = [
     'post_type' => 'campaign',
-    'posts_per_page' => $sideBar ? 2 : 3,
+    'posts_per_page' => $sideBar ? 2 : 4,
     'tax_query' => $tax_query,
-    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 2,
   ];
   ?>
   <?php
