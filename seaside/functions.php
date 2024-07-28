@@ -251,39 +251,40 @@ function custom_excerpt_more($more)
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
-// Advance Custome Field の値を Contact Form7 にタグで渡す
-function get_acf_lesson_names()
+// カスタム投稿のタイトルを Contact Form7 にタグで渡す
+function get_campaign_post_titles()
 {
-  $lesson_names = array();
+  $args = array(
+    'post_type' => 'campaign', // カスタム投稿タイプのスラッグを指定
+    'posts_per_page' => -1,    // すべての投稿を取得
+    'post_status' => 'publish' // 公開済みの投稿のみを取得
+  );
 
-  $lesson_name1 = get_field('lesson_name1');
-  $lesson_name2 = get_field('lesson_name2');
-  $lesson_name3 = get_field('lesson_name3');
+  $posts = get_posts($args);
+  error_log('Posts: ' . print_r($posts, true)); // デバッグ用ログ出力
 
-  if ($lesson_name1) {
-    $lesson_names[] = $lesson_name1;
-  }
-  if ($lesson_name2) {
-    $lesson_names[] = $lesson_name2;
-  }
-  if ($lesson_name3) {
-    $lesson_names[] = $lesson_name3;
+  $post_titles = array();
+
+  foreach ($posts as $post) {
+    $post_titles[] = $post->post_title;
   }
 
-  return $lesson_names;
+  return $post_titles;
 }
 
-add_filter('wpcf7_form_tag', 'acf_to_cf7_select_filter', 10, 2);
-function acf_to_cf7_select_filter($tag, $unused)
+add_filter('wpcf7_form_tag', 'post_titles_to_cf7_select_filter', 10, 2);
+function post_titles_to_cf7_select_filter($tag, $unused)
 {
-  if ($tag['name'] != 'menu-285') { // フィールド名を確認
+  if ($tag['name'] != 'menu-285') {
     return $tag;
   }
 
-  $acf_values = get_acf_lesson_names();
-  if (!empty($acf_values)) {
-    $tag['raw_values'] = $acf_values;
-    $tag['values'] = $acf_values;
+  $post_titles = get_campaign_post_titles();
+  error_log('Filtered post titles: ' . print_r($post_titles, true));
+
+  if (!empty($post_titles)) {
+    $tag['raw_values'] = $post_titles;
+    $tag['values'] = $post_titles;
   }
 
   return $tag;
