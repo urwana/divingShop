@@ -24,7 +24,7 @@
     ];
   }
 
-  echo 'get_query_var(paged)===============================';
+  echo 'DEBUG get_query_var(paged)===============================';
   echo get_query_var('paged');
 
   $args = [
@@ -34,7 +34,17 @@
     'tax_query' => $tax_query,
   ];
 
+  echo 'DEBUG $args===============================';
+  echo '<pre>';
+  print_r($args);
+  echo '</pre>';
+
   $the_query = new WP_Query($args);
+
+  echo 'DEBUG $the_query===============================';
+  echo '<pre>';
+  print_r($the_query);
+  echo '</pre>';
   ?>
 
   <?php if ($the_query->have_posts()) :
