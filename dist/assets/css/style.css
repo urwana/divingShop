@@ -2558,6 +2558,10 @@ span.current:hover {
 	font-weight: 300;
 }
 
+.sidebar-archive__toggle-hierarchy-inner {
+	margin-left: 1.5rem;
+}
+
 .sidebar-archive__lists {
 	margin-top: 1.5rem;
 }
@@ -2895,20 +2899,9 @@ span.wpcf7-spinner {
 	z-index: 2;
 }
 
-.button--reverse .submit__text::before {
-	background-color: #408F95;
-	right: -3.46875rem;
-}
-
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
 	background-color: #408F95;
-	z-index: 2;
-}
-
-.button--reverse:hover .submit__text::before,
-.button--reverse:hover .submit__text::after {
-	background-color: #fff;
 	z-index: 2;
 }
 

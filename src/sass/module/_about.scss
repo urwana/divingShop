@@ -8,11 +8,6 @@
   }
 }
 
-// .inner.about__inner--page{
-//   width: 92vw;
-//   aspect-ratio: 345 / 228;
-// }
-
 .about__inner::after {
   @include mq("md") {
     position: absolute;

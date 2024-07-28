@@ -6,7 +6,6 @@
   border: 1px solid $green-accent;
 }
 
-// hover 時
 .submit:hover {
   color: $green-accent;
 }
@@ -35,16 +34,6 @@ span.wpcf7-spinner {
   background-color: $white;
   color: $white;
 }
-
-// .button--reverse {
-//   background-color: $white;
-//   border: 1px solid $white;
-//   color: $green-accent;
-//   padding: rem(19) rem(96) rem(20) rem(39);
-// }
-
-// .button--contact {
-// }
 
 // 下の白い四角
 .submit::before {
@@ -79,20 +68,6 @@ span.wpcf7-spinner {
   z-index: 1;
 }
 
-// アニメ用 background
-// .button--reverse::after {
-//   background: $green-accent;
-//   border: 1px solid $green-accent;
-//   z-index: 1;
-// }
-
-
-// hover 時
-// .submit--reverse:hover {
-//   color: $white;
-//   background-color: $green-accent;
-// }
-
 .submit:hover::after {
   transform: scale(1, 1);
 
@@ -124,11 +99,10 @@ span.wpcf7-spinner {
   right: calc(-1 * rem(47));
 }
 
-
-.button--reverse .submit__text::before {
-  background-color: $green-accent;
-  right: calc(-1 * rem(55.5));
-}
+// .button--reverse .submit__text::before {
+//   background-color: $green-accent;
+//   right: calc(-1 * rem(55.5));
+// }
 
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
@@ -136,11 +110,11 @@ span.wpcf7-spinner {
   z-index: 2;
 }
 
-.button--reverse:hover .submit__text::before,
-.button--reverse:hover .submit__text::after {
-  background-color: $white;
-  z-index: 2;
-}
+// .button--reverse:hover .submit__text::before,
+// .button--reverse:hover .submit__text::after {
+//   background-color: $white;
+//   z-index: 2;
+// }
 
 .submit__text::after {
   position: absolute;
