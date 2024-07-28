@@ -256,8 +256,8 @@ function custom_breadcrumb_trail_home($trail)
 {
   if (is_home()) {
     foreach ($trail->breadcrumbs as &$breadcrumb) {
-      if ($breadcrumb->type == 'home' || $breadcrumb->type == '') {
-        $breadcrumb->text = 'ブログ一覧';
+      if ($breadcrumb->get_type() == 'home') {
+        $breadcrumb->set_title('ブログ一覧');
       }
     }
   }
@@ -270,8 +270,8 @@ function custom_breadcrumb_trail_single($trail)
 {
   if (is_single() && get_post_type() == 'post') {
     foreach ($trail->breadcrumbs as &$breadcrumb) {
-      if ($breadcrumb->type == 'single') {
-        $breadcrumb->text = 'ブログ詳細';
+      if ($breadcrumb->get_type() == 'single') {
+        $breadcrumb->set_title('ブログ詳細');
       }
     }
   }
