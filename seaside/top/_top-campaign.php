@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="top-campaign__swiper">
-        <?php get_template_part("/common/_swiper-campaign") ?>
+        <?php get_template_part("/common/_swiper-campaign"); ?>
       </div>
       <div class="top-campaign__button">
         <a href="/seaside/campaign" class="button"><span class="button__text">View more</span></a>

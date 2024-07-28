@@ -6,7 +6,7 @@
         <h2 class="section-title__japan">お客様の声</h2>
       </div>
     </div>
-    <div class="top-voice__cards"><?php get_template_part("/common/_voice-cards", null, ["top" => true]) ?></div>
+    <div class="top-voice__cards"><?php get_template_part("/common/_voice-cards", null, ["top" => true]); ?></div>
     <div class="top-voice__button">
       <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
     </div>

@@ -28,7 +28,7 @@
     while ($the_voice_query->have_posts()) :
       $the_voice_query->the_post(); ?>
   <div class="voice-cards__item">
-    <?php get_template_part("/common/_voice-card") ?>
+    <?php get_template_part("/common/_voice-card"); ?>
   </div>
   <?php endwhile; ?>
   <?php else : ?>

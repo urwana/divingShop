@@ -1,4 +1,4 @@
-<div class="voice-card js-card<?php echo $voiceCardData["dataType"] ?>">
+<div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
   <a href="">
     <div class="voice-card__head">
       <div class="voice-card__info">
@@ -9,11 +9,11 @@
               <?php
               $post_id = get_the_ID();
               $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
-              if ($campaign_terms && !is_wp_error($campaign_terms)) {
-                foreach ($campaign_terms as $term) {
+              if ($campaign_terms && !is_wp_error($campaign_terms)) :
+                foreach ($campaign_terms as $term) :
                   echo esc_html($term->name) . ' ';
-                }
-              } ?>
+                endforeach;
+              endif; ?>
             </span>
           </div>
         </div>
@@ -25,18 +25,18 @@
       </div>
       <figure class="js-colorAnimation voice-card__image">
         <?php
-        if (has_post_thumbnail()) {
+        if (has_post_thumbnail()) :
         ?>
         <figure class="campaign-card__image">
           <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
         </figure>
         <?php
-        };
+        endif;
         ?>
       </figure>
     </div>
     <div class="voice-card__text">
-      <?php the_excerpt() ?>
+      <?php the_excerpt(); ?>
     </div>
   </a>
 </div>

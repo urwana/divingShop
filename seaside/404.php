@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <div class="error-404">
-    <?php get_template_part("/common/_breadcrumbs") ?>
+    <?php get_template_part("/common/_breadcrumbs"); ?>
     <div class="error-404__inner inner">
       <div class="error-404__main-text">404</div>
       <div class="error-404__sub-text">
