@@ -24,6 +24,9 @@
     ];
   }
 
+  echo 'get_query_var(paged)===============================';
+  echo get_query_var('paged');
+
   $args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 2 : 4,
