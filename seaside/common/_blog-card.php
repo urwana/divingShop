@@ -1,4 +1,4 @@
-<div class="blog-card ?>">
+<div class="blog-card">
   <a href="<?php the_permalink() ?>">
     <div class="blog-card__inner">
       <?php
