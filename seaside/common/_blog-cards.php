@@ -5,7 +5,7 @@
   if (is_front_page()) {
     $front_page_args = array(
       'post_type' => 'post',
-      'posts_per_page' => 5
+      'posts_per_page' => 10
     );
     $front_page_query = new WP_Query($front_page_args);
     if ($front_page_query->have_posts()) :

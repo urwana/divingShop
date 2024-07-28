@@ -2,25 +2,15 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Site MAP",
-    "imageClass" => "sitemap-background"
+    "imageClass" => "sitemap-background",
+    "detail" => false
   ] ?>
   <?php get_template_part(
-    "./top/_sub-key-visual",
+    "/top/_sub-key-visual",
     null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php
-  $breadcrumbsData =
-    [
-      "white" => false, "list" => [
-        ["title" => "TOP", "url" => "/"],
-        [
-          "title" => $base["title"],
-          "url" => "/sitemap.html"
-        ]
-      ]
-    ]; ?>
-  <?php get_template_part("./common/_breadcrumbs", ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("./common/_breadcrumbs") ?>
   <section class="l-sitemap">
     <div class="sitemap">
       <div class="sitemap__inner inner">
