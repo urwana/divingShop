@@ -3,6 +3,7 @@
 
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
   <?php
+  global $paged;
   $taxonomy = 'campaign_taxonomy';
   $term_slug = '';
   $queried_object = get_queried_object();
