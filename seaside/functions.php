@@ -255,37 +255,30 @@ add_filter('excerpt_more', 'custom_excerpt_more');
 function get_campaign_post_titles()
 {
   $args = array(
-    'post_type' => 'campaign', // カスタム投稿タイプのスラッグを指定
-    'posts_per_page' => -1,    // すべての投稿を取得
-    'post_status' => 'publish' // 公開済みの投稿のみを取得
+    'post_type' => 'campaign',
+    'posts_per_page' => -1,
+    'post_status' => 'publish'
   );
-
   $posts = get_posts($args);
-  error_log('Posts: ' . print_r($posts, true)); // デバッグ用ログ出力
-
+  error_log('Posts: ' . print_r($posts, true)); // デバッグ用ログ
   $post_titles = array();
-
   foreach ($posts as $post) {
     $post_titles[] = $post->post_title;
   }
-
   return $post_titles;
 }
 
-add_filter('wpcf7_form_tag', 'post_titles_to_cf7_select_filter', 10, 2);
 function post_titles_to_cf7_select_filter($tag, $unused)
 {
-  if ($tag['name'] != 'menu-285') {
+  if ($tag['name'] != 'menu-515') {
     return $tag;
   }
-
   $post_titles = get_campaign_post_titles();
-  error_log('Filtered post titles: ' . print_r($post_titles, true));
-
+  error_log('Filtered post titles: ' . print_r($post_titles, true)); // デバッグ用ログ
   if (!empty($post_titles)) {
     $tag['raw_values'] = $post_titles;
     $tag['values'] = $post_titles;
   }
-
   return $tag;
 }
+add_filter('wpcf7_form_tag', 'post_titles_to_cf7_select_filter', 10, 2);
