@@ -58,15 +58,15 @@ function create_custom_post_types()
     'singular_name'         => 'お客様の声',  // 投稿タイプの名前（単数形）
     'menu_name'             => 'お客様の声',  // 管理画面メニューの名前
     'name_admin_bar'        => 'お客様の声',   // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規 お客様の声を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規 お客様の声を投稿', // 新規投稿追加ページのタイトル
-    'new_item'              => 'New voice', // 新規投稿ページのタイトル
-    'edit_item'             => 'Edit voice', // 投稿編集ページのタイトル
-    'view_item'             => 'View voice', // 投稿表示ページのタイトル
-    'all_items'             => 'voice 全ての投稿', // 全投稿一覧ページのタイトル
-    'search_items'          => 'voice の記事を探す', // 投稿検索のラベル
+    'add_new'               => 'お客様の声を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => 'お客様の声を投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => '新規お客様の声', // 新規投稿ページのタイトル
+    'edit_item'             => 'お客様の声を編集', // 投稿編集ページのタイトル
+    'view_item'             => 'お客様の声を見る', // 投稿表示ページのタイトル
+    'all_items'             => '全お客様の声の投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'お客様の声の記事を探す', // 投稿検索のラベル
     'parent_item_colon'     => 'parent voices:', // 階層型の親投稿ラベル = 省略可能
-    'not_found'             => 'voice の投稿はありません。', // 投稿が見つからなかったときのメッセージ
+    'not_found'             => 'お客様の声の投稿はありません。', // 投稿が見つからなかったときのメッセージ
     'not_found_in_trash'    => 'ゴミ箱に Voice の投稿はありません。' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
@@ -97,16 +97,16 @@ function create_custom_post_types()
     'singular_name'         => 'キャンペーン', // 投稿タイプの名前（単数形）
     'menu_name'             => 'キャンペーン', // 管理画面メニューの名前
     'name_admin_bar'        => 'キャンペーン', // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規 campaign の投稿を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規 campaign の投稿', // 新規投稿追加ページのタイトル
-    'new_item'              => 'New campaign', // 新規投稿ページのタイトル
-    'edit_item'             => 'Edit campaign', // 投稿編集ページのタイトル
-    'view_item'             => 'View campaign', // 投稿表示ページのタイトル
-    'all_items'             => 'campaign 全ての投稿', // 全投稿一覧ページのタイトル
-    'search_items'          => 'campaigns の記事を探す', // 投稿検索のラベル
+    'add_new'               => '新規キャンペーンの投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規キャンペーンの投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => '新規キャンペーン', // 新規投稿ページのタイトル
+    'edit_item'             => 'キャンペーンを編集', // 投稿編集ページのタイトル
+    'view_item'             => 'キャンペーン', // 投稿表示ページのタイトル
+    'all_items'             => '全キャンペーン投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'キャンペーンを探す', // 投稿検索のラベル
     'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
-    'not_found'             => 'campaign の投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
-    'not_found_in_trash'    => 'ゴミ箱に campaign の投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
+    'not_found'             => 'キャンペーンの投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱にキャンペーンの投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
   // "campaign" カスタム投稿タイプの設定
@@ -135,10 +135,10 @@ function create_custom_taxonomies()
 {
   // campaign タクソノミーのラベル設定
   $campaignLabels = array(
-    'name'              => 'campaign タクソノミー', // 一般的な名前
-    'singular_name'     => 'campaign type', // 単数形の名前
+    'name'              => 'キャンペーン', // 一般的な名前
+    'singular_name'     => 'キャンペーン', // 単数形の名前
     'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
-    'all_items'         => '全てのキャンペーンタクソノミー', // 全ての項目のラベル
+    'all_items'         => '全キャンペーンタクソノミー', // 全ての項目のラベル
     'parent_item'       => '親キャンペーンタクソノミー', // 親項目のラベル
     'parent_item_colon' => '親キャンペーンタクソノミー:', // 親項目（コロン付き）のラベル
     'edit_item'         => 'キャンペーンタクソノミーを編集', // 編集項目のラベル
@@ -164,17 +164,17 @@ function create_custom_taxonomies()
 
   // voice タクソノミーのラベル設定
   $voiceLabels = array(
-    'name'              => 'voice types', // 一般的な名前
-    'singular_name'     => 'voice type', // 単数形の名前
-    'search_items'      => 'ボイスを検索', // 検索項目のラベル
-    'all_items'         => 'すべてのボイスタクソノミー', // 全ての項目のラベル
-    'parent_item'       => '親ボイスタクソノミー', // 親項目のラベル
-    'parent_item_colon' => '親ボイスタクソノミー:', // 親項目（コロン付き）のラベル
-    'edit_item'         => 'ボイスタクソノミーを編集', // 編集項目のラベル
-    'update_item'       => 'ボイスタクソノミーを更新', // 更新項目のラベル
-    'add_new_item'      => '新規ボイスタクソノミーを追加', // 新規追加項目のラベル
-    'new_item_name'     => '新規ボイスタクソノミー名', // 新規項目名のラベル
-    'menu_name'         => 'ボイスタクソノミー', // メニューのラベル
+    'name'              => 'お客様の声', // 一般的な名前
+    'singular_name'     => 'お客様の声', // 単数形の名前
+    'search_items'      => 'お客様の声を検索', // 検索項目のラベル
+    'all_items'         => '全お客様の声のタクソノミー', // 全ての項目のラベル
+    'parent_item'       => '親お客様の声タクソノミー', // 親項目のラベル
+    'parent_item_colon' => '親お客様の声タクソノミー:', // 親項目（コロン付き）のラベル
+    'edit_item'         => 'お客様の声のタクソノミーを編集', // 編集項目のラベル
+    'update_item'       => 'お客様の声のタクソノミーを更新', // 更新項目のラベル
+    'add_new_item'      => '新規お客様の声タクソノミーを追加', // 新規追加項目のラベル
+    'new_item_name'     => '新規お客様の声タクソノミー名', // 新規項目名のラベル
+    'menu_name'         => 'お客様の声タクソノミー', // メニューのラベル
   );
   // カスタム投稿 voice の タクソノミーの設定
   $voiceArgs = array(
