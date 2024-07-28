@@ -251,26 +251,29 @@ function custom_excerpt_more($more)
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
-// ブログ一覧のパンくずのテキストを変更
-function custom_breadcrumb_title_home($title, $type, $id)
+// パンくずリストのタイトルを変更
+function custom_breadcrumb_trail($trail)
 {
+  // ホームまたはアーカイブページの場合
   if (is_home() || is_archive()) {
-    if (in_array('home', $type)) {
-      return 'ブログ一覧';
+    foreach ($trail->breadcrumbs as &$breadcrumb) {
+      // ホームタイプのパンくず
+      if (in_array('home', $breadcrumb->get_types())) {
+        $breadcrumb->set_title('ブログ一覧');
       }
+    }
   }
-  return $title;
-}
-add_filter('bcn_breadcrumb_title', 'custom_breadcrumb_title_home', 10, 3);
 
-// ブログ詳細のパンくずのテキストを変更
-function custom_breadcrumb_title_single($title, $type, $id)
-{
+  // シングル投稿ページの場合
   if (is_single() && get_post_type() == 'post') {
-    if (in_array('single', $type)) {
-      return 'ブログ詳細';
+    foreach ($trail->breadcrumbs as &$breadcrumb) {
+      // シングルタイプのパンくず
+      if (in_array('single', $breadcrumb->get_types())) {
+        $breadcrumb->set_title('ブログ詳細');
       }
+    }
   }
-  return $title;
+
+  return $trail;
 }
-add_filter('bcn_breadcrumb_title', 'custom_breadcrumb_title_single', 10, 3);
+add_filter('bcn_after_fill', 'custom_breadcrumb_trail');
