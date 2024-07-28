@@ -3,13 +3,13 @@
 <a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?>"
   href="<?php echo $campaignCardData["link"] ?>">
   <?php
-  if (has_post_thumbnail()) {
+  if (has_post_thumbnail()) :
   ?>
   <figure class="campaign-card__image">
     <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
   </figure>
   <?php
-  };
+  endif;
   ?>
 
   <div class="campaign-card__body">
@@ -19,11 +19,11 @@
           <?php
           $post_id = get_the_ID();
           $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
-          if ($campaign_terms && !is_wp_error($campaign_terms)) {
-            foreach ($campaign_terms as $term) {
+          if ($campaign_terms && !is_wp_error($campaign_terms)) :
+            foreach ($campaign_terms as $term) :
               echo esc_html($term->name) . ' ';
-            }
-          } ?>
+            endforeach;
+          endif; ?>
         </span>
       </div>
       <div class="campaign-card__title"><?php the_title(); ?></div>

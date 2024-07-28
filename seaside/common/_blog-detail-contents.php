@@ -41,15 +41,15 @@
       $prev_url = "";
       $next_url = "";
       $prev = get_previous_post();
-      if (!empty($prev)) {
+      if (!empty($prev)) :
         $prev_url = get_permalink($prev->ID);
-      }
+      endif;
       $next = get_next_post();
-      if (!empty($next)) {
+      if (!empty($next)) :
         $next_url = get_permalink($next->ID);
-      }
+      endif;
       ?>
-      <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]) ?>
+      <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]); ?>
     </div>
   </div>
 </div>

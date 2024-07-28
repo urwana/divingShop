@@ -5,31 +5,31 @@
   href="<?php the_permalink(); ?>">
   <figure class="campaign-card__image<?php echo $sideBar ? " campaign-card__image--sidebar" : "" ?>">
     <?php
-    if (has_post_thumbnail()) {
+    if (has_post_thumbnail()) :
     ?>
     <figure class="campaign-card__image">
       <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
     </figure>
     <?php
-    };
+    endif;
     ?>
   </figure>
   <div
     class="campaign-card__body <?php echo $page ? "campaign-card__body--page" : ""; ?> <?php echo $sideBar ? "campaign-card__body--side-bar" : ""; ?>">
     <div class="campaign-card__top">
-      <?php if (!$sideBar) { ?>
+      <?php if (!$sideBar) : ?>
       <div class="campaign-card__label label-container">
         <span class="label">
           <?php
             $post_id = get_the_ID();
             $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
-            if ($campaign_terms && !is_wp_error($campaign_terms)) {
-              foreach ($campaign_terms as $term) {
+            if ($campaign_terms && !is_wp_error($campaign_terms)) :
+              foreach ($campaign_terms as $term) :
                 echo esc_html($term->name) . ' ';
-              }
-            } ?>
+              endforeach;
+            endif; ?>
       </div>
-      <?php } ?>
+      <?php endif; ?>
       <div
         class="campaign-card__title<?php echo $page ? " campaign-card__title--page" : "" ?><?php echo $sideBar ? " campaign-card__title--sidebar" : "" ?>">
         <?php the_title(); ?></div>
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <?php if (!$sideBar) { ?>
+    <?php if (!$sideBar) : ?>
     <div class="campaign-card__bottom2">
       <div class="campaign-card__text">
         <?php $excerpt = get_the_excerpt();
@@ -67,6 +67,6 @@
         <div class="js-contact-button button"><span class="button__text">Contact us</span></div>
       </div>
     </div>
-    <?php } ?>
+    <?php endif; ?>
   </div>
 </a>

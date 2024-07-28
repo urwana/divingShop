@@ -21,7 +21,7 @@
       </div>
     </div>
     <nav class="footer__navigation">
-      <?php get_template_part("/common/_navigation-responsive", null, ["footer" => true]) ?>
+      <?php get_template_part("/common/_navigation-responsive", null, ["footer" => true]); ?>
     </nav>
     <div class="footer__copy">
       <small>
