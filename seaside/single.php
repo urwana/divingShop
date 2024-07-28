@@ -6,15 +6,8 @@
     "detail" => true
   ] ?>
 
-  <?php get_template_part("./top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php
-  $breadcrumbsData =
-    [
-      "white" => false,
-      "list" => [["title" => "TOP", "url" => "/"], ["title" => "ブログ一覧", "url" => "/blog"], ["title" => "ブログ詳細", "url" => "/blog-detail"]]
-    ]; ?>
-
-  <?php get_template_part("./common/_breadcrumbs", null,  ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <section class="l-blog">
     <div class="blog">
       <div class="blog__inner inner">

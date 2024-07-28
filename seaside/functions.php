@@ -190,8 +190,6 @@ function create_custom_taxonomies()
   // タクソノミーを カスタム投稿 voice に関連付け
   register_taxonomy('voice_taxonomy', array('voice'), $voiceArgs);
 }
-
-// 初期化時に create_custom_taxonomies 関数を実行
 add_action('init', 'create_custom_taxonomies', 0);
 
 // 管理画面の通常「投稿」を「ブログ」 に変える
@@ -215,7 +213,7 @@ function rename_default_post_type()
 }
 add_action('init', 'rename_default_post_type');
 
-// thanks page に遷移させる
+// contact form thanks page に遷移させる
 add_action('wp_footer', 'redirect_cf7');
 function redirect_cf7()
 {
@@ -228,7 +226,7 @@ document.addEventListener('wpcf7mailsent', function(event) {
 <?php
 }
 
-// contact form での error message 要素の表示・非表示
+// contact form での error message html 要素の表示・非表示
 add_action('wp_footer', 'show_hidden_elements_on_error');
 function show_hidden_elements_on_error()
 {
@@ -268,6 +266,7 @@ function get_campaign_post_titles()
   return $post_titles;
 }
 
+// カスタム投稿のタイトルを Contact Form7 にタグで渡す
 function post_titles_to_cf7_select_filter($tag, $unused)
 {
   if ($tag['name'] != 'menu-515') {
