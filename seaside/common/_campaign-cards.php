@@ -10,19 +10,22 @@
   if ($queried_object && is_a($queried_object, 'WP_Term')) {
     $term_slug = $queried_object->slug;
   }
-
-  $args = [
-    'post_type' => 'campaign',
-    'posts_per_page' => $sideBar ? 1 : 4,
-    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
-    'tax_query' => $term_slug ? [
+  $tax_query = [];
+  if ($term_slug) {
+    $tax_query = [
       [
         'taxonomy' => $taxonomy,
         'field'    => 'slug',
         'terms'    => $term_slug,
         'operator' => 'IN',
       ],
-    ] : [],
+    ];
+  }
+  $args = [
+    'post_type' => 'campaign',
+    'posts_per_page' => $sideBar ? 1 : 4,
+    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
+    'tax_query' => $tax_query,
   ];
 
   $the_query = new WP_Query($args);
