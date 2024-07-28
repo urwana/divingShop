@@ -250,3 +250,41 @@ function custom_excerpt_more($more)
   return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+// Advance Custome Field の値を Contact Form7 にタグで渡す
+function get_acf_lesson_names()
+{
+  $lesson_names = array();
+
+  $lesson_name1 = get_field('lesson_name1');
+  $lesson_name2 = get_field('lesson_name2');
+  $lesson_name3 = get_field('lesson_name3');
+
+  if ($lesson_name1) {
+    $lesson_names[] = $lesson_name1;
+  }
+  if ($lesson_name2) {
+    $lesson_names[] = $lesson_name2;
+  }
+  if ($lesson_name3) {
+    $lesson_names[] = $lesson_name3;
+  }
+
+  return $lesson_names;
+}
+
+add_filter('wpcf7_form_tag', 'acf_to_cf7_select_filter', 10, 2);
+function acf_to_cf7_select_filter($tag, $unused)
+{
+  if ($tag['name'] != 'menu-285') { // フィールド名を確認
+    return $tag;
+  }
+
+  $acf_values = get_acf_lesson_names();
+  if (!empty($acf_values)) {
+    $tag['raw_values'] = $acf_values;
+    $tag['values'] = $acf_values;
+  }
+
+  return $tag;
+}
