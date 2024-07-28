@@ -250,3 +250,31 @@ function custom_excerpt_more($more)
   return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+// ブログ一覧のパンくずのテキストを変更
+function custom_breadcrumb_trail_home($trail)
+{
+  if (is_home()) {
+    foreach ($trail->breadcrumbs as &$breadcrumb) {
+      if ($breadcrumb->type == 'home' || $breadcrumb->type == '') {
+        $breadcrumb->text = 'ブログ一覧';
+      }
+    }
+  }
+  return $trail;
+}
+add_filter('bcn_after_fill', 'custom_breadcrumb_trail_home');
+
+// ブログ詳細のパンくずのテキストを変更
+function custom_breadcrumb_trail_single($trail)
+{
+  if (is_single() && get_post_type() == 'post') {
+    foreach ($trail->breadcrumbs as &$breadcrumb) {
+      if ($breadcrumb->type == 'single') {
+        $breadcrumb->text = 'ブログ詳細';
+      }
+    }
+  }
+  return $trail;
+}
+add_filter('bcn_after_fill', 'custom_breadcrumb_trail_single');
