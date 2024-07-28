@@ -2,20 +2,15 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Terms of Service ",
-    "imageClass" => "terms-of-service-background"
+    "imageClass" => "terms-of-service-background",
+    "detail" => false
   ] ?>
   <?php get_template_part(
-    "./top/_sub-key-visual",
+    "/top/_sub-key-visual",
     null,
     ["subKeyVisualData" => $subKeyVisualData]
-  ) ?> <?php $breadcrumbsData = [
-          "white" => false,
-          "list" => [
-            ["title" => "TOP", "url" => "/"],
-            ["title" => $base["title"], "url" => "/terms-of-service.html"]
-          ]
-        ]; ?> <?php get_template_part("./common/_breadcrumbs", null, ["breadcrumbsData" =>
-              $breadcrumbsData]) ?>
+  ) ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <section class="terms-of-service l-terms-of-service">
     <div class="terms-of-service__contents static-page">
       <div class="static-page__inner inner">

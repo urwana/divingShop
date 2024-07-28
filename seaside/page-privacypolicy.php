@@ -5,12 +5,8 @@
     "imageClass" => "privacy-policy-background"
   ] ?>
   <?php get_template_part("./top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php $breadcrumbsData = [
-    "white" => false,
-    "list" => [["title" => "TOP", "url" => "/"], ["title" => $base["title"], "url" => "/privacy-policy.html"]]
-  ];
-  ?>
-  <?php get_template_part("./common/_breadcrumbs", null, ["breadcrumbsData" => $breadcrumbsData]) ?>
+
+  <?php get_template_part("./common/_breadcrumbs") ?>
   <section class="privacy-policy l-privacy-policy">
     <div class="static-page">
       <div class="static-page__inner inner">

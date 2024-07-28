@@ -4,7 +4,7 @@
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
   <?php
   $taxonomy = 'campaign_taxonomy';
-  $term_slug = get_queried_object() ? get_queried_object()->slug : '';
+  $term_slug = get_queried_object() ? get_queried_object()->rewrite['slug'] : '';
   $args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 1 : -1,
