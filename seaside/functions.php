@@ -250,30 +250,3 @@ function custom_excerpt_more($more)
   return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
-
-// パンくずリストのタイトルを変更
-function custom_breadcrumb_trail($trail)
-{
-  // ホームまたはアーカイブページの場合
-  if (is_home() || is_archive()) {
-    foreach ($trail->breadcrumbs as &$breadcrumb) {
-      // ホームタイプのパンくず
-      if (in_array('home', $breadcrumb->get_types())) {
-        $breadcrumb->set_title('ブログ一覧');
-      }
-    }
-  }
-
-  // シングル投稿ページの場合
-  if (is_single() && get_post_type() == 'post') {
-    foreach ($trail->breadcrumbs as &$breadcrumb) {
-      // シングルタイプのパンくず
-      if (in_array('single', $breadcrumb->get_types())) {
-        $breadcrumb->set_title('ブログ詳細');
-      }
-    }
-  }
-
-  return $trail;
-}
-add_filter('bcn_after_fill', 'custom_breadcrumb_trail');
