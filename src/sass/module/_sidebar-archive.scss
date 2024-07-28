@@ -12,6 +12,7 @@
 }
 
 .sidebar-archive__toggle-hierarchy-inner {
+  margin-left: rem(24);
   @include mq("md") {
     margin-top: rem(24);
   }
