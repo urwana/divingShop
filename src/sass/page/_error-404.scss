@@ -9,7 +9,6 @@
   font-family: $price-font;
   background-color: $green-accent;
   color: $white;
-  text-align: center;
   padding-top: rem(80);
   padding-bottom: rem(40);
   background-image: url("../images/common/bg-404.svg");
@@ -25,6 +24,7 @@
 }
 
 .error-404__inner {
+  text-align: center;
   margin-top: rem(48);
   @include mq("md") {
     margin-top: rem(120);

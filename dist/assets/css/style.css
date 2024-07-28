@@ -439,11 +439,11 @@ body {
 	font-family: "Lato", sans-serif;
 	padding-bottom: 2.5rem;
 	padding-top: 5rem;
-	text-align: center;
 }
 
 .error-404__inner {
 	margin-top: 3rem;
+	text-align: center;
 }
 
 .error-404__main-text {

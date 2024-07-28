@@ -58,12 +58,12 @@ function create_custom_post_types()
     'singular_name'         => 'お客様の声',  // 投稿タイプの名前（単数形）
     'menu_name'             => 'お客様の声',  // 管理画面メニューの名前
     'name_admin_bar'        => 'お客様の声',   // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規 voice 投稿を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規 voice 投稿', // 新規投稿追加ページのタイトル
+    'add_new'               => '新規 お客様の声を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規 お客様の声を投稿', // 新規投稿追加ページのタイトル
     'new_item'              => 'New voice', // 新規投稿ページのタイトル
     'edit_item'             => 'Edit voice', // 投稿編集ページのタイトル
     'view_item'             => 'View voice', // 投稿表示ページのタイトル
-    'all_items'             => 'voices 全ての投稿', // 全投稿一覧ページのタイトル
+    'all_items'             => 'voice 全ての投稿', // 全投稿一覧ページのタイトル
     'search_items'          => 'voice の記事を探す', // 投稿検索のラベル
     'parent_item_colon'     => 'parent voices:', // 階層型の親投稿ラベル = 省略可能
     'not_found'             => 'voice の投稿はありません。', // 投稿が見つからなかったときのメッセージ
