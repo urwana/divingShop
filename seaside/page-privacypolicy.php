@@ -2,7 +2,8 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Privacy Policy",
-    "imageClass" => "privacy-policy-background"
+    "imageClass" => "privacy-policy-background",
+    "detail" => false
   ] ?>
   <?php get_template_part("./top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
 

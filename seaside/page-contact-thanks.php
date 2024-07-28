@@ -2,29 +2,15 @@
 <main>
   <?php $subKeyVisualData = [
     "pageTitle" => "Contact",
-    "imageClass" => "contact-background"
+    "imageClass" => "contact-background",
+    "detail" => false
   ] ?>
   <?php get_template_part(
-    "./top/_sub-key-visual",
+    "/top/_sub-key-visual",
     null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php
-  $breadcrumbsData = [
-    "white" => false,
-    "list" => [
-      ["title" => "TOP", "url" => "/"],
-      [
-        "title" => "お問い合わせ",
-        "url" => "/contact.html"
-      ],
-      [
-        "title" => $base["title"],
-        "url" => "/thanks.html"
-      ]
-    ]
-  ]; ?>
-  <?php get_template_part("./common/_breadcrumbs", null, ["breadcrumbsData" => $breadcrumbsData]) ?>
+  <?php get_template_part("./common/_breadcrumbs") ?>
   <div class="l-contact">
     <div class="contact">
       <div class="contact__inner">
