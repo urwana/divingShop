@@ -4,15 +4,15 @@
     "pageTitle" => "Blog",
     "imageClass" => "blog-background",
     "detail" => true
-  ] ?>
+  ]; ?>
 
-  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]) ?>
-  <?php get_template_part("/common/_breadcrumbs") ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_breadcrumbs"); ?>
   <section class="l-blog">
     <div class="blog">
       <div class="blog__inner inner">
         <div class="blog__body">
-          <?php get_template_part("./common/_blog-detail-contents") ?>
+          <?php get_template_part("./common/_blog-detail-contents"); ?>
           <div class="blog__sidebar">
             <div class="blog__sidebar-popular-articles">
               <?php get_template_part("./common/_sidebar-popular-articles");

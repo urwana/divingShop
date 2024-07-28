@@ -5,12 +5,8 @@
     "imageClass" => "information-background",
     "detail" => false
   ] ?>
-  <?php get_template_part(
-    "/top/_sub-key-visual",
-    null,
-    ["subKeyVisualData" => $subKeyVisualData]
-  ) ?>
-  <?php get_template_part("/common/_breadcrumbs") ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="l-information">
     <div class="information">
       <div class="information__inner inner">
@@ -48,7 +44,7 @@
             "imagePath" => "/assets/images/information/tab-contents3",
             "alt" => "体験ダイビング"
           ],]; ?>
-          <?php get_template_part("/common/_tab-contents-information", null, ["informationTabData" => $informationTabData, "informationTabContentsData" => $informationTabContentsData]) ?>
+          <?php get_template_part("/common/_tab-contents-information", null, ["informationTabData" => $informationTabData, "informationTabContentsData" => $informationTabContentsData]); ?>
         </div>
       </div>
     </div>

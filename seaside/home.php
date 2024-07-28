@@ -5,20 +5,16 @@
     "imageClass" => "blog-background",
     "detail" => false
   ] ?>
-  <?php get_template_part(
-    "/top/_sub-key-visual",
-    null,
-    ["subKeyVisualData" => $subKeyVisualData]
-  ) ?>
-  <?php get_template_part("/common/_breadcrumbs") ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="l-blog">
     <div class="blog">
       <div class="blog__inner inner">
         <div class="blog__body">
           <div class="blog__cards">
-            <?php get_template_part("/common/_blog-cards", null, ["top" => false]) ?>
+            <?php get_template_part("/common/_blog-cards", null, ["top" => false]); ?>
             <div class="blog__pager">
-              <?php get_template_part("/common/_pager") ?>
+              <?php get_template_part("/common/_pager"); ?>
             </div>
           </div>
           <div class="blog__sidebar">
@@ -41,7 +37,7 @@
     </div>
   </div>
   <section class="l-top-contact">
-    <?php get_template_part("/common/_contact") ?>
+    <?php get_template_part("/common/_contact"); ?>
   </section>
 </main>
 <?php get_footer(); ?>

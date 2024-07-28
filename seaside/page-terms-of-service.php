@@ -4,13 +4,9 @@
     "pageTitle" => "Terms of Service ",
     "imageClass" => "terms-of-service-background",
     "detail" => false
-  ] ?>
-  <?php get_template_part(
-    "/top/_sub-key-visual",
-    null,
-    ["subKeyVisualData" => $subKeyVisualData]
-  ) ?>
-  <?php get_template_part("/common/_breadcrumbs") ?>
+  ]; ?>
+  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_breadcrumbs"); ?>
   <section class="terms-of-service l-terms-of-service">
     <div class="terms-of-service__contents static-page">
       <div class="static-page__inner inner">
@@ -20,7 +16,7 @@
     </div>
   </section>
   <section class="l-top-contact">
-    <?php get_template_part("./common/_contact") ?>
+    <?php get_template_part("./common/_contact"); ?>
   </section>
 </main>
 <?php get_footer(); ?>
