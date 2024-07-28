@@ -191,7 +191,7 @@
           </div>
           <div class="navigation-sp__item-group">
             <div class="navigation-sp__item navigation-sp__item--top">
-              <a class="navigation-sp__link" href="/seaside/privacy-policy">
+              <a class="navigation-sp__link" href="/seaside/privacypolicy">
                 <div class="navigation-sp__label">
                   プライバシー<br />
                   ポリシー
