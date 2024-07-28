@@ -27,10 +27,12 @@
   echo 'DEBUG get_query_var(paged)===============================';
   echo get_query_var('paged');
 
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
   $args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 2 : 4,
-    'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
+    'paged' => $paged,
     'tax_query' => $tax_query,
   ];
 
