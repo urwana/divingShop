@@ -4,8 +4,7 @@
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
   <?php
   $taxonomy = 'campaign_taxonomy';
-  $term_slug = get_query_var('term');
-
+  $term_slug = get_query_var('term') ? get_query_var('term') : null;
   $tax_query = [];
   if ($term_slug) {
     $tax_query = [
