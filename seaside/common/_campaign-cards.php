@@ -1,6 +1,7 @@
 <?php $sideBar = isset($args["sideBar"]) ? $args["sideBar"] : false; ?>
 <?php $page = $args["page"]; ?>
 
+
 <div class="<?php echo $sideBar ? 'campaign-cards--sidebar' : 'campaign-cards'; ?>">
   <?php
   $taxonomy = 'campaign_taxonomy';
@@ -17,7 +18,7 @@
   }
   $campaign_args = [
     'post_type' => 'campaign',
-    'posts_per_page' => $sideBar ? 2 : 4,
+    'posts_per_page' => $sideBar ? 2 : 3,
     'tax_query' => $tax_query,
     'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
