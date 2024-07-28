@@ -17,13 +17,13 @@
         'taxonomy' => $taxonomy,
         'field'    => 'slug',
         'terms'    => $term_slug,
-        'operator' => 'IN',
+        //'operator' => 'IN',
       ],
     ];
   }
   $args = [
     'post_type' => 'campaign',
-    'posts_per_page' => $sideBar ? 1 : 4,
+    'posts_per_page' => $sideBar ? 2 : 4,
     'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
     'tax_query' => $tax_query,
   ];
