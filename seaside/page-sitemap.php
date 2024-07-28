@@ -15,7 +15,8 @@
     <div class="sitemap">
       <div class="sitemap__inner inner">
         <?php get_template_part(
-          "./common/_navigation-responsive",
+          "/common/_navigation-responsive",
+          null,
           ["footer" => false]
         ) ?>
       </div>
