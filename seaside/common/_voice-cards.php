@@ -1,5 +1,6 @@
-<div class="voice-cards">
+<?php $top = $args['top']; ?>
 
+<div class="voice-cards">
   <?php
   $taxonomy = 'voice_taxonomy';
   $term_slug = get_query_var('term');
@@ -16,7 +17,7 @@
   }
   $voice_args = [
     'post_type' => 'voice',
-    'posts_per_page' => 6,
+    'posts_per_page' => $top ? 2 : 6,
     'tax_query' => $tax_query,
     'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
   ];
