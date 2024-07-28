@@ -10,7 +10,7 @@
     null,
     ["subKeyVisualData" => $subKeyVisualData]
   ) ?>
-  <?php get_template_part("./common/_breadcrumbs") ?>
+  <?php get_template_part("/common/_breadcrumbs") ?>
   <section class="l-sitemap">
     <div class="sitemap">
       <div class="sitemap__inner inner">
