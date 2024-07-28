@@ -8,8 +8,11 @@
   $queried_object = get_queried_object();
 
   if ($queried_object && is_a($queried_object, 'WP_Term')) {
-    $term_slug = $queried_object->slug;
+    $term_slug = $queried_object->slug; // taxonomy filter 用
+  } elseif ($queried_object && is_a($queried_object, 'WP_Post_Type')) {
+    $term_slug = ''; // 全件表示する ALL 用にスラッグを空に設定
   }
+
   $tax_query = [];
   if ($term_slug) {
     $tax_query = [
@@ -17,10 +20,10 @@
         'taxonomy' => $taxonomy,
         'field'    => 'slug',
         'terms'    => $term_slug,
-        //'operator' => 'IN',
       ],
     ];
   }
+
   $args = [
     'post_type' => 'campaign',
     'posts_per_page' => $sideBar ? 2 : 4,
