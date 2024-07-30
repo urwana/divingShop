@@ -95,6 +95,10 @@
                 <dt>1日ダイビング(3ダイブ)</dt>
                 <dd>¥32,000</dd>
               </div>
+              <div class="top-price-list__item">
+                <dt>ナイトダイビング(2ダイブ)</dt>
+                <dd>¥14,000</dd>
+              </div>
             </dl>
           </div>
         </div>
