@@ -202,6 +202,8 @@ function custom_posts_per_page($query)
       $query->set('posts_per_page', 6);
     } else if (is_post_type_archive("campaign")) {
       $query->set('posts_per_page', 4);
+    } else if (is_home() || is_post_type_archive("blog")) {
+      $query->set('posts_per_page', 10);
     }
   }
 }
