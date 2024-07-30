@@ -25,9 +25,6 @@
       </div>
     </div>
     <div class="swiper-wrapper key-visual__swiper-wrapper">
-      <?php if (have_posts()) :
-        while (have_posts()) :
-          the_post(); ?>
       <figure class="swiper-slide key-visual__swiper-slide">
         <picture>
           <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp1") ?>" />
@@ -52,9 +49,6 @@
           <img src="<?php the_field("top_swiper_4") ?>" alt="<?php the_field("top_swiper_alt4") ?>" />
         </picture>
       </figure>
-      <?php endwhile;
-      endif; ?>
     </div>
   </div>
-</div>
 </div>
