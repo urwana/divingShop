@@ -2028,6 +2028,11 @@ body {
 	transition: 0.2s;
 }
 
+.navigation-responsive__item.current:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
 .navigation-responsive__item--top {
 	font-weight: 700;
 	margin-top: 0;

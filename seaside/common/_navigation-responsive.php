@@ -41,6 +41,18 @@
         </a>
       </div>
     </div>
+    <?php if (!$footer) : ?>
+    <div class="navigation-responsive__item-group">
+      <div
+        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap current"; ?>">
+        <div class="navigation-responsive__link">
+          <div class="navigation-responsive__label">
+            サイトマップ
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endif; ?>
   </div>
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
