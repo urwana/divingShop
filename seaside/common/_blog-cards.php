@@ -1,4 +1,5 @@
 <?php $top = isset($args["top"]) ? $args["top"] : false; ?>
+<?php $page = isset($args["page"]) ? $args["page"] : false; ?>
 
 <div class="<?php echo $top ? 'blog-cards' : 'blog-cards blog-cards--2col'; ?>">
   <?php
