@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="voice-card-sidebar__button">
-      <a href="<?php echo $voiceCardData["link"]; ?>" class="button"><span class="button__text">View more</span></a>
+      <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
     </div>
   </div>
 </div>
