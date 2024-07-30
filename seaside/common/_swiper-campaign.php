@@ -1,6 +1,7 @@
 <?php
 $args = array(
-  "post_type" => "campaign"
+  "post_type" => "campaign",
+  'posts_per_page' => 4,
 );
 $the_query = new WP_Query($args);
 ?>
