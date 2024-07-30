@@ -6,6 +6,9 @@ $posts_by_months = get_posts_by_months(); ?>
     <div class="sidebar-archive__toggle-hierarchy">
       <div class="sidebar-archive__toggle-hierarchy-inner">
         <?php foreach ($posts_by_months as $year => $months) : ?>
+        <?php
+          echo esc_url(add_query_arg(array('year' => $year, 'monthnum' => $month), get_permalink($page_id))); ?>
+
         <div class="sidebar-archive__year">
           <a href="<?php echo esc_url(add_query_arg(array('year' => $year, 'monthnum' => $month), get_permalink($page_id))); ?>"
             class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>

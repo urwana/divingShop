@@ -1,7 +1,15 @@
+<?php
+
+/**
+ * Template Name: Date Template
+ */
+?>
+
 <?php get_header(); ?>
 <main>
+  <h1>Date</h1>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Blog",
+    "pageTitle" => "Date",
     "imageClass" => "blog-background",
     "detail" => false
   ] ?>
@@ -12,7 +20,7 @@
       <div class="blog__inner inner">
         <div class="blog__body">
           <div class="blog__cards">
-            <?php get_template_part("/common/_blog-cards", null, ["top" => false]); ?>
+            <?php get_template_part("/common/_blog-cards--date", null, ["top" => false]); ?>
             <div class="blog__pager">
               <?php get_template_part("/common/_pager"); ?>
             </div>
