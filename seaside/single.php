@@ -13,21 +13,23 @@
       <div class="blog__inner inner">
         <div class="blog__body">
           <?php get_template_part("./common/_blog-detail-contents"); ?>
-          <div class="blog__sidebar">
-            <div class="blog__sidebar-popular-articles">
-              <?php get_template_part("./common/_sidebar-popular-articles");
-              ?>
+          <aside>
+            <div class="blog__sidebar">
+              <div class="blog__sidebar-popular-articles">
+                <?php get_template_part("./common/_sidebar-popular-articles");
+                ?>
+              </div>
+              <div class="blog__sidebar-voice">
+                <?php get_template_part("./common/_sidebar-voice"); ?>
+              </div>
+              <div class="blog__sidebar-campaign">
+                <?php get_template_part("./common/_sidebar-campaign"); ?>
+              </div>
+              <div class="blog__sidebar-archive">
+                <?php get_template_part("./common/_sidebar-archive"); ?>
+              </div>
             </div>
-            <div class="blog__sidebar-voice">
-              <?php get_template_part("./common/_sidebar-voice"); ?>
-            </div>
-            <div class="blog__sidebar-campaign">
-              <?php get_template_part("./common/_sidebar-campaign"); ?>
-            </div>
-            <div class="blog__sidebar-archive">
-              <?php get_template_part("./common/_sidebar-archive"); ?>
-            </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>

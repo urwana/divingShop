@@ -317,3 +317,34 @@ function get_custom_excerpt($text_length)
     echo $excerpt;
   }
 }
+
+// アーカイブ月度を取得
+function get_posts_by_months()
+{
+  global $wpdb;
+  $query = "
+      SELECT DISTINCT
+          YEAR(post_date) AS year,
+          MONTH(post_date) AS month
+      FROM
+          $wpdb->posts
+      WHERE
+          post_status = 'publish' AND
+          post_type = 'post'
+      ORDER BY
+          year DESC, month DESC
+  ";
+  $results = $wpdb->get_results($query);
+  $posts_by_months = array();
+
+  foreach ($results as $result) {
+    $year = $result->year;
+    $month = $result->month;
+
+    if (!isset($posts_by_months[$year])) {
+      $posts_by_months[$year] = array();
+    }
+    $posts_by_months[$year][] = $month;
+  }
+  return $posts_by_months;
+}
