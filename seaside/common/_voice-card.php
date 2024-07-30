@@ -36,7 +36,7 @@
       </figure>
     </div>
     <div class="voice-card__text">
-      <?php the_excerpt(); ?>
+      <?php get_custom_excerpt(250); ?>
     </div>
   </a>
 </div>

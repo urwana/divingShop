@@ -14,7 +14,7 @@
         <time class="blog-card__date" datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
         <div class="blog-card__title"><?php the_title(); ?></div>
         <div class="blog-card__text">
-          <?php the_excerpt(); ?>
+          <?php get_custom_excerpt(92); ?>
         </div>
       </div>
     </div>

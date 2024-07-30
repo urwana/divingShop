@@ -50,8 +50,46 @@ function my_custom_body_classes($classes)
 }
 add_filter('body_class', 'my_custom_body_classes');
 
+// カスタム投稿の設定
 function create_custom_post_types()
 {
+  // "campaign" カスタム投稿タイプのラベル設定
+  $campaign_labels = array(
+    'name'                  => 'キャンペーン', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'キャンペーン', // 投稿タイプの名前（単数形）
+    'menu_name'             => 'キャンペーン', // 管理画面メニューの名前
+    'name_admin_bar'        => 'キャンペーン', // 管理バーに表示される名前 = 省略可能
+    'add_new'               => '新規キャンペーンの投稿を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => '新規キャンペーンの投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => '新規キャンペーン', // 新規投稿ページのタイトル
+    'edit_item'             => 'キャンペーンを編集', // 投稿編集ページのタイトル
+    'view_item'             => 'キャンペーン', // 投稿表示ページのタイトル
+    'all_items'             => '全キャンペーン投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'キャンペーンを探す', // 投稿検索のラベル
+    'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
+    'not_found'             => 'キャンペーンの投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱にキャンペーンの投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
+  );
+
+  // "campaign" カスタム投稿タイプの設定
+  $campaign_args = array(
+    'labels'               => $campaign_labels, // 上で定義したラベルを使用
+    'public'               => true,  // 投稿タイプを公開するかどうか
+    'publicly_queryable'   => true,  // クエリ可能かどうか
+    'show_ui'              => true,  // 管理画面の編集用UIを表示する
+    'show_in_rest'         => true,  // 投稿画面に表示(REST APIに含める場合はtrueを指定)
+    'show_in_menu'         => true,  // 管理メニューに表示するかどうか
+    'menu_icon'            => 'dashicons-portfolio', // Dashicons アイコンを指定
+    'menu_position'        => 5,     // 管理画面上での配置場所
+    'query_var'            => true,  // クエリ変数を使うかどうか
+    'rewrite'              => array('slug' => 'campaign'), // リライトルールの設定（スラッグ）
+    'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
+    'has_archive'          => true,  // アーカイブページを持つかどうか
+    'hierarchical'         => false, // 階層型（カテゴリー）かどうか
+    'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
+  );
+
+  register_post_type('campaign', $campaign_args);
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
     'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
@@ -91,46 +129,10 @@ function create_custom_post_types()
   // "voice" カスタム投稿タイプを登録
   register_post_type('voice', $voice_args);
 
-  // "campaign" カスタム投稿タイプのラベル設定
-  $campaign_labels = array(
-    'name'                  => 'キャンペーン', // 投稿タイプの名前（複数形）
-    'singular_name'         => 'キャンペーン', // 投稿タイプの名前（単数形）
-    'menu_name'             => 'キャンペーン', // 管理画面メニューの名前
-    'name_admin_bar'        => 'キャンペーン', // 管理バーに表示される名前 = 省略可能
-    'add_new'               => '新規キャンペーンの投稿を追加', // 新規追加リンクのテキスト
-    'add_new_item'          => '新規キャンペーンの投稿', // 新規投稿追加ページのタイトル
-    'new_item'              => '新規キャンペーン', // 新規投稿ページのタイトル
-    'edit_item'             => 'キャンペーンを編集', // 投稿編集ページのタイトル
-    'view_item'             => 'キャンペーン', // 投稿表示ページのタイトル
-    'all_items'             => '全キャンペーン投稿', // 全投稿一覧ページのタイトル
-    'search_items'          => 'キャンペーンを探す', // 投稿検索のラベル
-    'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
-    'not_found'             => 'キャンペーンの投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
-    'not_found_in_trash'    => 'ゴミ箱にキャンペーンの投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
-  );
-
-  // "campaign" カスタム投稿タイプの設定
-  $campaign_args = array(
-    'labels'               => $campaign_labels, // 上で定義したラベルを使用
-    'public'               => true,  // 投稿タイプを公開するかどうか
-    'publicly_queryable'   => true,  // クエリ可能かどうか
-    'show_ui'              => true,  // 管理画面の編集用UIを表示する
-    'show_in_rest'         => true,  // 投稿画面に表示(REST APIに含める場合はtrueを指定)
-    'show_in_menu'         => true,  // 管理メニューに表示するかどうか
-    'menu_icon'            => 'dashicons-portfolio', // Dashicons アイコンを指定
-    'menu_position'        => 5,     // 管理画面上での配置場所
-    'query_var'            => true,  // クエリ変数を使うかどうか
-    'rewrite'              => array('slug' => 'campaign'), // リライトルールの設定（スラッグ）
-    'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
-    'has_archive'          => true,  // アーカイブページを持つかどうか
-    'hierarchical'         => false, // 階層型（カテゴリー）かどうか
-    'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
-  );
-
-  register_post_type('campaign', $campaign_args);
 }
 add_action('init', 'create_custom_post_types');
 
+// カスタムタクソノミーの設定
 function create_custom_taxonomies()
 {
   // campaign タクソノミーのラベル設定
@@ -191,6 +193,19 @@ function create_custom_taxonomies()
   register_taxonomy('voice_taxonomy', array('voice'), $voiceArgs);
 }
 add_action('init', 'create_custom_taxonomies', 0);
+
+// カスタム投稿毎に表示件数のデフォルト設定を変える
+function custom_posts_per_page($query)
+{
+  if (!is_admin() && $query->is_main_query()) {
+    if (is_post_type_archive("voice")) {
+      $query->set('posts_per_page', 6);
+    } else if (is_post_type_archive("campaign")) {
+      $query->set('posts_per_page', 4);
+    }
+  }
+}
+add_action('pre_get_posts', 'custom_posts_per_page');
 
 // 管理画面の通常「投稿」を「ブログ」 に変える
 function rename_default_post_type()
@@ -281,3 +296,24 @@ function post_titles_to_cf7_select_filter($tag, $unused)
   return $tag;
 }
 add_filter('wpcf7_form_tag', 'post_titles_to_cf7_select_filter', 10, 2);
+
+// 抜粋の文字数を変更する
+function custom_excerpt_length($length)
+{
+  return 200;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
+
+// 記事の抜粋 the_excerpt() の文字数を制限
+function get_custom_excerpt($text_length)
+{
+  $excerpt = get_the_excerpt();
+  $text_length++;
+  if (mb_strlen($excerpt) > $text_length) {
+    $text_for_ellipsis = mb_substr($excerpt, 0, $text_length - 3);
+    $text_for_ellipsis = nl2br($text_for_ellipsis);
+    echo $text_for_ellipsis . '...';
+  } else {
+    echo $excerpt;
+  }
+}
