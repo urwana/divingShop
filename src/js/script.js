@@ -275,7 +275,7 @@ jQuery(function ($) {
 
   contactButton.on("click", function (e) {
     e.preventDefault();
-    window.location.href = "/contact";
+    window.location.href = "/seaside/contact";
   });
 
   // year month day toggle
