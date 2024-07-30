@@ -16,7 +16,7 @@
     ];
   }
 
-  if ($page) {
+  if (!$page) {
     $voice_args = [
       'post_type' => 'voice',
       'posts_per_page' => 3,
