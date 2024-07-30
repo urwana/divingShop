@@ -100,17 +100,17 @@
               </a>
             </div>
             <div class="navigation-sp__item">
-              <a class="navigation-sp__link" href="/seaside/campaign#licence">
+              <a class="navigation-sp__link" href="/seaside/campaign_taxonomy/licence">
                 <div class="navigation-sp__label">ライセンス講習</div>
               </a>
             </div>
             <div class="navigation-sp__item">
-              <a class="navigation-sp__link" href="/seaside/campaign#trial">
+              <a class="navigation-sp__link" href="/seaside/campaign_taxonomy/trial">
                 <div class="navigation-sp__label">貸切体験ダイビング</div>
               </a>
             </div>
             <div class="navigation-sp__item">
-              <a class="navigation-sp__link" href="/seaside/campaign#fun">
+              <a class="navigation-sp__link" href="/seaside/campaign_taxonomy/fun">
                 <div class="navigation-sp__label">ナイトダイビング</div>
               </a>
             </div>
