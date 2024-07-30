@@ -1,7 +1,6 @@
 <?php $page = $args["page"]; ?>
 
-<a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?>"
-  href="<?php echo $campaignCardData["link"] ?>">
+<a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?>" href="/seaside/campaign/">
   <?php
   if (has_post_thumbnail()) :
   ?>

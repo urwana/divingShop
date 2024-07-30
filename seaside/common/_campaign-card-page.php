@@ -2,7 +2,7 @@
 <?php $sideBar = $args["sideBar"]; ?>
 
 <a class="campaign-card<?php echo $page ? " campaign-card--page" : "" ?> js-card<?php echo $campaignCard["dataType"] ?>"
-  href="<?php the_permalink(); ?>">
+  href="/seaside/campaign">
   <figure class="campaign-card__image<?php echo $sideBar ? " campaign-card__image--sidebar" : "" ?>">
     <?php
     if (has_post_thumbnail()) :
