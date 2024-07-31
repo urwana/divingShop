@@ -404,9 +404,9 @@ function get_popular_posts($number = 3)
   $popular_posts = new WP_Query($args);
 
   // デバッグ情報の出力
-  echo '<pre>';
-  var_dump($popular_posts);
-  echo '</pre>';
+  // echo '<pre>';
+  // var_dump($popular_posts);
+  // echo '</pre>';
   
   return $popular_posts;
 }
