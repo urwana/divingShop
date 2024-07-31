@@ -7,12 +7,13 @@ $posts_by_months = get_posts_by_months(); ?>
       <div class="sidebar-archive__toggle-hierarchy-inner">
         <?php foreach ($posts_by_months as $year => $months) : ?>
         <div class="sidebar-archive__year">
-          <a href="<?php echo esc_url(add_query_arg(array('year' => $year, 'monthnum' => $month), get_permalink($page_id))); ?>"
-            class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
+          <?php $url = add_query_arg(array('year' => $year, 'monthnum' => $month), home_url('/date/')); ?>
+          <a href="" class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
           <div class="js-yearBody sidebar-archive__year-body">
             <?php foreach ($months as $month) : ?>
             <div class="sidebar-archive__month">
-              <a href="" class="js-monthLabel sidebar-archive__month-label"><?php echo esc_html($month); ?>月</a>
+              <a href="<?php echo esc_url($url); ?>"
+                class="js-monthLabel sidebar-archive__month-label"><?php echo esc_html($month); ?>月</a>
             </div>
             <?php endforeach; ?>
           </div>
