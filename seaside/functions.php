@@ -402,5 +402,17 @@ function get_popular_posts($number = 3)
     'posts_per_page' => $number
   );
   $popular_posts = new WP_Query($args);
+
+  // SQL クエリをデバッグ表示
+  echo '<pre>';
+  echo $popular_posts->request; // 実行されている SQL クエリを表示
+  echo '</pre>';
+
+  // メタデータが正しく保存されているか確認
+  global $wpdb;
+  $results = $wpdb->get_results("SELECT * FROM {$wpdb->postmeta} WHERE meta_key = 'post_views_count'");
+  echo '<pre>';
+  print_r($results);
+  echo '</pre>';
   return $popular_posts;
 }
