@@ -351,17 +351,10 @@ function get_posts_by_months()
   return $posts_by_months;
 }
 
-function custom_theme_setup()
+function add_query_vars_filter($vars)
 {
-  // 固定ページにページ属性のサポートを追加
-  add_post_type_support('page', 'page-attributes');
+  $vars[] = 'year';
+  $vars[] = 'monthnum';
+  return $vars;
 }
-
-add_action('init', 'custom_theme_setup');
-
-function register_custom_page_templates($templates)
-{
-  $templates['data.php'] = 'Date Template';
-  return $templates;
-}
-add_filter('theme_page_templates', 'register_custom_page_templates');
+add_filter('query_vars', 'add_query_vars_filter');
