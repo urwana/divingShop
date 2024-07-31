@@ -360,16 +360,13 @@ function add_query_vars_filter($vars)
 }
 add_filter('query_vars', 'add_query_vars_filter');
 
-// 投稿の閲覧数を更新する関数
+// 投稿の閲覧数を更新する
 function update_post_views($postID)
 {
   if (!is_single()) return;
-
   // ACFのキーを設定
   $count_key = 'post_views_count';
   $count = get_post_meta($postID, $count_key, true);
-
-  // 見つからない場合は初期化してから設定
   if ($count == '') {
     $count = 0;
     update_post_meta($postID, $count_key, 1);
@@ -379,7 +376,7 @@ function update_post_views($postID)
   }
 }
 
-// 投稿の閲覧数をトラッキングする関数
+// 投稿の閲覧数をトラッキングする
 function track_post_views($post_id)
 {
   if (!is_single()) return;
@@ -396,17 +393,11 @@ function get_popular_posts($number = 3)
 {
   $args = array(
     'post_type' => 'post',
-    'meta_key' => 'post_views_count',  // メタフィールドのキー
+    'meta_key' => 'post_views_count',  // ACFフィールドのキー
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
     'posts_per_page' => $number
   );
   $popular_posts = new WP_Query($args);
-
-  // デバッグ情報の出力
-  // echo '<pre>';
-  // var_dump($popular_posts);
-  // echo '</pre>';
-  
   return $popular_posts;
 }
