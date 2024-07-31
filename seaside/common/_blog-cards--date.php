@@ -3,20 +3,23 @@
 <div class="<?php echo $top ? 'blog-cards' : 'blog-cards blog-cards--2col'; ?>">
   <?php
   $year = get_query_var('year');
-  $month = get_query_var('monthnum');
+  $monthnum = get_query_var('monthnum');
 
-  // クエリ引数の初期設定
+  if (!$year) {
+    $year = date('Y');
+  }
+  if (!$monthnum) {
+    $monthnum = date('n');
+  }
+
   $query_args = array(
-    'post_type' => 'post',
-    'posts_per_page' => 10,
+    'post_type' => 'blog',
+    'posts_per_page' => -1,
+    'year' => $year,
+    'monthnum' => $monthnum,
     'post_status' => 'publish'
   );
-  if ($year) {
-    $query_args['year'] = $year;
-  }
-  if ($month) {
-    $query_args['monthnum'] = $month;
-  }
+
   $the_query = new WP_Query($query_args);
 
   if ($the_query->have_posts()) :
