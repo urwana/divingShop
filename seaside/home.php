@@ -17,6 +17,8 @@
               <?php get_template_part("/common/_pager"); ?>
             </div>
           </div>
+
+
           <?php get_sidebar(); ?>
         </div>
       </div>
