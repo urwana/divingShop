@@ -7,7 +7,6 @@
       </div>
     </div>
     <div class="top-voice__cards">
-
       <div class="voice-cards">
         <?php
         $taxonomy = 'voice_taxonomy';
