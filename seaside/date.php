@@ -3,8 +3,6 @@
   <?php
   $year = get_query_var('year');
   $month = get_query_var('month');
-echo "=======================";
-echo $month;
   $title = esc_html($year) . "年" . esc_html($month) . "月";
   $subKeyVisualData = [
     "pageTitle" => $title,
@@ -14,6 +12,9 @@ echo $month;
   <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="l-blog">
+    <?php echo "=======================";
+    echo $month;
+    ?>
     <div class="blog">
       <div class="blog__inner inner">
         <div class="blog__body">
