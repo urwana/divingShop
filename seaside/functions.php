@@ -403,10 +403,10 @@ function get_popular_posts($number = 3)
 }
 
 // date sub key title 用
-function custom_rewrite_rules()
+function add_custom_query_vars_filter($vars)
 {
-  add_rewrite_tag('%year%', '([^/]+)', 'year=');
-  add_rewrite_tag('%month%', '([^/]+)', 'month=');
-  add_rewrite_rule('^seaside/([0-9]{4})/([0-9]{2})/?', 'index.php?year=$matches[1]&month=$matches[2]', 'top');
+  $vars[] = 'year';
+  $vars[] = 'month';
+  return $vars;
 }
-add_action('init', 'custom_rewrite_rules');
+add_filter('query_vars', 'add_custom_query_vars_filter');
