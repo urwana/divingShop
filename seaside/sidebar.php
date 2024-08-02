@@ -30,7 +30,7 @@
           $term_slug = get_query_var('term');
           $campaign_args = [
             'post_type' => 'campaign',
-            'posts_per_page' => $sideBar ? 2 : 4,
+            'posts_per_page' =>  2,
             'tax_query' => $term_slug ? [
               [
                 'taxonomy' => $taxonomy,
