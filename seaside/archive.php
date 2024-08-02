@@ -5,7 +5,7 @@
     "imageClass" => "voice-background",
     "detail" => false
   ]; ?>
-  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <section class="l-voice">
     <div class="voice">

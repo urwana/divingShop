@@ -6,7 +6,7 @@
     "detail" => false
   ];
   ?>
-  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="l-about-us">
     <div class="about-us">
@@ -24,7 +24,7 @@
         <div class="gallery__item-container l-gallery__item-container">
           <?php $fields = CFS()->get("gallery_images"); ?>
           <?php foreach ($fields as $field) { ?>
-          <?php get_template_part("/common/_gallery-item", null, ["gallery" => $field]); ?>
+            <?php get_template_part("/common/_gallery-item", null, ["gallery" => $field]); ?>
           <?php }; ?>
         </div>
       </div>

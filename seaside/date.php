@@ -11,7 +11,7 @@
     "imageClass" => "blog-background",
     "detail" => false
   ] ?>
-  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="l-blog">
     <div class="blog">

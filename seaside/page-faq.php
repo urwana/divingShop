@@ -5,7 +5,7 @@
     "imageClass" => "faq-background",
     "detail" => false
   ]; ?>
-  <?php get_template_part("/top/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
+  <?php get_template_part("/common/_sub-key-visual", null, ["subKeyVisualData" => $subKeyVisualData]); ?>
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="faq l-faq">
     <div class="faq__inner inner">
