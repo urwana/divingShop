@@ -11,6 +11,9 @@
     <div class="faq__inner inner">
       <div class="faq__contents">
         <div class="qa-boxes">
+          <?php
+          $qa_boxes = CFS()->get('qa_box');
+          ?>
           <?php foreach ($qa_boxes as $key => $qa_box) : ?>
             <div class="qa-boxes__item">
               <div class="qa-box">
