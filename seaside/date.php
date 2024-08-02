@@ -3,6 +3,8 @@
   <?php
   $year = get_query_var('year');
   $month = get_query_var('month');
+echo "=======================";
+echo $month;
   $title = esc_html($year) . "年" . esc_html($month) . "月";
   $subKeyVisualData = [
     "pageTitle" => $title,
