@@ -45,7 +45,7 @@
           if ($the_query->have_posts()) :
             while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
-              <?php get_template_part('/common/_campaign-card-page', null, ['page' => $page, 'sideBar' => $sideBar]); ?>
+              <?php get_template_part('/common/_campaign-card-page', null, ['page' => false, 'sideBar' => true]); ?>
             <?php endwhile;
           else : ?>
             <p>投稿が見つかりませんでした。</p>
