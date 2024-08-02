@@ -40,12 +40,40 @@
             ] : [],
             'paged' => get_query_var('paged', 1),
           ];
-
           $the_query = new WP_Query($campaign_args);
           if ($the_query->have_posts()) :
             while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
-              <?php get_template_part('/common/_campaign-card-page', null, ['page' => false, 'sideBar' => true]); ?>
+              <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>" href="/seaside/campaign">
+                <figure class="campaign-card__image campaign-card__image--sidebar">
+                  <?php
+                  if (has_post_thumbnail()) :
+                  ?>
+                    <figure class="campaign-card__image">
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                    </figure>
+                  <?php
+                  endif;
+                  ?>
+                </figure>
+                <div class="campaign-card__body campaign-card__body--side-bar">
+                  <div class="campaign-card__top">
+                    <div class="campaign-card__title campaign-card__title--sidebar">
+                      <?php the_title(); ?></div>
+                  </div>
+                  <div class="campaign-card__bottom">
+                    <p class="campaign-card__explain campaign-card__explain--sidebar">
+                      <?php the_field("main_text"); ?>
+                    </p>
+                    <div class="campaign-card__price-container">
+                      <div class="price-container">
+                        <span class="price-container__cancelled-price price-container__cancelled-price--sidebar">¥<?php the_field("cancelled_price") ?></span>
+                        <span class="price-container__price price-container__price--sidebar">¥<?php the_field("price") ?></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             <?php endwhile;
           else : ?>
             <p>投稿が見つかりませんでした。</p>
