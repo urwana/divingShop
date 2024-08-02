@@ -14,7 +14,76 @@
           <?php get_template_part("/common/_tab-card", null, ["post_type" => "campaign", "taxonomy" => "campaign_taxonomy"]); ?>
         </div>
         <div class="campaign__cards">
-          <?php get_template_part("/common/_campaign-cards", null, ["page" => true]); ?>
+          <div class="campaign-cards">
+            <?php
+            $taxonomy = 'campaign_taxonomy';
+            $term_slug = get_query_var('term');
+            $campaign_args = [
+              'post_type' => 'campaign',
+              'posts_per_page' => $sideBar ? 2 : 4,
+              'tax_query' => $term_slug ? [
+                [
+                  'taxonomy' => $taxonomy,
+                  'field'    => 'slug',
+                  'terms'    => $term_slug,
+                ],
+              ] : [],
+              'paged' => get_query_var('paged', 1),
+            ];
+            if (have_posts()) :
+              while (have_posts()) :
+                the_post(); ?>
+                <?php get_template_part('/common/_campaign-card-page', null, ['page' => $page, 'sideBar' => $sideBar]); ?>
+
+
+                <a class="campaign-card campaign-card--page" href="/seaside/campaign/">
+                  <?php
+                  if (has_post_thumbnail()) :
+                  ?>
+                    <figure class="campaign-card__image">
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                    </figure>
+                  <?php
+                  endif;
+                  ?>
+
+                  <div class="campaign-card__body">
+                    <div class="campaign-card__top">
+                      <div class="campaign-card__label label-container">
+                        <span class="label">
+                          <?php
+                          $post_id = get_the_ID();
+                          $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
+                          if ($campaign_terms && !is_wp_error($campaign_terms)) :
+                            foreach ($campaign_terms as $term) :
+                              echo esc_html($term->name) . ' ';
+                            endforeach;
+                          endif; ?>
+                        </span>
+                      </div>
+                      <div class="campaign-card__title"><?php the_title(); ?></div>
+                    </div>
+                    <div class="campaign-card__bottom">
+                      <p class="campaign-card__explain">
+                        <?php the_field("main_text"); ?>
+                      </p>
+                      <div class="campaign-card__price-container">
+                        <div class="price-container">
+                          <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
+                          <span class="price-container__price">¥<?php the_field("price") ?></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              <?php endwhile;
+            else : ?>
+              <p>投稿が見つかりませんでした。</p>
+            <?php endif;
+            ?>
+          </div>
+
         </div>
         <div class="campaign__pager">
           <?php get_template_part("/common/_pager"); ?>
