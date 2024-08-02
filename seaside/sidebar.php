@@ -24,7 +24,35 @@
     <div class="sidebar-campaign">
       <?php get_template_part("/common/_sidebar-title", null, ["title" => "キャンペーン", "className" => "sidebar-campaign__title"]); ?>
       <div class="sidebar-campaign__cards">
-        <?php get_template_part("/common/_campaign-cards", null, ["page" => false, "sideBar" => true]); ?>
+        <div class="campaign-cards--sidebar">
+          <?php
+          $taxonomy = 'campaign_taxonomy';
+          $term_slug = get_query_var('term');
+          $campaign_args = [
+            'post_type' => 'campaign',
+            'posts_per_page' => $sideBar ? 2 : 4,
+            'tax_query' => $term_slug ? [
+              [
+                'taxonomy' => $taxonomy,
+                'field'    => 'slug',
+                'terms'    => $term_slug,
+              ],
+            ] : [],
+            'paged' => get_query_var('paged', 1),
+          ];
+
+          $the_query = new WP_Query($campaign_args);
+          if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) :
+              $the_query->the_post(); ?>
+              <?php get_template_part('/common/_campaign-card-page', null, ['page' => $page, 'sideBar' => $sideBar]); ?>
+            <?php endwhile;
+          else : ?>
+            <p>投稿が見つかりませんでした。</p>
+          <?php endif;
+          wp_reset_postdata();
+          ?>
+        </div>
         <div class="sidebar-campaign__button">
           <a href="/seaside/blog" class="button"><span class="button__text">View more</span>
           </a>
@@ -48,7 +76,6 @@
                   <?php foreach ($months as $month) : ?>
                     <div class="sidebar-archive__month">
                       <?php
-                      // URL の生成
                       $url = get_month_link($year, $month);
                       ?>
                       <a href="<?php echo esc_url($url); ?>" class="js-monthLabel sidebar-archive__month-label">
