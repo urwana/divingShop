@@ -23,10 +23,6 @@
             ?>
                 <div class="swiper-slide swiper-campaign__swiper-slide">
                   <div class="top-campaign__card">
-
-
-
-
                     <a class="campaign-card" href="/seaside/campaign/">
                       <?php
                       if (has_post_thumbnail()) :
@@ -66,15 +62,6 @@
                         </div>
                       </div>
                     </a>
-
-
-
-
-
-
-
-
-
                   </div>
                 </div>
             <?php }
