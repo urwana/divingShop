@@ -401,3 +401,12 @@ function get_popular_posts($number = 3)
   $popular_posts = new WP_Query($args);
   return $popular_posts;
 }
+
+// date sub key title 用
+function custom_rewrite_rules()
+{
+  add_rewrite_tag('%year%', '([^/]+)', 'year=');
+  add_rewrite_tag('%month%', '([^/]+)', 'month=');
+  add_rewrite_rule('^seaside/([0-9]{4})/([0-9]{2})/?', 'index.php?year=$matches[1]&month=$matches[2]', 'top');
+}
+add_action('init', 'custom_rewrite_rules');
