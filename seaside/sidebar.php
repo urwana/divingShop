@@ -2,7 +2,6 @@
   <div class="blog__sidebar-popular-articles">
     <div class="sidebar-popular-articles">
       <?php get_template_part("/common/_sidebar-title", null, ["title" => "人気記事", "className" => "sidebar-popular-articles__title"]) ?>
-      <!--TODO: ランキング実装確認 -->
       <div class="sidebar-popular-articles__cards">
         <div class="article-cards">
           <?php
@@ -10,26 +9,27 @@
           if ($popular_posts->have_posts()) :
 
             while ($popular_posts->have_posts()) : $popular_posts->the_post(); ?>
-              <div class="article-card">
-                <a class="article-card__inner" href="<?php echo isset($articleCard["link"]) ? $articleCard["link"] : '#'; ?>">
-                  <figure class="article-card__image">
-                    <?php
+          <div class="article-card">
+            <a class="article-card__inner" href="<?php the_permalink() ?>">
+              <figure class="article-card__image">
+                <?php
                     if (has_post_thumbnail()) :
                     ?>
-                      <figure class="campaign-card__image">
-                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="121" height="90" />
-                      </figure>
-                    <?php
+                <figure class="campaign-card__image">
+                  <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="121"
+                    height="90" />
+                </figure>
+                <?php
                     endif;
                     ?>
-                  </figure>
-                  <div class="article-card__body">
-                    <time class="article-card__date" datetime="<?php the_time("c") ?>"><?php the_time("Y/m/d"); ?>
-                    </time>
-                    <div class="article-card__title"><?php the_title(); ?></div>
-                  </div>
-                </a>
-              </div> <?php endwhile;
+              </figure>
+              <div class="article-card__body">
+                <time class="article-card__date" datetime="<?php the_time("c") ?>"><?php the_time("Y/m/d"); ?>
+                </time>
+                <div class="article-card__title"><?php the_title(); ?></div>
+              </div>
+            </a>
+          </div> <?php endwhile;
                     wp_reset_postdata();
                   endif;
                       ?>
@@ -56,37 +56,38 @@
           if ($query_voice->have_posts()) :
             while ($query_voice->have_posts()) :
               $query_voice->the_post(); ?>
-              <div class="voice-cards-sidebar__item">
-                <div class="voice-card-sidebar">
-                  <div>
-                    <div class="voice-card-sidebar__head">
-                      <div class="voice-card-sidebar__info">
-                        <div class="voice-card-sidebar__meta">
-                        </div>
-                        <figure class="js-colorAnimation voice-card-sidebar__image">
-                          <?php
-                          if (has_post_thumbnail()) : ?>
-                            <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294" height="218" />
-                        </figure>
+          <div class="voice-cards-sidebar__item">
+            <div class="voice-card-sidebar">
+              <div>
+                <div class="voice-card-sidebar__head">
+                  <div class="voice-card-sidebar__info">
+                    <div class="voice-card-sidebar__meta">
+                    </div>
+                    <figure class="js-colorAnimation voice-card-sidebar__image">
                       <?php
+                          if (has_post_thumbnail()) : ?>
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294"
+                        height="218" />
+                    </figure>
+                    <?php
                           endif;
                       ?>
-                      </picture>
-                      </figure>
-                      <div class="voice-card-sidebar__person">
-                        <?php echo get_field("person"); ?>
-                      </div>
-                      <div class="voice-card-sidebar__title">
-                        <div><?php the_title(); ?></div>
-                      </div>
-                      </div>
+                    </picture>
+                    </figure>
+                    <div class="voice-card-sidebar__person">
+                      <?php echo get_field("person"); ?>
                     </div>
-                    <div class="voice-card-sidebar__button">
-                      <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+                    <div class="voice-card-sidebar__title">
+                      <div><?php the_title(); ?></div>
                     </div>
                   </div>
                 </div>
+                <div class="voice-card-sidebar__button">
+                  <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+                </div>
               </div>
+            </div>
+          </div>
           <?php
             endwhile;
             wp_reset_postdata();
@@ -120,39 +121,41 @@
           if ($the_query->have_posts()) :
             while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
-              <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>" href="/seaside/campaign">
-                <figure class="campaign-card__image campaign-card__image--sidebar">
-                  <?php
+          <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>" href="/seaside/campaign">
+            <figure class="campaign-card__image campaign-card__image--sidebar">
+              <?php
                   if (has_post_thumbnail()) :
                   ?>
-                    <figure class="campaign-card__image">
-                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                    </figure>
-                  <?php
+              <figure class="campaign-card__image">
+                <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+              </figure>
+              <?php
                   endif;
                   ?>
-                </figure>
-                <div class="campaign-card__body campaign-card__body--side-bar">
-                  <div class="campaign-card__top">
-                    <div class="campaign-card__title campaign-card__title--sidebar">
-                      <?php the_title(); ?></div>
-                  </div>
-                  <div class="campaign-card__bottom">
-                    <p class="campaign-card__explain campaign-card__explain--sidebar">
-                      <?php the_field("main_text"); ?>
-                    </p>
-                    <div class="campaign-card__price-container">
-                      <div class="price-container">
-                        <span class="price-container__cancelled-price price-container__cancelled-price--sidebar">¥<?php the_field("cancelled_price") ?></span>
-                        <span class="price-container__price price-container__price--sidebar">¥<?php the_field("price") ?></span>
-                      </div>
-                    </div>
+            </figure>
+            <div class="campaign-card__body campaign-card__body--side-bar">
+              <div class="campaign-card__top">
+                <div class="campaign-card__title campaign-card__title--sidebar">
+                  <?php the_title(); ?></div>
+              </div>
+              <div class="campaign-card__bottom">
+                <p class="campaign-card__explain campaign-card__explain--sidebar">
+                  <?php the_field("main_text"); ?>
+                </p>
+                <div class="campaign-card__price-container">
+                  <div class="price-container">
+                    <span
+                      class="price-container__cancelled-price price-container__cancelled-price--sidebar">¥<?php the_field("cancelled_price") ?></span>
+                    <span
+                      class="price-container__price price-container__price--sidebar">¥<?php the_field("price") ?></span>
                   </div>
                 </div>
-              </a>
-            <?php endwhile;
+              </div>
+            </div>
+          </a>
+          <?php endwhile;
           else : ?>
-            <p>投稿が見つかりませんでした。</p>
+          <p>投稿が見つかりませんでした。</p>
           <?php endif;
           wp_reset_postdata();
           ?>
@@ -174,21 +177,21 @@
         <div class="sidebar-archive__toggle-hierarchy">
           <div class="sidebar-archive__toggle-hierarchy-inner">
             <?php foreach ($posts_by_months as $year => $months) : ?>
-              <div class="sidebar-archive__year">
-                <a href="#" class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
-                <div class="js-yearBody sidebar-archive__year-body">
-                  <?php foreach ($months as $month) : ?>
-                    <div class="sidebar-archive__month">
-                      <?php
+            <div class="sidebar-archive__year">
+              <a href="#" class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
+              <div class="js-yearBody sidebar-archive__year-body">
+                <?php foreach ($months as $month) : ?>
+                <div class="sidebar-archive__month">
+                  <?php
                       $url = get_month_link($year, $month);
                       ?>
-                      <a href="<?php echo esc_url($url); ?>" class="js-monthLabel sidebar-archive__month-label">
-                        <?php echo esc_html($month); ?>月
-                      </a>
-                    </div>
-                  <?php endforeach; ?>
+                  <a href="<?php echo esc_url($url); ?>" class="js-monthLabel sidebar-archive__month-label">
+                    <?php echo esc_html($month); ?>月
+                  </a>
                 </div>
+                <?php endforeach; ?>
               </div>
+            </div>
             <?php endforeach; ?>
           </div>
         </div>
