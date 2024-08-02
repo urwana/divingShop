@@ -15,7 +15,7 @@
     </div>
   </section>
   <section class="l-top-contact">
-    <?php get_template_part("./common/_contact"); ?>
+    <?php get_template_part("/common/_contact"); ?>
   </section>
 </main>
 <?php get_footer(); ?>
