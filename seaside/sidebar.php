@@ -49,10 +49,7 @@
                     <div class="sidebar-archive__month">
                       <?php
                       // URL の生成
-                      $url = add_query_arg(array(
-                        'year' => $year,
-                        'monthnum' => $month // 正しいクエリパラメーターを設定
-                      ), home_url('/date/'));
+                      $url = get_month_link($year, $month);
                       ?>
                       <a href="<?php echo esc_url($url); ?>" class="js-monthLabel sidebar-archive__month-label">
                         <?php echo esc_html($month); ?>月
