@@ -18,6 +18,7 @@
             <div class="qa-boxes__item">
               <div class="qa-box">
                 <div class="js-question qa-box__question is-open">
+                  <?php echo $qa_box["qa_box_question"]; ?>
                   <div class="qa-icon">
                     <span class="qa-icon__vertical"></span>
                     <span class="qa-icon__horizontal"></span>
