@@ -12,8 +12,43 @@
     <div class="blog">
       <div class="blog__inner inner">
         <div class="blog__body">
-          <?php get_template_part("./common/_blog-detail-contents"); ?>
-          <?php get_sidebar(); ?>
+          <div class="blog__detail-contents-wrapper">
+            <div class="blog__detail-contents">
+              <div class="blog__detail-date">
+                <?php if (have_posts()) : ?>
+                  <?php while (have_posts()) : the_post(); ?>
+                    <time datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
+              </div>
+              <h1 class="blog__detail-title title-line"><?php the_title(); ?></h1>
+              <figure class="blog__detail-image">
+                <?php
+                    if (has_post_thumbnail()) :
+                      the_post_thumbnail();
+                    endif;
+                ?>
+              </figure>
+              <div class="blog__detail-the-contents">
+                <?php the_content(); ?>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+          <div class="blog__detail-pager">
+            <?php
+            $prev_url = "";
+            $next_url = "";
+            $prev = get_previous_post();
+            if (!empty($prev)) :
+              $prev_url = get_permalink($prev->ID);
+            endif;
+            $next = get_next_post();
+            if (!empty($next)) :
+              $next_url = get_permalink($next->ID);
+            endif;
+            ?>
+            <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]); ?>
+          </div>
+            </div>
+          </div> <?php get_sidebar(); ?>
         </div>
       </div>
     </div>
