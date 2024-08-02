@@ -12,7 +12,7 @@
       <div class="blog__inner inner">
         <div class="blog__body">
           <div class="blog__cards">
-            <div class="blog-cards--2col">
+            <div class="blog-cards blog-cards--2col">
               <?php
               if (have_posts()) :
                 while (have_posts()) :
