@@ -4,7 +4,36 @@
       <?php get_template_part("/common/_sidebar-title", null, ["title" => "人気記事", "className" => "sidebar-popular-articles__title"]) ?>
       <!--TODO: ランキング実装確認 -->
       <div class="sidebar-popular-articles__cards">
-        <?php get_template_part("/common/_article-cards"); ?>
+        <div class="article-cards">
+          <?php
+          $popular_posts = get_popular_posts();
+          if ($popular_posts->have_posts()) :
+
+            while ($popular_posts->have_posts()) : $popular_posts->the_post(); ?>
+              <div class="article-card">
+                <a class="article-card__inner" href="<?php echo isset($articleCard["link"]) ? $articleCard["link"] : '#'; ?>">
+                  <figure class="article-card__image">
+                    <?php
+                    if (has_post_thumbnail()) :
+                    ?>
+                      <figure class="campaign-card__image">
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="121" height="90" />
+                      </figure>
+                    <?php
+                    endif;
+                    ?>
+                  </figure>
+                  <div class="article-card__body">
+                    <time class="article-card__date" datetime="<?php the_time("c") ?>"><?php the_time("Y/m/d"); ?>
+                    </time>
+                    <div class="article-card__title"><?php the_title(); ?></div>
+                  </div>
+                </a>
+              </div> <?php endwhile;
+                    wp_reset_postdata();
+                  endif;
+                      ?>
+        </div>
       </div>
     </div>
   </div>
@@ -16,7 +45,37 @@
         ["title" => "口コミ", "className" => "sidebar-voice__title"]
       ); ?>
       <div class="sidebar-voice__card">
-        <?php get_template_part("/common/_voice-cards-sidebar"); ?>
+        <?php if (get_post_type() == 'voice') : ?>
+          <div class="voice-card-sidebar">
+            <div>
+              <div class="voice-card-sidebar__head">
+                <div class="voice-card-sidebar__info">
+                  <div class="voice-card-sidebar__meta">
+                  </div>
+                  <figure class="js-colorAnimation voice-card-sidebar__image">
+                    <?php
+                    if (has_post_thumbnail()) : ?>
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294" height="218" />
+                  </figure>
+                <?php
+                    endif;
+                ?>
+                </picture>
+                </figure>
+                <div class="voice-card-sidebar__person">
+                  <?php echo get_field("person"); ?>
+                </div>
+                <div class="voice-card-sidebar__title">
+                  <div><?php the_title(); ?></div>
+                </div>
+                </div>
+              </div>
+              <div class="voice-card-sidebar__button">
+                <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
