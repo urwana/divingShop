@@ -45,37 +45,54 @@
         ["title" => "口コミ", "className" => "sidebar-voice__title"]
       ); ?>
       <div class="sidebar-voice__card">
-        <?php if (get_post_type() == 'voice') : ?>
-          <div class="voice-card-sidebar">
-            <div>
-              <div class="voice-card-sidebar__head">
-                <div class="voice-card-sidebar__info">
-                  <div class="voice-card-sidebar__meta">
+        <div class="voice-cards--sidebar">
+          <?php
+          $args_voice = array(
+            'post_type'      => 'voice',
+            'posts_per_page' => 1,
+            'orderby'        => 'date',
+          );
+          $query_voice = new WP_Query($args_voice);
+          if ($query_voice->have_posts()) :
+            while ($query_voice->have_posts()) :
+              $query_voice->the_post(); ?>
+              <div class="voice-cards-sidebar__item">
+                <div class="voice-card-sidebar">
+                  <div>
+                    <div class="voice-card-sidebar__head">
+                      <div class="voice-card-sidebar__info">
+                        <div class="voice-card-sidebar__meta">
+                        </div>
+                        <figure class="js-colorAnimation voice-card-sidebar__image">
+                          <?php
+                          if (has_post_thumbnail()) : ?>
+                            <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294" height="218" />
+                        </figure>
+                      <?php
+                          endif;
+                      ?>
+                      </picture>
+                      </figure>
+                      <div class="voice-card-sidebar__person">
+                        <?php echo get_field("person"); ?>
+                      </div>
+                      <div class="voice-card-sidebar__title">
+                        <div><?php the_title(); ?></div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="voice-card-sidebar__button">
+                      <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+                    </div>
                   </div>
-                  <figure class="js-colorAnimation voice-card-sidebar__image">
-                    <?php
-                    if (has_post_thumbnail()) : ?>
-                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="294" height="218" />
-                  </figure>
-                <?php
-                    endif;
-                ?>
-                </picture>
-                </figure>
-                <div class="voice-card-sidebar__person">
-                  <?php echo get_field("person"); ?>
-                </div>
-                <div class="voice-card-sidebar__title">
-                  <div><?php the_title(); ?></div>
-                </div>
                 </div>
               </div>
-              <div class="voice-card-sidebar__button">
-                <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
-              </div>
-            </div>
-          </div>
-        <?php endif; ?>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
+        </div>
       </div>
     </div>
   </div>
