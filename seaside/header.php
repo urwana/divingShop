@@ -13,14 +13,14 @@
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
       <h1 class="header__logo">
-        <a href="<?php echo esc_url(home_url("/seaside")); ?>">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ"
             width="133" height="50" />
         </a>
       </h1>
       <?php else : ?>
       <div class="header__logo">
-        <a href="<?php echo esc_url(home_url("/seaside")); ?>">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="codeUps コードアップスのロゴ"
             width="133" height="50" />
         </a>
