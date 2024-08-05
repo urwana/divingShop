@@ -1,3 +1,7 @@
+<?php if (!is_404() && !is_page("contact") && !is_page("contact-thanks")) : ?>
+<?php global $template;
+  echo '<!-- ' . basename($template) . ' -->';
+  ?>
 <section class="l-top-contact">
   <div class="top-contact">
     <div class="top-contact__inner inner">
@@ -40,6 +44,7 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 <div class="l-footer">
   <a href="#" class="js-scroll-to-top scroll-to-top">
     <div class="button-scroll"></div>
