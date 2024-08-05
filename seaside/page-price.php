@@ -11,12 +11,8 @@
     <div class="price">
       <div class="price__inner inner">
         <div class="price__contents">
-          <?php
-          $price_lists = CFS()->get('price_lists');
-          ?>
-          <?php
-          $price_lists_item = $price_lists[0]["price_lists_item"];
-          ?>
+          <?php $price_lists = CFS()->get('price_lists');
+          $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
           <?php if (!empty($price_lists) && isset($price_lists_item)) : ?>
           <div class="price-lists">
             <?php foreach ($price_lists_item as $price_list_group) : ?>
