@@ -19,7 +19,10 @@
     <div class="gallery">
       <div class="gallery__inner inner">
         <div class="gallery__title">
-          <?php get_template_part("/common/_section-title", null, ["englishTitle" => "Gallery", "japaneseTitle" => "フォト"]); ?>
+          <div class="section-title">
+            <p class="section-title__word">Gallery</p>
+            <h2 class="section-title__japan">フォト</h2>
+          </div>
         </div>
         <div class="gallery__item-container l-gallery__item-container">
           <?php $fields = CFS()->get("gallery_images"); ?>
