@@ -40,7 +40,6 @@
     </div>
   </div>
 </section>
-
 <div class="l-footer">
   <a href="#" class="js-scroll-to-top scroll-to-top">
     <div class="button-scroll"></div>
