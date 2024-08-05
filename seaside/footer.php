@@ -1,4 +1,4 @@
-<div class="l-footer">
+<section class="l-top-contact">
   <div class="top-contact">
     <div class="top-contact__inner inner">
       <div class="top-contact__conntents">
@@ -39,6 +39,9 @@
       </div>
     </div>
   </div>
+</section>
+
+<div class="l-footer">
   <a href="#" class="js-scroll-to-top scroll-to-top">
     <div class="button-scroll"></div>
   </a>
