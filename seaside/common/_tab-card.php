@@ -17,7 +17,7 @@
   <?php else :
       foreach ($terms as $term) :
         $term_link = get_term_link($term, $taxonomy); ?>
-  <a href="<?php esc_url($term_link) ?>"
+  <a href="<?php echo esc_url($term_link) ?>"
     class="tab-card__item <?php echo is_tax($taxonomy, $term->slug) ? 'current' : ''; ?>"><?php echo esc_html($term->name) ?></a>
   <?php endforeach;
     endif; ?>
