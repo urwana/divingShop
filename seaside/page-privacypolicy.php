@@ -11,7 +11,7 @@
     <div class="static-page">
       <div class="static-page__inner inner">
         <h2 class="static-page__title"><?php the_title(); ?></h2>
-        <?php echo get_field("privacy_policy"); ?>
+        <?php the_content(); ?>
       </div>
     </div>
   </section>
