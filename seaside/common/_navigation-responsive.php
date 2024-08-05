@@ -3,31 +3,27 @@
 <div class="navigation-responsive<?php echo !$footer ? " navigation-responsive--sitemap" : "" ?>">
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/campaign")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
           <div class="navigation-responsive__label">キャンペーン</div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link"
-          href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/licence/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/licence/")); ?>">
           <div class="navigation-responsive__label">
             ライセンス講習
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link"
-          href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/trial/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/trial/")); ?>">
           <div class="navigation-responsive__label">
             貸切体験ダイビング
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link"
-          href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/fun/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/fun/")); ?>">
           <div class="navigation-responsive__label">
             ナイトダイビング
           </div>
@@ -35,9 +31,8 @@
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/about-us")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
           <div class="navigation-responsive__label">
             私たちについて
           </div>
@@ -45,44 +40,42 @@
       </div>
     </div>
     <?php if (!$footer) : ?>
-    <div class=" navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap current"; ?>">
-        <div class="navigation-responsive__link">
-          <div class="navigation-responsive__label">
-            サイトマップ
+      <div class=" navigation-responsive__item-group">
+        <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap current"; ?>">
+          <div class="navigation-responsive__link">
+            <div class="navigation-responsive__label">
+              サイトマップ
+            </div>
           </div>
         </div>
       </div>
-    </div>
     <?php endif; ?>
   </div>
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/information")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/information")); ?>">
           <div class="navigation-responsive__label">
             ダイビング情報
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/information#licence")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/information#licence")); ?>">
           <div class="navigation-responsive__label">
             ライセンス講習
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/information#trial")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/information#trial")); ?>">
           <div class="navigation-responsive__label">
             体験ダイビング
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/information#fun")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/information#fun")); ?>">
           <div class="navigation-responsive__label">
             ファンダイビング
           </div>
@@ -90,9 +83,8 @@
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/blog")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/blog")); ?>">
           <div class="navigation-responsive__label">ブログ</div>
         </a>
       </div>
@@ -100,36 +92,34 @@
   </div>
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/voice")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/voice")); ?>">
           <div class="navigation-responsive__label">お客様の声</div>
         </a>
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/price")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/price")); ?>">
           <div class="navigation-responsive__label">料金一覧</div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/price#licence")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/price#licence")); ?>">
           <div class="navigation-responsive__label">
             ライセンス講習
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/price#trial")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/price#trial")); ?>">
           <div class="navigation-responsive__label">
             体験ダイビング
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/price#fun")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/price#fun")); ?>">
           <div class="navigation-responsive__label">
             ファンダイビング
           </div>
@@ -139,17 +129,15 @@
   </div>
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/faq")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/faq")); ?>">
           <div class="navigation-responsive__label">よくある質問</div>
         </a>
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/privacypolicy")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/privacypolicy")); ?>">
           <div class="navigation-responsive__label">
             プライバシー<br class="u-mobile" />
             ポリシー
@@ -158,17 +146,15 @@
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/terms-of-service")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/terms-of-service")); ?>">
           <div class="navigation-responsive__label">利用規約</div>
         </a>
       </div>
     </div>
     <div class="navigation-responsive__item-group">
-      <div
-        class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/seaside/contact")); ?>">
+      <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/contact")); ?>">
           <div class="navigation__label">お問い合わせ</div>
         </a>
       </div>

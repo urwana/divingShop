@@ -34,7 +34,7 @@
       <nav class="header__navigation-pc">
         <ul class="navigation-pc">
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/campaign")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Campaign</div>
                 <div class="navigation-pc__japanese">キャンペーン</div>
@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/about-us")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">About us</div>
                 <div class="navigation-pc__japanese">私たちについて</div>
@@ -50,7 +50,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/information")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/information")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Information</div>
                 <div class="navigation-pc__japanese">ダイビング情報</div>
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/blog")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/blog")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Blog</div>
                 <div class="navigation-pc__japanese">ブログ</div>
@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/voice")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/voice")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Voice</div>
                 <div class="navigation-pc__japanese">お客様の声</div>
@@ -74,7 +74,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/price")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/price")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Price</div>
                 <div class="navigation-pc__japanese">料金一覧</div>
@@ -82,7 +82,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/faq")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/faq")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">FAQ</div>
                 <div class="navigation-pc__japanese">よくある質問</div>
@@ -90,7 +90,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/seaside/contact")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/contact")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__english">Contact</div>
                 <div class="navigation-pc__japanese">お問い合わせ</div>
@@ -106,61 +106,58 @@
           <div class="navigation-sp__parts">
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/campaign")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
                   <div class="navigation-sp__label">キャンペーン</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link"
-                  href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/licence")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/licence")); ?>">
                   <div class="navigation-sp__label">ライセンス講習</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link"
-                  href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/trial")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/trial")); ?>">
                   <div class="navigation-sp__label">貸切体験ダイビング</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link"
-                  href="<?php echo esc_url(home_url("/seaside/campaign_taxonomy/fun")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/fun")); ?>">
                   <div class="navigation-sp__label">ナイトダイビング</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/about-us")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
                   <div class="navigation-sp__label">私たちについて</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/information")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/information")); ?>">
                   <div class="navigation-sp__label">ダイビング情報</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/information#licence")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/information#licence")); ?>">
                   <div class="navigation-sp__label">ライセンス講習</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/information#trial")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/information#trial")); ?>">
                   <div class="navigation-sp__label">体験ダイビング</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/information#fun")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/information#fun")); ?>">
                   <div class="navigation-sp__label">ファンダイビング</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/blog")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/blog")); ?>">
                   <div class="navigation-sp__label">ブログ</div>
                 </a>
               </div>
@@ -169,43 +166,43 @@
           <div class="navigation-sp__parts">
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/voice")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/voice")); ?>">
                   <div class="navigation-sp__label">お客様の声</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/price")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/price")); ?>">
                   <div class="navigation-sp__label">料金一覧</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/price#licence")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/price#licence")); ?>">
                   <div class="navigation-sp__label">ライセンス講習</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/price#trial")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/price#trial")); ?>">
                   <div class="navigation-sp__label">体験ダイビング</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/price#fun")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/price#fun")); ?>">
                   <div class="navigation-sp__label">ファンダイビング</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/faq")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/faq")); ?>">
                   <div class="navigation-sp__label">よくある質問</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/privacypolicy")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/privacypolicy")); ?>">
                   <div class="navigation-sp__label">
                     プライバシー<br />
                     ポリシー
@@ -215,14 +212,14 @@
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/terms-of-service")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/terms-of-service")); ?>">
                   <div class="navigation-sp__label">利用規約</div>
                 </a>
               </div>
             </div>
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/seaside/contact")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/contact")); ?>">
                   <div class="navigation-sp__label">お問い合わせ</div>
                 </a>
               </div>
