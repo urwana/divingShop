@@ -37,7 +37,8 @@
             <p class="section-title__explain">ご予約・お問い合わせはコチラ</p>
           </div>
           <div class="top-contact__button-container">
-            <a href="/seaside/contact" class="button"><span class="button__text">Contact us</span></a>
+            <a href="<?php echo esc_url(home_url("/seaside/contact")); ?>" class="button"><span
+                class="button__text">Contact us</span></a>
           </div>
         </div>
       </div>
@@ -57,15 +58,18 @@
             width="200" height="75" />
         </figure>
         <div class="footer__sns-icons sns-icons">
-          <a href="https://www.facebook.com/" target=”_blank” class="sns-icons__link">
+          <a href="<?php echo esc_url(home_url("https://www.facebook.com/")); ?>" target=”_blank”
+            class="sns-icons__link">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/icon-facebook.svg" alt="Facebook"
               width="24" height="24" />
           </a>
-          <a href="https://www.instagram.com/" target=”_blank” class="sns-icons__link">
+          <a href="<?php echo esc_url(home_url("https://www.instagram.com/")); ?>" target=”_blank”
+            class="sns-icons__link">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/icon-instagram.svg"
               alt="Instagram" width="24" height="24" />
           </a>
-          <a href="https://x.com/" target=”_blank” class="sns-icons__link sns-icons__link--twitter">
+          <a href="<?php echo esc_url(home_url("https://x.com/")); ?>" target=”_blank” class=" sns-icons__link
+            sns-icons__link--twitter">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/icon-twitter.svg" alt="Twitter"
               width="24" height="24" />
           </a>

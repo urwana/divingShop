@@ -39,7 +39,8 @@
         </div>
         <?php if ($top) : ?>
         <div class="about__button">
-          <a href="/seaside/about-us" class="button"><span class="button__text">View more</span></a>
+          <a href="<?php echo esc_url(home_url("/seaside/about-us")); ?>" class="button"><span class="button__text">View
+              more</span></a>
         </div>
         <?php endif; ?>
       </div>

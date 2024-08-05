@@ -81,7 +81,7 @@
               ?>
               <div class="swiper-slide swiper-campaign__swiper-slide">
                 <div class="top-campaign__card">
-                  <a class="campaign-card" href="/seaside/campaign/">
+                  <a class="campaign-card" href="<?php echo esc_url(home_url("/seaside/campaign/")); ?>">
                     <?php
                         if (has_post_thumbnail()) :
                         ?>
@@ -134,7 +134,8 @@
           </div>
         </div>
         <div class="top-campaign__button">
-          <a href="/seaside/campaign" class="button"><span class="button__text">View more</span></a>
+          <a href="<?php echo esc_url(home_url("/seaside/campaign")); ?>" class="button"><span class="button__text">View
+              more</span></a>
         </div>
       </div>
     </div>
@@ -142,7 +143,7 @@
   <section class="l-top-about">
     <?php get_template_part("/common/_about", null, ["top" => true]); ?>
   </section>
-  <section class="l-top-information">
+  <section class=" l-top-information">
     <div class="top-information">
       <div class="top-information__inner inner">
         <div class="top-information__title">
@@ -165,7 +166,8 @@
               正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
             </p>
             <div class="top-information__button">
-              <a href="/seaside/information" class="button"><span class="button__text">View more</span></a>
+              <a href="<?php echo esc_url(home_url("/seaside/information")); ?>" class="button"><span
+                  class="button__text">View more</span></a>
             </div>
           </div>
         </div>
@@ -192,7 +194,7 @@
             if ($the_query->have_posts()) :
               while ($the_query->have_posts()) :
                 $the_query->the_post(); ?>
-            <div class="blog-cards__item">
+            <div class=" blog-cards__item">
               <div class="blog-card">
                 <a href="<?php the_permalink() ?>">
                   <div class="blog-card__inner">
@@ -226,7 +228,8 @@
           </div>
         </div>
         <div class="top-blog__button">
-          <a href="/seaside/blog" class="button"><span class="button__text">View more</span>
+          <a href="<?php echo esc_url(home_url("/seaside/blog")); ?>" class="button"><span class="button__text">View
+              more</span>
           </a>
         </div>
       </div>
@@ -267,14 +270,14 @@
             if ($the_voice_query->have_posts()) :
               while ($the_voice_query->have_posts()) :
                 $the_voice_query->the_post(); ?>
-            <div class="voice-cards__item">
+            <div class=" voice-cards__item">
               <div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
                 <a href="">
                   <div class="voice-card__head">
                     <div class="voice-card__info">
                       <div class="voice-card__meta">
                         <div class="voice-card__person"><?php echo get_field("person"); ?></div>
-                        <div class="voice-card__label">
+                        <div class=" voice-card__label">
                           <span class="label">
                             <?php
                                 $post_id = get_the_ID();
@@ -321,7 +324,8 @@
           </div>
         </div>
         <div class="top-voice__button">
-          <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+          <a href="<?php echo esc_url(home_url("/seaside/voice")); ?>" class="button"><span class="button__text">View
+              more</span></a>
         </div>
       </div>
     </div>
@@ -434,7 +438,8 @@
           </div>
         </div>
         <div class="top-price__button">
-          <a href="/seaside/price" class="button"><span class="button__text">View more</span></a>
+          <a href="<?php echo esc_url(home_url("/seaside/price")); ?>" class="button"><span class="button__text">View
+              more</span></a>
         </div>
       </div>
     </div>

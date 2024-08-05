@@ -6,10 +6,10 @@
         <div class="article-cards">
           <?php
           $popular_posts = get_popular_posts();
-            if ($popular_posts->have_posts()) :
+          if ($popular_posts->have_posts()) :
             while ($popular_posts->have_posts()) : $popular_posts->the_post(); ?>
           <div class="article-card">
-            <a class="article-card__inner" href="<?php the_permalink() ?>">
+            <a class="article-card__inner" href="<?php the_permalink(); ?>">
               <figure class="article-card__image">
                 <?php
                     if (has_post_thumbnail()) :
@@ -82,7 +82,8 @@
                   </div>
                 </div>
                 <div class="voice-card-sidebar__button">
-                  <a href="/seaside/voice" class="button"><span class="button__text">View more</span></a>
+                  <a href="<?php echo esc_url(home_url("/seaside/voice")); ?>" class="button"><span
+                      class="button__text">View more</span></a>
                 </div>
               </div>
             </div>
@@ -96,7 +97,7 @@
       </div>
     </div>
   </div>
-  <div class="blog__sidebar-campaign">
+  <div class=" blog__sidebar-campaign">
     <div class="sidebar-campaign">
       <?php get_template_part("/common/_sidebar-title", null, ["title" => "キャンペーン", "className" => "sidebar-campaign__title"]); ?>
       <div class="sidebar-campaign__cards">
@@ -120,12 +121,13 @@
           if ($the_query->have_posts()) :
             while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
-          <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>" href="/seaside/campaign">
+          <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>"
+            href="<?php echo esc_url(home_url("/seaside/campaign")); ?>">
             <figure class="campaign-card__image campaign-card__image--sidebar">
               <?php
                   if (has_post_thumbnail()) :
                   ?>
-              <figure class="campaign-card__image">
+              <figure class=" campaign-card__image">
                 <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
               </figure>
               <?php
@@ -160,7 +162,8 @@
           ?>
         </div>
         <div class="sidebar-campaign__button">
-          <a href="/seaside/blog" class="button"><span class="button__text">View more</span>
+          <a href="<?php echo esc_url(home_url("/seaside/blog")); ?>" class="button"><span class="button__text">View
+              more</span>
           </a>
         </div>
       </div>
@@ -170,15 +173,15 @@
     <?php
     $posts_by_months = get_posts_by_months(); // 投稿を年と月でグループ化するカスタム関数
     ?>
-    <div class="sidebar-archive">
+    <div class=" sidebar-archive">
       <?php get_template_part("/common/_sidebar-title", null, ["title" => "アーカイブ", "className" => "sidebar-archive__title"]); ?>
       <div class="sidebar-archive__lists">
         <div class="sidebar-archive__toggle-hierarchy">
           <div class="sidebar-archive__toggle-hierarchy-inner">
             <?php foreach ($posts_by_months as $year => $months) : ?>
             <div class="sidebar-archive__year">
-              <a href="#" class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
-              <div class="js-yearBody sidebar-archive__year-body">
+              <a href="" class="js-yearLabel sidebar-archive__year-label"><?php echo esc_html($year); ?></a>
+              <div class=" js-yearBody sidebar-archive__year-body">
                 <?php foreach ($months as $month) : ?>
                 <div class="sidebar-archive__month">
                   <?php

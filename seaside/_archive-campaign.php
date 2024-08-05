@@ -34,12 +34,12 @@
               while (have_posts()) :
                 the_post(); ?>
             <a class="campaign-card campaign-card--page js-card<?php echo $campaignCard["dataType"] ?>"
-              href="/seaside/campaign">
+              href="<?php echo esc_url(home_url("/seaside/campaign")); ?>">
               <figure class="campaign-card__image">
                 <?php
                     if (has_post_thumbnail()) :
                     ?>
-                <figure class="campaign-card__image">
+                <figure class=" campaign-card__image">
                   <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
                 </figure>
                 <?php

@@ -33,7 +33,7 @@
             if (have_posts()) :
               while (have_posts()) :
                 the_post(); ?>
-            <a class="campaign-card campaign-card--page" href="/seaside/campaign/">
+            <a class="campaign-card campaign-card--page" href="<?php echo esc_url(home_url("/seaside/campaign/")); ?>">
               <?php
                   if (has_post_thumbnail()) :
                   ?>
