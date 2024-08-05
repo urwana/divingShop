@@ -198,9 +198,9 @@ add_action('init', 'create_custom_taxonomies', 0);
 function custom_posts_per_page($query)
 {
   if (!is_admin() && $query->is_main_query()) {
-    if (is_post_type_archive("voice")) {
+    if (is_post_type_archive("voice") || is_tax('voice_taxonomy')) {
       $query->set('posts_per_page', 6);
-    } else if (is_post_type_archive("campaign")) {
+    } else if (is_post_type_archive("campaign") || is_tax('campaign_taxonomy')) {
       $query->set('posts_per_page', 4);
     } else if (is_home() || is_post_type_archive("blog")) {
       $query->set('posts_per_page', 10);
