@@ -6,8 +6,7 @@
         <div class="article-cards">
           <?php
           $popular_posts = get_popular_posts();
-          if ($popular_posts->have_posts()) :
-
+            if ($popular_posts->have_posts()) :
             while ($popular_posts->have_posts()) : $popular_posts->the_post(); ?>
           <div class="article-card">
             <a class="article-card__inner" href="<?php the_permalink() ?>">
