@@ -392,7 +392,6 @@ add_action('wp_head', 'track_post_views');
 function get_popular_posts($number = 3)
 {
   $args = array(
-    'post_type' => 'post',
     'meta_key' => 'post_views_count',  // ACFフィールドのキー
     'orderby' => 'meta_value_num',
     'order' => 'DESC',

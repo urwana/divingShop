@@ -393,7 +393,7 @@ function get_popular_posts($number = 3)
 {
   $args = array(
     'post_type' => 'post',
-    'meta_key' => 'post_views_count',  // ACFフィールドのキー
+    'meta_key' => 'post_views_count',
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
     'posts_per_page' => $number

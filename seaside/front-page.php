@@ -187,7 +187,6 @@
           <div class="blog-cards">
             <?php
             $query_args = array(
-              'post_type' => 'post',
               'posts_per_page' => 3
             );
             $the_query = new WP_Query($query_args);
