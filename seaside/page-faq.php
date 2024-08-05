@@ -15,25 +15,22 @@
           $qa_boxes = CFS()->get('qa_box');
           ?>
           <?php foreach ($qa_boxes as $key => $qa_box) : ?>
-            <div class="qa-boxes__item">
-              <div class="qa-box">
-                <div class="js-question qa-box__question is-open">
-                  <?php echo $qa_box["qa_box_question"]; ?>
-                  <div class="qa-icon">
-                    <span class="qa-icon__vertical"></span>
-                    <span class="qa-icon__horizontal"></span>
-                  </div>
+          <div class="qa-boxes__item">
+            <div class="qa-box">
+              <div class="js-question qa-box__question is-open">
+                <?php echo $qa_box["qa_box_question"]; ?>
+                <div class="qa-icon">
+                  <span class="qa-icon__vertical"></span>
+                  <span class="qa-icon__horizontal"></span>
                 </div>
-                <div class="qa-box__answer"><?php echo $qa_box["qa_box_answer"]; ?></div>
               </div>
+              <div class="qa-box__answer"><?php echo $qa_box["qa_box_answer"]; ?></div>
             </div>
+          </div>
           <?php endforeach; ?>
         </div>
       </div>
     </div>
   </div>
-  <section class="l-top-contact">
-    <?php get_template_part("/common/_contact"); ?>
-  </section>
 </main>
 <?php get_footer(); ?>

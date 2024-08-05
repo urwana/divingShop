@@ -15,8 +15,8 @@
             <div class="blog__detail-contents">
               <div class="blog__detail-date">
                 <?php if (have_posts()) : ?>
-                  <?php while (have_posts()) : the_post(); ?>
-                    <time datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
+                <?php while (have_posts()) : the_post(); ?>
+                <time datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
               </div>
               <h1 class="blog__detail-title title-line"><?php the_title(); ?></h1>
               <figure class="blog__detail-image">
@@ -29,10 +29,10 @@
               <div class="blog__detail-the-contents">
                 <?php the_content(); ?>
               </div>
-            <?php endwhile; ?>
-          <?php endif; ?>
-          <div class="blog__detail-pager">
-            <?php
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <div class="blog__detail-pager">
+                <?php
             $prev_url = "";
             $next_url = "";
             $prev = get_previous_post();
@@ -44,16 +44,13 @@
               $next_url = get_permalink($next->ID);
             endif;
             ?>
-            <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]); ?>
-          </div>
+                <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]); ?>
+              </div>
             </div>
           </div> <?php get_sidebar(); ?>
         </div>
       </div>
     </div>
-  </section>
-  <section class="l-top-contact">
-    <?php get_template_part("./common/_contact") ?>
   </section>
 </main>
 <?php get_footer(); ?>

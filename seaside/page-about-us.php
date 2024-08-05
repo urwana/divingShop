@@ -24,21 +24,19 @@
         <div class="gallery__item-container l-gallery__item-container">
           <?php $fields = CFS()->get("gallery_images"); ?>
           <?php foreach ($fields as $gallery) { ?>
-            <figure class="js-modalPhoto gallery__item">
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri();
+          <figure class="js-modalPhoto gallery__item">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri();
                                 echo $gallery["image"]; ?>-sp.jpg" media="(max-width: 767px)" />
-                <img src="<?php echo get_template_directory_uri();
-                          echo $gallery["image"] ?>-pc.jpg" alt="<?php echo $gallery["alt"]; ?>" width="<?php echo $gallery["width"] ?>" height="<?php echo $gallery["height"]; ?>" />
-              </picture>
-            </figure> <?php }; ?>
+              <img src="<?php echo get_template_directory_uri();
+                          echo $gallery["image"] ?>-pc.jpg" alt="<?php echo $gallery["alt"]; ?>"
+                width="<?php echo $gallery["width"] ?>" height="<?php echo $gallery["height"]; ?>" />
+            </picture>
+          </figure> <?php }; ?>
         </div>
       </div>
     </div>
-    <?php get_template_part("./common/_modal"); ?>
-  </section>
-  <section class="l-top-contact">
-    <?php get_template_part("./common/_contact"); ?>
+    <?php get_template_part("/common/_modal"); ?>
   </section>
 </main>
 <?php get_footer(); ?>
