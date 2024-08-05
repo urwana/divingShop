@@ -15,18 +15,6 @@
           <div class="voice__cards">
             <div class="voice-cards">
               <?php
-              $taxonomy = 'voice_taxonomy';
-              $term_slug = get_query_var('term');
-              $tax_query = [];
-              if ($term_slug) {
-                $tax_query = [
-                  [
-                    'taxonomy' => $taxonomy,
-                    'field'    => 'slug',
-                    'terms'    => $term_slug,
-                  ],
-                ];
-              }
               if (have_posts()) :
                 while (have_posts()) :
                   the_post(); ?>
