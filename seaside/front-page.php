@@ -81,7 +81,7 @@
               ?>
               <div class="swiper-slide swiper-campaign__swiper-slide">
                 <div class="top-campaign__card">
-                  <a class="campaign-card" href="<?php echo esc_url(home_url("/campaign/")); ?>">
+                  <a class="campaign-card" href="<?php echo esc_url(home_url("/campaign")); ?>">
                     <?php
                         if (has_post_thumbnail()) :
                         ?>
