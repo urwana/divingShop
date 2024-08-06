@@ -302,7 +302,6 @@
             <?php else : ?>
             <p>投稿が見つかりませんでした。</p>
             <?php endif;
-
             wp_reset_postdata();
             ?>
           </div>
@@ -338,7 +337,6 @@
               $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
               <?php if (!empty($price_lists) && isset($price_lists_item)) : ?>
               <?php foreach ($price_lists_item as $price_list_group) : ?>
-
               <div class="top-price-list__group">
                 <div class="top-price-list__subtitle lined-title--no-change">
                   <?php echo $price_list_group["price_list_title"]; ?>
@@ -347,7 +345,6 @@
                   <?php
                       $price_list_body = $price_list_group["price_list_body"];
                       foreach ($price_list_body as $price_list) : ?>
-
                   <div class="top-price-list__item">
                     <dt><?php echo $price_list["price_title"] ?></dt>
                     <dd> <?php echo $price_list["price"]; ?></dd>
@@ -357,7 +354,6 @@
               </div>
               <?php endforeach; ?>
               <?php endif; ?>
-
             </div>
           </div>
         </div>
