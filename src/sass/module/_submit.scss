@@ -99,22 +99,11 @@ span.wpcf7-spinner {
   right: calc(-1 * rem(47));
 }
 
-// .button--reverse .submit__text::before {
-//   background-color: $green-accent;
-//   right: calc(-1 * rem(55.5));
-// }
-
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
   background-color: $green-accent;
   z-index: 2;
 }
-
-// .button--reverse:hover .submit__text::before,
-// .button--reverse:hover .submit__text::after {
-//   background-color: $white;
-//   z-index: 2;
-// }
 
 .submit__text::after {
   position: absolute;
