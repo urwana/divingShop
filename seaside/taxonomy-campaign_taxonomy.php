@@ -16,10 +16,6 @@
         <div class="campaign__cards">
           <div class="campaign-cards">
             <?php
-            $campaign_args = [
-              'post_type' => 'campaign',
-              'posts_per_page' => 4,
-            ];
             if (have_posts()) :
               while (have_posts()) :
                 the_post(); ?>
