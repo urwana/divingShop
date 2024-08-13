@@ -28,7 +28,7 @@
           </p>
         </div>
       </div>
-      <div class="swiper-wrapper key-visual__swiper-wrapper">
+      <!-- <div class="swiper-wrapper key-visual__swiper-wrapper">
         <figure class="swiper-slide key-visual__swiper-slide">
           <picture>
             <source media="(max-width: 767px)" srcset="<?php the_field("top_swiper_sp1") ?>" />
@@ -53,6 +53,28 @@
             <img src="<?php the_field("top_swiper_4") ?>" alt="<?php the_field("top_swiper_alt4") ?>" />
           </picture>
         </figure>
+      </div> -->
+      <div class="swiper-wrapper key-visual__swiper-wrapper">
+        <?php for ($i = 1; $i <= 4; $i++) : ?>
+        <?php
+          $image = get_field("top_swiper_$i");
+          $image_sp = get_field("top_swiper_sp$i");
+          $image_alt = get_field("top_swiper_alt$i");
+          $fallback_image = "no-image.jpg";
+          $fallback_alt = "フォールバック画像";
+          ?>
+        <?php if ($image || $image_sp) : ?>
+        <figure class="swiper-slide key-visual__swiper-slide">
+          <picture>
+            <?php if ($image_sp) : ?>
+            <source media="(max-width: 767px)" srcset="<?php echo esc_url($image_sp); ?>" />
+            <?php endif; ?>
+            <img src="<?php echo esc_url($image ? $image : $fallback_image); ?>"
+              alt="<?php echo esc_attr($image_alt ? $image_alt : $fallback_alt); ?>" />
+          </picture>
+        </figure>
+        <?php endif; ?>
+        <?php endfor; ?>
       </div>
     </div>
   </div>
