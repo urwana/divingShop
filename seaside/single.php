@@ -47,7 +47,10 @@
                 <?php get_template_part("/common/_pager-detail", null, ["prev_url" => $prev_url, "next_url" => $next_url]); ?>
               </div>
             </div>
-          </div> <?php get_sidebar(); ?>
+          </div>
+          <div class="blog__sidebar">
+            <?php get_sidebar(); ?>
+          </div>
         </div>
       </div>
     </div>
