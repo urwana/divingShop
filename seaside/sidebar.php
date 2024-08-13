@@ -1,5 +1,5 @@
-<aside class="blog__sidebar">
-  <div class="blog__sidebar-popular-articles">
+<aside class="sidebar">
+  <div class="sidebar__popular-articles">
     <div class="sidebar-popular-articles">
       <h2 class="sidebar-popular-articles__title sidebar-title">
         <figure class="sidebar-title__icon">
@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-  <div class="blog__sidebar-voice">
+  <div class="sidebar__voice">
     <div class="sidebar-voice">
       <h2 class="sidebar-voice__title sidebar-title">
         <figure class="sidebar-title__icon">
@@ -109,7 +109,7 @@
       </div>
     </div>
   </div>
-  <div class=" blog__sidebar-campaign">
+  <div class="sidebar__campaign">
     <div class="sidebar-campaign">
       <h2 class="sidebar-campaign__title sidebar-title">
         <figure class="sidebar-title__icon">
@@ -179,7 +179,7 @@
       </div>
     </div>
   </div>
-  <div class="blog__sidebar-archive">
+  <div class="sidebar__archive">
     <?php
     $posts_by_months = get_posts_by_months();
     ?>

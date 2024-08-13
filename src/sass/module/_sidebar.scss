@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.sidebar {
+  width: 85.3%;
+  margin-inline: auto;
+  max-width: rem(570);
+  @include mq("md") {
+    max-width: auto;
+    width: rem(294);
+  }
+}
+
+.sidebar__popular-articles {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.sidebar__voice {
+  margin-top: rem(80);
+}
+
+.sidebar__campaign {
+  margin-top: rem(80);
+}
+
+.sidebar__archive {
+  margin-top: rem(80);
+}

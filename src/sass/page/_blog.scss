@@ -27,22 +27,3 @@
 .blog__pager {
   margin-top: rem(80);
 }
-
-.blog__sidebar-popular-articles {
-  margin-top: rem(80);
-  @include mq("md") {
-    margin-top: 0;
-  }
-}
-
-.blog__sidebar-voice {
-  margin-top: rem(80);
-}
-
-.blog__sidebar-campaign {
-  margin-top: rem(80);
-}
-
-.blog__sidebar-archive {
-  margin-top: rem(80);
-}
