@@ -43,8 +43,12 @@
             <?php if ($image_sp) : ?>
             <source media="(max-width: 767px)" srcset="<?php echo esc_url($image_sp); ?>" />
             <?php endif; ?>
-            <img src="<?php echo esc_url($image ? $image : $fallback_image); ?>"
-              alt="<?php echo esc_attr($image_alt ? $image_alt : $fallback_alt); ?>" />
+            <?php if ($image): ?>
+            <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($image_alt); ?>" />
+            <?php else: ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
+              alt="画像がない場合の代替画像" />
+            <?php endif; ?>
           </picture>
         </figure>
         <?php endif; ?>
