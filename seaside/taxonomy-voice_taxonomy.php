@@ -24,18 +24,21 @@
                     <div class="voice-card__head">
                       <div class="voice-card__info">
                         <div class="voice-card__meta">
-                          <div class="voice-card__person"><?php echo get_field("person"); ?></div>
+                          <div class="voice-card__person">
+                            <?php echo !empty(get_field("person")) ? get_field("person") : "" ?>
+                          </div>
                           <div class="voice-card__label">
+                            <?php
+                                $post_id = get_the_ID();
+                                $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
+                                if ($campaign_terms && !is_wp_error($campaign_terms)) :
+                                  foreach ($campaign_terms as $term) : ?>
                             <span class="label">
-                              <?php
-                                  $post_id = get_the_ID();
-                                  $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
-                                  if ($campaign_terms && !is_wp_error($campaign_terms)) :
-                                    foreach ($campaign_terms as $term) :
-                                      echo esc_html($term->name) . ' ';
-                                    endforeach;
-                                  endif; ?>
+                              <?php echo esc_html($term->name); ?>
                             </span>
+                            <?php endforeach;
+                                endif;
+                                ?>
                           </div>
                         </div>
                         <div class="voice-card__title">
@@ -48,9 +51,10 @@
                         <?php
                             if (has_post_thumbnail()) :
                             ?>
-                        <figure class="campaign-card__image">
-                          <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                        </figure>
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                        <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
+                          alt="画像がない場合の代替画像" style="object-fit:contain" />
                         <?php
                             endif;
                             ?>
