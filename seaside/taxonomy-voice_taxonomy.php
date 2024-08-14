@@ -25,7 +25,7 @@
                       <div class="voice-card__info">
                         <div class="voice-card__meta">
                           <div class="voice-card__person">
-                            <?php echo !empty(get_field("person")) ? get_field("person") : "" ?>
+                            <?php echo get_field("person"); ?>
                           </div>
                           <div class="voice-card__label">
                             <?php

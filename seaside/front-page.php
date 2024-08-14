@@ -94,16 +94,16 @@
                     <div class="campaign-card__body">
                       <div class="campaign-card__top">
                         <div class="campaign-card__label label-container">
+                          <?php
+                              $post_id = get_the_ID();
+                              $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
+                              if ($campaign_terms && !is_wp_error($campaign_terms)) :
+                                foreach ($campaign_terms as $term) : ?>
                           <span class="label">
-                            <?php
-                                $post_id = get_the_ID();
-                                $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
-                                if ($campaign_terms && !is_wp_error($campaign_terms)) :
-                                  foreach ($campaign_terms as $term) :
-                                    echo esc_html($term->name) . ' ';
-                                  endforeach;
-                                endif; ?>
+                            <?php echo esc_html($term->name); ?>
                           </span>
+                          <?php endforeach;
+                              endif; ?>
                         </div>
                         <div class="campaign-card__title"><?php the_title(); ?></div>
                       </div>
@@ -113,8 +113,13 @@
                         </p>
                         <div class="campaign-card__price-container">
                           <div class="price-container">
-                            <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
+                            <?php if (get_field("cancelled_price")): ?>
+                            <span
+                              class="price-container__cancelled-price">¥<?php the_field("cancelled_price"); ?></span>
+                            <?php endif ?>
+                            <?php if (get_field("price")): ?>
                             <span class="price-container__price">¥<?php the_field("price") ?></span>
+                            <?php endif ?>
                           </div>
                         </div>
                       </div>
@@ -260,7 +265,8 @@
                   <div class="voice-card__head">
                     <div class="voice-card__info">
                       <div class="voice-card__meta">
-                        <div class="voice-card__person"><?php echo get_field("person"); ?></div>
+                        <div class="voice-card__person"><?php echo get_field("person"); ?>
+                        </div>
                         <div class=" voice-card__label">
                           <span class="label">
                             <?php

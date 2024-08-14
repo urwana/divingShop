@@ -155,10 +155,14 @@
                 </p>
                 <div class="campaign-card__price-container">
                   <div class="price-container">
+                    <?php if (get_field("cancelled_price")): ?>
                     <span
                       class="price-container__cancelled-price price-container__cancelled-price--sidebar">¥<?php the_field("cancelled_price") ?></span>
+                    <?php endif ?>
+                    <?php if (get_field("price")): ?>
                     <span
                       class="price-container__price price-container__price--sidebar">¥<?php the_field("price") ?></span>
+                    <?php endif ?>
                   </div>
                 </div>
               </div>
