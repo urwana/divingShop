@@ -15,6 +15,8 @@
       </div>
     </div>
   </div>
+  <?php $fields = CFS()->get("gallery_images"); ?>
+  <?php if ($fields): ?>
   <section class="l-gallery">
     <div class="gallery">
       <div class="gallery__inner inner">
@@ -25,21 +27,23 @@
           </div>
         </div>
         <div class="gallery__item-container l-gallery__item-container">
-          <?php $fields = CFS()->get("gallery_images"); ?>
-          <?php foreach ($fields as $gallery) { ?>
+          <?php foreach ($fields as $gallery) :
+              if ($gallery): ?>
           <figure class="js-modalPhoto gallery__item">
             <picture>
               <source srcset="<?php echo get_template_directory_uri();
-                                echo $gallery["image"]; ?>-sp.jpg" media="(max-width: 767px)" />
+                                    echo $gallery["image"]; ?>-sp.jpg" media="(max-width: 767px)" />
               <img src="<?php echo get_template_directory_uri();
-                          echo $gallery["image"] ?>-pc.jpg" alt="<?php echo $gallery["alt"]; ?>"
+                              echo $gallery["image"] ?>-pc.jpg" alt="<?php echo $gallery["alt"]; ?>"
                 width="<?php echo $gallery["width"] ?>" height="<?php echo $gallery["height"]; ?>" />
             </picture>
-          </figure> <?php }; ?>
+            <?php endif; ?>
+          </figure> <?php endforeach; ?>
         </div>
       </div>
     </div>
     <?php get_template_part("/common/_modal"); ?>
   </section>
+  <?php endif; ?>
 </main>
 <?php get_footer(); ?>

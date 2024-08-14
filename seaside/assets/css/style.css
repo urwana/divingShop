@@ -329,22 +329,6 @@ body {
 	margin-top: 5rem;
 }
 
-.blog__sidebar-popular-articles {
-	margin-top: 5rem;
-}
-
-.blog__sidebar-voice {
-	margin-top: 5rem;
-}
-
-.blog__sidebar-campaign {
-	margin-top: 5rem;
-}
-
-.blog__sidebar-archive {
-	margin-top: 5rem;
-}
-
 html {
 	scroll-padding-top: 90px;
 }
@@ -873,13 +857,6 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1;
-}
-
-.blog__sidebar {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 35.625rem;
-	width: 85.3%;
 }
 
 .blog-card {
@@ -1667,6 +1644,10 @@ body {
 	width: 100%;
 }
 
+.gallery {
+	position: relative;
+}
+
 .gallery__item-container {
 	display: flex;
 	flex-direction: column;
@@ -2311,8 +2292,12 @@ span.current:hover {
 }
 
 .price-container {
+	align-items: center;
+	display: flex;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
+	gap: 1.5rem;
+	justify-content: center;
 	line-height: 1;
 }
 
@@ -2336,7 +2321,6 @@ span.current:hover {
 	color: #408F95;
 	display: inline-block;
 	font-size: 2rem;
-	margin-left: 1rem;
 	max-width: 100%;
 	overflow: hidden;
 	text-align: left;
@@ -2668,6 +2652,29 @@ span.current:hover {
 
 .sidebar-voice__card {
 	margin-top: 1.5rem;
+}
+
+.sidebar {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 35.625rem;
+	width: 85.3%;
+}
+
+.sidebar__popular-articles {
+	margin-top: 5rem;
+}
+
+.sidebar__voice {
+	margin-top: 5rem;
+}
+
+.sidebar__campaign {
+	margin-top: 5rem;
+}
+
+.sidebar__archive {
+	margin-top: 5rem;
 }
 
 .sns-icons__link {
@@ -3539,10 +3546,6 @@ html {
 	justify-content: flex-start;
 }
 
-.blog__sidebar-popular-articles {
-	margin-top: 0;
-}
-
 .u-desktop {
 	display: block;
 }
@@ -3775,10 +3778,7 @@ html {
 }
 
 .about__inner--fish::after {
-	background-image: url(../images/top/bg-fish.svg);
-	bottom: -178px;
-	height: 8.625rem;
-	width: 18.75rem;
+	background-image: none;
 }
 
 .about__contents {
@@ -3854,11 +3854,6 @@ html {
 
 .about__button {
 	margin-top: 2.5rem;
-}
-
-.blog__sidebar {
-	max-width: auto;
-	width: 18.375rem;
 }
 
 .blog-cards {
@@ -4087,6 +4082,17 @@ html {
 	text-align: center;
 }
 
+.gallery::after {
+	background-image: url(../images/top/bg-fish.svg);
+	background-size: cover;
+	content: "";
+	height: 8.625rem;
+	position: absolute;
+	right: calc(50% - min(48vw, 39.8125rem));
+	top: -58px;
+	width: 18.75rem;
+}
+
 .gallery__item-container {
 	display: grid;
 	grid-auto-flow: row dense;
@@ -4224,9 +4230,7 @@ html {
 }
 
 .price-container {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	gap: 1rem;
 }
 
 .price-container__cancelled-price {
@@ -4239,7 +4243,6 @@ html {
 
 .price-container__price {
 	font-size: 2.5rem;
-	margin-left: 1.5rem;
 }
 
 .price-container__price--sidebar {
@@ -4354,6 +4357,15 @@ html {
 
 .sidebar-archive__toggle-hierarchy-inner {
 	margin-top: 1.5rem;
+}
+
+.sidebar {
+	max-width: auto;
+	width: 18.375rem;
+}
+
+.sidebar__popular-articles {
+	margin-top: 0;
 }
 
 .sns-icons__link {
