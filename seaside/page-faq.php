@@ -9,12 +9,14 @@
   <?php get_template_part("/common/_breadcrumbs"); ?>
   <div class="faq l-faq">
     <div class="faq__inner inner">
+      <?php
+      $qa_boxes = CFS()->get('qa_box');
+      ?>
+      <?php if ($qa_boxes): ?>
       <div class="faq__contents">
         <div class="qa-boxes">
-          <?php
-          $qa_boxes = CFS()->get('qa_box');
-          ?>
           <?php foreach ($qa_boxes as $key => $qa_box) : ?>
+          <?php if (!empty($qa_box["qa_box_question"]) && ! empty($qa_box["qa_box_answer"])): ?>
           <div class="qa-boxes__item">
             <div class="qa-box">
               <div class="js-question qa-box__question is-open">
@@ -27,9 +29,13 @@
               <div class="qa-box__answer"><?php echo $qa_box["qa_box_answer"]; ?></div>
             </div>
           </div>
+          <?php endif ?>
           <?php endforeach; ?>
         </div>
       </div>
+      <?php else: ?>
+      <div>よくある質問は準備中です</div>
+      <?php endif; ?>
     </div>
   </div>
 </main>
