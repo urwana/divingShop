@@ -56,6 +56,25 @@
                     </div>
                   </div>
                 </div>
+                <div class="campaign-card__bottom2">
+                  <div class="campaign-card__text">
+                    <?php $excerpt = get_the_excerpt();
+                        echo $excerpt; ?></div>
+                  <div class="campaign-card__date-container">
+                    <p class="campaign-card__date">
+                      <time datetime="2023-06-01"><?php the_field("start_date") ?></time>
+                      -
+                      <time datetime="2023-09-30"><?php the_field("end_date") ?></time>
+                    </p>
+                    <?php if (get_field("has_link")) : ?>
+                    <p class="campaign-card__link">
+                      ご予約・お問い合わせはコチラ</p>
+                    <?php endif; ?>
+                  </div>
+                  <div class="campaign-card__button">
+                    <div class="js-contact-button button"><span class="button__text">Contact us</span></div>
+                  </div>
+                </div>
               </div>
             </a>
             <?php endwhile; ?>
