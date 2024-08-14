@@ -56,24 +56,28 @@
       </div> -->
       <div class="swiper-wrapper key-visual__swiper-wrapper">
         <?php for ($i = 1; $i <= 5; $i++) : ?>
-          <?php
+        <?php
           $image = get_field("top_swiper_$i");
           $image_sp = get_field("top_swiper_sp$i");
           $image_alt = get_field("top_swiper_alt$i");
           $fallback_image = "no-image.jpg";
           $fallback_alt = "フォールバック画像";
           ?>
-          <?php if ($image || $image_sp) : ?>
-            <figure class="swiper-slide key-visual__swiper-slide">
-              <picture>
-                <?php if ($image_sp) : ?>
-                  <source media="(max-width: 767px)" srcset="<?php echo esc_url($image_sp); ?>" />
-                <?php endif; ?>
-                <img src="<?php echo esc_url($image ? $image : $fallback_image); ?>"
-                  alt="<?php echo esc_attr($image_alt ? $image_alt : $fallback_alt); ?>" />
-              </picture>
-            </figure>
-          <?php endif; ?>
+        <?php echo "確認========================================================="; ?>
+        <?php echo $image; ?>
+        <?php echo $image_sp; ?>
+
+        <?php if ($image && $image_sp) : ?>
+        <figure class="swiper-slide key-visual__swiper-slide">
+          <picture>
+            <?php if ($image_sp) : ?>
+            <source media="(max-width: 767px)" srcset="<?php echo esc_url($image_sp); ?>" />
+            <?php endif; ?>
+            <img src="<?php echo esc_url($image ? $image : $fallback_image); ?>"
+              alt="<?php echo esc_attr($image_alt ? $image_alt : $fallback_alt); ?>" />
+          </picture>
+        </figure>
+        <?php endif; ?>
         <?php endfor; ?>
       </div>
     </div>
@@ -101,23 +105,23 @@
                 while ($the_query->have_posts()) {
                   $the_query->the_post();
               ?>
-                  <div class="swiper-slide swiper-campaign__swiper-slide">
-                    <div class="top-campaign__card">
-                      <a class="campaign-card" href="<?php echo esc_url(home_url("/campaign")); ?>">
-                        <?php
+              <div class="swiper-slide swiper-campaign__swiper-slide">
+                <div class="top-campaign__card">
+                  <a class="campaign-card" href="<?php echo esc_url(home_url("/campaign")); ?>">
+                    <?php
                         if (has_post_thumbnail()) :
                         ?>
-                          <figure class="campaign-card__image">
-                            <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                          </figure>
-                        <?php
+                    <figure class="campaign-card__image">
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                    </figure>
+                    <?php
                         endif;
                         ?>
-                        <div class="campaign-card__body">
-                          <div class="campaign-card__top">
-                            <div class="campaign-card__label label-container">
-                              <span class="label">
-                                <?php
+                    <div class="campaign-card__body">
+                      <div class="campaign-card__top">
+                        <div class="campaign-card__label label-container">
+                          <span class="label">
+                            <?php
                                 $post_id = get_the_ID();
                                 $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
                                 if ($campaign_terms && !is_wp_error($campaign_terms)) :
@@ -125,25 +129,25 @@
                                     echo esc_html($term->name) . ' ';
                                   endforeach;
                                 endif; ?>
-                              </span>
-                            </div>
-                            <div class="campaign-card__title"><?php the_title(); ?></div>
-                          </div>
-                          <div class="campaign-card__bottom">
-                            <p class="campaign-card__explain">
-                              <?php the_field("main_text"); ?>
-                            </p>
-                            <div class="campaign-card__price-container">
-                              <div class="price-container">
-                                <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
-                                <span class="price-container__price">¥<?php the_field("price") ?></span>
-                              </div>
-                            </div>
+                          </span>
+                        </div>
+                        <div class="campaign-card__title"><?php the_title(); ?></div>
+                      </div>
+                      <div class="campaign-card__bottom">
+                        <p class="campaign-card__explain">
+                          <?php the_field("main_text"); ?>
+                        </p>
+                        <div class="campaign-card__price-container">
+                          <div class="price-container">
+                            <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
+                            <span class="price-container__price">¥<?php the_field("price") ?></span>
                           </div>
                         </div>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </div>
               <?php }
               }; ?>
             </div>
@@ -215,35 +219,35 @@
             if ($the_query->have_posts()) :
               while ($the_query->have_posts()) :
                 $the_query->the_post(); ?>
-                <div class=" blog-cards__item">
-                  <div class="blog-card">
-                    <a href="<?php the_permalink() ?>">
-                      <div class="blog-card__inner">
-                        <?php
+            <div class=" blog-cards__item">
+              <div class="blog-card">
+                <a href="<?php the_permalink() ?>">
+                  <div class="blog-card__inner">
+                    <?php
                         if (has_post_thumbnail()) :
                         ?>
-                          <figure class="campaign-card__image">
-                            <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                          </figure>
-                        <?php
+                    <figure class="campaign-card__image">
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                    </figure>
+                    <?php
                         endif;
                         ?>
-                        <div class="blog-card__content">
-                          <time class="blog-card__date"
-                            datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
-                          <div class="blog-card__title"><?php the_title(); ?></div>
-                          <div class="blog-card__text">
-                            <?php get_custom_excerpt(92); ?>
-                          </div>
-                        </div>
+                    <div class="blog-card__content">
+                      <time class="blog-card__date"
+                        datetime="<?php the_time("c"); ?>"><?php the_time("Y/m/d"); ?></time>
+                      <div class="blog-card__title"><?php the_title(); ?></div>
+                      <div class="blog-card__text">
+                        <?php get_custom_excerpt(92); ?>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                </div>
-              <?php endwhile;
+                </a>
+              </div>
+            </div>
+            <?php endwhile;
               wp_reset_postdata(); ?>
             <?php else : ?>
-              <p>ブログ記事の投稿はありません。</p>
+            <p>ブログ記事の投稿はありません。</p>
             <?php endif;
             ?>
           </div>
@@ -276,16 +280,16 @@
             if ($the_voice_query->have_posts()) :
               while ($the_voice_query->have_posts()) :
                 $the_voice_query->the_post(); ?>
-                <div class=" voice-cards__item">
-                  <div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
-                    <a href="">
-                      <div class="voice-card__head">
-                        <div class="voice-card__info">
-                          <div class="voice-card__meta">
-                            <div class="voice-card__person"><?php echo get_field("person"); ?></div>
-                            <div class=" voice-card__label">
-                              <span class="label">
-                                <?php
+            <div class=" voice-cards__item">
+              <div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
+                <a href="">
+                  <div class="voice-card__head">
+                    <div class="voice-card__info">
+                      <div class="voice-card__meta">
+                        <div class="voice-card__person"><?php echo get_field("person"); ?></div>
+                        <div class=" voice-card__label">
+                          <span class="label">
+                            <?php
                                 $post_id = get_the_ID();
                                 $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
                                 if ($campaign_terms && !is_wp_error($campaign_terms)) :
@@ -293,36 +297,36 @@
                                     echo esc_html($term->name) . ' ';
                                   endforeach;
                                 endif; ?>
-                              </span>
-                            </div>
-                          </div>
-                          <div class="voice-card__title">
-                            <div class="lined-title">
-                              <?php the_title(); ?>
-                            </div>
-                          </div>
+                          </span>
                         </div>
-                        <figure class="js-colorAnimation voice-card__image">
-                          <?php
+                      </div>
+                      <div class="voice-card__title">
+                        <div class="lined-title">
+                          <?php the_title(); ?>
+                        </div>
+                      </div>
+                    </div>
+                    <figure class="js-colorAnimation voice-card__image">
+                      <?php
                           if (has_post_thumbnail()) :
                           ?>
-                            <figure class="campaign-card__image">
-                              <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                            </figure>
-                          <?php
+                      <figure class="campaign-card__image">
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                      </figure>
+                      <?php
                           endif;
                           ?>
-                        </figure>
-                      </div>
-                      <div class="voice-card__text">
-                        <?php get_custom_excerpt(250); ?>
-                      </div>
-                    </a>
+                    </figure>
                   </div>
-                </div>
-              <?php endwhile; ?>
+                  <div class="voice-card__text">
+                    <?php get_custom_excerpt(250); ?>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <?php endwhile; ?>
             <?php else : ?>
-              <p>投稿が見つかりませんでした。</p>
+            <p>投稿が見つかりませんでした。</p>
             <?php endif;
             wp_reset_postdata();
             ?>
@@ -358,23 +362,23 @@
               <?php $price_lists = CFS()->get('price_lists', 13);
               $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
               <?php if (!empty($price_lists) && isset($price_lists_item)) : ?>
-                <?php foreach ($price_lists_item as $price_list_group) : ?>
-                  <div class="top-price-list__group">
-                    <div class="top-price-list__subtitle lined-title--no-change">
-                      <?php echo $price_list_group["price_list_title"]; ?>
-                    </div>
-                    <dl>
-                      <?php
+              <?php foreach ($price_lists_item as $price_list_group) : ?>
+              <div class="top-price-list__group">
+                <div class="top-price-list__subtitle lined-title--no-change">
+                  <?php echo $price_list_group["price_list_title"]; ?>
+                </div>
+                <dl>
+                  <?php
                       $price_list_body = $price_list_group["price_list_body"];
                       foreach ($price_list_body as $price_list) : ?>
-                        <div class="top-price-list__item">
-                          <dt><?php echo $price_list["price_title"] ?></dt>
-                          <dd> <?php echo $price_list["price"]; ?></dd>
-                        </div>
-                      <?php endforeach; ?>
-                    </dl>
+                  <div class="top-price-list__item">
+                    <dt><?php echo $price_list["price_title"] ?></dt>
+                    <dd> <?php echo $price_list["price"]; ?></dd>
                   </div>
-                <?php endforeach; ?>
+                  <?php endforeach; ?>
+                </dl>
+              </div>
+              <?php endforeach; ?>
               <?php endif; ?>
             </div>
           </div>
