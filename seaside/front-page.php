@@ -66,8 +66,7 @@
         <?php echo "確認========================================================="; ?>
         <?php echo $image; ?>
         <?php echo $image_sp; ?>
-
-        <?php if ($image && $image_sp) : ?>
+        <?php if (!empty($image) && !empty($image_sp)) : ?>
         <figure class="swiper-slide key-visual__swiper-slide">
           <picture>
             <?php if ($image_sp) : ?>
