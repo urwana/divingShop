@@ -63,9 +63,6 @@
           $fallback_image = "no-image.jpg";
           $fallback_alt = "フォールバック画像";
           ?>
-        <?php echo "確認========================================================="; ?>
-        <?php echo $image; ?>
-        <?php echo $image_sp; ?>
         <?php if (!empty($image) && !empty($image_sp)) : ?>
         <figure class="swiper-slide key-visual__swiper-slide">
           <picture>
