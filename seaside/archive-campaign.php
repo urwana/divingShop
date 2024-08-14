@@ -79,9 +79,7 @@
                       <time
                         datetime="<?php echo esc_attr($start_date->format('Y-m-d')); ?>"><?php echo esc_html($start_date_raw); ?></time>
                       <?php endif; ?>
-                      <?php if ($start_date && $end_date): ?>
                       -
-                      <?php endif; ?>
                       <?php if ($end_date): ?>
                       <time
                         datetime="<?php echo esc_attr($end_date->format('Y-m-d')); ?>"><?php echo esc_html($end_date_raw); ?></time>
