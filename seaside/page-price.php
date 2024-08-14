@@ -43,6 +43,8 @@
             </div>
             <?php endforeach; ?>
           </div>
+          <?php else: ?>
+          <div>料金表は現在準備中です</div>
           <?php endif; ?>
         </div>
       </div>

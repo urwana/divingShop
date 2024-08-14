@@ -19,29 +19,28 @@
             if (have_posts()) :
               while (have_posts()) :
                 the_post(); ?>
-            <a class="campaign-card campaign-card--page" href="<?php echo esc_url(home_url("/campaign")); ?>">
-              <?php
-                  if (has_post_thumbnail()) :
-                  ?>
+            <a class="campaign-card campaign-card--page" href="<?php echo esc_url(home_url("/campaign/")); ?>">
               <figure class="campaign-card__image">
+                <?php if (has_post_thumbnail()) : ?>
                 <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                <?php else: ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
+                  alt="画像がない場合の代替画像" style="object-fit:contain" />
+                <?php endif; ?>
               </figure>
-              <?php
-                  endif;
-                  ?>
               <div class="campaign-card__body">
                 <div class="campaign-card__top">
                   <div class="campaign-card__label label-container">
+                    <?php
+                        $post_id = get_the_ID();
+                        $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
+                        if ($campaign_terms && !is_wp_error($campaign_terms)) :
+                          foreach ($campaign_terms as $term) : ?>
                     <span class="label">
-                      <?php
-                          $post_id = get_the_ID();
-                          $campaign_terms = get_the_terms($post_id, 'campaign_taxonomy');
-                          if ($campaign_terms && !is_wp_error($campaign_terms)) :
-                            foreach ($campaign_terms as $term) :
-                              echo esc_html($term->name) . ' ';
-                            endforeach;
-                          endif; ?>
+                      <?php echo esc_html($term->name) . ' '; ?>
                     </span>
+                    <?php endforeach;
+                        endif; ?>
                   </div>
                   <div class="campaign-card__title"><?php the_title(); ?></div>
                 </div>
@@ -51,8 +50,12 @@
                   </p>
                   <div class="campaign-card__price-container">
                     <div class="price-container">
+                      <?php if (!empty(get_field("cancelled_price"))): ?>
                       <span class="price-container__cancelled-price">¥<?php the_field("cancelled_price") ?></span>
+                      <?php endif; ?>
+                      <?php if (!empty(get_field("price"))): ?>
                       <span class="price-container__price">¥<?php the_field("price") ?></span>
+                      <?php endif; ?>
                     </div>
                   </div>
                 </div>
@@ -62,9 +65,25 @@
                         echo $excerpt; ?></div>
                   <div class="campaign-card__date-container">
                     <p class="campaign-card__date">
-                      <time datetime="2023-06-01"><?php the_field("start_date") ?></time>
+                      <?php
+                          $start_date_raw = get_field('start_date');
+                          $end_date_raw = get_field('end_date');
+                          if ($start_date_raw) {
+                            $start_date = DateTime::createFromFormat('Y/m/d', $start_date_raw);
+                          }
+                          if ($end_date_raw) {
+                            $end_date = DateTime::createFromFormat('Y/m/d', $end_date_raw);
+                          }
+                          ?>
+                      <?php if ($start_date): ?>
+                      <time
+                        datetime="<?php echo esc_attr($start_date->format('Y-m-d')); ?>"><?php echo esc_html($start_date_raw); ?></time>
+                      <?php endif; ?>
                       -
-                      <time datetime="2023-09-30"><?php the_field("end_date") ?></time>
+                      <?php if ($end_date): ?>
+                      <time
+                        datetime="<?php echo esc_attr($end_date->format('Y-m-d')); ?>"><?php echo esc_html($end_date_raw); ?></time>
+                      <?php endif; ?>
                     </p>
                     <?php if (get_field("has_link")) : ?>
                     <p class="campaign-card__link">
@@ -79,7 +98,7 @@
             </a>
             <?php endwhile; ?>
             <?php else : ?>
-            <p>投稿が見つかりませんでした。</p>
+            <div>現在キャンペーンはございません。</div>
             <?php endif;
             wp_reset_postdata();
             ?>
