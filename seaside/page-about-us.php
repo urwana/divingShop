@@ -27,18 +27,21 @@
           </div>
         </div>
         <div class="gallery__item-container l-gallery__item-container">
-          <?php foreach ($fields as $gallery) :
-              if ($gallery): ?>
+          <?php foreach ($fields as $gallery) : ?>
+          <?php if (!empty($gallery["image"])): ?>
           <figure class="js-modalPhoto gallery__item">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri();
-                                    echo $gallery["image"]; ?>-sp.jpg" media="(max-width: 767px)" />
-              <img src="<?php echo get_template_directory_uri();
-                              echo $gallery["image"] ?>-pc.jpg" alt="<?php echo $gallery["alt"]; ?>"
-                width="<?php echo $gallery["width"] ?>" height="<?php echo $gallery["height"]; ?>" />
+              <source srcset="<?php echo get_template_directory_uri() . $gallery["image"]; ?>-sp.jpg"
+                media="(max-width: 767px)" />
+              <img src="<?php echo get_template_directory_uri() . $gallery["image"]; ?>-pc.jpg"
+                alt="<?php echo esc_attr($gallery["alt"] ?? ''); ?>" <?php if (!empty($gallery["width"])): ?>
+                width="<?php echo esc_attr($gallery["width"]); ?>" <?php endif; ?>
+                <?php if (!empty($gallery["height"])): ?> height="<?php echo esc_attr($gallery["height"]); ?>"
+                <?php endif; ?> />
             </picture>
-            <?php endif; ?>
-          </figure> <?php endforeach; ?>
+          </figure>
+          <?php endif; ?>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
