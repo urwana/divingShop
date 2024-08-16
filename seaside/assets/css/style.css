@@ -3411,6 +3411,7 @@ body {
 }
 
 .voice-card__label {
+	margin-left: auto;
 	margin-top: 0.5rem;
 }
 

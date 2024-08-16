@@ -24,9 +24,11 @@
                     <div class="voice-card__head">
                       <div class="voice-card__info">
                         <div class="voice-card__meta">
+                          <?php if (get_field("person")): ?>
                           <div class="voice-card__person">
                             <?php echo get_field("person"); ?>
                           </div>
+                          <?php endif; ?>
                           <div class="voice-card__label">
                             <?php
                                 $post_id = get_the_ID();

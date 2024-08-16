@@ -45,6 +45,7 @@
 
 .voice-card__label {
   margin-top: rem(8);
+  margin-left: auto;
   @include mq("md") {
     margin-top: rem(2);
   }
