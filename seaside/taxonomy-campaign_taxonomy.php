@@ -75,12 +75,10 @@
                             $end_date = DateTime::createFromFormat('Y/m/d', $end_date_raw);
                           }
                           ?>
-                      <?php if ($start_date): ?>
+                      <?php if ($start_date && $end_date): ?>
                       <time
                         datetime="<?php echo esc_attr($start_date->format('Y-m-d')); ?>"><?php echo esc_html($start_date_raw); ?></time>
-                      <?php endif; ?>
                       -
-                      <?php if ($end_date): ?>
                       <time
                         datetime="<?php echo esc_attr($end_date->format('Y-m-d')); ?>"><?php echo esc_html($end_date_raw); ?></time>
                       <?php endif; ?>
