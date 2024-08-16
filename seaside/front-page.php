@@ -226,7 +226,7 @@
             <?php endwhile;
               wp_reset_postdata(); ?>
             <?php else : ?>
-            <p>ブログ記事の投稿はありません。</p>
+            <div>ブログ記事の投稿はありません。</div>
             <?php endif;
             ?>
           </div>
@@ -306,7 +306,7 @@
             </div>
             <?php endwhile; ?>
             <?php else : ?>
-            <p>投稿が見つかりませんでした。</p>
+            <div>投稿が見つかりませんでした。</div>
             <?php endif;
             wp_reset_postdata();
             ?>
@@ -319,6 +319,8 @@
       </div>
     </div>
   </section>
+  <?php $price_lists = CFS()->get('price_lists', 13); ?>
+  <?php if ($price_lists): ?>
   <section class="l-top-price">
     <div class="top-price">
       <div class="top-price__inner inner">
@@ -339,8 +341,7 @@
           </figure>
           <div class="top-price__list">
             <div class="top-price-list">
-              <?php $price_lists = CFS()->get('price_lists', 13);
-              $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
+              <?php $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
               <?php if (!empty($price_lists) && isset($price_lists_item)) : ?>
               <?php foreach ($price_lists_item as $price_list_group) : ?>
               <div class="top-price-list__group">
@@ -349,8 +350,8 @@
                 </div>
                 <dl>
                   <?php
-                      $price_list_body = $price_list_group["price_list_body"];
-                      foreach ($price_list_body as $price_list) : ?>
+                        $price_list_body = $price_list_group["price_list_body"];
+                        foreach ($price_list_body as $price_list) : ?>
                   <div class="top-price-list__item">
                     <dt><?php echo $price_list["price_title"] ?></dt>
                     <dd> <?php echo $price_list["price"]; ?></dd>
@@ -370,5 +371,6 @@
       </div>
     </div>
   </section>
+  <?php endif; ?>
 </main>
 <?php get_footer(); ?>
