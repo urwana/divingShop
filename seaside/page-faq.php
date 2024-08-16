@@ -33,10 +33,10 @@
           <?php endforeach; ?>
         </div>
       </div>
-      <?php else: ?>
-      <div>よくある質問は準備中です</div>
-      <?php endif; ?>
     </div>
+    <?php else: ?>
+    <div>よくある質問は準備中です</div>
+    <?php endif; ?>
   </div>
 </main>
 <?php get_footer(); ?>
