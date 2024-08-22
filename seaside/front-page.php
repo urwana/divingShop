@@ -265,8 +265,9 @@
                   <div class="voice-card__head">
                     <div class="voice-card__info">
                       <div class="voice-card__meta">
-                        <?php if (get_field("person")): ?>
-                        <div class="voice-card__person"><?php echo get_field("person"); ?>
+                        <?php if (get_field("age") && get_field("sex")): ?>
+                        <div class="voice-card__person">
+                          <?php echo get_field("age"); ?>(<?php echo get_field("sex"); ?>)
                         </div>
                         <?php endif; ?>
                         <div class=" voice-card__label">
