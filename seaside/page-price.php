@@ -35,7 +35,7 @@
                     <dt class="price-list__name">
                       <?php echo $price_list["price_title"] ?>
                     </dt>
-                    <dd class="price-list__price"> <?php echo $price_list["price"]; ?></dd>
+                    <dd class="price-list__price">¥ <?php echo number_format($price_list["price"]); ?></dd>
                   </div>
                   <?php endforeach; ?>
                 </dl>
