@@ -24,12 +24,12 @@
                         <div class="voice-card__head">
                           <div class="voice-card__info">
                             <div class="voice-card__meta">
-                              <?php echo "age && type"; ?>
-                              <?php the_field('age_type'); ?>
-                              <?php the_field('type'); ?>
-                              <?php if (get_field("age") && get_field("type")): ?>
+                              <?php $age_type = get_field('age_type'); ?>
+                              <?php $age = $age_type['age']; ?>
+                              <?php $type = $age_type['type']; ?>
+                              <?php if ($age && $type): ?>
                                 <div class="voice-card__person">
-                                  <?php echo get_field("age"); ?>(<?php echo get_field("type"); ?>)
+                                  <?php echo $age; ?>(<?php echo $type; ?>)
                                 </div>
                               <?php endif; ?>
                               <div class="voice-card__label">
