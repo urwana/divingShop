@@ -25,11 +25,11 @@
                       <div class="voice-card__info">
                         <div class="voice-card__meta">
                           <?php echo "age && type"; ?>
-                          <?php echo get_field("age"); ?>
-                          <?php echo get_field("type"); ?>
+                          <?php the_field('age'); ?>
+                          <?php the_field('type'); ?>
                           <?php if (get_field("age") && get_field("type")): ?>
                           <div class="voice-card__person">
-                            <?php echo get_field("person_age"); ?>(<?php echo get_field("person_type"); ?>)
+                            <?php echo get_field("age"); ?>(<?php echo get_field("type"); ?>)
                           </div>
                           <?php endif; ?>
                           <div class="voice-card__label">
