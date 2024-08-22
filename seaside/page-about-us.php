@@ -28,7 +28,7 @@
         </div>
         <div class="gallery__item-container l-gallery__item-container">
           <?php foreach ($fields as $index => $gallery) : ?>
-          <?php if (!empty($gallery["image"])): ?>
+          <?php if (!empty($gallery["image_no"])): ?>
           <figure class="js-modalPhoto gallery__item">
             <picture>
               <source
