@@ -27,17 +27,18 @@
           </div>
         </div>
         <div class="gallery__item-container l-gallery__item-container">
-          <?php foreach ($fields as $gallery) : ?>
+          <?php foreach ($fields as $index => $gallery) : ?>
           <?php if (!empty($gallery["image"])): ?>
           <figure class="js-modalPhoto gallery__item">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri() . $gallery["image"]; ?>-sp.jpg"
+              <source
+                srcset="<?php echo get_template_directory_uri() . "/assets/images/about-us/gallery" .  $gallery["image_no"]; ?>-sp.jpg"
                 media="(max-width: 767px)" />
-              <img src="<?php echo get_template_directory_uri() . $gallery["image"]; ?>-pc.jpg"
-                alt="<?php echo esc_attr($gallery["alt"] ?? ''); ?>" <?php if (!empty($gallery["width"])): ?>
-                width="<?php echo esc_attr($gallery["width"]); ?>" <?php endif; ?>
-                <?php if (!empty($gallery["height"])): ?> height="<?php echo esc_attr($gallery["height"]); ?>"
-                <?php endif; ?> />
+              <img
+                src="<?php echo get_template_directory_uri() . "/assets/images/about-us/gallery" . $gallery["image_no"]; ?>-pc.jpg"
+                alt="<?php echo esc_attr($gallery["alt"] ?? ''); ?>"
+                width="<?php ($index % 6 == 0 || $index % 6 == 5) ? "492" : "580"; ?>"
+                height="<?php ($index % 6 == 0 || $index % 6 == 5) ? "746" : "369"; ?>" />
             </picture>
           </figure>
           <?php endif; ?>
