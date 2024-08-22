@@ -85,8 +85,12 @@
                       ?>
                     </picture>
                     </figure>
+                    <?php $age_type = get_field('age_type'); ?>
+                    <?php $age = $age_type['age']; ?>
+                    <?php $type = $age_type['type']; ?>
+                    <?php if ($age && $type): ?>
                     <div class="voice-card-sidebar__person">
-                      <?php echo get_field("person"); ?>
+                      <?php echo $age; ?>(<?php echo $type; ?>)
                     </div>
                     <div class="voice-card-sidebar__title">
                       <div><?php the_title(); ?></div>
