@@ -18,59 +18,62 @@
               if (have_posts()) :
                 while (have_posts()) :
                   the_post(); ?>
-              <div class="voice-cards__item">
-                <div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
-                  <a href="">
-                    <div class="voice-card__head">
-                      <div class="voice-card__info">
-                        <div class="voice-card__meta">
-                          <?php if (get_field("person_age") && get_field("person_type")): ?>
-                          <div class="voice-card__person">
-                            <?php echo get_field("person_age"); ?>(<?php echo get_field("person_type"); ?>)
-                          </div>
-                          <?php endif; ?>
-                          <div class="voice-card__label">
-                            <?php
+                  <div class="voice-cards__item">
+                    <div class="voice-card js-card<?php echo $voiceCardData["dataType"]; ?>">
+                      <a href="">
+                        <div class="voice-card__head">
+                          <div class="voice-card__info">
+                            <div class="voice-card__meta">
+                              <?php echo "person_age && person_type"; ?>
+                              <?php echo get_field("person_age"); ?>
+                              <?php echo get_field("person_type"); ?>
+                              <?php if (get_field("person_age") && get_field("person_type")): ?>
+                                <div class="voice-card__person">
+                                  <?php echo get_field("person_age"); ?>(<?php echo get_field("person_type"); ?>)
+                                </div>
+                              <?php endif; ?>
+                              <div class="voice-card__label">
+                                <?php
                                 $post_id = get_the_ID();
                                 $campaign_terms = get_the_terms($post_id, 'voice_taxonomy');
                                 if ($campaign_terms && !is_wp_error($campaign_terms)) :
                                   foreach ($campaign_terms as $term) : ?>
-                            <span class="label">
-                              <?php echo esc_html($term->name); ?>
-                            </span>
-                            <?php endforeach;
+                                    <span class="label">
+                                      <?php echo esc_html($term->name); ?>
+                                    </span>
+                                <?php endforeach;
                                 endif;
                                 ?>
+                              </div>
+                            </div>
+                            <div class="voice-card__title">
+                              <div class="lined-title">
+                                <?php the_title(); ?>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="voice-card__title">
-                          <div class="lined-title">
-                            <?php the_title(); ?>
-                          </div>
-                        </div>
-                      </div>
-                      <figure class="js-colorAnimation voice-card__image">
-                        <?php
+                          <figure class="js-colorAnimation voice-card__image">
+                            <?php
                             if (has_post_thumbnail()) :
                             ?>
-                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
-                        <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
-                          alt="画像がない場合の代替画像" style="object-fit:contain" />
-                        <?php
+                              <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
+                            <?php else: ?>
+                              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
+                                alt="画像がない場合の代替画像" style="object-fit:contain" />
+                            <?php
                             endif;
                             ?>
-                      </figure>
+                          </figure>
+                        </div>
+                        <div class="voice-card__text">
+                          <?php get_custom_excerpt(250); ?>
+                        </div>
+                      </a>
                     </div>
-                    <div class="voice-card__text">
-                      <?php get_custom_excerpt(250); ?>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <?php endwhile; ?>
+                  </div>
+                <?php endwhile; ?>
               <?php else : ?>
-              <p>投稿が見つかりませんでした。</p>
+                <p>投稿が見つかりませんでした。</p>
               <?php endif;
               ?>
             </div>
