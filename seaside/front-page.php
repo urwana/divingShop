@@ -360,7 +360,7 @@
                         foreach ($price_list_body as $price_list) : ?>
                   <div class="top-price-list__item">
                     <dt><?php echo $price_list["price_title"] ?></dt>
-                    <dd> <?php echo $price_list["price"]; ?></dd>
+                    <dd>¥ <?php echo number_format((int)$price_list["price"]); ?></dd>
                   </div>
                   <?php endforeach; ?>
                 </dl>
