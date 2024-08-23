@@ -128,7 +128,6 @@ function create_custom_post_types()
 
   // "voice" カスタム投稿タイプを登録
   register_post_type('voice', $voice_args);
-
 }
 add_action('init', 'create_custom_post_types');
 
@@ -400,4 +399,30 @@ function get_popular_posts($number = 3)
   );
   $popular_posts = new WP_Query($args);
   return $popular_posts;
+}
+
+function load_admin_style()
+{
+  wp_enqueue_style('custom_admin_enqueue', get_theme_file_uri('/css/dashboard.css'));
+}
+add_action('admin_enqueue_scripts', 'load_admin_style');
+
+function add_menu_to_dashboard()
+{
+  wp_add_dashboard_widget(
+    'quick_links',
+    'クイックリンク',
+    'customize_dashboard_menu'
+  );
+}
+add_action('wp_dashboard_setup', 'add_menu_to_dashboard');
+
+function customize_dashboard_menu()
+{
+  echo '<ul class="shortcut-menu">
+          <li><a href="post.php?post=8&action=edit"><p>トップページのメインスライダー画像の設定</p></a></li>
+          <li><a href="post.php?post=35&action=edit"><p>料金の変更</p></a></li>
+          <li><a href="post.php?post=38&action=edit"><p>FAQ 追加</p></a></li>
+          <li><a href="post.php?post=29&action=edit"><p>ギャラリー画像追加</p></a></li>
+        </ul>';
 }
