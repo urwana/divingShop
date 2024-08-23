@@ -403,7 +403,7 @@ function get_popular_posts($number = 3)
 
 function load_admin_style()
 {
-  wp_enqueue_style('custom_admin_enqueue', get_theme_file_uri('/css/dashboard.css'));
+  wp_enqueue_style('custom-admin-style', get_template_directory_uri() . '/assets/css/dashboard.css', [], null);
 }
 add_action('admin_enqueue_scripts', 'load_admin_style');
 
