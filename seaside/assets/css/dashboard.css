@@ -3,7 +3,10 @@
 	color: #ffffff;
 }
 
-.shortcut-menu__link:hover{
+.shortcut-menu .shortcut-menu__link{
+	color: #ffffff;
+}
+.shortcut-menu .shortcut-menu__link:hover{
 	text-decoration: underline;
 	transition: all 3ms;
 }
