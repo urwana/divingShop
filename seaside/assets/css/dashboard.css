@@ -1,6 +1,6 @@
 .shortcut-menu {
-	background-color: aquamarine;
-	color: #ffffff;
+	background-color: rgb(2, 108, 73);
+	padding-left: 10px;
 }
 
 .shortcut-menu .shortcut-menu__link{
