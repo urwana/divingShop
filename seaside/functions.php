@@ -411,7 +411,7 @@ function add_menu_to_dashboard()
 {
   wp_add_dashboard_widget(
     'quick_links',
-    'クイックリンク',
+    '更新作業クイックリンク',
     'customize_dashboard_menu'
   );
 }
@@ -420,9 +420,9 @@ add_action('wp_dashboard_setup', 'add_menu_to_dashboard');
 function customize_dashboard_menu()
 {
   echo '<ul class="shortcut-menu">
-          <li><a href="post.php?post=8&action=edit"><p>トップページのメインスライダー画像の設定</p></a></li>
-          <li><a href="post.php?post=35&action=edit"><p>料金の変更</p></a></li>
-          <li><a href="post.php?post=38&action=edit"><p>FAQ 追加</p></a></li>
-          <li><a href="post.php?post=29&action=edit"><p>ギャラリー画像追加</p></a></li>
+          <li><a href="post.php?post=28&action=edit"><p>トップページのメインスライダー画像の更新/p></a></li>
+          <li><a href="post.php?post=13&action=edit"><p>料金の更新</p></a></li>
+          <li><a href="post.php?post=16&action=edit"><p>よくある質問の更新</p></a></li>
+          <li><a href="post.php?post=8&action=edit"><p>ギャラリー画像の更新</p></a></li>
         </ul>';
 }
