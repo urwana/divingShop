@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"dashboard.css","sourcesContent":[]}
+{"version":3,"sources":["dashboard.scss","dashboard.css"],"names":[],"mappings":"AAAA;EACE,4BAAA;ACCF","file":"dashboard.css","sourcesContent":[".shortcut-menu {\n  background-color: aquamarine;\n}\n",".shortcut-menu {\n  background-color: aquamarine;\n}"]}
