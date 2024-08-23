@@ -1,12 +1,13 @@
 .shortcut-menu {
 	background-color: rgb(2, 108, 73);
-	padding-left: 10px;
+	padding: 10px;
 }
 
-.shortcut-menu .shortcut-menu__link{
+#dashboard-widgets .shortcut-menu .shortcut-menu__link{
 	color: #ffffff;
+	font-weight: bold;
 }
-.shortcut-menu .shortcut-menu__link:hover{
+#dashboard-widgets .shortcut-menu .shortcut-menu__link:hover{
 	text-decoration: underline;
 	transition: all 3ms;
 }
