@@ -420,9 +420,9 @@ add_action('wp_dashboard_setup', 'add_menu_to_dashboard');
 function customize_dashboard_menu()
 {
   echo '<ul class="shortcut-menu">
-          <li><a href="post.php?post=28&action=edit"><p>トップページのメインスライダー画像の更新</p></a></li>
-          <li><a href="post.php?post=13&action=edit"><p>料金の更新</p></a></li>
-          <li><a href="post.php?post=16&action=edit"><p>よくある質問の更新</p></a></li>
-          <li><a href="post.php?post=8&action=edit"><p>ギャラリー画像の更新</p></a></li>
+          <li><a href="post.php?post=28&action=edit" class="shortcut-menu__link"><p>トップページのメインスライダー画像の更新</p></a></li>
+          <li><a href="post.php?post=13&action=edit" class="shortcut-menu__link"><p>料金の更新</p></a></li>
+          <li><a href="post.php?post=16&action=edit" class="shortcut-menu__link"><p>よくある質問の更新</p></a></li>
+          <li><a href="post.php?post=8&action=edit" class="shortcut-menu__link"><p>ギャラリー画像の更新</p></a></li>
         </ul>';
 }

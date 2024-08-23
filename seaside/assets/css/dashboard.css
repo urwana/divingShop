@@ -1,6 +1,10 @@
 .shortcut-menu {
-	background-color: #edf8dd;
+	background-color: aquamarine;
+	color: #ffffff;
 }
 
-
+.shortcut-menu__link:hover{
+	text-decoration: underline;
+	transition: all 3ms;
+}
 /*# sourceMappingURL=dashboard.css.map */
