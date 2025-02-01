@@ -234,11 +234,11 @@ add_action('wp_footer', 'redirect_cf7');
 function redirect_cf7()
 {
 ?>
-<script type="text/javascript">
-document.addEventListener('wpcf7mailsent', function(event) {
-  location = '/seaside/contact-thanks';
-}, false);
-</script>
+  <script type="text/javascript">
+    document.addEventListener('wpcf7mailsent', function(event) {
+      location = '/seaside/contact-thanks';
+    }, false);
+  </script>
 <?php
 }
 
@@ -247,14 +247,14 @@ add_action('wp_footer', 'show_hidden_elements_on_error');
 function show_hidden_elements_on_error()
 {
 ?>
-<script type="text/javascript">
-document.addEventListener('wpcf7invalid', function(event) {
-  var errorMessages = document.querySelectorAll('.js-error-message');
-  errorMessages.forEach(function(element) {
-    element.classList.remove('error-message-hidden');
-  });
-}, false);
-</script>
+  <script type="text/javascript">
+    document.addEventListener('wpcf7invalid', function(event) {
+      var errorMessages = document.querySelectorAll('.js-error-message');
+      errorMessages.forEach(function(element) {
+        element.classList.remove('error-message-hidden');
+      });
+    }, false);
+  </script>
 <?php
 }
 

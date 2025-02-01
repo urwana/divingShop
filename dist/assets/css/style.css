@@ -49,6 +49,10 @@ dd {
 /* Set core root defaults */
 
 html {
+	margin-top: 0 !important;
+}
+
+html {
 	scroll-behavior: smooth;
 }
 
@@ -1732,8 +1736,12 @@ body {
 	transform: rotate(-38deg);
 }
 
+#wpadminbar {
+	display: none;
+}
+
 .header {
-	background-color: rgba(13, 41, 54, 0.68);
+	background-color: rgba(255, 255, 255, 0.68);
 	height: 5rem;
 	left: 0;
 	position: fixed;
@@ -4151,7 +4159,7 @@ html {
 }
 
 .header__logo {
-	width: 8.625rem;
+	width: 15.625rem;
 }
 
 .header__navigation-sp {

@@ -82,6 +82,39 @@ jQuery(function ($) {
     loop: true,
     autoplay: {
       delay: 5000
+    },
+    on: {
+      init: function init() {
+        var firstSlide = document.querySelector(".swiper-slide-active img");
+        gsap.fromTo(firstSlide, {
+          scale: 1.2
+        }, {
+          scale: 1,
+          duration: 20,
+          ease: "power2.out",
+          onComplete: function onComplete() {
+            gsap.set(firstSlide, {
+              scale: 1.2
+            });
+          }
+        });
+      },
+      slideChangeTransitionStart: function slideChangeTransitionStart() {
+        var activeSlide = document.querySelector(".swiper-slide-active img");
+        gsap.set(activeSlide, {
+          scale: 1.2
+        });
+        gsap.to(activeSlide, {
+          scale: 1,
+          duration: 12,
+          ease: "power2.out",
+          onComplete: function onComplete() {
+            gsap.set(activeSlide, {
+              scale: 1.2
+            });
+          }
+        });
+      }
     }
   });
 

@@ -97,6 +97,35 @@ jQuery(function ($) {
     autoplay: {
       delay: 5000,
     },
+    on: {
+      init: function () {
+        const firstSlide = document.querySelector(".swiper-slide-active img");
+        gsap.fromTo(
+          firstSlide,
+          { scale: 1.2 },
+          {
+            scale: 1,
+            duration: 20,
+            ease: "power2.out",
+            onComplete: function () {
+              gsap.set(firstSlide, { scale: 1.2 });
+            },
+          }
+        );
+      },
+      slideChangeTransitionStart: function () {
+        const activeSlide = document.querySelector(".swiper-slide-active img");
+        gsap.set(activeSlide, { scale: 1.2 });
+        gsap.to(activeSlide, {
+          scale: 1,
+          duration: 12,
+          ease: "power2.out",
+          onComplete: function () {
+            gsap.set(activeSlide, { scale: 1.2 });
+          },
+        });
+      },
+    },
   });
 
   // キャンペーンセクション swiper

@@ -1,14 +1,6 @@
 .shortcut-menu {
-	background-color: rgb(2, 108, 73);
-	padding: 10px;
+	background-color: aquamarine;
 }
 
-#dashboard-widgets .shortcut-menu .shortcut-menu__link{
-	color: #ffffff;
-	font-weight: bold;
-}
-#dashboard-widgets .shortcut-menu .shortcut-menu__link:hover{
-	text-decoration: underline;
-	transition: all 3ms;
-}
+
 /*# sourceMappingURL=dashboard.css.map */
