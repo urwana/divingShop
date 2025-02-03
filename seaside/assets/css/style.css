@@ -413,16 +413,16 @@ body {
 }
 
 .body-404 {
-	background-color: #408F95;
+	background-color: #408f95;
 }
 
 .error-404 {
-	background-color: #408F95;
+	background-color: #408f95;
 	background-image: url("../images/common/bg-404.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 20.5rem;
-	border-top: #408F95 solid 1px;
+	border-top: #408f95 solid 1px;
 	color: #fff;
 	font-family: "Lato", sans-serif;
 	padding-bottom: 2.5rem;
@@ -633,7 +633,7 @@ body {
 }
 
 .thanks {
-	color: #0D2936;
+	color: #0d2936;
 	font-size: 1rem;
 	text-align: center;
 }
@@ -791,7 +791,7 @@ body {
 }
 
 .about__catch-copy {
-	color: #408F95;
+	color: #408f95;
 	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -894,14 +894,14 @@ body {
 }
 
 .blog-card__date {
-	color: #0D2936;
+	color: #0d2936;
 	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
 }
 
 .blog-card__title {
-	border-bottom: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -969,7 +969,7 @@ body {
 .button-scroll--left,
 .button-scroll {
 	background: #fff;
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	border-radius: 50%;
 	cursor: pointer;
 	height: 48px;
@@ -980,7 +980,7 @@ body {
 .button-scroll--right::before,
 .button-scroll--left::before,
 .button-scroll::before {
-	background-color: #408F95;
+	background-color: #408f95;
 	content: "";
 	display: block;
 	height: 1px;
@@ -992,7 +992,7 @@ body {
 .button-scroll--right::after,
 .button-scroll--left::after,
 .button-scroll::after {
-	background-color: #408F95;
+	background-color: #408f95;
 	content: "";
 	display: block;
 	height: 1px;
@@ -1036,8 +1036,8 @@ body {
 }
 
 .button {
-	background-color: #408F95;
-	border: 1px solid #408F95;
+	background-color: #408f95;
+	border: 1px solid #408f95;
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
@@ -1055,7 +1055,7 @@ body {
 .button--reverse {
 	background-color: #fff;
 	border: 1px solid #fff;
-	color: #408F95;
+	color: #408f95;
 	padding: 1.1875rem 6rem 1.25rem 2.4375rem;
 }
 
@@ -1064,7 +1064,7 @@ body {
 }
 
 .button::before {
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	content: "";
 	height: 100%;
 	left: 0.25rem;
@@ -1094,18 +1094,18 @@ body {
 }
 
 .button--reverse::after {
-	background: #408F95;
-	border: 1px solid #408F95;
+	background: #408f95;
+	border: 1px solid #408f95;
 	z-index: 1;
 }
 
 .button:hover {
 	background-color: #fff;
-	color: #408F95;
+	color: #408f95;
 }
 
 .button--reverse:hover {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 }
 
@@ -1131,13 +1131,13 @@ body {
 }
 
 .button--reverse .button__text::before {
-	background-color: #408F95;
+	background-color: #408f95;
 	right: -3.46875rem;
 }
 
 .button:hover .button__text::before,
 .button:hover .button__text::after {
-	background-color: #408F95;
+	background-color: #408f95;
 	z-index: 2;
 }
 
@@ -1158,7 +1158,7 @@ body {
 }
 
 .button--reverse .button__text::after {
-	background: #408F95;
+	background: #408f95;
 	right: -3.5rem;
 }
 
@@ -1207,7 +1207,7 @@ body {
 }
 
 .campaign-card__title {
-	border-bottom: 1px solid #408F95;
+	border-bottom: 1px solid #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -1243,7 +1243,7 @@ body {
 }
 
 .campaign-card__date-container {
-	color: #408F95;
+	color: #408f95;
 	margin-top: 1.5rem;
 	min-height: 3.5rem;
 	text-align: center;
@@ -1326,7 +1326,7 @@ body {
 }
 
 .contact-form__row {
-	border-bottom: 1px dashed #408F95;
+	border-bottom: 1px dashed #408f95;
 	padding-bottom: 1.5rem;
 }
 
@@ -1355,7 +1355,7 @@ body {
 }
 
 .contact-form__label [type=radio] {
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	display: block;
 	height: 0.875rem;
 	width: 0.875rem;
@@ -1370,7 +1370,7 @@ body {
 .contact-form__item [type=tel],
 .contact-form__item [type=url],
 .contact-form__item [type=email] {
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	height: 2.5rem;
 	width: 100%;
 }
@@ -1441,12 +1441,12 @@ body {
 }
 
 .contact-form__item input::-moz-placeholder {
-	color: #DDF0F1;
+	color: #ddf0f1;
 	padding-left: 1rem;
 }
 
 .contact-form__item input::placeholder {
-	color: #DDF0F1;
+	color: #ddf0f1;
 	padding-left: 1rem;
 }
 
@@ -1459,7 +1459,7 @@ body {
 }
 
 .contact-form__item textarea {
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	height: 12.5rem;
 	padding: 0.5rem;
 	width: 100%;
@@ -1473,7 +1473,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	display: inline-block;
 	height: 14px;
 	position: relative;
@@ -1484,7 +1484,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	display: block;
 	height: 20px;
 	position: relative;
@@ -1520,7 +1520,7 @@ body {
 }
 
 .select-box-container::after {
-	border: 6px solid #408F95;
+	border: 6px solid #408f95;
 	border-bottom: 0;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -1540,7 +1540,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	color: #000000;
 	cursor: pointer;
 	display: inline-block;
@@ -1567,7 +1567,7 @@ body {
 }
 
 .contact__error-message {
-	color: #C94800;
+	color: #c94800;
 	display: block;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -1582,7 +1582,7 @@ body {
 }
 
 .contact__error-message::before {
-	color: #C94800;
+	color: #c94800;
 	content: "※";
 	left: -16px;
 	position: absolute;
@@ -1590,8 +1590,6 @@ body {
 }
 
 .footer {
-	background-color: #408F95;
-	color: #fff;
 	padding-bottom: 3.625rem;
 	padding-top: 3rem;
 }
@@ -1761,7 +1759,7 @@ body {
 }
 
 .header__inner.is-open {
-	background-color: #408F95;
+	background-color: #408f95;
 }
 
 .header__logo {
@@ -1775,7 +1773,7 @@ body {
 }
 
 .header__navigation-sp {
-	background-color: #408F95;
+	background-color: #408f95;
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -1837,8 +1835,8 @@ body {
 }
 
 .label {
-	border: solid 1px #408F95;
-	color: #408F95;
+	border: solid 1px #408f95;
+	color: #408f95;
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -1846,7 +1844,7 @@ body {
 }
 
 .lined-title {
-	border-bottom: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1861,7 +1859,7 @@ body {
 }
 
 .lined-title--no-change {
-	border-bottom: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1999,7 +1997,7 @@ body {
 }
 
 .navigation-responsive__item {
-	color: #fff;
+	color: #666666;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
@@ -2009,7 +2007,7 @@ body {
 }
 
 .navigation-responsive--sitemap .navigation-responsive__item {
-	color: #0D2936;
+	color: #0d2936;
 }
 
 .navigation-responsive__item:hover {
@@ -2146,7 +2144,7 @@ body {
 }
 
 .opening__title-container {
-	color: #408F95;
+	color: #408f95;
 	left: 50%;
 	opacity: 0;
 	position: absolute;
@@ -2219,8 +2217,8 @@ body {
 span.current,
 .pager .page {
 	background-color: #fff;
-	border: solid 1px #408F95;
-	color: #408F95;
+	border: solid 1px #408f95;
+	color: #408f95;
 	cursor: pointer;
 	display: block;
 	font-family: "Lato", sans-serif;
@@ -2239,7 +2237,7 @@ span.current:hover,
 }
 
 span.current {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2267,7 +2265,7 @@ span.current:hover {
 }
 
 .pager__previous.current {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2295,7 +2293,7 @@ span.current:hover {
 }
 
 .pager__next.current {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 }
 
@@ -2312,7 +2310,7 @@ span.current:hover {
 .price-container__cancelled-price {
 	-webkit-text-decoration: line-through solid #ff0000;
 	-webkit-text-decoration: line-through 4px solid #ff0000;
-	color: #0D2936;
+	color: #0d2936;
 	display: inline-block;
 	font-size: 1.25rem;
 	max-width: 100%;
@@ -2326,7 +2324,7 @@ span.current:hover {
 }
 
 .price-container__price {
-	color: #408F95;
+	color: #408f95;
 	display: inline-block;
 	font-size: 2rem;
 	max-width: 100%;
@@ -2343,7 +2341,7 @@ span.current:hover {
 
 .price-list__title {
 	align-items: center;
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -2380,8 +2378,8 @@ span.current:hover {
 
 .price-list__name {
 	align-items: center;
-	border-bottom: solid 1px #408F95;
-	border-left: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
+	border-left: solid 1px #408f95;
 	display: flex;
 	justify-content: center;
 	padding: 0.375rem 0 0.375rem 0.75rem;
@@ -2391,9 +2389,9 @@ span.current:hover {
 
 .price-list__price {
 	align-items: center;
-	border-bottom: solid 1px #408F95;
-	border-left: solid 1px #408F95;
-	border-right: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
+	border-left: solid 1px #408f95;
+	border-right: solid 1px #408f95;
 	display: flex;
 	justify-content: flex-end;
 	padding: 0.5rem 1.125rem 0.5rem 0.5rem;
@@ -2408,7 +2406,7 @@ span.current:hover {
 }
 
 .qa-box__question {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
@@ -2419,7 +2417,7 @@ span.current:hover {
 }
 
 .qa-box__answer {
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	font-weight: 300;
 	line-height: 1.4;
 	padding: 1.5rem 1rem;
@@ -2491,18 +2489,18 @@ span.current:hover {
 }
 
 .section-title__word {
-	color: #0D2936;
+	color: #0d2936;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.25;
 }
 
 .section-title__word::first-letter {
-	color: #408F95;
+	color: #408f95;
 }
 
 .section-title__japan {
-	color: #408F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -2511,7 +2509,7 @@ span.current:hover {
 }
 
 .section-title__explain {
-	color: #408F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -2522,15 +2520,15 @@ span.current:hover {
 }
 
 .section-title--blog .section-title__word {
-	color: #0D2936;
+	color: #0d2936;
 }
 
 .section-title--blog .section-title__word::first-letter {
-	color: #408F95;
+	color: #408f95;
 }
 
 .section-title--blog .section-title__japan {
-	color: #408F95;
+	color: #408f95;
 }
 
 .section-title--contact {
@@ -2546,7 +2544,7 @@ span.current:hover {
 
 .section-title--contact .section-title__japan {
 	line-height: 1;
-	margin-top: -0.25rem;
+	margin-top: -rem(4);
 }
 
 .sidebar-archive {
@@ -2554,7 +2552,7 @@ span.current:hover {
 }
 
 .sidebar-archive__toggle-hierarchy {
-	color: #408F95;
+	color: #408f95;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -2584,7 +2582,7 @@ span.current:hover {
 .sidebar-archive__month-label::before,
 .sidebar-archive__year-label::before {
 	border-bottom: 12px solid transparent;
-	border-left: 18px solid #408F95;
+	border-left: 18px solid #408f95;
 	border-right: 12px solid transparent;
 	border-top: 12px solid transparent;
 	content: "";
@@ -2635,7 +2633,7 @@ span.current:hover {
 .sidebar-title {
 	align-items: center;
 	border-left: #408f95 solid 8px;
-	color: #0D2936;
+	color: #0d2936;
 	display: flex;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.5rem;
@@ -2718,7 +2716,7 @@ body {
 }
 
 .static-page {
-	color: #0D2936;
+	color: #0d2936;
 	font-size: 1rem;
 	margin-top: 2.5rem;
 }
@@ -2830,13 +2828,13 @@ body {
 }
 
 .submit {
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	display: inline-block;
 	position: relative;
 }
 
 .submit:hover {
-	color: #408F95;
+	color: #408f95;
 }
 
 span.wpcf7-spinner {
@@ -2844,9 +2842,9 @@ span.wpcf7-spinner {
 }
 
 .submit > input {
-	background-color: #408F95;
-	border: 1px solid #408F95;
-	color: #408F95;
+	background-color: #408f95;
+	border: 1px solid #408f95;
+	color: #408f95;
 	cursor: pointer;
 	display: inline-block;
 	font-family: "Gotu", sans-serif;
@@ -2865,7 +2863,7 @@ span.wpcf7-spinner {
 }
 
 .submit::before {
-	border: 1px solid #408F95;
+	border: 1px solid #408f95;
 	content: "";
 	height: 3.4375rem;
 	left: 0.25rem;
@@ -2908,7 +2906,7 @@ span.wpcf7-spinner {
 }
 
 .submit:hover .submit__text {
-	color: #408F95;
+	color: #408f95;
 }
 
 .submit__text::before {
@@ -2926,7 +2924,7 @@ span.wpcf7-spinner {
 
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
-	background-color: #408F95;
+	background-color: #408f95;
 	z-index: 2;
 }
 
@@ -2941,7 +2939,7 @@ span.wpcf7-spinner {
 }
 
 .button--reverse .submit__text::after {
-	background: #408F95;
+	background: #408f95;
 	right: -3.5rem;
 }
 
@@ -2992,8 +2990,8 @@ body {
 
 .tab-card__item {
 	background-color: #fff;
-	border: solid 1px #408F95;
-	color: #408F95;
+	border: solid 1px #408f95;
+	color: #408f95;
 	cursor: pointer;
 	font-size: 0.875rem;
 	line-height: 1.5714285714;
@@ -3008,7 +3006,7 @@ body {
 }
 
 .tab-card__item.current {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -3038,8 +3036,8 @@ body {
 }
 
 .tab-contents-information__item {
-	background-color: #DDF0F1;
-	color: #408F95;
+	background-color: #ddf0f1;
+	color: #408f95;
 	cursor: pointer;
 	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 	font-size: 0.875rem;
@@ -3060,7 +3058,7 @@ body {
 }
 
 .tab-contents-information__item.current {
-	background-color: #408F95;
+	background-color: #408f95;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -3079,7 +3077,7 @@ body {
 }
 
 .tab-contents-information__content {
-	border: solid 1px #408F95;
+	border: solid 1px #408f95;
 	padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -3101,7 +3099,7 @@ body {
 }
 
 .title-line {
-	border-bottom: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
 	padding-bottom: 0.25rem;
 }
 
@@ -3189,7 +3187,7 @@ body {
 }
 
 .top-contact-logo__container {
-	border-bottom: solid 1px #408F95;
+	border-bottom: solid 1px #408f95;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 0.34375rem;
@@ -3251,7 +3249,7 @@ body {
 }
 
 .top-information {
-	background-color: #DDF0F1;
+	background-color: #ddf0f1;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -3309,7 +3307,7 @@ body {
 }
 
 .top-price {
-	background-color: #DDF0F1;
+	background-color: #ddf0f1;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -4151,7 +4149,7 @@ html {
 }
 
 .header {
-	height: 5.625rem;
+	height: 8.125rem;
 }
 
 .header__inner {
@@ -4290,7 +4288,7 @@ html {
 }
 
 .price-list__item:first-child .price-list__name {
-	border-top: solid 1px #408F95;
+	border-top: solid 1px #408f95;
 }
 
 .price-list__item .price-list__name {
@@ -4302,7 +4300,7 @@ html {
 }
 
 .price-list__item:first-child .price-list__price {
-	border-top: solid 1px #408F95;
+	border-top: solid 1px #408f95;
 }
 
 .price-lists {
@@ -4348,7 +4346,7 @@ html {
 }
 
 .section-title--blog .section-title__word::first-letter {
-	color: #DDF0F1;
+	color: #ddf0f1;
 }
 
 .section-title--blog .section-title__japan {
@@ -4633,7 +4631,7 @@ html {
 }
 
 .top-contact__contact {
-	border-left: solid 1px #408F95;
+	border-left: solid 1px #408f95;
 	margin-left: 5rem;
 	margin-top: 0;
 	padding-left: 5rem;

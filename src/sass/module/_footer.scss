@@ -3,8 +3,9 @@
 .footer {
   padding-top: rem(48);
   padding-bottom: rem(58);
-  background-color: $green-accent;
-  color: $white;
+  //background-color: $green-accent;
+  //color: $white;
+  //$color: $font-black;
   @include mq("md") {
     padding-top: rem(80);
     padding-bottom: rem(80);

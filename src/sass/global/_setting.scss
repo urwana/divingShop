@@ -9,7 +9,7 @@ $inner: 1080px;
 $padding-pc: 20px;
 $padding-sp: 15px;
 
-html{
+html {
   scroll-padding-top: 90px;
 }
 
@@ -19,8 +19,8 @@ html{
 
 $base-font-family: "Noto Sans JP", sans-serif;
 // $second-font-family: "Noto Serif JP", serif;
-$sans:"Noto Sans JP", sans-serif;
-$serif:"Noto Serif JP", sans-serif;
+$sans: "Noto Sans JP", sans-serif;
+$serif: "Noto Serif JP", sans-serif;
 $english-font: "Gotu", sans-serif;
 $price-font: "Lato", sans-serif;
 
@@ -41,10 +41,12 @@ $bold: 700;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
+$font-black: #666666;
 $white: #fff;
 $grey: #f2f2f2;
-$brown:#796A64;
-$green: #0D2936;
-$green-accent:#408F95;
-$green-light:#DDF0F1;
-$error:#C94800;
+$brown: #796a64;
+$green: #0d2936;
+$hibiscus: #fb0767;
+$green-accent: #408f95;
+$green-light: #ddf0f1;
+$error: #c94800;

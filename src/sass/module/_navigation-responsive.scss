@@ -15,7 +15,7 @@
   }
 }
 
-.navigation-responsive--sitemap{
+.navigation-responsive--sitemap {
   position: relative;
   z-index: 2;
 }
@@ -36,7 +36,7 @@
 
 .navigation-responsive__item {
   font-family: $sans;
-  color: $white;
+  color: $font-black;
   font-size: rem(16);
   font-weight: $regular;
   margin-top: rem(24);

@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .section-title {
   text-align: center;
@@ -16,7 +16,7 @@
   }
 }
 
-.section-title__word::first-letter{
+.section-title__word::first-letter {
   color: $green-accent;
 }
 
@@ -61,13 +61,13 @@
 }
 
 .section-title--blog .section-title__japan {
-  color:$green-accent;
-  @include mq('md') {
+  color: $green-accent;
+  @include mq("md") {
     color: $white;
   }
 }
 
-.section-title--contact{
+.section-title--contact {
   line-height: 1;
 }
 
@@ -83,9 +83,9 @@
 }
 
 .section-title--contact .section-title__japan {
-  margin-top: - rem(4);
+  margin-top: -rem(4);
   line-height: 1;
   @include mq("md") {
-    margin-top:0;
+    margin-top: 0;
   }
 }
