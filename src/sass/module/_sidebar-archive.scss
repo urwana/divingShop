@@ -6,7 +6,7 @@
 
 .sidebar-archive__toggle-hierarchy {
   color: $green-accent;
-  font-family: $sans;
+  font-family: $magic;
   font-size: rem(24);
   font-weight: $regular;
 }
@@ -35,7 +35,7 @@
   display: none;
 }
 
-%triangle{
+%triangle {
   position: absolute;
   top: 6px;
   left: -28px;
@@ -50,7 +50,7 @@
   transform: rotate(0deg);
 }
 
-.sidebar-archive__year-label:hover{
+.sidebar-archive__year-label:hover {
   opacity: 0.6;
 }
 
@@ -72,10 +72,10 @@
   position: relative;
 }
 
-.sidebar-archive__month-label:hover{
+.sidebar-archive__month-label:hover {
   opacity: 0.6;
 }
 
-.sidebar-archive__month-label::before{
+.sidebar-archive__month-label::before {
   @extend %triangle;
 }

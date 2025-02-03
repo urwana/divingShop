@@ -25,7 +25,7 @@
   font-size: rem(12);
   line-height: calc(18 / 12);
   color: $green-accent;
-  font-family: $sans;
+  font-family: $magic;
   font-weight: $regular;
   @include mq("md") {
     margin-top: rem(8);
@@ -35,7 +35,7 @@
 .section-title__explain {
   text-align: center;
   margin-top: rem(8);
-  font-family: $sans;
+  font-family: $magic;
   font-size: rem(14);
   font-weight: $regular;
   color: $green-accent;

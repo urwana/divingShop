@@ -20,7 +20,7 @@ add_action('after_setup_theme', 'my_setup');
 function enqueue_scripts_and_styles()
 {
   wp_deregister_script('jquery');
-  wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap', [], null);
+  wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Stick&family=Yusei+Magic&display=swap', [], null);
   wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], null);
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/css/style.css', [], null);
   wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', [], null, true);
@@ -234,11 +234,11 @@ add_action('wp_footer', 'redirect_cf7');
 function redirect_cf7()
 {
 ?>
-  <script type="text/javascript">
-    document.addEventListener('wpcf7mailsent', function(event) {
-      location = '/seaside/contact-thanks';
-    }, false);
-  </script>
+<script type="text/javascript">
+document.addEventListener('wpcf7mailsent', function(event) {
+  location = '/seaside/contact-thanks';
+}, false);
+</script>
 <?php
 }
 
@@ -247,14 +247,14 @@ add_action('wp_footer', 'show_hidden_elements_on_error');
 function show_hidden_elements_on_error()
 {
 ?>
-  <script type="text/javascript">
-    document.addEventListener('wpcf7invalid', function(event) {
-      var errorMessages = document.querySelectorAll('.js-error-message');
-      errorMessages.forEach(function(element) {
-        element.classList.remove('error-message-hidden');
-      });
-    }, false);
-  </script>
+<script type="text/javascript">
+document.addEventListener('wpcf7invalid', function(event) {
+  var errorMessages = document.querySelectorAll('.js-error-message');
+  errorMessages.forEach(function(element) {
+    element.classList.remove('error-message-hidden');
+  });
+}, false);
+</script>
 <?php
 }
 

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .error-message-hidden {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .contact-form {
@@ -93,11 +93,11 @@
   height: rem(40);
 }
 
-.wpcf7-list-item{
+.wpcf7-list-item {
   margin-left: 0;
 }
 
-.wpcf7-list-item >label {
+.wpcf7-list-item > label {
   display: flex;
   align-items: center;
   gap: rem(10);
@@ -150,7 +150,7 @@
   background-color: #ffe6e6;
 }
 
-.contact-form__item input{
+.contact-form__item input {
   padding: rem(8);
   display: inline-block;
 }
@@ -175,7 +175,7 @@
   display: block;
 }
 
-.contact-form__item input[type=radio] {
+.contact-form__item input[type="radio"] {
   position: relative;
   width: 14px;
   height: 14px;
@@ -201,7 +201,7 @@
   margin: 0;
 }
 
-.contact-form__item input[type=radio]:checked:before,
+.contact-form__item input[type="radio"]:checked:before,
 .contact-form__item .wpcf7-list-item .privacy-check:checked:before {
   position: absolute;
   top: 1px;
@@ -280,7 +280,7 @@
 }
 
 .contact__error-message {
-  font-family: $sans;
+  font-family: $magic;
   font-size: rem(14);
   color: $error;
   text-align: left;

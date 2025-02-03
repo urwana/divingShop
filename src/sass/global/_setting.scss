@@ -19,15 +19,14 @@ html {
 
 $base-font-family: "Noto Sans JP", sans-serif;
 // $second-font-family: "Noto Serif JP", serif;
-$sans: "Noto Sans JP", sans-serif;
-$serif: "Noto Serif JP", sans-serif;
-$english-font: "Gotu", sans-serif;
-$price-font: "Lato", sans-serif;
-
+$magic: "Yusei Magic", sans-serif;
+$stick: "Stick", sans-serif;
+$english-font: "Stick", sans-serif;
+$price-font: "Stick", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する OK
 
 body {
-  font-family: $base-font-family;
+  font-family: $magic;
 }
 
 // フォントウェイト

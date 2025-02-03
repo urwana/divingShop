@@ -13,7 +13,7 @@
 }
 
 .navigation-sp__item {
-  font-family: $sans;
+  font-family: $magic;
   color: $white;
   font-size: rem(16);
   font-weight: $normal;
@@ -31,7 +31,7 @@
   content: "";
   position: absolute;
   top: rem(1);
-  left: - rem(24);
+  left: -rem(24);
   width: rem(18);
   height: rem(18);
   background-image: url("../images/common/starfish-w.svg");

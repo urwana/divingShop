@@ -16,7 +16,7 @@
 }
 
 .blog__detail-title {
-  font-family: $sans;
+  font-family: $magic;
   font-size: rem(24);
   font-weight: $normal;
   @include mq("md") {
@@ -50,7 +50,7 @@
 
 .blog__detail-the-contents p {
   margin-top: rem(24);
-  font-family: $sans;
+  font-family: $magic;
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(24 / 16);
