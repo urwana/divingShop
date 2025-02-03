@@ -633,7 +633,7 @@ body {
 }
 
 .thanks {
-	color: #0d2936;
+	color: #666666;
 	font-size: 1rem;
 	text-align: center;
 }
@@ -894,7 +894,7 @@ body {
 }
 
 .blog-card__date {
-	color: #0d2936;
+	color: #666666;
 	font-family: "Stick", sans-serif;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -1957,17 +1957,17 @@ body {
 	transform: scale(1, 1);
 }
 
-.navigation-pc__english {
+.navigation-pc__japanese {
 	color: #fff;
-	font-family: "Stick", sans-serif;
+	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1;
 	text-align: center;
 }
 
-.navigation-pc__japanese {
+.navigation-pc__english {
 	color: #fff;
-	font-family: "Yusei Magic", sans-serif;
+	font-family: "Stick", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
 	position: relative;
@@ -2007,7 +2007,7 @@ body {
 }
 
 .navigation-responsive--sitemap .navigation-responsive__item {
-	color: #0d2936;
+	color: #666666;
 }
 
 .navigation-responsive__item:hover {
@@ -2310,7 +2310,7 @@ span.current:hover {
 .price-container__cancelled-price {
 	-webkit-text-decoration: line-through solid #ff0000;
 	-webkit-text-decoration: line-through 4px solid #ff0000;
-	color: #0d2936;
+	color: #666666;
 	display: inline-block;
 	font-size: 1.25rem;
 	max-width: 100%;
@@ -2489,7 +2489,7 @@ span.current:hover {
 }
 
 .section-title__word {
-	color: #0d2936;
+	color: #666666;
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.25;
@@ -2520,7 +2520,7 @@ span.current:hover {
 }
 
 .section-title--blog .section-title__word {
-	color: #0d2936;
+	color: #666666;
 }
 
 .section-title--blog .section-title__word::first-letter {
@@ -2633,7 +2633,7 @@ span.current:hover {
 .sidebar-title {
 	align-items: center;
 	border-left: #408f95 solid 8px;
-	color: #0d2936;
+	color: #666666;
 	display: flex;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.5rem;
@@ -2716,7 +2716,7 @@ body {
 }
 
 .static-page {
-	color: #0d2936;
+	color: #666666;
 	font-size: 1rem;
 	margin-top: 2.5rem;
 }
@@ -4187,7 +4187,7 @@ html {
 	font-size: 1.5rem;
 }
 
-.navigation-pc__japanese {
+.navigation-pc__english {
 	margin-top: 0.25rem;
 	width: 100%;
 }

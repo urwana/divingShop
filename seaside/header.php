@@ -13,19 +13,19 @@
   <header class="header">
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
-        <h1 class="header__logo">
-          <a href="<?php echo esc_url(home_url("/")); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
-              width="133" height="50" />
-          </a>
-        </h1>
+      <h1 class="header__logo">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
+            width="133" height="50" />
+        </a>
+      </h1>
       <?php else : ?>
-        <div class="header__logo">
-          <a href="<?php echo esc_url(home_url("/")); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
-              width="133" height="50" />
-          </a>
-        </div>
+      <div class="header__logo">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
+            width="133" height="50" />
+        </a>
+      </div>
       <?php endif; ?>
       <button class="header__drawer-button hamburger js-hamburger">
         <span></span>
@@ -37,64 +37,64 @@
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Campaign</div>
                 <div class="navigation-pc__japanese">キャンペーン</div>
+                <div class="navigation-pc__english">Campaign</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">About us</div>
                 <div class="navigation-pc__japanese">私たちについて</div>
+                <div class="navigation-pc__english">About us</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/information")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Information</div>
                 <div class="navigation-pc__japanese">ダイビング情報</div>
+                <div class="navigation-pc__english">Information</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/blog")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Blog</div>
                 <div class="navigation-pc__japanese">ブログ</div>
+                <div class="navigation-pc__english">Blog</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/voice")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Voice</div>
                 <div class="navigation-pc__japanese">お客様の声</div>
+                <div class="navigation-pc__english">Voice</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/price")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Price</div>
                 <div class="navigation-pc__japanese">料金一覧</div>
+                <div class="navigation-pc__english">Price</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/faq")); ?>">
               <div class="navigation-pc__link-inner">
+                <div class="navigation-pc__japanese">よくあるご質問</div>
                 <div class="navigation-pc__english">FAQ</div>
-                <div class="navigation-pc__japanese">よくある質問</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/contact")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__english">Contact</div>
                 <div class="navigation-pc__japanese">お問い合わせ</div>
+                <div class="navigation-pc__english">Contact</div>
               </div>
             </a>
           </li>

@@ -44,16 +44,16 @@
   transform: scale(1, 1);
 }
 
-.navigation-pc__english {
-  font-family: $english-font;
+.navigation-pc__japanese {
+  font-family: $magic;
   font-size: rem(18);
   line-height: 1;
   color: $white;
   text-align: center;
 }
 
-.navigation-pc__japanese {
-  font-family: $magic;
+.navigation-pc__english {
+  font-family: $english-font;
   font-size: rem(10);
   font-weight: $regular;
   color: $white;
