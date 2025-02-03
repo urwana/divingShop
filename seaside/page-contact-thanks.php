@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Contact",
+    "pageTitle" => "コンタクト",
     "imageClass" => "contact-background",
     "detail" => false
   ]; ?>

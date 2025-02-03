@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Privacy Policy",
+    "pageTitle" => "プライバシーポリシー",
     "imageClass" => "privacy-policy-background",
     "detail" => false
   ] ?>

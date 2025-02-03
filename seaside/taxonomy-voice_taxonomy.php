@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Voice",
+    "pageTitle" => "お客様の声",
     "imageClass" => "voice-background",
     "detail" => false
   ]; ?>

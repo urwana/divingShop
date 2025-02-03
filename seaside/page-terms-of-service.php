@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Terms of Service ",
+    "pageTitle" => "ご利用規約",
     "imageClass" => "terms-of-service-background",
     "detail" => false
   ]; ?>

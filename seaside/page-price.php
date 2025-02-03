@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Price",
+    "pageTitle" => "料金",
     "imageClass" => "price-background",
     "detail" => false
   ]; ?>

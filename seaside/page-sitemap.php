@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "Site MAP",
+    "pageTitle" => "サイトマップ",
     "imageClass" => "sitemap-background",
     "detail" => false
   ]; ?>
