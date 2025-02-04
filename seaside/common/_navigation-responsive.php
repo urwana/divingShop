@@ -4,26 +4,26 @@
   <div class="navigation-responsive__column">
     <div class="navigation-responsive__item-group">
       <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/tour")); ?>">
           <div class="navigation-responsive__label">キャンペーン</div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/licence/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/tour_taxonomy/licence/")); ?>">
           <div class="navigation-responsive__label">
             ライセンス講習
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/trial/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/tour_taxonomy/trial/")); ?>">
           <div class="navigation-responsive__label">
             貸切体験ダイビング
           </div>
         </a>
       </div>
       <div class="navigation-responsive__item">
-        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/fun/")); ?>">
+        <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/tour_taxonomy/fun/")); ?>">
           <div class="navigation-responsive__label">
             ナイトダイビング
           </div>

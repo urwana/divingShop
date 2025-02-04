@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.tour-cards--sidebar .tour-card:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.tour-cards {
+  width: 80%;
+  margin-inline: auto;
+  max-width: rem(570);
+  margin-inline: auto;
+  @include mq("md") {
+    max-width: none;
+    width: 100%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(80) rem(40);
+  }
+}

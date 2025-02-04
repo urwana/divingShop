@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-top-campaign {
+.l-top-tour {
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(80);

@@ -1,56 +1,56 @@
-<% if (typeof campaignCardData === 'undefined') { campaignCardData = []; } %>
+<% if (typeof tourCardData === 'undefined') { tourCardData = []; } %>
 <% if (typeof page === 'undefined') { page = false; } %>
 <% if (typeof cardType === 'undefined') { cardType = ""; } %>
 <% if (typeof sideBar === 'undefined') { sideBar = false; } %>
-<a class="campaign-card<%- page ? " campaign-card--page" : "" %> js-card<%- campaignCardData.dataType %>" href="<%- campaignCardData.link %>">
-  <figure class="campaign-card__image<%- sideBar ? " campaign-card__image--sidebar" : "" %>">
+<a class="tour-card<%- page ? " tour-card--page" : "" %> js-card<%- tourCardData.dataType %>" href="<%- tourCardData.link %>">
+  <figure class="tour-card__image<%- sideBar ? " tour-card__image--sidebar" : "" %>">
     <!-- retina sp 3倍対応のため PC 版画像を流用する -->
       <img
-      src="<%- campaignCardData.imgPath %>-pc.jpg"
-      alt="<%- campaignCardData.alt %>"
-      width="<%- campaignCardData.width %>"
-      height="<%- campaignCardData.height %>"
+      src="<%- tourCardData.imgPath %>-pc.jpg"
+      alt="<%- tourCardData.alt %>"
+      width="<%- tourCardData.width %>"
+      height="<%- tourCardData.height %>"
       />
   </figure>
-  <div class="campaign-card__body <%- page ? "campaign-card__body--page":""; %> <%- sideBar ? "campaign-card__body--side-bar":""; %>">
-    <div class="campaign-card__top">
+  <div class="tour-card__body <%- page ? "tour-card__body--page":""; %> <%- sideBar ? "tour-card__body--side-bar":""; %>">
+    <div class="tour-card__top">
       <% if(!sideBar){ %>
-      <div class="campaign-card__label label-container">
-        <span class="label"><%- campaignCardData.label %></span>
+      <div class="tour-card__label label-container">
+        <span class="label"><%- tourCardData.label %></span>
       </div>
       <% } %>
-      <div class="campaign-card__title<%- page ? " campaign-card__title--page" : "" %><%- sideBar ? " campaign-card__title--sidebar" : "" %>"><%- campaignCardData.title %></div>
+      <div class="tour-card__title<%- page ? " tour-card__title--page" : "" %><%- sideBar ? " tour-card__title--sidebar" : "" %>"><%- tourCardData.title %></div>
     </div>
-    <div class="campaign-card__bottom">
-      <p class="campaign-card__explain<%- sideBar ? " campaign-card__explain--sidebar" : "" %>">
-        <%- campaignCardData.text %>
+    <div class="tour-card__bottom">
+      <p class="tour-card__explain<%- sideBar ? " tour-card__explain--sidebar" : "" %>">
+        <%- tourCardData.text %>
       </p>
-      <div class="campaign-card__price-container">
+      <div class="tour-card__price-container">
         <div class="price-container">
           <span class="price-container__cancelled-price<%- sideBar ? " price-container__cancelled-price--sidebar" : "" %>"
-            ><%- campaignCardData.cancelledPrice %></span
+            ><%- tourCardData.cancelledPrice %></span
           >
           <span class="price-container__price<%- sideBar ? " price-container__price--sidebar" : "" %>"
-            ><%- campaignCardData.price %></span
+            ><%- tourCardData.price %></span
           >
         </div>
       </div>
     </div>
     <% if(!sideBar){ %>
-      <div class="campaign-card__bottom2">
-      <div class="campaign-card__text">
+      <div class="tour-card__bottom2">
+      <div class="tour-card__text">
         ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
       ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
       </div>
-      <div class="campaign-card__date-container">
-        <p class="campaign-card__date">
+      <div class="tour-card__date-container">
+        <p class="tour-card__date">
           <time datetime="2023-06-01">2023/6/1</time>
           -
           <time datetime="2023-09-30">9/30</time>
         </p>
-        <p class="campaign-card__link">ご予約・お問い合わせはコチラ</p>
+        <p class="tour-card__link">ご予約・お問い合わせはコチラ</p>
       </div>
-      <div class="campaign-card__button">
+      <div class="tour-card__button">
         <div class="js-contact-button button"><span class="button__text">Contact us</span></div>
       </div>
     </div>

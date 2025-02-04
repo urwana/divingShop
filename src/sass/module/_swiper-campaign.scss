@@ -1,22 +1,22 @@
 @use "global" as *;
 
-.swiper-campaign {
+.swiper-tour {
   width: 100%;
   height: inherit;
   position: relative;
   z-index: 1;
 }
 
-.swiper-campaign__wrapper {
+.swiper-tour__wrapper {
   height: inherit;
 }
 
-.swiper-campaign__swiper-slide {
+.swiper-tour__swiper-slide {
   height: inherit;
 }
 
-.swiper-campaign__button-prev,
-.swiper-campaign__button-next {
+.swiper-tour__button-prev,
+.swiper-tour__button-next {
   z-index: 2;
   @include mq("md") {
     position: absolute;
@@ -27,7 +27,7 @@
   }
 }
 
-.swiper-campaign .swiper-campaign__button-prev {
+.swiper-tour .swiper-tour__button-prev {
   @include mq("md") {
     top: -74px;
     right: 160px;
@@ -38,7 +38,7 @@
   }
 }
 
-.swiper-campaign .swiper-campaign__button-next {
+.swiper-tour .swiper-tour__button-next {
   @include mq("md") {
     top: -74px;
     right: rem(15);

@@ -129,7 +129,7 @@ jQuery(function ($) {
   });
 
   // キャンペーンセクション swiper
-  const swiperCampaign = new Swiper(".js-swiper-campaign", {
+  const swipertour = new Swiper(".js-swiper-tour", {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 20,
@@ -144,8 +144,8 @@ jQuery(function ($) {
       },
     },
     navigation: {
-      nextEl: ".swiper-campaign__button-next",
-      prevEl: ".swiper-campaign__button-prev",
+      nextEl: ".swiper-tour__button-next",
+      prevEl: ".swiper-tour__button-prev",
     },
   });
 
@@ -299,7 +299,7 @@ jQuery(function ($) {
 
   document.addEventListener("DOMContentLoaded", pageLoadTabAction());
 
-  // campaign button
+  // tour button
   const contactButton = $(".js-contact-button");
 
   contactButton.on("click", function (e) {

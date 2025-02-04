@@ -13,19 +13,19 @@
   <header class="header">
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
-      <h1 class="header__logo">
-        <a href="<?php echo esc_url(home_url("/")); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
-            width="133" height="50" />
-        </a>
-      </h1>
+        <h1 class="header__logo">
+          <a href="<?php echo esc_url(home_url("/")); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
+              width="133" height="50" />
+          </a>
+        </h1>
       <?php else : ?>
-      <div class="header__logo">
-        <a href="<?php echo esc_url(home_url("/")); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
-            width="133" height="50" />
-        </a>
-      </div>
+        <div class="header__logo">
+          <a href="<?php echo esc_url(home_url("/")); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
+              width="133" height="50" />
+          </a>
+        </div>
       <?php endif; ?>
       <button class="header__drawer-button hamburger js-hamburger">
         <span></span>
@@ -35,10 +35,10 @@
       <nav class="header__navigation-pc">
         <ul class="navigation-pc">
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/tour")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__japanese">キャンペーン</div>
-                <div class="navigation-pc__english">Campaign</div>
+                <div class="navigation-pc__english">tour</div>
               </div>
             </a>
           </li>
@@ -107,22 +107,22 @@
           <div class="navigation-sp__parts">
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/tour")); ?>">
                   <div class="navigation-sp__label">キャンペーン</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/licence")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/tour_taxonomy/licence")); ?>">
                   <div class="navigation-sp__label">ライセンス講習</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/trial")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/tour_taxonomy/trial")); ?>">
                   <div class="navigation-sp__label">貸切体験ダイビング</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
-                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/campaign_taxonomy/fun")); ?>">
+                <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/tour_taxonomy/fun")); ?>">
                   <div class="navigation-sp__label">ナイトダイビング</div>
                 </a>
               </div>

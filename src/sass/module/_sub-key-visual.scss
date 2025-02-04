@@ -35,10 +35,10 @@
   }
 }
 
-.campaign-background {
-  background-image: url("../images/subKeyVisual/campaign-sp.jpg");
+.tour-background {
+  background-image: url("../images/subKeyVisual/tour-sp.jpg");
   @include mq("md") {
-    background-image: url("../images/subKeyVisual/campaign-pc.jpg");
+    background-image: url("../images/subKeyVisual/tour-pc.jpg");
   }
 }
 

@@ -1,1 +1,0 @@
-<span class="require-label">必&nbsp;&nbsp;須</span>

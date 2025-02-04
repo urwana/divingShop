@@ -1,4 +1,6 @@
-<% base = { path: "./", title: "トップ", description: "沖縄那覇市のダイビングショップ CodeUps のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
+<% base = { path: "./", title: "トップ", description:
+"沖縄那覇市のダイビングショップ CodeUps
+のサイトのトップページです。営業時間:8:30-19:00 定休日:毎週火曜日"} %>
 <!DOCTYPE html>
 <html lang="ja">
   <%- include(base.path + "./common/_head", { base: base}) %>
@@ -6,8 +8,8 @@
     <%- include(base.path + "./common/_header", { top: true}) %>
     <main>
       <%- include(base.path + "./top/_key-visual") %>
-      <section class="l-top-campaign">
-        <%- include(base.path + "./top/_top-campaign") %>
+      <section class="l-top-tour">
+        <%- include(base.path + "./top/_top-tour") %>
       </section>
       <section class="l-top-about">
         <%- include(base.path + "./common/_about", {top:true}) %>
@@ -29,8 +31,8 @@
       </section>
     </main>
     <div class="l-footer">
-      <%- include(base.path + "./common/_scrollToTop") %>
-      <%- include(base.path + "./common/_footer") %>
+      <%- include(base.path + "./common/_scrollToTop") %> <%- include(base.path
+      + "./common/_footer") %>
     </div>
   </body>
 </html>

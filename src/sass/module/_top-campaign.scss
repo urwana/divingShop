@@ -1,6 +1,6 @@
-@use 'global' as *;
+@use "global" as *;
 
-.top-campaign {
+.top-tour {
   @include mq("md") {
     // NOTE: swipper スクロールボタン見切れ対応用
     padding-top: rem(40);
@@ -8,7 +8,7 @@
   }
 }
 
-.top-campaign__inner {
+.top-tour__inner {
   // NOTE: swipper 対応用
   overflow: hidden;
   @include mq("md") {
@@ -17,25 +17,25 @@
   }
 }
 
-.top-campaign__swiper {
+.top-tour__swiper {
   margin-top: rem(28);
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.top-campaign .swiper-slide {
+.top-tour .swiper-slide {
   width: rem(280);
-  @include mq('md') {
+  @include mq("md") {
     width: rem(333);
   }
 }
 
-.top-campaign__card {
+.top-tour__card {
   height: 100%;
 }
 
-.top-campaign__button {
+.top-tour__button {
   text-align: center;
   margin-top: rem(40);
   @include mq("md") {

@@ -3,11 +3,22 @@
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
+  return (
+    (_typeof =
+      "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+        ? function (obj) {
+            return typeof obj;
+          }
+        : function (obj) {
+            return obj &&
+              "function" == typeof Symbol &&
+              obj.constructor === Symbol &&
+              obj !== Symbol.prototype
+              ? "symbol"
+              : typeof obj;
+          }),
+    _typeof(obj)
+  );
 }
 function _defineProperty(obj, key, value) {
   key = _toPropertyKey(key);
@@ -16,7 +27,7 @@ function _defineProperty(obj, key, value) {
       value: value,
       enumerable: true,
       configurable: true,
-      writable: true
+      writable: true,
     });
   } else {
     obj[key] = value;
@@ -81,28 +92,32 @@ jQuery(function ($) {
     speed: 800,
     loop: true,
     autoplay: {
-      delay: 5000
+      delay: 5000,
     },
     on: {
       init: function init() {
         var firstSlide = document.querySelector(".swiper-slide-active img");
-        gsap.fromTo(firstSlide, {
-          scale: 1.2
-        }, {
-          scale: 1,
-          duration: 20,
-          ease: "power2.out",
-          onComplete: function onComplete() {
-            gsap.set(firstSlide, {
-              scale: 1.2
-            });
+        gsap.fromTo(
+          firstSlide,
+          {
+            scale: 1.2,
+          },
+          {
+            scale: 1,
+            duration: 20,
+            ease: "power2.out",
+            onComplete: function onComplete() {
+              gsap.set(firstSlide, {
+                scale: 1.2,
+              });
+            },
           }
-        });
+        );
       },
       slideChangeTransitionStart: function slideChangeTransitionStart() {
         var activeSlide = document.querySelector(".swiper-slide-active img");
         gsap.set(activeSlide, {
-          scale: 1.2
+          scale: 1.2,
         });
         gsap.to(activeSlide, {
           scale: 1,
@@ -110,33 +125,33 @@ jQuery(function ($) {
           ease: "power2.out",
           onComplete: function onComplete() {
             gsap.set(activeSlide, {
-              scale: 1.2
+              scale: 1.2,
             });
-          }
+          },
         });
-      }
-    }
+      },
+    },
   });
 
   // キャンペーンセクション swiper
-  var swiperCampaign = new Swiper(".js-swiper-campaign", {
+  var swipertour = new Swiper(".js-swiper-tour", {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 20,
     centeredSlides: false,
     grabCursor: true,
     keyboard: {
-      enabled: true
+      enabled: true,
     },
     breakpoints: {
       769: {
-        spaceBetween: 40
-      }
+        spaceBetween: 40,
+      },
     },
     navigation: {
-      nextEl: ".swiper-campaign__button-next",
-      prevEl: ".swiper-campaign__button-prev"
-    }
+      nextEl: ".swiper-tour__button-next",
+      prevEl: ".swiper-tour__button-prev",
+    },
   });
 
   // 画像スクリーンアニメーション
@@ -152,25 +167,37 @@ jQuery(function ($) {
     colorMask.css("width", "0%");
     colorMask.on("inview", function () {
       if (counter == 0) {
-        $(this).delay(200).animate({
-          width: "100%"
-        }, switchingSpeed, function () {
-          imageElement.css("opacity", "1");
-          $(this).css({
-            left: "0",
-            right: "auto"
-          });
-          $(this).animate({
-            width: "0%"
-          }, switchingSpeed);
-        });
+        $(this)
+          .delay(200)
+          .animate(
+            {
+              width: "100%",
+            },
+            switchingSpeed,
+            function () {
+              imageElement.css("opacity", "1");
+              $(this).css({
+                left: "0",
+                right: "auto",
+              });
+              $(this).animate(
+                {
+                  width: "0%",
+                },
+                switchingSpeed
+              );
+            }
+          );
         counter = 1;
       }
     });
   });
 
   // スクロールトップボタン
-  var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+  var documentHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
   var keyVisualHeight = $(".js-key-visual").height();
   var footerHeight = $(".footer").height();
   var scrollTopButton = $(".js-scroll-to-top");
@@ -217,8 +244,12 @@ jQuery(function ($) {
   // information tab
   var informationTab = $(".js-information");
   var informationContent = $(".js-information-content");
-  var iconPath = get_template_directory_uri.templateUrl + "/assets/images/common/whale-icon.svg";
-  var iconWhitePath = get_template_directory_uri.templateUrl + "/assets/images/common/whale-icon-w.svg";
+  var iconPath =
+    get_template_directory_uri.templateUrl +
+    "/assets/images/common/whale-icon.svg";
+  var iconWhitePath =
+    get_template_directory_uri.templateUrl +
+    "/assets/images/common/whale-icon-w.svg";
   var pageLoadTabAction = function pageLoadTabAction() {
     var hash = window.location.hash;
     if (hash) {
@@ -234,7 +265,12 @@ jQuery(function ($) {
   var tabAction = function tabAction(targetTab) {
     targetTab.addClass("current").siblings().removeClass("current");
     var tabIndex = $(targetTab).index();
-    informationContent.stop(true, true).slideUp(300).eq(tabIndex).stop(true, true).slideDown(300);
+    informationContent
+      .stop(true, true)
+      .slideUp(300)
+      .eq(tabIndex)
+      .stop(true, true)
+      .slideDown(300);
     var infoElements = document.querySelectorAll(".js-information");
     infoElements.forEach(function (infoElement) {
       var imgElement = infoElement.querySelector("img");
@@ -261,7 +297,7 @@ jQuery(function ($) {
   });
   document.addEventListener("DOMContentLoaded", pageLoadTabAction());
 
-  // campaign button
+  // tour button
   var contactButton = $(".js-contact-button");
   contactButton.on("click", function (e) {
     e.preventDefault();
@@ -303,26 +339,39 @@ var useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
   var openingImages = document.querySelectorAll(".js-opening > figure");
   var openingTimeLine = gsap.timeline();
-  openingTimeLine.to(openingImages, {
-    y: 0,
-    duration: 1.5,
-    stagger: 0.3,
-    ease: "power2.inOut"
-  }).to(openingImages, {
-    autoAlpha: 0,
-    duration: 0.5,
-    ease: "power2.inOut"
-  }).to(".opening__title-container", {
-    autoAlpha: 1,
-    duration: 0.5,
-    ease: "power2.inOut"
-  }, "<0.5").to(".js-opening", {
-    backgroundColor: "rgba(0, 0, 0, 0)",
-    duration: 0.1,
-    autoAlpha: 1,
-    ease: "power2.inOut"
-  }).to(".opening__title-container", {
-    color: "#ffffff",
-    duration: 0.15
-  }, "<");
+  openingTimeLine
+    .to(openingImages, {
+      y: 0,
+      duration: 1.5,
+      stagger: 0.3,
+      ease: "power2.inOut",
+    })
+    .to(openingImages, {
+      autoAlpha: 0,
+      duration: 0.5,
+      ease: "power2.inOut",
+    })
+    .to(
+      ".opening__title-container",
+      {
+        autoAlpha: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+      },
+      "<0.5"
+    )
+    .to(".js-opening", {
+      backgroundColor: "rgba(0, 0, 0, 0)",
+      duration: 0.1,
+      autoAlpha: 1,
+      ease: "power2.inOut",
+    })
+    .to(
+      ".opening__title-container",
+      {
+        color: "#ffffff",
+        duration: 0.15,
+      },
+      "<"
+    );
 }

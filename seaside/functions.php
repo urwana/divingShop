@@ -53,8 +53,8 @@ add_filter('body_class', 'my_custom_body_classes');
 // カスタム投稿の設定
 function create_custom_post_types()
 {
-  // "campaign" カスタム投稿タイプのラベル設定
-  $campaign_labels = array(
+  // "tour" カスタム投稿タイプのラベル設定
+  $tour_labels = array(
     'name'                  => 'キャンペーン', // 投稿タイプの名前（複数形）
     'singular_name'         => 'キャンペーン', // 投稿タイプの名前（単数形）
     'menu_name'             => 'キャンペーン', // 管理画面メニューの名前
@@ -66,14 +66,14 @@ function create_custom_post_types()
     'view_item'             => 'キャンペーン', // 投稿表示ページのタイトル
     'all_items'             => '全キャンペーン投稿', // 全投稿一覧ページのタイトル
     'search_items'          => 'キャンペーンを探す', // 投稿検索のラベル
-    'parent_item_colon'     => 'Parent Campaigns:', // 階層型の親投稿ラベル = 省略可能
+    'parent_item_colon'     => 'Parent tours:', // 階層型の親投稿ラベル = 省略可能
     'not_found'             => 'キャンペーンの投稿が見つかりません', // 投稿が見つからなかったときのメッセージ
     'not_found_in_trash'    => 'ゴミ箱にキャンペーンの投稿が見つかりません' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
-  // "campaign" カスタム投稿タイプの設定
-  $campaign_args = array(
-    'labels'               => $campaign_labels, // 上で定義したラベルを使用
+  // "tour" カスタム投稿タイプの設定
+  $tour_args = array(
+    'labels'               => $tour_labels, // 上で定義したラベルを使用
     'public'               => true,  // 投稿タイプを公開するかどうか
     'publicly_queryable'   => true,  // クエリ可能かどうか
     'show_ui'              => true,  // 管理画面の編集用UIを表示する
@@ -82,14 +82,14 @@ function create_custom_post_types()
     'menu_icon'            => 'dashicons-portfolio', // Dashicons アイコンを指定
     'menu_position'        => 5,     // 管理画面上での配置場所
     'query_var'            => true,  // クエリ変数を使うかどうか
-    'rewrite'              => array('slug' => 'campaign'), // リライトルールの設定（スラッグ）
+    'rewrite'              => array('slug' => 'tour'), // リライトルールの設定（スラッグ）
     'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
     'has_archive'          => true,  // アーカイブページを持つかどうか
     'hierarchical'         => false, // 階層型（カテゴリー）かどうか
     'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
   );
 
-  register_post_type('campaign', $campaign_args);
+  register_post_type('tour', $tour_args);
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
     'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
@@ -134,8 +134,8 @@ add_action('init', 'create_custom_post_types');
 // カスタムタクソノミーの設定
 function create_custom_taxonomies()
 {
-  // campaign タクソノミーのラベル設定
-  $campaignLabels = array(
+  // tour タクソノミーのラベル設定
+  $tourLabels = array(
     'name'              => 'キャンペーン', // 一般的な名前
     'singular_name'     => 'キャンペーン', // 単数形の名前
     'search_items'      => 'キャンペーンを検索', // 検索項目のラベル
@@ -149,19 +149,19 @@ function create_custom_taxonomies()
     'menu_name'         => 'キャンペーンタクソノミー', // メニューのラベル
   );
 
-  // campaign タクソノミーの設定
-  $campaignArgs = array(
+  // tour タクソノミーの設定
+  $tourArgs = array(
     'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
-    'labels'            => $campaignLabels, // 上で定義したラベルを使用
+    'labels'            => $tourLabels, // 上で定義したラベルを使用
     'show_ui'           => true, // 管理画面に表示するかどうか
     'show_in_rest'      => true, // Gutenbergで表示有効化
     'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
     'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
     'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
-    'rewrite'           => array('slug' => 'campaign_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
+    'rewrite'           => array('slug' => 'tour_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
   );
-  // タクソノミーを カスタム投稿 campaign に関連付け
-  register_taxonomy('campaign_taxonomy', array('campaign'), $campaignArgs);
+  // タクソノミーを カスタム投稿 tour に関連付け
+  register_taxonomy('tour_taxonomy', array('tour'), $tourArgs);
 
   // voice タクソノミーのラベル設定
   $voiceLabels = array(
@@ -199,7 +199,7 @@ function custom_posts_per_page($query)
   if (!is_admin() && $query->is_main_query()) {
     if (is_post_type_archive("voice") || is_tax('voice_taxonomy')) {
       $query->set('posts_per_page', 6);
-    } else if (is_post_type_archive("campaign") || is_tax('campaign_taxonomy')) {
+    } else if (is_post_type_archive("tour") || is_tax('tour_taxonomy')) {
       $query->set('posts_per_page', 4);
     } else if (is_home() || is_post_type_archive("blog")) {
       $query->set('posts_per_page', 10);
@@ -266,10 +266,10 @@ function custom_excerpt_more($more)
 add_filter('excerpt_more', 'custom_excerpt_more');
 
 // カスタム投稿のタイトルを Contact Form7 にタグで渡す
-function get_campaign_post_titles()
+function get_tour_post_titles()
 {
   $args = array(
-    'post_type' => 'campaign',
+    'post_type' => 'tour',
     'posts_per_page' => -1,
     'post_status' => 'publish'
   );
@@ -288,7 +288,7 @@ function post_titles_to_cf7_select_filter($tag, $unused)
   if ($tag['name'] != 'menu-515') {
     return $tag;
   }
-  $post_titles = get_campaign_post_titles();
+  $post_titles = get_tour_post_titles();
   error_log('Filtered post titles: ' . print_r($post_titles, true)); // デバッグ用ログ
   if (!empty($post_titles)) {
     $tag['raw_values'] = $post_titles;

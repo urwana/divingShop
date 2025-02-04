@@ -22,7 +22,7 @@
                     <?php
                     if (has_post_thumbnail()) :
                     ?>
-                      <figure class="campaign-card__image">
+                      <figure class="tour-card__image">
                         <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" width="121"
                           height="90" />
                       </figure>
@@ -112,9 +112,9 @@
       </div>
     </div>
   </div>
-  <div class="sidebar__campaign">
-    <div class="sidebar-campaign">
-      <h2 class="sidebar-campaign__title sidebar-title">
+  <div class="sidebar__tour">
+    <div class="sidebar-tour">
+      <h2 class="sidebar-tour__title sidebar-title">
         <figure class="sidebar-title__icon">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/title-whale.svg" alt="クジラアイコン"
             width="50" height="50" />
@@ -123,40 +123,40 @@
           キャンペーン
         </p>
       </h2>
-      <div class="sidebar-campaign__cards">
-        <div class="campaign-cards--sidebar">
+      <div class="sidebar-tour__cards">
+        <div class="tour-cards--sidebar">
           <?php
-          $campaign_args = [
-            'post_type' => 'campaign',
+          $tour_args = [
+            'post_type' => 'tour',
             'posts_per_page' =>  2,
           ];
-          $the_query = new WP_Query($campaign_args);
+          $the_query = new WP_Query($tour_args);
           if ($the_query->have_posts()) :
             while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
-              <a class="campaign-card js-card<?php echo $campaignCard["dataType"] ?>"
-                href="<?php echo esc_url(home_url("/campaign")); ?>">
-                <figure class="campaign-card__image campaign-card__image--sidebar">
+              <a class="tour-card js-card<?php echo $tourCard["dataType"] ?>"
+                href="<?php echo esc_url(home_url("/tour")); ?>">
+                <figure class="tour-card__image tour-card__image--sidebar">
                   <?php
                   if (has_post_thumbnail()) :
                   ?>
-                    <figure class=" campaign-card__image">
+                    <figure class=" tour-card__image">
                       <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
                     </figure>
                   <?php
                   endif;
                   ?>
                 </figure>
-                <div class="campaign-card__body campaign-card__body--side-bar">
-                  <div class="campaign-card__top">
-                    <div class="campaign-card__title campaign-card__title--sidebar">
+                <div class="tour-card__body tour-card__body--side-bar">
+                  <div class="tour-card__top">
+                    <div class="tour-card__title tour-card__title--sidebar">
                       <?php the_title(); ?></div>
                   </div>
-                  <div class="campaign-card__bottom">
-                    <p class="campaign-card__explain campaign-card__explain--sidebar">
+                  <div class="tour-card__bottom">
+                    <p class="tour-card__explain tour-card__explain--sidebar">
                       <?php the_field("main_text"); ?>
                     </p>
-                    <div class="campaign-card__price-container">
+                    <div class="tour-card__price-container">
                       <div class="price-container">
                         <?php if (get_field("cancelled_price")): ?>
                           <span
@@ -178,7 +178,7 @@
           wp_reset_postdata();
           ?>
         </div>
-        <div class="sidebar-campaign__button">
+        <div class="sidebar-tour__button">
           <a href="<?php echo esc_url(home_url("/blog")); ?>" class="button"><span class="button__text">View
               more</span>
           </a>
