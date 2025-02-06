@@ -17,9 +17,9 @@ const imageminMozjpeg = require("imagemin-mozjpeg"); // JPEGを最適化する�
 const imageminPngquant = require("imagemin-pngquant"); // PNGを最適化するためのモジュール
 const changed = require("gulp-changed"); // 変更されたファイルのみを対象にするためのモジュール
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
-const webp = require('gulp-webp');//webp変換
-const rename = require('gulp-rename');//ファイル名変更
-const ejs = require("gulp-ejs");
+const webp = require("gulp-webp"); //webp変換
+const rename = require("gulp-rename"); //ファイル名変更
+// const ejs = require("gulp-ejs");
 const themeName = "seaside"; // WordPress theme name
 
 // 読み込み先
@@ -29,7 +29,7 @@ const srcPath = {
   img: "../src/images/**/*",
   //html: ["../src/**/*.html", "!./node_modules/**"],
   html: ["!./node_modules/**"],
-  ejs: "../src/templates/**/*.ejs",
+  //ejs: "../src/templates/**/*.ejs",
   php: `../${themeName}/**/*.php`,
 };
 
@@ -40,7 +40,7 @@ const destPath = {
   js: "../dist/assets/js/",
   img: "../dist/assets/images/",
   //html: "../dist/",
-  ejs: "../dist/",
+  // ejs: "../dist/",
 };
 
 // WordPress反映用
@@ -67,13 +67,13 @@ const browsers = [
 // };
 
 // ejs のコンパイル
-const compileEjs = () => {
-  return src(srcPath.ejs)
-    .pipe(ejs())
-    .pipe(rename({ extname: ".html" }))
-    .pipe(dest(destPath.ejs));
-  //.pipe(connect.reload());
-};
+// const compileEjs = () => {
+//   return src(srcPath.ejs)
+//     .pipe(ejs())
+//     .pipe(rename({ extname: ".html" }))
+//     .pipe(dest(destPath.ejs));
+//   //.pipe(connect.reload());
+// };
 
 const cssSass = () => {
   // ソースファイルを指定
@@ -203,13 +203,13 @@ const watchFiles = () => {
   watch(srcPath.js, series(jsBabel, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
   //watch(srcPath.html, series(htmlCopy, browserSyncReload));
-  watch(srcPath.ejs, series(compileEjs, browserSyncReload));
+  // watch(srcPath.ejs, series(compileEjs, browserSyncReload));
   watch(srcPath.php, browserSyncReload);
 };
 
 // ブラウザシンク付きの開発用タスク
 exports.default = series(
-  series(cssSass, jsBabel, imgImagemin, compileEjs /*htmlCopy*/),
+  series(cssSass, jsBabel, imgImagemin /*compileEjs htmlCopy*/),
   parallel(watchFiles, browserSyncFunc)
 );
 
@@ -218,6 +218,6 @@ exports.build = series(
   clean,
   cssSass,
   jsBabel,
-  imgImagemin,
-  compileEjs /*htmlCopy*/
+  imgImagemin
+  /*compileEjs*,/ /*htmlCopy*/
 );

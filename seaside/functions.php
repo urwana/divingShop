@@ -90,6 +90,7 @@ function create_custom_post_types()
   );
 
   register_post_type('tour', $tour_args);
+
   // "voice" カスタム投稿タイプのラベル設定
   $voice_labels = array(
     'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
