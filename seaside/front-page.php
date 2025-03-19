@@ -7,7 +7,7 @@
           <picture>
             <source media="(max-width: 767px)"
               srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l-sp.jpg" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l.jpg"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l.webp"
               alt="オープニング左側の画像" />
           </picture>
         </figure>
@@ -15,7 +15,7 @@
           <picture>
             <source media="(max-width: 767px)"
               srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r-sp.jpg" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r.jpg"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r.webp"
               alt="オープニング右側の画像" />
           </picture>
         </figure>
