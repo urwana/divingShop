@@ -310,15 +310,15 @@ if (useGsap) {
     ease: "power2.inOut"
   }).to(openingImages, {
     autoAlpha: 0,
-    duration: 0.5,
+    duration: 1.5,
     ease: "power2.inOut"
   }).to(".opening__title-container", {
     autoAlpha: 1,
-    duration: 0.5,
+    duration: 1,
     ease: "power2.inOut"
   }, "<0.5").to(".js-opening", {
     backgroundColor: "rgba(0, 0, 0, 0)",
-    duration: 0.5,
+    duration: 1,
     autoAlpha: 1,
     ease: "power2.inOut"
   }).to(".opening__title-container", {
