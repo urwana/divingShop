@@ -24,7 +24,7 @@
             OKI tour
           </div>
           <p class="opening__subtitle">
-            into the ocean
+            The jewel islands of Japan’s tropical south, welcome to Okinawa.
           </p>
         </div>
       </div>
