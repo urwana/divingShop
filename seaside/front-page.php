@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="swiper-wrapper key-visual__swiper-wrapper">
-        <?php for ($i = 1; $i <= 5; $i++) : ?>
+        <?php for ($i = 1; $i <= 9; $i++) : ?>
           <?php
           $image = get_field("top_swiper_$i");
           $image_sp = get_field("top_swiper_sp$i");
