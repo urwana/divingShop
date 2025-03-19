@@ -309,7 +309,7 @@ if (useGsap) {
     stagger: 0.3,
     ease: "power2.inOut"
   }).to(openingImages, {
-    autoAlpha: 1,
+    autoAlpha: 0,
     duration: 0.5,
     ease: "power2.inOut"
   }).to(".opening__title-container", {
@@ -323,6 +323,6 @@ if (useGsap) {
     ease: "power2.inOut"
   }).to(".opening__title-container", {
     color: "#ffffff",
-    duration: 0.15
+    duration: 0.5
   }, "<");
 }
