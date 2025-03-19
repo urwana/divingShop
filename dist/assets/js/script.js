@@ -305,11 +305,11 @@ if (useGsap) {
   var openingTimeLine = gsap.timeline();
   openingTimeLine.to(openingImages, {
     y: 0,
-    duration: 1.5,
+    duration: 2,
     stagger: 0.3,
     ease: "power2.inOut"
   }).to(openingImages, {
-    autoAlpha: 0,
+    autoAlpha: 1,
     duration: 0.5,
     ease: "power2.inOut"
   }).to(".opening__title-container", {
@@ -318,7 +318,7 @@ if (useGsap) {
     ease: "power2.inOut"
   }, "<0.5").to(".js-opening", {
     backgroundColor: "rgba(0, 0, 0, 0)",
-    duration: 0.1,
+    duration: 0.5,
     autoAlpha: 1,
     ease: "power2.inOut"
   }).to(".opening__title-container", {
