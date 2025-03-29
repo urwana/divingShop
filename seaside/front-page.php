@@ -6,7 +6,7 @@
         <figure class="opening__image-left">
           <picture>
             <source media="(max-width: 767px)"
-              srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l-sp.jpg" />
+              srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l-sp.webp" />
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-l.webp"
               alt="オープニング左側の画像" />
           </picture>
@@ -14,7 +14,7 @@
         <figure class="opening__image-right">
           <picture>
             <source media="(max-width: 767px)"
-              srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r-sp.jpg" />
+              srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r-sp.webp" />
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/opening/kv-r.webp"
               alt="オープニング右側の画像" />
           </picture>
