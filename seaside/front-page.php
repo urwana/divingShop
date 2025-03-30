@@ -69,7 +69,7 @@
           <?php
           $args = array(
             "post_type" => "tour",
-            'posts_per_page' => 4,
+            'posts_per_page' => 10,
           );
           $the_query = new WP_Query($args);
           ?>
