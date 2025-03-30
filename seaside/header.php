@@ -41,7 +41,7 @@
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/tour")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__japanese">キャンペーン</div>
+                <div class="navigation-pc__japanese">ツアー</div>
                 <div class="navigation-pc__english">tour</div>
               </div>
             </a>
@@ -49,7 +49,7 @@
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__japanese">私たちについて</div>
+                <div class="navigation-pc__japanese">沖ツアーについて</div>
                 <div class="navigation-pc__english">About us</div>
               </div>
             </a>
@@ -65,16 +65,16 @@
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/blog")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__japanese">ブログ</div>
-                <div class="navigation-pc__english">Blog</div>
+                <div class="navigation-pc__japanese">観光名所</div>
+                <div class="navigation-pc__english">Spot</div>
               </div>
             </a>
           </li>
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/voice")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__japanese">お客様の声</div>
-                <div class="navigation-pc__english">Voice</div>
+                <div class="navigation-pc__japanese">泊まる・食べる</div>
+                <div class="navigation-pc__english">Stay & Eat</div>
               </div>
             </a>
           </li>
@@ -112,7 +112,7 @@
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
                 <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/tour")); ?>">
-                  <div class="navigation-sp__label">キャンペーン</div>
+                  <div class="navigation-sp__label">ツアー</div>
                 </a>
               </div>
               <div class="navigation-sp__item">
@@ -134,7 +134,7 @@
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
                 <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
-                  <div class="navigation-sp__label">私たちについて</div>
+                  <div class="navigation-sp__label">沖ツアーについて</div>
                 </a>
               </div>
             </div>
@@ -163,7 +163,7 @@
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
                 <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/blog")); ?>">
-                  <div class="navigation-sp__label">ブログ</div>
+                  <div class="navigation-sp__label">観光名所</div>
                 </a>
               </div>
             </div>
@@ -172,7 +172,7 @@
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
                 <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/voice")); ?>">
-                  <div class="navigation-sp__label">お客様の声</div>
+                  <div class="navigation-sp__label">泊まる・食べる</div>
                 </a>
               </div>
             </div>

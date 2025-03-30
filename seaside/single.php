@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "ブログ",
+    "pageTitle" => "観光名所",
     "imageClass" => "blog-background",
     "detail" => true
   ]; ?>
