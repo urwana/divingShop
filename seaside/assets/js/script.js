@@ -299,6 +299,8 @@ jQuery(function ($) {
 //   }
 // };
 // const device = detectDevice();
+
+// オープニングアニメーション
 var useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
   var openingImages = document.querySelectorAll(".js-opening > figure");
