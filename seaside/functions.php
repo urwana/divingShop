@@ -86,7 +86,7 @@ function create_custom_post_types()
     'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
     'has_archive'          => true,  // アーカイブページを持つかどうか
     'hierarchical'         => false, // 階層型（カテゴリー）かどうか
-    'supports'             => array('title', 'editor', 'thumbnail', 'excerpt') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
+    'supports'             => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes') // サポートする機能（タイトル、エディタ、サムネイル、抜粋）
   );
 
   register_post_type('tour', $tour_args);
