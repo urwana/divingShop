@@ -370,16 +370,16 @@ body {
 }
 
 .body-404 {
-	background-color: #958640;
+	background-color: #07a6fb;
 }
 
 .error-404 {
-	background-color: #958640;
+	background-color: #07a6fb;
 	background-image: url("../images/common/bg-404.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 20.5rem;
-	border-top: #958640 solid 1px;
+	border-top: #07a6fb solid 1px;
 	color: #fff;
 	font-family: "Stick", sans-serif;
 	padding-bottom: 2.5rem;
@@ -791,7 +791,7 @@ body {
 }
 
 .about__catch-copy {
-	color: #958640;
+	color: #07a6fb;
 	font-family: "Stick", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -901,7 +901,7 @@ body {
 }
 
 .blog-card__title {
-	border-bottom: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -969,7 +969,7 @@ body {
 .button-scroll--left,
 .button-scroll {
 	background: #fff;
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	border-radius: 50%;
 	cursor: pointer;
 	height: 48px;
@@ -980,7 +980,7 @@ body {
 .button-scroll--right::before,
 .button-scroll--left::before,
 .button-scroll::before {
-	background-color: #958640;
+	background-color: #07a6fb;
 	content: "";
 	display: block;
 	height: 1px;
@@ -992,7 +992,7 @@ body {
 .button-scroll--right::after,
 .button-scroll--left::after,
 .button-scroll::after {
-	background-color: #958640;
+	background-color: #07a6fb;
 	content: "";
 	display: block;
 	height: 1px;
@@ -1036,8 +1036,8 @@ body {
 }
 
 .button {
-	background-color: #958640;
-	border: 1px solid #958640;
+	background-color: #07a6fb;
+	border: 1px solid #07a6fb;
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
@@ -1055,7 +1055,7 @@ body {
 .button--reverse {
 	background-color: #fff;
 	border: 1px solid #fff;
-	color: #958640;
+	color: #07a6fb;
 	padding: 1.1875rem 6rem 1.25rem 2.4375rem;
 }
 
@@ -1064,7 +1064,7 @@ body {
 }
 
 .button::before {
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	content: "";
 	height: 100%;
 	left: 0.25rem;
@@ -1094,18 +1094,18 @@ body {
 }
 
 .button--reverse::after {
-	background: #958640;
-	border: 1px solid #958640;
+	background: #07a6fb;
+	border: 1px solid #07a6fb;
 	z-index: 1;
 }
 
 .button:hover {
 	background-color: #fff;
-	color: #958640;
+	color: #07a6fb;
 }
 
 .button--reverse:hover {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 }
 
@@ -1131,13 +1131,13 @@ body {
 }
 
 .button--reverse .button__text::before {
-	background-color: #958640;
+	background-color: #07a6fb;
 	right: -3.46875rem;
 }
 
 .button:hover .button__text::before,
 .button:hover .button__text::after {
-	background-color: #958640;
+	background-color: #07a6fb;
 	z-index: 2;
 }
 
@@ -1158,7 +1158,7 @@ body {
 }
 
 .button--reverse .button__text::after {
-	background: #958640;
+	background: #07a6fb;
 	right: -3.5rem;
 }
 
@@ -1205,7 +1205,7 @@ body {
 }
 
 .contact-form__row {
-	border-bottom: 1px dashed #958640;
+	border-bottom: 1px dashed #07a6fb;
 	padding-bottom: 1.5rem;
 }
 
@@ -1234,7 +1234,7 @@ body {
 }
 
 .contact-form__label [type=radio] {
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	display: block;
 	height: 0.875rem;
 	width: 0.875rem;
@@ -1249,7 +1249,7 @@ body {
 .contact-form__item [type=tel],
 .contact-form__item [type=url],
 .contact-form__item [type=email] {
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	height: 2.5rem;
 	width: 100%;
 }
@@ -1338,7 +1338,7 @@ body {
 }
 
 .contact-form__item textarea {
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	height: 12.5rem;
 	padding: 0.5rem;
 	width: 100%;
@@ -1352,7 +1352,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	display: inline-block;
 	height: 14px;
 	position: relative;
@@ -1363,7 +1363,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	display: block;
 	height: 20px;
 	position: relative;
@@ -1399,7 +1399,7 @@ body {
 }
 
 .select-box-container::after {
-	border: 6px solid #958640;
+	border: 6px solid #07a6fb;
 	border-bottom: 0;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -1419,7 +1419,7 @@ body {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	color: #000000;
 	cursor: pointer;
 	display: inline-block;
@@ -1638,7 +1638,7 @@ body {
 }
 
 .header__inner.is-open {
-	background-color: #958640;
+	background-color: #07a6fb;
 }
 
 .header__logo {
@@ -1653,7 +1653,7 @@ body {
 }
 
 .header__navigation-sp {
-	background-color: #958640;
+	background-color: #07a6fb;
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -1715,8 +1715,8 @@ body {
 }
 
 .label {
-	border: solid 1px #958640;
-	color: #958640;
+	border: solid 1px #07a6fb;
+	color: #07a6fb;
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -1724,7 +1724,7 @@ body {
 }
 
 .lined-title {
-	border-bottom: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1739,7 +1739,7 @@ body {
 }
 
 .lined-title--no-change {
-	border-bottom: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1819,7 +1819,7 @@ body {
 }
 
 .navigation-pc__link-inner::after {
-	background: #fb0767;
+	background: #07a6fb;
 	bottom: -4px;
 	content: "";
 	display: block;
@@ -2098,8 +2098,8 @@ body {
 span.current,
 .pager .page {
 	background-color: #fff;
-	border: solid 1px #958640;
-	color: #958640;
+	border: solid 1px #07a6fb;
+	color: #07a6fb;
 	cursor: pointer;
 	display: block;
 	font-family: "Stick", sans-serif;
@@ -2118,7 +2118,7 @@ span.current:hover,
 }
 
 span.current {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2146,7 +2146,7 @@ span.current:hover {
 }
 
 .pager__previous.current {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2174,7 +2174,7 @@ span.current:hover {
 }
 
 .pager__next.current {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 }
 
@@ -2205,7 +2205,7 @@ span.current:hover {
 }
 
 .price-container__price {
-	color: #958640;
+	color: #07a6fb;
 	display: inline-block;
 	font-size: 2rem;
 	max-width: 100%;
@@ -2222,7 +2222,7 @@ span.current:hover {
 
 .price-list__title {
 	align-items: center;
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -2259,8 +2259,8 @@ span.current:hover {
 
 .price-list__name {
 	align-items: center;
-	border-bottom: solid 1px #958640;
-	border-left: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
+	border-left: solid 1px #07a6fb;
 	display: flex;
 	justify-content: center;
 	padding: 0.375rem 0 0.375rem 0.75rem;
@@ -2270,9 +2270,9 @@ span.current:hover {
 
 .price-list__price {
 	align-items: center;
-	border-bottom: solid 1px #958640;
-	border-left: solid 1px #958640;
-	border-right: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
+	border-left: solid 1px #07a6fb;
+	border-right: solid 1px #07a6fb;
 	display: flex;
 	justify-content: flex-end;
 	padding: 0.5rem 1.125rem 0.5rem 0.5rem;
@@ -2287,7 +2287,7 @@ span.current:hover {
 }
 
 .qa-box__question {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	cursor: pointer;
 	font-family: "Yusei Magic", sans-serif;
@@ -2298,7 +2298,7 @@ span.current:hover {
 }
 
 .qa-box__answer {
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	font-weight: 300;
 	line-height: 1.4;
 	padding: 1.5rem 1rem;
@@ -2377,11 +2377,11 @@ span.current:hover {
 }
 
 .section-title__word::first-letter {
-	color: #958640;
+	color: #07a6fb;
 }
 
 .section-title__japan {
-	color: #958640;
+	color: #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
@@ -2390,7 +2390,7 @@ span.current:hover {
 }
 
 .section-title__explain {
-	color: #958640;
+	color: #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -2405,11 +2405,11 @@ span.current:hover {
 }
 
 .section-title--blog .section-title__word::first-letter {
-	color: #958640;
+	color: #07a6fb;
 }
 
 .section-title--blog .section-title__japan {
-	color: #958640;
+	color: #07a6fb;
 }
 
 .section-title--contact {
@@ -2433,7 +2433,7 @@ span.current:hover {
 }
 
 .sidebar-archive__toggle-hierarchy {
-	color: #958640;
+	color: #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -2463,7 +2463,7 @@ span.current:hover {
 .sidebar-archive__month-label::before,
 .sidebar-archive__year-label::before {
 	border-bottom: 12px solid transparent;
-	border-left: 18px solid #958640;
+	border-left: 18px solid #07a6fb;
 	border-right: 12px solid transparent;
 	border-top: 12px solid transparent;
 	content: "";
@@ -2709,13 +2709,13 @@ body {
 }
 
 .submit {
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	display: inline-block;
 	position: relative;
 }
 
 .submit:hover {
-	color: #958640;
+	color: #07a6fb;
 }
 
 span.wpcf7-spinner {
@@ -2723,9 +2723,9 @@ span.wpcf7-spinner {
 }
 
 .submit > input {
-	background-color: #958640;
-	border: 1px solid #958640;
-	color: #958640;
+	background-color: #07a6fb;
+	border: 1px solid #07a6fb;
+	color: #07a6fb;
 	cursor: pointer;
 	display: inline-block;
 	font-family: "Stick", sans-serif;
@@ -2744,7 +2744,7 @@ span.wpcf7-spinner {
 }
 
 .submit::before {
-	border: 1px solid #958640;
+	border: 1px solid #07a6fb;
 	content: "";
 	height: 3.4375rem;
 	left: 0.25rem;
@@ -2787,7 +2787,7 @@ span.wpcf7-spinner {
 }
 
 .submit:hover .submit__text {
-	color: #958640;
+	color: #07a6fb;
 }
 
 .submit__text::before {
@@ -2805,7 +2805,7 @@ span.wpcf7-spinner {
 
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
-	background-color: #958640;
+	background-color: #07a6fb;
 	z-index: 2;
 }
 
@@ -2820,7 +2820,7 @@ span.wpcf7-spinner {
 }
 
 .button--reverse .submit__text::after {
-	background: #958640;
+	background: #07a6fb;
 	right: -3.5rem;
 }
 
@@ -2871,8 +2871,8 @@ body {
 
 .tab-card__item {
 	background-color: #fff;
-	border: solid 1px #958640;
-	color: #958640;
+	border: solid 1px #07a6fb;
+	color: #07a6fb;
 	cursor: pointer;
 	font-size: 0.875rem;
 	line-height: 1.5714285714;
@@ -2887,7 +2887,7 @@ body {
 }
 
 .tab-card__item.current {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2918,7 +2918,7 @@ body {
 
 .tab-contents-information__item {
 	background-color: #ddf0f1;
-	color: #958640;
+	color: #07a6fb;
 	cursor: pointer;
 	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 	font-size: 0.875rem;
@@ -2939,7 +2939,7 @@ body {
 }
 
 .tab-contents-information__item.current {
-	background-color: #958640;
+	background-color: #07a6fb;
 	color: #fff;
 	transition: background-color 0.3s ease;
 }
@@ -2958,7 +2958,7 @@ body {
 }
 
 .tab-contents-information__content {
-	border: solid 1px #958640;
+	border: solid 1px #07a6fb;
 	padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -2980,7 +2980,7 @@ body {
 }
 
 .title-line {
-	border-bottom: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
 	padding-bottom: 0.25rem;
 }
 
@@ -3068,7 +3068,7 @@ body {
 }
 
 .top-contact-logo__container {
-	border-bottom: solid 1px #958640;
+	border-bottom: solid 1px #07a6fb;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 0.34375rem;
@@ -3281,7 +3281,7 @@ body {
 }
 
 .tour-card__title {
-	border-bottom: 1px solid #958640;
+	border-bottom: 1px solid #07a6fb;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -3317,7 +3317,7 @@ body {
 }
 
 .tour-card__date-container {
-	color: #958640;
+	color: #07a6fb;
 	margin-top: 1.5rem;
 	min-height: 3.5rem;
 	text-align: center;
@@ -4224,7 +4224,7 @@ html {
 }
 
 .price-list__item:first-child .price-list__name {
-	border-top: solid 1px #958640;
+	border-top: solid 1px #07a6fb;
 }
 
 .price-list__item .price-list__name {
@@ -4236,7 +4236,7 @@ html {
 }
 
 .price-list__item:first-child .price-list__price {
-	border-top: solid 1px #958640;
+	border-top: solid 1px #07a6fb;
 }
 
 .price-lists {
@@ -4567,7 +4567,7 @@ html {
 }
 
 .top-contact__contact {
-	border-left: solid 1px #958640;
+	border-left: solid 1px #07a6fb;
 	margin-left: 5rem;
 	margin-top: 0;
 	padding-left: 5rem;
