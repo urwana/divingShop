@@ -49,7 +49,7 @@
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
               <div class="navigation-pc__link-inner">
-                <div class="navigation-pc__japanese">沖ツアーについて</div>
+                <div class="navigation-pc__japanese">沖ツアーとは</div>
                 <div class="navigation-pc__english">About us</div>
               </div>
             </a>
@@ -134,7 +134,7 @@
             <div class="navigation-sp__item-group">
               <div class="navigation-sp__item navigation-sp__item--top">
                 <a class="navigation-sp__link" href="<?php echo esc_url(home_url("/about-us")); ?>">
-                  <div class="navigation-sp__label">沖ツアーについて</div>
+                  <div class="navigation-sp__label">沖ツアーとは</div>
                 </a>
               </div>
             </div>
