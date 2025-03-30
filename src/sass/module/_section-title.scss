@@ -6,21 +6,6 @@
 }
 
 .section-title__word {
-  font-size: rem(32);
-  line-height: calc(40 / 32);
-  color: $green;
-  font-weight: $regular;
-  @include mq("md") {
-    font-size: rem(40);
-    line-height: 1;
-  }
-}
-
-.section-title__word::first-letter {
-  color: $green-accent;
-}
-
-.section-title__japan {
   margin-top: rem(4);
   font-size: rem(12);
   line-height: calc(18 / 12);
@@ -29,6 +14,21 @@
   font-weight: $regular;
   @include mq("md") {
     margin-top: rem(8);
+  }
+}
+
+.section-title__word::first-letter {
+  color: $green-accent;
+}
+
+.section-title__japan {
+  font-size: rem(32);
+  line-height: calc(40 / 32);
+  color: $green;
+  font-weight: $regular;
+  @include mq("md") {
+    font-size: rem(40);
+    line-height: 1;
   }
 }
 

@@ -2370,10 +2370,12 @@ span.current:hover {
 }
 
 .section-title__word {
-	color: #666666;
-	font-size: 2rem;
+	color: #07a6fb;
+	font-family: "Yusei Magic", sans-serif;
+	font-size: 0.75rem;
 	font-weight: 300;
-	line-height: 1.25;
+	line-height: 1.5;
+	margin-top: 0.25rem;
 }
 
 .section-title__word::first-letter {
@@ -2381,12 +2383,10 @@ span.current:hover {
 }
 
 .section-title__japan {
-	color: #07a6fb;
-	font-family: "Yusei Magic", sans-serif;
-	font-size: 0.75rem;
+	color: #666666;
+	font-size: 2rem;
 	font-weight: 300;
-	line-height: 1.5;
-	margin-top: 0.25rem;
+	line-height: 1.25;
 }
 
 .section-title__explain {
@@ -4265,12 +4265,12 @@ html {
 }
 
 .section-title__word {
-	font-size: 2.5rem;
-	line-height: 1;
+	margin-top: 0.5rem;
 }
 
 .section-title__japan {
-	margin-top: 0.5rem;
+	font-size: 2.5rem;
+	line-height: 1;
 }
 
 .section-title__explain {
