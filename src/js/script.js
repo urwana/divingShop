@@ -340,6 +340,8 @@ jQuery(function ($) {
 //   }
 // };
 // const device = detectDevice();
+
+// オープニングアニメーション
 const useGsap = $("body").hasClass("js-gsap");
 if (useGsap) {
   const openingImages = document.querySelectorAll(".js-opening > figure");
