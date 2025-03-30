@@ -100,13 +100,6 @@
                     <p class="">
                       <?php the_field("tel"); ?>
                     </p>
-                    <p class="">
-                      <?php the_field("zip"); ?>
-                      <?php the_field("address"); ?>
-                    </p>
-                    <p class="">
-                      <?php the_field("web"); ?>
-                    </p>
                     <div class="tour-card__body">
                       <div class="tour-card__top">
                         <div class="tour-card__label label-container">
