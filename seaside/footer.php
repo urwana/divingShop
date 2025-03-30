@@ -75,7 +75,7 @@
       </nav>
       <div class="footer__copy">
         <small>
-          Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.
+          Copyright &copy; 2021 - 2025 Oki Tour LLC. All Rights Reserved.
         </small>
       </div>
     </div>
