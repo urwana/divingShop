@@ -14,13 +14,13 @@
   global $template;
   echo '<!-- Template File: ' . basename($template) . ' -->';
   ?>
-  <header class="header">
+  <header class="header js-header">
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
-      <h1 class="header__logo">
+      <h1 class="header__logo js-header-logo">
         <a href="<?php echo esc_url(home_url("/")); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg" alt="沖ツアーのロゴ"
-            width="133" height="50" />
+            width="133" height="50" class="" />
         </a>
       </h1>
       <?php else : ?>

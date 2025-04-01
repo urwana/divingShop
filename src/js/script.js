@@ -1,57 +1,90 @@
-"use strict";
+// "use strict";
 
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-  return (
-    (_typeof =
-      "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
-        ? function (obj) {
-            return typeof obj;
-          }
-        : function (obj) {
-            return obj &&
-              "function" == typeof Symbol &&
-              obj.constructor === Symbol &&
-              obj !== Symbol.prototype
-              ? "symbol"
-              : typeof obj;
-          }),
-    _typeof(obj)
-  );
-}
+// function _typeof(obj) {
+//   "@babel/helpers - typeof";
+//   return (
+//     (_typeof =
+//       "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+//         ? function (obj) {
+//             return typeof obj;
+//           }
+//         : function (obj) {
+//             return obj &&
+//               "function" == typeof Symbol &&
+//               obj.constructor === Symbol &&
+//               obj !== Symbol.prototype
+//               ? "symbol"
+//               : typeof obj;
+//           }),
+//     _typeof(obj)
+//   );
+// }
 
-function _defineProperty(obj, key, value) {
-  key = _toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true,
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
+// function _defineProperty(obj, key, value) {
+//   key = _toPropertyKey(key);
+//   if (key in obj) {
+//     Object.defineProperty(obj, key, {
+//       value: value,
+//       enumerable: true,
+//       configurable: true,
+//       writable: true,
+//     });
+//   } else {
+//     obj[key] = value;
+//   }
+//   return obj;
+// }
 
-function _toPropertyKey(arg) {
-  var key = _toPrimitive(arg, "string");
-  return _typeof(key) === "symbol" ? key : String(key);
-}
+// function _toPropertyKey(arg) {
+//   var key = _toPrimitive(arg, "string");
+//   return _typeof(key) === "symbol" ? key : String(key);
+// }
 
-function _toPrimitive(input, hint) {
-  if (_typeof(input) !== "object" || input === null) return input;
-  var prim = input[Symbol.toPrimitive];
-  if (prim !== undefined) {
-    var res = prim.call(input, hint || "default");
-    if (_typeof(res) !== "object") return res;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return (hint === "string" ? String : Number)(input);
-}
+// function _toPrimitive(input, hint) {
+//   if (_typeof(input) !== "object" || input === null) return input;
+//   var prim = input[Symbol.toPrimitive];
+//   if (prim !== undefined) {
+//     var res = prim.call(input, hint || "default");
+//     if (_typeof(res) !== "object") return res;
+//     throw new TypeError("@@toPrimitive must return a primitive value.");
+//   }
+//   return (hint === "string" ? String : Number)(input);
+// }
 
 jQuery(function ($) {
+  const $keyVisual = $(".js-key-visual");
+  const keyVisualHeight = $keyVisual.height();
+  const $headerLogo = $(".js-header-logo");
+
+  if (body.classList.contains("home")) {
+    window.addEventListener("scroll", function () {
+      const $header = $(".js-header");
+      if (!$header || !$keyVisual) return;
+      if (window.scrollY > keyVisualHeight) {
+        $header.css({ poisition: "fixed" });
+        $header.css({ top: 0 });
+        $header.css({ color: "#666666" });
+        $headerLogo
+          .find("img")
+          .attr(
+            "src",
+            "<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header-dark.svg"
+          );
+      } else {
+        $header.css({ poisition: "absolute" });
+        $header.css({ top: 0 });
+        $header.css({ color: "#ffffff" });
+        $headerLogo
+          .find("img")
+          .attr(
+            "src",
+            "<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg"
+          );
+      }
+      homePcHeaderStyleControll();
+    });
+  }
+
   // ハンバーガ・ドロワーメニュー
   $(".js-hamburger").on("click", function (e) {
     e.preventDefault();
@@ -193,7 +226,6 @@ jQuery(function ($) {
     document.body.scrollHeight,
     document.documentElement.scrollHeight
   );
-  const keyVisualHeight = $(".js-key-visual").height();
   const footerHeight = $(".footer").height();
   const scrollTopButton = $(".js-scroll-to-top");
   const viewportHeight = $(window).height();
