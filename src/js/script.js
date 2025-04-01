@@ -52,36 +52,37 @@
 // }
 
 jQuery(function ($) {
+  const body = $("body");
   const $keyVisual = $(".js-key-visual");
   const keyVisualHeight = $keyVisual.height();
   const $headerLogo = $(".js-header-logo");
+  const $headerNavigationPc = $(".js-header-navigation-pc");
 
-  if (body.classList.contains("home")) {
+  if (body.hasClass("home")) {
     window.addEventListener("scroll", function () {
       const $header = $(".js-header");
       if (!$header || !$keyVisual) return;
       if (window.scrollY > keyVisualHeight) {
         $header.css({ poisition: "fixed" });
         $header.css({ top: 0 });
-        $header.css({ color: "#666666" });
+        $headerNavigationPc.css({ color: "#666666" });
         $headerLogo
           .find("img")
           .attr(
             "src",
-            "<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header-dark.svg"
+            "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header-dark.svg"
           );
       } else {
         $header.css({ poisition: "absolute" });
         $header.css({ top: 0 });
-        $header.css({ color: "#ffffff" });
+        $headerNavigationPc.css({ color: "#ffffff" });
         $headerLogo
           .find("img")
           .attr(
             "src",
-            "<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg"
+            "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header.svg"
           );
       }
-      homePcHeaderStyleControll();
     });
   }
 

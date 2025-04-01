@@ -1618,7 +1618,7 @@ body {
 }
 
 .header {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.2);
 	height: 5rem;
 	left: 0;
 	position: fixed;
@@ -1678,6 +1678,7 @@ body {
 }
 
 .header__navigation-pc {
+	color: #fff;
 	display: none;
 }
 
@@ -1838,7 +1839,6 @@ body {
 }
 
 .navigation-pc__japanese {
-	color: #fff;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1;
@@ -1847,7 +1847,6 @@ body {
 }
 
 .navigation-pc__english {
-	color: #fff;
 	font-family: "Stick", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;

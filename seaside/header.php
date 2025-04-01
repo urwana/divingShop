@@ -36,7 +36,7 @@
         <span></span>
         <span></span>
       </button>
-      <nav class="header__navigation-pc">
+      <nav class="header__navigation-pc js-header-navigation-pc">
         <ul class="navigation-pc">
           <li class="navigation-pc__item">
             <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/tour")); ?>">

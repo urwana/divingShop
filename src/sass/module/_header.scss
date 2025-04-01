@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(255 255 255 / 0.1);
+  background-color: rgb(255 255 255 / 0.2);
   height: rem(80);
   z-index: 4;
   @include mq("md") {
@@ -78,6 +78,7 @@
 
 .header__navigation-pc {
   display: none;
+  color: $white;
   @include mq("md") {
     height: inherit;
     display: block;
