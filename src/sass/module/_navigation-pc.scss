@@ -48,7 +48,8 @@
   font-family: $magic;
   font-size: rem(18);
   line-height: 1;
-  color: $font-black;
+  //color: $font-black;
+  color: $white;
   text-align: center;
   text-shadow: 0 0 2px rgba(255, 255, 255, 1);
 }
@@ -57,7 +58,8 @@
   font-family: $english-font;
   font-size: rem(10);
   font-weight: $regular;
-  color: $font-black;
+  //color: $font-black;
+  color: $white;
   text-align: center;
   position: relative;
   @include mq("md") {

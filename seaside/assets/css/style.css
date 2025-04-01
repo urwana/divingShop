@@ -1838,7 +1838,7 @@ body {
 }
 
 .navigation-pc__japanese {
-	color: #666666;
+	color: #fff;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1;
@@ -1847,7 +1847,7 @@ body {
 }
 
 .navigation-pc__english {
-	color: #666666;
+	color: #fff;
 	font-family: "Stick", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 300;
