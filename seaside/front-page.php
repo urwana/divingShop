@@ -88,6 +88,11 @@
                     <figure class="tour-card__image">
                       <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php the_title(); ?>" />
                     </figure>
+                    <?php else: ?>
+                    <figure class="tour-card__image">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.svg"
+                        alt="画像がない場合の代替画像" style="object-fit:contain" />
+                    </figure>
                     <?php
                         endif;
                         ?>
