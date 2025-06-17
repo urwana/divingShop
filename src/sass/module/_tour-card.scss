@@ -46,6 +46,7 @@
   flex-grow: 1;
   justify-content: space-between;
   padding: rem(16) rem(16) rem(24) rem(16);
+  color: $font-black;
   @include mq("md") {
     padding: rem(24) rem(16) rem(40) rem(16);
   }
@@ -63,6 +64,7 @@
     padding: rem(16) rem(16) rem(24) rem(16);
   }
 }
+
 .tour-card__title {
   margin-top: rem(8);
   font-family: $magic;
@@ -156,5 +158,21 @@
   display: none;
   @include mq("md") {
     display: block;
+  }
+}
+
+.tour-card__rank {
+  position: absolute;
+  @include mq("md") {
+  }
+}
+
+.tour-card__area {
+  @include mq("md") {
+  }
+}
+
+.tour-card__tel {
+  @include mq("md") {
   }
 }

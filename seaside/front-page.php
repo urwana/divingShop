@@ -96,13 +96,13 @@
                     <?php
                         endif;
                         ?>
-                    <p class="">
+                    <p class="tour-card__rank">
                       <?php the_field("ranking"); ?>
                     </p>
-                    <p class="">
+                    <p class="tour-card__area">
                       <?php the_field("area"); ?>
                     </p>
-                    <p class="">
+                    <p class="tour-card__tel">
                       <?php the_field("tel"); ?>
                     </p>
                     <div class="tour-card__body">

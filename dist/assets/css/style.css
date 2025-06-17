@@ -3268,6 +3268,7 @@ body {
 }
 
 .tour-card__body {
+	color: #666666;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -3342,6 +3343,10 @@ body {
 
 .tour-card__bottom2 {
 	display: none;
+}
+
+.tour-card__rank {
+	position: absolute;
 }
 
 .tour-cards--sidebar .tour-card:not(:first-child) {
