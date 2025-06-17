@@ -3346,6 +3346,10 @@ body {
 }
 
 .tour-card__rank {
+	background-color: #fff;
+	border-radius: 1rem;
+	font-size: 2rem;
+	padding: 1.5rem;
 	position: absolute;
 }
 

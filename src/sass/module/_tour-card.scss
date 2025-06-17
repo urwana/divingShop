@@ -163,6 +163,10 @@
 
 .tour-card__rank {
   position: absolute;
+  font-size: 2rem;
+  background-color: $white;
+  padding: 1.5rem;
+  border-radius: 1rem;
   @include mq("md") {
   }
 }
