@@ -163,9 +163,14 @@
 
 .tour-card__rank {
   position: absolute;
-  font-size: 2rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  font-size: 1rem;
   background-color: $white;
-  padding: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
   border-radius: 1rem;
   @include mq("md") {
   }

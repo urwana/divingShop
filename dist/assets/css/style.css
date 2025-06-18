@@ -3346,11 +3346,16 @@ body {
 }
 
 .tour-card__rank {
+	align-items: center;
 	background-color: #fff;
 	border-radius: 1rem;
-	font-size: 2rem;
-	padding: 1.5rem;
+	display: flex;
+	font-size: 1rem;
+	height: 1.2rem;
+	left: -0.5rem;
 	position: absolute;
+	top: -0.5rem;
+	width: 1.2rem;
 }
 
 .tour-cards--sidebar .tour-card:not(:first-child) {
