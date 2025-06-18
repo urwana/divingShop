@@ -3348,10 +3348,11 @@ body {
 .tour-card__rank {
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 1rem;
+	border-radius: 1.5rem;
 	display: flex;
 	font-size: 2rem;
 	height: 2.5rem;
+	justify-content: center;
 	left: -0.5rem;
 	position: absolute;
 	top: -0.5rem;
