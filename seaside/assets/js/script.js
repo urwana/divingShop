@@ -68,6 +68,9 @@ jQuery(function ($) {
           poisition: "fixed"
         });
         $header.css({
+          backgroundColor: "rgba(255,255,255,0.8)"
+        });
+        $header.css({
           top: 0
         });
         $headerNavigationPc.css({
