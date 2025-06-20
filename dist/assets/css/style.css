@@ -3812,8 +3812,9 @@ html {
 	grid-template-columns: 40% calc(60% - 2.5rem);
 	justify-content: flex-start;
 	margin-left: 7%;
+	margin-top: 0;
 	position: absolute;
-	top: 14rem;
+	top: 11.875rem;
 	width: calc(67.5rem - 12%);
 	z-index: 3;
 }
@@ -3870,7 +3871,7 @@ html {
 
 .about__body {
 	color: #fff;
-	margin-top: 2rem;
+	margin-top: 4rem;
 }
 
 .about__contents--page .about__body {

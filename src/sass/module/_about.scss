@@ -44,10 +44,11 @@
     justify-content: flex-start;
     grid-template-columns: 40% calc(60% - rem(40));
     column-gap: rem(40);
+    margin-top: 0;
     margin-left: 7%;
     width: calc(rem(1080) - 12%);
     position: absolute;
-    top: rem(224);
+    top: rem(190);
     z-index: 3;
   }
 }
@@ -172,7 +173,7 @@
   @include mq("md") {
     color: $white;
     // page で追加
-    margin-top: rem(32);
+    margin-top: rem(64);
   }
 }
 
