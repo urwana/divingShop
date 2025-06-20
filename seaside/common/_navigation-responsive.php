@@ -56,7 +56,7 @@
       <div class="navigation-responsive__item<?php echo $footer ? " navigation-responsive__item--top" :  " navigation-responsive__item--top-sitemap"; ?>">
         <a class="navigation-responsive__link" href="<?php echo esc_url(home_url("/information")); ?>">
           <div class="navigation-responsive__label">
-            ダイビング情報
+            アクティビティー情報
           </div>
         </a>
       </div>
