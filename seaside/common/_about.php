@@ -13,29 +13,29 @@
       <figure class="about__image-left">
         <picture>
           <source media="(max-width: 767px)"
-            srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-sp-left.jpg" />
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-left.jpg"
+            srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-sp-left.webp" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-left.webp"
             alt="about セクションの背景画像 左" />
         </picture>
       </figure>
       <figure class="about__image-right">
         <picture>
           <source media="(max-width: 767px)"
-            srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-sp-right.jpg" />
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-right.jpg"
+            srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-sp-right.webp" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bg-about-pc-right.webp"
             alt="about セクションの背景画像 右" />
         </picture>
       </figure>
     </div>
     <div class="about__contents<?php echo $top ? "" : " about__contents--page" ?>">
       <div class="about__catch-copy">
-        Dive into<br />
-        the Ocean
+        Timeless Journeys,<br />
+        Tropical Memories.
       </div>
       <div class="about__body">
         <div class="about__text">
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+          沖縄のまばゆい景色と、どこか懐かしい夏の風景をめぐる旅へ。<br>
+          静かな木陰に吹くやさしい風のようなひととき、心に残る体験を。色鮮やかで、どこかレトロ。そんな沖縄の旅を、あなたの記憶に残る特別な時間に。ガイドブックには載っていない沖縄の魅力をご紹介します。
         </div>
         <?php if ($top) : ?>
         <div class="about__button">
