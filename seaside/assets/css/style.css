@@ -3809,7 +3809,7 @@ html {
 	-moz-column-gap: 2.5rem;
 	column-gap: 2.5rem;
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 40% calc(60% - 2.5rem);
 	justify-content: flex-start;
 	margin-left: 7%;
 	position: absolute;

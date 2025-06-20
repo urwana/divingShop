@@ -46,7 +46,7 @@
     display: grid;
     justify-content: flex-start;
     // grid-template-columns: 1fr 1fr;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% calc(60% - rem(40));
     column-gap: rem(40);
     // margin-left: min(rem(200), 13.8vw);
     // width: calc(rem(1080) - min(rem(200), 13.8vw));
