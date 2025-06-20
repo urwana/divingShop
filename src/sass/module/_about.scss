@@ -40,9 +40,12 @@
   z-index: 2;
   margin-top: rem(40);
   @include mq("md") {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    display: grid;
     justify-content: flex-start;
+    column-gap: rem(40);
     margin-left: min(rem(200), 13.8vw);
     width: calc(67.5rem - min(rem(200), 13.8vw));
     position: absolute;
