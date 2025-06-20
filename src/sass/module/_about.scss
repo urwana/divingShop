@@ -47,7 +47,7 @@
     justify-content: flex-start;
     column-gap: rem(40);
     margin-left: min(rem(200), 13.8vw);
-    width: calc(67.5rem - min(rem(200), 13.8vw));
+    width: calc(rem(1080) - min(rem(200), 13.8vw));
     position: absolute;
     top: rem(224);
     z-index: 3;
