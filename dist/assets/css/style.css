@@ -3811,10 +3811,10 @@ html {
 	display: grid;
 	grid-template-columns: 40% 60%;
 	justify-content: flex-start;
-	margin-left: min(12.5rem, 13.8vw);
+	margin-left: 13.8vw;
 	position: absolute;
 	top: 14rem;
-	width: calc(67.5rem - min(12.5rem, 13.8vw));
+	width: calc(67.5rem - 13.8vw);
 	z-index: 3;
 }
 
