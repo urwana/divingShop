@@ -77,6 +77,7 @@ jQuery(function ($) {
         $header.css({ poisition: "absolute" });
         $header.css({ top: 0 });
         $headerNavigationPc.css({ color: "#ffffff" });
+        $header.css({ backgroundColor: "rgba(255,255,255,0.2)" });
         $headerLogo
           .find("img")
           .attr(
