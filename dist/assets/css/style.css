@@ -3814,7 +3814,7 @@ html {
 	margin-left: 7%;
 	position: absolute;
 	top: 14rem;
-	width: calc(67.5rem - 7%);
+	width: calc(67.5rem - 12%);
 	z-index: 3;
 }
 
