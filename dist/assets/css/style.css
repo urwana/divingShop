@@ -3814,7 +3814,7 @@ html {
 	margin-left: 7%;
 	margin-top: 0;
 	position: absolute;
-	top: 11.875rem;
+	top: 10.625rem;
 	width: calc(67.5rem - 12%);
 	z-index: 3;
 }
@@ -3871,7 +3871,7 @@ html {
 
 .about__body {
 	color: #fff;
-	margin-top: 4rem;
+	margin-top: 11rem;
 }
 
 .about__contents--page .about__body {

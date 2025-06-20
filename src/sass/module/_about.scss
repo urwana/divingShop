@@ -48,7 +48,7 @@
     margin-left: 7%;
     width: calc(rem(1080) - 12%);
     position: absolute;
-    top: rem(190);
+    top: rem(170);
     z-index: 3;
   }
 }
@@ -173,7 +173,7 @@
   @include mq("md") {
     color: $white;
     // page で追加
-    margin-top: rem(64);
+    margin-top: rem(176);
   }
 }
 
