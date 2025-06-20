@@ -40,16 +40,10 @@
   z-index: 2;
   margin-top: rem(40);
   @include mq("md") {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: flex-start;
     display: grid;
     justify-content: flex-start;
-    // grid-template-columns: 1fr 1fr;
     grid-template-columns: 40% calc(60% - rem(40));
     column-gap: rem(40);
-    // margin-left: min(rem(200), 13.8vw);
-    // width: calc(rem(1080) - min(rem(200), 13.8vw));
     margin-left: 7%;
     width: calc(rem(1080) - 12%);
     position: absolute;
@@ -177,8 +171,6 @@
 
   @include mq("md") {
     color: $white;
-    //width: rem(400);
-    //margin-left: rem(40);
     // page で追加
     margin-top: rem(32);
   }
