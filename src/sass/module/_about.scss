@@ -46,10 +46,8 @@
     display: grid;
     justify-content: flex-start;
     column-gap: rem(40);
-    //margin-left: min(rem(200), 13.8vw);
-    margin-left: 13.8vw;
-    //width: calc(rem(1080) - min(rem(200), 13.8vw));
-    width: calc(rem(1080) - 13.8vw);
+    margin-left: min(rem(200), 13.8vw);
+    width: calc(rem(1080) - min(rem(200), 13.8vw));
     position: absolute;
     top: rem(224);
     z-index: 3;
@@ -175,7 +173,7 @@
 
   @include mq("md") {
     color: $white;
-    width: rem(400);
+    //width: rem(400);
     margin-left: rem(40);
     // page で追加
     margin-top: rem(32);
