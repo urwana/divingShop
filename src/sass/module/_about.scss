@@ -44,6 +44,7 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-left: min(rem(200), 13.8vw);
+    width: calc(67.5rem - min(rem(200), 13.8vw));
     position: absolute;
     top: rem(224);
     z-index: 3;
