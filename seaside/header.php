@@ -17,19 +17,19 @@
   <header class="header js-header">
     <div class="header__inner">
       <?php if (is_front_page()) : ?>
-        <h1 class="header__logo js-header-logo">
-          <a href="<?php echo esc_url(home_url("/")); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg" alt="沖ツアーのロゴ"
-              width="133" height="50" class="" />
-          </a>
-        </h1>
+      <h1 class="header__logo js-header-logo">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg" alt="沖ツアーのロゴ"
+            width="133" height="50" class="" />
+        </a>
+      </h1>
       <?php else : ?>
-        <div class="header__logo">
-          <a href="<?php echo esc_url(home_url("/")); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴのロゴ"
-              width="133" height="50" />
-          </a>
-        </div>
+      <div class="header__logo">
+        <a href="<?php echo esc_url(home_url("/")); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴ" width="133"
+            height="50" />
+        </a>
+      </div>
       <?php endif; ?>
       <button class="header__drawer-button hamburger js-hamburger">
         <span></span>
