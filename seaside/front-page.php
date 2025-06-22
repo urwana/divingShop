@@ -353,9 +353,9 @@
         <div class="top-price__contents">
           <figure class="js-colorAnimation top-price__image">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/top-price-sp.jpg"
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/top-price-sp.webp"
                 media="(max-width: 767px)" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/top-price-pc.jpg" alt="沖縄の海 イメージ"
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/top-price-pc.webp" alt="沖縄の海 イメージ"
                 width="492" height="746" />
             </picture>
           </figure>
