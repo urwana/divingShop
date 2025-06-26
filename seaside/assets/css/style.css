@@ -4563,9 +4563,9 @@ html {
 	background-size: cover;
 	content: "";
 	height: 10rem;
-	left: calc(50% - min(48vw, 47.5rem));
+	left: calc(50% - min(48vw, 48.75rem));
 	position: absolute;
-	top: -6.25rem;
+	top: -8.75rem;
 	width: 21.9375rem;
 	z-index: 2;
 }
