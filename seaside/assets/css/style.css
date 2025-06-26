@@ -4081,7 +4081,7 @@ html {
 	background-image: url(../images/top/bg-fish.webp);
 	background-size: cover;
 	content: "";
-	height: 8.625rem;
+	height: 11.625rem;
 	position: absolute;
 	right: calc(50% - min(48vw, 39.8125rem));
 	top: -58px;
