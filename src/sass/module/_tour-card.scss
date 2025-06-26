@@ -165,14 +165,15 @@
   position: absolute;
   top: -0.5rem;
   left: -0.5rem;
-  font-size: 2rem;
-  background-color: rgba(255 255 255 / 0.75);
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: rem(14);
+  background-color: rgba(255 255 255 / 1);
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.5rem;
+  border: solid 1px $green-accent;
+  border-radius: rem(4);
   @include mq("md") {
   }
 }
