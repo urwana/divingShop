@@ -3045,10 +3045,10 @@ body {
 	background-image: url("../images/top/bg-fish.webp");
 	background-size: cover;
 	content: "";
-	height: 3.125rem;
+	height: 4.1875rem;
 	position: absolute;
 	right: calc(50% - min(48vw, 41.875rem));
-	top: -rem(26);
+	top: -1.625rem;
 	width: 6.8125rem;
 }
 
@@ -4573,8 +4573,8 @@ html {
 }
 
 .top-contact__inner::after {
-	height: 8.625rem;
-	top: -rem(40);
+	height: 11.375rem;
+	top: -2.5rem;
 	width: 18.8125rem;
 }
 
