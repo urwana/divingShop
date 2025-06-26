@@ -3064,7 +3064,7 @@ body {
 }
 
 .top-contact__inner::after {
-	background-image: url("../images/top/bg-fish.webp");
+	background-image: url("../images/top/yashigani.webp");
 	background-size: cover;
 	content: "";
 	height: 4.1875rem;
