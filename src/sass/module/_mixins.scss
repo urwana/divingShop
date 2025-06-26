@@ -19,7 +19,7 @@
   left: calc(50% - min(48vw, rem(616)));
   width: rem(120);
   height: rem(55);
-  background-image: url(../images/top/bg-fish-r.svg);
+  background-image: url(../images/top/cow.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -30,10 +30,10 @@
   }
 }
 
-@mixin button-hover-action($hover-color, $font-color:#ffffff) {
+@mixin button-hover-action($hover-color, $font-color: #ffffff) {
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $hover-color;
-    color:$font-color;
+    color: $font-color;
   }
 }
