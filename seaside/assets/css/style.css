@@ -3786,7 +3786,7 @@ html {
 }
 
 .about__inner::after {
-	background-image: url(../images/top/coral.svg);
+	background-image: url(../images/top/coral.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
