@@ -26,8 +26,8 @@
       <?php else : ?>
       <div class="header__logo">
         <a href="<?php echo esc_url(home_url("/")); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="沖ツアーのロゴ" width="133"
-            height="50" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header.svg" alt="沖ツアーのロゴ"
+            width="133" height="50" />
         </a>
       </div>
       <?php endif; ?>
