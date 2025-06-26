@@ -3042,7 +3042,7 @@ body {
 }
 
 .top-contact__inner::after {
-	background-image: url("../images/top/bg-fish.png");
+	background-image: url("../images/top/bg-fish.webp");
 	background-size: cover;
 	content: "";
 	height: 3.125rem;
@@ -4042,7 +4042,7 @@ html {
 }
 
 .gallery::after {
-	background-image: url(../images/top/bg-fish.svg);
+	background-image: url(../images/top/bg-fish.webp);
 	background-size: cover;
 	content: "";
 	height: 8.625rem;
@@ -4656,11 +4656,11 @@ html {
 }
 
 .top-price__inner::after {
-	background-image: url(../images/top/bg-fish.svg);
+	background-image: url(../images/top/bg-fish.webp);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: -2.5rem;
+	bottom: -rem(40);
 	content: "";
 	height: 12.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
