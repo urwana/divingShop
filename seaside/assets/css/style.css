@@ -190,7 +190,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -319,7 +319,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -364,7 +364,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -441,7 +441,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -477,7 +477,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -522,7 +522,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -573,7 +573,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -676,7 +676,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -716,7 +716,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -2634,7 +2634,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -3253,7 +3253,7 @@ body {
 }
 
 .top-voice__inner::before {
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .top-voice__inner::after {
