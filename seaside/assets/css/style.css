@@ -1542,6 +1542,10 @@ body {
 	position: relative;
 }
 
+.gallery::after {
+	opacity: 0.45;
+}
+
 .gallery__item-container {
 	display: flex;
 	flex-direction: column;
@@ -3060,6 +3064,7 @@ body {
 	background-size: cover;
 	content: "";
 	height: 4.1875rem;
+	opacity: 0.45;
 	position: absolute;
 	right: calc(50% - min(48vw, 41.875rem));
 	top: -1.625rem;
@@ -3210,6 +3215,10 @@ body {
 	margin-right: auto;
 	max-width: 37.5rem;
 	position: relative;
+}
+
+.top-price__inner::after {
+	opacity: 0.45;
 }
 
 .top-price-list__group:not(:first-child) {

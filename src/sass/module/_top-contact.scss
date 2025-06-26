@@ -16,6 +16,7 @@
 }
 
 .top-contact__inner::after {
+  opacity: 0.45;
   content: "";
   position: absolute;
   // NOTE:

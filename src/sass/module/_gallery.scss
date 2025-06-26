@@ -5,6 +5,7 @@
 }
 
 .gallery::after {
+  opacity: 0.45;
   @include mq("md") {
     position: absolute;
     content: "";
