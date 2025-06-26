@@ -190,6 +190,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -318,6 +319,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -362,6 +364,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -438,6 +441,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -473,6 +477,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -517,6 +522,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -567,6 +573,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -669,6 +676,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -708,6 +716,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -722,6 +731,10 @@ body {
 	max-width: 37.5rem;
 	position: relative;
 	z-index: 2;
+}
+
+.about__inner::after {
+	opacity: 0.5;
 }
 
 .about__contents {
@@ -2617,6 +2630,7 @@ body {
 	content: "";
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
+	opacity: 0.5;
 	position: absolute;
 	top: -4.375rem;
 	width: 7.5rem;
@@ -3223,6 +3237,14 @@ body {
 
 .top-voice__inner {
 	position: relative;
+}
+
+.top-voice__inner::before {
+	opacity: 0.5;
+}
+
+.top-voice__inner::after {
+	opacity: 0.5;
 }
 
 .top-voice__cards {
