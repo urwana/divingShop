@@ -25,7 +25,8 @@
   background-position: center center;
   background-size: cover;
   @include mq("md") {
-    top: -rem(155);
+    // prettier-ignore
+    top: - rem(155);
     width: rem(300);
     height: rem(138);
   }
