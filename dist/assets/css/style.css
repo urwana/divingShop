@@ -191,7 +191,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -319,7 +319,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -363,7 +363,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 	z-index: 2;
@@ -439,7 +439,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -474,7 +474,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -518,7 +518,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -568,7 +568,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -670,7 +670,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -709,7 +709,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -2618,7 +2618,7 @@ body {
 	height: 3.4375rem;
 	left: calc(50% - min(48vw, 44.75rem));
 	position: absolute;
-	top: -9.6875rem;
+	top: -4.375rem;
 	width: 7.5rem;
 	z-index: 0;
 }
@@ -3507,7 +3507,7 @@ html {
 
 .about-us__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3558,7 +3558,7 @@ html {
 
 .blog__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3583,7 +3583,7 @@ html {
 
 .contact__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3631,7 +3631,7 @@ html {
 
 .faq__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3649,7 +3649,7 @@ html {
 
 .information__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3672,7 +3672,7 @@ html {
 
 .price__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3702,7 +3702,7 @@ html {
 
 .sitemap__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3764,7 +3764,7 @@ html {
 
 .tour__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -3782,7 +3782,7 @@ html {
 
 .voice__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 
@@ -4350,7 +4350,7 @@ html {
 
 .static-page__inner::before {
 	height: 8.625rem;
-	top: -70px;
+	top: -rem(155);
 	width: 18.75rem;
 }
 

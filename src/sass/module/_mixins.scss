@@ -12,7 +12,7 @@
   z-index: 0;
   content: "";
   // prettier-ignore
-  top: - rem(155);
+  top: - rem(70);
   // NOTE:
   // 50% = 769px / 2(半分) = 364.5px 〜 1080px / 2(半分) = 540px
   // rem(620) = 1080(inner 幅) / 2(半分) + 80px(魚たちの画像はみ出し分)
@@ -25,7 +25,7 @@
   background-position: center center;
   background-size: cover;
   @include mq("md") {
-    top: -70px;
+    top: -rem(155);
     width: rem(300);
     height: rem(138);
   }
