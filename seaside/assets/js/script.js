@@ -59,41 +59,39 @@ jQuery(function ($) {
   var keyVisualHeight = $keyVisual.height();
   var $headerLogo = $(".js-header-logo");
   var $headerNavigationPc = $(".js-header-navigation-pc");
-  if (body.hasClass("home")) {
-    window.addEventListener("scroll", function () {
-      var $header = $(".js-header");
-      if (!$header || !$keyVisual) return;
-      if (window.scrollY > keyVisualHeight) {
-        $header.css({
-          poisition: "fixed"
-        });
-        $header.css({
-          backgroundColor: "rgba(255,255,255,0.8)"
-        });
-        $header.css({
-          top: 0
-        });
-        $headerNavigationPc.css({
-          color: "#666666"
-        });
-        $headerLogo.find("img").attr("src", "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header-dark.svg");
-      } else {
-        $header.css({
-          poisition: "absolute"
-        });
-        $header.css({
-          top: 0
-        });
-        $headerNavigationPc.css({
-          color: "#ffffff"
-        });
-        $header.css({
-          backgroundColor: "rgba(255,255,255,0.2)"
-        });
-        $headerLogo.find("img").attr("src", "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header.svg");
-      }
-    });
-  }
+  window.addEventListener("scroll", function () {
+    var $header = $(".js-header");
+    if (!$header || !$keyVisual) return;
+    if (window.scrollY > keyVisualHeight) {
+      $header.css({
+        poisition: "fixed"
+      });
+      $header.css({
+        backgroundColor: "rgba(255,255,255,0.8)"
+      });
+      $header.css({
+        top: 0
+      });
+      $headerNavigationPc.css({
+        color: "#666666"
+      });
+      $headerLogo.find("img").attr("src", "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header-dark.svg");
+    } else {
+      $header.css({
+        poisition: "absolute"
+      });
+      $header.css({
+        top: 0
+      });
+      $headerNavigationPc.css({
+        color: "#ffffff"
+      });
+      $header.css({
+        backgroundColor: "rgba(255,255,255,0.2)"
+      });
+      $headerLogo.find("img").attr("src", "https://solosoprani2002.com/seaside/wp-content/themes/seaside/assets/images/common/logo-header.svg");
+    }
+  });
 
   // ハンバーガ・ドロワーメニュー
   $(".js-hamburger").on("click", function (e) {
