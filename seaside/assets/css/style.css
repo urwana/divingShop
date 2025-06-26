@@ -4565,7 +4565,7 @@ html {
 	height: 12.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
-	top: -rem(221);
+	top: -13.8125rem;
 	width: 27.3125rem;
 	z-index: 2;
 }
