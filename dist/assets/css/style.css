@@ -3022,7 +3022,7 @@ body {
 }
 
 .top-blog__cards::after {
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 .top-blog__item:not(:first-child) {
@@ -4563,9 +4563,9 @@ html {
 	background-size: cover;
 	content: "";
 	height: 10rem;
-	left: calc(50% - min(48vw, 38.75rem));
+	left: calc(50% - min(48vw, 43.75rem));
 	position: absolute;
-	top: -13.8125rem;
+	top: -8.75rem;
 	width: 21.9375rem;
 	z-index: 2;
 }

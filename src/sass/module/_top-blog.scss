@@ -40,14 +40,14 @@
 }
 
 .top-blog__cards::after {
-  opacity: 0.6;
+  opacity: 0.7;
   @include mq("md") {
     content: "";
     position: absolute;
     z-index: 2;
     // prettier-ignore
-    top: - rem(221);
-    left: calc(50% - min(48vw, rem(620)));
+    top: - rem(140);
+    left: calc(50% - min(48vw, rem(700)));
     width: rem(351);
     height: rem(160);
     background-image: url(../images/top/jinbei.webp);
