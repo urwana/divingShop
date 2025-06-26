@@ -163,8 +163,8 @@
 
 .tour-card__rank {
   position: absolute;
-  top: -0.5rem;
-  left: -0.5rem;
+  top: rem(4);
+  left: rem(4);
   font-size: rem(14);
   background-color: rgba(255 255 255 / 1);
   width: 2rem;
