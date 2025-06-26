@@ -40,7 +40,7 @@
 }
 
 .top-blog__cards::after {
-  opacity: 0.3;
+  opacity: 0.4;
   @include mq("md") {
     content: "";
     position: absolute;

@@ -3022,7 +3022,7 @@ body {
 }
 
 .top-blog__cards::after {
-	opacity: 0.3;
+	opacity: 0.4;
 }
 
 .top-blog__item:not(:first-child) {
