@@ -4696,7 +4696,7 @@ html {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: -rem(40);
+	bottom: -2.5rem;
 	content: "";
 	height: 16.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
