@@ -279,12 +279,15 @@
                   <div class="voice-card__head">
                     <div class="voice-card__info">
                       <div class="voice-card__meta">
-                        <?php $age_type = get_field('age_type'); ?>
-                        <?php $age = $age_type['age']; ?>
-                        <?php $type = $age_type['type']; ?>
-                        <?php if ($age && $type): ?>
+                        <?php $opening_hours = get_field('time_group'); ?>
+                        <?php $opening_time = $opening_hours['start_time']; ?>
+                        <?php $closing_time = $opening_hours['end_time']; ?>
+                        <p><?php echo get_field('area'); ?></p>
+                        <p><?php echo get_field('tel'); ?></p>
+                        <p><?php echo get_field('address'); ?></p>
+                        <?php if ($opening_time && $closing_time): ?>
                         <div class="voice-card__person">
-                          <?php echo $age; ?>(<?php echo $type; ?>)
+                          <?php echo $opening_time; ?>(<?php echo $closing_time; ?>)
                         </div>
                         <?php endif; ?>
                         <div class=" voice-card__label">
