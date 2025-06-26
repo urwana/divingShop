@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .top-blog {
   position: relative;
@@ -19,11 +19,11 @@
     background-image: url(../images/top/bg-blog.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size:cover;
+    background-size: cover;
   }
 }
 
-.top-blog__inner{
+.top-blog__inner {
   // NOTE: section-title の z-index 対応
   position: relative;
 }
@@ -39,19 +39,20 @@
   }
 }
 
-.top-blog__cards::after{
-  @include mq('md') {
+.top-blog__cards::after {
+  opacity: 0.5;
+  @include mq("md") {
     content: "";
     position: absolute;
     z-index: 2;
-    top: - rem(221);
-    left:calc(50% - min(48vw, rem(620)));
+    top: -rem(221);
+    left: calc(50% - min(48vw, rem(620)));
     width: rem(437);
     height: rem(201);
-    background-image: url(../images/top/bg-blog-fish.svg);
+    background-image: url(../images/top/jinbei.webp);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size:cover;
+    background-size: cover;
   }
 }
 
