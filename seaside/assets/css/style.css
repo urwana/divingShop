@@ -4663,7 +4663,7 @@ html {
 	background-size: cover;
 	bottom: -rem(40);
 	content: "";
-	height: 12.5625rem;
+	height: 16.5625rem;
 	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
 	width: 27.3125rem;
