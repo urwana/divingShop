@@ -4051,6 +4051,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	margin-bottom: 1rem;
 }
 
 .footer__logo {
@@ -4059,7 +4060,6 @@ html {
 }
 
 .footer__sns-icons {
-	margin-bottom: 1rem;
 	margin-left: 2.5rem;
 	margin-top: 0;
 }
