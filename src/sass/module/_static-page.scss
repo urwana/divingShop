@@ -24,6 +24,7 @@
 
 .static-page__title {
   font-family: $magic;
+  color: $font-black;
   font-size: rem(24);
   font-weight: $normal;
   @include mq("md") {

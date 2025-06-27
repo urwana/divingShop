@@ -222,6 +222,7 @@ body {
 }
 
 .blog__detail-title {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -247,6 +248,7 @@ body {
 }
 
 .blog__detail-the-contents p {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
@@ -871,6 +873,7 @@ body {
 }
 
 .article-card__title {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	line-height: 1;
@@ -915,6 +918,7 @@ body {
 
 .blog-card__title {
 	border-bottom: solid 1px #c7a926;
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1196,6 +1200,7 @@ body {
 }
 
 .company-info {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 }
 
@@ -1459,6 +1464,7 @@ body {
 }
 
 .contact__error-message {
+	color: #666666;
 	color: #c94800;
 	display: block;
 	font-family: "Yusei Magic", sans-serif;
@@ -1742,6 +1748,7 @@ body {
 
 .lined-title {
 	border-bottom: solid 1px #c7a926;
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1757,6 +1764,7 @@ body {
 
 .lined-title--no-change {
 	border-bottom: solid 1px #c7a926;
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1855,6 +1863,7 @@ body {
 }
 
 .navigation-pc__japanese {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.125rem;
 	line-height: 1;
@@ -2405,6 +2414,7 @@ span.current:hover {
 }
 
 .section-title__explain {
+	color: #666666;
 	color: #c7a926;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 0.875rem;
@@ -2449,6 +2459,7 @@ span.current:hover {
 
 .sidebar-archive__toggle-hierarchy {
 	color: #c7a926;
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -2529,6 +2540,7 @@ span.current:hover {
 .sidebar-title {
 	align-items: center;
 	border-left: #408f95 solid 8px;
+	color: #666666;
 	color: #666666;
 	display: flex;
 	font-family: "Yusei Magic", sans-serif;
@@ -2641,6 +2653,7 @@ body {
 }
 
 .static-page__title {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -3322,6 +3335,7 @@ body {
 
 .tour-card__title {
 	border-bottom: 1px solid #c7a926;
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -3338,6 +3352,7 @@ body {
 }
 
 .tour-card__explain {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.7142857143;
@@ -3495,6 +3510,7 @@ body {
 }
 
 .voice-card__text {
+	color: #666666;
 	font-family: "Yusei Magic", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;

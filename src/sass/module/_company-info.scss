@@ -2,6 +2,7 @@
 
 .company-info {
   font-family: $magic;
+  color: $font-black;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);

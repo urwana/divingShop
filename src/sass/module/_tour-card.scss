@@ -68,6 +68,7 @@
 .tour-card__title {
   margin-top: rem(8);
   font-family: $magic;
+  color: $font-black;
   padding-bottom: rem(4);
   font-size: rem(16);
   line-height: calc(24 / 16);
@@ -97,6 +98,7 @@
 .tour-card__explain {
   margin-top: rem(8);
   font-family: $magic;
+  color: $font-black;
   font-size: rem(14);
   line-height: calc(24 / 14);
   text-align: center;
