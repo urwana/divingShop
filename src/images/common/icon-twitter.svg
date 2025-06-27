@@ -10,12 +10,11 @@
       .st1 {
         fill: none;
         stroke: #666;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: .6px;
+        stroke-linecap: square;
+        stroke-width: 2px;
       }
     </style>
   </defs>
   <path class="st0" d="M11.4,14.2L1.9,25.1l9.5-10.9ZM22.6,1.1l-8.5,10L22.6,1.1ZM1.1,1.1l18.8,24h5.2L6.3,1.1H1.1Z"/>
-  <path class="st1" d="M11.4,14.2L1.9,25.1M22.6,1.1l-8.5,10M1.1,1.1l18.8,24h5.2L6.3,1.1H1.1Z"/>
+  <path class="st1" d="M10.4,15.2L.9,26.1M23.6,0l-8.5,10M1.1,1.1l18.8,24h5.2L6.3,1.1H1.1Z"/>
 </svg>
