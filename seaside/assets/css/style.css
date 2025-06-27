@@ -10,6 +10,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 /* リキッドレイアウト対応 */
 
 html {
@@ -165,6 +172,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-about-us {
 	margin-top: 3.125rem;
 }
@@ -207,6 +221,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .blog__detail-contents {
@@ -305,6 +326,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-blog {
 	margin-top: 3.125rem;
 }
@@ -347,6 +375,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .l-contact {
@@ -423,6 +458,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-faq {
 	margin-top: 3.125rem;
 }
@@ -460,6 +502,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .l-information {
@@ -503,6 +552,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-price {
 	margin-top: 3.125rem;
 }
@@ -543,6 +599,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-privacy-policy {
 	margin-top: 3.125rem;
 }
@@ -557,6 +620,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .l-sitemap {
@@ -592,6 +662,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .l-terms-of-service {
@@ -653,6 +730,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .l-tour {
 	margin-top: 3.125rem;
 }
@@ -695,6 +779,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .l-voice {
@@ -1490,10 +1581,6 @@ body {
 }
 
 .footer {
-	background-image: url(../images/common/bg-sand.webp);
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: 100%;
 	padding-bottom: 3.625rem;
 	padding-top: 3rem;
 }
@@ -2098,6 +2185,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .pager-detail {
 	display: flex;
 	gap: 5rem;
@@ -2114,6 +2208,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .wp-pagenavi {
@@ -2628,6 +2729,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .static-page {
 	color: #666666;
 	font-size: 1rem;
@@ -2890,6 +2998,13 @@ body {
 	display: none;
 }
 
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .tab-card {
 	grid-row-gap: 1.25rem;
 	grid-column-gap: 1rem;
@@ -2941,6 +3056,13 @@ body {
 
 .u-desktop {
 	display: none;
+}
+
+body {
+	background-image: url(../images/common/bg-sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .tab-contents-information__tab {

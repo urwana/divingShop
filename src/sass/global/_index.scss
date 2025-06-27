@@ -1,3 +1,10 @@
 @forward "function";
 @forward "setting";
 @forward "breakpoints";
+
+body {
+  background-image: url(../images/common/bg-sand.webp);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+}
