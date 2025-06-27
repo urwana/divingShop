@@ -38,6 +38,7 @@
   @include mq("md") {
     width: rem(200);
     aspect-ratio: 200 / 75;
+    margin-left: rem(22);
   }
 }
 
