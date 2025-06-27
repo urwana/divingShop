@@ -6,7 +6,7 @@
         <div class="top-contact__info">
           <div class="top-contact-logo__container">
             <figure class="top-contact-logo">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header-dark.svg"
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-contact.svg"
                 alt="CodeUpsのロゴ" width="200" height="75" />
             </figure>
           </div>
