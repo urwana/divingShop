@@ -6,6 +6,11 @@
   //background-color: $green-accent;
   //color: $white;
   //$color: $font-black;
+  background-image: url(../images/common/sand.webp);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+
   @include mq("md") {
     padding-top: rem(80);
     padding-bottom: rem(80);

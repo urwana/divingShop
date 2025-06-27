@@ -1490,6 +1490,10 @@ body {
 }
 
 .footer {
+	background-image: url(../images/common/sand.webp);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 	padding-bottom: 3.625rem;
 	padding-top: 3rem;
 }
