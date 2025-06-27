@@ -4051,7 +4051,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .footer__logo {
