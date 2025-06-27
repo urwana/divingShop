@@ -34,10 +34,10 @@
 
 .footer__logo {
   width: rem(120);
-  aspect-ratio: 120 / 45;
+  //aspect-ratio: 120 / 45;
   @include mq("md") {
     width: rem(200);
-    aspect-ratio: 200 / 75;
+    //aspect-ratio: 200 / 75;
     margin-left: rem(22);
   }
 }

@@ -1498,7 +1498,6 @@ body {
 }
 
 .footer__logo {
-	aspect-ratio: 120/45;
 	width: 7.5rem;
 }
 
@@ -4055,7 +4054,6 @@ html {
 }
 
 .footer__logo {
-	aspect-ratio: 200/75;
 	margin-left: 1.375rem;
 	width: 12.5rem;
 }
