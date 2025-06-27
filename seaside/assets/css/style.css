@@ -3273,10 +3273,6 @@ body {
 	position: relative;
 }
 
-.top-voice__inner::after {
-	opacity: 0.5;
-}
-
 .top-voice__cards {
 	margin-top: 2.75rem;
 }

@@ -26,7 +26,7 @@
 }
 
 .top-voice__inner::after {
-  opacity: 0.5;
+  //opacity: 0.5;
   @include mq("md") {
     position: absolute;
     content: "";
