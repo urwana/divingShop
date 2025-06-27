@@ -882,6 +882,7 @@ body {
 .blog-card {
 	background-color: #fff;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	color: #666666;
 	height: 100%;
 }
 
@@ -3034,7 +3035,7 @@ body {
 }
 
 .top-blog__cards::after {
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .top-blog__item:not(:first-child) {
@@ -3181,6 +3182,7 @@ body {
 }
 
 .top-information__contents {
+	color: #666666;
 	margin-top: 1.5rem;
 }
 
@@ -3269,10 +3271,6 @@ body {
 
 .top-voice__inner {
 	position: relative;
-}
-
-.top-voice__inner::before {
-	opacity: 0.6;
 }
 
 .top-voice__inner::after {
