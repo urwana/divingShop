@@ -3112,6 +3112,11 @@ body {
 	width: 10.875rem;
 }
 
+.top-contact-logo img {
+	height: auto;
+	width: 100%;
+}
+
 .top-contact__company-info-container {
 	margin-top: 1rem;
 }
@@ -4626,7 +4631,7 @@ html {
 }
 
 .top-contact-logo__container {
-	padding-bottom: 0.40625rem;
+	padding-bottom: 1rem;
 }
 
 .top-contact-logo {

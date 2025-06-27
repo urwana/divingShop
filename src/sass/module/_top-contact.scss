@@ -68,7 +68,7 @@
   padding-bottom: rem(5.5);
   position: relative;
   @include mq("md") {
-    padding-bottom: rem(6.5);
+    padding-bottom: rem(16);
   }
 }
 
@@ -88,6 +88,11 @@
   @include mq("md") {
     width: rem(200);
   }
+}
+
+.top-contact-logo img {
+  width: 100%;
+  height: auto;
 }
 
 .top-contact__company-info-container {
