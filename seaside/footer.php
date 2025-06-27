@@ -51,7 +51,7 @@
     <div class="footer__inner inner">
       <div class="footer__images-container">
         <figure class="footer__logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-header-dark.svg"
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-footer-dark.svg"
             alt="沖ツアーのロゴのロゴ" width="200" height="75" />
         </figure>
         <div class="footer__sns-icons sns-icons">
