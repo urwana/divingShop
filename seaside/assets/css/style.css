@@ -11,10 +11,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 /* リキッドレイアウト対応 */
@@ -173,10 +186,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-about-us {
@@ -224,10 +250,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .blog__detail-contents {
@@ -327,10 +366,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-blog {
@@ -378,10 +430,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-contact {
@@ -459,10 +524,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-faq {
@@ -505,10 +583,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-information {
@@ -553,10 +644,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-price {
@@ -600,10 +704,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-privacy-policy {
@@ -623,10 +740,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-sitemap {
@@ -665,10 +795,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-terms-of-service {
@@ -731,10 +874,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-tour {
@@ -782,10 +938,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .l-voice {
@@ -2186,10 +2355,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .pager-detail {
@@ -2211,10 +2393,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .wp-pagenavi {
@@ -2730,10 +2925,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .static-page {
@@ -2999,10 +3207,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .tab-card {
@@ -3059,10 +3280,23 @@ body {
 }
 
 body {
+	background-size: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+body::after {
 	background-image: url(../images/common/bg-sand.webp);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	bottom: 0;
+	content: "";
+	left: 0; /* top:0; right:0; bottom:0; left:0 の略 */
+	opacity: 0.5; /* 背景画像の透明度 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
 
 .tab-contents-information__tab {
