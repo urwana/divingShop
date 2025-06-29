@@ -1614,12 +1614,12 @@ body::after {
 }
 
 .contact-form__item input::-moz-placeholder {
-	color: #a9a9a9;
+	color: #d2d2d2;
 	padding-left: 1rem;
 }
 
 .contact-form__item input::placeholder {
-	color: #a9a9a9;
+	color: #d2d2d2;
 	padding-left: 1rem;
 }
 
@@ -3327,7 +3327,7 @@ body::after {
 }
 
 .tab-contents-information__item {
-	background-color: #a9a9a9;
+	background-color: #d2d2d2;
 	color: #666666;
 	cursor: pointer;
 	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
@@ -3550,7 +3550,7 @@ body::after {
 }
 
 .top-information {
-	background-color: #a9a9a9;
+	background-color: #d2d2d2;
 	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -3610,7 +3610,7 @@ body::after {
 }
 
 .top-price {
-	background-color: #a9a9a9;
+	background-color: #d2d2d2;
 	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -4732,7 +4732,7 @@ html {
 }
 
 .section-title--blog .section-title__word::first-letter {
-	color: #a9a9a9;
+	color: #d2d2d2;
 }
 
 .section-title--blog .section-title__japan {
