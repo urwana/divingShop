@@ -1812,6 +1812,7 @@ body::after {
 }
 
 .footer__copy > small {
+	color: #666666;
 	font-family: "Stick", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
