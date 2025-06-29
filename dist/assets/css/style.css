@@ -2693,7 +2693,7 @@ span.current:hover {
 .require-label {
 	border: 1px solid #fb0767;
 	color: #fb0767;
-	font-size: 0.75rem;
+	font-size: 1rem;
 	font-weight: 300;
 	margin-left: 0.25rem;
 	padding: 0.1875rem 1rem;
