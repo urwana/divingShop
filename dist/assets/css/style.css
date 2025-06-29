@@ -225,7 +225,7 @@ body::after {
 }
 
 .about-us__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -398,7 +398,7 @@ body::after {
 }
 
 .blog__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -464,7 +464,7 @@ body::after {
 }
 
 .contact__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -562,7 +562,7 @@ body::after {
 }
 
 .faq__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -619,7 +619,7 @@ body::after {
 }
 
 .information__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -685,7 +685,7 @@ body::after {
 }
 
 .price__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -778,7 +778,7 @@ body::after {
 }
 
 .sitemap__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -923,7 +923,7 @@ body::after {
 }
 
 .tour__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -984,7 +984,7 @@ body::after {
 }
 
 .voice__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2976,7 +2976,7 @@ body::after {
 }
 
 .static-page__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3456,7 +3456,7 @@ body::after {
 }
 
 .top-contact__inner::after {
-	background-image: url("../images/top/yashigani.webp");
+	background-image: url("../images/top/bg-yashigani.webp");
 	background-size: cover;
 	content: "";
 	height: 4.1875rem;
@@ -4217,7 +4217,7 @@ html {
 }
 
 .about__inner::after {
-	background-image: url(../images/top/coral.webp);
+	background-image: url(../images/top/bg-coral.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4952,7 +4952,7 @@ html {
 }
 
 .top-blog__cards::after {
-	background-image: url(../images/top/jinbei.webp);
+	background-image: url(../images/top/bg-jinbei.webp);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5124,7 +5124,7 @@ html {
 }
 
 .top-voice__inner::before {
-	background-image: url(../images/top/cow.webp);
+	background-image: url(../images/top/bg-cow.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
