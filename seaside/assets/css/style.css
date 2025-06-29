@@ -3624,7 +3624,7 @@ body::after {
 }
 
 .top-price__inner::after {
-	opacity: 0.45;
+	opacity: 0.8;
 }
 
 .top-price-list__group:not(:first-child) {
