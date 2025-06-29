@@ -22,7 +22,7 @@
                   <div class="price-list__title-inner">
                     <p><?php echo $price_list_group["price_list_title"]; ?></p>
                     <figure class="price-list__title-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/ceaser.png" alt="鯨のアイコン"
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/ceaser.webp" alt="鯨のアイコン"
                         width="64" height="64" />
                     </figure>
                   </div>
