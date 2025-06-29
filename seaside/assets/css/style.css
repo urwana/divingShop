@@ -2590,6 +2590,7 @@ span.current:hover {
 }
 
 .price-list__title-icon img {
+	filter: invert(100%);
 	height: auto;
 }
 
