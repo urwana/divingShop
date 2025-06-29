@@ -2630,6 +2630,7 @@ span.current:hover {
 
 .qa-box__question {
 	background-color: #666666;
+	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	color: #fff;
 	cursor: pointer;
 	font-family: "Yusei Magic", sans-serif;
