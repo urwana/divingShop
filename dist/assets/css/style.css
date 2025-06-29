@@ -3551,6 +3551,7 @@ body::after {
 
 .top-information {
 	background-color: #a9a9a9;
+	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -3610,6 +3611,7 @@ body::after {
 
 .top-price {
 	background-color: #a9a9a9;
+	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }

@@ -4,6 +4,7 @@
   padding-top: rem(80);
   padding-bottom: rem(80);
   background-color: $green-light;
+  background-image: url("https://www.transparenttextures.com/patterns/straws.png");
   @include mq("md") {
     padding-top: rem(97);
     padding-bottom: rem(100);
