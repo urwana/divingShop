@@ -1328,7 +1328,7 @@ body::after {
 
 .button {
 	background-color: #c7a926;
-	background-image: url("https://www.transparenttextures.com/patterns/white-texture.png");
+	background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png"); /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	border: 1px solid #c7a926;
 	color: #fff;
 	cursor: pointer;
@@ -1461,13 +1461,13 @@ body::after {
 
 .js-colorAnimation .color-mask {
 	background-color: #c7a926;
-	background-image: url("https://www.transparenttextures.com/patterns/white-texture.png");
+	background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png");
 	height: 100%;
 	position: absolute;
 	right: 0;
 	top: 0;
 	width: 100%;
-	z-index: 2;
+	z-index: 2; /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .js-colorAnimation img {
