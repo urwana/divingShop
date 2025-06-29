@@ -40,6 +40,13 @@
   }
 }
 
+.contact-form__title p {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .contact-form__item {
   margin-top: rem(16);
   @include mq("md") {

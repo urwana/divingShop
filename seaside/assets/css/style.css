@@ -4403,6 +4403,11 @@ html {
 	margin-top: 0;
 }
 
+.contact-form__title p {
+	display: flex;
+	justify-content: space-around;
+}
+
 .contact-form__item {
 	margin-top: 0;
 }
