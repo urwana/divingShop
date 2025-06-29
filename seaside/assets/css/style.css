@@ -2565,6 +2565,7 @@ span.current:hover {
 .price-list__title {
 	align-items: center;
 	background-color: #666666;
+	background-image: url("https://www.transparenttextures.com/patterns/straws.png");
 	color: #fff;
 	display: flex;
 	flex-direction: column;
