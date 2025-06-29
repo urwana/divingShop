@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .require-label {
-  background-color: #c94800;
-  color: $white;
+  border: 1px solid $hibiscus;
+  color: $hibiscus;
   font-size: rem(12);
   padding: rem(3) rem(16);
   margin-left: rem(4);

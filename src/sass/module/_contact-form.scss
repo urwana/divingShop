@@ -43,7 +43,8 @@
 .contact-form__title p {
   @include mq("md") {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 rem(16);
   }
 }
 
