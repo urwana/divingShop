@@ -1614,12 +1614,12 @@ body::after {
 }
 
 .contact-form__item input::-moz-placeholder {
-	color: #f9f9f1;
+	color: #999999;
 	padding-left: 1rem;
 }
 
 .contact-form__item input::placeholder {
-	color: #f9f9f1;
+	color: #999999;
 	padding-left: 1rem;
 }
 
@@ -3327,7 +3327,7 @@ body::after {
 }
 
 .tab-contents-information__item {
-	background-color: #f9f9f1;
+	background-color: #999999;
 	color: #666666;
 	cursor: pointer;
 	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
@@ -3550,7 +3550,7 @@ body::after {
 }
 
 .top-information {
-	background-color: #f9f9f1;
+	background-color: #999999;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -3609,7 +3609,7 @@ body::after {
 }
 
 .top-price {
-	background-color: #f9f9f1;
+	background-color: #999999;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 }
@@ -4730,7 +4730,7 @@ html {
 }
 
 .section-title--blog .section-title__word::first-letter {
-	color: #f9f9f1;
+	color: #999999;
 }
 
 .section-title--blog .section-title__japan {
