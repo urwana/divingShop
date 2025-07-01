@@ -41,6 +41,8 @@
 .price-list__title-icon {
   width: rem(24);
   margin-right: rem(8);
+  display: flex;
+  align-items: center;
   @include mq("md") {
     width: rem(96);
     margin-right: 0;

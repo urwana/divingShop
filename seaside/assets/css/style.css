@@ -2584,6 +2584,8 @@ span.current:hover {
 }
 
 .price-list__title-icon {
+	align-items: center;
+	display: flex;
 	margin-right: 0.5rem;
 	width: 1.5rem;
 }
