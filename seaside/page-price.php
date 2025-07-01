@@ -15,6 +15,7 @@
           $price_lists_item = $price_lists[0]["price_lists_item"]; ?>
           <?php if (!empty($price_lists) && isset($price_lists_item)) : ?>
           <div class="price-lists">
+            <?php $i = 1; ?>
             <?php foreach ($price_lists_item as $price_list_group) : ?>
             <div class="price-lists__item" id="<?php echo $price_list_group["price_list_id"]; ?>">
               <div class="price-list">
@@ -22,7 +23,8 @@
                   <div class="price-list__title-inner">
                     <p><?php echo $price_list_group["price_list_title"]; ?></p>
                     <figure class="price-list__title-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/illust-1.webp"
+                      <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/common/illust-<?php echo $i; ?>.webp"
                         alt="鯨のアイコン" width="64" height="64" />
                     </figure>
                   </div>
@@ -41,6 +43,7 @@
                 </dl>
               </div>
             </div>
+            <?php $i++; ?>
             <?php endforeach; ?>
           </div>
           <?php else: ?>

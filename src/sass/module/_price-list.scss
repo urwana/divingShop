@@ -43,7 +43,7 @@
   width: rem(24);
   margin-right: rem(8);
   @include mq("md") {
-    width: rem(64);
+    width: rem(96);
     margin-right: 0;
     margin-top: rem(8);
   }
@@ -51,7 +51,6 @@
 
 .price-list__title-icon img {
   height: auto;
-  filter: invert(100%);
 }
 
 .price-list__item {

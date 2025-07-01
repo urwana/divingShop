@@ -2590,7 +2590,6 @@ span.current:hover {
 }
 
 .price-list__title-icon img {
-	filter: invert(100%);
 	height: auto;
 }
 
@@ -4669,7 +4668,7 @@ html {
 .price-list__title-icon {
 	margin-right: 0;
 	margin-top: 0.5rem;
-	width: 4rem;
+	width: 6rem;
 }
 
 .price-list__body {
