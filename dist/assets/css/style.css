@@ -2121,7 +2121,7 @@ body::after {
 }
 
 .navigation-pc__link-inner::after {
-	background: #666666;
+	background: #3daab4;
 	bottom: -4px;
 	content: "";
 	display: block;
