@@ -2584,7 +2584,6 @@ span.current:hover {
 }
 
 .price-list__title-icon {
-	aspect-ratio: 1/1;
 	margin-right: 0.5rem;
 	width: 1.5rem;
 }
