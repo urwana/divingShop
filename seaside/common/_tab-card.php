@@ -1,6 +1,18 @@
 <?php $post_type = $args["post_type"]; ?>
 <?php $taxonomy = $args["taxonomy"]; ?>
 
+<?php echo 'post_type'; ?>
+<br>
+<?php var_dump($post_type); ?>
+<br>
+<br>
+
+<?php echo 'taxonomy'; ?>
+<br>
+
+<?php var_dump($taxonomy); ?>
+
+
 <div class="tab-card">
   <a href="<?php echo esc_url(get_post_type_archive_link($post_type)); ?>"
     class="tab-card__item <?php echo empty(get_query_var($taxonomy)) ? 'current' : ''; ?>">ALL</a>
