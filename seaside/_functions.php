@@ -91,65 +91,46 @@ function create_custom_post_types()
 
   register_post_type('tour', $tour_args);
 
-  // "stay_eat" カスタム投稿タイプのラベル設定
-  $stay_eat_labels = array(
-    'name'                  => '宿と食事',
-    'singular_name'         => '宿と食事',
-    'menu_name'             => '宿と食事',
-    'name_admin_bar'        => '宿と食事',
-    'add_new'               => '宿と食事を追加',
-    'add_new_item'          => '宿と食事を投稿',
-    'new_item'              => '新規 宿と食事',
-    'edit_item'             => '宿と食事を編集',
-    'view_item'             => '宿と食事を見る',
-    'all_items'             => '全ての宿と食事',
-    'search_items'          => '宿と食事の記事を探す',
-    'parent_item_colon'     => '',
-    'not_found'             => '宿と食事の投稿はありません。',
-    'not_found_in_trash'    => 'ゴミ箱に宿と食事の投稿はありません。'
+  // "voice" カスタム投稿タイプのラベル設定
+  $voice_labels = array(
+    'name'                  => 'お客様の声', // 投稿タイプの名前（複数形）
+    'singular_name'         => 'お客様の声',  // 投稿タイプの名前（単数形）
+    'menu_name'             => 'お客様の声',  // 管理画面メニューの名前
+    'name_admin_bar'        => 'お客様の声',   // 管理バーに表示される名前 = 省略可能
+    'add_new'               => 'お客様の声を追加', // 新規追加リンクのテキスト
+    'add_new_item'          => 'お客様の声を投稿', // 新規投稿追加ページのタイトル
+    'new_item'              => '新規お客様の声', // 新規投稿ページのタイトル
+    'edit_item'             => 'お客様の声を編集', // 投稿編集ページのタイトル
+    'view_item'             => 'お客様の声を見る', // 投稿表示ページのタイトル
+    'all_items'             => '全お客様の声の投稿', // 全投稿一覧ページのタイトル
+    'search_items'          => 'お客様の声の記事を探す', // 投稿検索のラベル
+    'parent_item_colon'     => 'parent voices:', // 階層型の親投稿ラベル = 省略可能
+    'not_found'             => 'お客様の声の投稿はありません。', // 投稿が見つからなかったときのメッセージ
+    'not_found_in_trash'    => 'ゴミ箱に Voice の投稿はありません。' // ゴミ箱に投稿が見つからなかったときのメッセージ
   );
 
-  // "stay_eat" カスタム投稿タイプの設定
-  $stay_eat_args = array(
-    'labels'               => $stay_eat_labels,
-    'public'               => true,
-    'publicly_queryable'   => true,
-    'show_ui'              => true,
-    'show_in_rest'         => true,
-    'show_in_menu'         => true,
-    'menu_position'        => 6,
-    'menu_icon'            => 'dashicons-carrot',
-    'query_var'            => true,
-    'rewrite'              => array('slug' => 'stay-eat'),
-    'capability_type'      => 'post',
-    'has_archive'          => true,
-    'hierarchical'         => false,
-    'supports'             => array('title', 'editor', 'thumbnail')
+  // "voice" カスタム投稿タイプの設定
+  $voice_args = array(
+    'labels'               => $voice_labels, // 上で定義したラベルを使用
+    'public'               => true,  // 投稿タイプを公開するかどうか
+    'publicly_queryable'   => true,  // クエリ可能かどうか
+    'show_ui'              => true,  // 管理画面の編集用UIを表示する
+    'show_in_rest'         => true,  // 投稿画面に表示(REST APIに含める場合はtrueを指定)
+    'show_in_menu'         => true,  // 管理メニューに表示するかどうか
+    'menu_position'        => 6,     // 管理画面上での配置場所
+    'menu_icon'            => 'dashicons-format-audio', // Dashicons アイコンを指定
+    'query_var'            => true,  // クエリ変数を使うかどうか
+    'rewrite'              => array('slug' => 'voice'), // リライトルールの設定（スラッグ）
+    'capability_type'      => 'post', // 権限のタイプ（通常の投稿と同じ）
+    'has_archive'          => true,  // アーカイブページを持つかどうか
+    'hierarchical'         => false, // 階層型（カテゴリー）かどうか
+    'supports'             => array('title', 'editor', 'thumbnail') // サポートする機能（タイトル、エディタ、サムネイル）
   );
 
-  // "stay_eat" カスタム投稿タイプを登録
-  register_post_type('stay_eat', $stay_eat_args);
+  // "voice" カスタム投稿タイプを登録
+  register_post_type('voice', $voice_args);
 }
-
 add_action('init', 'create_custom_post_types');
-
-function migrate_voice_to_stay_eat()
-{
-  $args = array(
-    'post_type' => 'voice',
-    'post_status' => 'any',
-    'posts_per_page' => -1,
-  );
-
-  $posts = get_posts($args);
-  foreach ($posts as $post) {
-    wp_update_post(array(
-      'ID' => $post->ID,
-      'post_type' => 'stay_eat',
-    ));
-  }
-}
-add_action('init', 'migrate_voice_to_stay_eat');
 
 // カスタムタクソノミーの設定
 function create_custom_taxonomies()
