@@ -144,7 +144,7 @@
   font-family: $english-font;
   font-weight: $regular;
   font-size: rem(40);
-  color: $green-accent;
+  color: $grey-accent;
   line-height: 1;
   @include mq("md") {
     font-size: rem(80);

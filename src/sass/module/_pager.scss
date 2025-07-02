@@ -10,8 +10,8 @@
 %pager-default-style {
   display: block;
   padding: rem(6) rem(13);
-  border: solid 1px $green-accent;
-  color: $green-accent;
+  border: solid 1px $grey-accent;
+  color: $grey-accent;
   background-color: $white;
   font-family: $price-font;
   font-weight: $bold;
@@ -26,7 +26,7 @@
 
 span.current {
   @extend %pager-default-style;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   color: $white;
   @include button-hover-action(#56afb5);
 }
@@ -36,15 +36,17 @@ span.current {
   width: rem(38);
   height: rem(38);
   cursor: pointer;
-  background: url(../images/common/pager-arrow-left-green.svg) center center no-repeat;
-  &:hover{
+  background: url(../images/common/pager-arrow-left-green.svg) center center
+    no-repeat;
+  &:hover {
     @include button-hover-action(#56afb5);
-    background: url(../images/common/pager-arrow-left-white.svg) center center no-repeat;
+    background: url(../images/common/pager-arrow-left-white.svg) center center
+      no-repeat;
   }
 }
 
 .pager__previous.current {
-  background-color: $green-accent;
+  background-color: $grey-accent;
   color: $white;
   @include button-hover-action(#56afb5);
 }
@@ -54,14 +56,16 @@ span.current {
   width: rem(38);
   height: rem(38);
   cursor: pointer;
-  background: url(../images/common/pager-arrow-right-green.svg) center center no-repeat;
-  &:hover{
+  background: url(../images/common/pager-arrow-right-green.svg) center center
+    no-repeat;
+  &:hover {
     @include button-hover-action(#56afb5);
-    background: url(../images/common/pager-arrow-right-white.svg) center center no-repeat;
+    background: url(../images/common/pager-arrow-right-white.svg) center center
+      no-repeat;
   }
 }
 
 .pager__next.current {
-  background-color: $green-accent;
+  background-color: $grey-accent;
   color: $white;
 }

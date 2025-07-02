@@ -3,10 +3,10 @@
 .button {
   position: relative;
   z-index: 1;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   background-image: url("https://www.transparenttextures.com/patterns/straws.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   color: $white;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   display: inline-block;
@@ -22,7 +22,7 @@
 .button--reverse {
   background-color: $white;
   border: 1px solid $white;
-  color: $green-accent;
+  color: $grey-accent;
   padding: rem(19) rem(96) rem(20) rem(39);
 }
 
@@ -38,7 +38,7 @@
   content: "";
   top: rem(4);
   left: rem(4);
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   z-index: 1;
 }
 
@@ -65,21 +65,21 @@
 
 // アニメ用 background
 .button--reverse::after {
-  background: $green-accent;
-  border: 1px solid $green-accent;
+  background: $grey-accent;
+  border: 1px solid $grey-accent;
   z-index: 1;
 }
 
 // hover 時
 .button:hover {
-  color: $green-accent;
+  color: $grey-accent;
   background-color: $white;
 }
 
 // hover 時
 .button--reverse:hover {
   color: $white;
-  background-color: $green-accent;
+  background-color: $grey-accent;
 }
 
 .button:hover::after {
@@ -104,13 +104,13 @@
 }
 
 .button--reverse .button__text::before {
-  background-color: $green-accent;
+  background-color: $grey-accent;
   right: calc(-1 * rem(55.5));
 }
 
 .button:hover .button__text::before,
 .button:hover .button__text::after {
-  background-color: $green-accent;
+  background-color: $grey-accent;
   z-index: 2;
 }
 
@@ -131,6 +131,6 @@
 }
 
 .button--reverse .button__text::after {
-  background: $green-accent;
+  background: $grey-accent;
   right: calc(-1 * rem(56));
 }

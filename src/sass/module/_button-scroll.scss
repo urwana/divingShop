@@ -8,7 +8,7 @@ $small-button-size: 48px;
   height: $small-button-size;
   border-radius: 50%;
   background: $white;
-  border: solid 1px $green-accent;
+  border: solid 1px $grey-accent;
   position: relative;
   cursor: pointer;
   @include mq("md") {
@@ -24,7 +24,7 @@ $small-button-size: 48px;
   width: 10px;
   height: 1px;
   top: 50%;
-  background-color: $green-accent;
+  background-color: $grey-accent;
 }
 
 %button-scroll-common::after {
@@ -34,7 +34,7 @@ $small-button-size: 48px;
   width: 28px;
   height: 1px;
   top: 50%;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   @include mq("md") {
     width: rem(40);
   }

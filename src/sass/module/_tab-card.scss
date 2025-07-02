@@ -9,7 +9,7 @@
   position: relative;
   grid-auto-flow: row dense;
   z-index: 2;
- @include mq("md") {
+  @include mq("md") {
     display: flex;
     column-gap: rem(32);
     flex-wrap: wrap;
@@ -17,8 +17,8 @@
 }
 
 .tab-card__item {
-  color: $green-accent;
-  border: solid 1px $green-accent;
+  color: $grey-accent;
+  border: solid 1px $grey-accent;
   text-align: center;
   padding: rem(4) 0;
   font-size: rem(14);
@@ -33,6 +33,6 @@
 
 .tab-card__item.current {
   color: $white;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   @include button-hover-action(#56afb5);
 }

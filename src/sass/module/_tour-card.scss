@@ -72,7 +72,7 @@
   padding-bottom: rem(4);
   font-size: rem(16);
   line-height: calc(24 / 16);
-  border-bottom: 1px solid $green-accent;
+  border-bottom: 1px solid $grey-accent;
   @include mq("md") {
     margin-top: rem(6);
   }
@@ -129,7 +129,7 @@
 }
 
 .tour-card__date-container {
-  color: $green-accent;
+  color: $grey-accent;
   text-align: center;
   margin-top: rem(24);
   min-height: rem(56);
@@ -174,7 +174,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px $green-accent;
+  border: solid 1px $grey-accent;
   border-radius: rem(4);
   @include mq("md") {
   }

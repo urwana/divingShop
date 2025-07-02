@@ -5,7 +5,7 @@
 }
 
 .sidebar-archive__toggle-hierarchy {
-  color: $green-accent;
+  color: $grey-accent;
   font-family: $magic;
   color: $font-black;
   font-size: rem(24);
@@ -44,7 +44,7 @@
   width: 0;
   height: 0;
   border-top: 12px solid transparent;
-  border-left: 18px solid $green-accent;
+  border-left: 18px solid $grey-accent;
   border-right: 12px solid transparent;
   border-bottom: 12px solid transparent;
   transition: transform 0.3s ease;

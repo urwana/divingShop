@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .body-404 {
-  background-color: $green-accent;
+  background-color: $grey-accent;
 }
 
 .error-404 {
-  border-top: $green-accent solid 1px;
+  border-top: $grey-accent solid 1px;
   font-family: $price-font;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   color: $white;
   padding-top: rem(80);
   padding-bottom: rem(40);

@@ -50,7 +50,7 @@
 .top-contact__contact {
   margin-top: rem(40);
   @include mq("md") {
-    border-left: solid 1px $green-accent;
+    border-left: solid 1px $grey-accent;
     padding-left: rem(80);
     margin-top: 0;
     margin-left: rem(80);
@@ -64,7 +64,7 @@
 .top-contact-logo__container {
   display: flex;
   justify-content: center;
-  border-bottom: solid 1px $green-accent;
+  border-bottom: solid 1px $grey-accent;
   padding-bottom: rem(5.5);
   position: relative;
   @include mq("md") {

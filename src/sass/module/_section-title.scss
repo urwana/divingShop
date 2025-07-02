@@ -9,7 +9,7 @@
   margin-top: rem(4);
   font-size: rem(16);
   line-height: calc(18 / 12);
-  color: $green-accent;
+  color: $grey-accent;
   font-family: $magic;
   font-weight: $regular;
   @include mq("md") {
@@ -24,7 +24,7 @@
 .section-title__japan {
   font-size: rem(32);
   line-height: calc(40 / 32);
-  color: $green;
+  color: $grey;
   font-weight: $regular;
   @include mq("md") {
     font-size: rem(40);
@@ -39,7 +39,7 @@
   color: $font-black;
   font-size: rem(14);
   font-weight: $regular;
-  color: $green-accent;
+  color: $grey-accent;
   line-height: calc(18 / 14);
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   @include mq("md") {
@@ -48,21 +48,21 @@
 }
 
 .section-title--blog .section-title__word {
-  color: $green;
+  color: $grey;
   @include mq("md") {
     color: $white;
   }
 }
 
 .section-title--blog .section-title__word::first-letter {
-  color: $green-accent;
+  color: $grey-accent;
   @include mq("md") {
-    color: $green-light;
+    color: $grey-light;
   }
 }
 
 .section-title--blog .section-title__japan {
-  color: $green-accent;
+  color: $grey-accent;
   @include mq("md") {
     color: $white;
   }

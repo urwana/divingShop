@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.submit{
+.submit {
   position: relative;
   display: inline-block;
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
 }
 
 .submit:hover {
-  color: $green-accent;
+  color: $grey-accent;
 }
 
 span.wpcf7-spinner {
@@ -17,9 +17,9 @@ span.wpcf7-spinner {
 .submit > input {
   position: relative;
   z-index: 1;
-  background-color: $green-accent;
-  border: 1px solid $green-accent;
-  color:$green-accent;
+  background-color: $grey-accent;
+  border: 1px solid $grey-accent;
+  color: $grey-accent;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   display: inline-block;
   font-family: $english-font;
@@ -43,7 +43,7 @@ span.wpcf7-spinner {
   content: "";
   top: rem(4);
   left: rem(4);
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   z-index: 1;
 }
 
@@ -70,20 +70,19 @@ span.wpcf7-spinner {
 
 .submit:hover::after {
   transform: scale(1, 1);
-
 }
 
 .submit__text {
   z-index: 2;
   color: $white;
   position: absolute;
-  top:50%;
-  left:36%;
+  top: 50%;
+  left: 36%;
   transform: translate(-50%, -50%);
 }
 
-.submit:hover .submit__text{
-  color: $green-accent;
+.submit:hover .submit__text {
+  color: $grey-accent;
 }
 
 .submit__text::before {
@@ -101,7 +100,7 @@ span.wpcf7-spinner {
 
 .submit:hover .submit__text::before,
 .submit:hover .submit__text::after {
-  background-color: $green-accent;
+  background-color: $grey-accent;
   z-index: 2;
 }
 
@@ -116,6 +115,6 @@ span.wpcf7-spinner {
 }
 
 .button--reverse .submit__text::after {
-  background: $green-accent;
+  background: $grey-accent;
   right: calc(-1 * rem(56));
 }

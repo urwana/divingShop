@@ -31,7 +31,7 @@
 }
 
 .header__inner.is-open {
-  background-color: $green-accent;
+  background-color: $grey-accent;
 }
 
 .header__logo {
@@ -57,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   z-index: 3;
   overflow: scroll;
   @include mq("md") {

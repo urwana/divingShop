@@ -17,7 +17,7 @@
 }
 
 .contact-form__row {
-  border-bottom: 1px dashed $green-accent;
+  border-bottom: 1px dashed $grey-accent;
   padding-bottom: rem(24);
   @include mq("md") {
     display: grid;
@@ -84,7 +84,7 @@
   display: block;
   width: rem(14);
   height: rem(14);
-  border: solid 1px $green-accent;
+  border: solid 1px $grey-accent;
 }
 
 .contact-form__label-text {
@@ -97,7 +97,7 @@
 .contact-form__item [type="url"],
 .contact-form__item [type="email"] {
   width: 100%;
-  border: solid 1px $green-accent;
+  border: solid 1px $grey-accent;
   height: rem(40);
 }
 
@@ -164,7 +164,7 @@
 }
 
 .contact-form__item input::placeholder {
-  color: $green-light;
+  color: $grey-light;
   padding-left: rem(16);
 }
 
@@ -174,7 +174,7 @@
 
 .contact-form__item textarea {
   width: 100%;
-  border: solid 1px $green-accent;
+  border: solid 1px $grey-accent;
   height: rem(200);
   padding: rem(8);
 }
@@ -187,7 +187,7 @@
   position: relative;
   width: 14px;
   height: 14px;
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -198,7 +198,7 @@
   position: relative;
   width: 20px;
   height: 20px;
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -236,7 +236,7 @@
 .select-box-container::after {
   content: "";
   position: absolute;
-  border: 6px solid $green-accent;
+  border: 6px solid $grey-accent;
   border-bottom: 0;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -251,7 +251,7 @@
 }
 
 .select-box {
-  border: 1px solid $green-accent;
+  border: 1px solid $grey-accent;
   padding: rem(10);
   font-size: rem(12);
   cursor: pointer;

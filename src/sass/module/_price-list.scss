@@ -12,7 +12,7 @@
 
 .price-list__title {
   color: $white;
-  background-color: $green-accent;
+  background-color: $grey-accent;
   background-image: url("https://www.transparenttextures.com/patterns/straws.png");
   padding: rem(8) 0;
   text-align: center;
@@ -68,8 +68,8 @@
 }
 
 .price-list__name {
-  border-left: solid 1px $green-accent;
-  border-bottom: solid 1px $green-accent;
+  border-left: solid 1px $grey-accent;
+  border-bottom: solid 1px $grey-accent;
   width: 68%;
   text-align: center;
   display: flex;
@@ -84,7 +84,7 @@
 }
 .price-list__item:first-child .price-list__name {
   @include mq("md") {
-    border-top: solid 1px $green-accent;
+    border-top: solid 1px $grey-accent;
   }
 }
 
@@ -95,9 +95,9 @@
 }
 
 .price-list__price {
-  border-left: solid 1px $green-accent;
-  border-right: solid 1px $green-accent;
-  border-bottom: solid 1px $green-accent;
+  border-left: solid 1px $grey-accent;
+  border-right: solid 1px $grey-accent;
+  border-bottom: solid 1px $grey-accent;
   width: 32%;
   text-align: right;
   display: flex;
@@ -111,6 +111,6 @@
 
 .price-list__item:first-child .price-list__price {
   @include mq("md") {
-    border-top: solid 1px $green-accent;
+    border-top: solid 1px $grey-accent;
   }
 }
