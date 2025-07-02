@@ -183,33 +183,35 @@ function create_custom_taxonomies()
   // タクソノミーを カスタム投稿 tour に関連付け
   register_taxonomy('tour_taxonomy', array('tour'), $tourArgs);
 
-  // voice タクソノミーのラベル設定
-  $voiceLabels = array(
-    'name'              => 'お客様の声', // 一般的な名前
-    'singular_name'     => 'お客様の声', // 単数形の名前
-    'search_items'      => 'お客様の声を検索', // 検索項目のラベル
-    'all_items'         => '全お客様の声のタクソノミー', // 全ての項目のラベル
-    'parent_item'       => '親お客様の声タクソノミー', // 親項目のラベル
-    'parent_item_colon' => '親お客様の声タクソノミー:', // 親項目（コロン付き）のラベル
-    'edit_item'         => 'お客様の声のタクソノミーを編集', // 編集項目のラベル
-    'update_item'       => 'お客様の声のタクソノミーを更新', // 更新項目のラベル
-    'add_new_item'      => '新規お客様の声タクソノミーを追加', // 新規追加項目のラベル
-    'new_item_name'     => '新規お客様の声タクソノミー名', // 新規項目名のラベル
-    'menu_name'         => 'お客様の声タクソノミー', // メニューのラベル
+  // stay_eat タクソノミーのラベル設定
+  $stayEatLabels = array(
+    'name'              => '宿と食事カテゴリー',
+    'singular_name'     => '宿と食事カテゴリー',
+    'search_items'      => '宿と食事カテゴリーを検索',
+    'all_items'         => '全宿と食事カテゴリー',
+    'parent_item'       => '親宿と食事カテゴリー',
+    'parent_item_colon' => '親宿と食事カテゴリー:',
+    'edit_item'         => '宿と食事カテゴリーを編集',
+    'update_item'       => '宿と食事カテゴリーを更新',
+    'add_new_item'      => '新規宿と食事カテゴリーを追加',
+    'new_item_name'     => '新規宿と食事カテゴリー名',
+    'menu_name'         => '宿と食事カテゴリー',
   );
-  // カスタム投稿 voice の タクソノミーの設定
-  $voiceArgs = array(
-    'hierarchical'      => true, // 階層化しない場合でも true でないとチェックボックス表示できない
-    'labels'            => $voiceLabels, // 上で定義したラベルを使用
-    'show_ui'           => true, // 管理画面に表示するかどうか
-    'show_in_rest'      => true, // Gutenbergで表示有効化
-    'meta_box_cb'       => 'post_categories_meta_box', // チェックボックスで表示
-    'show_admin_column' => true, // 管理画面の投稿一覧に表示するかどうか
-    'query_var'         => true, // タクソノミーのクエリ変数を有効にするかどうか
-    'rewrite'           => array('slug' => 'voice_taxonomy'), // タクソノミーのスラッグ（URLに使用される）
+
+  // タクソノミーの設定
+  $stayEatArgs = array(
+    'hierarchical'      => true,
+    'labels'            => $stayEatLabels,
+    'show_ui'           => true,
+    'show_in_rest'      => true,
+    'meta_box_cb'       => 'post_categories_meta_box',
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite'           => array('slug' => 'stay-eat-category'),
   );
-  // タクソノミーを カスタム投稿 voice に関連付け
-  register_taxonomy('voice_taxonomy', array('voice'), $voiceArgs);
+
+  // タクソノミーを stay_eat 投稿タイプに紐付け
+  register_taxonomy('stay_eat_category', array('stay_eat'), $stayEatArgs);
 }
 add_action('init', 'create_custom_taxonomies', 0);
 
