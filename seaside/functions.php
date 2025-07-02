@@ -207,11 +207,11 @@ function create_custom_taxonomies()
     'meta_box_cb'       => 'post_categories_meta_box',
     'show_admin_column' => true,
     'query_var'         => true,
-    'rewrite'           => array('slug' => 'stay-eat-category'),
+    'rewrite'           => array('slug' => 'stay-eat-taxonomy'),
   );
 
   // タクソノミーを stay_eat 投稿タイプに紐付け
-  register_taxonomy('stay_eat_category', array('stay_eat'), $stayEatArgs);
+  register_taxonomy('stay_eat_taxonomy', array('stay_eat'), $stayEatArgs);
 }
 add_action('init', 'create_custom_taxonomies', 0);
 
