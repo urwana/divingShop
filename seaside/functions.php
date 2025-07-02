@@ -133,24 +133,6 @@ function create_custom_post_types()
 
 add_action('init', 'create_custom_post_types');
 
-// function migrate_voice_to_stay_eat()
-// {
-//   $args = array(
-//     'post_type' => 'voice',
-//     'post_status' => 'any',
-//     'posts_per_page' => -1,
-//   );
-
-//   $posts = get_posts($args);
-//   foreach ($posts as $post) {
-//     wp_update_post(array(
-//       'ID' => $post->ID,
-//       'post_type' => 'stay_eat',
-//     ));
-//   }
-// }
-// add_action('init', 'migrate_voice_to_stay_eat');
-
 // カスタムタクソノミーの設定
 function create_custom_taxonomies()
 {
@@ -214,6 +196,43 @@ function create_custom_taxonomies()
   register_taxonomy('stay_eat_taxonomy', array('stay_eat'), $stayEatArgs);
 }
 add_action('init', 'create_custom_taxonomies', 0);
+
+function rename_default_post_type()
+{
+  global $menu, $submenu;
+
+  // 管理画面左メニュー
+  $menu[5][0] = 'Spot'; // 投稿 → Spot
+
+  // 投稿サブメニュー
+  $submenu['edit.php'][5][0] = 'Spot一覧';
+  $submenu['edit.php'][10][0] = '新規Spotを追加';
+  $submenu['edit.php'][15][0] = 'タグ'; // 必要なら変更
+
+  // 投稿タイプのラベル全体を変更
+  $labels = get_post_type_object('post')->labels;
+  $labels->name = 'Spot';
+  $labels->singular_name = 'Spot';
+  $labels->add_new = '新規Spot';
+  $labels->add_new_item = '新規Spotを追加';
+  $labels->edit_item = 'Spotを編集';
+  $labels->new_item = '新規Spot';
+  $labels->view_item = 'Spotを表示';
+  $labels->search_items = 'Spotを検索';
+  $labels->not_found = 'Spotが見つかりませんでした';
+  $labels->not_found_in_trash = 'ゴミ箱にSpotはありません';
+}
+add_action('admin_menu', 'rename_default_post_type');
+add_action('init', 'rename_default_post_type');
+
+function change_post_slug($args, $post_type)
+{
+  if ('post' === $post_type) {
+    $args['rewrite']['slug'] = 'spot';
+  }
+  return $args;
+}
+add_filter('register_post_type_args', 'change_post_slug', 10, 2);
 
 // カスタム投稿毎に表示件数のデフォルト設定を変える
 function custom_posts_per_page($query)
