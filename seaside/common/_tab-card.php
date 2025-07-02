@@ -1,18 +1,6 @@
 <?php $post_type = $args["post_type"]; ?>
 <?php $taxonomy = $args["taxonomy"]; ?>
 
-<?php echo 'post_type'; ?>
-<br>
-<?php var_dump($post_type); ?>
-<br>
-<br>
-
-<?php echo 'taxonomy'; ?>
-<br>
-
-<?php var_dump($taxonomy); ?>
-
-
 <div class="tab-card">
   <a href="<?php echo esc_url(get_post_type_archive_link($post_type)); ?>"
     class="tab-card__item <?php echo empty(get_query_var($taxonomy)) ? 'current' : ''; ?>">ALL</a>
@@ -31,8 +19,6 @@
         $term_link = get_term_link($term, $taxonomy); ?>
   <a href="<?php echo esc_url($term_link) ?>"
     class="tab-card__item <?php echo is_tax($taxonomy, $term->slug) ? 'current' : ''; ?>"><?php echo esc_html($term->name) ?>
-    <?php echo '確認'; ?>
-    <?php echo $term_link; ?>
   </a>
   <?php endforeach;
     endif; ?>
