@@ -197,42 +197,42 @@ function create_custom_taxonomies()
 }
 add_action('init', 'create_custom_taxonomies', 0);
 
-function rename_default_post_type()
-{
-  global $menu, $submenu;
+// function rename_default_post_type()
+// {
+//   global $menu, $submenu;
 
-  // 管理画面左メニュー
-  $menu[5][0] = 'Spot'; // 投稿 → Spot
+//   // 管理画面左メニュー
+//   $menu[5][0] = 'Spot'; // 投稿 → Spot
 
-  // 投稿サブメニュー
-  $submenu['edit.php'][5][0] = 'Spot一覧';
-  $submenu['edit.php'][10][0] = '新規Spotを追加';
-  $submenu['edit.php'][15][0] = 'タグ'; // 必要なら変更
+//   // 投稿サブメニュー
+//   $submenu['edit.php'][5][0] = 'Spot一覧';
+//   $submenu['edit.php'][10][0] = '新規Spotを追加';
+//   $submenu['edit.php'][15][0] = 'タグ'; // 必要なら変更
 
-  // 投稿タイプのラベル全体を変更
-  $labels = get_post_type_object('post')->labels;
-  $labels->name = 'Spot';
-  $labels->singular_name = 'Spot';
-  $labels->add_new = '新規Spot';
-  $labels->add_new_item = '新規Spotを追加';
-  $labels->edit_item = 'Spotを編集';
-  $labels->new_item = '新規Spot';
-  $labels->view_item = 'Spotを表示';
-  $labels->search_items = 'Spotを検索';
-  $labels->not_found = 'Spotが見つかりませんでした';
-  $labels->not_found_in_trash = 'ゴミ箱にSpotはありません';
-}
-add_action('admin_menu', 'rename_default_post_type');
-add_action('init', 'rename_default_post_type');
+//   // 投稿タイプのラベル全体を変更
+//   $labels = get_post_type_object('post')->labels;
+//   $labels->name = 'Spot';
+//   $labels->singular_name = 'Spot';
+//   $labels->add_new = '新規Spot';
+//   $labels->add_new_item = '新規Spotを追加';
+//   $labels->edit_item = 'Spotを編集';
+//   $labels->new_item = '新規Spot';
+//   $labels->view_item = 'Spotを表示';
+//   $labels->search_items = 'Spotを検索';
+//   $labels->not_found = 'Spotが見つかりませんでした';
+//   $labels->not_found_in_trash = 'ゴミ箱にSpotはありません';
+// }
+// add_action('admin_menu', 'rename_default_post_type');
+// add_action('init', 'rename_default_post_type');
 
-function change_post_slug($args, $post_type)
-{
-  if ('post' === $post_type) {
-    $args['rewrite']['slug'] = 'spot';
-  }
-  return $args;
-}
-add_filter('register_post_type_args', 'change_post_slug', 10, 2);
+// function change_post_slug($args, $post_type)
+// {
+//   if ('post' === $post_type) {
+//     $args['rewrite']['slug'] = 'spot';
+//   }
+//   return $args;
+// }
+// add_filter('register_post_type_args', 'change_post_slug', 10, 2);
 
 // カスタム投稿毎に表示件数のデフォルト設定を変える
 function custom_posts_per_page($query)
