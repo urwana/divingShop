@@ -71,7 +71,7 @@
             </a>
           </li>
           <li class="navigation-pc__item">
-            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/voice")); ?>">
+            <a class="navigation-pc__link" href="<?php echo esc_url(home_url("/stay-eat")); ?>">
               <div class="navigation-pc__link-inner">
                 <div class="navigation-pc__japanese">泊まる・食べる</div>
                 <div class="navigation-pc__english">Stay & Eat</div>
