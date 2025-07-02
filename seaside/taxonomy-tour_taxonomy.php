@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "キャンペーン",
+    "pageTitle" => "ツアー",
     "imageClass" => "tour-background",
     "detail" => false
   ] ?>

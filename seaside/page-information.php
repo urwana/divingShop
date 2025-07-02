@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <?php $subKeyVisualData = [
-    "pageTitle" => "インフォメーション",
+    "pageTitle" => "アクティビティー",
     "imageClass" => "information-background",
     "detail" => false
   ] ?>
