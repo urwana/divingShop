@@ -133,23 +133,23 @@ function create_custom_post_types()
 
 add_action('init', 'create_custom_post_types');
 
-function migrate_voice_to_stay_eat()
-{
-  $args = array(
-    'post_type' => 'voice',
-    'post_status' => 'any',
-    'posts_per_page' => -1,
-  );
+// function migrate_voice_to_stay_eat()
+// {
+//   $args = array(
+//     'post_type' => 'voice',
+//     'post_status' => 'any',
+//     'posts_per_page' => -1,
+//   );
 
-  $posts = get_posts($args);
-  foreach ($posts as $post) {
-    wp_update_post(array(
-      'ID' => $post->ID,
-      'post_type' => 'stay_eat',
-    ));
-  }
-}
-add_action('init', 'migrate_voice_to_stay_eat');
+//   $posts = get_posts($args);
+//   foreach ($posts as $post) {
+//     wp_update_post(array(
+//       'ID' => $post->ID,
+//       'post_type' => 'stay_eat',
+//     ));
+//   }
+// }
+// add_action('init', 'migrate_voice_to_stay_eat');
 
 // カスタムタクソノミーの設定
 function create_custom_taxonomies()
