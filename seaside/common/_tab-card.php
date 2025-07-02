@@ -18,7 +18,10 @@
       foreach ($terms as $term) :
         $term_link = get_term_link($term, $taxonomy); ?>
   <a href="<?php echo esc_url($term_link) ?>"
-    class="tab-card__item <?php echo is_tax($taxonomy, $term->slug) ? 'current' : ''; ?>"><?php echo esc_html($term->name) ?></a>
+    class="tab-card__item <?php echo is_tax($taxonomy, $term->slug) ? 'current' : ''; ?>"><?php echo esc_html($term->name) ?>
+    <?php echo '確認'; ?>
+    <?php echo $term_link; ?>
+  </a>
   <?php endforeach;
     endif; ?>
   <?php else : ?>
