@@ -266,7 +266,7 @@
           <div class="voice-cards">
             <?php
             $voice_args = [
-              'post_type' => 'voice',
+              'post_type' => 'stay_eat',
               'posts_per_page' => 2,
             ];
             $the_voice_query = new WP_Query($voice_args);
