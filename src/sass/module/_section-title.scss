@@ -21,6 +21,11 @@
   color: $first-letter;
 }
 
+.section-title__japan--blog::first-letter {
+  color: $first-letter2;
+}
+
+
 .section-title__japan {
   font-size: rem(32);
   line-height: calc(40 / 32);

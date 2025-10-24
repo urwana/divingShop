@@ -2727,6 +2727,10 @@ span.current:hover {
 	color: #3daab4;
 }
 
+.section-title__japan--blog::first-letter {
+	color: #9df6fe;
+}
+
 .section-title__japan {
 	color: #666666;
 	font-size: 2rem;
