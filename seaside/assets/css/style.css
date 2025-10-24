@@ -3794,6 +3794,16 @@ body::after {
 	width: 2rem;
 }
 
+.tour-card__area {
+	font-size: 1rem;
+	margin-top: 0.75rem;
+}
+
+.tour-card__tel {
+	font-size: 1rem;
+	margin-top: 0.75rem;
+}
+
 .tour-cards--sidebar .tour-card:not(:first-child) {
 	margin-top: 2.5rem;
 }
@@ -5225,6 +5235,16 @@ html {
 
 .tour-card__bottom2 {
 	display: block;
+}
+
+.tour-card__area {
+	font-size: 1.5rem;
+	margin-top: 0.625rem;
+}
+
+.tour-card__tel {
+	font-size: 0.875rem;
+	margin-top: 0.625rem;
 }
 
 .tour-cards {
