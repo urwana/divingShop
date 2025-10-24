@@ -99,13 +99,13 @@
                     <p class="tour-card__rank">
                       <?php the_field("ranking"); ?>
                     </p>
-                    <p class="tour-card__area">
-                      <?php the_field("area"); ?>
-                    </p>
-                    <p class="tour-card__tel">
-                      <?php the_field("tel"); ?>
-                    </p>
                     <div class="tour-card__body">
+                      <p class="tour-card__area">
+                        <?php the_field("area"); ?>
+                      </p>
+                      <p class="tour-card__tel">
+                        <?php the_field("tel"); ?>
+                      </p>
                       <div class="tour-card__top">
                         <div class="tour-card__label label-container">
                           <?php
