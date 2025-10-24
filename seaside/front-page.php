@@ -199,7 +199,7 @@
         <div class="top-blog__title">
           <div class="section-title section-title--blog">
             <p class="section-title__word">Spot</p>
-            <h2 class="section-title__japan">観光名所</h2>
+            <h2 class="section-title__japan section-title__japan--blog">観光名所</h2>
           </div>
         </div>
         <div class="top-blog__cards">
